@@ -1,4 +1,4 @@
-import manifest from "../../universities.json";
+import manifest from "../../universities.json" with { type: "json" };
 
 export type University = (typeof manifest.universities)[number];
 

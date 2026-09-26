@@ -9,7 +9,7 @@ import {
   type FootprintCoordinate,
 } from "../utm/building-footprints.js";
 import type { Campus } from "../../lib/timetable-types.js";
-import manifest from "../../../universities.json";
+import manifest from "../../../universities.json" with { type: "json" };
 import utsgBuildingsRaw from "./utsg/buildings.json?raw";
 import utsgFootprintsRaw from "./utsg/buildings.geojson?raw";
 import utscBuildingsRaw from "./utsc/buildings.json?raw";
