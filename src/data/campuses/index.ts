@@ -1,14 +1,14 @@
-import type { BuildingConfiguration } from "@/data/utm/building-registry";
-import { getCampusBuilding, type BuildingEntrance } from "@/data/utm/routing-buildings";
-import { UTM_BUILDINGS } from "@/data/utm/building-registry";
+import type { BuildingConfiguration } from "../utm/building-registry.js";
+import { getCampusBuilding, type BuildingEntrance } from "../utm/routing-buildings.js";
+import { UTM_BUILDINGS } from "../utm/building-registry.js";
 import {
   CAMPUS_BUILDING_FOOTPRINTS as UTM_FOOTPRINTS,
   buildingCodeAtCoordinate as utmBuildingCodeAtCoordinate,
   getCampusBuildingFootprint as getUtmBuildingFootprint,
   representativePointForFootprint as representativeUtmPoint,
   type FootprintCoordinate,
-} from "@/data/utm/building-footprints";
-import type { Campus } from "@/lib/timetable-types";
+} from "../utm/building-footprints.js";
+import type { Campus } from "../../lib/timetable-types.js";
 import manifest from "../../../universities.json";
 import utsgBuildingsRaw from "./utsg/buildings.json?raw";
 import utsgFootprintsRaw from "./utsg/buildings.geojson?raw";
