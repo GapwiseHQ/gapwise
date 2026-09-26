@@ -11,14 +11,14 @@ import type {
 } from "../../features/routing/types.js";
 import type { UserPreferences } from "../../features/sync/preferences.js";
 import type { Gap, Meeting, Term, Weekday } from "../../lib/timetable-types.js";
+import type { BuildingConfiguration } from "../../data/utm/building-registry.js";
+import { resolveUniversityAndCampus, universityById } from "../../universities/registry.js";
 import {
   campusBuildingConfigurations,
   campusBuildingEntrances,
   getCampusBuildingIdentity,
-} from "../../data/campuses/index.js";
-import type { BuildingConfiguration } from "../../data/utm/building-registry.js";
-import { resolveUniversityAndCampus, universityById } from "../../universities/registry.js";
-import { getCampusSnapshot } from "./campus-snapshots.js";
+  getCampusSnapshot,
+} from "./campus-snapshots.js";
 import {
   PUBLIC_CAMPUS_DATA_VERSION,
   publicCampusBuildings,
