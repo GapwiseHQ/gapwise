@@ -1,17 +1,17 @@
 import type { CampusSnapshot } from "../../data/campuses/contract.js";
 import type { BuildingConfiguration } from "../../data/utm/building-registry.js";
-import brockSnapshot from "../../data/campuses/brock/campus.json";
-import carletonSnapshot from "../../data/campuses/carleton/campus.json";
-import guelphSnapshot from "../../data/campuses/guelph/campus.json";
-import laurierSnapshot from "../../data/campuses/laurier/campus.json";
-import mcmasterSnapshot from "../../data/campuses/mcmaster/campus.json";
-import queensSnapshot from "../../data/campuses/queens/campus.json";
-import tmuSnapshot from "../../data/campuses/tmu/campus.json";
-import uottawaSnapshot from "../../data/campuses/uottawa/campus.json";
-import westernSnapshot from "../../data/campuses/western/campus.json";
-import yorkSnapshot from "../../data/campuses/york/campus.json";
-import utsgBuildings from "../../data/campuses/utsg/buildings.json";
-import utscBuildings from "../../data/campuses/utsc/buildings.json";
+import brockSnapshot from "../../data/campuses/brock/campus.json" with { type: "json" };
+import carletonSnapshot from "../../data/campuses/carleton/campus.json" with { type: "json" };
+import guelphSnapshot from "../../data/campuses/guelph/campus.json" with { type: "json" };
+import laurierSnapshot from "../../data/campuses/laurier/campus.json" with { type: "json" };
+import mcmasterSnapshot from "../../data/campuses/mcmaster/campus.json" with { type: "json" };
+import queensSnapshot from "../../data/campuses/queens/campus.json" with { type: "json" };
+import tmuSnapshot from "../../data/campuses/tmu/campus.json" with { type: "json" };
+import uottawaSnapshot from "../../data/campuses/uottawa/campus.json" with { type: "json" };
+import westernSnapshot from "../../data/campuses/western/campus.json" with { type: "json" };
+import yorkSnapshot from "../../data/campuses/york/campus.json" with { type: "json" };
+import utsgBuildings from "../../data/campuses/utsg/buildings.json" with { type: "json" };
+import utscBuildings from "../../data/campuses/utsc/buildings.json" with { type: "json" };
 
 export const CAMPUS_SNAPSHOTS: Record<string, CampusSnapshot> = {
   brock: brockSnapshot as unknown as CampusSnapshot,
