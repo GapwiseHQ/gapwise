@@ -61,6 +61,14 @@ import { Gapwise, GapwiseApiError } from "@gapwise/sdk";
 const gapwise = new Gapwise();
 
 const info = await gapwise.info();
+const universities = await gapwise.universities.list();
+const campuses = await gapwise.campuses.list();
+
+// Query buildings and calculate routes for Carleton University
+const carletonBuildings = await gapwise.buildings.list({ university: "carleton" });
+const carletonRoute = await gapwise.routes.calculate({ from: "TB", to: "ML", university: "carleton" });
+
+// Query UTM (default)
 const mn = await gapwise.buildings.get("MN");
 const buildings = await gapwise.buildings.list({ q: "instructional", category: "academic" });
 const places = await gapwise.places.list({ building: "HM", kind: "library" });

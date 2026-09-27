@@ -19,28 +19,35 @@ export const Route = createFileRoute("/developers")({
       {
         name: "description",
         content:
-          "Build with Gapwise public UTM data, APIs, SDKs, deterministic routing and gap planning, and permissioned AI integration.",
+          "Build with Gapwise open campus data, public APIs, SDKs, deterministic routing and gap planning across Canadian universities, and permissioned AI integration.",
       },
       { property: "og:title", content: "Gapwise Developers" },
       {
         property: "og:description",
-        content: "The developer gateway for Gapwise API, SDKs, open campus data, docs, and AI/MCP.",
+        content:
+          "The developer gateway for Gapwise API, SDKs, open campus data, docs, and AI/MCP across Canadian universities.",
       },
     ],
   }),
   component: DevelopersPage,
 });
 
-const API_EXAMPLE = `const response = await fetch("https://api.gapwise.ca/v1/routes", {
+const API_EXAMPLE = `// Discover 11 supported universities and 13 campus models
+const universities = await fetch("https://api.gapwise.ca/v1/universities").then((r) => r.json());
+
+// Calculate a deterministic route (e.g. Carleton University)
+const response = await fetch("https://api.gapwise.ca/v1/routes", {
   method: "POST",
   headers: { "content-type": "application/json" },
-  body: JSON.stringify({ from: "MN", to: "IB" }),
+  body: JSON.stringify({ from: "TB", to: "ML", university: "carleton" }),
 });
 
 const { data, meta } = await response.json();`;
 
 const ENDPOINTS = [
   ["GET", "/v1", "Discovery and version metadata"],
+  ["GET", "/v1/universities", "11 supported universities and editions"],
+  ["GET", "/v1/campuses", "13 supported campus models and metadata"],
   ["GET", "/v1/buildings", "Buildings, coverage, and provenance"],
   ["GET", "/v1/places", "Campus places and availability"],
   ["POST", "/v1/routes", "Deterministic campus routing"],
@@ -58,7 +65,7 @@ const ENTRY_POINTS = [
   {
     icon: Database,
     title: "Explore campus data",
-    body: "Canonical raw UTM campus artifacts, schemas, checksums, provenance, and source-level reuse through Gapwise Data.",
+    body: "Canonical campus artifacts, schemas, checksums, provenance, and source-level reuse across supported universities through Gapwise Data.",
     href: "https://data.gapwise.ca",
     label: "data.gapwise.ca",
   },
@@ -114,9 +121,9 @@ function DevelopersPage() {
                 Build with the campus layer behind Gapwise.
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground">
-                Use the stable API and SDKs for deterministic campus intelligence, Gapwise Data for
-                canonical raw UTM artifacts, or the separate AI/MCP surface for explicitly delegated
-                student context.
+                Use the stable API and SDKs for deterministic campus intelligence across 11
+                supported universities, Gapwise Data for canonical campus models and raw artifacts,
+                or the separate AI/MCP surface for explicitly delegated student context.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2" aria-label="Platform properties">
