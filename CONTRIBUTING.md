@@ -1,6 +1,6 @@
 # Contributing to Gapwise
 
-Gapwise is an independent student project for the University of Toronto. Contributions should preserve its local-first privacy model, accessibility, honest campus-data confidence, and sustainable free-tier operating model.
+Gapwise is an independent student project for students across supported Canadian universities. Contributions should preserve its local-first privacy model, accessibility, honest campus-data confidence, and sustainable free-tier operating model.
 
 ## Before starting
 

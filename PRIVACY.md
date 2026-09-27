@@ -1,14 +1,14 @@
 # Gapwise Privacy Notice
 
-_Last updated: 2026-09-24_
+_Last updated: 2026-09-27_
 
-Gapwise is an independent student project for University of Toronto students. It is not affiliated with, endorsed by, or an official service of the University of Toronto.
+Gapwise is an independent student project for students across supported Canadian universities. It is not affiliated with, endorsed by, or an official service of any university.
 
 This notice describes the implementation-backed data handling of the public Gapwise application at `gapwise.ca` and the optional Gapwise AI integration service. It is not a legal opinion about which privacy law applies to every user or circumstance.
 
 ## What stays in your browser
 
-- The original ACORN `.ics` file is parsed locally and is not uploaded.
+- The original imported timetable file is parsed locally and is not uploaded, including ACORN `.ics` exports for U of T.
 - Gap calculations and campus route calculations run in the browser.
 - Guest timetables remain local to the browser.
 - Signed-in users may keep non-extractable cryptographic keys and encrypted private records in IndexedDB when the browser supports durable `CryptoKey` storage.
@@ -19,7 +19,7 @@ If you sign in with Microsoft, Google, or GitHub OAuth, Supabase and the selecte
 
 If you explicitly enable private cloud sync, Gapwise encrypts the private timetable/settings payload in the browser before it is written to Supabase. Supabase stores ciphertext, cryptographic metadata, and the minimum account/relationship metadata required to provide the feature.
 
-The original `.ics` file is never stored in the cloud. Gapwise does not store a history of calculated routes or gap recommendations as part of ordinary private cloud sync.
+The original imported timetable file is never stored in the cloud. Gapwise does not store a history of calculated routes or gap recommendations as part of ordinary private cloud sync.
 
 ## Optional AI integrations
 
