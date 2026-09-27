@@ -1,4 +1,4 @@
-import { getResidenceBuildingForCampus } from "../../server/public-campus/campus-snapshots.js";
+import { getResidenceBuildingForCampus } from "../../data/campuses/residence-registry.js";
 import type { BuildingConfiguration } from "../../data/utm/building-registry.js";
 import type { UserPreferences } from "../sync/preferences.js";
 import type { Meeting, Term, Weekday } from "../../lib/timetable-types.js";

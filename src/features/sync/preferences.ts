@@ -1,5 +1,6 @@
 import { DEFAULT_ROUTE_PREFERENCES, sanitizeRoutePreferences } from "@/config/routing";
-import { getResidenceBuildingForCampus, type GapwiseCampusId } from "@/data/campuses";
+import { getResidenceBuildingForCampus } from "@/data/campuses/residence-registry";
+import type { GapwiseCampusId } from "@/data/campuses";
 import { getCampusAccessPoint, type CampusAccessKind } from "@/data/utm/campus-access-points";
 import type { RoutePreferences } from "@/features/routing/types";
 import { isEncryptedPrivateCloudAuthoritative } from "@/features/security/private-cloud-mode";

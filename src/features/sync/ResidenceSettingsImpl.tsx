@@ -1,12 +1,11 @@
 import type { User } from "@supabase/supabase-js";
 import { Building2, BusFront, CarFront, Home, MapPin } from "lucide-react";
 import { useEffect, useState, type ComponentType } from "react";
+import { CAMPUS_SHORT_LABELS, type GapwiseCampusId } from "@/data/campuses";
 import {
-  CAMPUS_SHORT_LABELS,
   campusResidenceBuildings,
   getResidenceBuildingForCampus,
-  type GapwiseCampusId,
-} from "@/data/campuses";
+} from "@/data/campuses/residence-registry";
 import {
   campusAccessPointsFor,
   getCampusAccessPoint,
