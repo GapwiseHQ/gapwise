@@ -13,7 +13,9 @@ test.describe("mobile header and secondary navigation", () => {
   ];
 
   for (const vp of viewports) {
-    test(`header and secondary nav never overlap on ${vp.name} (${vp.width}x${vp.height})`, async ({ page }) => {
+    test(`header and secondary nav never overlap on ${vp.name} (${vp.width}x${vp.height})`, async ({
+      page,
+    }) => {
       await page.setViewportSize({ width: vp.width, height: vp.height });
       await page.goto("/");
       await page.waitForLoadState("networkidle");
@@ -58,7 +60,9 @@ test.describe("mobile header and secondary navigation", () => {
 
       console.log(`[${vp.name} scrolled] header:`, headerBoxScrolled, "nav:", navBoxScrolled);
 
-      expect(navBoxScrolled!.y).toBeGreaterThanOrEqual(headerBoxScrolled!.y + headerBoxScrolled!.height - 0.5);
+      expect(navBoxScrolled!.y).toBeGreaterThanOrEqual(
+        headerBoxScrolled!.y + headerBoxScrolled!.height - 0.5,
+      );
     });
   }
 });
