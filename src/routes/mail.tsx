@@ -26,9 +26,18 @@ import {
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useAuth } from "@/features/auth/use-auth";
 import { useTheme } from "@/hooks/use-preferences";
+import {
+  MAILBOXES,
+  WRITABLE_MAILBOXES,
+  getMailboxConfig,
+  getReplyAddress,
+  isWritableMailbox,
+  type ProductionMailbox,
+  type WritableMailbox,
+} from "@/lib/mailboxes";
 import { getSupabaseClient } from "@/lib/supabase";
 
-type Mailbox = "support" | "security" | "hello" | "dmarc" | "test";
+type Mailbox = ProductionMailbox;
 type FolderView = "inbox" | "starred" | "sent" | "drafts" | "archive" | "trash" | "all";
 type AccessState = "checking" | "authorized" | "denied";
 type AttachmentMeta = {
@@ -197,13 +206,6 @@ function validEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/u.test(value.trim());
 }
 
-function replyAddress(mailbox: Mailbox) {
-  if (mailbox === "security") return "security@gapwise.ca";
-  if (mailbox === "hello") return "hello@gapwise.ca";
-  if (mailbox === "dmarc") return "dmarc@gapwise.ca";
-  return "support@gapwise.ca";
-}
-
 function defaultState(threadId: string): ThreadState {
   return { thread_id: threadId, folder: "inbox", is_read: false, starred: false, labels: [] };
 }
@@ -239,6 +241,7 @@ function MailPage() {
   const { theme, toggleTheme } = useTheme();
   const [access, setAccess] = useState<AccessState>("checking");
   const [mailbox, setMailbox] = useState<Mailbox>("support");
+  const [composeMailbox, setComposeMailbox] = useState<WritableMailbox>("support");
   const [view, setView] = useState<FolderView>("inbox");
   const [messages, setMessages] = useState<MailMessage[]>([]);
   const [states, setStates] = useState<Record<string, ThreadState>>({});
@@ -473,7 +476,7 @@ function MailPage() {
         const result = await invokeOrg({
           action: "save_draft",
           draftId: composeDraftId,
-          mailbox,
+          mailbox: composeMailbox,
           recipient: compose.recipient,
           subject: compose.subject,
           text: compose.text,
@@ -487,7 +490,7 @@ function MailPage() {
       }
     }, 700);
     return () => window.clearTimeout(timer);
-  }, [compose, composeDraftId, composing, mailbox]);
+  }, [compose, composeDraftId, composeMailbox, composing]);
 
   useEffect(() => {
     if (thread.length) window.requestAnimationFrame(() => threadEndRef.current?.scrollIntoView({ block: "end" }));
@@ -555,7 +558,7 @@ function MailPage() {
     try {
       const result = await invokeMail({
         action: "send",
-        mailbox,
+        mailbox: composeMailbox,
         recipient: compose.recipient.trim(),
         subject: compose.subject.trim(),
         text: compose.text.trim(),
@@ -572,7 +575,7 @@ function MailPage() {
     } finally {
       setSending(false);
     }
-  }, [compose, composeDraftId, deleteDraft, loadAll, mailbox, sending, updateState]);
+  }, [compose, composeDraftId, composeMailbox, deleteDraft, loadAll, sending, updateState]);
 
   const downloadAttachment = useCallback(
     async (message: MailMessage, attachment: AttachmentMeta) => {
@@ -610,6 +613,9 @@ function MailPage() {
       setThread([]);
       setView("drafts");
       setComposing(true);
+      if (isWritableMailbox(draft.mailbox)) {
+        setComposeMailbox(draft.mailbox);
+      }
       setComposeDraftId(draft.id);
       setCompose({ recipient: draft.recipient ?? "", subject: draft.subject, text: draft.body });
     },
@@ -680,6 +686,9 @@ function MailPage() {
 
   const selectMailbox = (name: Mailbox) => {
     setMailbox(name);
+    if (name !== "dmarc") {
+      setComposeMailbox(name);
+    }
     setSelected(null);
     setThread([]);
     setComposing(false);
@@ -688,10 +697,11 @@ function MailPage() {
   };
 
   const startCompose = () => {
-    if (mailbox === "dmarc") return;
+    if (getMailboxConfig(mailbox).readOnly) return;
     setSelected(null);
     setThread([]);
     setComposing(true);
+    setComposeMailbox(mailbox !== "dmarc" ? mailbox : "support");
     setCompose({ recipient: "", subject: "", text: "" });
     setComposeDraftId(null);
   };
@@ -745,21 +755,21 @@ function MailPage() {
 
         <div className="px-3 pb-3 pt-3 sm:px-5 lg:px-0 lg:pb-0 lg:pt-0">
           <div className="flex items-center gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {(["support", "security", "hello", "dmarc", "test"] as const).map((name) => (
+            {MAILBOXES.map((item) => (
               <button
-                key={name}
+                key={item.id}
                 type="button"
-                onClick={() => selectMailbox(name)}
+                onClick={() => selectMailbox(item.id)}
                 className={
-                  mailbox === name
-                    ? "button-primary min-h-9 shrink-0 px-3.5 text-sm font-semibold capitalize"
-                    : "button-secondary min-h-9 shrink-0 px-3.5 text-sm font-semibold capitalize"
+                  mailbox === item.id
+                    ? "button-primary min-h-9 shrink-0 px-3.5 text-sm font-semibold"
+                    : "button-secondary min-h-9 shrink-0 px-3.5 text-sm font-semibold"
                 }
               >
-                {name}
+                {item.label}
               </button>
             ))}
-            {mailbox !== "dmarc" ? (
+            {!getMailboxConfig(mailbox).readOnly ? (
               <button
                 type="button"
                 onClick={startCompose}
@@ -813,7 +823,7 @@ function MailPage() {
 
         <div className="mx-0 grid overflow-hidden border-y border-border/70 bg-card/70 shadow-sm lg:mx-0 lg:min-h-[78vh] lg:grid-cols-[210px_380px_1fr] lg:rounded-3xl lg:border">
           <nav className="hidden border-r border-border/70 p-3 lg:block" aria-label="Mail folders">
-            {mailbox !== "dmarc" ? (
+            {!getMailboxConfig(mailbox).readOnly ? (
               <button
                 type="button"
                 onClick={startCompose}
@@ -824,7 +834,7 @@ function MailPage() {
               </button>
             ) : (
               <div className="mb-3 rounded-xl border border-border bg-muted/40 px-3 py-2 text-xs leading-5 text-muted-foreground">
-                DMARC aggregate reports are read-only.
+                {getMailboxConfig(mailbox).description ?? "This mailbox is read-only."}
               </div>
             )}
             <div className="space-y-1">
@@ -891,8 +901,8 @@ function MailPage() {
                   ref={searchRef}
                   value={query}
                   onChange={(event) => setQuery(event.target.value)}
-                  placeholder={`Search ${mailbox}…`}
-                  aria-label={`Search ${mailbox} mail`}
+                  placeholder={`Search ${getMailboxConfig(mailbox).label.toLowerCase()}…`}
+                  aria-label={`Search ${getMailboxConfig(mailbox).label} mail`}
                   className="h-10 w-full rounded-xl border border-border bg-background pl-9 pr-3 text-base outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 sm:text-sm"
                 />
               </div>
@@ -1018,7 +1028,9 @@ function MailPage() {
                   </button>
                   <div className="min-w-0 flex-1">
                     <h2 className="truncate font-display text-lg font-semibold sm:text-xl">New message</h2>
-                    <p className="mt-0.5 truncate text-[11px] text-muted-foreground sm:text-xs">From {replyAddress(mailbox)} · draft syncing</p>
+                    <p className="mt-0.5 truncate text-[11px] text-muted-foreground sm:text-xs">
+                      From {getReplyAddress(composeMailbox)} · draft syncing
+                    </p>
                   </div>
                   <button
                     type="button"
@@ -1031,7 +1043,22 @@ function MailPage() {
                 </div>
                 <div className="min-h-0 flex-1 overflow-y-auto bg-background/30 p-3 sm:p-6">
                   <div className="mx-auto max-w-3xl rounded-xl border border-border/70 bg-card p-3 shadow-sm sm:rounded-2xl sm:p-5">
-                    <label className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground" htmlFor="compose-to">
+                    <label className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground" htmlFor="compose-from">
+                      From
+                    </label>
+                    <select
+                      id="compose-from"
+                      value={composeMailbox}
+                      onChange={(event) => setComposeMailbox(event.target.value as WritableMailbox)}
+                      className="mt-1.5 h-11 w-full rounded-xl border border-border bg-background px-3 text-base outline-none focus:border-accent sm:text-sm"
+                    >
+                      {WRITABLE_MAILBOXES.map((item) => (
+                        <option key={item.id} value={item.id}>
+                          {item.senderLabel} &lt;{item.address}&gt;
+                        </option>
+                      ))}
+                    </select>
+                    <label className="mt-4 block text-[11px] font-semibold uppercase tracking-wide text-muted-foreground" htmlFor="compose-to">
                       To
                     </label>
                     <input
@@ -1300,11 +1327,11 @@ function MailPage() {
                   <div ref={threadEndRef} />
                 </div>
 
-                {selectedState?.folder !== "trash" && mailbox !== "dmarc" ? (
+                {selectedState?.folder !== "trash" && !getMailboxConfig(mailbox).readOnly ? (
                   <div className="border-t border-border/70 bg-card/95 px-3 py-2.5 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur sm:px-4 sm:py-4">
                     <div className="mb-1.5 flex items-center justify-between gap-2">
                       <label htmlFor="mail-reply" className="truncate text-[10px] font-semibold uppercase tracking-wide text-muted-foreground sm:text-xs">
-                        Reply as {replyAddress(mailbox)}
+                        Reply as {getReplyAddress(mailbox)}
                       </label>
                       <span className="hidden text-[11px] text-muted-foreground sm:inline">Draft saved privately</span>
                     </div>
