@@ -56,6 +56,63 @@ const WORD_DAY_MAP: Record<string, Day> = {
   DIM: "SU",
 };
 
+const IGNORED_WORDS = new Set([
+  "FALL",
+  "WINTER",
+  "AUTOMNE",
+  "HIVER",
+  "TERM",
+  "YEAR",
+  "DATE",
+  "WEEK",
+  "DAYS",
+  "TIME",
+  "TYPE",
+  "COURSE",
+  "COURS",
+  "SECTION",
+  "SEC",
+  "LOCATION",
+  "SALLE",
+  "LOCAL",
+  "ROOM",
+  "INSTRUCTOR",
+  "PROFESSEUR",
+  "ENSEIGNANT",
+  "LEC",
+  "TUT",
+  "LAB",
+  "PRA",
+  "SEM",
+  "DGD",
+]);
+
+const VALID_BANNER_TOKENS = new Set([
+  "MWF",
+  "TR",
+  "MW",
+  "WF",
+  "MF",
+  "MTRF",
+  "MTWR",
+  "MTWRF",
+  "M",
+  "T",
+  "W",
+  "R",
+  "F",
+  "S",
+  "U",
+  "TH",
+  "L",
+  "MA",
+  "ME",
+  "J",
+  "JE",
+  "V",
+  "D",
+]);
+
 interface ParsedBlock {
   courseCode: string;
   courseName?: string;
@@ -71,39 +128,33 @@ interface ParsedBlock {
 }
 
 function parseDays(raw: string): Day[] {
-  const upper = raw.trim().toUpperCase();
-  const days: Day[] = [];
-  const words = upper.split(/[\s,]+/);
-  for (const w of words) {
-    if (WORD_DAY_MAP[w] && !days.includes(WORD_DAY_MAP[w]!)) {
-      days.push(WORD_DAY_MAP[w]!);
-    }
+  const result: Day[] = [];
+  const wordRegex =
+    /\b(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Mon|Tue|Wed|Thu|Fri|Sat|Sun|Lundi|Mardi|Mercredi|Jeudi|Vendredi|Samedi|Dimanche|Lun|Mar|Mer|Jeu|Ven|Sam|Dim)\b/gi;
+  let wordMatch: RegExpExecArray | null;
+  while ((wordMatch = wordRegex.exec(raw)) !== null) {
+    const day = WORD_DAY_MAP[wordMatch[1]!.toUpperCase()];
+    if (day && !result.includes(day)) result.push(day);
   }
-  if (days.length > 0) return days;
+  if (result.length > 0) return result;
 
-  let i = 0;
-  while (i < upper.length) {
-    if (
-      i + 1 < upper.length &&
-      (upper.slice(i, i + 2) === "TH" ||
-        upper.slice(i, i + 2) === "MA" ||
-        upper.slice(i, i + 2) === "ME" ||
-        upper.slice(i, i + 2) === "JE")
-    ) {
-      const pair = upper.slice(i, i + 2);
-      if (BANNER_DAY_MAP[pair] && !days.includes(BANNER_DAY_MAP[pair]!)) {
-        days.push(BANNER_DAY_MAP[pair]!);
+  const tokenRegex = /\b([MTWRFSU]{1,5}|[LMAJEVDS]{1,5})\b/gi;
+  let tokenMatch: RegExpExecArray | null;
+  while ((tokenMatch = tokenRegex.exec(raw)) !== null) {
+    const token = tokenMatch[1]!.toUpperCase();
+    if (VALID_BANNER_TOKENS.has(token)) {
+      if (token === "TH" || token === "MA" || token === "ME" || token === "JE") {
+        const d = BANNER_DAY_MAP[token];
+        if (d && !result.includes(d)) result.push(d);
+      } else {
+        for (const char of token) {
+          const d = BANNER_DAY_MAP[char];
+          if (d && !result.includes(d)) result.push(d);
+        }
       }
-      i += 2;
-    } else {
-      const c = upper[i]!;
-      if (BANNER_DAY_MAP[c] && !days.includes(BANNER_DAY_MAP[c]!)) {
-        days.push(BANNER_DAY_MAP[c]!);
-      }
-      i++;
     }
   }
-  return days;
+  return result;
 }
 
 function to24Hour(raw: string): string | null {
@@ -139,7 +190,8 @@ export function parseUOttawaText(
     /(\d{1,2}:\d{2}\s*(?:AM|PM)?)\s*(?:-|–|—|to|à)\s*(\d{1,2}:\d{2}\s*(?:AM|PM)?)/i;
   const courseCodeRegex = /\b([A-Z]{3,4})\s*(\d{4})\b/i;
 
-  for (const line of lines) {
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]!;
     if (/(?:Fall|Automne)\s*\d{4}/i.test(line)) {
       currentTerm = line.match(/(?:Fall|Automne)\s*\d{4}/i)![0];
       continue;
@@ -150,7 +202,7 @@ export function parseUOttawaText(
     }
 
     const codeMatch = line.match(courseCodeRegex);
-    if (codeMatch) {
+    if (codeMatch && !IGNORED_WORDS.has(codeMatch[1]!.toUpperCase())) {
       const rawCode = `${codeMatch[1]} ${codeMatch[2]}`;
       const parsed = adapter.parseCourseCode(rawCode);
       if (parsed) {
@@ -183,6 +235,14 @@ export function parseUOttawaText(
         if (days.length === 0) days = ["MO", "WE"];
 
         let locText = afterTime.replace(/^[,\s-]+/, "").trim();
+        if (!locText && i + 1 < lines.length) {
+          const nextLine = lines[i + 1]!;
+          if (resolveLocation(nextLine, "physical", campus).buildingId) {
+            locText = nextLine.trim();
+          } else if (!nextLine.match(timeRangeRegex) && !nextLine.match(courseCodeRegex)) {
+            locText = nextLine.trim();
+          }
+        }
         if (!locText) locText = "TBA";
 
         blocks.push({
@@ -207,6 +267,13 @@ export function parseUOttawaText(
       locKind = /online|virtuel/i.test(b.locationText) ? "online" : "tba";
     }
     const resolved = resolveLocation(b.locationText, locKind, campus);
+    let location = resolved;
+    if (location.kind === "physical" && location.buildingId && location.room) {
+      const roomMatch = location.room.match(/^([A-Z0-9-]+)/i);
+      if (roomMatch) {
+        location = { ...location, room: roomMatch[1]! };
+      }
+    }
 
     const isWinter = b.termLabel?.startsWith("Winter") || b.termLabel?.startsWith("Hiver");
     const startDate = isWinter ? "2027-01-06" : "2026-09-08";
@@ -225,7 +292,7 @@ export function parseUOttawaText(
       endTime: b.endTime,
       startDate,
       endDate,
-      location: resolved,
+      location,
       source: { kind: "student-entry", recordedAt: new Date().toISOString() },
     });
   }
