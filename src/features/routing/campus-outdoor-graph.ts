@@ -117,6 +117,7 @@ export class RoutingGraph {
   readonly nodes: Map<string, [number, number]>;
   readonly adjacent: Map<string, GraphEdge[]>;
   readonly buildingIndex: Map<string, BuildingAnchor>;
+  readonly buildingAnchors: Map<string, BuildingAnchor[]>;
   readonly routeCache: Map<string, CachedPath>;
 
   constructor(campus: CampusSnapshot) {
@@ -124,6 +125,7 @@ export class RoutingGraph {
     this.nodes = new Map(campus.pathNodes.map((node) => [node.id, node.coordinate]));
     this.adjacent = new Map();
     this.buildingIndex = new Map();
+    this.buildingAnchors = new Map();
     this.routeCache = new Map();
 
     // 1. Build adjacency list from outdoor pedestrian edges
@@ -156,7 +158,8 @@ export class RoutingGraph {
           }
         }
 
-        if (nearestId && minDist <= 25) {
+        if (nearestId && minDist <= 50) {
+          this.nodes.set(entrance.pathNodeId, entrance.coordinate);
           this.addEdge(entrance.pathNodeId, nearestId, minDist);
           this.addEdge(nearestId, entrance.pathNodeId, minDist);
         }
@@ -179,17 +182,29 @@ export class RoutingGraph {
       bucket.push([nid, coord]);
     }
 
-    // 4. Precompute building anchors: mapped entrance or inferred perimeter point.
+    // 4. Precompute building anchors: mapped entrances or inferred perimeter point.
     for (const b of campus.buildings) {
       const mappedEntrances = campus.entrances.filter((e) => e.buildingId === b.id);
       // A restricted-only facility must not regain a route through an inferred
       // perimeter anchor after its restricted entrance is filtered out.
       if (mappedEntrances.length > 0 && mappedEntrances.every((e) => e.access === "restricted"))
         continue;
-      const bEntrances = usableEntrances.filter((e) => e.buildingId === b.id);
-      if (bEntrances.length > 0) {
-        const ent = bEntrances[0]!;
-        this.buildingIndex.set(b.id, {
+
+      // Filter usable entrances to those that are actually connected to the graph!
+      const connectedEntrances = usableEntrances.filter(
+        (e) => e.buildingId === b.id && (this.adjacent.get(e.pathNodeId)?.length ?? 0) > 0,
+      );
+
+      // Prefer public entrances over unknown
+      connectedEntrances.sort((a, b) => {
+        if (a.access === "public" && b.access !== "public") return -1;
+        if (b.access === "public" && a.access !== "public") return 1;
+        return 0;
+      });
+
+      const anchorsList: BuildingAnchor[] = [];
+      for (const ent of connectedEntrances) {
+        anchorsList.push({
           buildingId: b.id,
           kind: "mapped-entrance",
           accessNodeId: ent.pathNodeId,
@@ -197,6 +212,11 @@ export class RoutingGraph {
           coordinate: ent.coordinate,
           distanceToGraphMeters: 0,
         });
+      }
+
+      if (anchorsList.length > 0) {
+        this.buildingAnchors.set(b.id, anchorsList);
+        this.buildingIndex.set(b.id, anchorsList[0]!);
       } else {
         // Derive a representative perimeter point from the OSM building polygon.
         const rawCoords =
@@ -238,16 +258,18 @@ export class RoutingGraph {
             }
           }
 
-          // Only infer an outdoor anchor when a source-backed path is within 60 meters.
-          if (bestNodeId && bestVertex && minD <= 60) {
-            this.buildingIndex.set(b.id, {
+          // Only infer an outdoor anchor when a source-backed path is within 100 meters.
+          if (bestNodeId && bestVertex && minD <= 100) {
+            const anchor: BuildingAnchor = {
               buildingId: b.id,
               kind: "derived-perimeter",
               accessNodeId: bestNodeId,
               entranceId: `access-${b.id}`,
               coordinate: bestVertex,
               distanceToGraphMeters: minD,
-            });
+            };
+            this.buildingAnchors.set(b.id, [anchor]);
+            this.buildingIndex.set(b.id, anchor);
           }
         }
       }
@@ -265,6 +287,13 @@ export class RoutingGraph {
 
   getAnchor(buildingId: string): BuildingAnchor | null {
     return this.buildingIndex.get(buildingId) ?? null;
+  }
+
+  getAnchors(buildingId: string): BuildingAnchor[] {
+    const list = this.buildingAnchors.get(buildingId);
+    if (list && list.length > 0) return list;
+    const single = this.buildingIndex.get(buildingId);
+    return single ? [single] : [];
   }
 
   /**
@@ -415,11 +444,11 @@ export function routeBetweenBuildings(
   }
 
   const graph = getRoutingGraph(campus);
-  const fromAnchor = graph.getAnchor(fromBuilding.id);
-  const toAnchor = graph.getAnchor(toBuilding.id);
+  const fromAnchors = graph.getAnchors(fromBuilding.id);
+  const toAnchors = graph.getAnchors(toBuilding.id);
 
-  if (!fromAnchor || !toAnchor) {
-    const missingName = !fromAnchor ? fromBuilding.name : toBuilding.name;
+  if (fromAnchors.length === 0 || toAnchors.length === 0) {
+    const missingName = fromAnchors.length === 0 ? fromBuilding.name : toBuilding.name;
     return {
       status: "unavailable",
       reason: `${missingName} has no usable outdoor graph anchor in mapped campus data.`,
@@ -428,13 +457,49 @@ export function routeBetweenBuildings(
     };
   }
 
-  // Check in-memory route cache (keyed by anchor node pair)
-  const cacheKey = `${fromAnchor.accessNodeId}:${toAnchor.accessNodeId}`;
+  // Check in-memory route cache (keyed by building pair)
+  const cacheKey = `${fromBuilding.id}:${toBuilding.id}`;
   let cached = graph.routeCache.get(cacheKey);
 
   if (!cached) {
-    const pathResult = graph.findPath(fromAnchor.accessNodeId, toAnchor.accessNodeId);
-    if (!pathResult) {
+    let bestPath: {
+      distanceMeters: number;
+      coordinates: [number, number][];
+      fromAnchor: BuildingAnchor;
+      toAnchor: BuildingAnchor;
+    } | null = null;
+
+    for (const fromA of fromAnchors) {
+      for (const toA of toAnchors) {
+        if (fromA.accessNodeId === toA.accessNodeId) {
+          const dist = distanceMeters(fromA.coordinate, toA.coordinate);
+          if (!bestPath || dist < bestPath.distanceMeters) {
+            bestPath = {
+              distanceMeters: Math.round(dist),
+              coordinates: [fromA.coordinate, toA.coordinate],
+              fromAnchor: fromA,
+              toAnchor: toA,
+            };
+          }
+          continue;
+        }
+
+        const pathResult = graph.findPath(fromA.accessNodeId, toA.accessNodeId);
+        if (pathResult) {
+          const totalDist = pathResult.distanceMeters;
+          if (!bestPath || totalDist < bestPath.distanceMeters) {
+            bestPath = {
+              distanceMeters: Math.round(totalDist),
+              coordinates: pathResult.coordinates,
+              fromAnchor: fromA,
+              toAnchor: toA,
+            };
+          }
+        }
+      }
+    }
+
+    if (!bestPath) {
       return {
         status: "unavailable",
         reason: `No mapped outdoor pedestrian path found between ${fromBuilding.name} and ${toBuilding.name}.`,
@@ -444,9 +509,9 @@ export function routeBetweenBuildings(
     }
 
     cached = {
-      distanceMeters: Math.round(pathResult.distanceMeters),
-      coordinates: pathResult.coordinates,
-      entranceIds: [fromAnchor.entranceId, toAnchor.entranceId],
+      distanceMeters: bestPath.distanceMeters,
+      coordinates: bestPath.coordinates,
+      entranceIds: [bestPath.fromAnchor.entranceId, bestPath.toAnchor.entranceId],
     };
     graph.routeCache.set(cacheKey, cached);
   }
