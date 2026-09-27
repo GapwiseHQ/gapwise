@@ -28,9 +28,15 @@ function isTelemetryDisabled(): boolean {
   ) {
     return true;
   }
+  if (navigator.webdriver) {
+    return true;
+  }
   if (
     typeof window.location !== "undefined" &&
-    (window.location.hostname === "gapwise.test" || window.location.hostname.endsWith(".test"))
+    (window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1" ||
+      window.location.hostname === "gapwise.test" ||
+      window.location.hostname.endsWith(".test"))
   ) {
     return true;
   }
