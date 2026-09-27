@@ -88,8 +88,8 @@ function PrivacyPage() {
           Gapwise does not currently initialize product analytics or Speed Insights. Gapwise uses
           lightweight, privacy-preserving aggregate telemetry solely to understand platform capacity
           and feature reliability across supported universities. Telemetry records only coarse,
-          non-identifying aggregate event counters (such as page views, university edition selections,
-          anonymous timetable import event counts, and route calculation events).
+          non-identifying aggregate event counters (such as page views, university edition
+          selections, anonymous timetable import event counts, and route calculation events).
         </p>
         <p>
           This telemetry never records personal identity, student IDs, IP addresses, user-agent
