@@ -663,12 +663,16 @@ export function planPublicGap(input: {
   weekday: Weekday;
   startTime: number;
   endTime: number;
+  university?: string;
+  campus?: string;
   routePreferences?: Partial<RoutePreferences> | null;
   gapPreferences?: Partial<GapPreferences> | null;
 }): PublicGapPlanResponse | PublicCampusError {
   const route = routeBetweenPublicBuildings({
     from: input.from,
     to: input.to,
+    ...(input.university ? { university: input.university } : {}),
+    ...(input.campus ? { campus: input.campus } : {}),
     preferences: input.routePreferences ?? null,
   });
   if ("error" in route) return route;
