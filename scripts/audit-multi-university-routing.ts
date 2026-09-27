@@ -90,11 +90,13 @@ export type FullAuditReport = {
 // Helper: point to polygon distance approximation
 function pointToFootprintDistanceMeters(
   point: [number, number],
-  geometry: { type: string; coordinates: any },
+  geometry: { type: string; coordinates: unknown },
 ): number {
   if (!geometry) return 0;
   const rawCoords: [number, number][] =
-    geometry.type === "Polygon" ? geometry.coordinates[0] : (geometry.coordinates?.[0]?.[0] ?? []);
+    geometry.type === "Polygon"
+      ? ((geometry.coordinates as [number, number][][])?.[0] ?? [])
+      : ((geometry.coordinates as [number, number][][][])?.[0]?.[0] ?? []);
   if (!rawCoords || rawCoords.length === 0) return 0;
 
   let minD = Infinity;
@@ -405,14 +407,16 @@ export function runComprehensiveCampusAudit(): FullAuditReport {
               }
             } else {
               report.summary.totalRouteFailures++;
+              const failureReason =
+                "reason" in route && typeof route.reason === "string"
+                  ? route.reason
+                  : "message" in route && typeof route.message === "string"
+                    ? route.message
+                    : "unavailable";
               audit.routeFailures.push({
                 from: code1,
                 to: code2,
-                reason: ("reason" in route
-                  ? (route as any).reason
-                  : "message" in route
-                    ? (route as any).message
-                    : "unavailable") as string,
+                reason: failureReason,
               });
             }
           }
