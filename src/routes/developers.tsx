@@ -8,6 +8,7 @@ import {
   Package,
   Route as RouteIcon,
   ShieldCheck,
+  Terminal,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useTheme } from "@/hooks/use-preferences";
@@ -76,6 +77,13 @@ const ENTRY_POINTS = [
     body: "Typed JavaScript/TypeScript and Python clients share the same v1 contract and release validation as the API.",
     href: "https://docs.gapwise.ca/sdk/javascript/",
     label: "SDK guides",
+  },
+  {
+    icon: Terminal,
+    title: "Gapwise CLI",
+    body: "Discover universities and campus data from a terminal, or scaffold a reviewed university integration in local checkouts.",
+    href: "https://docs.gapwise.ca/cli/",
+    label: "CLI guide",
   },
   {
     icon: Braces,
@@ -190,7 +198,7 @@ function DevelopersPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {ENTRY_POINTS.map((item) => {
               const Icon = item.icon;
               return (

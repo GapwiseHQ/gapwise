@@ -158,7 +158,7 @@ Read [`PRIVACY.md`](PRIVACY.md), [`SECURITY.md`](SECURITY.md), and [`docs/PRIVAT
 | **[`status`](https://github.com/GapwiseHQ/status)** | Independent operational status monitoring and incident reporting | [status.gapwise.ca](https://status.gapwise.ca) |
 | **[`android`](https://github.com/GapwiseHQ/android)** | Native Kotlin + Jetpack Compose Android client | Android app |
 | **[`ios`](https://github.com/GapwiseHQ/ios)** | Native Swift + SwiftUI iOS client | iOS app |
-| **[`cli`](https://github.com/GapwiseHQ/cli)** | Command-line integration tooling for university scaffolding and data extraction | CLI tool |
+| **[`cli`](https://github.com/GapwiseHQ/cli)** | Public campus discovery and queries, plus university integration scaffolding | [CLI guide](https://docs.gapwise.ca/cli/) |
 | **[`.github`](https://github.com/GapwiseHQ/.github)** | Organization profile, community health files, and governance defaults | GitHub profile |
 
 ---
