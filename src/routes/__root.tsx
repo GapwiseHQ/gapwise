@@ -6,12 +6,14 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  useRouterState,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { AppErrorBoundary } from "@/components/AppErrorBoundary";
 import { AppUpdatePrompt } from "@/components/AppUpdatePrompt";
+import { trackPageView } from "@/lib/telemetry";
 import { activeUniversity } from "@/universities/registry";
 
 function NotFoundComponent() {
@@ -115,6 +117,12 @@ const PLANNED_EDITIONS: Record<string, { name: string; shortName: string }> = {}
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   const university = activeUniversity();
+  const pathname = useRouterState({ select: (state) => state.location.pathname });
+
+  useEffect(() => {
+    trackPageView(pathname, university?.id);
+  }, [pathname, university?.id]);
+
   const hostname =
     typeof window !== "undefined" ? window.location.hostname.toLowerCase().replace(/\.$/, "") : "";
   const isDev = ["localhost", "127.0.0.1", "gapwise.test"].includes(hostname);
