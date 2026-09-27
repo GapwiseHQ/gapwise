@@ -169,7 +169,15 @@ function extractLocation(
   // 1. Try standard resolver first
   const resolved = resolveLocation(clean, "physical", campus);
   if (resolved.kind === "physical" && resolved.buildingId) {
-    return resolved;
+    let cleanRoom = resolved.room;
+    if (cleanRoom) {
+      const roomMatch = cleanRoom.match(/^([A-Z0-9-]+)/i);
+      cleanRoom = roomMatch ? roomMatch[1]! : cleanRoom;
+    }
+    return {
+      ...resolved,
+      room: cleanRoom,
+    };
   }
 
   // 2. Try matching building native code + room
@@ -289,7 +297,7 @@ export function parseYorkText(
       const compMatch = line.match(/\b(LEC|TUT|LAB|PRA|SEM|DIR)\b/i);
       if (compMatch) currentComponent = compMatch[1]!.toUpperCase();
 
-      const secMatch = line.match(/\b(?:SEC|SECTION|SECT)?\s*([A-Z0-9]{1,4})\b/i);
+      const secMatch = line.match(/\b(?:SEC|SECTION|SECT)\s*([A-Z0-9]{1,4})\b/i);
       if (
         secMatch &&
         !["LEC", "TUT", "LAB", "PRA", "SEM", "DIR"].includes(secMatch[1]!.toUpperCase())
@@ -313,6 +321,10 @@ export function parseYorkText(
           for (let j = 1; j <= 2; j++) {
             if (i + j < lines.length) {
               const candidate = lines[i + j]!;
+              if (extractLocation(candidate, campus)?.buildingId) {
+                locationText = candidate;
+                break;
+              }
               if (
                 !candidate.match(
                   /\b\d{1,2}(?::\d{2})?\s*(?:am|pm)?\s*(?:-|to|–|—)\s*\d{1,2}(?::\d{2})?\s*(?:am|pm)?\b/i,
