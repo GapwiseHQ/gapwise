@@ -10,7 +10,10 @@ import {
 } from "../src/data/campuses/index.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUTPUT_FILE = resolve(__dirname, "../src/data/campuses/generated/residence-coverage-matrix.json");
+const OUTPUT_FILE = resolve(
+  __dirname,
+  "../src/data/campuses/generated/residence-coverage-matrix.json",
+);
 
 export interface ResidenceCoverageRecord {
   code: string;
@@ -87,9 +90,8 @@ export function generateResidenceCoverageMatrix(): ResidenceCoverageMatrix {
   }
 
   const totalCampuses = Object.keys(campusCoverages).length;
-  const coveragePercentage = totalCampuses > 0
-    ? Math.round((campusesWithResidence / totalCampuses) * 100)
-    : 0;
+  const coveragePercentage =
+    totalCampuses > 0 ? Math.round((campusesWithResidence / totalCampuses) * 100) : 0;
 
   return {
     schemaVersion: "1.0",
@@ -115,8 +117,12 @@ const matrix = generateResidenceCoverageMatrix();
 console.log("\n=======================================================");
 console.log("GAPWISE UNIVERSITY RESIDENCE COVERAGE MATRIX AUDIT");
 console.log("=======================================================");
-console.log(`Universities: ${matrix.summary.universitiesWithResidenceCoverage}/${matrix.summary.totalUniversities}`);
-console.log(`Campuses:     ${matrix.summary.campusesWithResidenceCoverage}/${matrix.summary.totalCampuses}`);
+console.log(
+  `Universities: ${matrix.summary.universitiesWithResidenceCoverage}/${matrix.summary.totalUniversities}`,
+);
+console.log(
+  `Campuses:     ${matrix.summary.campusesWithResidenceCoverage}/${matrix.summary.totalCampuses}`,
+);
 console.log(`Total Residences: ${matrix.summary.totalResidences}`);
 console.log(`Coverage:     ${matrix.summary.coveragePercentage}%\n`);
 
@@ -124,7 +130,9 @@ let failed = false;
 for (const [campusId, cov] of Object.entries(matrix.campuses)) {
   const status = cov.residenceCount > 0 ? "PASS" : "FAIL";
   if (cov.residenceCount === 0) failed = true;
-  console.log(`[${status}] ${cov.universityName} (${campusId}): ${cov.residenceCount} residences (${cov.totalBuildings} total buildings)`);
+  console.log(
+    `[${status}] ${cov.universityName} (${campusId}): ${cov.residenceCount} residences (${cov.totalBuildings} total buildings)`,
+  );
 }
 
 if (failed) {
@@ -140,10 +148,13 @@ if (checkOnly) {
   const existing = JSON.parse(readFileSync(OUTPUT_FILE, "utf8")) as ResidenceCoverageMatrix;
   if (
     existing.summary.totalCampuses !== matrix.summary.totalCampuses ||
-    existing.summary.campusesWithResidenceCoverage !== matrix.summary.campusesWithResidenceCoverage ||
+    existing.summary.campusesWithResidenceCoverage !==
+      matrix.summary.campusesWithResidenceCoverage ||
     existing.summary.totalResidences !== matrix.summary.totalResidences
   ) {
-    console.error("\n❌ Error: Generated residence coverage matrix is out of sync with runtime data.");
+    console.error(
+      "\n❌ Error: Generated residence coverage matrix is out of sync with runtime data.",
+    );
     process.exit(1);
   }
   console.log("\n✅ Residence coverage matrix is in sync.");

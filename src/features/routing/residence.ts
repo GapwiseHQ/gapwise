@@ -1,7 +1,4 @@
-import {
-  getResidenceBuildingForCampus,
-  type GapwiseCampusId,
-} from "../../data/campuses/index.js";
+import { getResidenceBuildingForCampus, type GapwiseCampusId } from "../../data/campuses/index.js";
 import type { BuildingConfiguration } from "../../data/utm/building-registry.js";
 import type { UserPreferences } from "../sync/preferences.js";
 import type { Meeting, Term, Weekday } from "../../lib/timetable-types.js";

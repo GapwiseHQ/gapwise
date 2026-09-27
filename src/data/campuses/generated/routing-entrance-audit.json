@@ -24,15 +24,7 @@
       "buildingsWithoutKnownEntrances": 7,
       "entranceCount": 44,
       "routableBuildings": 23,
-      "graphIsolatedBuildings": [
-        "WC",
-        "CUP",
-        "FCSH",
-        "GF",
-        "PL",
-        "BG",
-        "LH"
-      ],
+      "graphIsolatedBuildings": ["WC", "CUP", "FCSH", "GF", "PL", "BG", "LH"],
       "unanchoredBuildings": [],
       "duplicateEntrances": [],
       "detachedEntrances": [],
@@ -179,12 +171,8 @@
       "buildingsWithoutKnownEntrances": 36,
       "entranceCount": 15,
       "routableBuildings": 47,
-      "graphIsolatedBuildings": [
-        "maintenance-building"
-      ],
-      "unanchoredBuildings": [
-        "maintenance-building"
-      ],
+      "graphIsolatedBuildings": ["maintenance-building"],
+      "unanchoredBuildings": ["maintenance-building"],
       "duplicateEntrances": [],
       "detachedEntrances": [],
       "routePairsAttempted": 45,

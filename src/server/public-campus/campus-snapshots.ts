@@ -56,11 +56,33 @@ type RawBuilding = {
 };
 
 const UTSG_RESIDENCE_CODES = new Set([
-  "013", "029", "064", "101", "131", "133", "158", "505", "505A", "506", "508",
-  "518", "575", "608", "790", "791", "BR", "TC", "WE", "WI", "WO"
+  "013",
+  "029",
+  "064",
+  "101",
+  "131",
+  "133",
+  "158",
+  "505",
+  "505A",
+  "506",
+  "508",
+  "518",
+  "575",
+  "608",
+  "790",
+  "791",
+  "BR",
+  "TC",
+  "WE",
+  "WI",
+  "WO",
 ]);
 
-function formatExternalRegistry(rawList: RawBuilding[], campusId?: string): BuildingConfiguration[] {
+function formatExternalRegistry(
+  rawList: RawBuilding[],
+  campusId?: string,
+): BuildingConfiguration[] {
   return rawList
     .filter((b) => b.status !== "inactive")
     .map((b) => ({

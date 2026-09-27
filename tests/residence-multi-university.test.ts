@@ -78,7 +78,9 @@ describe("First-class multi-university residence platform", () => {
 
     // UTSG
     expect(getResidenceBuildingForCampus("utsg", "013")?.name).toBe("Whitney Hall");
-    expect(getResidenceBuildingForCampus("utsg", "158")?.name).toBe("Chestnut Residence and Conference Centre");
+    expect(getResidenceBuildingForCampus("utsg", "158")?.name).toBe(
+      "Chestnut Residence and Conference Centre",
+    );
 
     // UTSC
     expect(getResidenceBuildingForCampus("utsc", "JF")?.name).toBe("Joan Foley Hall");
@@ -89,7 +91,9 @@ describe("First-class multi-university residence platform", () => {
 
     // TMU
     expect(getResidenceBuildingForCampus("tmu", "PIT")?.name).toBe("Pitman Hall");
-    expect(getResidenceBuildingForCampus("tmu", "ILC")?.name).toBe("International Living/Learning Centre");
+    expect(getResidenceBuildingForCampus("tmu", "ILC")?.name).toBe(
+      "International Living/Learning Centre",
+    );
 
     // Queen's
     expect(getResidenceBuildingForCampus("queens", "CHO")?.name).toBe("Chown Hall");
@@ -104,7 +108,9 @@ describe("First-class multi-university residence platform", () => {
     expect(getResidenceBuildingForCampus("keele", "POND")?.name).toBe("The Pond Road Residence");
 
     // McMaster
-    expect(getResidenceBuildingForCampus("mcmaster", "PGCLL")?.name).toBe("Peter George Centre for Living and Learning");
+    expect(getResidenceBuildingForCampus("mcmaster", "PGCLL")?.name).toBe(
+      "Peter George Centre for Living and Learning",
+    );
     expect(getResidenceBuildingForCampus("mcmaster", "BATES")?.name).toBe("Bates Residence");
 
     // Western
