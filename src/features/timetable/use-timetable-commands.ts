@@ -11,6 +11,7 @@ import type { RestoredSource } from "@/features/sync/restoration-decisions";
 import type { RestorationState } from "@/features/sync/restoration";
 import { setCloudRestoreSuppressed } from "@/features/sync/restore-preference";
 import type { Meeting } from "@/lib/timetable-types";
+import { trackTimetableImport } from "@/lib/telemetry";
 import { activeUniversity } from "@/universities/registry";
 import { loadDemoTimetable } from "@/universities/timetable-adapters";
 import {
@@ -94,6 +95,7 @@ export function useTimetableCommands(input: TimetableCommandInput) {
         );
         input.setWarnings(result.warnings);
         input.setIsDemo(false);
+        trackTimetableImport("file", activeUniversity()?.id);
       } catch (error) {
         const message = timetableImportError(error);
         if (previousMeetings?.length) {
@@ -133,6 +135,7 @@ export function useTimetableCommands(input: TimetableCommandInput) {
       input.setRestoration("restored-memory");
       input.setRestorationMessage(null);
       input.setIsDemo(true);
+      trackTimetableImport("demo", activeUniversity()?.id);
     } finally {
       input.setLoading(false);
     }

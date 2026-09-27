@@ -47,6 +47,7 @@ import {
   type UserPreferences,
 } from "@/features/sync/preferences";
 import { useIntroDismissed, useTheme } from "@/hooks/use-preferences";
+import { trackFeatureView, trackTimetableImport } from "@/lib/telemetry";
 import { activeUniversity } from "@/universities/registry";
 import type { Meeting } from "@/lib/timetable-types";
 import { isEncryptedPrivateCloudAuthoritative } from "@/features/security/private-cloud-mode";
@@ -254,6 +255,10 @@ function AppLayout() {
     window.addEventListener("scroll", updateScrollState, { passive: true });
     return () => window.removeEventListener("scroll", updateScrollState);
   }, []);
+
+  useEffect(() => {
+    trackFeatureView(destination, university?.id);
+  }, [destination, university?.id]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
