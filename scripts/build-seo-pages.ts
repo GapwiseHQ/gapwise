@@ -189,7 +189,7 @@ const PAGES: readonly SeoPage[] = [
     path: "/terms",
     title: "Terms — Gapwise",
     description:
-      "Terms and important notices for the independent Gapwise timetable, gap-planning, and campus-routing application for University of Toronto students.",
+      "Terms and important notices for the independent Gapwise timetable, gap-planning, and campus-routing application across supported Canadian universities.",
     heading: "Gapwise terms and notices",
     detail:
       "Gapwise is an independent student project. Review the current product terms and notices without implying University of Toronto approval or endorsement.",
