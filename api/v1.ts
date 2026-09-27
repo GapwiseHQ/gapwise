@@ -402,7 +402,8 @@ async function adaptLegacy(
   });
 }
 
-export async function fetchV1(request: Request, now = new Date()) {
+export async function fetchV1(request: Request, maybeNow?: unknown) {
+  const now = maybeNow instanceof Date ? maybeNow : new Date();
   const id = requestId();
   try {
     if (request.method === "OPTIONS")
