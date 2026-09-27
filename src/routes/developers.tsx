@@ -24,7 +24,8 @@ export const Route = createFileRoute("/developers")({
       { property: "og:title", content: "Gapwise Developers" },
       {
         property: "og:description",
-        content: "The developer gateway for Gapwise API, SDKs, open campus data, docs, and AI/MCP across Canadian universities.",
+        content:
+          "The developer gateway for Gapwise API, SDKs, open campus data, docs, and AI/MCP across Canadian universities.",
       },
     ],
   }),
@@ -120,9 +121,9 @@ function DevelopersPage() {
                 Build with the campus layer behind Gapwise.
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground">
-                Use the stable API and SDKs for deterministic campus intelligence across 11 supported
-                universities, Gapwise Data for canonical campus models and raw artifacts, or the separate
-                AI/MCP surface for explicitly delegated student context.
+                Use the stable API and SDKs for deterministic campus intelligence across 11
+                supported universities, Gapwise Data for canonical campus models and raw artifacts,
+                or the separate AI/MCP surface for explicitly delegated student context.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2" aria-label="Platform properties">
