@@ -306,7 +306,9 @@ export function getResidenceBuildingForCampus(
   const normalized = code.trim().toUpperCase();
   return (
     campusResidenceBuildings(campusId).find(
-      (building) => building.code.toUpperCase() === normalized,
+      (building) =>
+        building.code.toUpperCase() === normalized ||
+        (building.aliases ?? []).some((a) => a.toUpperCase() === normalized),
     ) ?? null
   );
 }

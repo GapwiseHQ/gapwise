@@ -61,7 +61,8 @@ import {
   type AcademicState,
 } from "@/features/academic/state";
 import { plannedWorkMeetings } from "@/features/academic/integration";
-import { CAMPUS_SHORT_LABELS, getResidenceBuildingForCampus } from "@/data/campuses";
+import { CAMPUS_SHORT_LABELS } from "@/data/campuses";
+import { getResidenceBuildingForCampus } from "@/data/campuses/residence-registry";
 import { getCampusAccessPoint } from "@/data/utm/campus-access-points";
 
 const DayRoute = lazy(() =>
