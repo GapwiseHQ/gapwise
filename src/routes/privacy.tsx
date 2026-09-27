@@ -87,18 +87,19 @@ function PrivacyPage() {
         <p>
           Gapwise uses lightweight, privacy-preserving aggregate telemetry solely to understand
           platform capacity and feature reliability across supported universities. Telemetry records
-          only coarse, non-identifying aggregate event counters (such as page views, university edition
-          selections, anonymous timetable import event counts, and route calculation events).
+          only coarse, non-identifying aggregate event counters (such as page views, university
+          edition selections, anonymous timetable import event counts, and route calculation
+          events).
         </p>
         <p>
           This telemetry never records personal identity, student IDs, IP addresses, user-agent
           identifiers, course codes, class times, schedule details, or precise location coordinates.
-          Gapwise unconditionally respects browser Do Not Track (DNT) and Global Privacy Control (GPC)
-          signals by dropping telemetry completely when enabled.
+          Gapwise unconditionally respects browser Do Not Track (DNT) and Global Privacy Control
+          (GPC) signals by dropping telemetry completely when enabled.
         </p>
         <p>
-          Gapwise uses browser local storage for guest data, preferences, sessions, encrypted records,
-          and cryptographic keys.
+          Gapwise uses browser local storage for guest data, preferences, sessions, encrypted
+          records, and cryptographic keys.
         </p>
       </section>
       <section>

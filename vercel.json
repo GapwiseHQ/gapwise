@@ -234,6 +234,10 @@
       "destination": "/api/health?view=version"
     },
     {
+      "source": "/api/telemetry",
+      "destination": "/api/health?view=telemetry"
+    },
+    {
       "source": "/v1",
       "destination": "/api/v1?resource=root"
     },

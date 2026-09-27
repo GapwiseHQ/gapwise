@@ -1,4 +1,5 @@
 import { jsonResponse, logEvent, requestIdFrom, safeError } from "./_lib/observability.js";
+import { handleTelemetry } from "./_lib/telemetry.js";
 
 const UPSTREAM_TIMEOUT_MS = 2500;
 
@@ -42,11 +43,19 @@ function versionResponse(requestId: string) {
 export default {
   async fetch(request: Request) {
     const requestId = requestIdFrom(request);
+    const url = new URL(request.url);
+
+    if (request.method === "POST") {
+      if (url.searchParams.get("view") === "telemetry" || url.pathname.endsWith("/telemetry")) {
+        return handleTelemetry(request, requestId);
+      }
+      return jsonResponse(requestId, { error: "method_not_allowed" }, 405);
+    }
+
     if (request.method !== "GET" && request.method !== "HEAD") {
       return jsonResponse(requestId, { error: "method_not_allowed" }, 405);
     }
 
-    const url = new URL(request.url);
     if (url.searchParams.get("view") === "version") {
       return versionResponse(requestId);
     }

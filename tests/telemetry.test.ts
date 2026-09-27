@@ -1,5 +1,6 @@
 import { describe, expect, test } from "bun:test";
-import telemetryHandler from "../api/telemetry";
+import telemetryHandler from "../api/_lib/telemetry";
+import healthHandler from "../api/health";
 import {
   trackCampusSelection,
   trackFeatureView,
@@ -9,6 +10,18 @@ import {
 } from "../src/lib/telemetry";
 
 describe("Privacy-First Anonymous Telemetry Endpoint", () => {
+  test("health endpoint dispatches telemetry requests on ?view=telemetry", async () => {
+    const request = new Request("https://gapwise.ca/api/health?view=telemetry", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ type: "page_view", path: "/" }),
+    });
+    const response = await healthHandler.fetch(request);
+    expect(response.status).toBe(200);
+    const body = await response.json();
+    expect(body.ok).toBe(true);
+  });
+
   test("rejects non-POST methods with 405", async () => {
     const request = new Request("https://gapwise.ca/api/telemetry", { method: "GET" });
     const response = await telemetryHandler.fetch(request);
