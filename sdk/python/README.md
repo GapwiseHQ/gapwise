@@ -22,6 +22,14 @@ from gapwise import Gapwise
 
 with Gapwise() as gapwise:
     info = gapwise.info()
+    universities = gapwise.universities.list()
+    campuses = gapwise.campuses.list()
+
+    # Query buildings and routes for Carleton University
+    carleton_buildings = gapwise.buildings.list(university="carleton")
+    carleton_route = gapwise.routes.calculate(from_building="TB", to_building="ML", university="carleton")
+
+    # Query UTM (default)
     mn = gapwise.buildings.get("MN")
     buildings = gapwise.buildings.list(q="instructional", category="academic")
     places = gapwise.places.list(building="HM", kind="library")

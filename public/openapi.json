@@ -448,7 +448,7 @@
           "Buildings"
         ],
         "operationId": "listBuildings",
-        "summary": "Search and list canonical UTM buildings",
+        "summary": "Search and list canonical buildings across supported universities and campuses",
         "parameters": [
           {
             "name": "q",
