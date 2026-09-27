@@ -153,7 +153,8 @@ export default {
 
       const routePreferences = optionalRoutePreferences(body["routePreferences"]);
       const gapPreferences = optionalGapPreferences(body["gapPreferences"]);
-      const university = typeof body["university"] === "string" ? body["university"].trim() : undefined;
+      const university =
+        typeof body["university"] === "string" ? body["university"].trim() : undefined;
       const campus = typeof body["campus"] === "string" ? body["campus"].trim() : undefined;
       const result = planPublicGap({
         from,
