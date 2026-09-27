@@ -1,4 +1,4 @@
-import { getResidenceBuildingForCampus, type GapwiseCampusId } from "../../data/campuses/index.js";
+import { getResidenceBuildingForCampus } from "../../server/public-campus/campus-snapshots.js";
 import type { BuildingConfiguration } from "../../data/utm/building-registry.js";
 import type { UserPreferences } from "../sync/preferences.js";
 import type { Meeting, Term, Weekday } from "../../lib/timetable-types.js";
@@ -7,7 +7,7 @@ const HOME_MEETING_PREFIX = "gapwise-home:";
 
 export function selectedResidence(preferences: UserPreferences): BuildingConfiguration | null {
   if (preferences.dayOrigin !== "residence") return null;
-  const campusId = preferences.mainCampus as GapwiseCampusId | undefined;
+  const campusId = preferences.mainCampus;
   if (!campusId) return null;
   const code = preferences.residenceBuildingCode;
   if (!code) return null;

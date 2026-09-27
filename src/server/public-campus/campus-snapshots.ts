@@ -124,6 +124,25 @@ export function campusBuildingConfigurations(campusId: string): BuildingConfigur
   return CAMPUS_BUILDING_CONFIGURATIONS[campusId.toLowerCase()] ?? [];
 }
 
+export function campusResidenceBuildings(campusId: string): BuildingConfiguration[] {
+  return campusBuildingConfigurations(campusId).filter(
+    (building) => building.category === "residence",
+  );
+}
+
+export function getResidenceBuildingForCampus(
+  campusId: string,
+  code: string | null | undefined,
+): BuildingConfiguration | null {
+  if (!code) return null;
+  const normalized = code.trim().toUpperCase();
+  return (
+    campusResidenceBuildings(campusId).find(
+      (building) => building.code.toUpperCase() === normalized,
+    ) ?? null
+  );
+}
+
 export function getCampusBuildingIdentity(
   campusId: string,
   value: string | null,
