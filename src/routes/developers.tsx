@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useTheme } from "@/hooks/use-preferences";
+import { activeUniversity } from "@/universities/registry";
 
 export const Route = createFileRoute("/developers")({
   head: () => ({
@@ -104,7 +105,8 @@ function DevelopersPage() {
               <img src="/logo-mark.svg" alt="" aria-hidden="true" />
             </span>
             <span className="inline-flex items-center gap-2 font-display text-base font-semibold tracking-[-0.035em]">
-              Gapwise <span className="brand-scope-pill">U of T</span>
+              Gapwise{" "}
+              <span className="brand-scope-pill">{activeUniversity()?.shortName ?? "Campus"}</span>
             </span>
           </Link>
           <ThemeToggle theme={theme} onToggle={toggleTheme} />

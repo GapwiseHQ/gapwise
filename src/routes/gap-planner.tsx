@@ -1,12 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PublicFeaturePage } from "@/components/PublicFeaturePage";
-import { PUBLIC_FEATURE_PAGES } from "@/content/public-feature-pages";
+import { PUBLIC_FEATURE_PAGES, editionFeatureMetadata } from "@/content/public-feature-pages";
+import { activeUniversity } from "@/universities/registry";
 
 const page = PUBLIC_FEATURE_PAGES.gaps;
 
 export const Route = createFileRoute("/gap-planner")({
-  head: () => ({
-    meta: [{ title: page.seoTitle }, { name: "description", content: page.description }],
-  }),
+  head: () => {
+    const { seoTitle, description } = editionFeatureMetadata(
+      page,
+      activeUniversity()?.name ?? "University of Toronto",
+    );
+    return { meta: [{ title: seoTitle }, { name: "description", content: description }] };
+  },
   component: () => <PublicFeaturePage page={page} />,
 });
