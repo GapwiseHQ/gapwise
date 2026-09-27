@@ -185,14 +185,21 @@ export function externalBuildingView(
 export function listPublicBuildings(options?: {
   university?: string;
   campus?: string;
+  category?: string;
 }): PublicBuildingView[] {
   const resolved = resolveUniversityAndCampus(options?.university, options?.campus);
   if (!resolved) return [];
-  if (resolved.campusId === "utm") {
-    return publicCampusBuildings().map(publicBuildingView);
+  const views =
+    resolved.campusId === "utm"
+      ? publicCampusBuildings().map(publicBuildingView)
+      : campusBuildingConfigurations(resolved.campusId).map((b) =>
+          externalBuildingView(b, resolved.campusId, resolved.university.id),
+        );
+  if (options?.category) {
+    const target = options.category.toLowerCase().trim();
+    return views.filter((b) => b.category?.toLowerCase() === target);
   }
-  const configs = campusBuildingConfigurations(resolved.campusId);
-  return configs.map((b) => externalBuildingView(b, resolved.campusId, resolved.university.id));
+  return views;
 }
 
 export function getPublicBuilding(

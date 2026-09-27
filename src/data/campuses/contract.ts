@@ -6,6 +6,7 @@ export interface CampusBuilding {
   name: string;
   nativeCodes: string[];
   aliases: string[];
+  category?: "academic" | "residence" | "facility";
   geometry: { type: "Polygon" | "MultiPolygon"; coordinates: unknown[] } | null;
   provenance?: SourceReference[];
 }

@@ -1,0 +1,771 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-09-27T14:05:18.722Z",
+  "summary": {
+    "totalUniversities": 11,
+    "totalCampuses": 13,
+    "totalBuildings": 561,
+    "totalResidences": 124,
+    "universitiesWithResidenceCoverage": 11,
+    "campusesWithResidenceCoverage": 13,
+    "coveragePercentage": 100
+  },
+  "campuses": {
+    "utm": {
+      "universityId": "uoft",
+      "universityName": "University of Toronto",
+      "campusId": "utm",
+      "campusName": "University of Toronto Mississauga",
+      "totalBuildings": 30,
+      "residenceCount": 9,
+      "residences": [
+        {
+          "code": "EH",
+          "name": "Erindale Hall",
+          "aliases": ["ERINDALE HALL", "ERINDALE HALL RESIDENCE"]
+        },
+        {
+          "code": "LL",
+          "name": "Leacock Lane",
+          "aliases": ["R", "LEACOCK LANE", "LEACOCK LANE RESIDENCE"]
+        },
+        {
+          "code": "MV",
+          "name": "MaGrath Valley",
+          "aliases": ["MAGRATH VALLEY", "MAGRATH VALLEY RESIDENCE"]
+        },
+        {
+          "code": "MC",
+          "name": "McLuhan Court",
+          "aliases": ["MCLUHAN COURT", "MCLUHAN COURT RESIDENCE"]
+        },
+        {
+          "code": "OPH",
+          "name": "Oscar Peterson Hall",
+          "aliases": ["OSCAR PETERSON HALL"]
+        },
+        {
+          "code": "PP",
+          "name": "Putnam Place",
+          "aliases": ["PUTNAM PLACE", "PUTNAM PLACE RESIDENCE"]
+        },
+        {
+          "code": "RIH",
+          "name": "Roy Ivor Hall",
+          "aliases": ["ROY IVOR HALL", "ROY IVOR HALL RESIDENCE"]
+        },
+        {
+          "code": "SW",
+          "name": "Schreiberwood",
+          "aliases": ["SCHREIBERWOOD", "SCHREIBERWOOD RESIDENCE"]
+        },
+        {
+          "code": "NRB",
+          "name": "New Residence Building",
+          "aliases": ["NEW RESIDENCE BUILDING"]
+        }
+      ]
+    },
+    "utsg": {
+      "universityId": "uoft",
+      "universityName": "University of Toronto",
+      "campusId": "utsg",
+      "campusName": "University of Toronto St. George",
+      "totalBuildings": 166,
+      "residenceCount": 21,
+      "residences": [
+        {
+          "code": "013",
+          "name": "Whitney Hall",
+          "aliases": ["013"]
+        },
+        {
+          "code": "029",
+          "name": "Sir Daniel Wilson Residence",
+          "aliases": ["029"]
+        },
+        {
+          "code": "064",
+          "name": "Graduate House",
+          "aliases": ["Graduate House", "064"]
+        },
+        {
+          "code": "101",
+          "name": "Morrison Hall",
+          "aliases": ["Morrison Hall", "101"]
+        },
+        {
+          "code": "131",
+          "name": "New College III",
+          "aliases": ["131"]
+        },
+        {
+          "code": "133",
+          "name": "Innis College Student Residence",
+          "aliases": ["133"]
+        },
+        {
+          "code": "158",
+          "name": "Chestnut Residence and Conference Centre",
+          "aliases": ["Chestnut Residence", "Chestnut Residence and Conference Centre", "158"]
+        },
+        {
+          "code": "505",
+          "name": "Burwash Residence (Lower Houses)",
+          "aliases": ["505"]
+        },
+        {
+          "code": "505A",
+          "name": "Burwash Residence (Upper Houses)",
+          "aliases": ["505A"]
+        },
+        {
+          "code": "506",
+          "name": "Annesley Hall",
+          "aliases": ["506"]
+        },
+        {
+          "code": "508",
+          "name": "Margaret Addison Hall",
+          "aliases": ["508"]
+        },
+        {
+          "code": "518",
+          "name": "Rowell Jackman Hall",
+          "aliases": ["518"]
+        },
+        {
+          "code": "575",
+          "name": "Knox College",
+          "aliases": ["575"]
+        },
+        {
+          "code": "608",
+          "name": "St. Hilda's College",
+          "aliases": ["608"]
+        },
+        {
+          "code": "790",
+          "name": "University Family Housing — C1",
+          "aliases": ["Charles Street West-30", "790"]
+        },
+        {
+          "code": "791",
+          "name": "University Family Housing — C2",
+          "aliases": ["Charles Street West-35", "791"]
+        },
+        {
+          "code": "BR",
+          "name": "Brennan Hall",
+          "aliases": ["BR"]
+        },
+        {
+          "code": "TC",
+          "name": "Trinity College",
+          "aliases": ["Trinity College Main Building", "TC", "600"]
+        },
+        {
+          "code": "WE",
+          "name": "Wetmore Hall-New College",
+          "aliases": ["Wetmore Hall", "WE", "032"]
+        },
+        {
+          "code": "WI",
+          "name": "Wilson Hall-New College",
+          "aliases": ["Wilson Hall", "WI", "032A"]
+        },
+        {
+          "code": "WO",
+          "name": "Woodsworth College Residence",
+          "aliases": ["Woodsworth College Residence", "WO", "130"]
+        }
+      ]
+    },
+    "utsc": {
+      "universityId": "uoft",
+      "universityName": "University of Toronto",
+      "campusId": "utsc",
+      "campusName": "University of Toronto Scarborough",
+      "totalBuildings": 54,
+      "residenceCount": 15,
+      "residences": [
+        {
+          "code": "A",
+          "name": "Aspen",
+          "aliases": []
+        },
+        {
+          "code": "B",
+          "name": "Birch",
+          "aliases": []
+        },
+        {
+          "code": "C",
+          "name": "Cedar",
+          "aliases": []
+        },
+        {
+          "code": "D",
+          "name": "Dogwood",
+          "aliases": []
+        },
+        {
+          "code": "E",
+          "name": "Elm",
+          "aliases": []
+        },
+        {
+          "code": "F",
+          "name": "Fir",
+          "aliases": ["Fir Hall"]
+        },
+        {
+          "code": "G",
+          "name": "Grey Pine",
+          "aliases": []
+        },
+        {
+          "code": "H",
+          "name": "Hickory",
+          "aliases": ["Hickory Hall"]
+        },
+        {
+          "code": "I",
+          "name": "Ironwood",
+          "aliases": []
+        },
+        {
+          "code": "J",
+          "name": "Juniper",
+          "aliases": []
+        },
+        {
+          "code": "JF",
+          "name": "Joan Foley Hall",
+          "aliases": []
+        },
+        {
+          "code": "K",
+          "name": "Koa",
+          "aliases": []
+        },
+        {
+          "code": "L",
+          "name": "Larch",
+          "aliases": []
+        },
+        {
+          "code": "M",
+          "name": "Maple",
+          "aliases": []
+        },
+        {
+          "code": "N",
+          "name": "Harmony Commons",
+          "aliases": []
+        }
+      ]
+    },
+    "carleton": {
+      "universityId": "carleton",
+      "universityName": "Carleton University",
+      "campusId": "carleton",
+      "campusName": "Carleton University",
+      "totalBuildings": 48,
+      "residenceCount": 12,
+      "residences": [
+        {
+          "code": "GH",
+          "name": "Glengarry House",
+          "aliases": ["glengarry-house", "Glengarry Residence"]
+        },
+        {
+          "code": "PH",
+          "name": "Prescott House",
+          "aliases": ["prescott-house", "Prescott Residence"]
+        },
+        {
+          "code": "LE",
+          "name": "Leeds House",
+          "aliases": ["leeds-house", "Leeds Residence"]
+        },
+        {
+          "code": "FR",
+          "name": "Frontenac House",
+          "aliases": ["frontenac-house", "Frontenac Residence"]
+        },
+        {
+          "code": "LX",
+          "name": "Lennox and Addington House",
+          "aliases": ["lennox-and-addington-house", "Lennox & Addington Residence"]
+        },
+        {
+          "code": "GR",
+          "name": "Grenville House",
+          "aliases": ["grenville-house", "Grenville Residence"]
+        },
+        {
+          "code": "RU",
+          "name": "Russell House",
+          "aliases": ["russell-house", "Russell Residence"]
+        },
+        {
+          "code": "DH",
+          "name": "Dundas House",
+          "aliases": ["dundas-house", "Dundas Residence"]
+        },
+        {
+          "code": "SH",
+          "name": "Stormont House",
+          "aliases": ["stormont-house", "Stormont Residence"]
+        },
+        {
+          "code": "RH",
+          "name": "Renfrew House",
+          "aliases": ["renfrew-house", "Renfrew Residence"]
+        },
+        {
+          "code": "LH",
+          "name": "Lanark House",
+          "aliases": ["lanark-house", "Lanark Residence"]
+        },
+        {
+          "code": "RIDEAU-HOUSE",
+          "name": "Rideau House",
+          "aliases": ["rideau-house", "Rideau Residence"]
+        }
+      ]
+    },
+    "tmu": {
+      "universityId": "tmu",
+      "universityName": "Toronto Metropolitan University",
+      "campusId": "tmu",
+      "campusName": "Toronto Metropolitan University",
+      "totalBuildings": 30,
+      "residenceCount": 2,
+      "residences": [
+        {
+          "code": "PIT",
+          "name": "Pitman Hall",
+          "aliases": ["pit", "Pitman Hall Residence"]
+        },
+        {
+          "code": "ILC",
+          "name": "International Living/Learning Centre",
+          "aliases": ["ilc", "ILLC", "International Living-Learning Centre"]
+        }
+      ]
+    },
+    "queens": {
+      "universityId": "queens",
+      "universityName": "Queen's University",
+      "campusId": "queens",
+      "campusName": "Queen's University",
+      "totalBuildings": 38,
+      "residenceCount": 8,
+      "residences": [
+        {
+          "code": "CHO",
+          "name": "Chown Hall",
+          "aliases": ["chown-hall", "Chown Hall Residence"]
+        },
+        {
+          "code": "WTT",
+          "name": "Watts Hall",
+          "aliases": ["watts-hall", "Watts Hall Residence"]
+        },
+        {
+          "code": "MOR",
+          "name": "Morris Hall",
+          "aliases": ["morris-hall", "Morris Hall Residence"]
+        },
+        {
+          "code": "BAN",
+          "name": "Ban Righ Hall",
+          "aliases": ["ban-righ-hall", "Ban Righ", "Ban Righ Residence"]
+        },
+        {
+          "code": "SMIT",
+          "name": "David C. Smith House",
+          "aliases": ["david-c-smith-house", "Smith House", "Smith House Residence"]
+        },
+        {
+          "code": "BRNT",
+          "name": "Brant House",
+          "aliases": ["brant-house", "Brant House Residence"]
+        },
+        {
+          "code": "ADE",
+          "name": "Adelaide Hall",
+          "aliases": ["adelaide-hall", "Adelaide Hall Residence"]
+        },
+        {
+          "code": "HRK",
+          "name": "Harkness Hall",
+          "aliases": ["harkness-hall", "Harkness", "Harkness Hall Residence"]
+        }
+      ]
+    },
+    "waterloo": {
+      "universityId": "laurier",
+      "universityName": "Wilfrid Laurier University",
+      "campusId": "waterloo",
+      "campusName": "Wilfrid Laurier University",
+      "totalBuildings": 28,
+      "residenceCount": 9,
+      "residences": [
+        {
+          "code": "KSR",
+          "name": "King Street Residence",
+          "aliases": ["king-street-residence", "King Street Residence"]
+        },
+        {
+          "code": "BR",
+          "name": "Bricker Residence",
+          "aliases": ["bricker-residence", "Bricker Residence"]
+        },
+        {
+          "code": "WR",
+          "name": "Willison Residence",
+          "aliases": ["willison-residence", "Willison Residence"]
+        },
+        {
+          "code": "LHR",
+          "name": "Little House Residence",
+          "aliases": ["little-house", "Little House Residence"]
+        },
+        {
+          "code": "MH",
+          "name": "MacDonald House",
+          "aliases": ["macdonald-house", "MacDonald House Residence"]
+        },
+        {
+          "code": "CMH",
+          "name": "Claudette Millar Hall",
+          "aliases": ["claudette-millar-hall", "Claudette Millar Hall Residence"]
+        },
+        {
+          "code": "BOU",
+          "name": "Bouckaert Residence",
+          "aliases": ["bouckaert-residence", "Bouckaert Hall"]
+        },
+        {
+          "code": "EUL",
+          "name": "Euler Residence",
+          "aliases": ["euler-residence", "Euler Hall"]
+        },
+        {
+          "code": "LEO",
+          "name": "Leopold Residence",
+          "aliases": ["leopold-residence", "Leopold Hall"]
+        }
+      ]
+    },
+    "keele": {
+      "universityId": "york",
+      "universityName": "York University",
+      "campusId": "keele",
+      "campusName": "York University",
+      "totalBuildings": 37,
+      "residenceCount": 10,
+      "residences": [
+        {
+          "code": "VC",
+          "name": "Vanier College",
+          "aliases": ["vanier-college", "Vanier", "Vanier Residence"]
+        },
+        {
+          "code": "FC",
+          "name": "Founders College",
+          "aliases": ["founders-college", "Founders", "Founders Residence"]
+        },
+        {
+          "code": "MC",
+          "name": "McLaughlin College",
+          "aliases": ["mclaughlin-college", "McLaughlin", "McLaughlin Residence"]
+        },
+        {
+          "code": "BC",
+          "name": "Norman Bethune College",
+          "aliases": ["bethune-college", "Bethune", "Norman Bethune Residence", "Bethune Residence"]
+        },
+        {
+          "code": "CC",
+          "name": "Calumet College",
+          "aliases": ["calumet-college", "Calumet", "Calumet Residence"]
+        },
+        {
+          "code": "SC",
+          "name": "Stong College",
+          "aliases": ["stong-college", "Stong", "Stong Residence"]
+        },
+        {
+          "code": "WC",
+          "name": "Winters College",
+          "aliases": ["winters-college", "Winters", "Winters Residence"]
+        },
+        {
+          "code": "POND",
+          "name": "The Pond Road Residence",
+          "aliases": ["pond-road-residence", "Pond Residence"]
+        },
+        {
+          "code": "PASSY",
+          "name": "Passy Crescent",
+          "aliases": ["passy-crescent", "Passy Gardens", "Passy Crescent Apartments"]
+        },
+        {
+          "code": "TATH",
+          "name": "Tatham Hall",
+          "aliases": ["tatham-hall", "Tatham Hall Residence"]
+        }
+      ]
+    },
+    "mcmaster": {
+      "universityId": "mcmaster",
+      "universityName": "McMaster University",
+      "campusId": "mcmaster",
+      "campusName": "McMaster University",
+      "totalBuildings": 42,
+      "residenceCount": 11,
+      "residences": [
+        {
+          "code": "PGCLL",
+          "name": "Peter George Centre for Living and Learning",
+          "aliases": [
+            "peter-george-centre",
+            "PGCL",
+            "PGC",
+            "Peter George Centre for Living and Learning",
+            "PGCLL Residence"
+          ]
+        },
+        {
+          "code": "BATES",
+          "name": "Bates Residence",
+          "aliases": ["bates-residence", "Bates"]
+        },
+        {
+          "code": "BRAN",
+          "name": "Brandon Hall",
+          "aliases": ["brandon-hall", "Brandon Hall Residence"]
+        },
+        {
+          "code": "EDW",
+          "name": "Edwards Hall",
+          "aliases": ["edwards-hall", "Edwards Hall Residence"]
+        },
+        {
+          "code": "KEYES",
+          "name": "Mary E. Keyes Residence",
+          "aliases": ["mary-e-keyes-residence", "Mary Keyes", "Keyes"]
+        },
+        {
+          "code": "MAT",
+          "name": "Matthews Hall",
+          "aliases": ["matthews-hall", "Matthews Hall Residence"]
+        },
+        {
+          "code": "MCKAY",
+          "name": "McKay Hall",
+          "aliases": ["mckay-hall", "McKay Hall Residence"]
+        },
+        {
+          "code": "MOULT",
+          "name": "Moulton Hall",
+          "aliases": ["moulton-hall", "Moulton Hall Residence"]
+        },
+        {
+          "code": "WALL",
+          "name": "Wallingford Hall",
+          "aliases": ["wallingford-hall", "Wallingford Hall Residence"]
+        },
+        {
+          "code": "WHID",
+          "name": "Whidden Hall",
+          "aliases": ["whidden-hall", "Whidden Hall Residence"]
+        },
+        {
+          "code": "WOOD",
+          "name": "Woodstock Hall",
+          "aliases": ["woodstock-hall", "Woodstock Hall Residence"]
+        }
+      ]
+    },
+    "western": {
+      "universityId": "western",
+      "universityName": "Western University",
+      "campusId": "western",
+      "campusName": "Western University",
+      "totalBuildings": 27,
+      "residenceCount": 7,
+      "residences": [
+        {
+          "code": "LH",
+          "name": "London Hall",
+          "aliases": ["london-hall", "London Hall Residence"]
+        },
+        {
+          "code": "EH",
+          "name": "Essex Hall",
+          "aliases": ["essex-hall", "Essex Hall Residence"]
+        },
+        {
+          "code": "SMH",
+          "name": "Saugeen-Maitland Hall",
+          "aliases": ["saugeen-maitland-hall", "Saugeen Maitland Hall (Residence)", "Saugeen"]
+        },
+        {
+          "code": "DH",
+          "name": "Delaware Hall",
+          "aliases": ["delaware-hall", "Delaware Hall (Residence)"]
+        },
+        {
+          "code": "ELG",
+          "name": "Elgin Hall",
+          "aliases": ["elgin-hall", "Elgin Hall (Residence)"]
+        },
+        {
+          "code": "OHR",
+          "name": "Ontario Hall Residence",
+          "aliases": ["ontario-hall-residence", "Ontario Hall"]
+        },
+        {
+          "code": "PH",
+          "name": "Perth Hall",
+          "aliases": ["perth-hall", "Perth Hall Residence"]
+        }
+      ]
+    },
+    "guelph": {
+      "universityId": "guelph",
+      "universityName": "University of Guelph",
+      "campusId": "guelph",
+      "campusName": "University of Guelph",
+      "totalBuildings": 20,
+      "residenceCount": 6,
+      "residences": [
+        {
+          "code": "JH",
+          "name": "Johnston Hall",
+          "aliases": ["johnston-hall", "Johnston Hall Residence"]
+        },
+        {
+          "code": "SR",
+          "name": "South Residence",
+          "aliases": ["south-residence", "Mountain", "Prairie", "Maritime", "South"]
+        },
+        {
+          "code": "MH",
+          "name": "Mills Hall",
+          "aliases": ["mills-hall", "Mills Hall Residence"]
+        },
+        {
+          "code": "WH",
+          "name": "Watson Hall",
+          "aliases": ["watson-hall", "Watson Hall Residence"]
+        },
+        {
+          "code": "LA",
+          "name": "Lennox and Addington Hall",
+          "aliases": ["lennox-addington-hall", "Lennox-Addington", "Lennox/Addington Hall"]
+        },
+        {
+          "code": "LAMB",
+          "name": "Lambton Hall",
+          "aliases": ["lambton-hall", "Lambton Hall Residence"]
+        }
+      ]
+    },
+    "uottawa": {
+      "universityId": "uottawa",
+      "universityName": "University of Ottawa",
+      "campusId": "uottawa",
+      "campusName": "University of Ottawa",
+      "totalBuildings": 25,
+      "residenceCount": 8,
+      "residences": [
+        {
+          "code": "90U",
+          "name": "90 University",
+          "aliases": ["90-university", "90 University Residence", "90U Residence"]
+        },
+        {
+          "code": "HS",
+          "name": "Hyman Soloway Residence",
+          "aliases": ["hyman-soloway", "Hyman Soloway"]
+        },
+        {
+          "code": "STN",
+          "name": "Stanton Residence",
+          "aliases": ["stanton-residence", "Stanton"]
+        },
+        {
+          "code": "MRD",
+          "name": "Marchand Residence",
+          "aliases": ["marchand-residence", "Marchand"]
+        },
+        {
+          "code": "THN",
+          "name": "Thompson Residence",
+          "aliases": ["thompson-residence", "Thompson"]
+        },
+        {
+          "code": "MAN",
+          "name": "45 Mann Residence",
+          "aliases": ["45-mann-residence", "45 Mann"]
+        },
+        {
+          "code": "HND",
+          "name": "Henderson Residence",
+          "aliases": ["henderson-residence", "Henderson"]
+        },
+        {
+          "code": "LBL",
+          "name": "LeBlanc Residence",
+          "aliases": ["leblanc-residence", "LeBlanc"]
+        }
+      ]
+    },
+    "brock": {
+      "universityId": "brock",
+      "universityName": "Brock University",
+      "campusId": "brock",
+      "campusName": "Brock University",
+      "totalBuildings": 16,
+      "residenceCount": 6,
+      "residences": [
+        {
+          "code": "DEC",
+          "name": "DeCew Residence",
+          "aliases": ["decew-residence", "DeCew"]
+        },
+        {
+          "code": "LOW",
+          "name": "Lowenberger Residence",
+          "aliases": ["lowenberger-residence", "Lowenberger"]
+        },
+        {
+          "code": "EARP",
+          "name": "Alan Earp Residence",
+          "aliases": ["alan-earp-residence", "Earp", "Earp Residence"]
+        },
+        {
+          "code": "VAL",
+          "name": "Gordon & Betty Vallee Residence",
+          "aliases": ["vallee-residence", "Vallee Residence", "Vallee"]
+        },
+        {
+          "code": "QVR",
+          "name": "Quarry View Residence",
+          "aliases": ["quarry-view-residence", "Quarry View"]
+        },
+        {
+          "code": "RES8",
+          "name": "Residence 8",
+          "aliases": ["residence-8"]
+        }
+      ]
+    }
+  }
+}

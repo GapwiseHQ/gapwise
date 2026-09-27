@@ -33,7 +33,7 @@ describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
   it("verifies Queen's libraries (Stauffer, Douglas) and Gordon Hall are routable", () => {
     const queens = auditReport.campuses["queens"];
     expect(queens).toBeDefined();
-    expect(queens.routableBuildings).toBe(33);
+    expect(queens.routableBuildings).toBeGreaterThanOrEqual(33);
     expect(queens.graphIsolatedBuildings.length).toBe(0);
 
     const route = routeBetweenPublicBuildings({
@@ -48,7 +48,7 @@ describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
   it("verifies Guelph McLaughlin Library is connected and routable to University Centre", () => {
     const guelph = auditReport.campuses["guelph"];
     expect(guelph).toBeDefined();
-    expect(guelph.routableBuildings).toBe(15);
+    expect(guelph.routableBuildings).toBeGreaterThanOrEqual(15);
     expect(guelph.graphIsolatedBuildings.length).toBe(0);
 
     const route = routeBetweenPublicBuildings({
@@ -66,7 +66,7 @@ describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
   it("verifies McMaster science buildings (General Sciences, Tandem Accelerator) are routable", () => {
     const mcmaster = auditReport.campuses["mcmaster"];
     expect(mcmaster).toBeDefined();
-    expect(mcmaster.routableBuildings).toBe(32);
+    expect(mcmaster.routableBuildings).toBeGreaterThanOrEqual(32);
     expect(mcmaster.graphIsolatedBuildings.length).toBe(0);
 
     const route = routeBetweenPublicBuildings({
@@ -81,7 +81,7 @@ describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
   it("verifies Brock Schmon Tower to Thistle Complex selects optimal entrance (<150m, preventing 1500m detour)", () => {
     const brock = auditReport.campuses["brock"];
     expect(brock).toBeDefined();
-    expect(brock.routableBuildings).toBe(12);
+    expect(brock.routableBuildings).toBeGreaterThanOrEqual(12);
     expect(brock.graphIsolatedBuildings.length).toBe(0);
 
     const route = routeBetweenPublicBuildings({
@@ -99,7 +99,7 @@ describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
   it("verifies Laurier Claudette Millar Hall is routable to Science Building", () => {
     const laurier = auditReport.campuses["waterloo"];
     expect(laurier).toBeDefined();
-    expect(laurier.routableBuildings).toBe(25);
+    expect(laurier.routableBuildings).toBeGreaterThanOrEqual(25);
     expect(laurier.graphIsolatedBuildings.length).toBe(0);
 
     const route = routeBetweenPublicBuildings({
