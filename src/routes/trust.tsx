@@ -28,9 +28,9 @@ function TrustPage() {
     >
       <section>
         <p>
-          Gapwise is an independent student project for University of Toronto students. It is not an
-          official University of Toronto service and does not claim university review, sponsorship,
-          endorsement, certification, or procurement approval. This page separates
+          Gapwise is an independent student project for students at supported Canadian universities.
+          It is not an official university service and does not claim university review,
+          sponsorship, endorsement, certification, or procurement approval. This page separates
           implementation-backed facts from operating commitments and items that still require
           provider, legal, or human confirmation.
         </p>

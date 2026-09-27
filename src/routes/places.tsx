@@ -1,21 +1,43 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, MapPinned } from "lucide-react";
 import { listCampusPlaces } from "@/features/campus-state/snapshot";
+import { activeUniversity } from "@/universities/registry";
 
 export const Route = createFileRoute("/places")({
-  head: () => ({
-    meta: [
-      { title: "Campus places — Gapwise" },
-      {
-        name: "description",
-        content: "Source-backed UTM dining, study, service and recreation places.",
-      },
-    ],
-  }),
+  head: () => {
+    const university = activeUniversity();
+    const isUoft = university?.id === "uoft";
+    return {
+      meta: [
+        { title: isUoft ? "UTM Campus Places — Gapwise" : "Campus Places — Gapwise" },
+        {
+          name: "description",
+          content: isUoft
+            ? "Source-backed UTM dining, study, service and recreation places."
+            : `Explore campus maps and available place coverage for ${university?.name ?? "supported universities"}.`,
+        },
+      ],
+    };
+  },
   component: PlacesPage,
 });
 
 function PlacesPage() {
+  const university = activeUniversity();
+  if (university?.id !== "uoft") {
+    return (
+      <main className="mx-auto max-w-2xl px-4 py-16 text-center">
+        <h1 className="font-display text-3xl font-semibold">Campus places</h1>
+        <p className="mt-4 text-muted-foreground">
+          Place listings are not available for {university?.name ?? "this edition"} yet. Explore the
+          campus map for source-backed building information.
+        </p>
+        <Link to="/campus-map" className="button-primary mt-6 inline-flex px-4 py-2">
+          Explore campus map
+        </Link>
+      </main>
+    );
+  }
   const places = listCampusPlaces();
   return (
     <div className="min-h-screen bg-background text-foreground">

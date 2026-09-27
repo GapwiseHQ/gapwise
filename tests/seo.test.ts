@@ -1,6 +1,8 @@
 import { describe, expect, test } from "bun:test";
 import { readFile } from "node:fs/promises";
 import { listCampusPlaces } from "../src/features/campus-state/snapshot";
+import { PUBLIC_FEATURE_PAGES, editionFeatureMetadata } from "../src/content/public-feature-pages";
+import universities from "../universities.json" with { type: "json" };
 
 const SITE_ORIGIN = "https://gapwise.ca";
 const FEATURE_PATHS = [
@@ -22,6 +24,26 @@ function pngDimensions(bytes: Buffer) {
 }
 
 describe("Gapwise searchability and entity metadata", () => {
+  test("shared feature metadata uses only the active institution", () => {
+    const pages = [
+      PUBLIC_FEATURE_PAGES.about,
+      PUBLIC_FEATURE_PAGES.map,
+      PUBLIC_FEATURE_PAGES.gaps,
+      PUBLIC_FEATURE_PAGES.routing,
+    ];
+    for (const university of universities.universities) {
+      for (const page of pages) {
+        const metadata = editionFeatureMetadata(page, university.name);
+        expect(`${metadata.seoTitle} ${metadata.description}`).toContain(university.name);
+        for (const other of universities.universities) {
+          if (other.id !== university.id) {
+            expect(`${metadata.seoTitle} ${metadata.description}`).not.toContain(other.name);
+          }
+        }
+      }
+    }
+  });
+
   test("publishes a focused sitemap with substantive public feature and place pages", async () => {
     const sitemap = await readFile("public/sitemap.xml", "utf8");
     const locations = sitemapLocations(sitemap);

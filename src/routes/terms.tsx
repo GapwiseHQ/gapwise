@@ -20,10 +20,10 @@ function TermsPage() {
       <section>
         <h2>Independent project</h2>
         <p>
-          Gapwise is an independent, open-source student utility. It is not an official University
-          of Toronto service and is not endorsed by or affiliated with the University of Toronto.
+          Gapwise is an independent, open-source student utility. It is not an official service of
+          any supported university and is not endorsed by or affiliated with those institutions.
           These terms apply to use of the hosted Gapwise service. They do not create a relationship
-          with the University.
+          with any university.
         </p>
       </section>
       <section>

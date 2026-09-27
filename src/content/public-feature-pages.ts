@@ -21,14 +21,14 @@ export const PUBLIC_FEATURE_PAGES = {
     title: "A campus planner built around the time between classes.",
     seoTitle: "About Gapwise — Multi-University Student Planning",
     description:
-      "See how Gapwise connects university timetables, gap planning, and source-backed campus context in one focused student-built product for U of T, Carleton, TMU, Queen's, Laurier, York, McMaster, Western, Guelph, uOttawa, and Brock.",
+      "See how Gapwise connects university timetables, gap planning, and source-backed campus context in one focused student-built product across Canada.",
     lead: "Gapwise is built for the part of university life a timetable leaves blank: what to do next, how much time you actually have, and where you need to go.",
     sections: [
       {
         title: "One day, one system",
         body: "Your timetable, gaps, buildings, routes, and academic work stay connected instead of living in separate tools.",
         bullets: [
-          "Timetable import for U of T (ACORN), Carleton, TMU, Queen's, Laurier, York, McMaster, Western, Guelph, uOttawa, and Brock",
+          "Timetable import across supported universities",
           "Gap budgets between classes",
           "Source-backed campus building maps",
           "Academic work planning",
@@ -40,7 +40,7 @@ export const PUBLIC_FEATURE_PAGES = {
       },
       {
         title: "Made for multiple universities",
-        body: "Timetable identity and source-backed building maps are supported for all eleven universities. Pedestrian routing, verified entrances, and campus places are currently most complete for UTM.",
+        body: "Timetable identity and source-backed building maps are supported for all eleven universities. Pedestrian routing, verified entrances, and campus places vary by campus and are shown only where supported.",
       },
     ],
   },
@@ -73,8 +73,8 @@ export const PUBLIC_FEATURE_PAGES = {
     title: "Explore campus with a map built around your day.",
     seoTitle: "University Campus Map — Gapwise",
     description:
-      "Explore source-backed campus building maps for University of Toronto (Mississauga, St. George, Scarborough), Carleton, TMU, Queen's, Laurier, York, McMaster, Western, Guelph, uOttawa, and Brock — with pedestrian routes and schedule context where supported.",
-    lead: "The Gapwise campus explorer connects campus buildings and schedule context. Verified entrance, place, and pedestrian-route coverage is currently most complete for UTM.",
+      "Explore source-backed campus building maps across supported Canadian universities, with pedestrian routes and schedule context where supported.",
+    lead: "The Gapwise campus explorer connects campus buildings and schedule context. Entrance, place, and pedestrian-route coverage varies by campus.",
     sections: [
       {
         title: "Explore without setup",
@@ -82,7 +82,7 @@ export const PUBLIC_FEATURE_PAGES = {
       },
       {
         title: "Buildings and routes connected",
-        body: "Canonical building identities across all supported campuses feed the same model used by Today and Gap Plan. UTM also has first-party pedestrian routing.",
+        body: "Canonical building identities across all supported campuses feed the same model used by Today and Gap Plan. Pedestrian routing is available on supported campuses.",
       },
       {
         title: "Made for the next move",
@@ -94,9 +94,9 @@ export const PUBLIC_FEATURE_PAGES = {
     path: "/gap-planner",
     eyebrow: "Gap planner",
     title: "A two-hour gap is not always two hours of usable time.",
-    seoTitle: "University of Toronto Gap Planner — Gapwise",
+    seoTitle: "University Gap Planner — Gapwise",
     description:
-      "See usable time between University of Toronto classes after supported travel, transition buffers, setup, pack-up, meals, and campus context with Gapwise.",
+      "See usable time between university classes after supported travel, transition buffers, setup, pack-up, meals, and campus context with Gapwise.",
     lead: "Gap Plan turns the empty space between classes into a practical time budget, with the next commitment already accounted for.",
     sections: [
       {
@@ -117,9 +117,9 @@ export const PUBLIC_FEATURE_PAGES = {
     path: "/campus-routing",
     eyebrow: "Campus routing",
     title: "Know the move before the next class.",
-    seoTitle: "UTM Campus Routing — Gapwise",
+    seoTitle: "University Campus Routing — Gapwise",
     description:
-      "Plan routes between supported UTM buildings with travel time, distance, accessibility options, and timetable context in Gapwise.",
+      "Plan routes between supported campus buildings with travel time, distance, accessibility options, and timetable context in Gapwise.",
     lead: "Gapwise connects campus movement to the schedule so a route is not just a line on a map: it is part of the time budget before the next commitment.",
     sections: [
       {
@@ -132,7 +132,7 @@ export const PUBLIC_FEATURE_PAGES = {
       },
       {
         title: "One campus model",
-        body: "The same UTM building and route data powers the map, timetable context, Today view, and Gap Plan.",
+        body: "The same campus building and route data powers the map, timetable context, Today view, and Gap Plan where routing is supported.",
       },
     ],
   },
@@ -160,3 +160,31 @@ export const PUBLIC_FEATURE_PAGES = {
     ],
   },
 } as const satisfies Record<string, PublicFeaturePage>;
+
+/** Keep client-side head tags and generated edition pages in sync. */
+export function editionFeatureMetadata(page: PublicFeaturePage, universityName: string) {
+  switch (page.path) {
+    case "/about":
+      return {
+        seoTitle: `About Gapwise — ${universityName}`,
+        description: `See how Gapwise connects ${universityName} timetables, gap planning, and source-backed campus context in one focused student-built product.`,
+      };
+    case "/campus-map":
+      return {
+        seoTitle: `${universityName} Campus Map — Gapwise`,
+        description: `Explore source-backed campus building maps for ${universityName} — with schedule context and pedestrian routing where supported.`,
+      };
+    case "/gap-planner":
+      return {
+        seoTitle: `${universityName} Gap Planner — Gapwise`,
+        description: `See usable time between ${universityName} classes after supported travel, transition buffers, setup, pack-up, meals, and campus context with Gapwise.`,
+      };
+    case "/campus-routing":
+      return {
+        seoTitle: `${universityName} Campus Routing — Gapwise`,
+        description: `Plan routes between supported ${universityName} campus buildings with travel time, distance, and timetable context in Gapwise.`,
+      };
+    default:
+      return { seoTitle: page.seoTitle, description: page.description };
+  }
+}

@@ -3,9 +3,11 @@ import { ArrowLeft, ExternalLink, MapPinned } from "lucide-react";
 import { getRecognizedBuilding } from "@/data/utm/building-registry";
 import { evaluateOpenNow } from "@/features/campus-state/hours";
 import { getCampusPlace, getCampusSource } from "@/features/campus-state/snapshot";
+import { activeUniversity } from "@/universities/registry";
 
 export const Route = createFileRoute("/places/$placeId")({
   loader: ({ params }) => {
+    if (activeUniversity()?.id !== "uoft") throw notFound();
     const place = getCampusPlace(params.placeId);
     if (!place) throw notFound();
     return place;

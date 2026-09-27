@@ -407,7 +407,10 @@ for (const uniId of ALL_UNIVERSITY_IDS) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
-  const expectedAlt = `Gapwise — ${escapedName}`;
+  const expectedAlt =
+    uniId === "uoft"
+      ? "Gapwise — University timetable and campus navigation"
+      : `Gapwise — ${escapedName}`;
 
   requireText(html, `<meta property="og:image" content="${expectedImage}" />`, `${uniId} og:image`);
   requireText(
@@ -456,6 +459,40 @@ for (const uniId of ALL_UNIVERSITY_IDS) {
     }
     if (ogImageMatch.includes("gapwise.ca/og-gapwise.png")) {
       throw new Error(`${uniId} leaks U of T og-gapwise.png in og:image: ${ogImageMatch}`);
+    }
+  }
+}
+
+// Inspect every public edition page, not only the homepage. One university must never
+// appear in another university edition's title, description, social tags, or fallback body.
+for (const uniId of UNIVERSITY_IDS) {
+  const ownName = ALL_UNIVERSITY_NAMES[uniId];
+  const pages: Array<[string, string]> = [
+    ["/", `dist/_universities/${uniId}/index.html`],
+    ...COMMON_SEO_PATHS.map((path): [string, string] => [
+      path,
+      `dist/_universities/${uniId}/_seo/${path.slice(1)}.html`,
+    ]),
+  ];
+  for (const [path, file] of pages) {
+    const html = (await readFile(file, "utf8")).replace(
+      /<script(?![^>]*application\/ld\+json)[^>]*>[\s\S]*?<\/script>/g,
+      "",
+    );
+    for (const [otherId, otherName] of Object.entries(ALL_UNIVERSITY_NAMES)) {
+      if (otherId === uniId) continue;
+      if (html.includes(otherName)) {
+        throw new Error(`${uniId} ${path} leaks ${otherName}`);
+      }
+    }
+    if (/\b(?:UTM|UTSG|UTSC|U of T|ACORN)\b/i.test(html)) {
+      throw new Error(`${uniId} ${path} leaks U of T campus or timetable identity`);
+    }
+    if (
+      path === "/" ||
+      ["/about", "/campus-map", "/gap-planner", "/campus-routing"].includes(path)
+    ) {
+      requireText(html, ownName.replaceAll("'", "&#39;"), `${uniId} ${path} institution identity`);
     }
   }
 }

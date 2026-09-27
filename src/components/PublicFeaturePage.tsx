@@ -1,5 +1,6 @@
 import { ArrowRight, ExternalLink } from "lucide-react";
 import type { PublicFeaturePage as PublicFeaturePageData } from "@/content/public-feature-pages";
+import { activeUniversity } from "@/universities/registry";
 
 const RESOURCE_LINKS = [
   ["/utm-timetable", "Timetable"],
@@ -11,6 +12,12 @@ const RESOURCE_LINKS = [
 ] as const;
 
 export function PublicFeaturePage({ page }: { page: PublicFeaturePageData }) {
+  const university = activeUniversity();
+  const relatedLinks = RESOURCE_LINKS.filter(
+    ([href]) =>
+      href !== page.path &&
+      (university?.id === "uoft" || (href !== "/utm-timetable" && href !== "/acorn-import")),
+  );
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b border-border bg-background">
@@ -99,7 +106,7 @@ export function PublicFeaturePage({ page }: { page: PublicFeaturePageData }) {
         <section className="mt-14 border-t border-border pt-8">
           <p className="eyebrow text-muted-foreground">Explore Gapwise</p>
           <nav className="mt-4 flex flex-wrap gap-2" aria-label="Related Gapwise pages">
-            {RESOURCE_LINKS.filter(([href]) => href !== page.path).map(([href, label]) => (
+            {relatedLinks.map(([href, label]) => (
               <a
                 key={href}
                 href={href}
