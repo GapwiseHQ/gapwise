@@ -55,15 +55,22 @@ type RawBuilding = {
   status?: string;
 };
 
-function formatExternalRegistry(rawList: RawBuilding[]): BuildingConfiguration[] {
+const UTSG_RESIDENCE_CODES = new Set([
+  "013", "029", "064", "101", "131", "133", "158", "505", "505A", "506", "508",
+  "518", "575", "608", "790", "791", "BR", "TC", "WE", "WI", "WO"
+]);
+
+function formatExternalRegistry(rawList: RawBuilding[], campusId?: string): BuildingConfiguration[] {
   return rawList
     .filter((b) => b.status !== "inactive")
     .map((b) => ({
       code: b.code.toUpperCase(),
       name: b.name,
-      category: (b.category === "residence" || b.category === "academic"
-        ? b.category
-        : "facility") as BuildingConfiguration["category"],
+      category: (campusId === "utsg" && UTSG_RESIDENCE_CODES.has(b.code)
+        ? "residence"
+        : b.category === "residence" || b.category === "academic"
+          ? b.category
+          : "facility") as BuildingConfiguration["category"],
       aliases: unique([
         ...(b.aliases ?? []),
         ...(b.timetableCodes ?? []),
@@ -74,15 +81,17 @@ function formatExternalRegistry(rawList: RawBuilding[]): BuildingConfiguration[]
 
 const CAMPUS_BUILDING_CONFIGURATIONS: Record<string, BuildingConfiguration[]> = {
   utm: UTM_BUILDINGS,
-  utsg: formatExternalRegistry(utsgBuildings.buildings as RawBuilding[]),
-  utsc: formatExternalRegistry(utscBuildings.buildings as RawBuilding[]),
+  utsg: formatExternalRegistry(utsgBuildings.buildings as RawBuilding[], "utsg"),
+  utsc: formatExternalRegistry(utscBuildings.buildings as RawBuilding[], "utsc"),
   ...Object.fromEntries(
     Object.entries(CAMPUS_SNAPSHOTS).map(([id, snapshot]) => [
       id,
       snapshot.buildings.map((b) => ({
         code: (b.nativeCodes[0] ?? b.id).toUpperCase(),
         name: b.name,
-        category: "facility" as const,
+        category: (b.category === "residence" || b.category === "academic"
+          ? b.category
+          : "facility") as BuildingConfiguration["category"],
         aliases: unique([b.id, ...(b.aliases ?? []), ...b.nativeCodes.slice(1)]),
       })),
     ]),

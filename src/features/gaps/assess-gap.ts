@@ -727,6 +727,7 @@ export function planGapAssessment(
         weekday: gap.weekday,
         time: gap.startTime,
         position: "gap",
+        campus: routePreferences.mainCampus ?? "UTM",
       })
     : null;
   const residenceTrip = home

@@ -151,7 +151,8 @@
           "nativeId": "ML",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "tory-building",
@@ -244,7 +245,8 @@
           "nativeId": "TB",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "dunton-tower",
@@ -409,7 +411,8 @@
           "nativeId": "DT",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "paterson-hall",
@@ -500,7 +503,8 @@
           "nativeId": "PA",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "southam-hall",
@@ -635,7 +639,8 @@
           "nativeId": "SA",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "azrieli-theatre",
@@ -722,7 +727,8 @@
           "nativeId": "AT",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "azrieli-pavilion",
@@ -817,7 +823,8 @@
           "nativeId": "AP",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "steacie-building",
@@ -934,7 +941,8 @@
           "nativeId": "SC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "herzberg-laboratories",
@@ -1567,7 +1575,8 @@
           "nativeId": "HP",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "minto-centre",
@@ -1713,7 +1722,8 @@
           "nativeId": "MC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "mackenzie-building",
@@ -1950,7 +1960,8 @@
           "nativeId": "ME",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "canal-building",
@@ -2021,7 +2032,8 @@
           "nativeId": "CB",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "architecture-building",
@@ -2088,7 +2100,8 @@
           "nativeId": "AA",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "richcraft-hall",
@@ -2257,7 +2270,8 @@
           "nativeId": "RB",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "human-computer-interaction-building",
@@ -2390,7 +2404,8 @@
           "nativeId": "HC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "visualization-simulation-building",
@@ -2535,7 +2550,8 @@
           "nativeId": "VS",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "arise-building",
@@ -2598,7 +2614,8 @@
           "nativeId": "AB",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "health-sciences-building",
@@ -2669,7 +2686,8 @@
           "nativeId": "HS",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "loeb-building",
@@ -2980,7 +2998,8 @@
           "nativeId": "LA",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "social-sciences-research-building",
@@ -3029,7 +3048,8 @@
           "nativeId": "SR",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "nesbitt-building",
@@ -3226,7 +3246,8 @@
           "nativeId": "NB",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "st-patricks-building",
@@ -3372,7 +3393,8 @@
           "nativeId": "SP",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "nideyinan-centre",
@@ -3551,7 +3573,8 @@
           "nativeId": "NN",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "pigiarvik",
@@ -3621,7 +3644,8 @@
           "nativeId": "PK",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "nicol-building",
@@ -3734,7 +3758,8 @@
           "nativeId": "NI",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "national-wildlife-research-centre",
@@ -3887,7 +3912,8 @@
           "nativeId": "NW",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "carleton-technology-training-centre",
@@ -4012,7 +4038,8 @@
           "nativeId": "TT",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "engineering-design-center",
@@ -4096,7 +4123,8 @@
           "nativeId": "way/1112168819",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "maintenance-building",
@@ -4347,7 +4375,8 @@
           "nativeId": "MB",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "athletics-building",
@@ -4492,7 +4521,8 @@
           "nativeId": "AC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "norm-fenn-gym",
@@ -4559,7 +4589,8 @@
           "nativeId": "GY",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "fieldhouse",
@@ -4622,7 +4653,8 @@
           "nativeId": "FH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "alumni-hall",
@@ -4771,7 +4803,8 @@
           "nativeId": "AH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "carleton-ice-house",
@@ -4892,7 +4925,8 @@
           "nativeId": "IH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "tennis-centre",
@@ -4939,7 +4973,8 @@
           "nativeId": "TD",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "glengarry-house",
@@ -4947,7 +4982,9 @@
       "nativeCodes": [
         "GH"
       ],
-      "aliases": [],
+      "aliases": [
+        "Glengarry Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -5086,7 +5123,8 @@
           "nativeId": "GH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "prescott-house",
@@ -5094,7 +5132,9 @@
       "nativeCodes": [
         "PH"
       ],
-      "aliases": [],
+      "aliases": [
+        "Prescott Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -5513,7 +5553,8 @@
           "nativeId": "PH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "leeds-house",
@@ -5521,7 +5562,9 @@
       "nativeCodes": [
         "LE"
       ],
-      "aliases": [],
+      "aliases": [
+        "Leeds Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -6004,7 +6047,8 @@
           "nativeId": "LE",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "frontenac-house",
@@ -6012,7 +6056,9 @@
       "nativeCodes": [
         "FR"
       ],
-      "aliases": [],
+      "aliases": [
+        "Frontenac Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -6195,7 +6241,8 @@
           "nativeId": "FR",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "lennox-and-addington-house",
@@ -6203,7 +6250,9 @@
       "nativeCodes": [
         "LX"
       ],
-      "aliases": [],
+      "aliases": [
+        "Lennox & Addington Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -6322,7 +6371,8 @@
           "nativeId": "LX",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "grenville-house",
@@ -6330,7 +6380,9 @@
       "nativeCodes": [
         "GR"
       ],
-      "aliases": [],
+      "aliases": [
+        "Grenville Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -6657,7 +6709,8 @@
           "nativeId": "GR",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "russell-house",
@@ -6665,7 +6718,9 @@
       "nativeCodes": [
         "RU"
       ],
-      "aliases": [],
+      "aliases": [
+        "Russell Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -6972,7 +7027,8 @@
           "nativeId": "RU",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "dundas-house",
@@ -6980,7 +7036,9 @@
       "nativeCodes": [
         "DH"
       ],
-      "aliases": [],
+      "aliases": [
+        "Dundas Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -7207,7 +7265,8 @@
           "nativeId": "DH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "stormont-house",
@@ -7215,7 +7274,9 @@
       "nativeCodes": [
         "SH"
       ],
-      "aliases": [],
+      "aliases": [
+        "Stormont Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -7442,7 +7503,8 @@
           "nativeId": "SH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "renfrew-house",
@@ -7450,7 +7512,9 @@
       "nativeCodes": [
         "RH"
       ],
-      "aliases": [],
+      "aliases": [
+        "Renfrew Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -7713,7 +7777,8 @@
           "nativeId": "RH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "lanark-house",
@@ -7721,7 +7786,9 @@
       "nativeCodes": [
         "LH"
       ],
-      "aliases": [],
+      "aliases": [
+        "Lanark Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -8024,7 +8091,8 @@
           "nativeId": "LH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "teraanga-commons",
@@ -8150,13 +8218,16 @@
           "nativeId": "TC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "rideau-house",
       "name": "Rideau House",
       "nativeCodes": [],
-      "aliases": [],
+      "aliases": [
+        "Rideau Residence"
+      ],
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -8242,7 +8313,8 @@
           "nativeId": "way/1223914681",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     }
   ],
   "entrances": [

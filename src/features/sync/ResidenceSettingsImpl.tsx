@@ -243,11 +243,9 @@ export function ResidenceSettings({
               ))}
             </select>
             <span className="mt-2 block text-xs font-normal leading-relaxed text-muted-foreground">
-              {preferences.mainCampus === "utm"
-                ? "Residence approaches come from the bundled campus map. Unverified doors are clearly marked in route details."
-                : preferences.mainCampus
-                  ? `${CAMPUS_SHORT_LABELS[preferences.mainCampus]} residence selection is saved now. Residence-to-class routing is only enabled when that campus route data is supported.`
-                  : "Choose a campus before selecting a residence."}
+              {preferences.mainCampus
+                ? `Residence approaches for ${CAMPUS_SHORT_LABELS[preferences.mainCampus] ?? "campus"} come from verified campus data. Unverified doors are clearly marked in route details.`
+                : "Choose a campus before selecting a residence."}
             </span>
           </label>
         ) : preferences.mainCampus &&

@@ -1,17 +1,20 @@
-import { UTM_BUILDINGS } from "../../data/utm/building-registry.js";
+import {
+  getResidenceBuildingForCampus,
+  type GapwiseCampusId,
+} from "../../data/campuses/index.js";
+import type { BuildingConfiguration } from "../../data/utm/building-registry.js";
 import type { UserPreferences } from "../sync/preferences.js";
 import type { Meeting, Term, Weekday } from "../../lib/timetable-types.js";
 
 const HOME_MEETING_PREFIX = "gapwise-home:";
 
-export function selectedResidence(preferences: UserPreferences) {
-  if (preferences.dayOrigin !== "residence" || preferences.mainCampus !== "utm") return null;
+export function selectedResidence(preferences: UserPreferences): BuildingConfiguration | null {
+  if (preferences.dayOrigin !== "residence") return null;
+  const campusId = preferences.mainCampus as GapwiseCampusId | undefined;
+  if (!campusId) return null;
   const code = preferences.residenceBuildingCode;
   if (!code) return null;
-  return (
-    UTM_BUILDINGS.find((building) => building.category === "residence" && building.code === code) ??
-    null
-  );
+  return getResidenceBuildingForCampus(campusId, code);
 }
 
 export function createResidenceMeeting({
@@ -20,12 +23,14 @@ export function createResidenceMeeting({
   weekday,
   time,
   position,
+  campus,
 }: {
   buildingCode: string;
   term: Term;
   weekday: Weekday;
   time: number;
   position: "start" | "end" | "gap";
+  campus?: string | null;
 }): Meeting {
   return {
     id: `${HOME_MEETING_PREFIX}${position}:${term}:${weekday}:${buildingCode}:${time}`,
@@ -38,7 +43,7 @@ export function createResidenceMeeting({
     weekday,
     buildingCode,
     room: null,
-    campus: "UTM",
+    campus: campus ? campus.toUpperCase() : "UTM",
     term,
     locationUnknown: false,
     locationType: "physical",

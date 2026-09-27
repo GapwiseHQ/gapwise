@@ -4,6 +4,12 @@ import {
   type CampusAccessPoint,
 } from "@/data/utm/campus-access-points";
 import { getResidenceBuilding } from "@/data/utm/campus";
+import {
+  getResidenceBuildingForCampus,
+  getBuildingFootprintForCampus,
+  representativePointForCampusFootprint,
+  type GapwiseCampusId,
+} from "@/data/campuses";
 import type { UserPreferences } from "@/features/sync/preferences";
 import type { Meeting, Term, Weekday } from "@/lib/timetable-types";
 import { isAssessmentWindow, WEEKDAYS } from "@/lib/timetable-types";
@@ -18,6 +24,7 @@ export type CampusDayAnchor = {
   shortLabel: string;
   coordinates: [number, number];
   buildingCode: string | null;
+  campus?: string | null;
   accessPoint: CampusAccessPoint | null;
 };
 
@@ -43,21 +50,37 @@ export function mappableWeekdaysForMeetings(meetings: readonly Meeting[]): Weekd
 }
 
 export function selectedCampusDayAnchor(preferences: UserPreferences): CampusDayAnchor | null {
-  if (preferences.mainCampus !== "utm") return null;
+  const campusId = preferences.mainCampus as GapwiseCampusId | undefined;
+  if (!campusId) return null;
+
   if (preferences.dayOrigin === "residence") {
-    const residence = getResidenceBuilding(preferences.residenceBuildingCode);
-    return residence
-      ? {
-          kind: "residence",
-          label: residence.name,
-          shortLabel: residence.code,
-          coordinates: residence.navigationPoint,
-          buildingCode: residence.code,
-          accessPoint: null,
-        }
-      : null;
+    const residence = getResidenceBuildingForCampus(campusId, preferences.residenceBuildingCode);
+    if (!residence) return null;
+    let coordinates: [number, number] | null = null;
+    if (campusId === "utm") {
+      const utmResidence = getResidenceBuilding(preferences.residenceBuildingCode);
+      coordinates = utmResidence?.navigationPoint ?? null;
+    }
+    if (!coordinates) {
+      const footprint = getBuildingFootprintForCampus(campusId, residence.code);
+      if (footprint) {
+        coordinates = representativePointForCampusFootprint(campusId, footprint);
+      }
+    }
+    if (!coordinates) return null;
+
+    return {
+      kind: "residence",
+      label: residence.name,
+      shortLabel: residence.code,
+      coordinates,
+      buildingCode: residence.code,
+      campus: campusId.toUpperCase(),
+      accessPoint: null,
+    };
   }
 
+  if (campusId !== "utm") return null;
   const point = getCampusAccessPoint(preferences.campusAccessPointId);
   if (!preferences.commuteMode || point?.kind !== preferences.commuteMode) return null;
   return {
@@ -66,6 +89,7 @@ export function selectedCampusDayAnchor(preferences: UserPreferences): CampusDay
     shortLabel: point.label,
     coordinates: point.coordinates,
     buildingCode: null,
+    campus: "UTM",
     accessPoint: point,
   };
 }
@@ -131,7 +155,10 @@ export function campusDayAnchorPresentation(meeting: Meeting): CampusDayAnchorPr
   const position = campusDayAnchorPosition(meeting);
   if (!position) return null;
   if (isResidenceMeeting(meeting)) {
-    const residence = getResidenceBuilding(meeting.buildingCode);
+    const campusId = (meeting.campus?.toLowerCase() ?? "utm") as GapwiseCampusId;
+    const residence =
+      getResidenceBuildingForCampus(campusId, meeting.buildingCode) ??
+      (campusId === "utm" ? getResidenceBuilding(meeting.buildingCode) : null);
     if (!residence) return null;
     return {
       kind: "residence",
@@ -182,6 +209,7 @@ function anchorMeeting({
     weekday,
     time,
     position,
+    campus: anchor.campus ?? "UTM",
   });
 }
 

@@ -101,6 +101,7 @@ type UniversityCatalog = {
     name: string;
     nativeCodes: string[];
     aliases: string[];
+    category?: "academic" | "residence" | "facility";
     geometry: CampusFootprintGeometry | null;
   }>;
   entrances: Array<{
@@ -136,7 +137,7 @@ const EXTERNAL_REGISTRIES: Record<string, ExternalRegistry> = {
           campus,
           code: building.nativeCodes[0] ?? building.id,
           name: building.name,
-          category: "facility" as const,
+          category: (building.category ?? "facility") as "academic" | "residence" | "facility",
           aliases: [building.id, ...building.aliases, ...building.nativeCodes.slice(1)],
         })),
       },
@@ -238,30 +239,6 @@ function unique(values: readonly string[]) {
   return [...new Set(values.filter(Boolean))];
 }
 
-function externalConfigurations(campusId: string): BuildingConfiguration[] {
-  return (EXTERNAL_REGISTRIES[campusId]?.buildings ?? [])
-    .filter((building) => building.status !== "inactive")
-    .map((building) => ({
-      code: building.code.toUpperCase(),
-      name: building.name,
-      category: building.category,
-      aliases: unique([
-        ...(building.aliases ?? []),
-        ...(building.timetableCodes ?? []),
-        ...(building.facilityCodes ?? []),
-      ]),
-    }));
-}
-
-const CONFIGURATIONS: Record<string, BuildingConfiguration[]> = {
-  utm: UTM_BUILDINGS,
-  utsg: externalConfigurations("utsg"),
-  utsc: externalConfigurations("utsc"),
-  ...Object.fromEntries(
-    Object.keys(universityCatalogs).map((id) => [id, externalConfigurations(id)]),
-  ),
-};
-
 // U of T Student Life's current St. George residence map groups these canonical
 // buildings as student residences. Some are mixed-use college buildings, so residence
 // membership is intentionally kept separate from the single building category field.
@@ -290,12 +267,34 @@ const UTSG_RESIDENCE_CODES = new Set([
   "WO", // Woodsworth College Residence
 ]);
 
+function externalConfigurations(campusId: string): BuildingConfiguration[] {
+  return (EXTERNAL_REGISTRIES[campusId]?.buildings ?? [])
+    .filter((building) => building.status !== "inactive")
+    .map((building) => ({
+      code: building.code.toUpperCase(),
+      name: building.name,
+      category:
+        campusId === "utsg" && UTSG_RESIDENCE_CODES.has(building.code)
+          ? ("residence" as const)
+          : building.category,
+      aliases: unique([
+        ...(building.aliases ?? []),
+        ...(building.timetableCodes ?? []),
+        ...(building.facilityCodes ?? []),
+      ]),
+    }));
+}
+
+const CONFIGURATIONS: Record<string, BuildingConfiguration[]> = {
+  utm: UTM_BUILDINGS,
+  utsg: externalConfigurations("utsg"),
+  utsc: externalConfigurations("utsc"),
+  ...Object.fromEntries(
+    Object.keys(universityCatalogs).map((id) => [id, externalConfigurations(id)]),
+  ),
+};
+
 export function campusResidenceBuildings(campusId: GapwiseCampusId): BuildingConfiguration[] {
-  if (campusId === "utsg") {
-    return (CONFIGURATIONS["utsg"] ?? []).filter((building) =>
-      UTSG_RESIDENCE_CODES.has(building.code),
-    );
-  }
   return (CONFIGURATIONS[campusId] ?? []).filter((building) => building.category === "residence");
 }
 

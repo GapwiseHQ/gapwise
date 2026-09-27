@@ -239,7 +239,8 @@
           "nativeId": "VH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "curtis-lecture-halls",
@@ -464,7 +465,8 @@
           "nativeId": "CLH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "lassonde-building",
@@ -594,7 +596,8 @@
           "nativeId": "LAS",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "ross-building",
@@ -763,7 +766,8 @@
           "nativeId": "ROSS",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "scott-library",
@@ -904,7 +908,8 @@
           "nativeId": "SCL",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "bergeron-centre",
@@ -1033,7 +1038,8 @@
           "nativeId": "BRG",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "dahdaleh-building",
@@ -1207,7 +1213,8 @@
           "nativeId": "DB",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "accolade-east",
@@ -1304,7 +1311,8 @@
           "nativeId": "ACE",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "accolade-west",
@@ -1441,7 +1449,8 @@
           "nativeId": "ACW",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "steacie-library",
@@ -1582,7 +1591,8 @@
           "nativeId": "STL",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "stedman-lecture-halls",
@@ -1771,7 +1781,8 @@
           "nativeId": "SLH",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "schulich-building",
@@ -2069,7 +2080,8 @@
           "nativeId": "SSB",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "first-student-centre",
@@ -2182,7 +2194,8 @@
           "nativeId": "STC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "second-student-centre",
@@ -2323,7 +2336,8 @@
           "nativeId": "SSC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "tait-mckenzie-centre",
@@ -2604,7 +2618,8 @@
           "nativeId": "TM",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "petrie-science",
@@ -2801,7 +2816,8 @@
           "nativeId": "PSE",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "chemistry-building",
@@ -3018,7 +3034,8 @@
           "nativeId": "CB",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "farquharson-building",
@@ -3215,7 +3232,8 @@
           "nativeId": "FRQ",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "life-sciences-building",
@@ -3316,7 +3334,8 @@
           "nativeId": "LSB",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "hne-building",
@@ -3505,7 +3524,8 @@
           "nativeId": "HNE",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "lumbers-building",
@@ -3582,7 +3602,8 @@
           "nativeId": "LUM",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "william-small-centre",
@@ -3757,7 +3778,8 @@
           "nativeId": "WSC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "york-lanes",
@@ -3890,7 +3912,8 @@
           "nativeId": "YL",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "vanier-college",
@@ -3899,7 +3922,8 @@
         "VC"
       ],
       "aliases": [
-        "Vanier"
+        "Vanier",
+        "Vanier Residence"
       ],
       "geometry": {
         "type": "Polygon",
@@ -3975,7 +3999,8 @@
           "nativeId": "VC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "founders-college",
@@ -3984,7 +4009,8 @@
         "FC"
       ],
       "aliases": [
-        "Founders"
+        "Founders",
+        "Founders Residence"
       ],
       "geometry": {
         "type": "Polygon",
@@ -4252,7 +4278,8 @@
           "nativeId": "FC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "mclaughlin-college",
@@ -4261,7 +4288,8 @@
         "MC"
       ],
       "aliases": [
-        "McLaughlin"
+        "McLaughlin",
+        "McLaughlin Residence"
       ],
       "geometry": {
         "type": "Polygon",
@@ -4781,7 +4809,8 @@
           "nativeId": "MC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "bethune-college",
@@ -4790,7 +4819,9 @@
         "BC"
       ],
       "aliases": [
-        "Bethune"
+        "Bethune",
+        "Norman Bethune Residence",
+        "Bethune Residence"
       ],
       "geometry": {
         "type": "Polygon",
@@ -5042,7 +5073,8 @@
           "nativeId": "BC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "calumet-college",
@@ -5051,7 +5083,8 @@
         "CC"
       ],
       "aliases": [
-        "Calumet"
+        "Calumet",
+        "Calumet Residence"
       ],
       "geometry": {
         "type": "Polygon",
@@ -5323,7 +5356,8 @@
           "nativeId": "CC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "stong-college",
@@ -5332,7 +5366,8 @@
         "SC"
       ],
       "aliases": [
-        "Stong"
+        "Stong",
+        "Stong Residence"
       ],
       "geometry": {
         "type": "Polygon",
@@ -5612,7 +5647,8 @@
           "nativeId": "SC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "winters-college",
@@ -5621,7 +5657,8 @@
         "WC"
       ],
       "aliases": [
-        "Winters"
+        "Winters",
+        "Winters Residence"
       ],
       "geometry": {
         "type": "Polygon",
@@ -5953,7 +5990,8 @@
           "nativeId": "WC",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "residence"
     },
     {
       "id": "bennett-centre",
@@ -6034,7 +6072,8 @@
           "nativeId": "BCSS",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "osgoode-hall",
@@ -6276,7 +6315,8 @@
           "nativeId": "OSG",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "centre-film-theatre",
@@ -6477,7 +6517,8 @@
           "nativeId": "CFT",
           "verification": "source-backed"
         }
-      ]
+      ],
+      "category": "academic"
     },
     {
       "id": "goldfarb-centre",
@@ -6628,6 +6669,675 @@
         {
           "sourceId": "york-official-map-2025",
           "nativeId": "CFA",
+          "verification": "source-backed"
+        }
+      ],
+      "category": "academic"
+    },
+    {
+      "id": "pond-road-residence",
+      "name": "The Pond Road Residence",
+      "nativeCodes": [
+        "POND"
+      ],
+      "aliases": [
+        "Pond Residence"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.5024069,
+              43.7705025
+            ],
+            [
+              -79.5023124,
+              43.7702842
+            ],
+            [
+              -79.5023101,
+              43.7702789
+            ],
+            [
+              -79.5022997,
+              43.7702631
+            ],
+            [
+              -79.5022764,
+              43.7702088
+            ],
+            [
+              -79.501087,
+              43.7704754
+            ],
+            [
+              -79.5010469,
+              43.7704843
+            ],
+            [
+              -79.5010737,
+              43.7705468
+            ],
+            [
+              -79.5011323,
+              43.7705337
+            ],
+            [
+              -79.501142,
+              43.7705561
+            ],
+            [
+              -79.5011102,
+              43.7705648
+            ],
+            [
+              -79.5012445,
+              43.7708747
+            ],
+            [
+              -79.5013244,
+              43.7708567
+            ],
+            [
+              -79.501426,
+              43.7708331
+            ],
+            [
+              -79.5013907,
+              43.770751
+            ],
+            [
+              -79.5012992,
+              43.7705382
+            ],
+            [
+              -79.5013858,
+              43.7705187
+            ],
+            [
+              -79.5014035,
+              43.7705596
+            ],
+            [
+              -79.5020494,
+              43.7704136
+            ],
+            [
+              -79.5020314,
+              43.7703721
+            ],
+            [
+              -79.5021145,
+              43.7703533
+            ],
+            [
+              -79.5022049,
+              43.7705618
+            ],
+            [
+              -79.5023173,
+              43.7705364
+            ],
+            [
+              -79.5023119,
+              43.7705239
+            ],
+            [
+              -79.5024069,
+              43.7705025
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "osm-york-2026-09",
+          "nativeId": "way/839196649",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "passy-crescent",
+      "name": "Passy Crescent",
+      "nativeCodes": [
+        "PASSY"
+      ],
+      "aliases": [
+        "Passy Gardens",
+        "Passy Crescent Apartments"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.505752,
+              43.7691364
+            ],
+            [
+              -79.5056995,
+              43.7691484
+            ],
+            [
+              -79.5055976,
+              43.7691717
+            ],
+            [
+              -79.5054954,
+              43.769195
+            ],
+            [
+              -79.5053926,
+              43.7692185
+            ],
+            [
+              -79.5053429,
+              43.7692298
+            ],
+            [
+              -79.5053144,
+              43.7691649
+            ],
+            [
+              -79.5052918,
+              43.76917
+            ],
+            [
+              -79.5052664,
+              43.7691758
+            ],
+            [
+              -79.5052954,
+              43.769242
+            ],
+            [
+              -79.5052416,
+              43.7692543
+            ],
+            [
+              -79.5051432,
+              43.7692767
+            ],
+            [
+              -79.5050423,
+              43.7692997
+            ],
+            [
+              -79.5049401,
+              43.769323
+            ],
+            [
+              -79.5048848,
+              43.7693356
+            ],
+            [
+              -79.5048556,
+              43.7692689
+            ],
+            [
+              -79.5048365,
+              43.7692732
+            ],
+            [
+              -79.5048106,
+              43.7692791
+            ],
+            [
+              -79.5048399,
+              43.7693462
+            ],
+            [
+              -79.5043969,
+              43.7694472
+            ],
+            [
+              -79.5043736,
+              43.7693939
+            ],
+            [
+              -79.5043499,
+              43.7693992
+            ],
+            [
+              -79.5043265,
+              43.7694046
+            ],
+            [
+              -79.5043493,
+              43.769457
+            ],
+            [
+              -79.503941,
+              43.76955
+            ],
+            [
+              -79.503914,
+              43.7694882
+            ],
+            [
+              -79.5038887,
+              43.769494
+            ],
+            [
+              -79.5038663,
+              43.7694991
+            ],
+            [
+              -79.503894,
+              43.7695624
+            ],
+            [
+              -79.5038485,
+              43.7695728
+            ],
+            [
+              -79.5037471,
+              43.7695958
+            ],
+            [
+              -79.5036459,
+              43.7696189
+            ],
+            [
+              -79.5035424,
+              43.7696425
+            ],
+            [
+              -79.5034818,
+              43.7696563
+            ],
+            [
+              -79.5034604,
+              43.7696075
+            ],
+            [
+              -79.5034496,
+              43.7696099
+            ],
+            [
+              -79.503429,
+              43.769563
+            ],
+            [
+              -79.5034422,
+              43.76956
+            ],
+            [
+              -79.5034204,
+              43.7695102
+            ],
+            [
+              -79.5035104,
+              43.7694897
+            ],
+            [
+              -79.5035013,
+              43.7694689
+            ],
+            [
+              -79.5034952,
+              43.769455
+            ],
+            [
+              -79.5034074,
+              43.769475
+            ],
+            [
+              -79.5032907,
+              43.7692084
+            ],
+            [
+              -79.5035325,
+              43.7691532
+            ],
+            [
+              -79.5035648,
+              43.769227
+            ],
+            [
+              -79.5035138,
+              43.7692387
+            ],
+            [
+              -79.5035832,
+              43.7693974
+            ],
+            [
+              -79.5034932,
+              43.769418
+            ],
+            [
+              -79.5035142,
+              43.769466
+            ],
+            [
+              -79.5035231,
+              43.7694864
+            ],
+            [
+              -79.5038281,
+              43.7694169
+            ],
+            [
+              -79.5038563,
+              43.7694812
+            ],
+            [
+              -79.5038809,
+              43.7694756
+            ],
+            [
+              -79.5039057,
+              43.76947
+            ],
+            [
+              -79.5038774,
+              43.7694051
+            ],
+            [
+              -79.5041786,
+              43.7693364
+            ],
+            [
+              -79.5041575,
+              43.769288
+            ],
+            [
+              -79.504151,
+              43.7692733
+            ],
+            [
+              -79.5040604,
+              43.7692939
+            ],
+            [
+              -79.503991,
+              43.7691349
+            ],
+            [
+              -79.5039436,
+              43.7691457
+            ],
+            [
+              -79.5039075,
+              43.7690631
+            ],
+            [
+              -79.504207,
+              43.7689949
+            ],
+            [
+              -79.5042439,
+              43.7690793
+            ],
+            [
+              -79.5041936,
+              43.7690908
+            ],
+            [
+              -79.5042612,
+              43.7692456
+            ],
+            [
+              -79.5041729,
+              43.7692658
+            ],
+            [
+              -79.5041805,
+              43.7692833
+            ],
+            [
+              -79.5042024,
+              43.7693333
+            ],
+            [
+              -79.5042834,
+              43.7693148
+            ],
+            [
+              -79.5043124,
+              43.7693813
+            ],
+            [
+              -79.5043394,
+              43.7693751
+            ],
+            [
+              -79.5043684,
+              43.7693685
+            ],
+            [
+              -79.5043393,
+              43.7693021
+            ],
+            [
+              -79.5047706,
+              43.7692037
+            ],
+            [
+              -79.5047955,
+              43.7692606
+            ],
+            [
+              -79.5048284,
+              43.7692531
+            ],
+            [
+              -79.5048478,
+              43.7692487
+            ],
+            [
+              -79.5048212,
+              43.7691878
+            ],
+            [
+              -79.5049037,
+              43.7691689
+            ],
+            [
+              -79.5048866,
+              43.7691299
+            ],
+            [
+              -79.5048758,
+              43.7691051
+            ],
+            [
+              -79.5047868,
+              43.7691255
+            ],
+            [
+              -79.504719,
+              43.7689708
+            ],
+            [
+              -79.5046689,
+              43.7689822
+            ],
+            [
+              -79.5046304,
+              43.7688947
+            ],
+            [
+              -79.5049373,
+              43.7688243
+            ],
+            [
+              -79.5049757,
+              43.7689117
+            ],
+            [
+              -79.5049238,
+              43.7689236
+            ],
+            [
+              -79.5049929,
+              43.7690808
+            ],
+            [
+              -79.5049012,
+              43.7691018
+            ],
+            [
+              -79.5049107,
+              43.7691235
+            ],
+            [
+              -79.5049286,
+              43.7691641
+            ],
+            [
+              -79.5052296,
+              43.7690951
+            ],
+            [
+              -79.5052589,
+              43.7691617
+            ],
+            [
+              -79.505286,
+              43.7691555
+            ],
+            [
+              -79.5053089,
+              43.7691502
+            ],
+            [
+              -79.5052808,
+              43.7690863
+            ],
+            [
+              -79.5055861,
+              43.7690162
+            ],
+            [
+              -79.5055557,
+              43.7689472
+            ],
+            [
+              -79.5054637,
+              43.7689683
+            ],
+            [
+              -79.5053935,
+              43.7688085
+            ],
+            [
+              -79.5053488,
+              43.7688187
+            ],
+            [
+              -79.505317,
+              43.7687465
+            ],
+            [
+              -79.5055539,
+              43.7686922
+            ],
+            [
+              -79.5056697,
+              43.7689562
+            ],
+            [
+              -79.5055825,
+              43.7689761
+            ],
+            [
+              -79.5055993,
+              43.7690144
+            ],
+            [
+              -79.5056895,
+              43.7689938
+            ],
+            [
+              -79.505752,
+              43.7691364
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "osm-york-2026-09",
+          "nativeId": "way/839466833",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "tatham-hall",
+      "name": "Tatham Hall",
+      "nativeCodes": [
+        "TATH"
+      ],
+      "aliases": [
+        "Tatham Hall Residence"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.5021735,
+              43.7772497
+            ],
+            [
+              -79.502402,
+              43.7771986
+            ],
+            [
+              -79.5024322,
+              43.7771918
+            ],
+            [
+              -79.5024658,
+              43.7771843
+            ],
+            [
+              -79.5024295,
+              43.7770996
+            ],
+            [
+              -79.5024207,
+              43.7770791
+            ],
+            [
+              -79.5023748,
+              43.7769722
+            ],
+            [
+              -79.5023503,
+              43.7769777
+            ],
+            [
+              -79.5022641,
+              43.776997
+            ],
+            [
+              -79.5021892,
+              43.7770137
+            ],
+            [
+              -79.5020824,
+              43.7770376
+            ],
+            [
+              -79.5021735,
+              43.7772497
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "osm-york-2026-09",
+          "nativeId": "way/448830311",
           "verification": "source-backed"
         }
       ]

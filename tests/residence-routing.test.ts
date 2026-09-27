@@ -22,15 +22,33 @@ describe("residence-aware campus routing", () => {
     expect(selectedResidence(residentPreferences)?.name).toBe("Erindale Hall");
   });
 
-  test("does not reinterpret a non-UTM residence as a UTM route origin", () => {
-    expect(
-      selectedResidence({
-        ...DEFAULT_USER_PREFERENCES,
-        mainCampus: "utsg",
-        dayOrigin: "residence",
-        residenceBuildingCode: "WI",
-      }),
-    ).toBeNull();
+  test("resolves a residence for the student's selected campus but prevents UTM routing", () => {
+    const utsgResidence = selectedResidence({
+      ...DEFAULT_USER_PREFERENCES,
+      mainCampus: "utsg",
+      dayOrigin: "residence",
+      residenceBuildingCode: "WI",
+    });
+    expect(utsgResidence?.name).toBe("Wilson Hall-New College");
+    expect(utsgResidence?.category).toBe("residence");
+
+    // But when routing on the UTM graph, a UTSG residence cannot route
+    const utsgHome = createResidenceMeeting({
+      buildingCode: "WI",
+      term: "Fall",
+      weekday: "Monday",
+      time: 540,
+      position: "start",
+      campus: "utsg",
+    });
+    const utmClass = meeting({ id: "first", buildingCode: "MN", room: "1270" });
+    const route = planMeetingTransition(utsgHome, utmClass, UTM_ROUTING_GRAPH, {
+      ...DEFAULT_USER_PREFERENCES,
+      mainCampus: "utsg",
+      dayOrigin: "residence",
+      residenceBuildingCode: "WI",
+    });
+    expect(route.status).not.toBe("routed");
   });
 
   test("creates explicit private synthetic endpoints without changing class data", () => {
