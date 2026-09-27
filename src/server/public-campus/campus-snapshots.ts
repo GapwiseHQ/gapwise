@@ -1,5 +1,5 @@
 import type { CampusSnapshot } from "../../data/campuses/contract.js";
-import type { BuildingConfiguration } from "../../data/utm/building-registry.js";
+import { UTM_BUILDINGS, type BuildingConfiguration } from "../../data/utm/building-registry.js";
 import brockSnapshot from "../../data/campuses/brock/campus.json" with { type: "json" };
 import carletonSnapshot from "../../data/campuses/carleton/campus.json" with { type: "json" };
 import guelphSnapshot from "../../data/campuses/guelph/campus.json" with { type: "json" };
@@ -73,6 +73,7 @@ function formatExternalRegistry(rawList: RawBuilding[]): BuildingConfiguration[]
 }
 
 const CAMPUS_BUILDING_CONFIGURATIONS: Record<string, BuildingConfiguration[]> = {
+  utm: UTM_BUILDINGS,
   utsg: formatExternalRegistry(utsgBuildings.buildings as RawBuilding[]),
   utsc: formatExternalRegistry(utscBuildings.buildings as RawBuilding[]),
   ...Object.fromEntries(

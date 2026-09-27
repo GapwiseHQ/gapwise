@@ -1,4 +1,4 @@
-import { getCampusBuildingIdentity } from "../../data/campuses/index.js";
+import { UTM_BUILDINGS } from "../../data/utm/building-registry.js";
 import type { CampusPlace, CampusStateSnapshot } from "./types.js";
 
 const RETRIEVED_AT = "2026-08-24T00:00:00Z";
@@ -110,10 +110,12 @@ function validateSnapshot(snapshot: CampusStateSnapshot) {
   for (const place of snapshot.places) {
     if (ids.has(place.id)) throw new Error(`Duplicate campus place id: ${place.id}`);
     ids.add(place.id);
-    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(place.id))
-      throw new Error(`Invalid campus place id: ${place.id}`);
-    if (!getCampusBuildingIdentity(place.campus ?? "utm", place.buildingCode))
-      throw new Error(`Unknown building for campus place ${place.id}`);
+    const isKnownBuilding = UTM_BUILDINGS.some(
+      (b) =>
+        b.code.toUpperCase() === place.buildingCode.toUpperCase() ||
+        b.aliases?.some((a) => a.toUpperCase() === place.buildingCode.toUpperCase()),
+    );
+    if (!isKnownBuilding) throw new Error(`Unknown building for campus place ${place.id}`);
     if (
       !sources.has(place.metadataProvenance.sourceId) ||
       !sources.has(place.hoursProvenance.sourceId)
