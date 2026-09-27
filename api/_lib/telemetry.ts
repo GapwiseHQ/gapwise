@@ -1,4 +1,4 @@
-import { jsonResponse, logEvent, requestIdFrom, safeError } from "./_lib/observability.js";
+import { jsonResponse, logEvent, requestIdFrom, safeError } from "./observability.js";
 
 const VALID_EVENT_TYPES = new Set([
   "page_view",

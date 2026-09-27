@@ -24,7 +24,7 @@ function isTelemetryDisabled(): boolean {
   if (typeof window === "undefined" || typeof navigator === "undefined") return true;
   if (
     typeof process !== "undefined" &&
-    (process.env?.NODE_ENV === "test" || process.env?.BUN_TEST === "1")
+    (process.env?.["NODE_ENV"] === "test" || process.env?.["BUN_TEST"] === "1")
   ) {
     return true;
   }
