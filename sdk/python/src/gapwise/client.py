@@ -93,11 +93,22 @@ def _decode(response: httpx.Response) -> tuple[Any, dict[str, Any]]:
 
 def _page(response: httpx.Response) -> Page[Any]:
     data, meta = _decode(response)
-    if not isinstance(data, list) or not isinstance(meta.get("pagination"), dict):
+    if not isinstance(data, list):
         raise GapwiseResponseError("The Gapwise API collection envelope is invalid.")
+    pagination = meta.get("pagination")
+    if pagination is not None and not isinstance(pagination, dict):
+        raise GapwiseResponseError("The Gapwise API collection envelope is invalid.")
+    if pagination is None:
+        pagination = {
+            "limit": len(data),
+            "offset": 0,
+            "count": len(data),
+            "total": len(data),
+            "nextOffset": None,
+        }
     return Page(
         items=data,
-        pagination=meta["pagination"],
+        pagination=pagination,
         data_version=meta.get("dataVersion", ""),
         request_id=meta.get("requestId", ""),
     )
