@@ -23,18 +23,18 @@ When Codex substantially authors a Git commit in this repository:
 
 ## Project
 
-Gapwise is a privacy-first web application for University of Toronto students, served from `https://gapwise.ca`. Timetable identity and building-map coverage support UTM, UTSG, UTSC, and mixed-campus schedules. Reviewed pedestrian routing, entrances, places, and the public campus API currently cover UTM.
+Gapwise is a privacy-first web application for students at 11 supported Canadian universities, served from `https://gapwise.ca` and dedicated university subdomains. Timetable identity and source-backed building maps cover all supported editions. Pedestrian routing and entrance coverage vary by campus; UTM-specific places and ACORN import remain scoped to the University of Toronto edition.
 
 The current product:
 
-- parses ACORN `.ics` timetable exports locally in the browser;
+- parses supported university timetable formats locally in the browser, including ACORN `.ics` exports;
 - provides Today, Timetable, Gap Plan, and Day Route/campus-explorer surfaces;
 - supports mobile-first timetable and route flows;
-- uses canonical source-backed tri-campus building geometry plus conservative UTM route confidence;
+- uses canonical source-backed campus building geometry and conservative route confidence where routing is supported;
 - supports opt-in foreground live location without background tracking;
 - supports Microsoft, Google, and GitHub OAuth through Supabase Auth;
 - supports optional **browser-encrypted** private-data sync and privacy-preserving friend overlap;
-- never uploads the original `.ics` file;
+- never uploads the original imported timetable file;
 - keeps guest mode first-class;
 - deploys `main` to Vercel;
 - remains compatible with Lovable-connected development.
@@ -49,7 +49,7 @@ Preserve these unless the task explicitly changes the product contract and recei
 - no upload of the original timetable file;
 - no background location tracking;
 - no raw timetable, room, friend, or precise-location analytics;
-- no claim of official U of T affiliation;
+- no claim of official university affiliation;
 - guest mode remains useful without an account;
 - private cloud state is encrypted in the browser before storage;
 - do not describe the system as E2EE or zero knowledge;
