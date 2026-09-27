@@ -14,7 +14,7 @@ function corsHeaders(origin: string | null) {
   };
 }
 
-type Mailbox = "support" | "security" | "hello" | "general" | "dmarc" | "test";
+type Mailbox = "support" | "security" | "hello" | "general" | "dmarc" | "test" | "team";
 type RequestBody = {
   action?: unknown;
   mailbox?: unknown;
@@ -60,7 +60,7 @@ function stringValue(value: unknown, maxLength: number) {
 }
 
 function mailboxValue(value: unknown): Mailbox | null {
-  return value === "support" || value === "security" || value === "hello" || value === "general" || value === "dmarc" || value === "test"
+  return value === "support" || value === "security" || value === "hello" || value === "general" || value === "dmarc" || value === "test" || value === "team"
     ? value
     : null;
 }
@@ -80,6 +80,14 @@ function senderForMailbox(mailbox: Mailbox) {
       replyTo: "hello@inbound.gapwise.ca",
       label: "Gapwise",
       address: "hello@gapwise.ca",
+    };
+  }
+  if (mailbox === "team") {
+    return {
+      from: "Gapwise Team <team@gapwise.ca>",
+      replyTo: "team@inbound.gapwise.ca",
+      label: "Gapwise Team",
+      address: "team@gapwise.ca",
     };
   }
   return {
@@ -235,7 +243,15 @@ async function sendReply(
 ) {
   const { data: parent, error } = await supabase.from("resend_email_messages").select("*").eq("resend_email_id", messageId).maybeSingle();
   if (error || !parent) return json(404, { error: "message_not_found" }, origin);
-  const mailbox = mailboxValue(parent.mailbox);
+  const mailbox =
+    mailboxValue(parent.mailbox) ??
+    (parent.to_addresses?.some((a: string) => a.toLowerCase().includes("team@"))
+      ? "team"
+      : parent.to_addresses?.some((a: string) => a.toLowerCase().includes("security@"))
+        ? "security"
+        : parent.to_addresses?.some((a: string) => a.toLowerCase().includes("hello@"))
+          ? "hello"
+          : "support");
   if (!mailbox) return json(400, { error: "unsupported_mailbox" }, origin);
   if (mailbox === "dmarc") return json(400, { error: "read_only_mailbox" }, origin);
   const recipient = bareEmail(parent.direction === "inbound" ? parent.from_address : parent.to_addresses?.[0]);
@@ -429,7 +445,7 @@ Deno.serve(async (request: Request) => {
     const { data, error } = await supabase
       .from("resend_email_messages")
       .select("resend_email_id,direction,message_id,from_address,to_addresses,subject,mailbox,attachment_metadata,text_body,latest_event_type,event_created_at,updated_at,thread_id,in_reply_to,reply_to_address")
-      .in("mailbox", mailbox ? [mailbox] : ["support", "security", "hello", "general", "dmarc", "test"])
+      .in("mailbox", mailbox ? [mailbox] : ["support", "security", "hello", "general", "dmarc", "test", "team"])
       .order("updated_at", { ascending: false })
       .limit(100);
     if (error) return json(500, { error: "list_failed" }, origin);

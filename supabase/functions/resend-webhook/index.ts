@@ -195,6 +195,7 @@ function mailboxForRecipients(recipients: string[]) {
     const local = address.includes("<")
       ? address.slice(address.lastIndexOf("<") + 1, address.lastIndexOf("@"))
       : address.slice(0, address.indexOf("@"));
+    if (local === "team") return "team";
     if (local === "support") return "support";
     if (local === "security") return "security";
     if (local === "hello") return "hello";
