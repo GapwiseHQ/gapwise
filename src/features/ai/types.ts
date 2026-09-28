@@ -169,6 +169,16 @@ export type PendingAiAction = {
   action: AiAction;
 };
 
+export type QuarantinedPendingAiAction = {
+  id: string;
+  reason: string;
+};
+
+export type ParsedPendingAiQueue = {
+  valid: PendingAiAction[];
+  quarantined: QuarantinedPendingAiAction[];
+};
+
 export type AiActionCompletion = {
   status: "applied" | "rejected";
   resultCode?: string;

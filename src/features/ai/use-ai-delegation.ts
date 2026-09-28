@@ -5,7 +5,7 @@ import type { AcademicState } from "@/features/academic/state";
 import type { UserPreferences } from "@/features/sync/preferences";
 import type { PersonalItem } from "@/lib/personal-types";
 import type { Meeting } from "@/lib/timetable-types";
-import { applyAiActionBatch, parsePendingAiActions } from "./actions";
+import { applyAiActionBatch, parsePendingAiActionsDetailed } from "./actions";
 import {
   completeAiAction,
   getAiDelegationStatus,
@@ -233,10 +233,25 @@ export function useAiDelegation(input: ControllerInput): AiDelegationController 
       if (!status.enabled || currentRevision.current === null) return;
       try {
         const raw = await getPendingAiActions();
-        const actions = parsePendingAiActions(raw);
-        if (!actions) throw new Error("Queued AI actions are malformed.");
+        const queue = parsePendingAiActionsDetailed(raw);
+        if (!queue) throw new Error("Queued AI actions are malformed.");
+
+        for (const quarantined of queue.quarantined) {
+          await completeAiAction(quarantined.id, {
+            status: "rejected",
+            resultCode: quarantined.reason,
+          });
+        }
+
+        const actions = queue.valid;
         if (!actions.length) {
-          setMessage("No AI changes are waiting for Gapwise.");
+          if (queue.quarantined.length) {
+            setMessage(
+              `${queue.quarantined.length} malformed queued AI change(s) quarantined safely.`,
+            );
+          } else {
+            setMessage("No AI changes are waiting for Gapwise.");
+          }
           return;
         }
 
