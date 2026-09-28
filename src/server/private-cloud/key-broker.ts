@@ -300,6 +300,9 @@ export async function issueDeviceKeyBundle(
     envelope = await readOwnEnvelope(authenticated.client, authenticated.userId);
   }
   if (!envelope) throw new Error("Key envelope was not persisted.");
+  if (envelope.user_id !== authenticated.userId) {
+    throw new ApiError(403, "Key envelope owner mismatch.");
+  }
   envelope = await rotateEnvelopeIfNeeded(authenticated, envelope);
   return wrapEnvelopeKeysForDevice(envelope, publicJwk);
 }

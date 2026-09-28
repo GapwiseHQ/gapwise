@@ -24,7 +24,7 @@ import {
   parseCommonGapBody,
   type FriendCapsuleMaterial,
 } from "@/server/private-cloud/common-gap";
-import { readBearerToken } from "@/server/private-cloud/auth";
+import { readBearerToken, type AuthenticatedRequest } from "@/server/private-cloud/auth";
 import {
   errorResponse,
   handleJsonPost,
@@ -34,6 +34,7 @@ import {
 import { loadKek, readActiveKekVersion, type KeyEnvelopeRow } from "@/server/private-cloud/kek";
 import {
   confirmRotatedEnvelope,
+  issueDeviceKeyBundle,
   rewrapEnvelopeToKek,
   wrapEnvelopeKeysForDevice,
 } from "@/server/private-cloud/key-broker";
@@ -437,6 +438,39 @@ describe("key broker cryptographic boundary", () => {
     );
     expect(() => confirmRotatedEnvelope(envelope, KEK_VERSION + 1, new Error("CAS lost"))).toThrow(
       "rotation failed",
+    );
+  });
+
+  test("fails closed when envelope owner does not match authenticated user", async () => {
+    const envelope = await storedEnvelope(
+      SUBJECT_A,
+      PRIVATE_KEY_A,
+      AVAILABILITY_KEY_A,
+      privateDekA,
+      availabilityDekA,
+    );
+    const device = await generateDeviceKeyMaterial();
+    const fakeClient = {
+      from: () => ({
+        select: () => ({
+          eq: () => ({
+            maybeSingle: async () => ({
+              data: { ...envelope, user_id: "00000000-0000-4000-8000-000000000999" },
+              error: null,
+            }),
+          }),
+        }),
+      }),
+      rpc: async () => ({ data: null, error: null }),
+    } as unknown as AuthenticatedRequest["client"];
+
+    const authenticated: AuthenticatedRequest = {
+      client: fakeClient,
+      userId: "10000000-0000-4000-8000-000000000001",
+    };
+
+    await expect(issueDeviceKeyBundle(authenticated, device.publicJwk)).rejects.toThrow(
+      "Key envelope owner mismatch.",
     );
   });
 });
