@@ -295,6 +295,8 @@ export const DEMO_MEETINGS: Meeting[] = [
     room: r.room,
     term: r.term,
     locationUnknown: r.building === null,
+    locationType: r.building === null ? ("tba" as const) : ("physical" as const),
+    campus: "UTM" as const,
   })),
   ...DEMO_RESERVED_WINDOWS,
 ];
