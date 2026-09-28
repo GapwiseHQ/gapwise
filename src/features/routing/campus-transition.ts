@@ -51,8 +51,13 @@ export function createOutdoorCampusTransitionPlanner(campus: CampusSnapshot): Tr
     if (from.locationType !== "physical" || to.locationType !== "physical") {
       return unavailable("A physical route requires two known campus locations.");
     }
-    const fromId = from.buildingCode ? byCode.get(from.buildingCode.toUpperCase()) : null;
-    const toId = to.buildingCode ? byCode.get(to.buildingCode.toUpperCase()) : null;
+    const resolveId = (m: Meeting): string | null =>
+      (m.buildingCode && byCode.get(m.buildingCode.toUpperCase())) ||
+      (m.room && byCode.get(m.room.toUpperCase())) ||
+      (m.sourceLocation && byCode.get(m.sourceLocation.toUpperCase())) ||
+      null;
+    const fromId = resolveId(from);
+    const toId = resolveId(to);
     if (!fromId || !toId) {
       return unavailable("A mapped building is needed at each end of this route.");
     }
