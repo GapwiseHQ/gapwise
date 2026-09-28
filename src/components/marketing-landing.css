@@ -745,21 +745,6 @@
   outline-offset: 3px;
 }
 
-.university-card-indicator {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 3px;
-  background: var(--uni-card-accent);
-  opacity: 0.85;
-  transition: opacity 220ms ease;
-}
-
-.university-card:hover .university-card-indicator {
-  opacity: 1;
-}
-
 .university-card-content {
   display: flex;
   flex: 1;
@@ -914,21 +899,6 @@
   transform: translateY(-2px);
 }
 
-.ecosystem-card-indicator {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 3px;
-  background: var(--eco-accent);
-  opacity: 0.85;
-  transition: opacity 220ms ease;
-}
-
-.ecosystem-card:hover .ecosystem-card-indicator {
-  opacity: 1;
-}
-
 .ecosystem-card-header {
   display: flex;
   align-items: center;
@@ -1065,7 +1035,6 @@
   .university-card,
   .university-card-arrow,
   .ecosystem-card,
-  .ecosystem-card-indicator,
   .product-story-link span {
     animation: none !important;
     transition: none !important;

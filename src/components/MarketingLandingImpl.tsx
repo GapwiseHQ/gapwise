@@ -145,18 +145,6 @@ export function MarketingLandingImpl({
             <i aria-hidden="true" />
             Ecosystem
           </a>
-          <a href="https://ai.gapwise.ca" target="_blank" rel="noreferrer">
-            <i aria-hidden="true" />
-            AI
-          </a>
-          <a href="https://docs.gapwise.ca" target="_blank" rel="noreferrer">
-            <i aria-hidden="true" />
-            Docs
-          </a>
-          <a href="https://data.gapwise.ca" target="_blank" rel="noreferrer">
-            <i aria-hidden="true" />
-            Data
-          </a>
         </div>
       </nav>
 
@@ -253,7 +241,6 @@ export function MarketingLandingImpl({
                   style={{ "--uni-card-accent": uni.accentColor } as React.CSSProperties}
                   aria-label={`${uni.name} — ${uni.campusScope} (${uni.hosts[0]})`}
                 >
-                  <div className="university-card-indicator" aria-hidden="true" />
                   <div className="university-card-content">
                     <div className="university-card-top">
                       <div className="university-card-identity">
@@ -300,7 +287,6 @@ export function MarketingLandingImpl({
             data-ecosystem="ai"
             style={{ "--eco-accent": "#a78bfa" } as React.CSSProperties}
           >
-            <div className="ecosystem-card-indicator" aria-hidden="true" />
             <div className="ecosystem-card-header">
               <span className="ecosystem-card-badge">AI</span>
               <h3>Gapwise AI</h3>
@@ -316,7 +302,6 @@ export function MarketingLandingImpl({
             data-ecosystem="docs"
             style={{ "--eco-accent": "#38bdf8" } as React.CSSProperties}
           >
-            <div className="ecosystem-card-indicator" aria-hidden="true" />
             <div className="ecosystem-card-header">
               <span className="ecosystem-card-badge">Docs</span>
               <h3>Gapwise Docs</h3>
@@ -338,7 +323,6 @@ export function MarketingLandingImpl({
             data-ecosystem="data"
             style={{ "--eco-accent": "#ff5a66" } as React.CSSProperties}
           >
-            <div className="ecosystem-card-indicator" aria-hidden="true" />
             <div className="ecosystem-card-header">
               <span className="ecosystem-card-badge">Data</span>
               <h3>Gapwise Data</h3>
@@ -355,7 +339,6 @@ export function MarketingLandingImpl({
             data-ecosystem="status"
             style={{ "--eco-accent": "#39cf97" } as React.CSSProperties}
           >
-            <div className="ecosystem-card-indicator" aria-hidden="true" />
             <div className="ecosystem-card-header">
               <span className="ecosystem-card-badge">Status</span>
               <h3>Gapwise Status</h3>
