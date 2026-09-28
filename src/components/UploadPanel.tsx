@@ -149,15 +149,9 @@ export function UploadPanel({
               value={pastedText}
               onChange={(e) => setPastedText(e.target.value)}
               placeholder={
-                university?.id === "carleton"
-                  ? "Paste timetable text from Carleton Central (Concise Student Schedule or Detail Schedule)..."
-                  : university?.id === "tmu"
-                    ? "Paste timetable text from MyServiceHub (RAMSS) or VSB..."
-                    : university?.id === "queens"
-                      ? "Paste timetable text from SOLUS (View My Classes)..."
-                      : university?.id === "laurier"
-                        ? "Paste timetable text from LORIS (Student Detail Schedule)..."
-                        : "Paste your timetable text or .ics calendar lines..."
+                university?.calendarSource
+                  ? `Paste timetable text from ${university.calendarSource} or .ics calendar lines...`
+                  : "Paste your timetable text or .ics calendar lines..."
               }
               className="w-full rounded-md border border-input bg-background p-2.5 font-mono text-xs text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-accent"
             />
@@ -288,15 +282,9 @@ export function UploadPanel({
             value={pastedText}
             onChange={(e) => setPastedText(e.target.value)}
             placeholder={
-              university?.id === "carleton"
-                ? "Paste timetable text from Carleton Central (Concise Student Schedule or Detail Schedule)..."
-                : university?.id === "tmu"
-                  ? "Paste timetable text from MyServiceHub (RAMSS) or VSB..."
-                  : university?.id === "queens"
-                    ? "Paste timetable text from SOLUS (View My Classes)..."
-                    : university?.id === "laurier"
-                      ? "Paste timetable text from LORIS (Student Detail Schedule)..."
-                      : "Paste your timetable text or .ics calendar lines..."
+              university?.calendarSource
+                ? `Paste timetable text from ${university.calendarSource} or .ics calendar lines...`
+                : "Paste your timetable text or .ics calendar lines..."
             }
             className="w-full rounded-md border border-input bg-background p-2.5 font-mono text-xs text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-accent"
           />
