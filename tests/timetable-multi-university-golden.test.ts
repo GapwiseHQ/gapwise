@@ -255,6 +255,61 @@ describe("Timetable Multi-University Golden Validation Suite (AND-211)", () => {
           }
         }
       });
+
+      test("demo timetable meetings successfully transition-route on campus", async () => {
+        const loader = demoTimetableLoaders[adapterId]!;
+        const demoMeetings = await loader();
+        const physical = demoMeetings.filter(
+          (m) => m.locationType === "physical" && m.buildingCode,
+        );
+        expect(physical.length).toBeGreaterThanOrEqual(2);
+
+        const targetUni = adapterId.replace("-schedule", "").replace("-ics", "");
+        const uniId = targetUni === "acorn" ? "uoft" : targetUni;
+
+        let routed = false;
+        if (uniId === "uoft") {
+          const { UTM_ROUTING_GRAPH } = await import("@/data/utm/campus");
+          const { createScheduleTransitionPlanner } = await import("@/features/routing/transition");
+          const planner = createScheduleTransitionPlanner(UTM_ROUTING_GRAPH, demoMeetings);
+          for (let i = 0; i < physical.length; i++) {
+            for (let j = i + 1; j < physical.length; j++) {
+              if (physical[i]!.buildingCode !== physical[j]!.buildingCode) {
+                const res = planner(physical[i]!, physical[j]!, {
+                  mode: "fastest",
+                  walkingSpeedMps: 1.33,
+                });
+                if (res.status === "routed") {
+                  routed = true;
+                  break;
+                }
+              }
+            }
+            if (routed) break;
+          }
+        } else {
+          const { getOutdoorCampusTransitionPlanner } =
+            await import("@/features/routing/campus-transition");
+          const planner = await getOutdoorCampusTransitionPlanner(uniId);
+          expect(planner).not.toBeNull();
+          for (let i = 0; i < physical.length; i++) {
+            for (let j = i + 1; j < physical.length; j++) {
+              if (physical[i]!.buildingCode !== physical[j]!.buildingCode) {
+                const res = planner!(physical[i]!, physical[j]!, {
+                  mode: "fastest",
+                  walkingSpeedMps: 1.33,
+                });
+                if (res.status === "routed") {
+                  routed = true;
+                  break;
+                }
+              }
+            }
+            if (routed) break;
+          }
+        }
+        expect(routed).toBe(true);
+      });
     });
   }
 });

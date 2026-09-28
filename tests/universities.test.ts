@@ -12,7 +12,8 @@ import { routeBetweenBuildings, getRoutingGraph } from "@/features/routing/campu
 import {
   planOutdoorCampusTransition,
   createOutdoorCampusTransitionPlanner,
-} from "@/features/routing/carleton-transition";
+  getOutdoorCampusTransitionPlanner,
+} from "@/features/routing/campus-transition";
 import { DEFAULT_ROUTE_PREFERENCES } from "@/config/routing";
 import { parseIcs as parseUoftIcs } from "@/lib/ics-parser";
 import { parseCarletonIcs, carletonCampus } from "@/universities/carleton/adapter";
@@ -326,5 +327,47 @@ describe("canonical meeting and campus data contracts", () => {
     const brockRoute = brockPlanner(bFrom, bTo, DEFAULT_ROUTE_PREFERENCES);
     expect(brockRoute.status).toBe("routed");
     expect(brockRoute.result?.outdoorDistanceMeters).toBeGreaterThan(0);
+  });
+
+  test("getOutdoorCampusTransitionPlanner dynamically loads and plans transitions for EVERY supported outdoor university", async () => {
+    const { supportedUniversities } = await import("@/universities/registry");
+    const outdoorUnis = supportedUniversities().filter(
+      (u) => u.id !== "uoft" && u.enabledFeatures.routing,
+    );
+
+    expect(outdoorUnis.length).toBe(10);
+
+    for (const uni of outdoorUnis) {
+      const planner = await getOutdoorCampusTransitionPlanner(uni.id);
+      expect(planner).not.toBeNull();
+
+      const demoMeetings = await loadDemoTimetable(uni.timetableAdapter);
+      const physicalMeetings = demoMeetings.filter(
+        (m) => m.locationType === "physical" && m.buildingCode,
+      );
+      expect(physicalMeetings.length).toBeGreaterThanOrEqual(2);
+
+      let routed = false;
+      for (let i = 0; i < physicalMeetings.length; i++) {
+        for (let j = i + 1; j < physicalMeetings.length; j++) {
+          if (physicalMeetings[i]!.buildingCode !== physicalMeetings[j]!.buildingCode) {
+            const route = planner!(
+              physicalMeetings[i]!,
+              physicalMeetings[j]!,
+              DEFAULT_ROUTE_PREFERENCES,
+            );
+            if (route.status === "routed") {
+              expect(route.result?.outdoorDistanceMeters).toBeGreaterThan(0);
+              expect(route.displayCoordinates.length).toBeGreaterThan(0);
+              routed = true;
+              break;
+            }
+          }
+        }
+        if (routed) break;
+      }
+
+      expect(routed).toBe(true);
+    }
   });
 });

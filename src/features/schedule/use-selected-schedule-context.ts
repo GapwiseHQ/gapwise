@@ -44,7 +44,7 @@ export function useSelectedScheduleContext(meetings: Meeting[] | null) {
       return;
     }
     let current = true;
-    void import("@/features/routing/carleton-transition").then(
+    void import("@/features/routing/campus-transition").then(
       ({ getOutdoorCampusTransitionPlanner }) => {
         getOutdoorCampusTransitionPlanner(universityId).then((planner) => {
           if (current) setOutdoorPlanner(() => planner);
