@@ -167,4 +167,43 @@ describe("Gapwise marketing system", () => {
       expect(entry.status).toBe("supported");
     }
   });
+
+  test("simplifies explore nav to Platform, Universities, Ecosystem and removes card color strips (AND-257)", async () => {
+    const landing = await readFile("src/components/MarketingLandingImpl.tsx", "utf8");
+    const css = await readFile("src/components/marketing-landing.css", "utf8");
+
+    // Extract product-story-nav content
+    const navMatch = landing.match(/<nav className="product-story-nav"[\s\S]*?<\/nav>/);
+    expect(navMatch).not.toBeNull();
+    const navContent = navMatch![0];
+
+    // Nav has exactly Platform, Universities, Ecosystem
+    expect(navContent).toContain('href="#capabilities"');
+    expect(navContent).toContain("Platform");
+    expect(navContent).toContain('href="#universities"');
+    expect(navContent).toContain("Universities");
+    expect(navContent).toContain('href="#ecosystem"');
+    expect(navContent).toContain("Ecosystem");
+
+    // Nav does NOT have AI, Docs, Data links
+    expect(navContent).not.toContain("https://ai.gapwise.ca");
+    expect(navContent).not.toContain("https://docs.gapwise.ca");
+    expect(navContent).not.toContain("https://data.gapwise.ca");
+
+    // No colored indicator bars in university or ecosystem cards
+    expect(landing).not.toContain("university-card-indicator");
+    expect(landing).not.toContain("ecosystem-card-indicator");
+    expect(css).not.toContain(".university-card-indicator");
+    expect(css).not.toContain(".ecosystem-card-indicator");
+
+    // Ecosystem cards still retain all four destinations
+    expect(landing).toContain('data-ecosystem="ai"');
+    expect(landing).toContain('data-ecosystem="docs"');
+    expect(landing).toContain('data-ecosystem="data"');
+    expect(landing).toContain('data-ecosystem="status"');
+    expect(landing).toContain("https://ai.gapwise.ca");
+    expect(landing).toContain("https://docs.gapwise.ca");
+    expect(landing).toContain("https://data.gapwise.ca");
+    expect(landing).toContain("https://status.gapwise.ca");
+  });
 });
