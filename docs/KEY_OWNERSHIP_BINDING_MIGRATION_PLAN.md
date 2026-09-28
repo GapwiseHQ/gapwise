@@ -11,11 +11,12 @@
 
 During the 2026-09-18 security review of the Gapwise private cloud envelope crypto subsystem, an architectural limitation was identified regarding **database-supplied ownership context**.
 
-Currently, data encryption keys (DEKs) wrapped by the Key Encryption Key (KEK) and records stored in `user_private_records` and `user_availability_capsules` bind an opaque `subject_id` (a randomly generated UUID stored in the database row) into the AES-GCM Additional Authenticated Data (AAD). 
+Currently, data encryption keys (DEKs) wrapped by the Key Encryption Key (KEK) and records stored in `user_private_records` and `user_availability_capsules` bind an opaque `subject_id` (a randomly generated UUID stored in the database row) into the AES-GCM Additional Authenticated Data (AAD).
 
 While PostgreSQL Row-Level Security (RLS) restricts row access by `auth.uid()`, the cryptographic AAD context itself does **not** bind the authenticated user's canonical identity (`auth.uid()`). A database-level anomaly, misconfigured query, or privileged insider manipulation could theoretically supply an envelope associated with a different subject without triggering an AES-GCM authentication tag failure during Vercel function unwrapping.
 
 The objective of **AND-192** is to replace opaque database-supplied ownership context with a **versioned authenticated owner binding**, ensuring:
+
 1. Every wrapped key and stored record cryptographically binds the authenticated user identity (`user_id`).
 2. Zero downtime and zero disruption to active student schedules.
 3. No silent rewriting or destructive corruption of existing ciphertext.
@@ -32,10 +33,28 @@ In [`src/features/security/crypto-context.ts`](../../src/features/security/crypt
 
 ```typescript
 // Current AAD format for Key Envelopes
-["gapwise", "key-envelope", cryptoVersion, purpose, subjectId, keyId, keyVersion, kekVersion]
+const keyEnvelope = [
+  "gapwise",
+  "key-envelope",
+  cryptoVersion,
+  purpose,
+  subjectId,
+  keyId,
+  keyVersion,
+  kekVersion,
+];
 
 // Current AAD format for Encrypted Records
-["gapwise", purpose, cryptoVersion, schemaVersion, subjectId, recordId, keyId, revision]
+const record = [
+  "gapwise",
+  purpose,
+  cryptoVersion,
+  schemaVersion,
+  subjectId,
+  recordId,
+  keyId,
+  revision,
+];
 ```
 
 - `subject_id`: Randomly generated at envelope creation time (`createOwnEnvelope`).
@@ -48,10 +67,30 @@ In [`src/features/security/crypto-context.ts`](../../src/features/security/crypt
 
 ```typescript
 // Proposed V2 AAD format for Key Envelopes
-["gapwise", "key-envelope", 2, purpose, ownerUserId, subjectId, keyId, keyVersion, kekVersion]
+const keyEnvelopeV2 = [
+  "gapwise",
+  "key-envelope",
+  2,
+  purpose,
+  ownerUserId,
+  subjectId,
+  keyId,
+  keyVersion,
+  kekVersion,
+];
 
 // Proposed V2 AAD format for Encrypted Records
-["gapwise", purpose, 2, schemaVersion, ownerUserId, subjectId, recordId, keyId, revision]
+const recordV2 = [
+  "gapwise",
+  purpose,
+  2,
+  schemaVersion,
+  ownerUserId,
+  subjectId,
+  recordId,
+  keyId,
+  revision,
+];
 ```
 
 - `ownerUserId`: The authenticated caller's verified Supabase user UUID (`authenticated.userId`).
@@ -106,7 +145,7 @@ In [`src/features/security/crypto-context.ts`](../../src/features/security/crypt
    - Iterates through `crypto_key_envelopes` where `crypto_version = 1`.
    - Unwraps under V1 AAD and re-wraps under V2 AAD with `user_id`.
    - Atomically updates `crypto_key_envelopes`.
-   - *Note:* User private records (`user_private_records`) cannot be re-encrypted by the server because the server does not store the user's raw DEK in plaintext. Those remain readable under V1 until the user's next client-side sync, where the client performs opportunistic re-encryption.
+   - _Note:_ User private records (`user_private_records`) cannot be re-encrypted by the server because the server does not store the user's raw DEK in plaintext. Those remain readable under V1 until the user's next client-side sync, where the client performs opportunistic re-encryption.
 
 ### Phase 4: Verification, Gate Check & Deprecation
 
@@ -135,6 +174,7 @@ In [`src/features/security/crypto-context.ts`](../../src/features/security/crypt
 ## 6. Public Release & Disclosure Policy
 
 Per the security guidelines established for Gapwise private cloud infrastructure:
+
 - **No security advisory, CVE, or exploit details** shall be published in public GitHub commit messages or pull request descriptions.
 - Pull requests implementing Phase 1 and Phase 2 shall use standard maintenance nomenclature:
   `feat(security): version and harden key envelope ownership context`
