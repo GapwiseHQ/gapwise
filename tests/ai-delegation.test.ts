@@ -1,5 +1,9 @@
 import { describe, expect, test } from "bun:test";
-import { applyAiActionBatch, parsePendingAiActions } from "@/features/ai/actions";
+import {
+  applyAiActionBatch,
+  parsePendingAiActions,
+  parsePendingAiActionsDetailed,
+} from "@/features/ai/actions";
 import { aiSnapshotContent } from "@/features/ai/snapshot";
 import { DEFAULT_AI_PERMISSIONS } from "@/features/ai/types";
 import { DEFAULT_GAP_PREFERENCES } from "@/features/gaps/preferences";
@@ -243,5 +247,65 @@ describe("AI delegation", () => {
     expect(result.rejected).toEqual([
       { id: "00000000-0000-4000-8000-000000000004", code: "permission_denied" },
     ]);
+  });
+
+  test("quarantines malformed queue rows per-item without stalling valid actions", () => {
+    const rawQueue = [
+      {
+        id: "00000000-0000-4000-8000-000000000005",
+        createdAt: "2026-08-18T16:30:00.000Z",
+        action: {
+          schemaVersion: 1,
+          kind: "update_gap_preferences",
+          expectedRevision: 2,
+          patch: { riskTolerance: "low" },
+        },
+      },
+      {
+        id: "00000000-0000-4000-8000-000000000006",
+        createdAt: "2026-08-18T16:30:00.000Z",
+        action: {
+          schemaVersion: 1,
+          kind: "malformed_or_tampered_action",
+          unexpectedField: true,
+        },
+      },
+      {
+        id: "00000000-0000-4000-8000-000000000007",
+        createdAt: 123456789, // invalid createdAt type
+        action: {
+          schemaVersion: 1,
+          kind: "update_gap_preferences",
+          expectedRevision: 2,
+          patch: { riskTolerance: "high" },
+        },
+      },
+    ];
+
+    // Detailed partition separates valid and quarantined items
+    const partitioned = parsePendingAiActionsDetailed(rawQueue);
+    expect(partitioned).not.toBeNull();
+    expect(partitioned?.valid).toHaveLength(1);
+    expect(partitioned?.valid[0]?.id).toBe("00000000-0000-4000-8000-000000000005");
+    expect(partitioned?.quarantined).toEqual([
+      { id: "00000000-0000-4000-8000-000000000006", reason: "malformed_payload" },
+      { id: "00000000-0000-4000-8000-000000000007", reason: "invalid_timestamp" },
+    ]);
+
+    // Backward-compatible parsePendingAiActions returns null when quarantined items exist
+    expect(parsePendingAiActions(rawQueue)).toBeNull();
+
+    // Valid actions from the partitioned queue can be applied
+    const batchResult = applyAiActionBatch({
+      revision: 2,
+      personalItems: [],
+      gapPreferences: DEFAULT_GAP_PREFERENCES,
+      permissions: { writePersonal: false, writeGapPreferences: true },
+      actions: partitioned!.valid,
+    });
+
+    expect(batchResult.applied).toEqual(["00000000-0000-4000-8000-000000000005"]);
+    expect(batchResult.rejected).toEqual([]);
+    expect(batchResult.gapPreferences.riskTolerance).toBe("low");
   });
 });

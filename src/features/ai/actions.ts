@@ -6,9 +6,11 @@ import { TERMS, WEEKDAYS, type Term, type Weekday } from "@/lib/timetable-types"
 import type {
   AiAction,
   AiPermissions,
+  ParsedPendingAiQueue,
   PendingAiAction,
   PersonalItemDraft,
   PersonalItemPatch,
+  QuarantinedPendingAiAction,
 } from "./types";
 
 const CATEGORIES: PersonalCategory[] = [
@@ -293,17 +295,32 @@ function parseAction(value: unknown): AiAction | null {
   return null;
 }
 
-export function parsePendingAiActions(value: unknown): PendingAiAction[] | null {
+export function parsePendingAiActionsDetailed(value: unknown): ParsedPendingAiQueue | null {
   if (!Array.isArray(value) || value.length > 50) return null;
-  const parsed: PendingAiAction[] = [];
+  const valid: PendingAiAction[] = [];
+  const quarantined: QuarantinedPendingAiAction[] = [];
   for (const entry of value) {
-    if (!isRecord(entry) || !shortText(entry.id) || typeof entry.createdAt !== "string")
-      return null;
+    if (!isRecord(entry) || !shortText(entry.id)) {
+      continue;
+    }
+    if (typeof entry.createdAt !== "string") {
+      quarantined.push({ id: entry.id, reason: "invalid_timestamp" });
+      continue;
+    }
     const action = parseAction(entry.action);
-    if (!action) return null;
-    parsed.push({ id: entry.id, createdAt: entry.createdAt, action });
+    if (!action) {
+      quarantined.push({ id: entry.id, reason: "malformed_payload" });
+      continue;
+    }
+    valid.push({ id: entry.id, createdAt: entry.createdAt, action });
   }
-  return parsed;
+  return { valid, quarantined };
+}
+
+export function parsePendingAiActions(value: unknown): PendingAiAction[] | null {
+  const result = parsePendingAiActionsDetailed(value);
+  if (!result || result.quarantined.length > 0) return null;
+  return result.valid;
 }
 
 function buildPersonalItem(actionId: string, draft: PersonalItemDraft, now: string): PersonalItem {
