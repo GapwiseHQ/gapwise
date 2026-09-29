@@ -29,6 +29,7 @@ import {
 import { findGaps } from "@/lib/gaps";
 import type { Gap, Meeting, Term } from "@/lib/timetable-types";
 import { formatCompactDuration, formatTime, weekdayForDate } from "@/lib/timetable-types";
+import { activeUniversity } from "@/universities/registry";
 
 type Row = { icon: LucideIcon; text: string };
 
@@ -51,7 +52,8 @@ function present(state: TodayState, now: Date, selectedTerm: string): Presentati
           { icon: MapPin, text: getLocationPresentation({ meeting: state.first.meeting }).label },
         ],
       };
-    case "ended":
+    case "ended": {
+      const sourceName = activeUniversity()?.calendarSource ?? "timetable";
       return {
         eyebrow: `${selectedTerm} has finished`,
         title: state.next
@@ -59,16 +61,19 @@ function present(state: TodayState, now: Date, selectedTerm: string): Presentati
           : "No later classes in this timetable",
         detail: state.next
           ? occurrenceLead(state.next.date, state.next.meeting, now)
-          : "Upload a new ACORN calendar when your next timetable is ready.",
+          : `Upload a new ${sourceName} export when your next timetable is ready.`,
         rows: [],
       };
-    case "dates-unavailable":
+    }
+    case "dates-unavailable": {
+      const sourceName = activeUniversity()?.calendarSource ?? "timetable";
       return {
         eyebrow: `${selectedTerm} timetable`,
         title: "Term dates aren't available",
-        detail: "Re-import the ACORN calendar to add real recurrence dates.",
+        detail: `Re-import from ${sourceName} to add real recurrence dates.`,
         rows: [],
       };
+    }
     case "before-first": {
       const startsIn = Math.max(0, state.next.startTime - minutesNow(now));
       return {

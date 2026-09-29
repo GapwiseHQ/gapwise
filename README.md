@@ -189,11 +189,12 @@ Visit `http://localhost:5173` to test the default edition, or use `http://localh
 ### Verification gates
 
 ```bash
-bun run typecheck        # TypeScript compilation verification
-bun run lint             # ESLint and code style checks
-bun test                 # Full unit and integration test suite
-bun run build            # Production Vite build, SEO generation, and asset checks
-bunx prettier --check .  # Code formatting check
+bun run typecheck             # TypeScript compilation verification
+bun run lint                  # ESLint and code style checks
+bun test                      # Full unit and integration test suite
+bun run validate:universities # Multi-university platform contract validation
+bun run build                 # Production Vite build, SEO generation, and asset checks
+bunx prettier --check .       # Code formatting check
 ```
 
 ---

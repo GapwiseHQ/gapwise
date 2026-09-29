@@ -24,6 +24,7 @@ const VALID_FEATURES = new Set([
   "support",
   "trust",
   "accessibility",
+  "search",
 ]);
 
 const VALID_UNIVERSITIES = new Set([

@@ -6,6 +6,7 @@ import {
   HardDriveDownload,
   LayoutGrid,
   MapPinned,
+  Search,
   Trash2,
   Upload,
   X,
@@ -68,6 +69,9 @@ import { getCampusAccessPoint } from "@/data/utm/campus-access-points";
 
 const DayRoute = lazy(() =>
   import("@/components/DayRoute").then((module) => ({ default: module.DayRoute })),
+);
+const SearchDialog = lazy(() =>
+  import("@/components/SearchDialog").then((module) => ({ default: module.SearchDialog })),
 );
 const EMPTY_MEETINGS: Meeting[] = [];
 
@@ -169,6 +173,7 @@ function AppLayout() {
   const [moreOpen, setMoreOpen] = useState(false);
   const [accountSettingsRequest, setAccountSettingsRequest] = useState(0);
   const [arrivalSettingsRequest, setArrivalSettingsRequest] = useState(0);
+  const [searchOpen, setSearchOpen] = useState(false);
   const replacementInputRef = useRef<HTMLInputElement>(null);
   const authenticatedUserId = user?.id ?? null;
   const arrivalResidence = preferences.mainCampus
@@ -177,6 +182,8 @@ function AppLayout() {
   const arrivalAccessPoint =
     preferences.mainCampus === "utm" ? getCampusAccessPoint(preferences.campusAccessPointId) : null;
   const isSingleCampus = (university?.campuses.length ?? 0) <= 1;
+  const fileAccept =
+    university?.id !== "uoft" ? ".ics,.txt,.tsv,text/calendar,text/plain" : ".ics,text/calendar";
   const arrivalDetail = arrivalResidence?.code ?? arrivalAccessPoint?.label;
   const arrivalLabel = isSingleCampus
     ? (arrivalDetail ?? "Arrival")
@@ -254,6 +261,17 @@ function AppLayout() {
     updateScrollState();
     window.addEventListener("scroll", updateScrollState, { passive: true });
     return () => window.removeEventListener("scroll", updateScrollState);
+  }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        setSearchOpen((prev) => !prev);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
   useEffect(() => {
@@ -360,11 +378,16 @@ function AppLayout() {
     return (
       <>
         <Outlet />
-        <MobileShell tab={mobileTab} onOpenMore={() => setMoreOpen(true)} moreOpen={moreOpen}>
+        <MobileShell
+          tab={mobileTab}
+          onOpenMore={() => setMoreOpen(true)}
+          onOpenSearch={() => setSearchOpen(true)}
+          moreOpen={moreOpen}
+        >
           <input
             ref={replacementInputRef}
             type="file"
-            accept=".ics,text/calendar"
+            accept={fileAccept}
             hidden
             onChange={timetableCommands.handleFileInputChange}
           />
@@ -532,6 +555,19 @@ function AppLayout() {
           onChange={setAcademic}
           meetings={timetableWithWork}
         />
+        <Suspense fallback={null}>
+          <SearchDialog
+            open={searchOpen}
+            onOpenChange={setSearchOpen}
+            campusId={preferences.mainCampus}
+            meetings={meetings ?? undefined}
+            onSelectBuilding={selectBuilding}
+            onOpenImport={() => {
+              replacementInputRef.current?.click();
+            }}
+            onOpenArrival={() => setArrivalSettingsRequest((request) => request + 1)}
+          />
+        </Suspense>
       </>
     );
   }
@@ -546,6 +582,7 @@ function AppLayout() {
           destination={destination}
           arrivalLabel={arrivalLabel}
           theme={theme}
+          onOpenSearch={() => setSearchOpen(true)}
           onOpenArrival={() => setArrivalSettingsRequest((request) => request + 1)}
           onOpenAccount={() => {
             if (user) setAccountSettingsRequest((request) => request + 1);
@@ -578,6 +615,18 @@ function AppLayout() {
           </Link>
 
           <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
+            <button
+              type="button"
+              onClick={() => setSearchOpen(true)}
+              className="button-secondary inline-flex h-9 items-center gap-2 rounded-lg border border-border/80 bg-muted/30 px-2.5 text-xs text-muted-foreground transition hover:border-border hover:bg-muted/60 hover:text-foreground"
+              aria-label="Search campus and classes (⌘K)"
+            >
+              <Search className="h-3.5 w-3.5" aria-hidden="true" />
+              <span className="hidden sm:inline">Search…</span>
+              <kbd className="hidden rounded border border-border/80 bg-background/80 px-1.5 py-0.5 font-mono text-[10px] sm:inline">
+                ⌘K
+              </kbd>
+            </button>
             <ThemeToggle theme={theme} onToggle={toggleTheme} />
             <ResidenceSettings
               user={user}
@@ -632,7 +681,7 @@ function AppLayout() {
               ref={replacementInputRef}
               id="product-ics-file"
               type="file"
-              accept=".ics,text/calendar"
+              accept={fileAccept}
               hidden
               onChange={timetableCommands.handleFileInputChange}
             />
@@ -729,11 +778,7 @@ function AppLayout() {
                 <input
                   ref={replacementInputRef}
                   type="file"
-                  accept={
-                    university?.id !== "uoft"
-                      ? ".ics,.txt,.tsv,text/calendar,text/plain"
-                      : ".ics,text/calendar"
-                  }
+                  accept={fileAccept}
                   hidden
                   onChange={timetableCommands.handleFileInputChange}
                 />
@@ -947,6 +992,24 @@ function AppLayout() {
         onChange={setAcademic}
         meetings={termMeetings}
       />
+
+      <Suspense fallback={null}>
+        <SearchDialog
+          open={searchOpen}
+          onOpenChange={setSearchOpen}
+          campusId={preferences.mainCampus}
+          meetings={meetings ?? undefined}
+          onSelectBuilding={selectBuilding}
+          onOpenImport={() => {
+            if (destination === "home") {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            } else {
+              replacementInputRef.current?.click();
+            }
+          }}
+          onOpenArrival={() => setArrivalSettingsRequest((r) => r + 1)}
+        />
+      </Suspense>
 
       {destination === "home" ? (
         <footer className="border-t border-border">

@@ -13,8 +13,11 @@ test("Carleton uses the canonical product screens and campus dataset", async ({
   await expect(page.getByText("For Carleton University", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /Import Carleton/ })).toBeVisible();
   await page.getByRole("button", { name: "Try a demo" }).click();
-  await expect(page.getByText("COMP 1405").first()).toBeVisible();
   await expect(page).toHaveURL(/\/timetable/);
+  if (test.info().project.name === "mobile-chromium") {
+    await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();
+  }
+  await expect(page.getByText("COMP 1405").first()).toBeVisible();
 
   if (test.info().project.name === "mobile-chromium") {
     await page.getByRole("navigation", { name: "Main" }).getByRole("link", { name: "Map" }).click();
@@ -156,6 +159,9 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
   ).toBeVisible();
   await page.getByRole("button", { name: "Try a demo" }).click();
   await expect(page).toHaveURL(/\/timetable/);
+  if (test.info().project.name === "mobile-chromium") {
+    await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();
+  }
   await expect(page.getByText("CPS 109").first()).toBeVisible();
 
   // Queen's
@@ -164,6 +170,9 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
   await expect(page.getByRole("button", { name: /Import (SOLUS|pasted schedule)/ })).toBeVisible();
   await page.getByRole("button", { name: "Try a demo" }).click();
   await expect(page).toHaveURL(/\/timetable/);
+  if (test.info().project.name === "mobile-chromium") {
+    await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();
+  }
   await expect(page.getByText("CISC 121").first()).toBeVisible();
 
   // Laurier
@@ -172,6 +181,9 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
   await expect(page.getByRole("button", { name: /Import (LORIS|pasted schedule)/ })).toBeVisible();
   await page.getByRole("button", { name: "Try a demo" }).click();
   await expect(page).toHaveURL(/\/timetable/);
+  if (test.info().project.name === "mobile-chromium") {
+    await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();
+  }
   await expect(page.getByText("CP 104").first()).toBeVisible();
 
   failures.assertClean();
