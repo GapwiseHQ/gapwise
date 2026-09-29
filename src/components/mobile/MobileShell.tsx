@@ -1,4 +1,4 @@
-import { CalendarClock, CalendarRange, LayoutGrid, MapPinned, Menu } from "lucide-react";
+import { CalendarClock, CalendarRange, LayoutGrid, MapPinned, Menu, Search } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
 import "./mobile-integrated.css";
@@ -40,11 +40,13 @@ const PAGE_LABEL: Record<MobileTab, string> = {
 export function MobileShell({
   tab,
   onOpenMore,
+  onOpenSearch,
   moreOpen,
   children,
 }: {
   tab: MobileTab;
   onOpenMore: () => void;
+  onOpenSearch?: () => void;
   moreOpen: boolean;
   children: ReactNode;
 }) {
@@ -64,9 +66,19 @@ export function MobileShell({
                 Gapwise
               </p>
             </div>
-            <p className="truncate text-xs font-semibold text-muted-foreground">
-              {PAGE_LABEL[tab]}
-            </p>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={onOpenSearch}
+                className="flex h-8 w-8 items-center justify-center rounded-lg border border-border/80 bg-muted/40 text-muted-foreground transition hover:bg-muted hover:text-foreground"
+                aria-label="Search campus and classes"
+              >
+                <Search className="h-4 w-4" aria-hidden="true" />
+              </button>
+              <p className="truncate text-xs font-semibold text-muted-foreground">
+                {PAGE_LABEL[tab]}
+              </p>
+            </div>
           </div>
         </header>
 

@@ -4,6 +4,7 @@ import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import { lovableAssetsProxyPlugin } from "@lovable.dev/vite-tanstack-config";
+import manifest from "./universities.json" with { type: "json" };
 
 /**
  * Client-only build: routing, ICS parsing, route calculation, and Supabase calls run in the
@@ -43,27 +44,17 @@ export default defineConfig({
           if (!req.url) return next();
           const parsed = new URL(req.url, "http://localhost");
           const host = (req.headers.host || "").toLowerCase();
-          const KNOWN_UNIVERSITIES = new Set([
-            "uoft",
-            "carleton",
-            "tmu",
-            "queens",
-            "laurier",
-            "york",
-            "mcmaster",
-          ]);
+          const KNOWN_UNIVERSITIES = new Set(manifest.universities.map((u) => u.id));
           let uniId = "uoft";
-          if (host.includes("carleton")) uniId = "carleton";
-          else if (host.includes("tmu")) uniId = "tmu";
-          else if (host.includes("queens")) uniId = "queens";
-          else if (host.includes("laurier")) uniId = "laurier";
-          else if (host.includes("york")) uniId = "york";
-          else if (host.includes("mcmaster")) uniId = "mcmaster";
-          else {
-            const queryUni = parsed.searchParams.get("university");
-            if (queryUni && KNOWN_UNIVERSITIES.has(queryUni)) {
-              uniId = queryUni;
+          for (const u of manifest.universities) {
+            if (u.id !== "uoft" && host.includes(u.id)) {
+              uniId = u.id;
+              break;
             }
+          }
+          const queryUni = parsed.searchParams.get("university");
+          if (queryUni && KNOWN_UNIVERSITIES.has(queryUni)) {
+            uniId = queryUni;
           }
 
           if (

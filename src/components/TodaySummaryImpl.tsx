@@ -31,6 +31,7 @@ import { meetingOccursOnDate } from "@/lib/calendar-awareness";
 import { findGaps } from "@/lib/gaps";
 import type { Gap, Meeting, Term } from "@/lib/timetable-types";
 import { formatCompactDuration, formatTime, weekdayForDate } from "@/lib/timetable-types";
+import { activeUniversity } from "@/universities/registry";
 
 function meetingKind(meeting: Meeting) {
   if (meeting.sectionCode === "STUDY") return "Study";
@@ -223,20 +224,24 @@ export const TodaySummary = memo(function TodaySummary({
         summary.first.meeting.startTime,
       )} · ${getLocationPresentation({ meeting: summary.first.meeting }).label}`;
       break;
-    case "ended":
+    case "ended": {
+      const sourceName = activeUniversity()?.calendarSource ?? "timetable";
       heading = `${selectedTerm} classes have finished`;
       title = summary.next
         ? `${summary.next.meeting.term} is next`
         : "Your imported timetable has no later classes";
       detail = summary.next
         ? occurrenceLead(summary.next.date, summary.next.meeting, now)
-        : "Upload a new ACORN calendar when your next timetable is ready.";
+        : `Upload a new ${sourceName} export when your next timetable is ready.`;
       break;
-    case "dates-unavailable":
+    }
+    case "dates-unavailable": {
+      const sourceName = activeUniversity()?.calendarSource ?? "timetable";
       heading = `${selectedTerm} timetable`;
       title = "Term dates aren't available";
-      detail = "Re-import the ACORN calendar to add real recurrence dates.";
+      detail = `Re-import from ${sourceName} to add real recurrence dates.`;
       break;
+    }
     case "before-first": {
       const startsIn = Math.max(0, summary.next.startTime - minutesNow(now));
       title = `Next: ${summary.next.courseCode} at ${formatTime(summary.next.startTime)}`;

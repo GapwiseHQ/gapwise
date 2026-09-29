@@ -2,12 +2,11 @@ import { expect, test } from "@playwright/test";
 import { watchForAppFailures } from "./helpers";
 
 test("Adversarially smoke-test live routes across UTM, Guelph, McMaster, York, and Brock", async ({
-  page,
+  browser,
   baseURL,
 }) => {
   test.skip(test.info().project.name !== "chromium");
   if (!baseURL) throw new Error("Playwright baseURL is required");
-  const failures = watchForAppFailures(page, baseURL);
 
   const targets = [
     { id: "uoft", query: "", name: "University of Toronto", sampleCourse: "DEM101H5" },
@@ -34,6 +33,10 @@ test("Adversarially smoke-test live routes across UTM, Guelph, McMaster, York, a
 
   for (const target of targets) {
     console.log(`Smoke testing UI route for ${target.name} (${target.id})...`);
+    const context = await browser.newContext({ baseURL });
+    const page = await context.newPage();
+    const failures = watchForAppFailures(page, baseURL);
+
     await page.goto(`/${target.query}`);
 
     // Click demo button to load campus schedule
@@ -55,12 +58,7 @@ test("Adversarially smoke-test live routes across UTM, Guelph, McMaster, York, a
       page.locator(".campus-map-container, [data-testid='campus-map'], canvas").first(),
     ).toBeVisible();
 
-    // Clear schedule for next iteration
-    await page.evaluate(() => {
-      window.localStorage.clear();
-      window.sessionStorage.clear();
-    });
+    failures.assertClean();
+    await context.close();
   }
-
-  failures.assertClean();
 });

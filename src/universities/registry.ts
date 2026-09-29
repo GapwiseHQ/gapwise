@@ -2,6 +2,8 @@ import manifest from "../../universities.json" with { type: "json" };
 
 export type University = (typeof manifest.universities)[number];
 
+export const UNIVERSITIES: readonly University[] = manifest.universities;
+
 export function validateUniversityManifest(
   entries: readonly University[] = manifest.universities,
 ): string[] {

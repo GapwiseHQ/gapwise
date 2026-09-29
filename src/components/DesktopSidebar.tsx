@@ -11,6 +11,7 @@ type DesktopSidebarProps = {
   destination: AppDestination;
   arrivalLabel: string;
   theme: Theme;
+  onOpenSearch?: () => void;
   onOpenArrival: () => void;
   onOpenAccount: () => void;
   onToggleTheme: () => void;

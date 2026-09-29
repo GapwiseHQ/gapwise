@@ -5,6 +5,7 @@ import {
   LayoutGrid,
   MapPinned,
   Moon,
+  Search,
   Settings,
   Sun,
 } from "lucide-react";
@@ -49,6 +50,7 @@ export function DesktopSidebar({
   destination,
   arrivalLabel,
   theme,
+  onOpenSearch,
   onOpenArrival,
   onOpenAccount,
   onToggleTheme,
@@ -56,6 +58,7 @@ export function DesktopSidebar({
   destination: AppDestination;
   arrivalLabel: string;
   theme: Theme;
+  onOpenSearch?: () => void;
   onOpenArrival: () => void;
   onOpenAccount: () => void;
   onToggleTheme: () => void;
@@ -73,6 +76,21 @@ export function DesktopSidebar({
           <span className="brand-scope-pill">{activeUniversity()?.shortName ?? "U of T"}</span>
         </span>
       </Link>
+
+      <button
+        type="button"
+        className="button-secondary desktop-search-trigger mb-3 flex h-9 w-full items-center justify-between rounded-lg border border-border/60 bg-muted/30 px-3 text-xs text-muted-foreground transition hover:border-border hover:bg-muted/60 hover:text-foreground"
+        aria-label="Search campus, buildings, or actions (⌘K)"
+        onClick={onOpenSearch}
+      >
+        <span className="flex items-center gap-2">
+          <Search className="h-3.5 w-3.5" aria-hidden="true" />
+          <span>Search…</span>
+        </span>
+        <kbd className="rounded border border-border/80 bg-background/80 px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground">
+          ⌘K
+        </kbd>
+      </button>
 
       <nav role="group" aria-label="View mode">
         {destinations.map((item) => {

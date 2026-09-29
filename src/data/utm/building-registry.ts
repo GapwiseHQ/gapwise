@@ -137,7 +137,12 @@ export const UTM_BUILDINGS: BuildingConfiguration[] = [
     code: "HM",
     name: "Hazel McCallion Academic Learning Centre",
     category: "academic",
-    aliases: ["HAZEL MCCALLION", "HAZEL MCCALLION ACADEMIC LEARNING CENTRE"],
+    aliases: [
+      "HAZEL MCCALLION",
+      "HAZEL MCCALLION ACADEMIC LEARNING CENTRE",
+      "LIBRARY",
+      "UTM LIBRARY",
+    ],
     officialCodes: officialCodes("HM"),
   },
   {
