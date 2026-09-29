@@ -59,7 +59,7 @@ for (const uni of manifest.universities) {
     errors.push(`${uni.id}: demoTimetableLoaders missing loader for '${uni.timetableAdapter}'`);
   } else {
     try {
-      const meetings = await demoLoader();
+      const meetings = await demoLoader(uni.defaultCampus);
       if (!Array.isArray(meetings) || meetings.length === 0) {
         errors.push(`${uni.id}: Demo timetable returned empty meetings`);
       }
@@ -101,6 +101,54 @@ for (const uni of manifest.universities) {
       errors.push(
         `${uni.id}/${campusId}: Campus routing graph has insufficient pathEdges (${snapshot.pathEdges?.length ?? 0})`,
       );
+    }
+
+    const usableEntrances = snapshot.entrances.filter(
+      (entrance) => entrance.access !== "restricted",
+    );
+    if (usableEntrances.length === 0) {
+      errors.push(`${uni.id}/${campusId}: Campus routing has no usable entrances`);
+    }
+
+    if (demoLoader) {
+      const meetings = await demoLoader(campusId);
+      const demoCodes = [
+        ...new Set(
+          meetings
+            .filter((meeting) => meeting.locationType === "physical")
+            .map((meeting) => meeting.buildingCode?.trim().toUpperCase())
+            .filter((code): code is string => Boolean(code)),
+        ),
+      ];
+      const demoBuildings = demoCodes.map((code) =>
+        snapshot.buildings.find(
+          (building) =>
+            building.id.toUpperCase() === code ||
+            building.nativeCodes.some((nativeCode) => nativeCode.toUpperCase() === code),
+        ),
+      );
+      const missingDemoCodes = demoCodes.filter((_, index) => !demoBuildings[index]);
+      if (missingDemoCodes.length > 0) {
+        errors.push(
+          `${uni.id}/${campusId}: Demo references unmapped buildings: ${missingDemoCodes.join(", ")}`,
+        );
+      }
+      const mappedDemoBuildings = demoBuildings.filter(
+        (building): building is NonNullable<typeof building> => Boolean(building),
+      );
+      if (mappedDemoBuildings.length < 2) {
+        errors.push(`${uni.id}/${campusId}: Demo must contain at least two mapped buildings`);
+      } else {
+        const origin = mappedDemoBuildings[0]!;
+        for (const destination of mappedDemoBuildings.slice(1)) {
+          const route = routeBetweenBuildings(origin.id, destination.id, snapshot);
+          if (route.status !== "ready") {
+            errors.push(
+              `${uni.id}/${campusId}: Demo building ${destination.nativeCodes[0] ?? destination.id} is not routable from ${origin.nativeCodes[0] ?? origin.id}`,
+            );
+          }
+        }
+      }
     }
 
     // Verify test route between two buildings

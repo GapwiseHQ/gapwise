@@ -30,6 +30,10 @@ export function useAppNavigation(hasMeetings: boolean) {
     destination === "route" && typeof location.search["building"] === "string"
       ? location.search["building"]
       : null;
+  const selectedCampusId =
+    destination === "route" && typeof location.search["campus"] === "string"
+      ? location.search["campus"]
+      : null;
   const [openedViews, setOpenedViews] = useState({ gaps: false, route: false });
   const allowInitialHomeRedirect = useRef(destination === "home");
 
@@ -68,23 +72,40 @@ export function useAppNavigation(hasMeetings: boolean) {
       if (code === null && selectedBuildingCode === null) return;
       void navigate({
         to: "/route",
-        search: code ? { building: code } : {},
+        search: {
+          ...(selectedCampusId ? { campus: selectedCampusId } : {}),
+          ...(code ? { building: code } : {}),
+        },
         replace: destination === "route",
         resetScroll: false,
       });
     },
-    [destination, navigate, selectedBuildingCode],
+    [destination, navigate, selectedBuildingCode, selectedCampusId],
+  );
+
+  const selectCampus = useCallback(
+    (campus: string) => {
+      if (campus === selectedCampusId && selectedBuildingCode === null) return;
+      void navigate({
+        to: "/route",
+        search: { campus },
+        resetScroll: false,
+      });
+    },
+    [navigate, selectedBuildingCode, selectedCampusId],
   );
 
   return {
     destination,
     selectedBuildingCode,
+    selectedCampusId,
     openedViews,
     mobileTab: destination === "home" ? ("today" as const) : destination,
     view: destination === "gaps" || destination === "route" ? destination : ("timetable" as const),
     navigateToday: () => void navigate({ to: "/today" }),
     showView,
     selectBuilding,
+    selectCampus,
     openGapPlan: () => showView("gaps"),
     openDayRoute: () => showView("route"),
   };

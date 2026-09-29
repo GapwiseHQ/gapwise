@@ -311,6 +311,8 @@ export function MobileDayRoute({
   planTransition,
   selectedBuildingCode,
   onSelectBuilding,
+  selectedCampusId,
+  onSelectCampus,
   liveLocation,
   onLiveLocationChange,
 }: {
@@ -322,6 +324,8 @@ export function MobileDayRoute({
   planTransition: TransitionPlanner;
   selectedBuildingCode: string | null;
   onSelectBuilding: (code: string | null) => void;
+  selectedCampusId: string | null;
+  onSelectCampus: (campusId: string) => void;
   liveLocation: LocationControlState;
   onLiveLocationChange: (state: LocationControlState) => void;
 }) {
@@ -480,6 +484,8 @@ export function MobileDayRoute({
           onHoverBuilding={ignoreMapSelection}
           selectedBuildingCode={selectedBuildingCode}
           onSelectBuilding={onSelectBuilding}
+          selectedCampusId={selectedCampusId}
+          onSelectCampus={onSelectCampus}
           dayAnchor={null}
           className="h-[64dvh] min-h-[27rem] max-h-[40rem]"
         />
@@ -584,6 +590,8 @@ export function MobileDayRoute({
             onHoverBuilding={ignoreMapSelection}
             selectedBuildingCode={selectedBuildingCode}
             onSelectBuilding={onSelectBuilding}
+            selectedCampusId={selectedCampusId}
+            onSelectCampus={onSelectCampus}
             dayAnchor={null}
             className="h-[58dvh] min-h-[24rem] max-h-[34rem]"
           />
@@ -601,6 +609,8 @@ export function MobileDayRoute({
             onHoverBuilding={ignoreMapSelection}
             selectedBuildingCode={selectedBuildingCode}
             onSelectBuilding={onSelectBuilding}
+            selectedCampusId={selectedCampusId}
+            onSelectCampus={onSelectCampus}
             dayAnchor={dayAnchor}
             onLiveLocationChange={onLiveLocationChange}
             className="h-[52dvh] min-h-[22rem] max-h-[36rem]"

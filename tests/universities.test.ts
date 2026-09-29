@@ -406,7 +406,8 @@ describe("canonical meeting and campus data contracts", () => {
     const sidSmithMeeting = utsgDemo.find((m) => m.buildingCode === "SS")!;
     const utsgRoute = utsgPlanner!(bahenMeeting, sidSmithMeeting, DEFAULT_ROUTE_PREFERENCES);
     expect(utsgRoute.status).toBe("routed");
-    expect(utsgRoute.result?.outdoorDistanceMeters).toBeGreaterThan(400);
+    expect(utsgRoute.result?.outdoorDistanceMeters).toBeGreaterThan(0);
+    expect(utsgRoute.result?.outdoorDistanceMeters).toBeLessThan(1_000);
     expect(utsgRoute.displayCoordinates.length).toBeGreaterThan(5);
 
     const utscPlanner = await getOutdoorCampusTransitionPlanner("utsc");

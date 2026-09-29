@@ -68,6 +68,8 @@ export function DayRoute({
   planTransition,
   selectedBuildingCode,
   onSelectBuilding,
+  selectedCampusId,
+  onSelectCampus,
 }: {
   meetings: Meeting[];
   term: Term;
@@ -78,6 +80,8 @@ export function DayRoute({
   planTransition: TransitionPlanner;
   selectedBuildingCode: string | null;
   onSelectBuilding: (code: string | null) => void;
+  selectedCampusId: string | null;
+  onSelectCampus: (campusId: string) => void;
 }) {
   const isMobile = useIsMobile();
   const availableTerms = useMemo(
@@ -233,6 +237,8 @@ export function DayRoute({
         planTransition={planTransition}
         selectedBuildingCode={selectedBuildingCode}
         onSelectBuilding={onSelectBuilding}
+        selectedCampusId={selectedCampusId}
+        onSelectCampus={onSelectCampus}
         liveLocation={liveLocation}
         onLiveLocationChange={acceptLiveLocation}
       />
@@ -252,6 +258,8 @@ export function DayRoute({
         onHoverBuilding={highlightBuilding}
         selectedBuildingCode={selectedBuildingCode}
         onSelectBuilding={onSelectBuilding}
+        selectedCampusId={selectedCampusId}
+        onSelectCampus={onSelectCampus}
         dayAnchor={null}
         className="h-[calc(100dvh-13rem)] min-h-[32rem] max-h-[46rem]"
       />
@@ -413,6 +421,8 @@ export function DayRoute({
             onHoverBuilding={highlightBuilding}
             selectedBuildingCode={selectedBuildingCode}
             onSelectBuilding={onSelectBuilding}
+            selectedCampusId={selectedCampusId}
+            onSelectCampus={onSelectCampus}
             dayAnchor={null}
             className="h-[32rem] lg:h-[40rem]"
           />
@@ -430,6 +440,8 @@ export function DayRoute({
             onHoverBuilding={highlightBuilding}
             selectedBuildingCode={selectedBuildingCode}
             onSelectBuilding={onSelectBuilding}
+            selectedCampusId={selectedCampusId}
+            onSelectCampus={onSelectCampus}
             dayAnchor={dayAnchor}
             onLiveLocationChange={acceptLiveLocation}
             className="h-[min(66vh,44rem)] min-h-[34rem]"

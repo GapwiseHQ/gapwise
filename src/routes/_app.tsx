@@ -195,12 +195,14 @@ function AppLayout() {
   const {
     destination,
     selectedBuildingCode,
+    selectedCampusId,
     openedViews,
     mobileTab,
     view,
     navigateToday,
     showView,
     selectBuilding,
+    selectCampus,
     openGapPlan,
     openDayRoute,
   } = useAppNavigation(Boolean(meetings?.length));
@@ -489,6 +491,8 @@ function AppLayout() {
                 planTransition={planTransition}
                 selectedBuildingCode={selectedBuildingCode}
                 onSelectBuilding={selectBuilding}
+                selectedCampusId={selectedCampusId}
+                onSelectCampus={selectCampus}
               />
             </Suspense>
           ) : null}
@@ -722,6 +726,8 @@ function AppLayout() {
                 planTransition={planTransition}
                 selectedBuildingCode={selectedBuildingCode}
                 onSelectBuilding={selectBuilding}
+                selectedCampusId={selectedCampusId}
+                onSelectCampus={selectCampus}
               />
             </Suspense>
           </>
@@ -944,6 +950,8 @@ function AppLayout() {
                           planTransition={planTransition}
                           selectedBuildingCode={selectedBuildingCode}
                           onSelectBuilding={selectBuilding}
+                          selectedCampusId={selectedCampusId}
+                          onSelectCampus={selectCampus}
                         />
                       </Suspense>
                     </div>

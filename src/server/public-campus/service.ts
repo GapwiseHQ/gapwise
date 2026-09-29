@@ -162,9 +162,6 @@ export function externalBuildingView(
           },
         ];
 
-  const hasAccessible = entrances.some((e) => e.access === "public");
-  const allRestricted = entrances.length > 0 && entrances.every((e) => e.access === "restricted");
-
   return {
     code: building.code,
     name: building.name,
@@ -174,7 +171,9 @@ export function externalBuildingView(
     entranceCount: entrances.length,
     verifiedEntranceCount: entrances.filter((e) => e.metadata.verificationStatus === "verified")
       .length,
-    accessibility: hasAccessible ? "accessible" : allRestricted ? "not_accessible" : "unknown",
+    // Public/restricted describes door access, not step-free accessibility.
+    // External snapshots do not currently carry verified accessibility facts.
+    accessibility: "unknown",
     indoorRoomNodeCount: 0,
     provenance,
     university: universityId,

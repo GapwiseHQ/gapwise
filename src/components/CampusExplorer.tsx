@@ -21,6 +21,8 @@ type CampusExplorerProps = Omit<
 > & {
   selectedBuildingCode: string | null;
   onSelectBuilding: (code: string | null) => void;
+  selectedCampusId: string | null;
+  onSelectCampus: (campusId: string) => void;
 };
 
 function meetingGapwiseCampus(meeting: CampusMapProps["meetings"][number]): GapwiseCampusId | null {
@@ -53,20 +55,21 @@ function floorStatusLabel(result: BuildingSearchResult) {
 export function CampusExplorer({
   selectedBuildingCode,
   onSelectBuilding,
+  selectedCampusId,
+  onSelectCampus,
   onSelectMeeting,
   ...mapProps
 }: CampusExplorerProps) {
   const university = activeUniversity();
-  const campusIds = (university?.campuses ?? []) as GapwiseCampusId[];
+  const campusIds = useMemo(() => (university?.campuses ?? []) as GapwiseCampusId[], [university]);
   const defaultCampus = university?.defaultCampus as GapwiseCampusId | undefined;
   const hostCampus = (activeCampus() as GapwiseCampusId | null) ?? null;
+  const urlCampus = campusIds.includes(selectedCampusId as GapwiseCampusId)
+    ? (selectedCampusId as GapwiseCampusId)
+    : null;
   const [query, setQuery] = useState("");
-  const [campusOverride, setCampusOverride] = useState<GapwiseCampusId | null>(() =>
-    hostCampus
-      ? hostCampus
-      : selectedBuildingCode
-        ? (defaultCampus ?? null)
-        : null,
+  const [campusOverride, setCampusOverride] = useState<GapwiseCampusId | null>(
+    () => urlCampus ?? hostCampus ?? (selectedBuildingCode ? (defaultCampus ?? null) : null),
   );
   const [activeEntranceId, setActiveEntranceId] = useState<string | null>(null);
   const [mapDetailMeetingId, setMapDetailMeetingId] = useState<string | null>(null);
@@ -145,6 +148,12 @@ export function CampusExplorer({
   useEffect(() => {
     setActiveEntranceId(null);
   }, [selectedBuildingCode]);
+
+  useEffect(() => {
+    if (urlCampus) setCampusOverride(urlCampus);
+    else if (hostCampus) setCampusOverride(hostCampus);
+    else if (!selectedBuildingCode) setCampusOverride(null);
+  }, [hostCampus, selectedBuildingCode, urlCampus]);
 
   useEffect(() => {
     if (previousSelectedMeetingIdRef.current === mapProps.selectedMeetingId) return;
@@ -252,7 +261,10 @@ export function CampusExplorer({
             <button
               key={campus}
               type="button"
-              onClick={() => setCampusOverride(campus)}
+              onClick={() => {
+                setCampusOverride(campus);
+                onSelectCampus(campus);
+              }}
               className="button-secondary min-h-11 px-3 font-mono text-xs font-bold tracking-[0.08em]"
             >
               {CAMPUS_SHORT_LABELS[campus] ?? campus}
@@ -380,7 +392,7 @@ export function CampusExplorer({
                   setCampusOverride(campus);
                   setMapDetailMeetingId(null);
                   setQuery("");
-                  onSelectBuilding(null);
+                  onSelectCampus(campus);
                 }}
                 aria-pressed={activeCampusId === campus}
                 className={`min-h-9 rounded-lg px-2 font-mono text-[0.7rem] font-bold tracking-[0.08em] transition-colors ${

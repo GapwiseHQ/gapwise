@@ -252,10 +252,10 @@ test("a first-time visitor can browse buildings on all three campus maps", async
   await page.goto("/route");
   await expect(page.getByRole("heading", { name: "Choose a campus map" })).toBeVisible();
 
-  for (const [campus, query, building] of [
-    ["UTSG", "Bahen", "Bahen Centre for Information Technology"],
-    ["UTSC", "Science Wing", "Science Wing"],
-    ["UTM", "Maanjiwe", "Maanjiwe nendamowinan"],
+  for (const [campus, campusId, query, building, buildingCode] of [
+    ["UTSG", "utsg", "Bahen", "Bahen Centre for Information Technology", "BA"],
+    ["UTSC", "utsc", "Science Wing", "Science Wing", "SW"],
+    ["UTM", "utm", "Maanjiwe", "Maanjiwe nendamowinan", "MN"],
   ]) {
     await page.getByRole("button", { name: campus, exact: true }).click();
     const search = page.getByRole("searchbox", { name: `Search ${campus} buildings` });
@@ -263,7 +263,21 @@ test("a first-time visitor can browse buildings on all three campus maps", async
     await search.fill(query);
     await search.press("Enter");
     await expect(page.getByRole("heading", { name: building })).toBeVisible();
+    expect(new URL(page.url()).searchParams.get("campus")).toBe(campusId);
+    expect(new URL(page.url()).searchParams.get("building")).toBe(buildingCode);
+
+    if (campus === "UTSG") {
+      await page.reload();
+      await expect(page.getByRole("heading", { name: building })).toBeVisible();
+      await expect(page.getByRole("searchbox", { name: "Search UTSG buildings" })).toBeVisible();
+    }
   }
+
+  await page.goBack();
+  await expect(page.getByRole("heading", { name: "Science Wing" })).toBeVisible();
+  await expect(page.getByRole("searchbox", { name: "Search UTSC buildings" })).toBeVisible();
+  await page.goForward();
+  await expect(page.getByRole("heading", { name: "Maanjiwe nendamowinan" })).toBeVisible();
 
   guard.assertClean();
 });

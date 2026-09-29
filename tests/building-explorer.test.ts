@@ -103,6 +103,13 @@ describe("UTM campus building explorer", () => {
     expect(normalizePublicBuildingCode("not-a-building")).toBeNull();
     expect(getBuildingExplorerDetails("not-a-building", "utm")).toBeNull();
     expect(validateRouteSearch({ building: "dh" })).toEqual({ building: "DH" });
+    expect(validateRouteSearch({ campus: "UTSG", building: "ba" })).toEqual({
+      campus: "utsg",
+      building: "BA",
+    });
+    expect(validateRouteSearch({ campus: "../utsg", building: "ba" })).toEqual({
+      building: "BA",
+    });
     expect(validateRouteSearch({ building: "not-a-building" })).toEqual({});
     expect(validateRouteSearch({ building: ["MN"] })).toEqual({});
   });

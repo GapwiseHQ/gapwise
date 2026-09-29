@@ -111,6 +111,41 @@ describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
     expect("status" in route && route.status).toBe("routed");
   });
 
+  it("routes representative UTSG academic destinations over the St. George graph", () => {
+    for (const [from, to] of [
+      ["RL", "BA"],
+      ["BA", "SS"],
+      ["MS", "RL"],
+      ["CH", "BA"],
+    ]) {
+      const route = routeBetweenPublicBuildings({
+        from: from!,
+        to: to!,
+        university: "uoft",
+        campus: "utsg",
+      });
+      expect("status" in route && route.status).toBe("routed");
+      if ("totalDistanceMeters" in route) expect(route.totalDistanceMeters).toBeGreaterThan(0);
+    }
+  });
+
+  it("routes multiple representative UTSC academic destinations over the Scarborough graph", () => {
+    for (const [from, to] of [
+      ["SW", "HW"],
+      ["AC", "IC"],
+      ["HL", "SW"],
+    ]) {
+      const route = routeBetweenPublicBuildings({
+        from: from!,
+        to: to!,
+        university: "uoft",
+        campus: "utsc",
+      });
+      expect("status" in route && route.status).toBe("routed");
+      if ("totalDistanceMeters" in route) expect(route.totalDistanceMeters).toBeGreaterThan(0);
+    }
+  });
+
   it("asserts zero identity leakage across public building listings", () => {
     for (const [campusId, campusAudit] of Object.entries(auditReport.campuses)) {
       expect(campusAudit.identityLeakageFindings).toEqual([]);

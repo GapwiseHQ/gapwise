@@ -27,6 +27,13 @@ const campusSnapshots = [
   source: resolve(dataRepoRoot, "data", path),
   target: resolve(repoRoot, "src/data/campuses", path),
 }));
+const routingSnapshots = ["utsg", "utsc"].map((campusId) => ({
+  campusId,
+  path: `${campusId}/campus.json`,
+  source: resolve(dataRepoRoot, "data", campusId, "campus.json"),
+  target: resolve(repoRoot, "src/data/campuses", campusId, "campus.json"),
+  catalog: resolve(repoRoot, "src/data/campuses", campusId, "catalog.json"),
+}));
 const universityManifest = JSON.parse(
   await readFile(resolve(repoRoot, "universities.json"), "utf8"),
 ) as {
@@ -129,6 +136,12 @@ if (publish) {
     console.error(`Gapwise public snapshot was not found at ${targetSnapshot}.`);
     process.exit(2);
   }
+  for (const snapshot of routingSnapshots) {
+    if (!existsSync(snapshot.target)) {
+      console.error(`Gapwise campus routing snapshot was not found at ${snapshot.target}.`);
+      process.exit(2);
+    }
+  }
   const snapshotBytes = await readFile(targetSnapshot);
   await mirror(targetRoot, sourceRoot, targetFiles, sourceFiles);
   const publishedFiles = await filesUnder(sourceRoot);
@@ -137,8 +150,13 @@ if (publish) {
   await mkdir(dirname(sourceSnapshot), { recursive: true });
   await writeFile(sourceSnapshot, snapshotBytes);
 
+  for (const snapshot of routingSnapshots) {
+    await mkdir(dirname(snapshot.source), { recursive: true });
+    await copyFile(snapshot.target, snapshot.source);
+  }
+
   console.log(
-    `Published ${publishedFiles.length} campus data files to ${sourceRoot} and refreshed checksums.`,
+    `Published ${publishedFiles.length} UTM files and ${routingSnapshots.length} tri-campus routing snapshots to ${dataRepoRoot}.`,
   );
   process.exit(0);
 }
@@ -190,6 +208,24 @@ for (const snapshot of campusSnapshots) {
   }
 }
 
+for (const snapshot of routingSnapshots) {
+  if (!existsSync(snapshot.source)) {
+    differences.push(`canonical campus routing snapshot is missing: ${snapshot.path}`);
+  } else if (!existsSync(snapshot.target)) {
+    differences.push(`campus routing snapshot is missing in gapwise: ${snapshot.path}`);
+  } else {
+    const [sourceBytes, targetBytes] = await Promise.all([
+      readFile(snapshot.source),
+      readFile(snapshot.target),
+    ]);
+    if (!sourceBytes.equals(targetBytes)) differences.push(`content differs: ${snapshot.path}`);
+    const expected = await universityCatalogBytes(snapshot.source);
+    if (!existsSync(snapshot.catalog) || (await readFile(snapshot.catalog, "utf8")) !== expected) {
+      differences.push(`${snapshot.campusId} building catalog is stale`);
+    }
+  }
+}
+
 for (const snapshot of universitySnapshots) {
   if (!existsSync(snapshot.source)) {
     if (!existsSync(snapshot.target)) {
@@ -232,6 +268,12 @@ for (const snapshot of campusSnapshots) {
     process.exit(2);
   }
 }
+for (const snapshot of routingSnapshots) {
+  if (!existsSync(snapshot.source)) {
+    console.error(`Canonical campus routing snapshot was not found at ${snapshot.source}.`);
+    process.exit(2);
+  }
+}
 const snapshotBytes = await readFile(sourceSnapshot);
 await mirror(sourceRoot, targetRoot, sourceFiles, targetFiles);
 await mkdir(dirname(targetSnapshot), { recursive: true });
@@ -239,6 +281,11 @@ await writeFile(targetSnapshot, snapshotBytes);
 for (const snapshot of campusSnapshots) {
   await mkdir(dirname(snapshot.target), { recursive: true });
   await copyFile(snapshot.source, snapshot.target);
+}
+for (const snapshot of routingSnapshots) {
+  await mkdir(dirname(snapshot.target), { recursive: true });
+  await copyFile(snapshot.source, snapshot.target);
+  await writeFile(snapshot.catalog, await universityCatalogBytes(snapshot.source));
 }
 for (const snapshot of universitySnapshots) {
   if (existsSync(snapshot.source)) {
@@ -248,5 +295,5 @@ for (const snapshot of universitySnapshots) {
   }
 }
 console.log(
-  `Synced ${sourceFiles.length} UTM files, ${campusSnapshots.length} tri-campus snapshots, and ${universitySnapshots.length} university snapshots.`,
+  `Synced ${sourceFiles.length} UTM files, ${campusSnapshots.length} tri-campus identity files, ${routingSnapshots.length} tri-campus routing snapshots, and ${universitySnapshots.length} university snapshots.`,
 );
