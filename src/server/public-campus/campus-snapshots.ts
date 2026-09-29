@@ -10,10 +10,12 @@ import tmuSnapshot from "../../data/campuses/tmu/campus.json" with { type: "json
 import uottawaSnapshot from "../../data/campuses/uottawa/campus.json" with { type: "json" };
 import westernSnapshot from "../../data/campuses/western/campus.json" with { type: "json" };
 import yorkSnapshot from "../../data/campuses/york/campus.json" with { type: "json" };
-import utsgBuildings from "../../data/campuses/utsg/buildings.json" with { type: "json" };
-import utscBuildings from "../../data/campuses/utsc/buildings.json" with { type: "json" };
+import utsgSnapshot from "../../data/campuses/utsg/campus.json" with { type: "json" };
+import utscSnapshot from "../../data/campuses/utsc/campus.json" with { type: "json" };
 
 export const CAMPUS_SNAPSHOTS: Record<string, CampusSnapshot> = {
+  utsg: utsgSnapshot as unknown as CampusSnapshot,
+  utsc: utscSnapshot as unknown as CampusSnapshot,
   brock: brockSnapshot as unknown as CampusSnapshot,
   carleton: carletonSnapshot as unknown as CampusSnapshot,
   guelph: guelphSnapshot as unknown as CampusSnapshot,
@@ -45,66 +47,8 @@ function normalizeText(value: string): string {
     .trim();
 }
 
-type RawBuilding = {
-  code: string;
-  name: string;
-  category: string;
-  aliases?: string[];
-  timetableCodes?: string[];
-  facilityCodes?: string[];
-  status?: string;
-};
-
-const UTSG_RESIDENCE_CODES = new Set([
-  "013",
-  "029",
-  "064",
-  "101",
-  "131",
-  "133",
-  "158",
-  "505",
-  "505A",
-  "506",
-  "508",
-  "518",
-  "575",
-  "608",
-  "790",
-  "791",
-  "BR",
-  "TC",
-  "WE",
-  "WI",
-  "WO",
-]);
-
-function formatExternalRegistry(
-  rawList: RawBuilding[],
-  campusId?: string,
-): BuildingConfiguration[] {
-  return rawList
-    .filter((b) => b.status !== "inactive")
-    .map((b) => ({
-      code: b.code.toUpperCase(),
-      name: b.name,
-      category: (campusId === "utsg" && UTSG_RESIDENCE_CODES.has(b.code)
-        ? "residence"
-        : b.category === "residence" || b.category === "academic"
-          ? b.category
-          : "facility") as BuildingConfiguration["category"],
-      aliases: unique([
-        ...(b.aliases ?? []),
-        ...(b.timetableCodes ?? []),
-        ...(b.facilityCodes ?? []),
-      ]),
-    }));
-}
-
 const CAMPUS_BUILDING_CONFIGURATIONS: Record<string, BuildingConfiguration[]> = {
   utm: UTM_BUILDINGS,
-  utsg: formatExternalRegistry(utsgBuildings.buildings as RawBuilding[], "utsg"),
-  utsc: formatExternalRegistry(utscBuildings.buildings as RawBuilding[], "utsc"),
   ...Object.fromEntries(
     Object.entries(CAMPUS_SNAPSHOTS).map(([id, snapshot]) => [
       id,

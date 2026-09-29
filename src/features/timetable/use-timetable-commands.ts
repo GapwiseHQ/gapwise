@@ -12,7 +12,7 @@ import type { RestorationState } from "@/features/sync/restoration";
 import { setCloudRestoreSuppressed } from "@/features/sync/restore-preference";
 import type { Meeting } from "@/lib/timetable-types";
 import { trackTimetableImport } from "@/lib/telemetry";
-import { activeUniversity } from "@/universities/registry";
+import { activeCampus, activeUniversity } from "@/universities/registry";
 import { loadDemoTimetable } from "@/universities/timetable-adapters";
 import {
   describeTimetableChanges,
@@ -128,7 +128,10 @@ export function useTimetableCommands(input: TimetableCommandInput) {
     input.setWarnings([]);
     input.setLoading(true);
     try {
-      const DEMO_MEETINGS = await loadDemoTimetable(activeUniversity()?.timetableAdapter);
+      const DEMO_MEETINGS = await loadDemoTimetable(
+        activeUniversity()?.timetableAdapter,
+        activeCampus(),
+      );
       input.setMeetings(DEMO_MEETINGS);
       input.latestMeetings.current = DEMO_MEETINGS;
       input.restoredSource.current = "memory";

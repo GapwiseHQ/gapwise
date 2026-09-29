@@ -8,7 +8,7 @@ describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
   it("completes full platform audit without crashing and evaluates all 11 universities", () => {
     expect(auditReport.summary.totalUniversities).toBe(11);
     expect(auditReport.summary.totalCampuses).toBe(13);
-    expect(auditReport.summary.routableCampuses).toBe(11);
+    expect(auditReport.summary.routableCampuses).toBe(13);
     expect(auditReport.summary.totalRouteFailures).toBe(0);
   });
 

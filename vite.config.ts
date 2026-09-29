@@ -20,6 +20,7 @@ export default defineConfig({
       strategies: "generateSW",
       manifest: false,
       workbox: {
+        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         globPatterns: ["**/*.{js,css,html,svg,png,ico,json}"],
         navigateFallback: "/index.html",
         // Never let the app-shell service worker intercept crawler-facing static endpoints.

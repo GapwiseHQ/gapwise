@@ -13,7 +13,7 @@ import {
   type GapwiseCampusId,
 } from "@/data/campuses";
 import { formatTime, locationLabel, meetingCampus } from "@/lib/timetable-types";
-import { activeUniversity } from "@/universities/registry";
+import { activeCampus, activeUniversity } from "@/universities/registry";
 
 type CampusExplorerProps = Omit<
   CampusMapProps,
@@ -59,9 +59,14 @@ export function CampusExplorer({
   const university = activeUniversity();
   const campusIds = (university?.campuses ?? []) as GapwiseCampusId[];
   const defaultCampus = university?.defaultCampus as GapwiseCampusId | undefined;
+  const hostCampus = (activeCampus() ?? defaultCampus) as GapwiseCampusId | undefined;
   const [query, setQuery] = useState("");
   const [campusOverride, setCampusOverride] = useState<GapwiseCampusId | null>(() =>
-    selectedBuildingCode ? (defaultCampus ?? null) : null,
+    activeCampus()
+      ? (activeCampus() as GapwiseCampusId)
+      : selectedBuildingCode
+        ? (defaultCampus ?? null)
+        : null,
   );
   const [activeEntranceId, setActiveEntranceId] = useState<string | null>(null);
   const [mapDetailMeetingId, setMapDetailMeetingId] = useState<string | null>(null);
@@ -84,13 +89,10 @@ export function CampusExplorer({
     () => inferredCampusForMeetings(mapProps.meetings, campusIds),
     [mapProps.meetings, campusIds],
   );
-  // A public UTM building deep link is explicitly campus-scoped. Otherwise an empty or
-  // unresolved schedule must ask the user instead of silently turning "unknown" into UTM.
+  // Respect user override, selected meeting campus, inferred schedule campus,
+  // or deterministic host campus (utm/utsg/utsc) before falling back to default.
   const activeCampusId =
-    campusOverride ??
-    selectedMeetingCampus ??
-    inferredCampusId ??
-    (selectedBuildingCode || campusIds.length === 1 ? (defaultCampus ?? null) : null);
+    campusOverride ?? selectedMeetingCampus ?? inferredCampusId ?? hostCampus ?? null;
   const activeMeetings = useMemo(
     () =>
       activeCampusId
