@@ -59,11 +59,11 @@ export function CampusExplorer({
   const university = activeUniversity();
   const campusIds = (university?.campuses ?? []) as GapwiseCampusId[];
   const defaultCampus = university?.defaultCampus as GapwiseCampusId | undefined;
-  const hostCampus = (activeCampus() ?? defaultCampus) as GapwiseCampusId | undefined;
+  const hostCampus = (activeCampus() as GapwiseCampusId | null) ?? null;
   const [query, setQuery] = useState("");
   const [campusOverride, setCampusOverride] = useState<GapwiseCampusId | null>(() =>
-    activeCampus()
-      ? (activeCampus() as GapwiseCampusId)
+    hostCampus
+      ? hostCampus
       : selectedBuildingCode
         ? (defaultCampus ?? null)
         : null,
@@ -92,7 +92,11 @@ export function CampusExplorer({
   // Respect user override, selected meeting campus, inferred schedule campus,
   // or deterministic host campus (utm/utsg/utsc) before falling back to default.
   const activeCampusId =
-    campusOverride ?? selectedMeetingCampus ?? inferredCampusId ?? hostCampus ?? null;
+    campusOverride ??
+    selectedMeetingCampus ??
+    inferredCampusId ??
+    hostCampus ??
+    (selectedBuildingCode || campusIds.length === 1 ? (defaultCampus ?? null) : null);
   const activeMeetings = useMemo(
     () =>
       activeCampusId
