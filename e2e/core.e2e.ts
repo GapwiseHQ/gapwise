@@ -207,6 +207,7 @@ test("campus explorer supports public building deep links and local search", asy
   await page.getByRole("button", { name: "Close Maanjiwe nendamowinan details" }).click();
   await expect(page.getByRole("heading", { name: "Maanjiwe nendamowinan" })).toHaveCount(0);
   await expect.poll(() => new URL(page.url()).searchParams.has("building")).toBe(false);
+  expect(new URL(page.url()).searchParams.get("campus")).toBe("utm");
 
   const search = page.getByRole("searchbox", { name: "Search UTM buildings" });
   const scrollBeforeSearch = await page.evaluate(() => window.scrollY);
@@ -667,6 +668,7 @@ test("mobile campus explorer keeps building details dismissible", async ({ page 
   ).toBeVisible();
   await page.getByRole("button", { name: "Close Maanjiwe nendamowinan details" }).click();
   await expect(page.locator(".campus-building-card")).toHaveCount(0);
+  expect(new URL(page.url()).searchParams.get("campus")).toBe("utm");
   await expect(page.getByRole("searchbox", { name: "Search UTM buildings" })).toBeVisible();
   guard.assertClean();
 });

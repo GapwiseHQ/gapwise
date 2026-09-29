@@ -20,7 +20,7 @@ type CampusExplorerProps = Omit<
   "campusId" | "selectedBuildingCode" | "onSelectBuilding"
 > & {
   selectedBuildingCode: string | null;
-  onSelectBuilding: (code: string | null) => void;
+  onSelectBuilding: (code: string | null, campusId?: string | null) => void;
   selectedCampusId: string | null;
   onSelectCampus: (campusId: string) => void;
 };
@@ -226,17 +226,17 @@ export function CampusExplorer({
   function selectResult(result: BuildingSearchResult) {
     setQuery("");
     setMapDetailMeetingId(null);
-    onSelectBuilding(result.building.code);
+    onSelectBuilding(result.building.code, activeCampusId);
   }
 
   function selectFromMap(code: string) {
     setMapDetailMeetingId(null);
-    onSelectBuilding(code);
+    onSelectBuilding(code, activeCampusId);
   }
 
   function clearSelection() {
     setQuery("");
-    onSelectBuilding(null);
+    onSelectBuilding(null, activeCampusId);
   }
 
   const mapDetailLocation = mapDetailMeeting ? getCampusLocationDisplay(mapDetailMeeting) : null;

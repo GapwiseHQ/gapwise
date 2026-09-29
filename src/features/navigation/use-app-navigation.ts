@@ -68,12 +68,13 @@ export function useAppNavigation(hasMeetings: boolean) {
   }, [destination]);
 
   const selectBuilding = useCallback(
-    (code: string | null) => {
+    (code: string | null, campusId?: string | null) => {
       if (code === null && selectedBuildingCode === null) return;
+      const effectiveCampus = campusId ?? selectedCampusId;
       void navigate({
         to: "/route",
         search: {
-          ...(selectedCampusId ? { campus: selectedCampusId } : {}),
+          ...(effectiveCampus ? { campus: effectiveCampus } : {}),
           ...(code ? { building: code } : {}),
         },
         replace: destination === "route",
