@@ -7,7 +7,13 @@
       "shortName": "U of T",
       "accentColor": "#4EA7FE",
       "campusScope": "Mississauga, St. George, and Scarborough",
-      "hosts": ["gapwise.ca", "www.gapwise.ca"],
+      "hosts": [
+        "gapwise.ca",
+        "www.gapwise.ca",
+        "utm.gapwise.ca",
+        "utsg.gapwise.ca",
+        "utsc.gapwise.ca"
+      ],
       "campuses": ["utm", "utsg", "utsc"],
       "defaultCampus": "utm",
       "timetableAdapter": "acorn-ics",
@@ -15,7 +21,7 @@
       "calendarInstructions": "Download the calendar export (.ics) from ACORN's Timetable & Exams, then choose it here.",
       "calendarHelpUrl": "/acorn-import",
       "enabledFeatures": { "routing": true, "liveLocation": true },
-      "routableCampuses": ["utm"],
+      "routableCampuses": ["utm", "utsg", "utsc"],
       "dataPaths": ["data/utm", "data/utsg", "data/utsc"],
       "status": "supported"
     },

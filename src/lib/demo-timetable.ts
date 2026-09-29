@@ -260,6 +260,7 @@ const DEMO_RESERVED_WINDOWS: Meeting[] = [
     notes: ASSESSMENT_WINDOW_NOTE,
     dateRange: { startDate: "2026-09-11", endDate: "2026-12-04" },
     recurrenceIntervalWeeks: 1,
+    campus: "UTM" as const,
   },
   {
     id: "Winter-DEM320H5-RES-0105-Friday-780",
@@ -278,6 +279,7 @@ const DEMO_RESERVED_WINDOWS: Meeting[] = [
     notes: ASSESSMENT_WINDOW_NOTE,
     dateRange: { startDate: "2027-01-08", endDate: "2027-04-09" },
     recurrenceIntervalWeeks: 1,
+    campus: "UTM" as const,
   },
 ];
 

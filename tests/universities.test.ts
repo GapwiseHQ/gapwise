@@ -370,4 +370,53 @@ describe("canonical meeting and campus data contracts", () => {
       expect(routed).toBe(true);
     }
   });
+
+  test("U of T tri-campus parity: hosts, separate demo schedules, and UTSG/UTSC outdoor routing", async () => {
+    const { universityForHostname, campusForHostname } = await import("@/universities/registry");
+
+    // 1. Host resolution
+    expect(universityForHostname("utm.gapwise.ca")?.id).toBe("uoft");
+    expect(universityForHostname("utsg.gapwise.ca")?.id).toBe("uoft");
+    expect(universityForHostname("utsc.gapwise.ca")?.id).toBe("uoft");
+    expect(campusForHostname("utm.gapwise.ca")).toBe("utm");
+    expect(campusForHostname("utsg.gapwise.ca")).toBe("utsg");
+    expect(campusForHostname("utsc.gapwise.ca")).toBe("utsc");
+
+    // 2. Separate demo schedules
+    const utmDemo = await loadDemoTimetable("acorn-ics", "utm");
+    const utsgDemo = await loadDemoTimetable("acorn-ics", "utsg");
+    const utscDemo = await loadDemoTimetable("acorn-ics", "utsc");
+
+    expect(utmDemo.every((m) => m.campus === "UTM")).toBe(true);
+    expect(utsgDemo.every((m) => m.campus === "UTSG")).toBe(true);
+    expect(utscDemo.every((m) => m.campus === "UTSC")).toBe(true);
+
+    // UTSG demo uses UTSG buildings
+    expect(utsgDemo.some((m) => m.buildingCode === "BA")).toBe(true);
+    expect(utsgDemo.some((m) => m.buildingCode === "SS")).toBe(true);
+
+    // UTSC demo uses UTSC buildings
+    expect(utscDemo.some((m) => m.buildingCode === "SW")).toBe(true);
+    expect(utscDemo.some((m) => m.buildingCode === "HW")).toBe(true);
+
+    // 3. Outdoor campus transition planners for UTSG and UTSC
+    const utsgPlanner = await getOutdoorCampusTransitionPlanner("utsg");
+    expect(utsgPlanner).not.toBeNull();
+    const bahenMeeting = utsgDemo.find((m) => m.buildingCode === "BA")!;
+    const sidSmithMeeting = utsgDemo.find((m) => m.buildingCode === "SS")!;
+    const utsgRoute = utsgPlanner!(bahenMeeting, sidSmithMeeting, DEFAULT_ROUTE_PREFERENCES);
+    expect(utsgRoute.status).toBe("routed");
+    expect(utsgRoute.result?.outdoorDistanceMeters).toBeGreaterThan(0);
+    expect(utsgRoute.result?.outdoorDistanceMeters).toBeLessThan(1_000);
+    expect(utsgRoute.displayCoordinates.length).toBeGreaterThan(5);
+
+    const utscPlanner = await getOutdoorCampusTransitionPlanner("utsc");
+    expect(utscPlanner).not.toBeNull();
+    const swMeeting = utscDemo.find((m) => m.buildingCode === "SW")!;
+    const hwMeeting = utscDemo.find((m) => m.buildingCode === "HW")!;
+    const utscRoute = utscPlanner!(swMeeting, hwMeeting, DEFAULT_ROUTE_PREFERENCES);
+    expect(utscRoute.status).toBe("routed");
+    expect(utscRoute.result?.outdoorDistanceMeters).toBeGreaterThan(0);
+    expect(utscRoute.displayCoordinates.length).toBeGreaterThan(1);
+  });
 });

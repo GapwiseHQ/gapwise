@@ -51,8 +51,17 @@ export const timetableAdapters: Record<string, (text: string) => Promise<ParsedT
   // GAPWISE_ADAPTER_REGISTRY: the CLI inserts new timetable adapters here.
 };
 
-export const demoTimetableLoaders: Record<string, () => Promise<Meeting[]>> = {
-  "acorn-ics": async () => (await import("@/lib/demo-timetable")).DEMO_MEETINGS,
+export const demoTimetableLoaders: Record<string, (campusId?: string) => Promise<Meeting[]>> = {
+  "acorn-ics": async (campusId?: string) => {
+    const campus = campusId?.toLowerCase();
+    if (campus === "utsg") {
+      return (await import("./uoft/demo-utsg")).DEMO_UTSG_MEETINGS;
+    }
+    if (campus === "utsc") {
+      return (await import("./uoft/demo-utsc")).DEMO_UTSC_MEETINGS;
+    }
+    return (await import("@/lib/demo-timetable")).DEMO_MEETINGS;
+  },
   "carleton-ics": async () => {
     const [{ DEMO_CARLETON_MEETINGS }, { normalizeCarletonMeeting }] = await Promise.all([
       import("./carleton/demo-timetable"),
@@ -126,8 +135,11 @@ export const demoTimetableLoaders: Record<string, () => Promise<Meeting[]>> = {
   // GAPWISE_DEMO_LOADER_REGISTRY: the CLI inserts new demo loaders here.
 };
 
-export async function loadDemoTimetable(adapterId?: string): Promise<Meeting[]> {
+export async function loadDemoTimetable(
+  adapterId?: string,
+  campusId?: string | null,
+): Promise<Meeting[]> {
   const loader = adapterId ? demoTimetableLoaders[adapterId] : undefined;
-  if (loader) return loader();
+  if (loader) return loader(campusId ?? undefined);
   return (await import("@/lib/demo-timetable")).DEMO_MEETINGS;
 }

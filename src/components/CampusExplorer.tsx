@@ -13,14 +13,16 @@ import {
   type GapwiseCampusId,
 } from "@/data/campuses";
 import { formatTime, locationLabel, meetingCampus } from "@/lib/timetable-types";
-import { activeUniversity } from "@/universities/registry";
+import { activeCampus, activeUniversity } from "@/universities/registry";
 
 type CampusExplorerProps = Omit<
   CampusMapProps,
   "campusId" | "selectedBuildingCode" | "onSelectBuilding"
 > & {
   selectedBuildingCode: string | null;
-  onSelectBuilding: (code: string | null) => void;
+  onSelectBuilding: (code: string | null, campusId?: string | null) => void;
+  selectedCampusId: string | null;
+  onSelectCampus: (campusId: string) => void;
 };
 
 function meetingGapwiseCampus(meeting: CampusMapProps["meetings"][number]): GapwiseCampusId | null {
@@ -53,15 +55,21 @@ function floorStatusLabel(result: BuildingSearchResult) {
 export function CampusExplorer({
   selectedBuildingCode,
   onSelectBuilding,
+  selectedCampusId,
+  onSelectCampus,
   onSelectMeeting,
   ...mapProps
 }: CampusExplorerProps) {
   const university = activeUniversity();
-  const campusIds = (university?.campuses ?? []) as GapwiseCampusId[];
+  const campusIds = useMemo(() => (university?.campuses ?? []) as GapwiseCampusId[], [university]);
   const defaultCampus = university?.defaultCampus as GapwiseCampusId | undefined;
+  const hostCampus = (activeCampus() as GapwiseCampusId | null) ?? null;
+  const urlCampus = campusIds.includes(selectedCampusId as GapwiseCampusId)
+    ? (selectedCampusId as GapwiseCampusId)
+    : null;
   const [query, setQuery] = useState("");
-  const [campusOverride, setCampusOverride] = useState<GapwiseCampusId | null>(() =>
-    selectedBuildingCode ? (defaultCampus ?? null) : null,
+  const [campusOverride, setCampusOverride] = useState<GapwiseCampusId | null>(
+    () => urlCampus ?? hostCampus ?? (selectedBuildingCode ? (defaultCampus ?? null) : null),
   );
   const [activeEntranceId, setActiveEntranceId] = useState<string | null>(null);
   const [mapDetailMeetingId, setMapDetailMeetingId] = useState<string | null>(null);
@@ -84,12 +92,13 @@ export function CampusExplorer({
     () => inferredCampusForMeetings(mapProps.meetings, campusIds),
     [mapProps.meetings, campusIds],
   );
-  // A public UTM building deep link is explicitly campus-scoped. Otherwise an empty or
-  // unresolved schedule must ask the user instead of silently turning "unknown" into UTM.
+  // Respect user override, selected meeting campus, inferred schedule campus,
+  // or deterministic host campus (utm/utsg/utsc) before falling back to default.
   const activeCampusId =
     campusOverride ??
     selectedMeetingCampus ??
     inferredCampusId ??
+    hostCampus ??
     (selectedBuildingCode || campusIds.length === 1 ? (defaultCampus ?? null) : null);
   const activeMeetings = useMemo(
     () =>
@@ -139,6 +148,12 @@ export function CampusExplorer({
   useEffect(() => {
     setActiveEntranceId(null);
   }, [selectedBuildingCode]);
+
+  useEffect(() => {
+    if (urlCampus) setCampusOverride(urlCampus);
+    else if (hostCampus) setCampusOverride(hostCampus);
+    else if (!selectedBuildingCode) setCampusOverride(null);
+  }, [hostCampus, selectedBuildingCode, urlCampus]);
 
   useEffect(() => {
     if (previousSelectedMeetingIdRef.current === mapProps.selectedMeetingId) return;
@@ -211,17 +226,17 @@ export function CampusExplorer({
   function selectResult(result: BuildingSearchResult) {
     setQuery("");
     setMapDetailMeetingId(null);
-    onSelectBuilding(result.building.code);
+    onSelectBuilding(result.building.code, activeCampusId);
   }
 
   function selectFromMap(code: string) {
     setMapDetailMeetingId(null);
-    onSelectBuilding(code);
+    onSelectBuilding(code, activeCampusId);
   }
 
   function clearSelection() {
     setQuery("");
-    onSelectBuilding(null);
+    onSelectBuilding(null, activeCampusId);
   }
 
   const mapDetailLocation = mapDetailMeeting ? getCampusLocationDisplay(mapDetailMeeting) : null;
@@ -246,7 +261,10 @@ export function CampusExplorer({
             <button
               key={campus}
               type="button"
-              onClick={() => setCampusOverride(campus)}
+              onClick={() => {
+                setCampusOverride(campus);
+                onSelectCampus(campus);
+              }}
               className="button-secondary min-h-11 px-3 font-mono text-xs font-bold tracking-[0.08em]"
             >
               {CAMPUS_SHORT_LABELS[campus] ?? campus}
@@ -374,7 +392,7 @@ export function CampusExplorer({
                   setCampusOverride(campus);
                   setMapDetailMeetingId(null);
                   setQuery("");
-                  onSelectBuilding(null);
+                  onSelectCampus(campus);
                 }}
                 aria-pressed={activeCampusId === campus}
                 className={`min-h-9 rounded-lg px-2 font-mono text-[0.7rem] font-bold tracking-[0.08em] transition-colors ${

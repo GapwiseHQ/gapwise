@@ -58,6 +58,21 @@ describe("Gapwise Search Engine (Phase 3)", () => {
     expect(buildingMatches.length).toBe(0);
   });
 
+  it("scopes UTSG and UTSC building-code search to the selected campus", () => {
+    const utsg = searchGapwise("BA", { campusId: "utsg" });
+    expect(utsg[0]).toMatchObject({ category: "buildings", data: { buildingCode: "BA" } });
+    expect(utsg[0]?.title).toContain("Bahen Centre for Information Technology");
+
+    const utsc = searchGapwise("SW", { campusId: "utsc" });
+    expect(utsc[0]).toMatchObject({ category: "buildings", data: { buildingCode: "SW" } });
+    expect(utsc[0]?.title).toContain("Science Wing");
+    const crossCampus = searchGapwise("Bahen", { campusId: "utsc" }).filter(
+      (result) => result.category === "buildings",
+    );
+    expect(crossCampus.some((result) => result.data.buildingCode === "BA")).toBe(false);
+    expect(crossCampus.some((result) => result.title.includes("Bahen"))).toBe(false);
+  });
+
   it("allows switching universities when searching external institutions or aliases", () => {
     // Searching "Carleton" returns Switch to Carleton University
     const carleton = searchGapwise("Carleton", { campusId: "utm" });

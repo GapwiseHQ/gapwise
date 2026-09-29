@@ -84,6 +84,37 @@ export function activeUniversity(): University | null {
   return universityForHostname(host, override);
 }
 
+export function campusForHostname(hostname: string, overrideCampus?: string | null): string | null {
+  const host = hostname.toLowerCase().replace(/\.$/, "");
+  const local = host === "localhost" || host === "127.0.0.1" || host === "gapwise.test";
+  const preview = host.endsWith(".vercel.app");
+  if (overrideCampus && (local || preview)) return overrideCampus.toLowerCase();
+  if (host === "utm.gapwise.ca" || host === "utm.gapwise.test") return "utm";
+  if (host === "utsg.gapwise.ca" || host === "utsg.gapwise.test") return "utsg";
+  if (host === "utsc.gapwise.ca" || host === "utsc.gapwise.test") return "utsc";
+  if (host === "ubc.gapwise.ca" || host === "ubc.gapwise.test") return "vancouver";
+  if (host === "waterloo.gapwise.ca" || host === "waterloo.gapwise.test") return "waterloo";
+  if (host === "mcgill.gapwise.ca" || host === "mcgill.gapwise.test") return "downtown";
+  return null;
+}
+
+export function activeCampus(): string | null {
+  if (typeof window === "undefined") return "utm";
+  const host = window.location.hostname;
+  const isPreviewOrDev = isPreviewOrLocalHost(host);
+  const requested = new URLSearchParams(window.location.search).get("campus");
+  let override: string | null = null;
+  if (isPreviewOrDev) {
+    try {
+      if (requested) window.sessionStorage.setItem("gapwise:dev-campus", requested);
+      override = requested ?? window.sessionStorage.getItem("gapwise:dev-campus");
+    } catch {
+      override = requested;
+    }
+  }
+  return campusForHostname(host, override);
+}
+
 export function campusesForUniversity(university: University): string[] {
   return university.campuses;
 }

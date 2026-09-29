@@ -207,6 +207,7 @@ test("campus explorer supports public building deep links and local search", asy
   await page.getByRole("button", { name: "Close Maanjiwe nendamowinan details" }).click();
   await expect(page.getByRole("heading", { name: "Maanjiwe nendamowinan" })).toHaveCount(0);
   await expect.poll(() => new URL(page.url()).searchParams.has("building")).toBe(false);
+  expect(new URL(page.url()).searchParams.get("campus")).toBe("utm");
 
   const search = page.getByRole("searchbox", { name: "Search UTM buildings" });
   const scrollBeforeSearch = await page.evaluate(() => window.scrollY);
@@ -252,10 +253,10 @@ test("a first-time visitor can browse buildings on all three campus maps", async
   await page.goto("/route");
   await expect(page.getByRole("heading", { name: "Choose a campus map" })).toBeVisible();
 
-  for (const [campus, query, building] of [
-    ["UTSG", "Bahen", "Bahen Centre for Information Technology"],
-    ["UTSC", "Science Wing", "Science Wing"],
-    ["UTM", "Maanjiwe", "Maanjiwe nendamowinan"],
+  for (const [campus, campusId, query, building, buildingCode] of [
+    ["UTSG", "utsg", "Bahen", "Bahen Centre for Information Technology", "BA"],
+    ["UTSC", "utsc", "Science Wing", "Science Wing", "SW"],
+    ["UTM", "utm", "Maanjiwe", "Maanjiwe nendamowinan", "MN"],
   ]) {
     await page.getByRole("button", { name: campus, exact: true }).click();
     const search = page.getByRole("searchbox", { name: `Search ${campus} buildings` });
@@ -263,7 +264,21 @@ test("a first-time visitor can browse buildings on all three campus maps", async
     await search.fill(query);
     await search.press("Enter");
     await expect(page.getByRole("heading", { name: building })).toBeVisible();
+    expect(new URL(page.url()).searchParams.get("campus")).toBe(campusId);
+    expect(new URL(page.url()).searchParams.get("building")).toBe(buildingCode);
+
+    if (campus === "UTSG") {
+      await page.reload();
+      await expect(page.getByRole("heading", { name: building })).toBeVisible();
+      await expect(page.getByRole("searchbox", { name: "Search UTSG buildings" })).toBeVisible();
+    }
   }
+
+  await page.goBack();
+  await expect(page.getByRole("heading", { name: "Science Wing" })).toBeVisible();
+  await expect(page.getByRole("searchbox", { name: "Search UTSC buildings" })).toBeVisible();
+  await page.goForward();
+  await expect(page.getByRole("heading", { name: "Maanjiwe nendamowinan" })).toBeVisible();
 
   guard.assertClean();
 });
@@ -653,6 +668,7 @@ test("mobile campus explorer keeps building details dismissible", async ({ page 
   ).toBeVisible();
   await page.getByRole("button", { name: "Close Maanjiwe nendamowinan details" }).click();
   await expect(page.locator(".campus-building-card")).toHaveCount(0);
+  expect(new URL(page.url()).searchParams.get("campus")).toBe("utm");
   await expect(page.getByRole("searchbox", { name: "Search UTM buildings" })).toBeVisible();
   guard.assertClean();
 });

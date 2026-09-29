@@ -5,7 +5,7 @@ import {
   createScheduleTransitionPlanner,
   type TransitionPlanner,
 } from "@/features/routing/transition";
-import { activeUniversity } from "@/universities/registry";
+import { activeCampus, activeUniversity } from "@/universities/registry";
 import { chooseDefaultTerm } from "@/lib/calendar-awareness";
 import { findGaps } from "@/lib/gaps";
 import { availableScheduleTerms, composeTermSchedule } from "@/lib/personal-scheduler";
@@ -17,9 +17,20 @@ const EMPTY_MEETINGS: Meeting[] = [];
 export function useSelectedScheduleContext(meetings: Meeting[] | null) {
   const university = activeUniversity();
   const universityId = university?.id;
+  const currentCampus = (
+    meetings?.find((m) => m.campus)?.campus?.toLowerCase() ??
+    activeCampus() ??
+    university?.defaultCampus ??
+    "utm"
+  ).toLowerCase();
+
   const isOutdoorCampus = Boolean(
-    universityId && universityId !== "uoft" && university?.enabledFeatures.routing,
+    (universityId && universityId !== "uoft" && university?.enabledFeatures.routing) ||
+    (universityId === "uoft" && (currentCampus === "utsg" || currentCampus === "utsc")),
   );
+  const routingCampusKey =
+    universityId === "uoft" ? currentCampus : (universityId ?? currentCampus);
+
   const [outdoorPlanner, setOutdoorPlanner] = useState<TransitionPlanner | null>(null);
   const pathname = useRouterState({ select: (state) => state.location.pathname });
   const [term, setTerm] = useState<Term>("Fall");
@@ -39,14 +50,14 @@ export function useSelectedScheduleContext(meetings: Meeting[] | null) {
   }, [meetings, todayRoute]);
 
   useEffect(() => {
-    if (!isOutdoorCampus || !universityId) {
+    if (!isOutdoorCampus || !routingCampusKey) {
       setOutdoorPlanner(null);
       return;
     }
     let current = true;
     void import("@/features/routing/campus-transition").then(
       ({ getOutdoorCampusTransitionPlanner }) => {
-        getOutdoorCampusTransitionPlanner(universityId).then((planner) => {
+        getOutdoorCampusTransitionPlanner(routingCampusKey).then((planner) => {
           if (current) setOutdoorPlanner(() => planner);
         });
       },
@@ -54,7 +65,7 @@ export function useSelectedScheduleContext(meetings: Meeting[] | null) {
     return () => {
       current = false;
     };
-  }, [isOutdoorCampus, universityId]);
+  }, [isOutdoorCampus, routingCampusKey]);
 
   const schedule = useMemo(
     () => composeTermSchedule(meetings ?? EMPTY_MEETINGS, [], term),

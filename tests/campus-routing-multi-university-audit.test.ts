@@ -8,7 +8,7 @@ describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
   it("completes full platform audit without crashing and evaluates all 11 universities", () => {
     expect(auditReport.summary.totalUniversities).toBe(11);
     expect(auditReport.summary.totalCampuses).toBe(13);
-    expect(auditReport.summary.routableCampuses).toBe(11);
+    expect(auditReport.summary.routableCampuses).toBe(13);
     expect(auditReport.summary.totalRouteFailures).toBe(0);
   });
 
@@ -109,6 +109,41 @@ describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
       campus: "waterloo",
     });
     expect("status" in route && route.status).toBe("routed");
+  });
+
+  it("routes representative UTSG academic destinations over the St. George graph", () => {
+    for (const [from, to] of [
+      ["RL", "BA"],
+      ["BA", "SS"],
+      ["MS", "RL"],
+      ["CH", "BA"],
+    ]) {
+      const route = routeBetweenPublicBuildings({
+        from: from!,
+        to: to!,
+        university: "uoft",
+        campus: "utsg",
+      });
+      expect("status" in route && route.status).toBe("routed");
+      if ("totalDistanceMeters" in route) expect(route.totalDistanceMeters).toBeGreaterThan(0);
+    }
+  });
+
+  it("routes multiple representative UTSC academic destinations over the Scarborough graph", () => {
+    for (const [from, to] of [
+      ["SW", "HW"],
+      ["AC", "IC"],
+      ["HL", "SW"],
+    ]) {
+      const route = routeBetweenPublicBuildings({
+        from: from!,
+        to: to!,
+        university: "uoft",
+        campus: "utsc",
+      });
+      expect("status" in route && route.status).toBe("routed");
+      if ("totalDistanceMeters" in route) expect(route.totalDistanceMeters).toBeGreaterThan(0);
+    }
   });
 
   it("asserts zero identity leakage across public building listings", () => {

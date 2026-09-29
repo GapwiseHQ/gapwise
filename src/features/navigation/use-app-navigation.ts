@@ -30,6 +30,10 @@ export function useAppNavigation(hasMeetings: boolean) {
     destination === "route" && typeof location.search["building"] === "string"
       ? location.search["building"]
       : null;
+  const selectedCampusId =
+    destination === "route" && typeof location.search["campus"] === "string"
+      ? location.search["campus"]
+      : null;
   const [openedViews, setOpenedViews] = useState({ gaps: false, route: false });
   const allowInitialHomeRedirect = useRef(destination === "home");
 
@@ -64,27 +68,45 @@ export function useAppNavigation(hasMeetings: boolean) {
   }, [destination]);
 
   const selectBuilding = useCallback(
-    (code: string | null) => {
+    (code: string | null, campusId?: string | null) => {
       if (code === null && selectedBuildingCode === null) return;
+      const effectiveCampus = campusId ?? selectedCampusId;
       void navigate({
         to: "/route",
-        search: code ? { building: code } : {},
+        search: {
+          ...(effectiveCampus ? { campus: effectiveCampus } : {}),
+          ...(code ? { building: code } : {}),
+        },
         replace: destination === "route",
         resetScroll: false,
       });
     },
-    [destination, navigate, selectedBuildingCode],
+    [destination, navigate, selectedBuildingCode, selectedCampusId],
+  );
+
+  const selectCampus = useCallback(
+    (campus: string) => {
+      if (campus === selectedCampusId && selectedBuildingCode === null) return;
+      void navigate({
+        to: "/route",
+        search: { campus },
+        resetScroll: false,
+      });
+    },
+    [navigate, selectedBuildingCode, selectedCampusId],
   );
 
   return {
     destination,
     selectedBuildingCode,
+    selectedCampusId,
     openedViews,
     mobileTab: destination === "home" ? ("today" as const) : destination,
     view: destination === "gaps" || destination === "route" ? destination : ("timetable" as const),
     navigateToday: () => void navigate({ to: "/today" }),
     showView,
     selectBuilding,
+    selectCampus,
     openGapPlan: () => showView("gaps"),
     openDayRoute: () => showView("route"),
   };

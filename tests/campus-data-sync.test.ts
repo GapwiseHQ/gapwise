@@ -59,6 +59,16 @@ async function fixture() {
       await put(`data/data/${campus}/${name}`, `${campus} canonical ${name}\n`);
       await put(`gapwise/src/data/campuses/${campus}/${name}`, "old campus snapshot\n");
     }
+    const routingSnapshot = {
+      campus: { id: campus },
+      sources: [],
+      buildings: [],
+      entrances: [],
+      pathNodes: [],
+      pathEdges: [],
+    };
+    await put(`data/data/${campus}/campus.json`, `${JSON.stringify(routingSnapshot)}\n`);
+    await put(`gapwise/src/data/campuses/${campus}/campus.json`, "old routing snapshot\n");
   }
   const run = async (mode: string) => {
     const process = Bun.spawn([Bun.which("bun")!, "scripts/sync-campus-data.ts", mode], {
@@ -88,6 +98,15 @@ describe("canonical campus mirror CLI", () => {
           await f.read(`data/data/${campus}/${name}`),
         );
       }
+      expect(await f.read(`gapwise/src/data/campuses/${campus}/campus.json`)).toBe(
+        await f.read(`data/data/${campus}/campus.json`),
+      );
+      expect(JSON.parse(await f.read(`gapwise/src/data/campuses/${campus}/catalog.json`))).toEqual({
+        campus: { id: campus },
+        sources: [],
+        buildings: [],
+        entrances: [],
+      });
     }
     for (const uni of [
       "carleton",

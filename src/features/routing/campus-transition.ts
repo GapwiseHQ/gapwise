@@ -96,6 +96,10 @@ export const planOutdoorCampusTransition = createOutdoorCampusTransitionPlanner(
 export type CampusSnapshotLoader = () => Promise<CampusSnapshot>;
 
 export const OUTDOOR_CAMPUS_LOADERS: Record<string, CampusSnapshotLoader> = {
+  utsg: () =>
+    import("@/data/campuses/utsg/campus.json").then((m) => m.default as unknown as CampusSnapshot),
+  utsc: () =>
+    import("@/data/campuses/utsc/campus.json").then((m) => m.default as unknown as CampusSnapshot),
   carleton: () =>
     import("@/data/campuses/carleton/campus.json").then(
       (m) => m.default as unknown as CampusSnapshot,
@@ -138,17 +142,19 @@ export async function getOutdoorCampusTransitionPlanner(
   universityOrCampusId: string,
 ): Promise<TransitionPlanner | null> {
   const normalized = universityOrCampusId.toLowerCase();
-  const uniId = universityByCampus(normalized)?.id ?? normalized;
+  const lookupKey = OUTDOOR_CAMPUS_LOADERS[normalized]
+    ? normalized
+    : (universityByCampus(normalized)?.id ?? normalized);
 
-  if (plannerCache.has(uniId)) {
-    return plannerCache.get(uniId)!;
+  if (plannerCache.has(lookupKey)) {
+    return plannerCache.get(lookupKey)!;
   }
 
-  const loader = OUTDOOR_CAMPUS_LOADERS[uniId];
+  const loader = OUTDOOR_CAMPUS_LOADERS[lookupKey];
   if (!loader) return null;
 
   const campusSnapshot = await loader();
   const planner = createOutdoorCampusTransitionPlanner(campusSnapshot);
-  plannerCache.set(uniId, planner);
+  plannerCache.set(lookupKey, planner);
   return planner;
 }
