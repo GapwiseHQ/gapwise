@@ -169,12 +169,14 @@ export function searchGapwise(query: string, context: SearchIndexContext = {}): 
       }
 
       // Score against aliases
-      if (b.aliases) {
-        for (const alias of b.aliases) {
-          const aliasScore = scoreMatch(q, alias, false);
-          if (aliasScore !== null && (bestScore === null || aliasScore < bestScore)) {
-            bestScore = aliasScore;
-          }
+      const candidateAliases = [...(b.aliases ?? [])];
+      if (b.code === "HM") {
+        candidateAliases.push("LIBRARY", "UTM LIBRARY");
+      }
+      for (const alias of candidateAliases) {
+        const aliasScore = scoreMatch(q, alias, false);
+        if (aliasScore !== null && (bestScore === null || aliasScore < bestScore)) {
+          bestScore = aliasScore;
         }
       }
     }
