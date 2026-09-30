@@ -1,5 +1,6 @@
 import {
   UNIVERSITIES,
+  activeCampus as activeHostCampus,
   activeUniversity,
   urlForUniversity,
   type University,
@@ -24,6 +25,7 @@ export type SearchResultItem = {
   score: number;
   data: {
     buildingCode?: string | null | undefined;
+    campusId?: GapwiseCampusId | null | undefined;
     room?: string | null | undefined;
     floor?: string | null | undefined;
     meetingId?: string | undefined;
@@ -37,6 +39,16 @@ export type SearchIndexContext = {
   campusId?: GapwiseCampusId | null | undefined;
   meetings?: Meeting[] | undefined;
 };
+
+function searchCampus(context: SearchIndexContext): GapwiseCampusId | null {
+  if (context.campusId !== undefined) return context.campusId;
+  const hostCampus = activeHostCampus();
+  if (hostCampus) return hostCampus;
+  const university = activeUniversity();
+  return university?.campuses.length === 1
+    ? ((university.campuses[0] as GapwiseCampusId | undefined) ?? null)
+    : null;
+}
 
 // University aliases & common search terms
 const UNIVERSITY_ALIASES: Record<string, string[]> = {
@@ -140,11 +152,15 @@ export function searchGapwise(query: string, context: SearchIndexContext = {}): 
 
   const results: SearchResultItem[] = [];
   const currentUni = activeUniversity();
-  const activeCampus = context.campusId ?? (currentUni?.defaultCampus as GapwiseCampusId) ?? "utm";
+  const activeCampus = searchCampus(context);
 
   // 1. Current campus buildings
   const buildings: readonly BuildingConfiguration[] =
-    activeCampus === "utm" ? UTM_BUILDINGS : campusBuildingConfigurations(activeCampus);
+    activeCampus === "utm"
+      ? UTM_BUILDINGS
+      : activeCampus
+        ? campusBuildingConfigurations(activeCampus)
+        : [];
 
   // Check if query looks like a building + room (e.g. "MN 3120", "DH 2020", "SLC 101")
   const roomPattern = /^([A-Z]{2,6})\s*([A-Z0-9-]{1,6})$/i;
@@ -184,17 +200,19 @@ export function searchGapwise(query: string, context: SearchIndexContext = {}): 
     if (bestScore !== null) {
       const room = queriedRoom ?? null;
       const floor = room?.match(/^[A-Z]?(\d)/)?.[1] ?? null;
+      const campusLabel = activeCampus ? (CAMPUS_SHORT_LABELS[activeCampus] ?? "Campus") : "Campus";
       results.push({
         id: `building-${b.code}`,
         category: "buildings",
         title: `${b.code} — ${b.name}`,
         subtitle: room
-          ? `Room ${room}${floor ? ` (Floor ${floor})` : ""} · ${CAMPUS_SHORT_LABELS[activeCampus] ?? "Campus"}`
-          : (CAMPUS_SHORT_LABELS[activeCampus] ?? "Campus building"),
+          ? `Room ${room}${floor ? ` (Floor ${floor})` : ""} · ${campusLabel}`
+          : `${campusLabel} building`,
         badge: b.code,
         score: bestScore,
         data: {
           buildingCode: b.code,
+          campusId: activeCampus,
           room,
           floor,
         },
@@ -365,7 +383,7 @@ export function searchGapwise(query: string, context: SearchIndexContext = {}): 
 
 function getInitialSuggestions(context: SearchIndexContext): SearchResultItem[] {
   const currentUni = activeUniversity();
-  const activeCampus = context.campusId ?? (currentUni?.defaultCampus as GapwiseCampusId) ?? "utm";
+  const activeCampus = searchCampus(context);
   const suggestions: SearchResultItem[] = [];
 
   // Suggest Day Route
@@ -373,7 +391,9 @@ function getInitialSuggestions(context: SearchIndexContext): SearchResultItem[] 
     id: "action-route",
     category: "actions",
     title: "Campus Map & Day Route",
-    subtitle: `Explore ${CAMPUS_SHORT_LABELS[activeCampus] ?? "campus"} buildings, walkways, and entrances`,
+    subtitle: activeCampus
+      ? `Explore ${CAMPUS_SHORT_LABELS[activeCampus] ?? "campus"} buildings, walkways, and entrances`
+      : "Choose a campus, then explore buildings, walkways, and entrances",
     badge: "Map",
     score: 1,
     data: { actionId: "route", url: "/route" },

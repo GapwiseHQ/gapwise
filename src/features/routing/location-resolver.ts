@@ -10,7 +10,7 @@ import {
   getBuildingFootprintForCampus,
   resolveCampusBuildingLocation,
 } from "@/data/campuses";
-import { campusForCourseCode, type Campus } from "@/lib/timetable-types";
+import type { Campus } from "@/lib/timetable-types";
 import type { RoutingNode, VerificationStatus } from "./types";
 
 export type { BuildingConfiguration } from "@/data/utm/building-registry";
@@ -275,6 +275,16 @@ function unknownCampusResolution(raw: string): LocationResolution {
   };
 }
 
+function inferUoftCampusFromLocation(raw: string): Campus {
+  const matches: Campus[] = [];
+  if (resolveAcornLocation(raw).status === "known") matches.push("UTM");
+  for (const campus of ["UTSG", "UTSC"] as const) {
+    const campusId = gapwiseCampusIdForCampus(campus);
+    if (campusId && resolveCampusBuildingLocation(campusId, raw)) matches.push(campus);
+  }
+  return matches.length === 1 ? matches[0]! : "UNKNOWN";
+}
+
 export function resolveMeetingLocation(meeting: {
   courseCode?: string;
   buildingCode: string | null;
@@ -290,8 +300,7 @@ export function resolveMeetingLocation(meeting: {
   const suppliedLocation =
     meeting.sourceLocation?.trim() ||
     [meeting.buildingCode, meeting.room].filter(Boolean).join(" ");
-  const campus =
-    meeting.campus ?? (meeting.courseCode ? campusForCourseCode(meeting.courseCode) : "UNKNOWN");
+  const campus = meeting.campus ?? inferUoftCampusFromLocation(suppliedLocation);
 
   // St. George and Scarborough can share short building codes with UTM, so resolve
   // against the meeting's own campus-scoped registry and never reinterpret them as UTM.

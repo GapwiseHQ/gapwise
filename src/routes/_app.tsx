@@ -49,7 +49,7 @@ import {
 } from "@/features/sync/preferences";
 import { useIntroDismissed, useTheme } from "@/hooks/use-preferences";
 import { trackFeatureView, trackTimetableImport } from "@/lib/telemetry";
-import { activeUniversity } from "@/universities/registry";
+import { activeCampus, activeUniversity } from "@/universities/registry";
 import type { Meeting } from "@/lib/timetable-types";
 import { isEncryptedPrivateCloudAuthoritative } from "@/features/security/private-cloud-mode";
 import { useEncryptedAutosave } from "@/features/sync/use-encrypted-autosave";
@@ -63,7 +63,12 @@ import {
   type AcademicState,
 } from "@/features/academic/state";
 import { plannedWorkMeetings } from "@/features/academic/integration";
-import { CAMPUS_SHORT_LABELS } from "@/data/campuses";
+import {
+  CAMPUS_SHORT_LABELS,
+  gapwiseCampusIdForCampus,
+  type GapwiseCampusId,
+} from "@/data/campuses";
+import { inferredCampusForMeetings } from "@/lib/timetable-types";
 import { getResidenceBuildingForCampus } from "@/data/campuses/residence-registry";
 import { getCampusAccessPoint } from "@/data/utm/campus-access-points";
 
@@ -214,6 +219,12 @@ function AppLayout() {
     gaps,
     planTransition,
   } = useSelectedScheduleContext(meetings);
+  const inferredScheduleCampus = gapwiseCampusIdForCampus(
+    inferredCampusForMeetings(meetings ?? EMPTY_MEETINGS) ?? "UNKNOWN",
+  );
+  const effectiveCampus = (inferredScheduleCampus ??
+    preferences.mainCampus ??
+    activeCampus()) as GapwiseCampusId | null;
 
   const {
     restoration,
@@ -563,7 +574,7 @@ function AppLayout() {
           <SearchDialog
             open={searchOpen}
             onOpenChange={setSearchOpen}
-            campusId={preferences.mainCampus}
+            campusId={effectiveCampus}
             meetings={meetings ?? undefined}
             onSelectBuilding={selectBuilding}
             onOpenImport={() => {
@@ -1005,7 +1016,7 @@ function AppLayout() {
         <SearchDialog
           open={searchOpen}
           onOpenChange={setSearchOpen}
-          campusId={preferences.mainCampus}
+          campusId={effectiveCampus}
           meetings={meetings ?? undefined}
           onSelectBuilding={selectBuilding}
           onOpenImport={() => {

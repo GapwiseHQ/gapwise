@@ -33,7 +33,7 @@ type SearchDialogProps = {
   onOpenChange: (open: boolean) => void;
   campusId?: GapwiseCampusId | null | undefined;
   meetings?: Meeting[] | undefined;
-  onSelectBuilding?: ((code: string | null) => void) | undefined;
+  onSelectBuilding?: ((code: string | null, campusId?: string | null) => void) | undefined;
   onOpenImport?: (() => void) | undefined;
   onOpenArrival?: (() => void) | undefined;
 };
@@ -84,11 +84,15 @@ export function SearchDialog({
 
     if (item.category === "buildings" && item.data.buildingCode) {
       if (onSelectBuilding) {
-        onSelectBuilding(item.data.buildingCode);
+        onSelectBuilding(item.data.buildingCode, item.data.campusId);
+        return;
       }
       void navigate({
         to: "/route",
-        search: { building: item.data.buildingCode },
+        search: {
+          building: item.data.buildingCode,
+          ...(item.data.campusId ? { campus: item.data.campusId } : {}),
+        },
       });
       return;
     }
