@@ -143,7 +143,7 @@ const EXTERNAL_REGISTRIES: Record<string, ExternalRegistry> = {
       },
     ]),
   ),
-} as const;
+};
 
 const EXTERNAL_FOOTPRINTS: Record<string, CampusFootprintCollection> = {
   utsg: utsgFootprints,
@@ -173,7 +173,7 @@ const EXTERNAL_FOOTPRINTS: Record<string, CampusFootprintCollection> = {
       },
     ]),
   ),
-} as const;
+};
 
 const CAMPUS_FALLBACK_BOUNDS: Record<string, [[number, number], [number, number]]> = {
   utm: [
@@ -293,6 +293,61 @@ const CONFIGURATIONS: Record<string, BuildingConfiguration[]> = {
     Object.keys(universityCatalogs).map((id) => [id, externalConfigurations(id)]),
   ),
 };
+
+function registerUniversityCatalog(campusId: string, catalog: UniversityCatalog) {
+  universityCatalogs[campusId] = catalog;
+  EXTERNAL_REGISTRIES[campusId] = {
+    campus: campusId,
+    generatedAt: "",
+    buildings: catalog.buildings.map((building) => ({
+      id: building.id,
+      campus: campusId,
+      code: building.nativeCodes[0] ?? building.id,
+      name: building.name,
+      category: building.category ?? "facility",
+      aliases: [building.id, ...building.aliases, ...building.nativeCodes.slice(1)],
+    })),
+  };
+  EXTERNAL_FOOTPRINTS[campusId] = {
+    type: "FeatureCollection",
+    features: catalog.buildings.flatMap((building) =>
+      building.geometry
+        ? [
+            {
+              type: "Feature" as const,
+              id: building.id,
+              properties: {
+                campus: campusId,
+                buildingId: building.id,
+                buildingCode: building.nativeCodes[0] ?? building.id,
+                name: building.name,
+              },
+              geometry: building.geometry,
+            },
+          ]
+        : [],
+    ),
+  };
+  if (catalog.campus?.bounds) CAMPUS_FALLBACK_BOUNDS[campusId] = catalog.campus.bounds;
+  CONFIGURATIONS[campusId] = externalConfigurations(campusId);
+}
+
+const campusCatalogLoads = new Map<string, Promise<void>>();
+
+/** Load large, edition-specific map/search data before rendering that campus. */
+export function ensureCampusCatalog(campusId: string | null | undefined): Promise<void> {
+  if (!campusId || universityCatalogs[campusId] || campusId === "utm") return Promise.resolve();
+  const existing = campusCatalogLoads.get(campusId);
+  if (existing) return existing;
+  const load =
+    campusId === "ubc-vancouver"
+      ? import("./ubc/catalog.json?raw").then((module) => {
+          registerUniversityCatalog(campusId, JSON.parse(module.default) as UniversityCatalog);
+        })
+      : Promise.resolve();
+  campusCatalogLoads.set(campusId, load);
+  return load;
+}
 
 export function campusResidenceBuildings(campusId: GapwiseCampusId): BuildingConfiguration[] {
   return (CONFIGURATIONS[campusId] ?? []).filter((building) => building.category === "residence");

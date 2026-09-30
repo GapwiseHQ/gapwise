@@ -134,6 +134,8 @@ export const OUTDOOR_CAMPUS_LOADERS: Record<string, CampusSnapshotLoader> = {
     ),
   brock: () =>
     import("@/data/campuses/brock/campus.json").then((m) => m.default as unknown as CampusSnapshot),
+  "ubc-vancouver": () =>
+    import("@/data/campuses/ubc/campus.json").then((m) => m.default as unknown as CampusSnapshot),
 };
 
 const plannerCache = new Map<string, TransitionPlanner>();
@@ -142,9 +144,10 @@ export async function getOutdoorCampusTransitionPlanner(
   universityOrCampusId: string,
 ): Promise<TransitionPlanner | null> {
   const normalized = universityOrCampusId.toLowerCase();
+  const university = universityById(normalized) ?? universityByCampus(normalized);
   const lookupKey = OUTDOOR_CAMPUS_LOADERS[normalized]
     ? normalized
-    : (universityByCampus(normalized)?.id ?? normalized);
+    : (university?.defaultCampus ?? normalized);
 
   if (plannerCache.has(lookupKey)) {
     return plannerCache.get(lookupKey)!;

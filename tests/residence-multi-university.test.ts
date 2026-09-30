@@ -1,8 +1,9 @@
-import { describe, expect, it } from "bun:test";
+import { beforeAll, describe, expect, it } from "bun:test";
 import manifest from "../universities.json" with { type: "json" };
 import {
   campusResidenceBuildings,
   campusBuildingConfigurations,
+  ensureCampusCatalog,
   getResidenceBuildingForCampus,
   type GapwiseCampusId,
 } from "../src/data/campuses/index.js";
@@ -46,11 +47,19 @@ const DEFAULT_PREFS: UserPreferences = {
 };
 
 describe("First-class multi-university residence platform", () => {
-  it("provides 100% verified residence coverage across all 11 universities and 13 campus models", () => {
+  beforeAll(async () => {
+    await Promise.all(
+      manifest.universities.flatMap((university) =>
+        university.campuses.map((campus) => ensureCampusCatalog(campus)),
+      ),
+    );
+  });
+
+  it("provides verified residence coverage across every supported campus model", () => {
     expect(residenceMatrix.summary.coveragePercentage).toBe(100);
-    expect(residenceMatrix.summary.campusesWithResidenceCoverage).toBe(13);
-    expect(residenceMatrix.summary.universitiesWithResidenceCoverage).toBe(11);
-    expect(residenceMatrix.summary.totalResidences).toBeGreaterThanOrEqual(100);
+    expect(residenceMatrix.summary.campusesWithResidenceCoverage).toBe(14);
+    expect(residenceMatrix.summary.universitiesWithResidenceCoverage).toBe(12);
+    expect(residenceMatrix.summary.totalResidences).toBeGreaterThanOrEqual(190);
 
     for (const university of manifest.universities) {
       for (const campus of university.campuses) {

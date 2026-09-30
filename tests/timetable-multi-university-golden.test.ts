@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import { timetableAdapters, demoTimetableLoaders } from "@/universities/timetable-adapters";
 import { supportedUniversities } from "@/universities/registry";
-import { getCampusBuildingIdentity } from "@/data/campuses";
+import { ensureCampusCatalog, getCampusBuildingIdentity } from "@/data/campuses";
 
 // Golden fixture inputs for each supported institution
 const GOLDEN_FIXTURES: Record<
@@ -116,7 +116,21 @@ COSC 1P02  01       LEC        MW      09:30 AM - 11:00 AM   ST 107     Staff
     expectedCourse: "COSC 1P02",
     expectedBuilding: "ST",
   },
+  "ubc-workday": {
+    name: "University of British Columbia (Workday View My Courses)",
+    sample: `
+Course Listing\tCredits\tGrading Basis\tSection\tInstructional Format\tDelivery Mode\tMeeting Patterns\tRegistration Status\tInstructor\tStart Date\tEnd Date
+CPSC_V 110 - Computation, Programs, and Programming\t4\tGraded\tCPSC_V 110-101 - Computation, Programs, and Programming\tLecture\tIn Person Learning\t2026-09-08 - 2026-12-07 | Mon Wed | 9:00 a.m. - 10:00 a.m. | ICCS-Floor 2-Room X836\tRegistered\tStaff\t2026-09-08\t2026-12-07
+    `.trim(),
+    expectedCourse: "CPSC 110",
+    expectedBuilding: "ICCS",
+  },
 };
+
+function universityIdForAdapter(adapterId: string) {
+  return supportedUniversities().find((university) => university.timetableAdapter === adapterId)!
+    .id;
+}
 
 const EXPECTED_DAYS = new Set([
   "Monday",
@@ -129,9 +143,9 @@ const EXPECTED_DAYS = new Set([
 ]);
 
 describe("Timetable Multi-University Golden Validation Suite (AND-211)", () => {
-  test("all 11 production universities are registered and have corresponding adapters", () => {
+  test("all production universities are registered and have corresponding adapters", () => {
     const universities = supportedUniversities();
-    expect(universities.length).toBe(11);
+    expect(universities).toHaveLength(12);
 
     const adapterKeys = Object.keys(timetableAdapters);
     expect(adapterKeys.length).toBeGreaterThanOrEqual(11);
@@ -200,8 +214,8 @@ describe("Timetable Multi-University Golden Validation Suite (AND-211)", () => {
 
         // Verify zero cross-university identity leak:
         // Meeting's universityId must match adapter's university domain
-        const targetUni = adapterId.replace("-schedule", "").replace("-ics", "");
-        if (targetUni === "acorn") {
+        const targetUni = universityIdForAdapter(adapterId);
+        if (targetUni === "uoft") {
           expect(meeting.universityId === "uoft" || !meeting.universityId).toBe(true);
         } else {
           expect(meeting.universityId).toBe(targetUni);
@@ -212,6 +226,7 @@ describe("Timetable Multi-University Golden Validation Suite (AND-211)", () => {
         expect(campusId).toBeDefined();
 
         if (meeting.buildingCode) {
+          await ensureCampusCatalog(campusId);
           const building = getCampusBuildingIdentity(campusId!, meeting.buildingCode);
           expect(building).toBeDefined();
         }
@@ -220,7 +235,7 @@ describe("Timetable Multi-University Golden Validation Suite (AND-211)", () => {
       test("handles empty and malformed inputs gracefully without crashing", async () => {
         const parse = timetableAdapters[adapterId]!;
 
-        if (adapterId === "acorn-ics") {
+        if (adapterId === "acorn-ics" || adapterId === "ubc-workday") {
           await expect(parse("   \n\t  ")).rejects.toThrow();
           await expect(
             parse("Random unstructured text that contains no timetable data 12345"),
@@ -250,7 +265,7 @@ describe("Timetable Multi-University Golden Validation Suite (AND-211)", () => {
           expect(EXPECTED_DAYS.has(m.weekday)).toBe(true);
           expect(m.buildingCode).toBeDefined();
           if (adapterId !== "acorn-ics") {
-            const targetUni = adapterId.replace("-schedule", "").replace("-ics", "");
+            const targetUni = universityIdForAdapter(adapterId);
             expect(m.universityId).toBe(targetUni);
           }
         }
@@ -264,8 +279,7 @@ describe("Timetable Multi-University Golden Validation Suite (AND-211)", () => {
         );
         expect(physical.length).toBeGreaterThanOrEqual(2);
 
-        const targetUni = adapterId.replace("-schedule", "").replace("-ics", "");
-        const uniId = targetUni === "acorn" ? "uoft" : targetUni;
+        const uniId = universityIdForAdapter(adapterId);
 
         let routed = false;
         if (uniId === "uoft") {

@@ -5,10 +5,10 @@ import { routeBetweenPublicBuildings } from "../src/server/public-campus/service
 describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
   const auditReport = runComprehensiveCampusAudit();
 
-  it("completes full platform audit without crashing and evaluates all 11 universities", () => {
-    expect(auditReport.summary.totalUniversities).toBe(11);
-    expect(auditReport.summary.totalCampuses).toBe(13);
-    expect(auditReport.summary.routableCampuses).toBe(13);
+  it("completes the full supported-platform audit without crashing", () => {
+    expect(auditReport.summary.totalUniversities).toBe(12);
+    expect(auditReport.summary.totalCampuses).toBe(14);
+    expect(auditReport.summary.routableCampuses).toBe(14);
     expect(auditReport.summary.totalRouteFailures).toBe(0);
   });
 

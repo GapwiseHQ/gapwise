@@ -63,6 +63,7 @@ describe("university registry", () => {
     expect(universityForHostname("guelph.gapwise.ca")?.id).toBe("guelph");
     expect(universityForHostname("uottawa.gapwise.ca")?.id).toBe("uottawa");
     expect(universityForHostname("brock.gapwise.ca")?.id).toBe("brock");
+    expect(universityForHostname("ubc.gapwise.ca")?.id).toBe("ubc");
     expect(universityForHostname("localhost")?.id).toBe("uoft");
     expect(universityForHostname("localhost", "carleton")?.id).toBe("carleton");
     expect(universityForHostname("localhost", "tmu")?.id).toBe("tmu");
@@ -75,6 +76,7 @@ describe("university registry", () => {
     expect(universityForHostname("preview-branch.vercel.app", "guelph")?.id).toBe("guelph");
     expect(universityForHostname("preview-branch.vercel.app", "uottawa")?.id).toBe("uottawa");
     expect(universityForHostname("preview-branch.vercel.app", "brock")?.id).toBe("brock");
+    expect(universityForHostname("preview-branch.vercel.app", "ubc")?.id).toBe("ubc");
     expect(universityForHostname("gapwise.ca", "carleton")?.id).toBe("uoft");
     expect(universityForHostname("unknown.gapwise.ca")).toBeNull();
     expect(universityForHostname("attacker.com")).toBeNull();
@@ -175,6 +177,7 @@ describe("canonical meeting and campus data contracts", () => {
     expect(typeof timetableAdapters["guelph-schedule"]).toBe("function");
     expect(typeof timetableAdapters["uottawa-schedule"]).toBe("function");
     expect(typeof timetableAdapters["brock-schedule"]).toBe("function");
+    expect(typeof timetableAdapters["ubc-workday"]).toBe("function");
 
     const uoftDemo = await loadDemoTimetable("acorn-ics");
     expect(uoftDemo.length).toBeGreaterThan(0);
@@ -219,6 +222,11 @@ describe("canonical meeting and campus data contracts", () => {
     const brockDemo = await loadDemoTimetable("brock-schedule");
     expect(brockDemo.length).toBeGreaterThan(0);
     expect(brockDemo.every((m) => m.universityId === "brock")).toBe(true);
+
+    const ubcDemo = await loadDemoTimetable("ubc-workday");
+    expect(ubcDemo.length).toBeGreaterThan(0);
+    expect(ubcDemo.every((m) => m.universityId === "ubc")).toBe(true);
+    expect(ubcDemo.map((m) => m.courseCode)).toContain("CPSC 110");
 
     const fallbackDemo = await loadDemoTimetable(undefined);
     expect(fallbackDemo).toEqual(uoftDemo);
@@ -335,7 +343,19 @@ describe("canonical meeting and campus data contracts", () => {
       (u) => u.id !== "uoft" && u.enabledFeatures.routing,
     );
 
-    expect(outdoorUnis.length).toBe(10);
+    expect(outdoorUnis.map((university) => university.id).sort()).toEqual([
+      "brock",
+      "carleton",
+      "guelph",
+      "laurier",
+      "mcmaster",
+      "queens",
+      "tmu",
+      "ubc",
+      "uottawa",
+      "western",
+      "york",
+    ]);
 
     for (const uni of outdoorUnis) {
       const planner = await getOutdoorCampusTransitionPlanner(uni.id);

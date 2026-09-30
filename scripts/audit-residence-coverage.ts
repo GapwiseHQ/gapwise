@@ -6,6 +6,7 @@ import {
   campusResidenceBuildings,
   campusBuildingConfigurations,
   CAMPUS_LABELS,
+  ensureCampusCatalog,
   type GapwiseCampusId,
 } from "../src/data/campuses/index.js";
 
@@ -46,7 +47,12 @@ export interface ResidenceCoverageMatrix {
   campuses: Record<string, CampusResidenceCoverage>;
 }
 
-export function generateResidenceCoverageMatrix(): ResidenceCoverageMatrix {
+export async function generateResidenceCoverageMatrix(): Promise<ResidenceCoverageMatrix> {
+  await Promise.all(
+    manifest.universities.flatMap((university) =>
+      university.campuses.map((campusId) => ensureCampusCatalog(campusId)),
+    ),
+  );
   const campusCoverages: Record<string, CampusResidenceCoverage> = {};
   let totalBuildings = 0;
   let totalResidences = 0;
@@ -112,7 +118,7 @@ export function generateResidenceCoverageMatrix(): ResidenceCoverageMatrix {
 const args = process.argv.slice(2);
 const checkOnly = args.includes("--check");
 
-const matrix = generateResidenceCoverageMatrix();
+const matrix = await generateResidenceCoverageMatrix();
 
 console.log("\n=======================================================");
 console.log("GAPWISE UNIVERSITY RESIDENCE COVERAGE MATRIX AUDIT");

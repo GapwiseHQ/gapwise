@@ -442,46 +442,19 @@ for (const uniId of UNIVERSITY_IDS) {
 
 // ── Per-university social preview metadata and OG card regression checks ───────
 
-const ALL_UNIVERSITY_IDS = [
-  "uoft",
-  "carleton",
-  "tmu",
-  "queens",
-  "laurier",
-  "york",
-  "mcmaster",
-  "western",
-  "guelph",
-  "uottawa",
-  "brock",
-] as const;
-type AnyUniversityId = (typeof ALL_UNIVERSITY_IDS)[number];
-const ALL_UNIVERSITY_NAMES: Record<AnyUniversityId, string> = {
-  uoft: "University of Toronto",
-  carleton: "Carleton University",
-  tmu: "Toronto Metropolitan University",
-  queens: "Queen's University",
-  laurier: "Wilfrid Laurier University",
-  york: "York University",
-  mcmaster: "McMaster University",
-  western: "Western University",
-  guelph: "University of Guelph",
-  uottawa: "University of Ottawa",
-  brock: "Brock University",
+const universityManifest = JSON.parse(await readFile("universities.json", "utf8")) as {
+  universities: Array<{ id: string; name: string; hosts: string[]; status: string }>;
 };
-const ALL_UNIVERSITY_ORIGINS: Record<AnyUniversityId, string> = {
-  uoft: "https://gapwise.ca",
-  carleton: "https://carleton.gapwise.ca",
-  tmu: "https://tmu.gapwise.ca",
-  queens: "https://queens.gapwise.ca",
-  laurier: "https://laurier.gapwise.ca",
-  york: "https://york.gapwise.ca",
-  mcmaster: "https://mcmaster.gapwise.ca",
-  western: "https://western.gapwise.ca",
-  guelph: "https://guelph.gapwise.ca",
-  uottawa: "https://uottawa.gapwise.ca",
-  brock: "https://brock.gapwise.ca",
-};
+const supportedUniversityEntries = universityManifest.universities.filter(
+  (university) => university.status === "supported",
+);
+const ALL_UNIVERSITY_IDS = supportedUniversityEntries.map((university) => university.id);
+const ALL_UNIVERSITY_NAMES = Object.fromEntries(
+  supportedUniversityEntries.map((university) => [university.id, university.name]),
+) as Record<string, string>;
+const ALL_UNIVERSITY_ORIGINS = Object.fromEntries(
+  supportedUniversityEntries.map((university) => [university.id, `https://${university.hosts[0]}`]),
+) as Record<string, string>;
 
 function pngDimensions(bytes: Buffer) {
   if (bytes.subarray(1, 4).toString() !== "PNG") {
@@ -491,7 +464,7 @@ function pngDimensions(bytes: Buffer) {
 }
 
 for (const uniId of ALL_UNIVERSITY_IDS) {
-  const name = ALL_UNIVERSITY_NAMES[uniId];
+  const name = ALL_UNIVERSITY_NAMES[uniId]!;
   const origin = ALL_UNIVERSITY_ORIGINS[uniId];
   const cardPath = `dist/universities/${uniId}/og-card.png`;
   const cardBytes = await readFile(cardPath);
@@ -570,7 +543,7 @@ for (const uniId of ALL_UNIVERSITY_IDS) {
 // Inspect every public edition page, not only the homepage. One university must never
 // appear in another university edition's title, description, social tags, or fallback body.
 for (const uniId of UNIVERSITY_IDS) {
-  const ownName = ALL_UNIVERSITY_NAMES[uniId];
+  const ownName = ALL_UNIVERSITY_NAMES[uniId]!;
   const pages: Array<[string, string]> = [
     ["/", `dist/_universities/${uniId}/index.html`],
     ...COMMON_SEO_PATHS.map((path): [string, string] => [
