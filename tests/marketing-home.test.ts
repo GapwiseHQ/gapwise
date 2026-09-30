@@ -159,9 +159,15 @@ describe("Gapwise marketing system", () => {
         url: "https://ubc.gapwise.ca",
         scope: "Vancouver / Point Grey campus",
       },
+      {
+        id: "waterloo",
+        name: "University of Waterloo",
+        url: "https://waterloo.gapwise.ca",
+        scope: "Main campus",
+      },
     ];
 
-    expect(manifest.universities).toHaveLength(12);
+    expect(manifest.universities).toHaveLength(13);
 
     for (const expected of expectedUniversities) {
       const entry = manifest.universities.find((u: { id: string }) => u.id === expected.id);

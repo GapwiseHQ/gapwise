@@ -52,6 +52,10 @@ export const timetableAdapters: Record<string, (text: string) => Promise<ParsedT
     const { parseUbcTimetable } = await import("./ubc/adapter");
     return parseUbcTimetable(text);
   },
+  "waterloo-quest": async (text) => {
+    const { parseWaterlooTimetable } = await import("./waterloo/adapter");
+    return parseWaterlooTimetable(text);
+  },
   // GAPWISE_ADAPTER_REGISTRY: the CLI inserts new timetable adapters here.
 };
 
@@ -142,6 +146,13 @@ export const demoTimetableLoaders: Record<string, (campusId?: string) => Promise
       import("./ubc/adapter"),
     ]);
     return DEMO_UBC_MEETINGS.flatMap(normalizeUbcMeeting);
+  },
+  "waterloo-quest": async () => {
+    const [{ DEMO_WATERLOO_MEETINGS }, { normalizeWaterlooMeeting }] = await Promise.all([
+      import("./waterloo/demo-timetable"),
+      import("./waterloo/adapter"),
+    ]);
+    return DEMO_WATERLOO_MEETINGS.flatMap(normalizeWaterlooMeeting);
   },
   // GAPWISE_DEMO_LOADER_REGISTRY: the CLI inserts new demo loaders here.
 };

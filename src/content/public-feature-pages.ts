@@ -40,7 +40,7 @@ export const PUBLIC_FEATURE_PAGES = {
       },
       {
         title: "Made for multiple universities",
-        body: "Timetable identity and source-backed building maps are supported for all twelve universities. Pedestrian routing, verified entrances, and campus places vary by campus and are shown only where supported.",
+        body: "Timetable identity and source-backed building maps are supported for all thirteen universities. Pedestrian routing, verified entrances, and campus places vary by campus and are shown only where supported.",
       },
     ],
   },

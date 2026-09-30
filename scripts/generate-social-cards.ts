@@ -150,6 +150,14 @@ const CARDS: CardConfig[] = [
     tagline: "Make the time between classes count.",
     detail: "University of British Columbia",
   },
+  {
+    outputPath: "public/universities/waterloo/og-card.png",
+    accentColor: "#D6A800",
+    textColor: "#F8D347",
+    title: "Gapwise",
+    tagline: "Make the time between classes count.",
+    detail: "University of Waterloo",
+  },
   // ── Root fallbacks (U of T default) ──────────────────────
   {
     outputPath: "public/og-card.png",

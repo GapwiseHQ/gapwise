@@ -1065,6 +1065,76 @@
       "has": [
         {
           "type": "host",
+          "value": "waterloo.gapwise.ca"
+        }
+      ],
+      "destination": "/universities/waterloo/$1"
+    },
+    {
+      "source": "/(og-card.png|og-gapwise.png)",
+      "has": [
+        {
+          "type": "host",
+          "value": "waterloo.gapwise.ca"
+        }
+      ],
+      "destination": "/universities/waterloo/og-card.png"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "waterloo.gapwise.ca"
+        }
+      ],
+      "destination": "/_universities/waterloo/sitemap.xml"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "waterloo.gapwise.ca"
+        }
+      ],
+      "destination": "/_universities/waterloo/robots.txt"
+    },
+    {
+      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "has": [
+        {
+          "type": "host",
+          "value": "waterloo.gapwise.ca"
+        }
+      ],
+      "destination": "/_universities/waterloo/_seo/$1.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "waterloo.gapwise.ca"
+        }
+      ],
+      "destination": "/_universities/waterloo/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "waterloo.gapwise.ca"
+        }
+      ],
+      "destination": "/_universities/waterloo/index.html"
+    },
+    {
+      "source": "/(logo-mark.svg|favicon.*|apple-touch-icon.png|site.webmanifest)",
+      "has": [
+        {
+          "type": "host",
           "value": "utm.gapwise.ca"
         }
       ],

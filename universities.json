@@ -225,6 +225,27 @@
       "routableCampuses": ["ubc-vancouver"],
       "dataPaths": ["universities/ubc/campus.json"],
       "status": "supported"
+    },
+    {
+      "id": "waterloo",
+      "name": "University of Waterloo",
+      "shortName": "Waterloo",
+      "accentColor": "#D6A800",
+      "campusScope": "Main campus",
+      "hosts": ["waterloo.gapwise.ca"],
+      "campuses": ["waterloo-main"],
+      "defaultCampus": "waterloo-main",
+      "timetableAdapter": "waterloo-quest",
+      "calendarSource": "Quest Class Schedule",
+      "calendarInstructions": "Open Quest → Class Schedule → List View, copy the class rows, then paste them here.",
+      "calendarHelpUrl": "https://uwaterloo.ca/the-centre/quest/quest-help/how-do-i-view-my-class-schedule",
+      "preferredImportMethod": "paste",
+      "acceptedFileTypes": ".txt,.tsv,text/plain,text/tab-separated-values",
+      "fileTypeLabel": ".txt or .tsv",
+      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "routableCampuses": ["waterloo-main"],
+      "dataPaths": ["universities/waterloo/campus.json"],
+      "status": "supported"
     }
   ]
 }

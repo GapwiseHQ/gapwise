@@ -136,6 +136,10 @@ export const OUTDOOR_CAMPUS_LOADERS: Record<string, CampusSnapshotLoader> = {
     import("@/data/campuses/brock/campus.json").then((m) => m.default as unknown as CampusSnapshot),
   "ubc-vancouver": () =>
     import("@/data/campuses/ubc/campus.json").then((m) => m.default as unknown as CampusSnapshot),
+  "waterloo-main": () =>
+    import("@/data/campuses/waterloo/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
 };
 
 const plannerCache = new Map<string, TransitionPlanner>();
