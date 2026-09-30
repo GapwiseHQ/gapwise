@@ -12,6 +12,7 @@ export type UniversityContext = {
   shortName: string;
   origin: string;
   routable: boolean;
+  campusName?: string;
 };
 
 export const UOFT_CONTEXT: UniversityContext = {
@@ -21,6 +22,39 @@ export const UOFT_CONTEXT: UniversityContext = {
   origin: SITE_ORIGIN,
   routable: true,
 };
+
+const UOFT_CAMPUS_EDITIONS = [
+  {
+    campusId: "utm",
+    context: {
+      ...UOFT_CONTEXT,
+      name: "University of Toronto Mississauga",
+      shortName: "UTM",
+      origin: "https://utm.gapwise.ca",
+      campusName: "Mississauga campus",
+    },
+  },
+  {
+    campusId: "utsg",
+    context: {
+      ...UOFT_CONTEXT,
+      name: "University of Toronto St. George",
+      shortName: "UTSG",
+      origin: "https://utsg.gapwise.ca",
+      campusName: "St. George campus",
+    },
+  },
+  {
+    campusId: "utsc",
+    context: {
+      ...UOFT_CONTEXT,
+      name: "University of Toronto Scarborough",
+      shortName: "UTSC",
+      origin: "https://utsc.gapwise.ca",
+      campusName: "Scarborough campus",
+    },
+  },
+] as const satisfies ReadonlyArray<{ campusId: string; context: UniversityContext }>;
 
 function socialImageUrl(uniContext?: UniversityContext) {
   const origin = uniContext?.origin ?? SITE_ORIGIN;
@@ -221,8 +255,10 @@ function homepageStructuredData(page: SeoPage, uniContext?: UniversityContext) {
   const websiteId = `${origin}/#website`;
   const appId = `${origin}/#app`;
   const founderId = `${origin}/#andrew-muratov`;
-  const isDedicatedTenant = uniContext && uniContext.id !== "uoft";
-  const uniName = isDedicatedTenant ? uniContext.name : null;
+  const isDedicatedTenant = Boolean(
+    uniContext && (uniContext.id !== "uoft" || uniContext.campusName),
+  );
+  const uniName = isDedicatedTenant ? uniContext!.name : null;
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -320,7 +356,7 @@ function metadata(page: SeoPage, uniContext?: UniversityContext) {
   const description = escapeHtml(page.description);
   const socialImage = socialImageUrl(effectiveUni);
   const socialImageAlt =
-    uniContext?.id === "uoft" && page.path === "/"
+    uniContext?.id === "uoft" && !uniContext.campusName && page.path === "/"
       ? "Gapwise — University timetable and campus navigation"
       : `Gapwise — ${escapeHtml(effectiveUni.name)}`;
   const schema =
@@ -400,9 +436,11 @@ function fallback(page: SeoPage, uniContext?: UniversityContext) {
     )
     .join("\n");
 
-  const isDedicatedTenant = uniContext && uniContext.id !== "uoft";
+  const isDedicatedTenant = Boolean(
+    uniContext && (uniContext.id !== "uoft" || uniContext.campusName),
+  );
   const disclaimer = isDedicatedTenant
-    ? `Gapwise is an independent student project for students at ${escapeHtml(uniContext.name)}. It is not an official service of ${escapeHtml(uniContext.name)} and does not claim university approval, sponsorship, or endorsement.`
+    ? `Gapwise is an independent student project for students at ${escapeHtml(uniContext!.name)}. It is not an official service of ${escapeHtml(uniContext!.name)} and does not claim university approval, sponsorship, or endorsement.`
     : `Gapwise is an independent student project for students across supported Canadian universities. It is not an official service of any university and does not claim university approval, sponsorship, or endorsement.`;
 
   const universitiesSection =
@@ -593,6 +631,26 @@ await writeFile(
   await readFile(join("public", "robots.txt"), "utf8"),
 );
 
+for (const { campusId, context } of UOFT_CAMPUS_EDITIONS) {
+  const campusDir = join("dist", "_campuses", campusId);
+  const campusSeoDir = join(campusDir, "_seo");
+  await mkdir(campusSeoDir, { recursive: true });
+
+  for (const page of PAGES.filter((candidate) => UNIVERSITY_COMMON_PATHS.has(candidate.path))) {
+    const campusPage = getUniversityPage(page, context);
+    const html = renderDocument(baseHtml, campusPage, context);
+    if (page.path === "/") {
+      await writeFile(join(campusDir, "index.html"), html);
+    } else {
+      await writeFile(join(campusSeoDir, `${page.path.slice(1).replaceAll("/", "--")}.html`), html);
+    }
+  }
+
+  const campusSitemap = renderSitemap(context.origin, UNIVERSITY_COMMON_PATHS);
+  await writeFile(join(campusDir, "sitemap.xml"), campusSitemap);
+  await writeFile(join(campusDir, "robots.txt"), renderRobotsTxt(`${context.origin}/sitemap.xml`));
+}
+
 const universitiesManifest = JSON.parse(await readFile("universities.json", "utf8"));
 let universityCount = 0;
 const universityPageCounts: Record<string, number> = {};
@@ -654,4 +712,7 @@ console.log(
   )
     .map(([id, n]) => `${id}(${n})`)
     .join(", ")}.`,
+);
+console.log(
+  `Generated host-specific metadata, sitemap, and robots.txt for ${UOFT_CAMPUS_EDITIONS.length} U of T campus editions.`,
 );
