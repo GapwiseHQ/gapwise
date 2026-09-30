@@ -21,11 +21,12 @@ const EXPECTED_UNIVERSITY_IDS = [
   "guelph",
   "uottawa",
   "brock",
+  "ubc",
 ] as const;
 
 describe("Gapwise Ecosystem Consistency", () => {
-  test("canonical registry contains exactly the 11 supported universities", () => {
-    expect(manifest.universities.length).toBe(11);
+  test("canonical registry contains exactly the supported universities", () => {
+    expect(manifest.universities).toHaveLength(EXPECTED_UNIVERSITY_IDS.length);
     const ids = manifest.universities.map((u) => u.id);
     for (const expectedId of EXPECTED_UNIVERSITY_IDS) {
       expect(ids).toContain(expectedId);
@@ -97,24 +98,24 @@ describe("Gapwise Ecosystem Consistency", () => {
     }
   });
 
-  test("marketing landing metrics and UI showcase all 11 universities", () => {
+  test("marketing landing metrics and UI showcase all supported universities", () => {
     const marketingCode = readFileSync("src/components/MarketingLandingImpl.tsx", "utf8");
     for (const expectedId of EXPECTED_UNIVERSITY_IDS) {
       expect(marketingCode).toContain(`${expectedId}: {`);
     }
   });
 
-  test("data repository includes all 11 universities in campus-contribution-data.js", () => {
+  test("data repository includes all supported universities in campus-contribution-data.js", () => {
     if (!existsSync("../data/src/campus-contribution-data.js")) {
       return;
     }
     const dataContributionCode = readFileSync("../data/src/campus-contribution-data.js", "utf8");
     for (const expectedId of EXPECTED_UNIVERSITY_IDS) {
-      expect(dataContributionCode).toContain(`id: '${expectedId}'`);
+      expect(dataContributionCode).toContain(`id: "${expectedId}"`);
     }
   });
 
-  test("docs repository guides and platform docs list all 11 universities", () => {
+  test("docs repository guides and platform docs list all supported universities", () => {
     if (!existsSync("../docs/src/content/docs/guides/add-university.md")) {
       return;
     }
@@ -130,7 +131,7 @@ describe("Gapwise Ecosystem Consistency", () => {
     }
   });
 
-  test("status repository automatic checks cover all 11 universities", () => {
+  test("status repository automatic checks cover all supported universities", () => {
     if (!existsSync("../status/scripts/update-status.mjs")) {
       return;
     }

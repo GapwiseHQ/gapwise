@@ -48,6 +48,10 @@ export const timetableAdapters: Record<string, (text: string) => Promise<ParsedT
     const { parseTimetable } = await import("./brock/adapter");
     return parseTimetable(text);
   },
+  "ubc-workday": async (text) => {
+    const { parseUbcTimetable } = await import("./ubc/adapter");
+    return parseUbcTimetable(text);
+  },
   // GAPWISE_ADAPTER_REGISTRY: the CLI inserts new timetable adapters here.
 };
 
@@ -131,6 +135,13 @@ export const demoTimetableLoaders: Record<string, (campusId?: string) => Promise
       import("./brock/adapter"),
     ]);
     return DEMO_BROCK_MEETINGS.flatMap(normalizeBrockMeeting);
+  },
+  "ubc-workday": async () => {
+    const [{ DEMO_UBC_MEETINGS }, { normalizeUbcMeeting }] = await Promise.all([
+      import("./ubc/demo-timetable"),
+      import("./ubc/adapter"),
+    ]);
+    return DEMO_UBC_MEETINGS.flatMap(normalizeUbcMeeting);
   },
   // GAPWISE_DEMO_LOADER_REGISTRY: the CLI inserts new demo loaders here.
 };

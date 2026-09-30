@@ -12,6 +12,7 @@ import westernSnapshot from "../../data/campuses/western/campus.json" with { typ
 import yorkSnapshot from "../../data/campuses/york/campus.json" with { type: "json" };
 import utsgSnapshot from "../../data/campuses/utsg/campus.json" with { type: "json" };
 import utscSnapshot from "../../data/campuses/utsc/campus.json" with { type: "json" };
+import ubcSnapshot from "../../data/campuses/ubc/campus.json" with { type: "json" };
 
 export const CAMPUS_SNAPSHOTS: Record<string, CampusSnapshot> = {
   utsg: utsgSnapshot as unknown as CampusSnapshot,
@@ -28,6 +29,7 @@ export const CAMPUS_SNAPSHOTS: Record<string, CampusSnapshot> = {
   western: westernSnapshot as unknown as CampusSnapshot,
   york: yorkSnapshot as unknown as CampusSnapshot,
   keele: yorkSnapshot as unknown as CampusSnapshot,
+  "ubc-vancouver": ubcSnapshot as unknown as CampusSnapshot,
 };
 
 export function getCampusSnapshot(campusId: string): CampusSnapshot | null {

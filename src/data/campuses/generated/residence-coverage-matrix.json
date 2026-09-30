@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-27T14:57:11.260Z",
+  "generatedAt": "2026-09-30T13:48:39.600Z",
   "summary": {
-    "totalUniversities": 11,
-    "totalCampuses": 13,
-    "totalBuildings": 561,
-    "totalResidences": 124,
-    "universitiesWithResidenceCoverage": 11,
-    "campusesWithResidenceCoverage": 13,
+    "totalUniversities": 12,
+    "totalCampuses": 14,
+    "totalBuildings": 797,
+    "totalResidences": 192,
+    "universitiesWithResidenceCoverage": 12,
+    "campusesWithResidenceCoverage": 14,
     "coveragePercentage": 100
   },
   "campuses": {
@@ -764,6 +764,368 @@
           "code": "RES8",
           "name": "Residence 8",
           "aliases": ["residence-8"]
+        }
+      ]
+    },
+    "ubc-vancouver": {
+      "universityId": "ubc",
+      "universityName": "University of British Columbia",
+      "campusId": "ubc-vancouver",
+      "campusName": "University of British Columbia",
+      "totalBuildings": 236,
+      "residenceCount": 68,
+      "residences": [
+        {
+          "code": "ACAH",
+          "name": "Acadia House",
+          "aliases": ["acadia-house"]
+        },
+        {
+          "code": "APR1",
+          "name": "Acadia Park Residence - Melfa Lane",
+          "aliases": ["acadia-park-residence-melfa-lane", "Melfa", "Acadia - Melfa"]
+        },
+        {
+          "code": "APR2",
+          "name": "Acadia Park Residence - Montgomery Place",
+          "aliases": ["acadia-park-residence-montgomery-place", "Montgomery", "Acadia - Montgomery"]
+        },
+        {
+          "code": "APR3",
+          "name": "Acadia Park Residence - Fairview Place",
+          "aliases": ["acadia-park-residence-fairview-place", "Fairview", "Acadia - Fairview"]
+        },
+        {
+          "code": "APR4",
+          "name": "Acadia Park Residence - Pearkes Lane",
+          "aliases": ["acadia-park-residence-pearkes-lane", "Pearkes", "Acadia - Pearkes"]
+        },
+        {
+          "code": "APR5",
+          "name": "Acadia Park Residence - Tennis Crescent",
+          "aliases": ["acadia-park-residence-tennis-crescent", "Tennis", "Acadia - Tennis"]
+        },
+        {
+          "code": "APR6",
+          "name": "Acadia Park Residence - Yalta Place",
+          "aliases": ["acadia-park-residence-yalta-place", "Yalta", "Acadia - Yalta"]
+        },
+        {
+          "code": "APRH",
+          "name": "Acadia Park Residence - Highrise",
+          "aliases": ["acadia-park-residence-highrise", "Acadia Highrise", "Acadia - Highrise"]
+        },
+        {
+          "code": "APRP",
+          "name": "Acadia Park Residence - President's Row",
+          "aliases": ["acadia-park-residence-president-s-row", "President's Row"]
+        },
+        {
+          "code": "ECHO",
+          "name": "Echo",
+          "aliases": ["echo"]
+        },
+        {
+          "code": "EXCH",
+          "name": "Exchange Residence",
+          "aliases": ["exchange-residence", "Exchange"]
+        },
+        {
+          "code": "FAR1",
+          "name": "Fairview Crescent Residence - Building 1",
+          "aliases": ["fairview-crescent-residence-building-1", "Fairview 1"]
+        },
+        {
+          "code": "FAR2",
+          "name": "Fairview Crescent Residence - Building 2",
+          "aliases": ["fairview-crescent-residence-building-2", "Fairview 2"]
+        },
+        {
+          "code": "FRAS",
+          "name": "Fraser Hall",
+          "aliases": ["fraser-hall"]
+        },
+        {
+          "code": "FRAT",
+          "name": "Fraternity Village",
+          "aliases": ["fraternity-village", "Fraternity"]
+        },
+        {
+          "code": "GRN1",
+          "name": "Green College - A North",
+          "aliases": ["green-college-a-north", "A North"]
+        },
+        {
+          "code": "GRN10",
+          "name": "Green College - Principal's Residence",
+          "aliases": ["green-college-principal-s-residence", "Principal's", "Principal's Residence"]
+        },
+        {
+          "code": "GRN2",
+          "name": "Green College - Kitchen/Laundry",
+          "aliases": ["green-college-kitchen-laundry", "Kitchen"]
+        },
+        {
+          "code": "GRN3",
+          "name": "Green College - A South",
+          "aliases": ["green-college-a-south", "A South"]
+        },
+        {
+          "code": "GRN4",
+          "name": "Green College - Admin",
+          "aliases": ["green-college-admin", "Admin"]
+        },
+        {
+          "code": "GRN5",
+          "name": "Green College - B East",
+          "aliases": ["green-college-b-east", "B East"]
+        },
+        {
+          "code": "GRN6",
+          "name": "Green College - D Coach House",
+          "aliases": ["green-college-d-coach-house", "Coach"]
+        },
+        {
+          "code": "GRN9",
+          "name": "Green College - Guest House",
+          "aliases": ["green-college-guest-house", "Guest"]
+        },
+        {
+          "code": "MAR1",
+          "name": "Marine Drive Residence - 1 Simon Lee",
+          "aliases": ["marine-drive-residence-1-simon-lee", "Marine 1", "Marine 1 - Simon KY Lee"]
+        },
+        {
+          "code": "MAR2",
+          "name": "Marine Drive Residence - 2",
+          "aliases": ["marine-drive-residence-2", "Marine 2"]
+        },
+        {
+          "code": "MAR4",
+          "name": "Marine Drive Residence - 4",
+          "aliases": ["marine-drive-residence-4", "Marine 4"]
+        },
+        {
+          "code": "MAR5",
+          "name": "Marine Drive Residence - 5",
+          "aliases": ["marine-drive-residence-5", "Marine 5"]
+        },
+        {
+          "code": "MAR6",
+          "name": "Marine Drive Residence - 6",
+          "aliases": ["marine-drive-residence-6", "Marine 6"]
+        },
+        {
+          "code": "MBAH",
+          "name": "MBA House",
+          "aliases": ["mba-house"]
+        },
+        {
+          "code": "MCKH",
+          "name": "Norman MacKenzie House",
+          "aliases": ["norman-mackenzie-house", "Norman MacKenzie"]
+        },
+        {
+          "code": "PANH",
+          "name": "Panhellenic House",
+          "aliases": ["panhellenic-house", "Panhellenic"]
+        },
+        {
+          "code": "PGRA",
+          "name": "Point Grey Apartments",
+          "aliases": ["point-grey-apartments", "Point Grey"]
+        },
+        {
+          "code": "QLCN",
+          "name": "tə šxʷhəleləm̓s tə k̓ʷaƛ̓kʷəʔaʔɬ (Saltwater) - q̓əlɬaləməcən leləm̓ (Orca)",
+          "aliases": [
+            "t-sxwh-lel-ms-t-kwa-kw-a-saltwater-q-l-al-m-c-n-lel-m-orca",
+            "q̓əlɬaləməcən (Orca)"
+          ]
+        },
+        {
+          "code": "QTYN",
+          "name": "tə šxʷhəleləm̓s tə k̓ʷaƛ̓kʷəʔaʔɬ (Saltwater) - qʷta:yθən leləm̓ (Sturgeon)",
+          "aliases": [
+            "t-sxwh-lel-ms-t-kwa-kw-a-saltwater-qwta-y-n-lel-m-sturgeon",
+            "qʷta:yθən (Sturgeon)"
+          ]
+        },
+        {
+          "code": "RITS",
+          "name": "Ritsumeikan-UBC House",
+          "aliases": ["ritsumeikan-ubc-house", "Ritsumeikan-UBC"]
+        },
+        {
+          "code": "SLWT",
+          "name": "tə šxʷhəleləm̓s tə k̓ʷaƛ̓kʷəʔaʔɬ (Saltwater) - sɬewət̕ leləm̓ (Herring)",
+          "aliases": ["t-sxwh-lel-ms-t-kwa-kw-a-saltwater-s-ew-t-lel-m-herring", "sɬewət̕ (Herring)"]
+        },
+        {
+          "code": "SOPR",
+          "name": "Sopron House",
+          "aliases": ["sopron-house", "Sopron"]
+        },
+        {
+          "code": "SPPA",
+          "name": "Spirit Park Apartments",
+          "aliases": ["spirit-park-apartments", "Spirit Park"]
+        },
+        {
+          "code": "SQMK",
+          "name": "tə šxʷhəleləm̓s tə k̓ʷaƛ̓kʷəʔaʔɬ (Saltwater) - sqimək̓ʷ leləm̓ (Octopus)",
+          "aliases": [
+            "t-sxwh-lel-ms-t-kwa-kw-a-saltwater-sqim-kw-lel-m-octopus",
+            "sqimək̓ʷ (Octopus)"
+          ]
+        },
+        {
+          "code": "THR1",
+          "name": "Thunderbird Residence - Cassiar",
+          "aliases": ["thunderbird-residence-cassiar", "Cassiar"]
+        },
+        {
+          "code": "THR2",
+          "name": "Thunderbird Residence - Monashee",
+          "aliases": ["thunderbird-residence-monashee", "Monashee"]
+        },
+        {
+          "code": "THR3",
+          "name": "Thunderbird Residence - Selkirk",
+          "aliases": ["thunderbird-residence-selkirk", "Selkirk"]
+        },
+        {
+          "code": "THR4",
+          "name": "Thunderbird Residence - Coast",
+          "aliases": ["thunderbird-residence-coast", "Coast"]
+        },
+        {
+          "code": "THR5",
+          "name": "Thunderbird Residence - Hazelton",
+          "aliases": ["thunderbird-residence-hazelton", "Hazelton"]
+        },
+        {
+          "code": "TMES",
+          "name": "tə šxʷhəleləm̓s tə k̓ʷaƛ̓kʷəʔaʔɬ (Saltwater) - təməs leləm̓ (Sea Otter)",
+          "aliases": [
+            "t-sxwh-lel-ms-t-kwa-kw-a-saltwater-t-m-s-lel-m-sea-otter",
+            "təməs (Sea Otter)"
+          ]
+        },
+        {
+          "code": "TPR2",
+          "name": "Totem Park Residence - Dene/Nootka House",
+          "aliases": ["totem-park-residence-dene-nootka-house", "Building 2", "Totem 2"]
+        },
+        {
+          "code": "TPR3",
+          "name": "Totem Park Residence - Kwakiutl/Shuswap House",
+          "aliases": ["totem-park-residence-kwakiutl-shuswap-house", "Building 3", "Totem 3"]
+        },
+        {
+          "code": "TPR4",
+          "name": "Totem Park Residence - q̓ələχən House",
+          "aliases": ["totem-park-residence-q-l-n-house", "q̓ələχən", "Totem 4 - q̓ələχən"]
+        },
+        {
+          "code": "TPR5",
+          "name": "Totem Park Residence - həm̓ləsəm̓ House",
+          "aliases": ["totem-park-residence-h-ml-s-m-house", "həm̓ləsəm̓", "Totem 5 - həm̓ləsəm̓"]
+        },
+        {
+          "code": "TPR6",
+          "name": "Totem Park Residence - Haida/Salish House",
+          "aliases": ["totem-park-residence-haida-salish-house", "Building 6", "Totem 6"]
+        },
+        {
+          "code": "TPR7",
+          "name": "Totem Park Residence - c̓əsnaʔəm leləm̓",
+          "aliases": ["totem-park-residence-c-sna-m-lel-m", "c̓əsnaʔəm", "Totem 7 - c̓əsnaʔəm"]
+        },
+        {
+          "code": "VNR01",
+          "name": "Place Vanier Residence - Aldyen Hamber House",
+          "aliases": ["place-vanier-residence-aldyen-hamber-house", "Hamber"]
+        },
+        {
+          "code": "VNR02",
+          "name": "Place Vanier Residence - Cariboo House",
+          "aliases": ["place-vanier-residence-cariboo-house", "Cariboo"]
+        },
+        {
+          "code": "VNR04",
+          "name": "Place Vanier Residence - Dorothy Mawdsley House",
+          "aliases": ["place-vanier-residence-dorothy-mawdsley-house", "Mawdsley"]
+        },
+        {
+          "code": "VNR05",
+          "name": "Place Vanier Residence - Kootenay House",
+          "aliases": ["place-vanier-residence-kootenay-house", "Kootenay"]
+        },
+        {
+          "code": "VNR06",
+          "name": "Place Vanier Residence - Korea House",
+          "aliases": ["place-vanier-residence-korea-house", "Korea"]
+        },
+        {
+          "code": "VNR07",
+          "name": "Place Vanier Residence - Margaret Mackenzie House",
+          "aliases": ["place-vanier-residence-margaret-mackenzie-house", "Mackenzie"]
+        },
+        {
+          "code": "VNR08",
+          "name": "Place Vanier Residence - Okanagan House",
+          "aliases": ["place-vanier-residence-okanagan-house", "Okanagan"]
+        },
+        {
+          "code": "VNR09",
+          "name": "Place Vanier Residence - Phyllis Ross House",
+          "aliases": ["place-vanier-residence-phyllis-ross-house", "Ross"]
+        },
+        {
+          "code": "VNR10",
+          "name": "Place Vanier Residence - Robson House",
+          "aliases": ["place-vanier-residence-robson-house", "Robson"]
+        },
+        {
+          "code": "VNR11",
+          "name": "Place Vanier Residence - Sherwood Lett House",
+          "aliases": ["place-vanier-residence-sherwood-lett-house", "Sherwood Lett", "Lett"]
+        },
+        {
+          "code": "VNR12",
+          "name": "Place Vanier Residence - Tec De Monterrey House",
+          "aliases": ["place-vanier-residence-tec-de-monterrey-house", "Tec De Monterrey"]
+        },
+        {
+          "code": "VNR13",
+          "name": "Place Vanier Residence - Tweedsmuir House",
+          "aliases": ["place-vanier-residence-tweedsmuir-house", "Tweedsmuir"]
+        },
+        {
+          "code": "WGR2",
+          "name": "Walter H. Gage Residence - Gage Apartments",
+          "aliases": ["walter-h-gage-residence-gage-apartments", "Gage Apartments"]
+        },
+        {
+          "code": "WGR3",
+          "name": "Walter H. Gage Residence - West Coast Suites (Gage Court)",
+          "aliases": ["walter-h-gage-residence-west-coast-suites-gage-court", "West Coast Suites"]
+        },
+        {
+          "code": "WGR4",
+          "name": "Walter H. Gage Residence - East Tower",
+          "aliases": ["walter-h-gage-residence-east-tower", "East"]
+        },
+        {
+          "code": "WGR5",
+          "name": "Walter H. Gage Residence - North Tower",
+          "aliases": ["walter-h-gage-residence-north-tower", "North"]
+        },
+        {
+          "code": "WGR6",
+          "name": "Walter H. Gage Residence - South Tower",
+          "aliases": ["walter-h-gage-residence-south-tower", "South"]
         }
       ]
     }

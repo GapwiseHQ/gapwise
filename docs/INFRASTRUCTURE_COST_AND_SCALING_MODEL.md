@@ -11,7 +11,7 @@
 
 Gapwise operates on an intensely disciplined **local-first, zero-unnecessary-cloud architecture**. Course schedules, `.ics` files, calendar parsing, timetable rendering, walking route graphs, gap detection, and campus building spatial indexes execute 100% client-side in the student's browser (WebAssembly and Web Crypto).
 
-Because of this architectural posture, **Gapwise's current operational infrastructure cost is $0.00/month across all 11 supported universities**.
+Because of this architectural posture, **Gapwise's current operational infrastructure cost is $0.00/month across all 12 supported universities**.
 
 This document models the resource consumption, provider limits, financial projections, and explicit upgrade triggers across four growth stages:
 
@@ -43,7 +43,7 @@ This document models the resource consumption, provider limits, financial projec
 ### A. Bandwidth (Vercel & CDN)
 
 - **Initial App Route Payload**: 467.7 KiB JS + 37.7 KiB CSS (gzipped) = ~505 KiB per new visitor.
-- **Service Worker Precache**: On first load, the PWA precaches 261 entries (~18 MB uncompressed) containing the static offline campus graph for all 11 universities.
+- **Service Worker Precache**: The production build precaches static application and campus assets so supported editions remain resilient after their assets have been cached.
 - **Repeat Visits**: 0 bytes network bandwidth for core app; 304 Not Modified or Cache-Control immutable hits.
 - **Average monthly bandwidth per active student**: Estimated at 2.5 MB/student/month (accounting for occasional app updates).
 

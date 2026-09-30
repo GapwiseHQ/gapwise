@@ -23,7 +23,7 @@ When Codex substantially authors a Git commit in this repository:
 
 ## Project
 
-Gapwise is a privacy-first web application for students at 11 supported Canadian universities, served from `https://gapwise.ca` and dedicated university subdomains. Timetable identity and source-backed building maps cover all supported editions. Pedestrian routing and entrance coverage vary by campus; UTM-specific places and ACORN import remain scoped to the University of Toronto edition.
+Gapwise is a privacy-first web application for students at 12 supported Canadian universities, served from `https://gapwise.ca` and dedicated university subdomains. Timetable identity and source-backed building maps cover all supported editions. Pedestrian routing and entrance coverage vary by campus; UTM-specific places and ACORN import remain scoped to the University of Toronto edition.
 
 The current product:
 

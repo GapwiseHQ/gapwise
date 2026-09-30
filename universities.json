@@ -204,6 +204,27 @@
       "routableCampuses": ["brock"],
       "dataPaths": ["universities/brock/campus.json"],
       "status": "supported"
+    },
+    {
+      "id": "ubc",
+      "name": "University of British Columbia",
+      "shortName": "UBC",
+      "accentColor": "#002145",
+      "campusScope": "Vancouver / Point Grey campus",
+      "hosts": ["ubc.gapwise.ca"],
+      "campuses": ["ubc-vancouver"],
+      "defaultCampus": "ubc-vancouver",
+      "timetableAdapter": "ubc-workday",
+      "calendarSource": "Workday View My Courses",
+      "calendarInstructions": "Copy the rows from Workday's View My Courses → My Enrolled Courses table, then paste them here.",
+      "calendarHelpUrl": "https://workday.students.ubc.ca/course-registration/viewing-the-course-schedule/",
+      "preferredImportMethod": "paste",
+      "acceptedFileTypes": ".txt,.tsv,text/plain,text/tab-separated-values",
+      "fileTypeLabel": ".txt or .tsv",
+      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "routableCampuses": ["ubc-vancouver"],
+      "dataPaths": ["universities/ubc/campus.json"],
+      "status": "supported"
     }
   ]
 }

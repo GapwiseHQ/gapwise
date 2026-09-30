@@ -1,16 +1,16 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-29T12:18:39.847Z",
+  "generatedAt": "2026-09-30T01:25:55.064Z",
   "summary": {
-    "totalUniversities": 11,
-    "totalCampuses": 13,
-    "routableCampuses": 13,
-    "totalBuildings": 561,
-    "totalEntrances": 679,
-    "totalRoutePairsTested": 553,
-    "totalRoutePairsPassed": 553,
+    "totalUniversities": 12,
+    "totalCampuses": 14,
+    "routableCampuses": 14,
+    "totalBuildings": 797,
+    "totalEntrances": 1584,
+    "totalRoutePairsTested": 589,
+    "totalRoutePairsPassed": 589,
     "totalRouteFailures": 0,
-    "criticalDefectsFound": 78
+    "criticalDefectsFound": 80
   },
   "campuses": {
     "utm": {
@@ -660,6 +660,165 @@
           "detourRatio": 3.1
         }
       ],
+      "identityLeakageFindings": [],
+      "metadataValidationErrors": [],
+      "capabilityLimitations": [],
+      "findingsRequiringManualVerification": []
+    },
+    "ubc-vancouver": {
+      "universityId": "ubc",
+      "universityName": "University of British Columbia",
+      "campusId": "ubc-vancouver",
+      "campusName": "University of British Columbia",
+      "isRoutable": true,
+      "buildingCount": 236,
+      "buildingsWithKnownEntrances": 217,
+      "buildingsWithoutKnownEntrances": 19,
+      "entranceCount": 905,
+      "routableBuildings": 234,
+      "graphIsolatedBuildings": ["echo", "mba-house"],
+      "unanchoredBuildings": ["echo", "mba-house"],
+      "duplicateEntrances": [
+        {
+          "id1": "ubc-entrance-9783a984-ca8e-4b9d-b2b6-ede5062de350",
+          "id2": "ubc-entrance-ab7d369e-724d-4446-9867-54fcfafdafdb",
+          "distanceMeters": 1,
+          "buildingId": "exchange-residence"
+        },
+        {
+          "id1": "ubc-entrance-21d548d6-d5d9-4e7e-840d-66bc79e3684c",
+          "id2": "ubc-entrance-8d288c34-bc4f-444c-9259-7601c90a3804",
+          "distanceMeters": 1,
+          "buildingId": "west-mall-annex"
+        },
+        {
+          "id1": "ubc-entrance-c5510788-8ea1-4e80-80b5-9f6ee6d87236",
+          "id2": "ubc-entrance-375fea2d-9a0d-4b13-85be-4cef46b50c54",
+          "distanceMeters": 0.9,
+          "buildingId": "geography-building"
+        },
+        {
+          "id1": "ubc-entrance-a2541f55-182c-4c63-bc27-fc2d9c130f22",
+          "id2": "ubc-entrance-795abc02-32ae-43de-859b-a0f81791113a",
+          "distanceMeters": 0.5,
+          "buildingId": "international-house"
+        },
+        {
+          "id1": "ubc-entrance-795abc02-32ae-43de-859b-a0f81791113a",
+          "id2": "ubc-entrance-2aace52b-3e1a-41be-ad0a-9e121e289ebd",
+          "distanceMeters": 0.7,
+          "buildingId": "international-house"
+        },
+        {
+          "id1": "ubc-entrance-5d5b0dc4-6c78-4243-9d61-0a30fd8e8330",
+          "id2": "ubc-entrance-435ec728-3d3b-40b0-aecf-16ce5d1e81ca",
+          "distanceMeters": 0.4,
+          "buildingId": "thea-koerner-house"
+        },
+        {
+          "id1": "ubc-entrance-9c780574-ebcd-4c15-9d19-d06114d31617",
+          "id2": "ubc-entrance-4daa31fb-affc-4616-836c-a02bae2cfa06",
+          "distanceMeters": 0.5,
+          "buildingId": "auditorium-annex-offices-a-b"
+        },
+        {
+          "id1": "ubc-entrance-4daa31fb-affc-4616-836c-a02bae2cfa06",
+          "id2": "ubc-entrance-a1cd590d-2ecc-4c19-9a37-5906663221a7",
+          "distanceMeters": 0.8,
+          "buildingId": "auditorium-annex-offices-a-b"
+        }
+      ],
+      "detachedEntrances": [
+        {
+          "entranceId": "ubc-entrance-199fbfe0-2862-4af0-8cb6-96f55a934d28",
+          "buildingId": "acadia-park-residence-president-s-row",
+          "distanceToFootprintMeters": 103
+        },
+        {
+          "entranceId": "ubc-entrance-18656108-139e-455c-bc82-b3220613d939",
+          "buildingId": "buchanan-building",
+          "distanceToFootprintMeters": 92
+        },
+        {
+          "entranceId": "ubc-entrance-8081379e-8c88-4695-892d-b8ced3c53180",
+          "buildingId": "buchanan-building",
+          "distanceToFootprintMeters": 81
+        },
+        {
+          "entranceId": "ubc-entrance-0f931e27-23b3-4429-8084-7d7bfc0b509a",
+          "buildingId": "buchanan-building",
+          "distanceToFootprintMeters": 76
+        },
+        {
+          "entranceId": "ubc-entrance-5bb7d2c8-7eb3-4635-a251-b649bdbd4ed2",
+          "buildingId": "centre-for-comparative-medicine",
+          "distanceToFootprintMeters": 92
+        },
+        {
+          "entranceId": "ubc-entrance-a3349092-791d-4d7a-90a9-e376ae71405f",
+          "buildingId": "fairview-crescent-residence-building-1",
+          "distanceToFootprintMeters": 113
+        },
+        {
+          "entranceId": "ubc-entrance-8296eb4d-502a-4487-8393-b27e79b86fbc",
+          "buildingId": "fairview-crescent-residence-building-2",
+          "distanceToFootprintMeters": 93
+        },
+        {
+          "entranceId": "ubc-entrance-518e2520-0870-4edb-a666-93fa371b2d5d",
+          "buildingId": "first-nations-longhouse",
+          "distanceToFootprintMeters": 76
+        },
+        {
+          "entranceId": "ubc-entrance-04b1295a-55c2-4519-9576-e0c8d6c6d516",
+          "buildingId": "first-nations-longhouse",
+          "distanceToFootprintMeters": 87
+        },
+        {
+          "entranceId": "ubc-entrance-d2ee82e4-1762-4023-bdfe-43537c582b79",
+          "buildingId": "museum-of-anthropology",
+          "distanceToFootprintMeters": 87
+        },
+        {
+          "entranceId": "ubc-entrance-e21d9ad4-bc68-4b30-89e0-e3acda9ec3fa",
+          "buildingId": "orchard-commons-vantage-college-bartlett-braeburn-house",
+          "distanceToFootprintMeters": 94
+        },
+        {
+          "entranceId": "ubc-entrance-fdb3360a-6417-48d7-8212-326d96fd6936",
+          "buildingId": "orchard-commons-vantage-college-bartlett-braeburn-house",
+          "distanceToFootprintMeters": 76
+        },
+        {
+          "entranceId": "ubc-entrance-3620616b-f678-474c-b5fb-5e75599fa59e",
+          "buildingId": "orchard-commons-vantage-college-bartlett-braeburn-house",
+          "distanceToFootprintMeters": 85
+        },
+        {
+          "entranceId": "ubc-entrance-b7037f9f-904e-4b74-8208-c5b318091565",
+          "buildingId": "orchard-commons-vantage-college-bartlett-braeburn-house",
+          "distanceToFootprintMeters": 89
+        },
+        {
+          "entranceId": "ubc-entrance-2b819681-86ae-4a2d-85d6-10c7ac7bf6b8",
+          "buildingId": "orchard-commons-vantage-college-bartlett-braeburn-house",
+          "distanceToFootprintMeters": 96
+        },
+        {
+          "entranceId": "ubc-entrance-cd798e50-7df3-4922-a52a-8e61117db802",
+          "buildingId": "orchard-commons-vantage-college-bartlett-braeburn-house",
+          "distanceToFootprintMeters": 91
+        },
+        {
+          "entranceId": "ubc-entrance-44bc18f1-cd89-42bf-97b3-9d38d0291750",
+          "buildingId": "ubc-tennis-centre",
+          "distanceToFootprintMeters": 98
+        }
+      ],
+      "routePairsAttempted": 36,
+      "routePairsSuccessful": 36,
+      "routeFailures": [],
+      "extremeDetours": [],
       "identityLeakageFindings": [],
       "metadataValidationErrors": [],
       "capabilityLimitations": [],

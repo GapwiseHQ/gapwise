@@ -153,7 +153,7 @@ const PAGES: readonly SeoPage[] = [
     path: "/developers",
     title: "Gapwise API & SDKs — Developers",
     description:
-      "Build with the Gapwise public campus building, place, routing, and deterministic gap-planning API, OpenAPI contract, and official SDKs across all 11 supported Canadian universities.",
+      "Build with the Gapwise public campus building, place, routing, and deterministic gap-planning API, OpenAPI contract, and official SDKs across all 12 supported Canadian universities.",
     heading: "Deterministic campus intelligence for developers.",
     detail:
       "Gapwise publishes a bounded public API for campus buildings, places, routing, and gap planning across supported universities, with OpenAPI plus JavaScript/TypeScript and Python SDK documentation.",
@@ -338,7 +338,7 @@ function homepageStructuredData(page: SeoPage, uniContext?: UniversityContext) {
           : [
               "Browser-local timetable import (ACORN .ics, Carleton Central, TMU, Queen's, Laurier, York, McMaster, Western, Guelph, uOttawa, Brock schedule formats)",
               "Mississauga, St. George, Scarborough, Carleton, TMU, Queen's, Laurier, York, McMaster, Western, Guelph, uOttawa, and Brock campus timetable identity",
-              "Source-backed building maps for all 11 supported universities",
+              "Source-backed building maps for all 12 supported universities",
               "Source-backed UTM pedestrian routing",
               "Optional encrypted private sync",
             ],

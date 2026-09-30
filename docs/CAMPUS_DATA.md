@@ -1,6 +1,6 @@
 # Campus data and documentation boundaries
 
-Canonical public multi-university campus facts, geometry, provenance, and data-maintenance guidance live in [`GapwiseHQ/data`](https://github.com/GapwiseHQ/data). The dataset covers 11 universities (University of Toronto, Carleton University, Toronto Metropolitan University, Queen's University, Wilfrid Laurier University, York University, McMaster University, Western University, University of Guelph, University of Ottawa, and Brock University) across 13 campus models.
+Canonical public multi-university campus facts, geometry, provenance, and data-maintenance guidance live in [`GapwiseHQ/data`](https://github.com/GapwiseHQ/data). The dataset covers 12 universities (University of Toronto, Carleton University, Toronto Metropolitan University, Queen's University, Wilfrid Laurier University, York University, McMaster University, Western University, University of Guelph, University of Ottawa, Brock University, and the University of British Columbia) across 14 campus models.
 
 Public human-readable data documentation lives at **https://docs.gapwise.ca/data/**. The currently published raw distributions live at **https://data.gapwise.ca/datasets/**.
 

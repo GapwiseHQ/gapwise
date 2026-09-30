@@ -34,7 +34,7 @@ export const Route = createFileRoute("/developers")({
   component: DevelopersPage,
 });
 
-const API_EXAMPLE = `// Discover 11 supported universities and 13 campus models
+const API_EXAMPLE = `// Discover 12 supported universities and 14 campus models
 const universities = await fetch("https://api.gapwise.ca/v1/universities").then((r) => r.json());
 
 // Calculate a deterministic route (e.g. Carleton University)
@@ -48,7 +48,7 @@ const { data, meta } = await response.json();`;
 
 const ENDPOINTS = [
   ["GET", "/v1", "Discovery and version metadata"],
-  ["GET", "/v1/universities", "11 supported universities and editions"],
+  ["GET", "/v1/universities", "12 supported universities and editions"],
   ["GET", "/v1/campuses", "13 supported campus models and metadata"],
   ["GET", "/v1/buildings", "Buildings, coverage, and provenance"],
   ["GET", "/v1/places", "Campus places and availability"],

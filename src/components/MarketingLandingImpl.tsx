@@ -37,6 +37,7 @@ const INSTITUTION_MARKETING_METRICS: Record<
   guelph: { count: 15, sampleCodes: ["UC", "LIB", "ROZH", "MCKN"] },
   uottawa: { count: 17, sampleCodes: ["UCU", "TBT", "MRT", "DMS"] },
   brock: { count: 12, sampleCodes: ["ST", "TH", "MC", "GSB"] },
+  ubc: { count: 236, sampleCodes: ["ICCS", "BUCH", "PHRM", "LIFE"] },
 };
 
 export function MarketingLandingImpl({

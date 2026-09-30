@@ -244,5 +244,6 @@ await Promise.all([
   render("favicon-32x32.png", 32),
   render("apple-touch-icon.png", 180),
   render("icon-192.png", 192),
+  render("favicon-192x192.png", 192),
   render("icon-512.png", 512),
 ]);

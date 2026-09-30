@@ -56,6 +56,21 @@ export function UploadPanel({
   const hero = variant === "hero";
   const university = activeUniversity();
   const calendarSource = university?.calendarSource ?? "calendar";
+  const preferPaste = university?.preferredImportMethod === "paste";
+  const acceptedFileTypes =
+    university?.acceptedFileTypes ??
+    (university?.id !== "uoft" ? ".ics,.txt,.tsv,text/calendar,text/plain" : ".ics,text/calendar");
+  const fileTypeLabel =
+    university?.fileTypeLabel ?? (university?.id === "uoft" ? ".ics" : ".ics or .txt");
+  const pastePlaceholder =
+    university?.preferredImportMethod === "paste"
+      ? `Paste rows copied from ${calendarSource}...`
+      : university?.calendarSource
+        ? `Paste timetable text from ${university.calendarSource} or .ics calendar lines...`
+        : "Paste your timetable text or .ics calendar lines...";
+  const recoveryCopy = preferPaste
+    ? `Paste another schedule from ${calendarSource} to try again.`
+    : `Choose another ${calendarSource} ${fileTypeLabel} file to try again.`;
 
   useEffect(() => {
     if (error) clearFirstValuePending();
@@ -78,9 +93,7 @@ export function UploadPanel({
       id="ics-file"
       name="ics-file"
       type="file"
-      accept={
-        university?.id !== "uoft" ? ".ics,.txt,.tsv,text/calendar,text/plain" : ".ics,text/calendar"
-      }
+      accept={acceptedFileTypes}
       hidden
       onChange={(event) => {
         const file = event.target.files?.[0];
@@ -114,7 +127,7 @@ export function UploadPanel({
     >
       <p className="font-semibold">The calendar could not be imported.</p>
       <p className="mt-1 leading-6">{error}</p>
-      <p className="mt-1 leading-6">Choose another {calendarSource} .ics file to try again.</p>
+      <p className="mt-1 leading-6">{recoveryCopy}</p>
     </div>
   ) : null;
 
@@ -148,11 +161,7 @@ export function UploadPanel({
               rows={6}
               value={pastedText}
               onChange={(e) => setPastedText(e.target.value)}
-              placeholder={
-                university?.calendarSource
-                  ? `Paste timetable text from ${university.calendarSource} or .ics calendar lines...`
-                  : "Paste your timetable text or .ics calendar lines..."
-              }
+              placeholder={pastePlaceholder}
               className="w-full rounded-md border border-input bg-background p-2.5 font-mono text-xs text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-accent"
             />
             <div className="flex gap-2">
@@ -184,19 +193,27 @@ export function UploadPanel({
             <div className="mt-6 space-y-2">
               <button
                 type="button"
-                onClick={openNativePicker}
+                onClick={preferPaste ? () => setPasting(true) : openNativePicker}
                 className="button-primary inline-flex min-h-11 w-full items-center justify-center gap-2 px-5 text-sm font-semibold"
               >
-                <FileUp className="h-4 w-4" aria-hidden="true" />
-                Import {calendarSource}
+                {preferPaste ? (
+                  <ClipboardPaste className="h-4 w-4" aria-hidden="true" />
+                ) : (
+                  <FileUp className="h-4 w-4" aria-hidden="true" />
+                )}
+                {preferPaste ? `Paste ${calendarSource} rows` : `Import ${calendarSource}`}
               </button>
               <button
                 type="button"
-                onClick={() => setPasting(true)}
+                onClick={preferPaste ? openNativePicker : () => setPasting(true)}
                 className="button-secondary inline-flex min-h-10 w-full items-center justify-center gap-2 px-4 text-xs font-medium text-foreground hover:bg-secondary/70"
               >
-                <ClipboardPaste className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
-                Paste schedule text
+                {preferPaste ? (
+                  <FileUp className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
+                ) : (
+                  <ClipboardPaste className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
+                )}
+                {preferPaste ? "Upload saved schedule text" : "Paste schedule text"}
               </button>
               <button
                 type="button"
@@ -255,7 +272,7 @@ export function UploadPanel({
         {dragging ? "Release to build your timetable" : "Drop your timetable file here"}
       </span>
       <span id="ics-file-help" className="mt-1.5 block text-xs leading-5 text-muted-foreground">
-        .ics or .txt · 2 MB maximum
+        {fileTypeLabel} · 2 MB maximum
       </span>
     </button>
   );
@@ -281,11 +298,7 @@ export function UploadPanel({
             rows={6}
             value={pastedText}
             onChange={(e) => setPastedText(e.target.value)}
-            placeholder={
-              university?.calendarSource
-                ? `Paste timetable text from ${university.calendarSource} or .ics calendar lines...`
-                : "Paste your timetable text or .ics calendar lines..."
-            }
+            placeholder={pastePlaceholder}
             className="w-full rounded-md border border-input bg-background p-2.5 font-mono text-xs text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-accent"
           />
           <div className="flex gap-2">
@@ -318,19 +331,27 @@ export function UploadPanel({
           <div className="mt-5 space-y-3">
             <button
               type="button"
-              onClick={openNativePicker}
+              onClick={preferPaste ? () => setPasting(true) : openNativePicker}
               className="button-primary inline-flex min-h-11 w-full items-center justify-center gap-2 px-5 text-sm font-semibold"
             >
-              <FileUp className="h-4 w-4" aria-hidden="true" />
-              Import {calendarSource}
+              {preferPaste ? (
+                <ClipboardPaste className="h-4 w-4" aria-hidden="true" />
+              ) : (
+                <FileUp className="h-4 w-4" aria-hidden="true" />
+              )}
+              {preferPaste ? `Paste ${calendarSource} rows` : `Import ${calendarSource}`}
             </button>
             <button
               type="button"
-              onClick={() => setPasting(true)}
+              onClick={preferPaste ? openNativePicker : () => setPasting(true)}
               className="button-secondary inline-flex min-h-10 w-full items-center justify-center gap-2 px-4 text-xs font-medium text-foreground hover:bg-secondary/70"
             >
-              <ClipboardPaste className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
-              Paste schedule text
+              {preferPaste ? (
+                <FileUp className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
+              ) : (
+                <ClipboardPaste className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
+              )}
+              {preferPaste ? "Upload saved schedule text" : "Paste schedule text"}
             </button>
             <button
               type="button"
