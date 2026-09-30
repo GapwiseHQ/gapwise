@@ -46,24 +46,21 @@ export function termForMonth(month: number): Term {
   return "Fall";
 }
 
-/** Infer the teaching campus from the standard final campus digit in a U of T course code. */
-export function campusForCourseCode(courseCode: string): Campus {
-  const normalized = courseCode.trim().toUpperCase();
-  const match = /^[A-Z]{3}[A-Z0-9]\d{2}[A-Z](\d)$/.exec(normalized);
-  switch (match?.[1]) {
-    case "1":
-      return "UTSG";
-    case "3":
-      return "UTSC";
-    case "5":
-      return "UTM";
-    default:
-      return "UNKNOWN";
-  }
+export function meetingCampus(meeting: { courseCode: string; campus?: Campus }): Campus {
+  return meeting.campus ?? "UNKNOWN";
 }
 
-export function meetingCampus(meeting: { courseCode: string; campus?: Campus }): Campus {
-  return meeting.campus ?? campusForCourseCode(meeting.courseCode);
+/**
+ * Return a campus only when every resolved meeting points to the same campus.
+ * Unknown locations contribute no evidence; genuine multi-campus schedules remain unresolved.
+ */
+export function inferredCampusForMeetings(
+  meetings: readonly { courseCode: string; campus?: Campus }[],
+): Campus | null {
+  const campuses = new Set(
+    meetings.map(meetingCampus).filter((campus): campus is Campus => campus !== "UNKNOWN"),
+  );
+  return campuses.size === 1 ? ([...campuses][0] ?? null) : null;
 }
 
 export type MeetingDateRange = {

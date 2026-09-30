@@ -60,7 +60,10 @@ describe("Gapwise Search Engine (Phase 3)", () => {
 
   it("scopes UTSG and UTSC building-code search to the selected campus", () => {
     const utsg = searchGapwise("BA", { campusId: "utsg" });
-    expect(utsg[0]).toMatchObject({ category: "buildings", data: { buildingCode: "BA" } });
+    expect(utsg[0]).toMatchObject({
+      category: "buildings",
+      data: { buildingCode: "BA", campusId: "utsg" },
+    });
     expect(utsg[0]?.title).toContain("Bahen Centre for Information Technology");
 
     const utsc = searchGapwise("SW", { campusId: "utsc" });
@@ -71,6 +74,13 @@ describe("Gapwise Search Engine (Phase 3)", () => {
     );
     expect(crossCampus.some((result) => result.data.buildingCode === "BA")).toBe(false);
     expect(crossCampus.some((result) => result.title.includes("Bahen"))).toBe(false);
+  });
+
+  it("does not silently search UTM when a multi-campus university has no campus evidence", () => {
+    const buildings = searchGapwise("MN", { campusId: null }).filter(
+      (result) => result.category === "buildings",
+    );
+    expect(buildings).toEqual([]);
   });
 
   it("allows switching universities when searching external institutions or aliases", () => {

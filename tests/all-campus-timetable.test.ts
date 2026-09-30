@@ -1,79 +1,44 @@
 import { describe, expect, test } from "bun:test";
+import { readFileSync } from "node:fs";
 import { getLocationPresentation } from "@/features/routing/location-presentation";
 import { resolveMeetingLocation } from "@/features/routing/location-resolver";
 import { deserializeSchedule, serializeSchedule } from "@/features/sync/schedule-serialization";
 import { parseIcs } from "@/lib/ics-parser";
 import { createTimetableExportPlan, renderTimetableExportSvg } from "@/lib/timetable-export";
 import { renderTimetablePrintSvg } from "@/lib/timetable-print-export";
-import { campusForCourseCode, locationLabel } from "@/lib/timetable-types";
+import { inferredCampusForMeetings, locationLabel } from "@/lib/timetable-types";
 
-function event({
-  uid,
-  code,
-  location,
-  start,
-  end,
-}: {
-  uid: string;
-  code: string;
-  location: string;
-  start: string;
-  end: string;
-}) {
-  return [
-    "BEGIN:VEVENT",
-    `UID:${uid}`,
-    `DTSTART:${start}`,
-    `DTEND:${end}`,
-    `SUMMARY:${code} LEC0101`,
-    `DESCRIPTION:${code} course`,
-    `LOCATION:${location}`,
-    "END:VEVENT",
-  ].join("\r\n");
+function fixture(name: string) {
+  return readFileSync(new URL(`./fixtures/${name}`, import.meta.url), "utf8");
 }
 
-function calendar(events: string[]) {
-  return ["BEGIN:VCALENDAR", "VERSION:2.0", ...events, "END:VCALENDAR"].join("\r\n");
-}
-
-const crossCampusCalendar = () =>
-  calendar([
-    event({
-      uid: "utsg",
-      code: "CSC108H1",
-      location: "BA 1170",
-      start: "20260907T090000",
-      end: "20260907T110000",
-    }),
-    event({
-      uid: "utsc",
-      code: "CSCA08H3",
-      location: "SW 319",
-      start: "20260908T120000",
-      end: "20260908T140000",
-    }),
-    event({
-      uid: "utm",
-      code: "CSC110Y5",
-      location: "MN 1270",
-      start: "20260909T150000",
-      end: "20260909T170000",
-    }),
-  ]);
+const crossCampusCalendar = () => fixture("acorn-mixed-campus-sanitized.ics");
 
 describe("all-campus timetable compatibility", () => {
-  test("infers St. George, Scarborough, and Mississauga per course", () => {
-    expect(campusForCourseCode("CSC108H1")).toBe("UTSG");
-    expect(campusForCourseCode("CSCA08H3")).toBe("UTSC");
-    expect(campusForCourseCode("CSC110Y5")).toBe("UTM");
-    expect(campusForCourseCode("PERSONAL")).toBe("UNKNOWN");
+  test.each([
+    ["acorn-utm-sanitized.ics", "UTM"],
+    ["acorn-utsg-sanitized.ics", "UTSG"],
+    ["acorn-utsc-sanitized.ics", "UTSC"],
+  ] as const)("infers %s exclusively from resolved building locations", (name, campus) => {
+    const parsed = parseIcs(fixture(name));
+    expect(new Set(parsed.meetings.map((meeting) => meeting.campus))).toEqual(new Set([campus]));
+    expect(inferredCampusForMeetings(parsed.meetings)).toBe(campus);
+  });
+
+  test("does not use the U of T course-code suffix as campus evidence", () => {
+    const utm = parseIcs(fixture("acorn-utm-sanitized.ics")).meetings[0]!;
+    const utsg = parseIcs(fixture("acorn-utsg-sanitized.ics")).meetings[0]!;
+    const utsc = parseIcs(fixture("acorn-utsc-sanitized.ics")).meetings[0]!;
+
+    expect(utm).toMatchObject({ courseCode: "CSC108H1", campus: "UTM" });
+    expect(utsg).toMatchObject({ courseCode: "CSC110Y5", campus: "UTSG" });
+    expect(utsc).toMatchObject({ courseCode: "CSCA08H1", campus: "UTSC" });
   });
 
   test("imports a mixed-campus ACORN calendar without treating non-UTM rooms as TBA", () => {
     const parsed = parseIcs(crossCampusCalendar());
-    const utsg = parsed.meetings.find((meeting) => meeting.courseCode === "CSC108H1")!;
-    const utsc = parsed.meetings.find((meeting) => meeting.courseCode === "CSCA08H3")!;
-    const utm = parsed.meetings.find((meeting) => meeting.courseCode === "CSC110Y5")!;
+    const utsg = parsed.meetings.find((meeting) => meeting.sourceLocation === "BA 1170")!;
+    const utm = parsed.meetings.find((meeting) => meeting.sourceLocation === "MN 1270")!;
 
     expect(utsg).toMatchObject({
       campus: "UTSG",
@@ -82,14 +47,6 @@ describe("all-campus timetable compatibility", () => {
       locationUnknown: false,
       buildingCode: "BA",
       room: "1170",
-    });
-    expect(utsc).toMatchObject({
-      campus: "UTSC",
-      sourceLocation: "SW 319",
-      locationType: "physical",
-      locationUnknown: false,
-      buildingCode: "SW",
-      room: "319",
     });
     expect(utm).toMatchObject({
       campus: "UTM",
@@ -101,28 +58,21 @@ describe("all-campus timetable compatibility", () => {
     });
 
     expect(locationLabel(utsg)).toBe("BA 1170");
-    expect(locationLabel(utsc)).toBe("SW 319");
     expect(locationLabel(utm)).toBe("MN 1270");
+    expect(inferredCampusForMeetings(parsed.meetings)).toBeNull();
     expect(parsed.warnings.join(" ")).not.toContain("not in the recognized UTM building registry");
   });
 
   test("maps source-backed rooms to their own campus without reinterpreting them as UTM", () => {
     const parsed = parseIcs(crossCampusCalendar());
-    const utsg = parsed.meetings.find((meeting) => meeting.courseCode === "CSC108H1")!;
-    const utsc = parsed.meetings.find((meeting) => meeting.courseCode === "CSCA08H3")!;
-    const utm = parsed.meetings.find((meeting) => meeting.courseCode === "CSC110Y5")!;
+    const utsg = parsed.meetings.find((meeting) => meeting.sourceLocation === "BA 1170")!;
+    const utm = parsed.meetings.find((meeting) => meeting.sourceLocation === "MN 1270")!;
 
     expect(getLocationPresentation({ meeting: utsg })).toMatchObject({
       status: "known",
       label: "BA 1170",
       detail: "Class location.",
     });
-    expect(getLocationPresentation({ meeting: utsc })).toMatchObject({
-      status: "known",
-      label: "SW 319",
-      detail: "Class location.",
-    });
-
     expect(resolveMeetingLocation(utsg)).toMatchObject({
       status: "known",
       buildingCode: "BA",
@@ -130,14 +80,26 @@ describe("all-campus timetable compatibility", () => {
       room: "1170",
       routingDataStatus: "inferred",
     });
-    expect(resolveMeetingLocation(utsc)).toMatchObject({
-      status: "known",
-      buildingCode: "SW",
-      buildingName: "Science Wing",
-      room: "319",
-      routingDataStatus: "inferred",
-    });
     expect(resolveMeetingLocation(utm).status).toBe("known");
+  });
+
+  test("preserves ambiguous and unrecognized physical locations without choosing UTM", () => {
+    const parsed = parseIcs(fixture("acorn-ambiguous-campus-sanitized.ics"));
+
+    expect(parsed.meetings.every((meeting) => meeting.campus === "UNKNOWN")).toBe(true);
+    expect(parsed.meetings.every((meeting) => meeting.buildingCode === null)).toBe(true);
+    expect(inferredCampusForMeetings(parsed.meetings)).toBeNull();
+    expect(parsed.warnings.join(" ")).toContain("multiple U of T campuses");
+    expect(parsed.warnings.join(" ")).toContain("could not be matched");
+  });
+
+  test("does not use a majority vote or legacy course suffix to force mixed schedules", () => {
+    const parsed = parseIcs(crossCampusCalendar());
+    const utm = parsed.meetings.find((meeting) => meeting.campus === "UTM")!;
+    expect(
+      inferredCampusForMeetings([...parsed.meetings, { ...utm, id: "second-utm" }]),
+    ).toBeNull();
+    expect(inferredCampusForMeetings([{ ...utm, campus: undefined }])).toBeNull();
   });
 
   test("does not assign an unknown-campus location to UTM", () => {
@@ -162,22 +124,19 @@ describe("all-campus timetable compatibility", () => {
   test("preserves campus identity and source locations through encrypted-sync serialization", () => {
     const meetings = parseIcs(crossCampusCalendar()).meetings;
     const restored = deserializeSchedule(serializeSchedule(meetings));
-    const utsg = restored.find((meeting) => meeting.courseCode === "CSC108H1")!;
-    const utsc = restored.find((meeting) => meeting.courseCode === "CSCA08H3")!;
+    const utsg = restored.find((meeting) => meeting.sourceLocation === "BA 1170")!;
 
     expect(utsg).toMatchObject({ campus: "UTSG", sourceLocation: "BA 1170" });
-    expect(utsc).toMatchObject({ campus: "UTSC", sourceLocation: "SW 319" });
     expect(locationLabel(utsg)).toBe("BA 1170");
-    expect(locationLabel(utsc)).toBe("SW 319");
   });
 
-  test("keeps all three campuses in normal and print timetable exports", () => {
+  test("keeps every mixed-campus location in normal and print timetable exports", () => {
     const meetings = parseIcs(crossCampusCalendar()).meetings;
     const plan = createTimetableExportPlan(meetings, "Fall");
     const exportSvg = renderTimetableExportSvg(meetings, plan);
     const printSvg = renderTimetablePrintSvg(meetings, plan);
 
-    for (const location of ["BA 1170", "SW 319", "MN 1270"]) {
+    for (const location of ["BA 1170", "MN 1270"]) {
       expect(exportSvg).toContain(`>${location}</text>`);
       expect(printSvg).toContain(`>${location}</text>`);
     }

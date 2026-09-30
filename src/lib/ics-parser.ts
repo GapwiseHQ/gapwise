@@ -1,7 +1,6 @@
 import ICAL from "ical.js";
 import {
   ASSESSMENT_WINDOW_NOTE,
-  campusForCourseCode,
   type ActivityType,
   type Campus,
   type Meeting,
@@ -66,16 +65,14 @@ function parseSummary(summary: string): {
   };
 }
 
-function parseLocation(
-  raw: string | null,
-  campus: Campus,
-): {
+function parseLocation(raw: string | null): {
   buildingCode: string | null;
   room: string | null;
   sourceLocation: string | undefined;
   locationUnknown: boolean;
   locationType: MeetingLocationType;
   warning: string | null;
+  campus: Campus;
 } {
   const value = unescapeText(raw ?? "")
     .replace(/\s+/g, " ")
@@ -89,6 +86,7 @@ function parseLocation(
       locationUnknown: true,
       locationType: "tba",
       warning: "The physical location is still TBA.",
+      campus: "UNKNOWN",
     };
   }
   if (/\bonline\b|\bremote\b|\bvirtual\b/i.test(value)) {
@@ -99,6 +97,7 @@ function parseLocation(
       locationUnknown: true,
       locationType: "online",
       warning: "This meeting is online; no physical route is needed.",
+      campus: "UNKNOWN",
     };
   }
   if (/^ZZ(?:\s|$)|\bTBA\b|\bN\/?A\b/i.test(value)) {
@@ -109,36 +108,63 @@ function parseLocation(
       locationUnknown: true,
       locationType: "tba",
       warning: "The physical location is still TBA.",
+      campus: "UNKNOWN",
     };
   }
 
-  // UTM locations retain canonical building fields only when they can be resolved
-  // against the UTM map registry. Otherwise the source room remains visible in the
-  // timetable without accidentally enabling a campus-map route action.
-  if (campus === "UTM") {
-    const resolved = resolveAcornLocation(value);
+  const utmResolution = resolveAcornLocation(value);
+  const matches = [
+    ...(utmResolution.status === "known"
+      ? [
+          {
+            campus: "UTM" as const,
+            buildingCode: utmResolution.buildingCode!,
+            room: utmResolution.room,
+            warning: utmResolution.warning,
+          },
+        ]
+      : []),
+    ...(["UTSG", "UTSC"] as const).flatMap((campus) => {
+      const campusId = gapwiseCampusIdForCampus(campus)!;
+      const resolved = resolveCampusBuildingLocation(campusId, value);
+      if (!resolved) return [];
+      return [
+        {
+          campus,
+          buildingCode: resolved.building.code,
+          room: resolved.room,
+          warning: !getBuildingFootprintForCampus(campusId, resolved.building.code)
+            ? `${resolved.building.code} is recognized at ${campus}, but its Gapwise map footprint is still unresolved.`
+            : null,
+        },
+      ];
+    }),
+  ];
+
+  if (matches.length === 1) {
+    const [resolved] = matches;
     return {
-      buildingCode: resolved.status === "known" ? resolved.buildingCode : null,
-      room: resolved.status === "known" ? resolved.room : null,
+      buildingCode: resolved!.buildingCode,
+      room: resolved!.room,
       sourceLocation: value,
       locationUnknown: false,
       locationType: "physical",
-      warning: resolved.warning,
+      warning: resolved!.warning,
+      campus: resolved!.campus,
     };
   }
 
-  const campusId = gapwiseCampusIdForCampus(campus);
-  const resolved = campusId ? resolveCampusBuildingLocation(campusId, value) : null;
   return {
-    buildingCode: resolved?.building.code ?? null,
-    room: resolved?.room ?? null,
+    buildingCode: null,
+    room: null,
     sourceLocation: value,
     locationUnknown: false,
     locationType: "physical",
     warning:
-      resolved && campusId && !getBuildingFootprintForCampus(campusId, resolved.building.code)
-        ? `${resolved.building.code} is recognized at ${campus}, but its Gapwise map footprint is still unresolved.`
-        : null,
+      matches.length > 1
+        ? `“${value}” matches buildings at multiple U of T campuses; choose a campus before routing.`
+        : `“${value}” could not be matched to a supported U of T campus building.`,
+    campus: "UNKNOWN",
   };
 }
 
@@ -302,7 +328,6 @@ export function parseIcs(text: string): ParsedTimetable {
       continue;
     }
 
-    const campus = campusForCourseCode(courseCode);
     const description = unescapeText(event.description ?? "");
     const courseName = description.split("\n")[0]?.trim() || courseCode;
     const rawLocation = unescapeText(
@@ -315,7 +340,7 @@ export function parseIcs(text: string): ParsedTimetable {
     const isReservedAssessmentWindow =
       /^ZZ\s+TBA$/i.test(rawLocation) && /(^|\n)\*{6,}($|\n)/.test(description);
 
-    const location = parseLocation(rawLocation, campus);
+    const location = parseLocation(rawLocation);
     if (location.warning) {
       warnings.add(`${courseCode} ${activityType}: ${location.warning}`);
     }
@@ -371,7 +396,7 @@ export function parseIcs(text: string): ParsedTimetable {
         buildingCode: location.buildingCode,
         room: location.room,
         sourceLocation: location.sourceLocation,
-        campus,
+        campus: location.campus,
         term,
         locationUnknown: location.locationUnknown,
         locationType: location.locationType,

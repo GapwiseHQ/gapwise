@@ -9,7 +9,7 @@ test("Universal Search Dialog (Phase 3) keyboard, actions, buildings, and switch
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto("/");
+  await page.goto("/?campus=utm");
 
   // Verify desktop search trigger button exists
   const searchTrigger = page.locator("button[aria-label*='Search']").first();

@@ -9,7 +9,7 @@ import { activeCampus, activeUniversity } from "@/universities/registry";
 import { chooseDefaultTerm } from "@/lib/calendar-awareness";
 import { findGaps } from "@/lib/gaps";
 import { availableScheduleTerms, composeTermSchedule } from "@/lib/personal-scheduler";
-import type { Meeting, Term } from "@/lib/timetable-types";
+import { inferredCampusForMeetings, type Meeting, type Term } from "@/lib/timetable-types";
 
 const EMPTY_MEETINGS: Meeting[] = [];
 
@@ -17,12 +17,8 @@ const EMPTY_MEETINGS: Meeting[] = [];
 export function useSelectedScheduleContext(meetings: Meeting[] | null) {
   const university = activeUniversity();
   const universityId = university?.id;
-  const currentCampus = (
-    meetings?.find((m) => m.campus)?.campus?.toLowerCase() ??
-    activeCampus() ??
-    university?.defaultCampus ??
-    "utm"
-  ).toLowerCase();
+  const inferredCampus = inferredCampusForMeetings(meetings ?? EMPTY_MEETINGS)?.toLowerCase();
+  const currentCampus = (inferredCampus ?? activeCampus() ?? "").toLowerCase();
 
   const isOutdoorCampus = Boolean(
     (universityId && universityId !== "uoft" && university?.enabledFeatures.routing) ||
@@ -72,23 +68,28 @@ export function useSelectedScheduleContext(meetings: Meeting[] | null) {
     [meetings, term],
   );
   const gaps = useMemo(() => findGaps(schedule, term), [schedule, term]);
-  const planTransition = useMemo(
-    () =>
-      isOutdoorCampus
-        ? (outdoorPlanner ??
-          (() => ({
-            status: "unavailable" as const,
-            message: "Campus routes are loading.",
-            accuracy: "Location unavailable" as const,
-            result: null,
-            displayCoordinates: [],
-            warnings: [],
-            approximateDistanceMeters: null,
-            approximateSeconds: null,
-          })))
-        : createScheduleTransitionPlanner(UTM_ROUTING_GRAPH, meetings ?? EMPTY_MEETINGS),
-    [meetings, isOutdoorCampus, outdoorPlanner],
-  );
+  const planTransition = useMemo(() => {
+    const unavailable = (message: string) => () => ({
+      status: "unavailable" as const,
+      message,
+      accuracy: "Location unavailable" as const,
+      result: null,
+      displayCoordinates: [],
+      warnings: [],
+      approximateDistanceMeters: null,
+      approximateSeconds: null,
+    });
+    if (!currentCampus) {
+      return unavailable("Choose a campus before planning this route.");
+    }
+    if (isOutdoorCampus) {
+      return outdoorPlanner ?? unavailable("Campus routes are loading.");
+    }
+    if (universityId === "uoft" && currentCampus !== "utm") {
+      return unavailable("Choose a single U of T campus before planning this route.");
+    }
+    return createScheduleTransitionPlanner(UTM_ROUTING_GRAPH, meetings ?? EMPTY_MEETINGS);
+  }, [currentCampus, meetings, isOutdoorCampus, outdoorPlanner, universityId]);
 
   return { term, setTerm, terms, schedule, gaps, planTransition };
 }

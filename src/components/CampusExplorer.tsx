@@ -12,7 +12,12 @@ import {
   gapwiseCampusIdForCampus,
   type GapwiseCampusId,
 } from "@/data/campuses";
-import { formatTime, locationLabel, meetingCampus } from "@/lib/timetable-types";
+import {
+  formatTime,
+  inferredCampusForMeetings,
+  locationLabel,
+  meetingCampus,
+} from "@/lib/timetable-types";
 import { activeCampus, activeUniversity } from "@/universities/registry";
 
 type CampusExplorerProps = Omit<
@@ -27,23 +32,6 @@ type CampusExplorerProps = Omit<
 
 function meetingGapwiseCampus(meeting: CampusMapProps["meetings"][number]): GapwiseCampusId | null {
   return gapwiseCampusIdForCampus(meetingCampus(meeting));
-}
-
-function inferredCampusForMeetings(
-  meetings: CampusMapProps["meetings"],
-  campusIds: GapwiseCampusId[],
-): GapwiseCampusId | null {
-  const counts = new Map<GapwiseCampusId, number>(campusIds.map((campus) => [campus, 0]));
-  for (const meeting of meetings) {
-    const campus = meetingGapwiseCampus(meeting);
-    if (campus) counts.set(campus, (counts.get(campus) ?? 0) + 1);
-  }
-  return (
-    [...counts.entries()]
-      .filter(([, count]) => count > 0)
-      .sort((a, b) => b[1] - a[1] || campusIds.indexOf(a[0]) - campusIds.indexOf(b[0]))[0]?.[0] ??
-    null
-  );
 }
 
 function floorStatusLabel(result: BuildingSearchResult) {
@@ -83,20 +71,15 @@ export function CampusExplorer({
   const searchRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
   const previousSelectedMeetingIdRef = useRef(mapProps.selectedMeetingId);
-  const selectedMeeting = useMemo(
-    () => mapProps.meetings.find((meeting) => meeting.id === mapProps.selectedMeetingId) ?? null,
-    [mapProps.meetings, mapProps.selectedMeetingId],
-  );
-  const selectedMeetingCampus = selectedMeeting ? meetingGapwiseCampus(selectedMeeting) : null;
   const inferredCampusId = useMemo(
-    () => inferredCampusForMeetings(mapProps.meetings, campusIds),
-    [mapProps.meetings, campusIds],
+    () => gapwiseCampusIdForCampus(inferredCampusForMeetings(mapProps.meetings) ?? "UNKNOWN"),
+    [mapProps.meetings],
   );
-  // Respect user override, selected meeting campus, inferred schedule campus,
-  // or deterministic host campus (utm/utsg/utsc) before falling back to default.
+  // Respect an explicit URL/user override, a uniquely inferred schedule campus,
+  // or deterministic host campus. An automatically selected first meeting must
+  // never turn a genuine multi-campus schedule into an implicit UTM selection.
   const activeCampusId =
     campusOverride ??
-    selectedMeetingCampus ??
     inferredCampusId ??
     hostCampus ??
     (selectedBuildingCode || campusIds.length === 1 ? (defaultCampus ?? null) : null);
