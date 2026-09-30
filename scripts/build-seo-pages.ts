@@ -6,6 +6,23 @@ const SITE_ORIGIN = "https://gapwise.ca";
 const GITHUB_ORGANIZATION = "https://github.com/GapwiseHQ";
 const GITHUB_CORE = `${GITHUB_ORGANIZATION}/gapwise`;
 
+const universitiesManifest = JSON.parse(await readFile("universities.json", "utf8")) as {
+  universities: Array<{
+    id: string;
+    name: string;
+    shortName: string;
+    campusScope: string;
+    hosts: string[];
+    campuses: string[];
+    enabledFeatures?: { routing?: boolean };
+  }>;
+};
+const supportedUniversityCount = universitiesManifest.universities.length;
+const supportedCampusCount = universitiesManifest.universities.reduce(
+  (count, university) => count + university.campuses.length,
+  0,
+);
+
 export type UniversityContext = {
   id: string;
   name: string;
@@ -90,8 +107,7 @@ const PAGES: readonly SeoPage[] = [
     description:
       "Gapwise is a free and open-source timetable, campus navigation, and student planning platform for students across multiple Canadian universities.",
     heading: "Make the time between classes count.",
-    detail:
-      "Import your timetable in your browser, explore source-backed campus maps, understand the usable time between classes, and plan your campus day across Canadian universities. The default edition supports University of Toronto (UTM, UTSG, UTSC) with ACORN import and pedestrian routing for UTM. Dedicated editions are available for Carleton, TMU, Queen's, Laurier, York, McMaster, Western, Guelph, uOttawa, and Brock.",
+    detail: `Import your timetable in your browser, explore source-backed campus maps, understand the usable time between classes, and plan your campus day across ${supportedUniversityCount} Canadian universities and ${supportedCampusCount} campus models.`,
     sections: [
       {
         title: "Your timetable, connected to campus context",
@@ -152,8 +168,7 @@ const PAGES: readonly SeoPage[] = [
   {
     path: "/developers",
     title: "Gapwise API & SDKs — Developers",
-    description:
-      "Build with the Gapwise public campus building, place, routing, and deterministic gap-planning API, OpenAPI contract, and official SDKs across all 12 supported Canadian universities.",
+    description: `Build with the Gapwise public campus building, place, routing, and deterministic gap-planning API, OpenAPI contract, and official SDKs across all ${supportedUniversityCount} supported Canadian universities.`,
     heading: "Deterministic campus intelligence for developers.",
     detail:
       "Gapwise publishes a bounded public API for campus buildings, places, routing, and gap planning across supported universities, with OpenAPI plus JavaScript/TypeScript and Python SDK documentation.",
@@ -251,10 +266,10 @@ function outputPath(path: string) {
 
 function homepageStructuredData(page: SeoPage, uniContext?: UniversityContext) {
   const origin = uniContext?.origin ?? SITE_ORIGIN;
-  const organizationId = `${origin}/#organization`;
+  const organizationId = `${SITE_ORIGIN}/#organization`;
   const websiteId = `${origin}/#website`;
   const appId = `${origin}/#app`;
-  const founderId = `${origin}/#andrew-muratov`;
+  const founderId = `${SITE_ORIGIN}/#andrew-muratov`;
   const isDedicatedTenant = Boolean(
     uniContext && (uniContext.id !== "uoft" || uniContext.campusName),
   );
@@ -266,13 +281,12 @@ function homepageStructuredData(page: SeoPage, uniContext?: UniversityContext) {
         "@type": "Organization",
         "@id": organizationId,
         name: "Gapwise",
-        url: `${origin}/`,
-        description: uniName
-          ? `Privacy-first timetable intelligence, campus maps, and day planning for ${uniName} students.`
-          : "Privacy-first timetable intelligence, campus maps, and day planning for university students across Canada.",
+        url: `${SITE_ORIGIN}/`,
+        description:
+          "Gapwise is the free and open-source university timetable, campus navigation, routing, and student-planning platform for Canadian universities.",
         logo: {
           "@type": "ImageObject",
-          url: `${origin}/icon-512.png`,
+          url: `${SITE_ORIGIN}/icon-512.png`,
           width: 512,
           height: 512,
         },
@@ -298,16 +312,17 @@ function homepageStructuredData(page: SeoPage, uniContext?: UniversityContext) {
       {
         "@type": "WebSite",
         "@id": websiteId,
-        name: uniName ? `Gapwise — ${uniName}` : "Gapwise",
+        name: uniName ? `Gapwise for ${uniName}` : "Gapwise",
         url: `${origin}/`,
         description: page.description,
         inLanguage: "en-CA",
         publisher: { "@id": organizationId },
+        ...(origin !== SITE_ORIGIN ? { isPartOf: { "@id": `${SITE_ORIGIN}/#website` } } : {}),
       },
       {
-        "@type": "WebApplication",
+        "@type": ["WebApplication", "SoftwareApplication"],
         "@id": appId,
-        name: uniName ? `Gapwise — ${uniName}` : "Gapwise",
+        name: uniName ? `Gapwise for ${uniName}` : "Gapwise",
         url: `${origin}/`,
         description: page.description,
         applicationCategory: "EducationalApplication",
@@ -316,6 +331,7 @@ function homepageStructuredData(page: SeoPage, uniContext?: UniversityContext) {
         inLanguage: "en-CA",
         creator: { "@id": founderId },
         publisher: { "@id": organizationId },
+        isPartOf: { "@id": websiteId },
         offers: {
           "@type": "Offer",
           price: "0",
@@ -336,10 +352,10 @@ function homepageStructuredData(page: SeoPage, uniContext?: UniversityContext) {
               "Optional encrypted private sync",
             ]
           : [
-              "Browser-local timetable import (ACORN .ics, Carleton Central, TMU, Queen's, Laurier, York, McMaster, Western, Guelph, uOttawa, Brock schedule formats)",
-              "Mississauga, St. George, Scarborough, Carleton, TMU, Queen's, Laurier, York, McMaster, Western, Guelph, uOttawa, and Brock campus timetable identity",
-              "Source-backed building maps for all 12 supported universities",
-              "Source-backed UTM pedestrian routing",
+              `Browser-local timetable import across ${supportedUniversityCount} supported Canadian universities`,
+              `University-specific timetable identity across ${supportedCampusCount} campus models`,
+              `Source-backed building maps for all ${supportedUniversityCount} supported universities`,
+              "Campus pedestrian routing with source-classified entrances and explicit uncertainty",
               "Optional encrypted private sync",
             ],
         sameAs: [GITHUB_CORE],
@@ -393,6 +409,8 @@ function fallback(page: SeoPage, uniContext?: UniversityContext) {
     ? ([
         ["/", "Gapwise home"],
         ["/about", "About Gapwise"],
+        ["/universities", "Supported universities"],
+        ["/open-source", "Open source"],
         ["/campus-map", "Campus map"],
         ["/gap-planner", "Gap planner"],
         ["/campus-routing", "Campus routing"],
@@ -407,6 +425,8 @@ function fallback(page: SeoPage, uniContext?: UniversityContext) {
     : ([
         ["/", "Gapwise home"],
         ["/about", "About Gapwise"],
+        ["/universities", "Supported universities"],
+        ["/open-source", "Open source"],
         ["/utm-timetable", "UTM timetable"],
         ["/gap-planner", "Gap planner"],
         ["/campus-map", "Campus map"],
@@ -447,20 +467,13 @@ function fallback(page: SeoPage, uniContext?: UniversityContext) {
     page.path === "/" && !isDedicatedTenant
       ? `<section aria-labelledby="supported-universities-heading">
         <h2 id="supported-universities-heading">Supported Canadian Universities</h2>
-        <p>Gapwise provides dedicated editions with university-specific timetable import, campus data, and verified destinations:</p>
-        <ul>
-          <li><a href="https://gapwise.ca">University of Toronto</a> — Mississauga, St. George, and Scarborough</li>
-          <li><a href="https://carleton.gapwise.ca">Carleton University</a> — Ottawa campus</li>
-          <li><a href="https://tmu.gapwise.ca">Toronto Metropolitan University</a> — Downtown Toronto campus</li>
-          <li><a href="https://queens.gapwise.ca">Queen's University</a> — Kingston campus</li>
-          <li><a href="https://laurier.gapwise.ca">Wilfrid Laurier University</a> — Waterloo campus</li>
-          <li><a href="https://york.gapwise.ca">York University</a> — Keele campus</li>
-          <li><a href="https://mcmaster.gapwise.ca">McMaster University</a> — Hamilton campus</li>
-          <li><a href="https://western.gapwise.ca">Western University</a> — London campus</li>
-          <li><a href="https://guelph.gapwise.ca">University of Guelph</a> — Guelph campus</li>
-          <li><a href="https://uottawa.gapwise.ca">University of Ottawa</a> — Downtown Ottawa campus</li>
-          <li><a href="https://brock.gapwise.ca">Brock University</a> — St. Catharines campus</li>
-        </ul>
+        <p>Gapwise provides dedicated editions with university-specific timetable import and source-backed campus data:</p>
+        <ul>${universitiesManifest.universities
+          .map(
+            (university) =>
+              `<li><a href="https://${university.hosts[0]}">${escapeHtml(university.name)}</a> — ${escapeHtml(university.campusScope)}</li>`,
+          )
+          .join("")}</ul>
       </section>`
       : "";
 
@@ -518,6 +531,8 @@ function renderDocument(baseHtml: string, page: SeoPage, uniContext?: University
 const UNIVERSITY_COMMON_PATHS = new Set([
   "/",
   "/about",
+  "/universities",
+  "/open-source",
   "/campus-map",
   "/gap-planner",
   "/campus-routing",
@@ -534,7 +549,7 @@ function getUniversityPage(page: SeoPage, uni: UniversityContext): SeoPage {
   if (page.path === "/") {
     return {
       path: "/",
-      title: `Gapwise — ${uni.name}`,
+      title: `Gapwise for ${uni.name} — Timetable & Campus Navigation`,
       description: `Gapwise is a free and open-source timetable, campus navigation, and student planning platform for ${uni.name} students.`,
       heading: "Make the time between classes count.",
       detail:
@@ -651,7 +666,6 @@ for (const { campusId, context } of UOFT_CAMPUS_EDITIONS) {
   await writeFile(join(campusDir, "robots.txt"), renderRobotsTxt(`${context.origin}/sitemap.xml`));
 }
 
-const universitiesManifest = JSON.parse(await readFile("universities.json", "utf8"));
 let universityCount = 0;
 const universityPageCounts: Record<string, number> = {};
 

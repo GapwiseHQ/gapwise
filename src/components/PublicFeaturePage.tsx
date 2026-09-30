@@ -9,6 +9,8 @@ const RESOURCE_LINKS = [
   ["/campus-routing", "Campus routing"],
   ["/acorn-import", "ACORN import"],
   ["/about", "About"],
+  ["/universities", "Universities"],
+  ["/open-source", "Open source"],
 ] as const;
 
 export function PublicFeaturePage({ page }: { page: PublicFeaturePageData }) {
@@ -34,6 +36,9 @@ export function PublicFeaturePage({ page }: { page: PublicFeaturePageData }) {
           >
             <a href="/about" className="hover:text-foreground">
               About
+            </a>
+            <a href="/universities" className="hover:text-foreground">
+              Universities
             </a>
             <a href="/developers" className="hover:text-foreground">
               Developers

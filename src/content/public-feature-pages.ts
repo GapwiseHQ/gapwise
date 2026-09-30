@@ -1,3 +1,11 @@
+import universities from "../../universities.json" with { type: "json" };
+
+const supportedUniversityCount = universities.universities.length;
+const supportedCampusCount = universities.universities.reduce(
+  (count, university) => count + university.campuses.length,
+  0,
+);
+
 export type PublicFeatureSection = {
   title: string;
   body: string;
@@ -41,6 +49,51 @@ export const PUBLIC_FEATURE_PAGES = {
       {
         title: "Made for multiple universities",
         body: "Timetable identity and source-backed building maps are supported for all thirteen universities. Pedestrian routing, verified entrances, and campus places vary by campus and are shown only where supported.",
+      },
+    ],
+  },
+  universities: {
+    path: "/universities",
+    eyebrow: "University editions",
+    title: "One Gapwise, built around each supported campus.",
+    seoTitle: "Supported Canadian Universities — Gapwise",
+    description: `Explore all ${supportedUniversityCount} Canadian university editions and ${supportedCampusCount} campus models supported by Gapwise for timetable planning, campus search, and navigation.`,
+    lead: "Each edition combines a university-specific timetable workflow with its own source-backed campus model while sharing one privacy-first Gapwise application.",
+    sections: [
+      {
+        title: `${supportedUniversityCount} university editions`,
+        body: `Gapwise currently supports ${universities.universities.map((university) => university.name).join(", ")}.`,
+      },
+      {
+        title: `${supportedCampusCount} campus models`,
+        body: "U of T has distinct Mississauga, St. George, and Scarborough models. Every other supported edition selects its own campus data, search index, timetable adapter, and pedestrian graph.",
+      },
+      {
+        title: "Honest campus evidence",
+        body: "Building, entrance, route, and accessibility records retain source provenance and uncertainty. Unknown facts remain unknown instead of being presented as verified.",
+      },
+    ],
+  },
+  openSource: {
+    path: "/open-source",
+    eyebrow: "Free and open source",
+    title: "Open campus software, with clear ownership of facts.",
+    seoTitle: "Open Source University Planning — Gapwise",
+    description:
+      "Learn how Gapwise publishes its university timetable, campus navigation, data, API, SDK, mobile, AI, documentation, and status projects as open source.",
+    lead: "Gapwise is free to use and developed in public. Its repositories separate product behavior, canonical campus evidence, developer contracts, mobile clients, AI permissions, and operational status.",
+    sections: [
+      {
+        title: "Code developed in public",
+        body: "The GapwiseHQ organization publishes the web application, canonical campus data, developer documentation, CLI, native client foundations, AI integration, and status service.",
+      },
+      {
+        title: "Data with provenance",
+        body: "Campus facts retain source identity, licensing, inference state, and uncertainty so downstream tools can distinguish evidence from a routing connector or approximation.",
+      },
+      {
+        title: "Privacy-first architecture",
+        body: "Timetable imports are parsed locally in the browser, guest mode remains first-class, and private sync is optional and browser-encrypted before storage.",
       },
     ],
   },

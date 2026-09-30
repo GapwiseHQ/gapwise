@@ -7,6 +7,8 @@ import universities from "../universities.json" with { type: "json" };
 const SITE_ORIGIN = "https://gapwise.ca";
 const FEATURE_PATHS = [
   "/about",
+  "/universities",
+  "/open-source",
   "/utm-timetable",
   "/campus-map",
   "/gap-planner",
@@ -172,7 +174,7 @@ describe("Gapwise searchability and entity metadata", () => {
       expect(destinationFor("/robots.txt")).toBe(`/_campuses/${campusId}/robots.txt`);
       expect(
         destinationFor(
-          "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+          "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
         ),
       ).toBe(`/_campuses/${campusId}/_seo/$1.html`);
       expect(destinationFor("/(.*)")).toBe(`/_campuses/${campusId}/index.html`);
