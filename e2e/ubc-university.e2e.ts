@@ -25,6 +25,11 @@ test("UBC Workday paste import preserves the Vancouver campus through timetable 
     .fill(workdayFixture);
   await page.getByRole("button", { name: "Import pasted schedule" }).click();
 
+  await expect(page).toHaveURL(/\/today$/);
+  await page
+    .getByRole("group", { name: "View mode" })
+    .getByRole("button", { name: "Weekly timetable" })
+    .click();
   await expect(page).toHaveURL(/\/timetable/);
   await expect(page.getByText("CPSC 110").first()).toBeVisible();
   await expect(page.getByText("ENGL 110").first()).toBeVisible();
