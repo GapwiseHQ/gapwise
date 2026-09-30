@@ -4,16 +4,16 @@ Gapwise is one product ecosystem implemented across seven product repositories a
 
 ## Repository graph
 
-| Repository | Owns                                                                                                                           | Consumes                                                                          |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| `data`     | Canonical multi-university campus facts and geometry across 13 universities; routing graphs and reviewed entrances             | Reviewed public/field evidence; core consumer tests                               |
-| `gapwise`  | Web/PWA across 11 university editions, timetable/gap/routing semantics, encrypted private state, API v1, OpenAPI and both SDKs | Validated build-time Data mirror; explicit AI delegation                          |
-| `android`  | Kotlin/Compose UX, Keystore persistence, native import and encrypted-sync adapter (focuses on U of T)                          | Core HTTP/crypto contracts and public campus APIs                                 |
-| `ios`      | SwiftUI UX and portable local timetable foundation (focuses on U of T)                                                         | Campus-scoped identity; broader native campus/account integrations remain pending |
-| `ai`       | OAuth/MCP authorization, minimized snapshots and bounded preference actions                                                    | Core public API and browser-authoritative delegated snapshots                     |
-| `docs`     | Public developer documentation                                                                                                 | Released producer contracts, including AI's generated MCP manifest                |
-| `status`   | Independent probes and incident presentation                                                                                   | Public service endpoints and operator-confirmed facts                             |
-| `.github`  | Organization contributor, support and security guidance                                                                        | Ownership boundaries above                                                        |
+| Repository | Owns                                                                                                                                                | Consumes                                                                          |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `data`     | Canonical multi-university campus facts and geometry across 13 universities; routing graphs and reviewed entrances                                  | Reviewed public/field evidence; core consumer tests                               |
+| `gapwise`  | Web/PWA across 13 university editions and 15 campus models, timetable/gap/routing semantics, encrypted private state, API v1, OpenAPI and both SDKs | Validated build-time Data mirror; explicit AI delegation                          |
+| `android`  | Kotlin/Compose UX, Keystore persistence, native import and encrypted-sync adapter (focuses on U of T)                                               | Core HTTP/crypto contracts and public campus APIs                                 |
+| `ios`      | SwiftUI UX and portable local timetable foundation (focuses on U of T)                                                                              | Campus-scoped identity; broader native campus/account integrations remain pending |
+| `ai`       | OAuth/MCP authorization, minimized snapshots and bounded preference actions                                                                         | Core public API and browser-authoritative delegated snapshots                     |
+| `docs`     | Public developer documentation                                                                                                                      | Released producer contracts, including AI's generated MCP manifest                |
+| `status`   | Independent probes and incident presentation                                                                                                        | Public service endpoints and operator-confirmed facts                             |
+| `.github`  | Organization contributor, support and security guidance                                                                                             | Ownership boundaries above                                                        |
 
 ## Public developer platform
 

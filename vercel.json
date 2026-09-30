@@ -331,7 +331,7 @@
       "destination": "/_universities/carleton/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -401,7 +401,7 @@
       "destination": "/_universities/tmu/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -471,7 +471,7 @@
       "destination": "/_universities/queens/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -541,7 +541,7 @@
       "destination": "/_universities/laurier/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -611,7 +611,7 @@
       "destination": "/_universities/york/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -681,7 +681,7 @@
       "destination": "/_universities/mcmaster/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -751,7 +751,7 @@
       "destination": "/_universities/western/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -821,7 +821,7 @@
       "destination": "/_universities/guelph/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -891,7 +891,7 @@
       "destination": "/_universities/uottawa/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -961,7 +961,7 @@
       "destination": "/_universities/brock/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -1031,7 +1031,7 @@
       "destination": "/_universities/ubc/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -1101,7 +1101,7 @@
       "destination": "/_universities/waterloo/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -1171,7 +1171,7 @@
       "destination": "/_campuses/utm/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -1241,7 +1241,7 @@
       "destination": "/_campuses/utsg/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -1311,7 +1311,7 @@
       "destination": "/_campuses/utsc/robots.txt"
     },
     {
-      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
       "has": [
         {
           "type": "host",
@@ -1359,6 +1359,14 @@
     {
       "source": "/about",
       "destination": "/_seo/about.html"
+    },
+    {
+      "source": "/universities",
+      "destination": "/_seo/universities.html"
+    },
+    {
+      "source": "/open-source",
+      "destination": "/_seo/open-source.html"
     },
     {
       "source": "/utm-timetable",

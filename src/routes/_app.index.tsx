@@ -7,7 +7,7 @@ export const Route = createFileRoute("/_app/")({
     const isRootHost = !university || university.id === "uoft";
     const title = isRootHost
       ? "Gapwise — University Timetable & Campus Navigation"
-      : `Gapwise — ${university?.name ?? "Campus timetable"}`;
+      : `Gapwise for ${university?.name ?? "Campus timetable"} — Timetable & Campus Navigation`;
     const description = isRootHost
       ? "Gapwise is a free and open-source timetable, campus navigation, and student planning platform for students across multiple Canadian universities."
       : `Gapwise is a free and open-source timetable, campus navigation, and student planning platform for ${university.name} students.`;

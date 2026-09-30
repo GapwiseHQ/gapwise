@@ -14,7 +14,11 @@ function requireEntity(
   type: string,
 ): Record<string, unknown> {
   const entity = graph.find((item) => item["@id"] === id);
-  if (!entity || entity["@type"] !== type) {
+  const entityTypes = entity?.["@type"];
+  if (
+    !entity ||
+    (entityTypes !== type && (!Array.isArray(entityTypes) || !entityTypes.includes(type)))
+  ) {
     throw new Error(`homepage structured data is missing ${type} ${id}`);
   }
   return entity;
@@ -34,6 +38,22 @@ function requireReference(
   ) {
     throw new Error(`${label} must reference ${targetId}`);
   }
+}
+
+const universityManifest = JSON.parse(await readFile("universities.json", "utf8")) as {
+  universities: Array<{ id: string; name: string; hosts: string[]; status: string }>;
+};
+const supportedUniversityEntries = universityManifest.universities.filter(
+  (university) => university.status === "supported",
+);
+
+function escapeHtml(value: string) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }
 
 // Ensure root dist/index.html, dist/sitemap.xml, dist/robots.txt, dist/og-gapwise.png, dist/og-card.png
@@ -125,19 +145,16 @@ for (const needle of [
   '<a href="https://github.com/GapwiseHQ/gapwise">Gapwise is open source on GitHub</a>',
   "<title>Gapwise — University Timetable &amp; Campus Navigation</title>",
   'content="Gapwise is a free and open-source timetable, campus navigation, and student planning platform for students across multiple Canadian universities."',
-  '<a href="https://gapwise.ca">University of Toronto</a>',
-  '<a href="https://carleton.gapwise.ca">Carleton University</a>',
-  '<a href="https://tmu.gapwise.ca">Toronto Metropolitan University</a>',
-  '<a href="https://queens.gapwise.ca">Queen\'s University</a>',
-  '<a href="https://laurier.gapwise.ca">Wilfrid Laurier University</a>',
-  '<a href="https://york.gapwise.ca">York University</a>',
-  '<a href="https://mcmaster.gapwise.ca">McMaster University</a>',
-  '<a href="https://western.gapwise.ca">Western University</a>',
-  '<a href="https://guelph.gapwise.ca">University of Guelph</a>',
-  '<a href="https://uottawa.gapwise.ca">University of Ottawa</a>',
-  '<a href="https://brock.gapwise.ca">Brock University</a>',
 ])
   requireText(home, needle, "homepage crawlable content and discovery");
+
+for (const university of supportedUniversityEntries) {
+  requireText(
+    home,
+    `<a href="https://${university.hosts[0]}">${escapeHtml(university.name)}</a>`,
+    `homepage discovery for ${university.id}`,
+  );
+}
 
 for (const path of [
   "/about",
@@ -180,6 +197,8 @@ const UOFT_CAMPUS_EDITIONS = [
 
 const CAMPUS_EDITION_PATHS = [
   "/about",
+  "/universities",
+  "/open-source",
   "/campus-map",
   "/gap-planner",
   "/campus-routing",
@@ -200,7 +219,11 @@ for (const campus of UOFT_CAMPUS_EDITIONS) {
     readFile(`${campusDir}/robots.txt`, "utf8"),
   ]);
 
-  requireText(campusHome, `<title>Gapwise — ${campus.name}</title>`, `${campus.id} homepage title`);
+  requireText(
+    campusHome,
+    `<title>Gapwise for ${campus.name} — Timetable &amp; Campus Navigation</title>`,
+    `${campus.id} homepage title`,
+  );
   requireText(
     campusHome,
     `rel="canonical" href="${campus.origin}/"`,
@@ -213,7 +236,7 @@ for (const campus of UOFT_CAMPUS_EDITIONS) {
   );
   requireText(
     campusHome,
-    `"@id":"${campus.origin}/#organization"`,
+    `"@id":"https://gapwise.ca/#organization"`,
     `${campus.id} homepage JSON-LD`,
   );
   requireText(campusRobots, `Sitemap: ${campus.origin}/sitemap.xml`, `${campus.id} robots.txt`);
@@ -227,7 +250,7 @@ for (const campus of UOFT_CAMPUS_EDITIONS) {
   );
   requireText(
     campusHome,
-    `"name":"Gapwise — ${campus.name}"`,
+    `"name":"Gapwise for ${campus.name}"`,
     `${campus.id} homepage structured-data name`,
   );
   requireText(campusHome, `"url":"${campus.origin}/"`, `${campus.id} homepage structured-data URL`);
@@ -272,33 +295,14 @@ const UOFT_ONLY_PATHS = [
   "/places/rawc",
 ];
 
-const UNIVERSITY_IDS = [
-  "carleton",
-  "tmu",
-  "queens",
-  "laurier",
-  "york",
-  "mcmaster",
-  "western",
-  "guelph",
-  "uottawa",
-  "brock",
-] as const;
-type UniversityId = (typeof UNIVERSITY_IDS)[number];
-const UNIVERSITY_ORIGINS: Record<UniversityId, string> = {
-  carleton: "https://carleton.gapwise.ca",
-  tmu: "https://tmu.gapwise.ca",
-  queens: "https://queens.gapwise.ca",
-  laurier: "https://laurier.gapwise.ca",
-  york: "https://york.gapwise.ca",
-  mcmaster: "https://mcmaster.gapwise.ca",
-  western: "https://western.gapwise.ca",
-  guelph: "https://guelph.gapwise.ca",
-  uottawa: "https://uottawa.gapwise.ca",
-  brock: "https://brock.gapwise.ca",
-};
+const UNIVERSITY_IDS = supportedUniversityEntries
+  .filter((university) => university.id !== "uoft")
+  .map((university) => university.id);
+const UNIVERSITY_ORIGINS = Object.fromEntries(
+  supportedUniversityEntries.map((university) => [university.id, `https://${university.hosts[0]}`]),
+) as Record<string, string>;
 
-function getUniversityOrigin(uniId: UniversityId): string {
+function getUniversityOrigin(uniId: string): string {
   const origin = UNIVERSITY_ORIGINS[uniId];
   if (!origin) throw new Error(`Missing origin configuration for university: ${uniId}`);
   return origin;
@@ -306,6 +310,8 @@ function getUniversityOrigin(uniId: UniversityId): string {
 
 const COMMON_SEO_PATHS = [
   "/about",
+  "/universities",
+  "/open-source",
   "/campus-map",
   "/gap-planner",
   "/campus-routing",
@@ -391,12 +397,14 @@ for (const uniId of UNIVERSITY_IDS) {
   }
   requireText(uniHtml, `property="og:url" content="${uniOrigin}/"`, `${uniId} index og:url`);
 
-  // University HTML must have JSON-LD with the university origin (not gapwise.ca/#organization etc.)
-  if (uniHtml.includes(`"https://gapwise.ca/#`)) {
-    throw new Error(
-      `${uniId} index.html has JSON-LD entity IDs still pointing to gapwise.ca — must use ${uniOrigin}`,
-    );
-  }
+  // Every edition links its host-specific Website/Application to the one canonical Gapwise entity.
+  requireText(
+    uniHtml,
+    `"@id":"https://gapwise.ca/#organization"`,
+    `${uniId} canonical organization entity`,
+  );
+  requireText(uniHtml, `"@id":"${uniOrigin}/#website"`, `${uniId} website entity`);
+  requireText(uniHtml, `"@id":"${uniOrigin}/#app"`, `${uniId} application entity`);
 
   // University HTML must not leak U of T fallback navigation links
   for (const path of UOFT_ONLY_PATHS) {
@@ -442,12 +450,6 @@ for (const uniId of UNIVERSITY_IDS) {
 
 // ── Per-university social preview metadata and OG card regression checks ───────
 
-const universityManifest = JSON.parse(await readFile("universities.json", "utf8")) as {
-  universities: Array<{ id: string; name: string; hosts: string[]; status: string }>;
-};
-const supportedUniversityEntries = universityManifest.universities.filter(
-  (university) => university.status === "supported",
-);
 const ALL_UNIVERSITY_IDS = supportedUniversityEntries.map((university) => university.id);
 const ALL_UNIVERSITY_NAMES = Object.fromEntries(
   supportedUniversityEntries.map((university) => [university.id, university.name]),
@@ -513,7 +515,7 @@ for (const uniId of ALL_UNIVERSITY_IDS) {
   const expectedTitle =
     uniId === "uoft"
       ? "Gapwise — University Timetable &amp; Campus Navigation"
-      : `Gapwise — ${escapedName}`;
+      : `Gapwise for ${escapedName} — Timetable &amp; Campus Navigation`;
   requireText(html, `<meta property="og:title" content="${expectedTitle}" />`, `${uniId} og:title`);
   requireText(html, `<title>${expectedTitle}</title>`, `${uniId} title`);
 
@@ -556,14 +558,16 @@ for (const uniId of UNIVERSITY_IDS) {
       /<script(?![^>]*application\/ld\+json)[^>]*>[\s\S]*?<\/script>/g,
       "",
     );
-    for (const [otherId, otherName] of Object.entries(ALL_UNIVERSITY_NAMES)) {
-      if (otherId === uniId) continue;
-      if (html.includes(otherName)) {
-        throw new Error(`${uniId} ${path} leaks ${otherName}`);
+    if (path !== "/universities") {
+      for (const [otherId, otherName] of Object.entries(ALL_UNIVERSITY_NAMES)) {
+        if (otherId === uniId) continue;
+        if (html.includes(otherName)) {
+          throw new Error(`${uniId} ${path} leaks ${otherName}`);
+        }
       }
-    }
-    if (/\b(?:UTM|UTSG|UTSC|U of T|ACORN)\b/i.test(html)) {
-      throw new Error(`${uniId} ${path} leaks U of T campus or timetable identity`);
+      if (/\b(?:UTM|UTSG|UTSC|U of T|ACORN)\b/i.test(html)) {
+        throw new Error(`${uniId} ${path} leaks U of T campus or timetable identity`);
+      }
     }
     if (
       path === "/" ||

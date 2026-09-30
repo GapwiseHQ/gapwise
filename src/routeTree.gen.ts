@@ -19,6 +19,7 @@ import { Route as CampusRoutingRouteImport } from './routes/campus-routing'
 import { Route as DevelopersRouteImport } from './routes/developers'
 import { Route as GapPlannerRouteImport } from './routes/gap-planner'
 import { Route as MailRouteImport } from './routes/mail'
+import { Route as OpenSourceRouteImport } from './routes/open-source'
 import { Route as OpsRouteImport } from './routes/ops'
 import { Route as PlacesRouteImport } from './routes/places'
 import { Route as PrivacyRouteImport } from './routes/privacy'
@@ -29,6 +30,7 @@ import { Route as SupportRouteImport } from './routes/support'
 import { Route as SurveyRouteImport } from './routes/survey'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as TrustRouteImport } from './routes/trust'
+import { Route as UniversitiesRouteImport } from './routes/universities'
 import { Route as UtmTimetableRouteImport } from './routes/utm-timetable'
 import { Route as AppIndexRouteImport } from './routes/_app.index'
 import { Route as AppGapsRouteImport } from './routes/_app.gaps'
@@ -87,6 +89,11 @@ const MailRoute = MailRouteImport.update({
   path: '/mail',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OpenSourceRoute = OpenSourceRouteImport.update({
+  id: '/open-source',
+  path: '/open-source',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const OpsRoute = OpsRouteImport.update({
   id: '/ops',
   path: '/ops',
@@ -135,6 +142,11 @@ const TermsRoute = TermsRouteImport.update({
 const TrustRoute = TrustRouteImport.update({
   id: '/trust',
   path: '/trust',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UniversitiesRoute = UniversitiesRouteImport.update({
+  id: '/universities',
+  path: '/universities',
   getParentRoute: () => rootRouteImport,
 } as any)
 const UtmTimetableRoute = UtmTimetableRouteImport.update({
@@ -189,6 +201,7 @@ export interface FileRoutesByFullPath {
   '/developers': typeof DevelopersRoute
   '/gap-planner': typeof GapPlannerRoute
   '/mail': typeof MailRoute
+  '/open-source': typeof OpenSourceRoute
   '/ops': typeof OpsRoute
   '/places': typeof PlacesRouteWithChildren
   '/privacy': typeof PrivacyRoute
@@ -199,6 +212,7 @@ export interface FileRoutesByFullPath {
   '/survey': typeof SurveyRoute
   '/terms': typeof TermsRoute
   '/trust': typeof TrustRoute
+  '/universities': typeof UniversitiesRoute
   '/utm-timetable': typeof UtmTimetableRoute
   '/gaps': typeof AppGapsRoute
   '/timetable': typeof AppTimetableRoute
@@ -217,6 +231,7 @@ export interface FileRoutesByTo {
   '/developers': typeof DevelopersRoute
   '/gap-planner': typeof GapPlannerRoute
   '/mail': typeof MailRoute
+  '/open-source': typeof OpenSourceRoute
   '/ops': typeof OpsRoute
   '/places': typeof PlacesRouteWithChildren
   '/privacy': typeof PrivacyRoute
@@ -227,6 +242,7 @@ export interface FileRoutesByTo {
   '/survey': typeof SurveyRoute
   '/terms': typeof TermsRoute
   '/trust': typeof TrustRoute
+  '/universities': typeof UniversitiesRoute
   '/utm-timetable': typeof UtmTimetableRoute
   '/gaps': typeof AppGapsRoute
   '/timetable': typeof AppTimetableRoute
@@ -248,6 +264,7 @@ export interface FileRoutesById {
   '/developers': typeof DevelopersRoute
   '/gap-planner': typeof GapPlannerRoute
   '/mail': typeof MailRoute
+  '/open-source': typeof OpenSourceRoute
   '/ops': typeof OpsRoute
   '/places': typeof PlacesRouteWithChildren
   '/privacy': typeof PrivacyRoute
@@ -258,6 +275,7 @@ export interface FileRoutesById {
   '/survey': typeof SurveyRoute
   '/terms': typeof TermsRoute
   '/trust': typeof TrustRoute
+  '/universities': typeof UniversitiesRoute
   '/utm-timetable': typeof UtmTimetableRoute
   '/_app/gaps': typeof AppGapsRoute
   '/_app/timetable': typeof AppTimetableRoute
@@ -280,6 +298,7 @@ export interface FileRouteTypes {
     | '/developers'
     | '/gap-planner'
     | '/mail'
+    | '/open-source'
     | '/ops'
     | '/places'
     | '/privacy'
@@ -290,6 +309,7 @@ export interface FileRouteTypes {
     | '/survey'
     | '/terms'
     | '/trust'
+    | '/universities'
     | '/utm-timetable'
     | '/gaps'
     | '/timetable'
@@ -308,6 +328,7 @@ export interface FileRouteTypes {
     | '/developers'
     | '/gap-planner'
     | '/mail'
+    | '/open-source'
     | '/ops'
     | '/places'
     | '/privacy'
@@ -318,6 +339,7 @@ export interface FileRouteTypes {
     | '/survey'
     | '/terms'
     | '/trust'
+    | '/universities'
     | '/utm-timetable'
     | '/gaps'
     | '/timetable'
@@ -338,6 +360,7 @@ export interface FileRouteTypes {
     | '/developers'
     | '/gap-planner'
     | '/mail'
+    | '/open-source'
     | '/ops'
     | '/places'
     | '/privacy'
@@ -348,6 +371,7 @@ export interface FileRouteTypes {
     | '/survey'
     | '/terms'
     | '/trust'
+    | '/universities'
     | '/utm-timetable'
     | '/_app/gaps'
     | '/_app/timetable'
@@ -369,6 +393,7 @@ export interface RootRouteChildren {
   DevelopersRoute: typeof DevelopersRoute
   GapPlannerRoute: typeof GapPlannerRoute
   MailRoute: typeof MailRoute
+  OpenSourceRoute: typeof OpenSourceRoute
   OpsRoute: typeof OpsRoute
   PlacesRoute: typeof PlacesRouteWithChildren
   PrivacyRoute: typeof PrivacyRoute
@@ -379,6 +404,7 @@ export interface RootRouteChildren {
   SurveyRoute: typeof SurveyRoute
   TermsRoute: typeof TermsRoute
   TrustRoute: typeof TrustRoute
+  UniversitiesRoute: typeof UniversitiesRoute
   UtmTimetableRoute: typeof UtmTimetableRoute
   OauthConsentRoute: typeof OauthConsentRoute
 }
@@ -455,6 +481,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MailRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/open-source': {
+      id: '/open-source'
+      path: '/open-source'
+      fullPath: '/open-source'
+      preLoaderRoute: typeof OpenSourceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ops': {
       id: '/ops'
       path: '/ops'
@@ -523,6 +556,13 @@ declare module '@tanstack/react-router' {
       path: '/trust'
       fullPath: '/trust'
       preLoaderRoute: typeof TrustRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/universities': {
+      id: '/universities'
+      path: '/universities'
+      fullPath: '/universities'
+      preLoaderRoute: typeof UniversitiesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/utm-timetable': {
@@ -624,6 +664,7 @@ const rootRouteChildren: RootRouteChildren = {
   DevelopersRoute: DevelopersRoute,
   GapPlannerRoute: GapPlannerRoute,
   MailRoute: MailRoute,
+  OpenSourceRoute: OpenSourceRoute,
   OpsRoute: OpsRoute,
   PlacesRoute: PlacesRouteWithChildren,
   PrivacyRoute: PrivacyRoute,
@@ -634,6 +675,7 @@ const rootRouteChildren: RootRouteChildren = {
   SurveyRoute: SurveyRoute,
   TermsRoute: TermsRoute,
   TrustRoute: TrustRoute,
+  UniversitiesRoute: UniversitiesRoute,
   UtmTimetableRoute: UtmTimetableRoute,
   OauthConsentRoute: OauthConsentRoute,
 }

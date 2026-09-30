@@ -56,6 +56,8 @@ Gapwise is one application serving dedicated university editions via host-based 
 | **University of Guelph** | Guelph Campus | WebAdvisor (text paste or `.ics`) | [guelph.gapwise.ca](https://guelph.gapwise.ca) |
 | **University of Ottawa** | Downtown Campus | uoCampus (text paste or `.ics`) | [uottawa.gapwise.ca](https://uottawa.gapwise.ca) |
 | **Brock University** | St. Catharines Campus | BrockDB / Student Portal (text paste or `.ics`) | [brock.gapwise.ca](https://brock.gapwise.ca) |
+| **University of British Columbia** | Vancouver / Point Grey Campus | Workday View My Courses (table copy/paste) | [ubc.gapwise.ca](https://ubc.gapwise.ca) |
+| **University of Waterloo** | Main Campus | Quest Class Schedule (list-view copy/paste) | [waterloo.gapwise.ca](https://waterloo.gapwise.ca) |
 
 ---
 

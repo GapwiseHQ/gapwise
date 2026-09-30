@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-30T13:48:39.600Z",
+  "generatedAt": "2026-09-30T21:58:37.038Z",
   "summary": {
-    "totalUniversities": 12,
-    "totalCampuses": 14,
-    "totalBuildings": 797,
-    "totalResidences": 192,
-    "universitiesWithResidenceCoverage": 12,
-    "campusesWithResidenceCoverage": 14,
+    "totalUniversities": 13,
+    "totalCampuses": 15,
+    "totalBuildings": 865,
+    "totalResidences": 199,
+    "universitiesWithResidenceCoverage": 13,
+    "campusesWithResidenceCoverage": 15,
     "coveragePercentage": 100
   },
   "campuses": {
@@ -1126,6 +1126,51 @@
           "code": "WGR6",
           "name": "Walter H. Gage Residence - South Tower",
           "aliases": ["walter-h-gage-residence-south-tower", "South"]
+        }
+      ]
+    },
+    "waterloo-main": {
+      "universityId": "waterloo",
+      "universityName": "University of Waterloo",
+      "campusId": "waterloo-main",
+      "campusName": "University of Waterloo",
+      "totalBuildings": 68,
+      "residenceCount": 7,
+      "residences": [
+        {
+          "code": "CMH",
+          "name": "Claudette Millar Hall",
+          "aliases": ["claudette-millar-hall"]
+        },
+        {
+          "code": "MHR",
+          "name": "Minota Hagey Residence",
+          "aliases": ["minota-hagey-residence"]
+        },
+        {
+          "code": "MKV",
+          "name": "William Lyon Mackenzie King Village",
+          "aliases": ["william-lyon-mackenzie-king-village", "Mackenzie King Village"]
+        },
+        {
+          "code": "REV",
+          "name": "Ron Eydt Village",
+          "aliases": ["ron-eydt-village"]
+        },
+        {
+          "code": "TH",
+          "name": "Tutors' Houses",
+          "aliases": ["tutors-houses", "Tutors’ Houses"]
+        },
+        {
+          "code": "UWP",
+          "name": "University of Waterloo Place",
+          "aliases": ["university-of-waterloo-place", "UW Place", "Grand Commons"]
+        },
+        {
+          "code": "V1",
+          "name": "Student Village 1",
+          "aliases": ["student-village-1", "Village 1"]
         }
       ]
     }
