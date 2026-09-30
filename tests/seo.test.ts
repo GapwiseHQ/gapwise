@@ -139,6 +139,7 @@ describe("Gapwise searchability and entity metadata", () => {
       "/today",
       "/timetable",
       "/gaps",
+      "/route",
       "/route/(.*)",
       "/oauth/(.*)",
       "/api/(.*)",
@@ -147,5 +148,40 @@ describe("Gapwise searchability and entity metadata", () => {
       "/_seo/(.*)",
     ])
       expect(noindexSources).toContain(path);
+  });
+
+  test("Vercel routes every U of T campus host to isolated SEO output", async () => {
+    const config = JSON.parse(await readFile("vercel.json", "utf8")) as {
+      rewrites: Array<{
+        source: string;
+        destination: string;
+        has?: Array<{ type: string; value: string }>;
+      }>;
+    };
+
+    for (const campusId of ["utm", "utsg", "utsc"] as const) {
+      const host = `${campusId}.gapwise.ca`;
+      const hostRewrites = config.rewrites.filter((entry) =>
+        entry.has?.some((condition) => condition.type === "host" && condition.value === host),
+      );
+      const destinationFor = (source: string) =>
+        hostRewrites.find((entry) => entry.source === source)?.destination;
+
+      expect(destinationFor("/")).toBe(`/_campuses/${campusId}/index.html`);
+      expect(destinationFor("/sitemap.xml")).toBe(`/_campuses/${campusId}/sitemap.xml`);
+      expect(destinationFor("/robots.txt")).toBe(`/_campuses/${campusId}/robots.txt`);
+      expect(
+        destinationFor(
+          "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+        ),
+      ).toBe(`/_campuses/${campusId}/_seo/$1.html`);
+      expect(destinationFor("/(.*)")).toBe(`/_campuses/${campusId}/index.html`);
+      expect(
+        destinationFor("/(logo-mark.svg|favicon.*|apple-touch-icon.png|site.webmanifest)"),
+      ).toBe("/universities/uoft/$1");
+      expect(destinationFor("/(og-card.png|og-gapwise.png)")).toBe(
+        "/universities/uoft/og-card.png",
+      );
+    }
   });
 });

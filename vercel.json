@@ -170,6 +170,15 @@
       ]
     },
     {
+      "source": "/route",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
       "source": "/route/(.*)",
       "headers": [
         {
@@ -980,6 +989,216 @@
         }
       ],
       "destination": "/_universities/brock/index.html"
+    },
+    {
+      "source": "/(logo-mark.svg|favicon.*|apple-touch-icon.png|site.webmanifest)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utm.gapwise.ca"
+        }
+      ],
+      "destination": "/universities/uoft/$1"
+    },
+    {
+      "source": "/(og-card.png|og-gapwise.png)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utm.gapwise.ca"
+        }
+      ],
+      "destination": "/universities/uoft/og-card.png"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "utm.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utm/sitemap.xml"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "utm.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utm/robots.txt"
+    },
+    {
+      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utm.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utm/_seo/$1.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "utm.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utm/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utm.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utm/index.html"
+    },
+    {
+      "source": "/(logo-mark.svg|favicon.*|apple-touch-icon.png|site.webmanifest)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsg.gapwise.ca"
+        }
+      ],
+      "destination": "/universities/uoft/$1"
+    },
+    {
+      "source": "/(og-card.png|og-gapwise.png)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsg.gapwise.ca"
+        }
+      ],
+      "destination": "/universities/uoft/og-card.png"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsg.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utsg/sitemap.xml"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsg.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utsg/robots.txt"
+    },
+    {
+      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsg.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utsg/_seo/$1.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsg.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utsg/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsg.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utsg/index.html"
+    },
+    {
+      "source": "/(logo-mark.svg|favicon.*|apple-touch-icon.png|site.webmanifest)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsc.gapwise.ca"
+        }
+      ],
+      "destination": "/universities/uoft/$1"
+    },
+    {
+      "source": "/(og-card.png|og-gapwise.png)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsc.gapwise.ca"
+        }
+      ],
+      "destination": "/universities/uoft/og-card.png"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsc.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utsc/sitemap.xml"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsc.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utsc/robots.txt"
+    },
+    {
+      "source": "/(about|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsc.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utsc/_seo/$1.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsc.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utsc/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "utsc.gapwise.ca"
+        }
+      ],
+      "destination": "/_campuses/utsc/index.html"
     },
     {
       "source": "/(og-card.png|og-gapwise.png)",

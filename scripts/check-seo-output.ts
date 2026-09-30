@@ -4,6 +4,10 @@ function requireText(haystack: string, needle: string, label: string) {
   if (!haystack.includes(needle)) throw new Error(`${label} is missing ${needle}`);
 }
 
+function rejectText(haystack: string, needle: string, label: string) {
+  if (haystack.includes(needle)) throw new Error(`${label} unexpectedly contains ${needle}`);
+}
+
 function requireEntity(
   graph: Array<Record<string, unknown>>,
   id: string,
@@ -155,6 +159,106 @@ requireText(robots, "Disallow: /_seo/", "robots.txt");
 requireText(robots, "Disallow: /api/", "robots.txt");
 requireText(robots, "Disallow: /oauth/", "robots.txt");
 requireText(robots, "Sitemap: https://gapwise.ca/sitemap.xml", "robots.txt");
+
+const UOFT_CAMPUS_EDITIONS = [
+  {
+    id: "utm",
+    name: "University of Toronto Mississauga",
+    origin: "https://utm.gapwise.ca",
+  },
+  {
+    id: "utsg",
+    name: "University of Toronto St. George",
+    origin: "https://utsg.gapwise.ca",
+  },
+  {
+    id: "utsc",
+    name: "University of Toronto Scarborough",
+    origin: "https://utsc.gapwise.ca",
+  },
+] as const;
+
+const CAMPUS_EDITION_PATHS = [
+  "/about",
+  "/campus-map",
+  "/gap-planner",
+  "/campus-routing",
+  "/developers",
+  "/ai",
+  "/support",
+  "/trust",
+  "/privacy",
+  "/security",
+  "/accessibility",
+] as const;
+
+for (const campus of UOFT_CAMPUS_EDITIONS) {
+  const campusDir = `dist/_campuses/${campus.id}`;
+  const [campusHome, campusSitemap, campusRobots] = await Promise.all([
+    readFile(`${campusDir}/index.html`, "utf8"),
+    readFile(`${campusDir}/sitemap.xml`, "utf8"),
+    readFile(`${campusDir}/robots.txt`, "utf8"),
+  ]);
+
+  requireText(campusHome, `<title>Gapwise — ${campus.name}</title>`, `${campus.id} homepage title`);
+  requireText(
+    campusHome,
+    `rel="canonical" href="${campus.origin}/"`,
+    `${campus.id} homepage canonical`,
+  );
+  requireText(
+    campusHome,
+    `property="og:url" content="${campus.origin}/"`,
+    `${campus.id} homepage og:url`,
+  );
+  requireText(
+    campusHome,
+    `"@id":"${campus.origin}/#organization"`,
+    `${campus.id} homepage JSON-LD`,
+  );
+  requireText(campusRobots, `Sitemap: ${campus.origin}/sitemap.xml`, `${campus.id} robots.txt`);
+  requireText(campusSitemap, `<loc>${campus.origin}/</loc>`, `${campus.id} sitemap`);
+
+  const expectedDescription = `Gapwise is a free and open-source timetable, campus navigation, and student planning platform for ${campus.name} students.`;
+  requireText(
+    campusHome,
+    `name="description" content="${expectedDescription}"`,
+    `${campus.id} homepage description`,
+  );
+  requireText(
+    campusHome,
+    `"name":"Gapwise — ${campus.name}"`,
+    `${campus.id} homepage structured-data name`,
+  );
+  requireText(campusHome, `"url":"${campus.origin}/"`, `${campus.id} homepage structured-data URL`);
+
+  const campusOutputs = [campusHome, campusSitemap, campusRobots];
+
+  for (const path of CAMPUS_EDITION_PATHS) {
+    requireText(campusSitemap, `<loc>${campus.origin}${path}</loc>`, `${campus.id} sitemap`);
+    const fileName = `${path.slice(1).replaceAll("/", "--")}.html`;
+    const pageHtml = await readFile(`${campusDir}/_seo/${fileName}`, "utf8");
+    campusOutputs.push(pageHtml);
+    requireText(
+      pageHtml,
+      `rel="canonical" href="${campus.origin}${path}"`,
+      `${campus.id} ${path} canonical`,
+    );
+    requireText(
+      pageHtml,
+      `property="og:url" content="${campus.origin}${path}"`,
+      `${campus.id} ${path} og:url`,
+    );
+  }
+
+  for (const other of UOFT_CAMPUS_EDITIONS) {
+    if (other.id !== campus.id) {
+      for (const [index, output] of campusOutputs.entries()) {
+        rejectText(output, other.origin, `${campus.id} output ${index + 1}`);
+      }
+    }
+  }
+}
 
 // ── Per-university sitemap and robots regression checks ──────────────────────
 
