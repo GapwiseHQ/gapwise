@@ -93,7 +93,7 @@ export function campusForHostname(hostname: string, overrideCampus?: string | nu
   if (host === "utsg.gapwise.ca" || host === "utsg.gapwise.test") return "utsg";
   if (host === "utsc.gapwise.ca" || host === "utsc.gapwise.test") return "utsc";
   if (host === "ubc.gapwise.ca" || host === "ubc.gapwise.test") return "ubc-vancouver";
-  if (host === "waterloo.gapwise.ca" || host === "waterloo.gapwise.test") return "waterloo";
+  if (host === "waterloo.gapwise.ca" || host === "waterloo.gapwise.test") return "waterloo-main";
   if (host === "mcgill.gapwise.ca" || host === "mcgill.gapwise.test") return "downtown";
   return null;
 }

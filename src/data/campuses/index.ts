@@ -339,12 +339,16 @@ export function ensureCampusCatalog(campusId: string | null | undefined): Promis
   if (!campusId || universityCatalogs[campusId] || campusId === "utm") return Promise.resolve();
   const existing = campusCatalogLoads.get(campusId);
   if (existing) return existing;
-  const load =
-    campusId === "ubc-vancouver"
-      ? import("./ubc/catalog.json?raw").then((module) => {
-          registerUniversityCatalog(campusId, JSON.parse(module.default) as UniversityCatalog);
-        })
-      : Promise.resolve();
+  const catalogLoaders: Record<string, () => Promise<{ default: string }>> = {
+    "ubc-vancouver": () => import("./ubc/catalog.json?raw"),
+    "waterloo-main": () => import("./waterloo/catalog.json?raw"),
+  };
+  const loader = catalogLoaders[campusId];
+  const load = loader
+    ? loader().then((module) => {
+        registerUniversityCatalog(campusId, JSON.parse(module.default) as UniversityCatalog);
+      })
+    : Promise.resolve();
   campusCatalogLoads.set(campusId, load);
   return load;
 }

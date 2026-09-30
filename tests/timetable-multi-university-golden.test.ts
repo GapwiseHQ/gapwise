@@ -125,6 +125,17 @@ CPSC_V 110 - Computation, Programs, and Programming\t4\tGraded\tCPSC_V 110-101 -
     expectedCourse: "CPSC 110",
     expectedBuilding: "ICCS",
   },
+  "waterloo-quest": {
+    name: "University of Waterloo (Quest Class Schedule)",
+    sample: `
+Fall 2026 | Undergraduate | University of Waterloo
+CS 135 - Designing Functional Programs
+Class Nbr\tSection\tComponent\tDays & Times\tRoom\tInstructor\tStart/End Date
+1002\t002\tLEC\tMWF 11:30AM - 12:20PM\tDC 1351\tStaff\t09/09/2026 - 12/08/2026
+    `.trim(),
+    expectedCourse: "CS 135",
+    expectedBuilding: "DC",
+  },
 };
 
 function universityIdForAdapter(adapterId: string) {
@@ -145,7 +156,7 @@ const EXPECTED_DAYS = new Set([
 describe("Timetable Multi-University Golden Validation Suite (AND-211)", () => {
   test("all production universities are registered and have corresponding adapters", () => {
     const universities = supportedUniversities();
-    expect(universities).toHaveLength(12);
+    expect(universities).toHaveLength(13);
 
     const adapterKeys = Object.keys(timetableAdapters);
     expect(adapterKeys.length).toBeGreaterThanOrEqual(11);
@@ -235,7 +246,11 @@ describe("Timetable Multi-University Golden Validation Suite (AND-211)", () => {
       test("handles empty and malformed inputs gracefully without crashing", async () => {
         const parse = timetableAdapters[adapterId]!;
 
-        if (adapterId === "acorn-ics" || adapterId === "ubc-workday") {
+        if (
+          adapterId === "acorn-ics" ||
+          adapterId === "ubc-workday" ||
+          adapterId === "waterloo-quest"
+        ) {
           await expect(parse("   \n\t  ")).rejects.toThrow();
           await expect(
             parse("Random unstructured text that contains no timetable data 12345"),

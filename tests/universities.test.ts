@@ -64,6 +64,7 @@ describe("university registry", () => {
     expect(universityForHostname("uottawa.gapwise.ca")?.id).toBe("uottawa");
     expect(universityForHostname("brock.gapwise.ca")?.id).toBe("brock");
     expect(universityForHostname("ubc.gapwise.ca")?.id).toBe("ubc");
+    expect(universityForHostname("waterloo.gapwise.ca")?.id).toBe("waterloo");
     expect(universityForHostname("localhost")?.id).toBe("uoft");
     expect(universityForHostname("localhost", "carleton")?.id).toBe("carleton");
     expect(universityForHostname("localhost", "tmu")?.id).toBe("tmu");
@@ -77,6 +78,7 @@ describe("university registry", () => {
     expect(universityForHostname("preview-branch.vercel.app", "uottawa")?.id).toBe("uottawa");
     expect(universityForHostname("preview-branch.vercel.app", "brock")?.id).toBe("brock");
     expect(universityForHostname("preview-branch.vercel.app", "ubc")?.id).toBe("ubc");
+    expect(universityForHostname("preview-branch.vercel.app", "waterloo")?.id).toBe("waterloo");
     expect(universityForHostname("gapwise.ca", "carleton")?.id).toBe("uoft");
     expect(universityForHostname("unknown.gapwise.ca")).toBeNull();
     expect(universityForHostname("attacker.com")).toBeNull();
@@ -178,6 +180,7 @@ describe("canonical meeting and campus data contracts", () => {
     expect(typeof timetableAdapters["uottawa-schedule"]).toBe("function");
     expect(typeof timetableAdapters["brock-schedule"]).toBe("function");
     expect(typeof timetableAdapters["ubc-workday"]).toBe("function");
+    expect(typeof timetableAdapters["waterloo-quest"]).toBe("function");
 
     const uoftDemo = await loadDemoTimetable("acorn-ics");
     expect(uoftDemo.length).toBeGreaterThan(0);
@@ -227,6 +230,11 @@ describe("canonical meeting and campus data contracts", () => {
     expect(ubcDemo.length).toBeGreaterThan(0);
     expect(ubcDemo.every((m) => m.universityId === "ubc")).toBe(true);
     expect(ubcDemo.map((m) => m.courseCode)).toContain("CPSC 110");
+
+    const waterlooDemo = await loadDemoTimetable("waterloo-quest");
+    expect(waterlooDemo.length).toBeGreaterThan(0);
+    expect(waterlooDemo.every((m) => m.universityId === "waterloo")).toBe(true);
+    expect(waterlooDemo.map((m) => m.courseCode)).toContain("CS 135");
 
     const fallbackDemo = await loadDemoTimetable(undefined);
     expect(fallbackDemo).toEqual(uoftDemo);
@@ -353,6 +361,7 @@ describe("canonical meeting and campus data contracts", () => {
       "tmu",
       "ubc",
       "uottawa",
+      "waterloo",
       "western",
       "york",
     ]);
