@@ -94,6 +94,11 @@ describe("university registry", () => {
     expect(siteForHostname("gapwise.ca")?.role).toBe("global");
     expect(siteForHostname("www.gapwise.ca")?.role).toBe("global");
     expect(siteForHostname("localhost")?.role).toBe("global");
+    expect(siteForHostname("utm.localhost")).toMatchObject({
+      role: "campus-edition",
+      universityId: "uoft",
+      campusId: "utm",
+    });
     expect(siteForHostname("preview-branch.vercel.app")?.role).toBe("global");
     expect(siteForHostname("unknown.gapwise.ca")?.role).toBe("global");
     expect(siteForHostname("attacker.example")?.role).toBe("global");

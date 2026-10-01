@@ -1,7 +1,8 @@
 import { defineConfig, devices } from "@playwright/test";
 
 const port = 4173;
-const localBaseUrl = `http://127.0.0.1:${port}`;
+const localServerUrl = `http://127.0.0.1:${port}`;
+const localBaseUrl = `http://utm.localhost:${port}`;
 const baseURL = process.env.PLAYWRIGHT_BASE_URL ?? localBaseUrl;
 const useExternalServer = Boolean(process.env.PLAYWRIGHT_BASE_URL);
 
@@ -48,8 +49,8 @@ export default defineConfig({
   webServer: useExternalServer
     ? undefined
     : {
-        command: `bun run build && bunx vite preview --host 127.0.0.1 --port ${port}`,
-        url: localBaseUrl,
+        command: `bun run build && bunx vite preview --host localhost --port ${port}`,
+        url: localServerUrl,
         reuseExistingServer: !process.env.CI,
         timeout: 120_000,
         stdout: "pipe",

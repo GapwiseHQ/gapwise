@@ -110,15 +110,15 @@ export function isPreviewOrLocalHost(hostname: string): boolean {
     host === "127.0.0.1" ||
     host === "gapwise.test" ||
     host.endsWith(".vercel.app") ||
-    host.endsWith(".gapwise.test")
+    host.endsWith(".gapwise.test") ||
+    host.endsWith(".localhost")
   );
 }
 
 export function siteForHostname(hostname: string): SiteDefinition | null {
   const host = normalizeHostname(hostname);
-  const productionHost = host.endsWith(".gapwise.test")
-    ? `${host.slice(0, -".gapwise.test".length)}.gapwise.ca`
-    : host;
+  const localSuffix = [".gapwise.test", ".localhost"].find((suffix) => host.endsWith(suffix));
+  const productionHost = localSuffix ? `${host.slice(0, -localSuffix.length)}.gapwise.ca` : host;
   const explicit = SITES.find((site) => site.hosts.includes(productionHost));
   if (explicit) return explicit;
   const university = manifest.universities.find((entry) => entry.hosts.includes(productionHost));
@@ -169,9 +169,11 @@ export function activeSite(): SiteDefinition | null {
       const university = universityById(requestedUniversity);
       return university ? singleCampusSiteForUniversity(university) : null;
     }
-    // Named .gapwise.test subdomains exercise the same registry path as production.
+    // Named local subdomains exercise the same registry path as production.
     // Generic localhost and Vercel preview hosts intentionally represent Gapwise globally.
-    return host.endsWith(".gapwise.test") ? siteForHostname(host) : globalSite();
+    return host.endsWith(".gapwise.test") || host.endsWith(".localhost")
+      ? siteForHostname(host)
+      : globalSite();
   }
   return siteForHostname(host);
 }
@@ -181,7 +183,11 @@ export function universityForHostname(
   override?: string | null,
 ): University | null {
   const host = normalizeHostname(hostname);
-  const local = host === "localhost" || host === "127.0.0.1" || host === "gapwise.test";
+  const local =
+    host === "localhost" ||
+    host === "127.0.0.1" ||
+    host === "gapwise.test" ||
+    host.endsWith(".localhost");
   const preview = host.endsWith(".vercel.app");
   if (override && (local || preview)) return universityById(override);
   const site = siteForHostname(host);
@@ -197,7 +203,11 @@ export function activeUniversity(): University | null {
 
 export function campusForHostname(hostname: string, overrideCampus?: string | null): string | null {
   const host = normalizeHostname(hostname);
-  const local = host === "localhost" || host === "127.0.0.1" || host === "gapwise.test";
+  const local =
+    host === "localhost" ||
+    host === "127.0.0.1" ||
+    host === "gapwise.test" ||
+    host.endsWith(".localhost");
   const preview = host.endsWith(".vercel.app");
   if (overrideCampus && (local || preview)) return overrideCampus.toLowerCase();
   const site = siteForHostname(host);

@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
-import { watchForAppFailures } from "./helpers";
+import { editionUrl, watchForAppFailures } from "./helpers";
 
 const questFixture = readFileSync(
   new URL("../tests/fixtures/waterloo-quest-sanitized.tsv", import.meta.url),
@@ -15,7 +15,7 @@ test("Waterloo Quest import preserves the canonical campus through timetable and
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto("/?university=waterloo&campus=waterloo-main");
+  await page.goto(editionUrl(baseURL, "waterloo"));
   await expect(page.getByText("For University of Waterloo", { exact: true })).toBeVisible();
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("Waterloo");
 
@@ -55,7 +55,7 @@ test("Waterloo Quest import preserves the canonical campus through timetable and
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("Waterloo");
   await expect(page.getByRole("searchbox", { name: "Search Waterloo buildings" })).toBeVisible();
 
-  await page.goto("/route?university=waterloo&campus=waterloo-main");
+  await page.goto(editionUrl(baseURL, "waterloo", "/route"));
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("Waterloo");
   await expect(page.getByRole("searchbox", { name: "Search Waterloo buildings" })).toBeVisible();
   failures.assertClean();
@@ -69,7 +69,7 @@ test("Waterloo has its own demo timetable and usable mobile campus map", async (
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto("/?university=waterloo&campus=waterloo-main");
+  await page.goto(editionUrl(baseURL, "waterloo"));
   await expect(page.getByText("For University of Waterloo", { exact: true })).toBeVisible();
   await page.getByRole("button", { name: "Try a demo" }).click();
   await expect(page).toHaveURL(/\/timetable/);

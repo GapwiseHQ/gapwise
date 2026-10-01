@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { watchForAppFailures } from "./helpers";
+import { editionUrl, watchForAppFailures } from "./helpers";
 
 test("Carleton uses the canonical product screens and campus dataset", async ({
   page,
@@ -9,7 +9,7 @@ test("Carleton uses the canonical product screens and campus dataset", async ({
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto("/?university=carleton");
+  await page.goto(editionUrl(baseURL, "carleton"));
   await expect(page.getByText("For Carleton University", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /Import Carleton/ })).toBeVisible();
   await page.getByRole("button", { name: "Try a demo" }).click();
@@ -39,12 +39,14 @@ test("Carleton uses the canonical product screens and campus dataset", async ({
   failures.assertClean();
 });
 
-test("UofT local default remains University of Toronto", async ({ page, baseURL }) => {
+test("explicit UTM local host preserves the campus edition", async ({ page, baseURL }) => {
   test.skip(test.info().project.name !== "chromium");
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
   await page.goto("/");
-  await expect(page).toHaveTitle("Gapwise — University Timetable & Campus Navigation");
+  await expect(page).toHaveTitle(
+    "Gapwise for University of Toronto Mississauga — Timetable & Campus Navigation",
+  );
   await expect(page.getByRole("button", { name: "Import ACORN" })).toBeVisible();
   failures.assertClean();
 });
@@ -57,7 +59,7 @@ test("Carleton calendar import feeds timetable, gaps, and Day Route on a tablet"
   if (!baseURL) throw new Error("Playwright baseURL is required");
   await page.setViewportSize({ width: 820, height: 1180 });
   const failures = watchForAppFailures(page, baseURL);
-  await page.goto("/?university=carleton");
+  await page.goto(editionUrl(baseURL, "carleton"));
   const calendar = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
@@ -130,7 +132,7 @@ test("Direct URL refresh preserves university context in local development", asy
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto("/?university=carleton");
+  await page.goto(editionUrl(baseURL, "carleton"));
   await expect(page.getByText("For Carleton University", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /Import Carleton/ })).toBeVisible();
 
@@ -150,7 +152,7 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
   const failures = watchForAppFailures(page, baseURL);
 
   // TMU
-  await page.goto("/?university=tmu");
+  await page.goto(editionUrl(baseURL, "tmu"));
   await expect(
     page.getByText("For Toronto Metropolitan University", { exact: true }),
   ).toBeVisible();
@@ -165,7 +167,7 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
   await expect(page.getByText("CPS 109").first()).toBeVisible();
 
   // Queen's
-  await page.goto("/?university=queens");
+  await page.goto(editionUrl(baseURL, "queens"));
   await expect(page.getByText("For Queen's University", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /Import (SOLUS|pasted schedule)/ })).toBeVisible();
   await page.getByRole("button", { name: "Try a demo" }).click();
@@ -176,7 +178,7 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
   await expect(page.getByText("CISC 121").first()).toBeVisible();
 
   // Laurier
-  await page.goto("/?university=laurier");
+  await page.goto(editionUrl(baseURL, "laurier"));
   await expect(page.getByText("For Wilfrid Laurier University", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /Import (LORIS|pasted schedule)/ })).toBeVisible();
   await page.getByRole("button", { name: "Try a demo" }).click();

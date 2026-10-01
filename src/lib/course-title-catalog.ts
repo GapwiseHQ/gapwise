@@ -33,7 +33,8 @@ function normalizeTitles(value: unknown): Readonly<Record<string, string>> {
 
 function localStaticPreview(fetchImpl: FetchLike): boolean {
   if (fetchImpl !== globalThis.fetch || typeof window === "undefined") return false;
-  return ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+  const hostname = window.location.hostname;
+  return ["localhost", "127.0.0.1", "::1"].includes(hostname) || hostname.endsWith(".localhost");
 }
 
 async function requestShard(

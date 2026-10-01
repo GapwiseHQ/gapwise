@@ -9,7 +9,7 @@ test("global homepage presents the multi-university Gapwise ecosystem", async ({
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto("/");
+  await page.goto("/?site=global");
   await expect(
     page.getByRole("heading", { name: "Make every gap on campus count." }),
   ).toBeVisible();
@@ -71,7 +71,7 @@ for (const width of [320, 360, 375, 390, 393, 430]) {
     await page.setViewportSize({ width, height: 844 });
     const failures = watchForAppFailures(page, baseURL);
 
-    await page.goto("/");
+    await page.goto("/?site=global");
     await expect(
       page.getByRole("heading", { name: "Make every gap on campus count." }),
     ).toBeVisible();
