@@ -26,9 +26,9 @@ describe("first-run upload surface", () => {
     const html = renderPanel(false);
 
     expect(html).toContain("Start with your timetable.");
-    expect(html).toContain("Import ACORN");
+    expect(html).toContain("Import calendar");
     expect(html).toContain("Try Demo Schedule");
-    expect(html).toContain('accept=".ics,text/calendar"');
+    expect(html).toContain('accept=".ics,.txt,.tsv,text/calendar,text/plain"');
     expect(html).not.toContain("Your calendar stays on this device");
   });
 
@@ -53,7 +53,7 @@ describe("first-run upload surface", () => {
     const visibleText = textContent(html);
 
     expect(visibleText).toContain("The calendar could not be imported.");
-    expect(visibleText).toContain("Choose another ACORN .ics file to try again.");
+    expect(visibleText).toContain("Choose another calendar .ics or .txt file to try again.");
     expect(visibleText).not.toContain("already in this browser is safe");
   });
 });
