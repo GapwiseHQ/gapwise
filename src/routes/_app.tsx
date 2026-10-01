@@ -670,12 +670,14 @@ function AppLayout() {
                   </kbd>
                 </button>
                 <ThemeToggle theme={theme} onToggle={toggleTheme} />
-                <ResidenceSettings
-                  user={user}
-                  preferences={preferences}
-                  onPreferencesChange={updateUserPreferences}
-                  openRequest={arrivalSettingsRequest}
-                />
+                {!isMobile ? (
+                  <ResidenceSettings
+                    user={user}
+                    preferences={preferences}
+                    onPreferencesChange={updateUserPreferences}
+                    openRequest={arrivalSettingsRequest}
+                  />
+                ) : null}
                 <AccountStatus
                   user={user}
                   loading={authLoading}

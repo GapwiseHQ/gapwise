@@ -115,11 +115,12 @@ export function MarketingLandingImpl({
       <section className="marketing-hero" aria-labelledby="marketing-title">
         <div className="marketing-hero-copy">
           <p className="marketing-eyebrow">
-            {isGlobal
-              ? "Free and open-source university software"
-              : isHub
-                ? `Gapwise for ${university?.name}`
-                : `For ${site?.name ?? university?.name ?? "your campus"}`}
+            {site?.presentation?.heroEyebrow ??
+              (isGlobal
+                ? "Free and open-source university software"
+                : isHub
+                  ? `Gapwise for ${university?.name}`
+                  : `For ${site?.name ?? university?.name ?? "your campus"}`)}
           </p>
           <h1 id="marketing-title">
             {isGlobal || isHub ? (
@@ -133,11 +134,12 @@ export function MarketingLandingImpl({
             )}
           </h1>
           <p className="marketing-lede">
-            {isGlobal
-              ? "Gapwise brings timetable planning, campus maps, pedestrian routing, and the time between classes into one multi-university platform."
-              : isHub
-                ? `Choose your ${university?.shortName} campus for a timetable, campus map, building search, and pedestrian routing experience grounded in that campus.`
-                : `One precise workspace for your ${site?.shortName ?? university?.shortName ?? "campus"} timetable, the time between classes, and source-backed campus context where available.`}
+            {site?.presentation?.heroDescription ??
+              (isGlobal
+                ? "Gapwise brings timetable planning, campus search and maps, pedestrian routing, and the time between classes into one multi-university platform."
+                : isHub
+                  ? `Choose your ${university?.shortName} campus for a timetable, campus map, building search, and pedestrian routing experience grounded in that campus.`
+                  : `One precise workspace for your ${site?.shortName ?? university?.shortName ?? "campus"} timetable, the time between classes, and source-backed campus context where available.`)}
           </p>
           <div className="marketing-hero-links">
             <a href={isHub ? "#campuses" : "#capabilities"}>
@@ -176,9 +178,20 @@ export function MarketingLandingImpl({
                 key={campus.id}
                 className="hub-campus-link"
                 href={`https://${campus.canonicalHost}`}
+                style={
+                  {
+                    "--hub-campus-accent": campus.presentation?.accentColor ?? "#4EA7FE",
+                  } as React.CSSProperties
+                }
               >
-                <span>{campus.shortName}</span>
-                <strong>{campus.name}</strong>
+                <span className="hub-campus-visual" aria-hidden="true">
+                  <b>{campus.shortName}</b>
+                  <small>{campus.presentation?.visualLabel}</small>
+                </span>
+                <span className="hub-campus-copy">
+                  <strong>{campus.name}</strong>
+                  <small>{campus.presentation?.cardDescription}</small>
+                </span>
                 <i aria-hidden="true">↗</i>
               </a>
             ))}
@@ -382,6 +395,28 @@ export function MarketingLandingImpl({
         </div>
 
         <div className="ecosystem-grid">
+          <div
+            className="ecosystem-card"
+            data-ecosystem="developers"
+            style={{ "--eco-accent": "#4EA7FE" } as React.CSSProperties}
+          >
+            <div className="ecosystem-card-header">
+              <span className="ecosystem-card-badge">Build</span>
+              <h3>API, SDK & CLI</h3>
+            </div>
+            <p>
+              Public campus discovery and deterministic planning contracts, official SDKs, and the
+              Gapwise command-line toolkit.
+            </p>
+            <div className="ecosystem-card-actions">
+              <Link className="product-story-link" to="/developers">
+                API & SDK <span aria-hidden="true">↗</span>
+              </Link>
+              <ExternalProductLink href="https://github.com/GapwiseHQ/gapwise-cli">
+                CLI on GitHub
+              </ExternalProductLink>
+            </div>
+          </div>
           <div
             className="ecosystem-card"
             data-ecosystem="ai"

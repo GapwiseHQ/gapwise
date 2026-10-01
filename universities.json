@@ -5,14 +5,28 @@
       "id": "gapwise-global",
       "role": "global",
       "hosts": ["gapwise.ca", "www.gapwise.ca"],
-      "canonicalHost": "gapwise.ca"
+      "canonicalHost": "gapwise.ca",
+      "presentation": {
+        "accentColor": "#4EA7FE",
+        "heroEyebrow": "Free and open-source university software",
+        "heroDescription": "Gapwise brings timetable planning, campus search and maps, pedestrian routing, and the time between classes into one multi-university platform.",
+        "ogTitle": "Gapwise — University Timetable & Campus Navigation",
+        "ogDescription": "Free and open-source university timetable planning, campus navigation, routing, and between-class infrastructure."
+      }
     },
     {
       "id": "uoft-hub",
       "role": "university-hub",
       "hosts": ["uoft.gapwise.ca"],
       "canonicalHost": "uoft.gapwise.ca",
-      "universityId": "uoft"
+      "universityId": "uoft",
+      "presentation": {
+        "accentColor": "#1E4B87",
+        "heroEyebrow": "Gapwise for the University of Toronto",
+        "heroDescription": "Choose UTM, UTSG, or UTSC for a timetable, campus map, building search, and routing experience grounded in that campus.",
+        "ogTitle": "Gapwise for the University of Toronto",
+        "ogDescription": "The Gapwise tri-campus hub for UTM, UTSG, and UTSC."
+      }
     },
     {
       "id": "uoft-utm",
@@ -22,7 +36,14 @@
       "universityId": "uoft",
       "campusId": "utm",
       "name": "University of Toronto Mississauga",
-      "shortName": "UTM"
+      "shortName": "UTM",
+      "presentation": {
+        "accentColor": "#4EA7FE",
+        "heroDescription": "Plan classes, buildings, routes, and time between classes across the Mississauga campus.",
+        "cardDescription": "Mississauga campus timetable planning, building discovery, and pedestrian routing.",
+        "timetableLabel": "ACORN",
+        "visualLabel": "Mississauga"
+      }
     },
     {
       "id": "uoft-utsg",
@@ -32,7 +53,14 @@
       "universityId": "uoft",
       "campusId": "utsg",
       "name": "University of Toronto St. George",
-      "shortName": "UTSG"
+      "shortName": "UTSG",
+      "presentation": {
+        "accentColor": "#1E4B87",
+        "heroDescription": "Plan classes, buildings, routes, and time between classes across the downtown St. George campus.",
+        "cardDescription": "Downtown St. George timetable planning, building discovery, and pedestrian routing.",
+        "timetableLabel": "ACORN",
+        "visualLabel": "St. George"
+      }
     },
     {
       "id": "uoft-utsc",
@@ -42,7 +70,14 @@
       "universityId": "uoft",
       "campusId": "utsc",
       "name": "University of Toronto Scarborough",
-      "shortName": "UTSC"
+      "shortName": "UTSC",
+      "presentation": {
+        "accentColor": "#18A999",
+        "heroDescription": "Plan classes, buildings, routes, and time between classes across the Scarborough campus.",
+        "cardDescription": "Scarborough campus timetable planning, building discovery, and pedestrian routing.",
+        "timetableLabel": "ACORN",
+        "visualLabel": "Scarborough"
+      }
     },
     {
       "id": "carleton-edition",

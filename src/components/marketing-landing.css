@@ -196,7 +196,7 @@
   padding: 1rem 1.1rem;
   border: 1px solid var(--marketing-line);
   border-radius: 1rem;
-  background: color-mix(in srgb, var(--background) 90%, var(--accent) 10%);
+  background: color-mix(in srgb, var(--background) 94%, var(--hub-campus-accent) 6%);
   transition:
     border-color 160ms ease,
     transform 160ms ease,
@@ -205,22 +205,59 @@
 
 .hub-campus-link:hover,
 .hub-campus-link:focus-visible {
-  border-color: color-mix(in srgb, var(--accent) 55%, var(--marketing-line));
-  background: color-mix(in srgb, var(--background) 82%, var(--accent) 18%);
+  border-color: color-mix(in srgb, var(--hub-campus-accent) 55%, var(--marketing-line));
+  background: color-mix(in srgb, var(--background) 88%, var(--hub-campus-accent) 12%);
   transform: translateY(-2px);
 }
 
-.hub-campus-link span {
-  color: var(--accent);
+.hub-campus-visual {
+  position: relative;
+  display: flex;
+  min-height: 3.5rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  padding: 0.55rem;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--hub-campus-accent) 82%, white), transparent),
+    repeating-linear-gradient(120deg, transparent 0 9px, rgb(255 255 255 / 18%) 10px 11px),
+    var(--hub-campus-accent);
+  color: white;
+}
+
+.hub-campus-visual b {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 650;
 }
 
-.hub-campus-link strong {
+.hub-campus-visual small {
+  overflow: hidden;
+  font-size: 0.58rem;
+  line-height: 1.2;
+  opacity: 0.86;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hub-campus-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.hub-campus-copy strong {
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 560;
+}
+
+.hub-campus-copy small {
+  color: var(--muted-foreground);
+  font-size: 0.72rem;
+  line-height: 1.4;
 }
 
 .hub-campus-link i {

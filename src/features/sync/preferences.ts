@@ -4,7 +4,7 @@ import type { GapwiseCampusId } from "@/data/campuses";
 import { getCampusAccessPoint, type CampusAccessKind } from "@/data/utm/campus-access-points";
 import type { RoutePreferences } from "@/features/routing/types";
 import { isEncryptedPrivateCloudAuthoritative } from "@/features/security/private-cloud-mode";
-import { activeUniversity } from "@/universities/registry";
+import { activeUniversity, UNIVERSITIES } from "@/universities/registry";
 
 export type DayOrigin = "commute" | "residence";
 
@@ -37,9 +37,15 @@ export function sanitizeUserPreferences(
 ): UserPreferences {
   const route = sanitizeRoutePreferences(value);
   const currentUniversity = activeUniversity();
+  const requestedCampus = value?.mainCampus;
+  const campusIsSupported = requestedCampus
+    ? currentUniversity
+      ? currentUniversity.campuses.includes(requestedCampus)
+      : UNIVERSITIES.some((university) => university.campuses.includes(requestedCampus))
+    : false;
   const mainCampus =
-    value?.mainCampus && currentUniversity?.campuses.includes(value.mainCampus)
-      ? value.mainCampus
+    requestedCampus && campusIsSupported
+      ? requestedCampus
       : currentUniversity?.campuses.length === 1
         ? currentUniversity.campuses[0]!
         : null;

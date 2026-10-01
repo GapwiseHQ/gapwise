@@ -7,17 +7,14 @@ import {
   Check,
   ChevronRight,
   Code2,
-  Github,
+  GitBranch,
   MapPin,
   Navigation,
   Search,
   Sparkles,
 } from "lucide-react";
 import { useMemo, useState, type CSSProperties } from "react";
-import {
-  canonicalUrlForUniversity,
-  supportedUniversities,
-} from "@/universities/registry";
+import { canonicalUrlForUniversity, supportedUniversities } from "@/universities/registry";
 import "./global-marketing-home.css";
 
 const FEATURED_UNIVERSITY_IDS = ["uoft", "waterloo", "mcgill", "ubc", "mcmaster", "queens"];
@@ -330,7 +327,14 @@ export function GlobalMarketingHome() {
               ["Study commons", "8 min · near next class", "Nearby"],
               ["Student centre", "4 min · open now", "Closest"],
             ].map(([name, detail, tag], index) => (
-              <div key={name} className={index === 0 ? "global-home-search-result is-featured" : "global-home-search-result"}>
+              <div
+                key={name}
+                className={
+                  index === 0
+                    ? "global-home-search-result is-featured"
+                    : "global-home-search-result"
+                }
+              >
                 <div>
                   <strong>{name}</strong>
                   <span>{detail}</span>
@@ -342,7 +346,11 @@ export function GlobalMarketingHome() {
         </div>
       </section>
 
-      <section id="universities" className="global-home-universities" aria-labelledby="global-universities-title">
+      <section
+        id="universities"
+        className="global-home-universities"
+        aria-labelledby="global-universities-title"
+      >
         <div className="global-home-university-heading">
           <div>
             <p className="global-home-eyebrow">Campus coverage</p>
@@ -402,7 +410,11 @@ export function GlobalMarketingHome() {
         </div>
       </section>
 
-      <section id="ecosystem" className="global-home-ecosystem" aria-labelledby="global-ecosystem-title">
+      <section
+        id="ecosystem"
+        className="global-home-ecosystem"
+        aria-labelledby="global-ecosystem-title"
+      >
         <div className="global-home-section-heading">
           <p className="global-home-eyebrow">One open platform</p>
           <h2 id="global-ecosystem-title">Beyond the timetable.</h2>
@@ -416,8 +428,7 @@ export function GlobalMarketingHome() {
           {ecosystemProducts.map((product, index) => {
             const Icon = product.icon;
             const style = { "--ecosystem-accent": product.accent } as CSSProperties;
-            const className =
-              "global-home-ecosystem-card" + (index === 0 ? " is-featured" : "");
+            const className = "global-home-ecosystem-card" + (index === 0 ? " is-featured" : "");
             const content = (
               <>
                 <div className="global-home-ecosystem-icon" style={style}>
@@ -463,7 +474,7 @@ export function GlobalMarketingHome() {
             target="_blank"
             rel="noreferrer"
           >
-            <Github aria-hidden="true" /> View on GitHub
+            <GitBranch aria-hidden="true" /> View on GitHub
           </a>
         </div>
         <div className="global-home-code" aria-label="Gapwise SDK example">

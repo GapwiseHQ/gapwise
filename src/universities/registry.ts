@@ -14,10 +14,27 @@ export type SiteDefinition = {
   campusId?: string;
   name?: string;
   shortName?: string;
+  presentation?: {
+    accentColor?: string;
+    heroEyebrow?: string;
+    heroDescription?: string;
+    cardDescription?: string;
+    timetableLabel?: string;
+    visualLabel?: string;
+    ogTitle?: string;
+    ogDescription?: string;
+    links?: Array<{ label: string; href: string }>;
+  };
 };
 
 export const UNIVERSITIES: readonly University[] = manifest.universities;
 export const SITES: readonly SiteDefinition[] = manifest.sites as readonly SiteDefinition[];
+
+function globalSite(): SiteDefinition {
+  const site = SITES.find((candidate) => candidate.role === "global");
+  if (!site) throw new Error("University registry is missing the global Gapwise site");
+  return site;
+}
 
 function normalizeHostname(hostname: string) {
   return hostname.toLowerCase().replace(/\.$/, "");
@@ -105,7 +122,7 @@ export function siteForHostname(hostname: string): SiteDefinition | null {
   const explicit = SITES.find((site) => site.hosts.includes(productionHost));
   if (explicit) return explicit;
   const university = manifest.universities.find((entry) => entry.hosts.includes(productionHost));
-  if (!university) return null;
+  if (!university) return globalSite();
   return singleCampusSiteForUniversity(university, productionHost);
 }
 
@@ -126,12 +143,12 @@ function singleCampusSiteForUniversity(
 }
 
 export function activeSite(): SiteDefinition | null {
-  if (typeof window === "undefined") return SITES.find((site) => site.role === "global") ?? null;
+  if (typeof window === "undefined") return globalSite();
   const host = normalizeHostname(window.location.hostname);
   if (isPreviewOrLocalHost(host)) {
     const params = new URLSearchParams(window.location.search);
     const requestedSite = params.get("site");
-    if (requestedSite) return SITES.find((site) => site.id === requestedSite) ?? null;
+    if (requestedSite) return SITES.find((site) => site.id === requestedSite) ?? globalSite();
     const requestedCampus = params.get("campus");
     if (requestedCampus) {
       const campusSite = SITES.find((site) => site.campusId === requestedCampus);
@@ -152,9 +169,9 @@ export function activeSite(): SiteDefinition | null {
       const university = universityById(requestedUniversity);
       return university ? singleCampusSiteForUniversity(university) : null;
     }
-    // Keep the longstanding local/preview default on the UTM application while
-    // allowing every site role to be exercised explicitly with query parameters.
-    return SITES.find((site) => site.id === "uoft-utm") ?? null;
+    // Named .gapwise.test subdomains exercise the same registry path as production.
+    // Generic localhost and Vercel preview hosts intentionally represent Gapwise globally.
+    return host.endsWith(".gapwise.test") ? siteForHostname(host) : globalSite();
   }
   return siteForHostname(host);
 }
@@ -167,27 +184,15 @@ export function universityForHostname(
   const local = host === "localhost" || host === "127.0.0.1" || host === "gapwise.test";
   const preview = host.endsWith(".vercel.app");
   if (override && (local || preview)) return universityById(override);
-  if (local || preview) return universityById("uoft");
   const site = siteForHostname(host);
   if (!site || site.role === "global" || site.role === "reserved") return null;
   return site.universityId ? universityById(site.universityId) : null;
 }
 
 export function activeUniversity(): University | null {
-  if (typeof window === "undefined") return universityById("uoft");
-  const host = window.location.hostname;
-  const isPreviewOrDev = isPreviewOrLocalHost(host);
-  const requested = new URLSearchParams(window.location.search).get("university");
-  let override: string | null = null;
-  if (isPreviewOrDev) {
-    try {
-      if (requested) window.sessionStorage.setItem("gapwise:dev-university", requested);
-      override = requested ?? window.sessionStorage.getItem("gapwise:dev-university");
-    } catch {
-      override = requested;
-    }
-  }
-  return universityForHostname(host, override);
+  const site = activeSite();
+  if (!site?.universityId || site.role === "global" || site.role === "reserved") return null;
+  return universityById(site.universityId);
 }
 
 export function campusForHostname(hostname: string, overrideCampus?: string | null): string | null {
@@ -202,20 +207,10 @@ export function campusForHostname(hostname: string, overrideCampus?: string | nu
 }
 
 export function activeCampus(): string | null {
-  if (typeof window === "undefined") return "utm";
-  const host = window.location.hostname;
-  const isPreviewOrDev = isPreviewOrLocalHost(host);
-  const requested = new URLSearchParams(window.location.search).get("campus");
-  let override: string | null = null;
-  if (isPreviewOrDev) {
-    try {
-      if (requested) window.sessionStorage.setItem("gapwise:dev-campus", requested);
-      override = requested ?? window.sessionStorage.getItem("gapwise:dev-campus");
-    } catch {
-      override = requested;
-    }
-  }
-  return campusForHostname(host, override);
+  const site = activeSite();
+  return site?.role === "campus-edition" || site?.role === "single-campus-edition"
+    ? (site.campusId ?? null)
+    : null;
 }
 
 export function campusesForUniversity(university: University): string[] {
