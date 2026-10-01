@@ -34,7 +34,7 @@ export const Route = createFileRoute("/developers")({
   component: DevelopersPage,
 });
 
-const API_EXAMPLE = `// Discover 13 supported universities and 15 campus models
+const API_EXAMPLE = `// Discover 14 supported universities and 16 campus models
 const universities = await fetch("https://api.gapwise.ca/v1/universities").then((r) => r.json());
 
 // Calculate a deterministic route (e.g. Carleton University)
@@ -48,7 +48,7 @@ const { data, meta } = await response.json();`;
 
 const ENDPOINTS = [
   ["GET", "/v1", "Discovery and version metadata"],
-  ["GET", "/v1/universities", "13 supported universities and editions"],
+  ["GET", "/v1/universities", "14 supported universities and editions"],
   ["GET", "/v1/campuses", "15 supported campus models and metadata"],
   ["GET", "/v1/buildings", "Buildings, coverage, and provenance"],
   ["GET", "/v1/places", "Campus places and availability"],
@@ -131,7 +131,7 @@ function DevelopersPage() {
                 Build with the campus layer behind Gapwise.
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground">
-                Use the stable API and SDKs for deterministic campus intelligence across 13
+                Use the stable API and SDKs for deterministic campus intelligence across 14
                 supported universities, Gapwise Data for canonical campus models and raw artifacts,
                 or the separate AI/MCP surface for explicitly delegated student context.
               </p>

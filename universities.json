@@ -246,6 +246,30 @@
       "routableCampuses": ["waterloo-main"],
       "dataPaths": ["universities/waterloo/campus.json"],
       "status": "supported"
+    },
+    {
+      "id": "mcgill",
+      "name": "McGill University",
+      "shortName": "McGill",
+      "accentColor": "#ED1B2F",
+      "campusScope": "Downtown Montreal campus",
+      "hosts": ["mcgill.gapwise.ca"],
+      "campuses": ["mcgill-downtown"],
+      "defaultCampus": "mcgill-downtown",
+      "timetableAdapter": "mcgill-my-courses-ics",
+      "calendarSource": "myCourses calendar export",
+      "calendarInstructions": "In myCourses Calendar, enable the calendar feed, choose Subscribe, select the course events to export, and download the .ics file.",
+      "calendarHelpUrl": "https://teachingkb.mcgill.ca/tlk/organize-your-course-schedule-and-create-task-list",
+      "preferredImportMethod": "file",
+      "acceptedFileTypes": ".ics,text/calendar",
+      "fileTypeLabel": ".ics",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": ["mcgill-downtown"],
+      "dataPaths": ["universities/mcgill/campus.json"],
+      "status": "supported"
     }
   ]
 }

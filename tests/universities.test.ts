@@ -65,6 +65,7 @@ describe("university registry", () => {
     expect(universityForHostname("brock.gapwise.ca")?.id).toBe("brock");
     expect(universityForHostname("ubc.gapwise.ca")?.id).toBe("ubc");
     expect(universityForHostname("waterloo.gapwise.ca")?.id).toBe("waterloo");
+    expect(universityForHostname("mcgill.gapwise.ca")?.id).toBe("mcgill");
     expect(universityForHostname("localhost")?.id).toBe("uoft");
     expect(universityForHostname("localhost", "carleton")?.id).toBe("carleton");
     expect(universityForHostname("localhost", "tmu")?.id).toBe("tmu");
@@ -79,6 +80,7 @@ describe("university registry", () => {
     expect(universityForHostname("preview-branch.vercel.app", "brock")?.id).toBe("brock");
     expect(universityForHostname("preview-branch.vercel.app", "ubc")?.id).toBe("ubc");
     expect(universityForHostname("preview-branch.vercel.app", "waterloo")?.id).toBe("waterloo");
+    expect(universityForHostname("preview-branch.vercel.app", "mcgill")?.id).toBe("mcgill");
     expect(universityForHostname("gapwise.ca", "carleton")?.id).toBe("uoft");
     expect(universityForHostname("unknown.gapwise.ca")).toBeNull();
     expect(universityForHostname("attacker.com")).toBeNull();
@@ -181,6 +183,7 @@ describe("canonical meeting and campus data contracts", () => {
     expect(typeof timetableAdapters["brock-schedule"]).toBe("function");
     expect(typeof timetableAdapters["ubc-workday"]).toBe("function");
     expect(typeof timetableAdapters["waterloo-quest"]).toBe("function");
+    expect(typeof timetableAdapters["mcgill-my-courses-ics"]).toBe("function");
 
     const uoftDemo = await loadDemoTimetable("acorn-ics");
     expect(uoftDemo.length).toBeGreaterThan(0);
@@ -235,6 +238,11 @@ describe("canonical meeting and campus data contracts", () => {
     expect(waterlooDemo.length).toBeGreaterThan(0);
     expect(waterlooDemo.every((m) => m.universityId === "waterloo")).toBe(true);
     expect(waterlooDemo.map((m) => m.courseCode)).toContain("CS 135");
+
+    const mcgillDemo = await loadDemoTimetable("mcgill-my-courses-ics");
+    expect(mcgillDemo.length).toBeGreaterThan(0);
+    expect(mcgillDemo.every((m) => m.universityId === "mcgill")).toBe(true);
+    expect(mcgillDemo.map((m) => m.courseCode)).toContain("COMP 202");
 
     const fallbackDemo = await loadDemoTimetable(undefined);
     expect(fallbackDemo).toEqual(uoftDemo);
@@ -356,6 +364,7 @@ describe("canonical meeting and campus data contracts", () => {
       "carleton",
       "guelph",
       "laurier",
+      "mcgill",
       "mcmaster",
       "queens",
       "tmu",

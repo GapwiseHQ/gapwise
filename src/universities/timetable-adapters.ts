@@ -56,6 +56,10 @@ export const timetableAdapters: Record<string, (text: string) => Promise<ParsedT
     const { parseWaterlooTimetable } = await import("./waterloo/adapter");
     return parseWaterlooTimetable(text);
   },
+  "mcgill-my-courses-ics": async (text) => {
+    const { parseMcGillIcs } = await import("./mcgill/adapter");
+    return parseMcGillIcs(text);
+  },
   // GAPWISE_ADAPTER_REGISTRY: the CLI inserts new timetable adapters here.
 };
 
@@ -153,6 +157,13 @@ export const demoTimetableLoaders: Record<string, (campusId?: string) => Promise
       import("./waterloo/adapter"),
     ]);
     return DEMO_WATERLOO_MEETINGS.flatMap(normalizeWaterlooMeeting);
+  },
+  "mcgill-my-courses-ics": async () => {
+    const [{ DEMO_MCGILL_MEETINGS }, { normalizeMcGillMeeting }] = await Promise.all([
+      import("./mcgill/demo-timetable"),
+      import("./mcgill/adapter"),
+    ]);
+    return DEMO_MCGILL_MEETINGS.flatMap(normalizeMcGillMeeting);
   },
   // GAPWISE_DEMO_LOADER_REGISTRY: the CLI inserts new demo loaders here.
 };

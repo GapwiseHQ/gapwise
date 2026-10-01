@@ -39,6 +39,7 @@ const INSTITUTION_MARKETING_METRICS: Record<
   brock: { count: 12, sampleCodes: ["ST", "TH", "MC", "GSB"] },
   ubc: { count: 236, sampleCodes: ["ICCS", "BUCH", "PHRM", "LIFE"] },
   waterloo: { count: 68, sampleCodes: ["MC", "DC", "QNC", "AL"] },
+  mcgill: { count: 49, sampleCodes: ["LEA", "MAASS", "RPHYS", "ARTS"] },
 };
 
 export function MarketingLandingImpl({

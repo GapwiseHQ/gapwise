@@ -140,6 +140,10 @@ export const OUTDOOR_CAMPUS_LOADERS: Record<string, CampusSnapshotLoader> = {
     import("@/data/campuses/waterloo/campus.json").then(
       (m) => m.default as unknown as CampusSnapshot,
     ),
+  "mcgill-downtown": () =>
+    import("@/data/campuses/mcgill/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
 };
 
 const plannerCache = new Map<string, TransitionPlanner>();

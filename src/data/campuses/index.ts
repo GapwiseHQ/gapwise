@@ -342,6 +342,7 @@ export function ensureCampusCatalog(campusId: string | null | undefined): Promis
   const catalogLoaders: Record<string, () => Promise<{ default: string }>> = {
     "ubc-vancouver": () => import("./ubc/catalog.json?raw"),
     "waterloo-main": () => import("./waterloo/catalog.json?raw"),
+    "mcgill-downtown": () => import("./mcgill/catalog.json?raw"),
   };
   const loader = catalogLoaders[campusId];
   const load = loader

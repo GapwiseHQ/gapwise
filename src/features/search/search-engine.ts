@@ -65,6 +65,7 @@ const UNIVERSITY_ALIASES: Record<string, string[]> = {
   brock: ["Brock", "Badgers", "St. Catharines", "Niagara"],
   ubc: ["UBC", "University of British Columbia", "Point Grey", "Vancouver"],
   waterloo: ["Waterloo", "University of Waterloo", "UW", "UWaterloo", "Warriors"],
+  mcgill: ["McGill", "McGill University", "Montreal", "Montréal", "Downtown"],
 };
 
 function normalize(text: string): string {

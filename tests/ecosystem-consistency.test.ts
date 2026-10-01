@@ -23,6 +23,7 @@ const EXPECTED_UNIVERSITY_IDS = [
   "brock",
   "ubc",
   "waterloo",
+  "mcgill",
 ] as const;
 
 describe("Gapwise Ecosystem Consistency", () => {

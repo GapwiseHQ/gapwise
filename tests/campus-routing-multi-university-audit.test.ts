@@ -6,9 +6,9 @@ describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
   const auditReport = runComprehensiveCampusAudit();
 
   it("completes the full supported-platform audit without crashing", () => {
-    expect(auditReport.summary.totalUniversities).toBe(13);
-    expect(auditReport.summary.totalCampuses).toBe(15);
-    expect(auditReport.summary.routableCampuses).toBe(15);
+    expect(auditReport.summary.totalUniversities).toBe(14);
+    expect(auditReport.summary.totalCampuses).toBe(16);
+    expect(auditReport.summary.routableCampuses).toBe(16);
     expect(auditReport.summary.totalRouteFailures).toBe(0);
   });
 
