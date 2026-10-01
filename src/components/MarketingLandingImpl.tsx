@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { UploadPanel } from "@/components/UploadPanel";
 import type { MarketingLandingProps } from "./MarketingLanding";
+import { GlobalMarketingHome } from "./GlobalMarketingHome";
 import {
   activeUniversity,
   activeSite,
@@ -104,6 +105,10 @@ export function MarketingLandingImpl({
     });
     return () => observer.disconnect();
   }, []);
+
+  if (isGlobal) {
+    return <GlobalMarketingHome />;
+  }
 
   return (
     <div ref={rootRef} className="marketing-home" data-active-section={activeSection}>
