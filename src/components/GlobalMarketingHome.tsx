@@ -32,6 +32,7 @@ const ecosystemProducts = [
     cta: "Open Gapwise AI",
     accent: "#a78bfa",
     icon: Sparkles,
+    internal: false,
   },
   {
     id: "docs",
@@ -42,6 +43,7 @@ const ecosystemProducts = [
     cta: "Open docs",
     accent: "#38bdf8",
     icon: BookOpen,
+    internal: false,
   },
   {
     id: "data",
@@ -52,6 +54,7 @@ const ecosystemProducts = [
     cta: "Explore data",
     accent: "#ff5a66",
     icon: Braces,
+    internal: false,
   },
   {
     id: "status",
@@ -62,6 +65,7 @@ const ecosystemProducts = [
     cta: "Open status",
     accent: "#39cf97",
     icon: Activity,
+    internal: false,
   },
   {
     id: "developers",
