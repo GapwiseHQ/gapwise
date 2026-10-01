@@ -8,6 +8,7 @@ const baseProps = {
   error: null,
   remember: false,
   onRememberChange: () => undefined,
+  university: null,
 };
 
 function renderPanel(loading: boolean) {
