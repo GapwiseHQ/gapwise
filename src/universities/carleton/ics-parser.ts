@@ -47,9 +47,9 @@ function parseSummary(summary: string): {
 } {
   const cleaned = summary.replace(/\s+/g, " ").trim();
 
-  // Try matching "[DEPT] [1234][SECTION?]" or "[DEPT] [1234] [SECTION?]"
-  // e.g. "COMP 1405 A LEC - Intro to CS", "BUSI 1004A Financial Accounting", "MATH 1007 TUT A1"
-  const courseMatch = cleaned.match(/\b([A-Z]{4})\s*(\d{4})([A-Z0-9]*)\b/i);
+  // Canadian course calendars commonly use a 2-8 letter subject and a 3-4 digit
+  // number. The institution adapter remains authoritative for accepting the code.
+  const courseMatch = cleaned.match(/\b([A-Z]{2,8})\s*(\d{3,4})([A-Z0-9]*)\b/i);
   const courseCode = courseMatch
     ? `${courseMatch[1]!.toUpperCase()} ${courseMatch[2]!}`
     : cleaned || "UNKNOWN";
@@ -62,7 +62,7 @@ function parseSummary(summary: string): {
   // Look for section if not found in course code suffix
   if (!section) {
     const remainder = courseMatch ? cleaned.slice(courseMatch.index! + courseMatch[0].length) : "";
-    const secMatch = remainder.match(/^\s*(?:(?:SEC|SECTION|SECT)\s+)?([A-Z]\d?)\b/i);
+    const secMatch = remainder.match(/^\s*(?:(?:SEC|SECTION|SECT)\s+)?([A-Z0-9][A-Z0-9-]{0,7})\b/i);
     if (
       secMatch &&
       secMatch[1] &&
@@ -80,7 +80,7 @@ function parseSummary(summary: string): {
   } else if (courseMatch) {
     courseName = cleaned
       .slice(courseMatch.index! + courseMatch[0].length)
-      .replace(/^\s*(?:(?:SEC|SECTION|SECT)\s+)?[A-Z]\d?\b/i, "")
+      .replace(/^\s*(?:(?:SEC|SECTION|SECT)\s+)?[A-Z0-9][A-Z0-9-]{0,7}\b/i, "")
       .replace(/^\s*(?:\(?\b(?:LEC|TUT|LAB|SEM|GRP|WKS|PRC|REC|DIS)\b\)?)\s*/i, "")
       .trim();
   }
@@ -140,8 +140,8 @@ export function parseIcs(
         if (!summary.trim()) continue;
         if (String(vevent.getFirstPropertyValue("status") ?? "").toUpperCase() === "CANCELLED")
           continue;
-        if (!/\b[A-Z]{4}\s*\d{4}/i.test(summary)) {
-          warnings.push(`Skipped “${summary}”: no recognizable Carleton course code.`);
+        if (!/\b[A-Z]{2,8}\s*\d{3,4}[A-Z]?\b/i.test(summary)) {
+          warnings.push(`Skipped “${summary}”: no recognizable ${adapter.name} course code.`);
           continue;
         }
         const event = new ICAL.Event(vevent);
@@ -161,7 +161,7 @@ export function parseIcs(
           parseSummary(summary);
         const normalizedCode = adapter.parseCourseCode(courseCode);
         if (!normalizedCode) {
-          warnings.push(`Skipped “${summary}”: invalid Carleton course code.`);
+          warnings.push(`Skipped “${summary}”: invalid ${adapter.name} course code.`);
           continue;
         }
 
@@ -270,7 +270,7 @@ export function parseIcs(
         const location = resolveLocation(rawLocation, kind, campus);
         if (kind === "physical" && !location.buildingId) {
           warnings.push(
-            `Location "${rawLocation}" for ${normalizedCode} could not be linked to a known Carleton campus building.`,
+            `Location "${rawLocation}" for ${normalizedCode} could not be linked to a known ${adapter.name} campus building.`,
           );
         }
 

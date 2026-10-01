@@ -47,6 +47,7 @@ async function fixture() {
     "brock",
     "ubc",
     "waterloo",
+    "mcgill",
   ]) {
     await mkdir(join(root, `data/universities/${uni}`), { recursive: true });
     await mkdir(join(root, `gapwise/src/data/campuses/${uni}`), { recursive: true });
@@ -123,6 +124,7 @@ describe("canonical campus mirror CLI", () => {
       "brock",
       "ubc",
       "waterloo",
+      "mcgill",
     ]) {
       expect(await f.read(`gapwise/src/data/campuses/${uni}/campus.json`)).toBe(
         await f.read(`data/universities/${uni}/campus.json`),

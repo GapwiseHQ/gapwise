@@ -11,7 +11,7 @@
 
 Gapwise operates on an intensely disciplined **local-first, zero-unnecessary-cloud architecture**. Course schedules, `.ics` files, calendar parsing, timetable rendering, walking route graphs, gap detection, and campus building spatial indexes execute 100% client-side in the student's browser (WebAssembly and Web Crypto).
 
-Because of this architectural posture, **Gapwise's current operational infrastructure cost is $0.00/month across all 13 supported universities**.
+Because of this architectural posture, **Gapwise's current operational infrastructure cost is $0.00/month across all 14 supported universities**.
 
 This document models the resource consumption, provider limits, financial projections, and explicit upgrade triggers across four growth stages:
 

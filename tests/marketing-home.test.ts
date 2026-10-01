@@ -167,7 +167,7 @@ describe("Gapwise marketing system", () => {
       },
     ];
 
-    expect(manifest.universities).toHaveLength(13);
+    expect(manifest.universities).toHaveLength(14);
 
     for (const expected of expectedUniversities) {
       const entry = manifest.universities.find((u: { id: string }) => u.id === expected.id);
