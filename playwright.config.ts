@@ -49,7 +49,7 @@ export default defineConfig({
   webServer: useExternalServer
     ? undefined
     : {
-        command: `bun run build && bunx vite preview --host localhost --port ${port}`,
+        command: `bun run build && bunx vite preview --host 127.0.0.1 --port ${port}`,
         url: localServerUrl,
         reuseExistingServer: !process.env.CI,
         timeout: 120_000,
