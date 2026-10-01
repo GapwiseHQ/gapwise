@@ -72,7 +72,7 @@ test("ACORN building evidence activates the correct UTM, UTSG, and UTSC products
   failures.assertClean();
 });
 
-test("mixed and ambiguous ACORN locations require an explicit campus choice", async ({
+test("mixed and ambiguous ACORN locations preserve the explicit campus edition", async ({
   page,
   baseURL,
 }) => {
@@ -83,9 +83,8 @@ test("mixed and ambiguous ACORN locations require an explicit campus choice", as
   for (const name of ["acorn-mixed-campus-sanitized.ics", "acorn-ambiguous-campus-sanitized.ics"]) {
     await importFixture(page, name);
     await openDayRoute(page, false);
-    await expect(page.getByRole("heading", { name: "Choose a campus map" })).toBeVisible();
-    await expect(page.getByRole("button", { name: "UTM", exact: true })).toBeVisible();
-    expect(new URL(page.url()).searchParams.get("campus")).toBeNull();
+    await expect(page.getByRole("searchbox", { name: "Search UTM buildings" })).toBeVisible();
+    expect(new URL(page.url()).searchParams.get("campus")).toBe("utm");
   }
 
   failures.assertClean();
