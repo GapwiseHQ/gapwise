@@ -80,10 +80,12 @@ for (const rootFile of [
 }
 
 const [home, sitemap, robots] = await Promise.all([
-  readFile("dist/_universities/uoft/index.html", "utf8"),
+  readFile("dist/_seo/index.html", "utf8"),
   readFile("dist/_seo/sitemap.xml", "utf8"),
   readFile("dist/_seo/robots.txt", "utf8"),
 ]);
+
+await Promise.all([readFile("dist/_global/og-gapwise.png"), readFile("dist/_global/og-card.png")]);
 
 for (const needle of [
   '<meta property="og:site_name" content="Gapwise"',
@@ -158,13 +160,19 @@ for (const university of supportedUniversityEntries) {
 
 for (const path of [
   "/about",
-  "/utm-timetable",
+  "/universities",
+  "/open-source",
   "/campus-map",
   "/gap-planner",
   "/campus-routing",
-  "/acorn-import",
+  "/developers",
+  "/ai",
 ]) {
   requireText(sitemap, `<loc>https://gapwise.ca${path}</loc>`, "sitemap");
+}
+
+for (const institutionSpecificPath of ["/utm-timetable", "/acorn-import", "/places"]) {
+  rejectText(sitemap, `<loc>https://gapwise.ca${institutionSpecificPath}`, "global sitemap");
 }
 
 for (const privatePath of ["/today", "/timetable", "/gaps", "/oauth/"]) {
@@ -486,10 +494,7 @@ for (const uniId of ALL_UNIVERSITY_IDS) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
-  const expectedAlt =
-    uniId === "uoft"
-      ? "Gapwise — University timetable and campus navigation"
-      : `Gapwise — ${escapedName}`;
+  const expectedAlt = `Gapwise — ${escapedName}`;
 
   requireText(html, `<meta property="og:image" content="${expectedImage}" />`, `${uniId} og:image`);
   requireText(
@@ -512,10 +517,7 @@ for (const uniId of ALL_UNIVERSITY_IDS) {
     `<meta name="twitter:image:alt" content="${expectedAlt}" />`,
     `${uniId} twitter:image:alt`,
   );
-  const expectedTitle =
-    uniId === "uoft"
-      ? "Gapwise — University Timetable &amp; Campus Navigation"
-      : `Gapwise for ${escapedName} — Timetable &amp; Campus Navigation`;
+  const expectedTitle = `Gapwise for ${escapedName} — Timetable &amp; Campus Navigation`;
   requireText(html, `<meta property="og:title" content="${expectedTitle}" />`, `${uniId} og:title`);
   requireText(html, `<title>${expectedTitle}</title>`, `${uniId} title`);
 

@@ -63,6 +63,30 @@ const CARDS: CardConfig[] = [
     detail: "University of Toronto",
   },
   {
+    outputPath: "public/campuses/utm/og-card.png",
+    accentColor: "#4EA7FE",
+    textColor: "#93c5fd",
+    title: "Gapwise · UTM",
+    tagline: "Timetable & Campus Navigation",
+    detail: "University of Toronto Mississauga",
+  },
+  {
+    outputPath: "public/campuses/utsg/og-card.png",
+    accentColor: "#1E4B87",
+    textColor: "#93c5fd",
+    title: "Gapwise · UTSG",
+    tagline: "Timetable & Campus Navigation",
+    detail: "University of Toronto St. George",
+  },
+  {
+    outputPath: "public/campuses/utsc/og-card.png",
+    accentColor: "#18A999",
+    textColor: "#5eead4",
+    title: "Gapwise · UTSC",
+    tagline: "Timetable & Campus Navigation",
+    detail: "University of Toronto Scarborough",
+  },
+  {
     outputPath: "public/universities/carleton/og-card.png",
     accentColor: "#E31B23",
     textColor: "#fca5a5",
@@ -166,14 +190,14 @@ const CARDS: CardConfig[] = [
     tagline: "Timetable and downtown campus navigation.",
     detail: "McGill University · Downtown Campus",
   },
-  // ── Root fallbacks (U of T default) ──────────────────────
+  // ── Global ecosystem root ────────────────────────────────
   {
     outputPath: "public/og-card.png",
     accentColor: "#4EA7FE",
     textColor: "#93c5fd",
     title: "Gapwise",
     tagline: "Make the time between classes count.",
-    detail: "University of Toronto",
+    detail: "University timetable · Campus navigation · Open source",
   },
   {
     outputPath: "public/og-gapwise.png",
@@ -181,7 +205,7 @@ const CARDS: CardConfig[] = [
     textColor: "#93c5fd",
     title: "Gapwise",
     tagline: "Make the time between classes count.",
-    detail: "University of Toronto",
+    detail: "University timetable · Campus navigation · Open source",
   },
   // ── Supporting Sites ──────────────────────────────────────
   {

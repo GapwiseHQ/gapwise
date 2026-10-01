@@ -49,7 +49,7 @@ import {
 } from "@/features/sync/preferences";
 import { useIntroDismissed, useTheme } from "@/hooks/use-preferences";
 import { trackFeatureView, trackTimetableImport } from "@/lib/telemetry";
-import { activeCampus, activeUniversity } from "@/universities/registry";
+import { activeCampus, activeSite, activeUniversity } from "@/universities/registry";
 import type { Meeting } from "@/lib/timetable-types";
 import { isEncryptedPrivateCloudAuthoritative } from "@/features/security/private-cloud-mode";
 import { useEncryptedAutosave } from "@/features/sync/use-encrypted-autosave";
@@ -145,6 +145,7 @@ function ProductEmptyState({
 
 function AppLayout() {
   const university = activeUniversity();
+  const site = activeSite();
   const { theme, toggleTheme } = useTheme();
   const { dismissed, dismiss } = useIntroDismissed();
   const { user, loading: authLoading, error: authError } = useAuth();
@@ -211,6 +212,8 @@ function AppLayout() {
     openGapPlan,
     openDayRoute,
   } = useAppNavigation(Boolean(meetings?.length));
+  const isEcosystemHome =
+    destination === "home" && (site?.role === "global" || site?.role === "university-hub");
   const {
     term,
     setTerm,
@@ -630,38 +633,64 @@ function AppLayout() {
           </Link>
 
           <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
-            <button
-              type="button"
-              onClick={() => setSearchOpen(true)}
-              className="button-secondary inline-flex h-9 items-center gap-2 rounded-lg border border-border/80 bg-muted/30 px-2.5 text-xs text-muted-foreground transition hover:border-border hover:bg-muted/60 hover:text-foreground"
-              aria-label="Search campus and classes (⌘K)"
-            >
-              <Search className="h-3.5 w-3.5" aria-hidden="true" />
-              <span className="hidden sm:inline">Search…</span>
-              <kbd className="hidden rounded border border-border/80 bg-background/80 px-1.5 py-0.5 font-mono text-[10px] sm:inline">
-                ⌘K
-              </kbd>
-            </button>
-            <ThemeToggle theme={theme} onToggle={toggleTheme} />
-            <ResidenceSettings
-              user={user}
-              preferences={preferences}
-              onPreferencesChange={updateUserPreferences}
-              openRequest={arrivalSettingsRequest}
-            />
-            <AccountStatus
-              user={user}
-              loading={authLoading}
-              onAccountDeleted={handleAccountDeleted}
-              hasTimetable={Boolean(meetings?.length)}
-              onOnboardingContinue={navigateToday}
-              onOnboardingImport={() => replacementInputRef.current?.click()}
-              settingsRequest={accountSettingsRequest}
-              meetings={exportMeetings}
-              term={term}
-              preferences={preferences}
-              planTransition={planTransition}
-            />
+            {isEcosystemHome ? (
+              <>
+                <a
+                  className="hidden text-sm font-medium text-muted-foreground hover:text-foreground sm:inline"
+                  href="#universities"
+                >
+                  Universities
+                </a>
+                <a
+                  className="hidden text-sm font-medium text-muted-foreground hover:text-foreground sm:inline"
+                  href="https://docs.gapwise.ca"
+                >
+                  Docs
+                </a>
+                <a
+                  className="hidden text-sm font-medium text-muted-foreground hover:text-foreground md:inline"
+                  href="https://github.com/GapwiseHQ"
+                >
+                  GitHub
+                </a>
+                <ThemeToggle theme={theme} onToggle={toggleTheme} />
+              </>
+            ) : (
+              <>
+                <button
+                  type="button"
+                  onClick={() => setSearchOpen(true)}
+                  className="button-secondary inline-flex h-9 items-center gap-2 rounded-lg border border-border/80 bg-muted/30 px-2.5 text-xs text-muted-foreground transition hover:border-border hover:bg-muted/60 hover:text-foreground"
+                  aria-label="Search campus and classes (⌘K)"
+                >
+                  <Search className="h-3.5 w-3.5" aria-hidden="true" />
+                  <span className="hidden sm:inline">Search…</span>
+                  <kbd className="hidden rounded border border-border/80 bg-background/80 px-1.5 py-0.5 font-mono text-[10px] sm:inline">
+                    ⌘K
+                  </kbd>
+                </button>
+                <ThemeToggle theme={theme} onToggle={toggleTheme} />
+                <ResidenceSettings
+                  user={user}
+                  preferences={preferences}
+                  onPreferencesChange={updateUserPreferences}
+                  openRequest={arrivalSettingsRequest}
+                />
+                <AccountStatus
+                  user={user}
+                  loading={authLoading}
+                  onAccountDeleted={handleAccountDeleted}
+                  hasTimetable={Boolean(meetings?.length)}
+                  onOnboardingContinue={navigateToday}
+                  onOnboardingImport={() => replacementInputRef.current?.click()}
+                  settingsRequest={accountSettingsRequest}
+                  meetings={exportMeetings}
+                  term={term}
+                  preferences={preferences}
+                  planTransition={planTransition}
+                />
+              </>
+            )}
           </div>
         </div>
       </header>

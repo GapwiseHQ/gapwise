@@ -9,11 +9,9 @@ const FEATURE_PATHS = [
   "/about",
   "/universities",
   "/open-source",
-  "/utm-timetable",
   "/campus-map",
   "/gap-planner",
   "/campus-routing",
-  "/acorn-import",
 ] as const;
 
 function sitemapLocations(xml: string) {
@@ -52,8 +50,6 @@ describe("Gapwise searchability and entity metadata", () => {
     const expected = [
       `${SITE_ORIGIN}/`,
       ...FEATURE_PATHS.map((path) => `${SITE_ORIGIN}${path}`),
-      `${SITE_ORIGIN}/places`,
-      ...listCampusPlaces().map((place) => `${SITE_ORIGIN}/places/${place.id}`),
       `${SITE_ORIGIN}/developers`,
       `${SITE_ORIGIN}/ai`,
       `${SITE_ORIGIN}/support`,
@@ -118,6 +114,12 @@ describe("Gapwise searchability and entity metadata", () => {
       trailingSlash?: boolean;
       headers: Array<{ source: string; headers: Array<{ key: string; value: string }> }>;
       rewrites: Array<{ source: string; destination: string }>;
+      redirects: Array<{
+        source: string;
+        destination: string;
+        permanent: boolean;
+        has?: Array<{ type: string; value: string }>;
+      }>;
     };
     const rewrite = new Map(config.rewrites.map((entry) => [entry.source, entry.destination]));
 
@@ -125,9 +127,20 @@ describe("Gapwise searchability and entity metadata", () => {
     for (const path of FEATURE_PATHS) {
       expect(rewrite.get(path)).toBe(`/_seo/${path.slice(1)}.html`);
     }
-    expect(rewrite.get("/places")).toBe("/_seo/places.html");
-    for (const place of listCampusPlaces()) {
-      expect(rewrite.get(`/places/${place.id}`)).toBe(`/_seo/places--${place.id}.html`);
+    expect(rewrite.has("/utm-timetable")).toBe(false);
+    expect(rewrite.has("/acorn-import")).toBe(false);
+    expect(rewrite.has("/places")).toBe(false);
+    for (const place of listCampusPlaces()) expect(rewrite.has(`/places/${place.id}`)).toBe(false);
+
+    for (const [source, destination] of [
+      ["/utm-timetable", "https://utm.gapwise.ca/utm-timetable"],
+      ["/acorn-import", "https://utm.gapwise.ca/acorn-import"],
+      ["/places/:path*", "https://utm.gapwise.ca/places/:path*"],
+    ]) {
+      const redirect = config.redirects.find((entry) => entry.source === source);
+      expect(redirect?.destination).toBe(destination);
+      expect(redirect?.permanent).toBe(true);
+      expect(redirect?.has).toContainEqual({ type: "host", value: "gapwise.ca" });
     }
 
     const noindexSources = config.headers
@@ -182,8 +195,30 @@ describe("Gapwise searchability and entity metadata", () => {
         destinationFor("/(logo-mark.svg|favicon.*|apple-touch-icon.png|site.webmanifest)"),
       ).toBe("/universities/uoft/$1");
       expect(destinationFor("/(og-card.png|og-gapwise.png)")).toBe(
-        "/universities/uoft/og-card.png",
+        `/campuses/${campusId}/og-card.png`,
       );
     }
+  });
+
+  test("Vercel routes the U of T hub independently from the global and campus sites", async () => {
+    const config = JSON.parse(await readFile("vercel.json", "utf8")) as {
+      rewrites: Array<{
+        source: string;
+        destination: string;
+        has?: Array<{ type: string; value: string }>;
+      }>;
+    };
+    const hubRewrites = config.rewrites.filter((entry) =>
+      entry.has?.some(
+        (condition) => condition.type === "host" && condition.value === "uoft.gapwise.ca",
+      ),
+    );
+    const destinationFor = (source: string) =>
+      hubRewrites.find((entry) => entry.source === source)?.destination;
+
+    expect(destinationFor("/")).toBe("/_universities/uoft/index.html");
+    expect(destinationFor("/sitemap.xml")).toBe("/_universities/uoft/sitemap.xml");
+    expect(destinationFor("/robots.txt")).toBe("/_universities/uoft/robots.txt");
+    expect(destinationFor("/(og-card.png|og-gapwise.png)")).toBe("/universities/uoft/og-card.png");
   });
 });

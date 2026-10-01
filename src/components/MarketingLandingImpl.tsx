@@ -4,6 +4,8 @@ import { UploadPanel } from "@/components/UploadPanel";
 import type { MarketingLandingProps } from "./MarketingLanding";
 import {
   activeUniversity,
+  activeSite,
+  SITES,
   supportedUniversities,
   canonicalUrlForUniversity,
 } from "@/universities/registry";
@@ -41,6 +43,10 @@ const INSTITUTION_MARKETING_METRICS: Record<
   waterloo: { count: 68, sampleCodes: ["MC", "DC", "QNC", "AL"] },
   mcgill: { count: 49, sampleCodes: ["LEA", "MAASS", "RPHYS", "ARTS"] },
 };
+const GLOBAL_MARKETING_METRICS = {
+  count: 0,
+  sampleCodes: ["CLASS", "LIB", "LAB", "STUDY"] as [string, string, string, string],
+};
 
 export function MarketingLandingImpl({
   isOnline,
@@ -53,10 +59,20 @@ export function MarketingLandingImpl({
   rememberAvailable,
 }: MarketingLandingProps) {
   const university = activeUniversity();
+  const site = activeSite();
   const universities = supportedUniversities();
-  const metrics =
-    INSTITUTION_MARKETING_METRICS[university?.id ?? "uoft"] ??
-    INSTITUTION_MARKETING_METRICS["uoft"]!;
+  const isGlobal = site?.role === "global";
+  const isHub = site?.role === "university-hub";
+  const hubCampuses = isHub
+    ? SITES.filter(
+        (candidate) =>
+          candidate.role === "campus-edition" && candidate.universityId === site.universityId,
+      )
+    : [];
+  const metrics = isGlobal
+    ? GLOBAL_MARKETING_METRICS
+    : (INSTITUTION_MARKETING_METRICS[university?.id ?? "uoft"] ??
+      INSTITUTION_MARKETING_METRICS["uoft"]!);
 
   const rootRef = useRef<HTMLDivElement>(null);
   const [activeSection, setActiveSection] = useState<string>("capabilities");
@@ -93,38 +109,100 @@ export function MarketingLandingImpl({
     <div ref={rootRef} className="marketing-home" data-active-section={activeSection}>
       <section className="marketing-hero" aria-labelledby="marketing-title">
         <div className="marketing-hero-copy">
-          <p className="marketing-eyebrow">For {university?.name ?? "your campus"}</p>
+          <p className="marketing-eyebrow">
+            {isGlobal
+              ? "Free and open-source university software"
+              : isHub
+                ? `Gapwise for ${university?.name}`
+                : `For ${site?.name ?? university?.name ?? "your campus"}`}
+          </p>
           <h1 id="marketing-title">
-            Make every <span>gap</span> on campus count.
+            {isGlobal || isHub ? (
+              <>
+                Your university day, <span>connected.</span>
+              </>
+            ) : (
+              <>
+                Make every <span>gap</span> on campus count.
+              </>
+            )}
           </h1>
           <p className="marketing-lede">
-            One precise workspace for your {university?.shortName ?? "campus"} timetable, the time
-            between classes, and source-backed campus context where available.
+            {isGlobal
+              ? "Gapwise brings timetable planning, campus maps, pedestrian routing, and the time between classes into one multi-university platform."
+              : isHub
+                ? `Choose your ${university?.shortName} campus for a timetable, campus map, building search, and pedestrian routing experience grounded in that campus.`
+                : `One precise workspace for your ${site?.shortName ?? university?.shortName ?? "campus"} timetable, the time between classes, and source-backed campus context where available.`}
           </p>
           <div className="marketing-hero-links">
-            <a href="#capabilities">Platform</a>
+            <a href={isHub ? "#campuses" : "#capabilities"}>
+              {isHub ? "Choose a campus" : "Platform"}
+            </a>
             <a href="#universities">Supported Universities</a>
             <a href="#ecosystem">Ecosystem</a>
           </div>
         </div>
 
-        <div className="marketing-import" aria-label="Start with your timetable">
-          {!isOnline ? (
-            <p className="marketing-offline" role="status">
-              Offline mode — timetable import and saved schedules still work.
+        {isGlobal ? (
+          <div className="marketing-import ecosystem-hero-panel" aria-label="Explore Gapwise">
+            <p className="marketing-eyebrow">One platform · many campuses</p>
+            <h2>{universities.length} supported universities</h2>
+            <p>
+              Find your edition, explore the open data and developer platform, or help map the next
+              campus.
             </p>
-          ) : null}
-          <UploadPanel
-            variant="hero"
-            onFile={onFile}
-            onDemo={onDemo}
-            loading={loading}
-            error={error}
-            remember={remember}
-            onRememberChange={onRememberChange}
-            rememberAvailable={rememberAvailable}
-          />
-        </div>
+            <div className="product-story-actions">
+              <a className="product-story-link" href="#universities">
+                Find your university <span aria-hidden="true">↓</span>
+              </a>
+              <a className="product-story-link" href="https://github.com/GapwiseHQ">
+                View source <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        ) : isHub ? (
+          <div
+            id="campuses"
+            className="marketing-import hub-campus-panel"
+            aria-label={`${university?.name} campuses`}
+          >
+            {hubCampuses.map((campus) => (
+              <a
+                key={campus.id}
+                className="hub-campus-link"
+                href={`https://${campus.canonicalHost}`}
+              >
+                <span>{campus.shortName}</span>
+                <strong>{campus.name}</strong>
+                <i aria-hidden="true">↗</i>
+              </a>
+            ))}
+            {site.universityId === "ubc" ? (
+              <p>Okanagan support is planned and is not yet listed as supported.</p>
+            ) : null}
+            {site.universityId === "york" ? (
+              <p>Glendon and Markham are reserved for future verified coverage.</p>
+            ) : null}
+          </div>
+        ) : (
+          <div className="marketing-import" aria-label="Start with your timetable">
+            {!isOnline ? (
+              <p className="marketing-offline" role="status">
+                Offline mode — timetable import and saved schedules still work.
+              </p>
+            ) : null}
+            <UploadPanel
+              variant="hero"
+              onFile={onFile}
+              onDemo={onDemo}
+              loading={loading}
+              error={error}
+              remember={remember}
+              onRememberChange={onRememberChange}
+              rememberAvailable={rememberAvailable}
+            />
+          </div>
+        )}
       </section>
 
       <nav className="product-story-nav" aria-label="Gapwise platform navigation">
@@ -170,12 +248,26 @@ export function MarketingLandingImpl({
             </p>
           </div>
           <div className="product-story-actions">
-            <Link className="product-story-link" to="/timetable" onClick={onDemo}>
-              Timetable <span aria-hidden="true">↗</span>
-            </Link>
-            <Link className="product-story-link" to="/gaps" onClick={onDemo}>
-              Gap planner <span aria-hidden="true">↗</span>
-            </Link>
+            {isGlobal || isHub ? (
+              <>
+                <a className="product-story-link" href={isHub ? "#campuses" : "#universities"}>
+                  {isHub ? "Choose a campus" : "Find your edition"}{" "}
+                  <span aria-hidden="true">↓</span>
+                </a>
+                <Link className="product-story-link" to="/developers">
+                  Developer platform <span aria-hidden="true">↗</span>
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link className="product-story-link" to="/timetable" onClick={onDemo}>
+                  Timetable <span aria-hidden="true">↗</span>
+                </Link>
+                <Link className="product-story-link" to="/gaps" onClick={onDemo}>
+                  Gap planner <span aria-hidden="true">↗</span>
+                </Link>
+              </>
+            )}
           </div>
         </div>
 
@@ -235,7 +327,7 @@ export function MarketingLandingImpl({
         <ul className="universities-grid" role="list">
           {universities.map((uni) => {
             const href = canonicalUrlForUniversity(uni);
-            const isCurrent = (university?.id ?? "uoft") === uni.id;
+            const isCurrent = !isGlobal && university?.id === uni.id;
             return (
               <li key={uni.id} className="university-grid-item">
                 <a

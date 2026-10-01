@@ -90,7 +90,7 @@ describe("Gapwise marketing system", () => {
       {
         id: "uoft",
         name: "University of Toronto",
-        url: "https://gapwise.ca",
+        url: "https://uoft.gapwise.ca",
         scope: "Mississauga, St. George, and Scarborough",
       },
       {
@@ -164,6 +164,12 @@ describe("Gapwise marketing system", () => {
         name: "University of Waterloo",
         url: "https://waterloo.gapwise.ca",
         scope: "Main campus",
+      },
+      {
+        id: "mcgill",
+        name: "McGill University",
+        url: "https://mcgill.gapwise.ca",
+        scope: "Downtown Montreal campus",
       },
     ];
 
