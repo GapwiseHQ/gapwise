@@ -131,11 +131,19 @@ describe("Gapwise Ecosystem Consistency", () => {
     }
   });
 
-  test("marketing landing metrics and UI showcase all supported universities", () => {
-    const marketingCode = readFileSync("src/components/MarketingLandingImpl.tsx", "utf8");
-    for (const expectedId of EXPECTED_UNIVERSITY_IDS) {
-      expect(marketingCode).toContain(`${expectedId}: {`);
-    }
+  test("marketing landing derives discovery and editions from every supported university", () => {
+    const landing = readFileSync("src/components/MarketingLandingImpl.tsx", "utf8");
+    const globalHome = readFileSync("src/components/GlobalMarketingHome.tsx", "utf8");
+    const universityHome = readFileSync("src/components/UniversityMarketingHome.tsx", "utf8");
+
+    expect(supportedUniversities().map((university) => university.id)).toEqual([
+      ...EXPECTED_UNIVERSITY_IDS,
+    ]);
+    expect(landing).toContain("<GlobalMarketingHome");
+    expect(landing).toContain("<UniversityMarketingHome");
+    expect(globalHome).toContain("supportedUniversities()");
+    expect(globalHome).toContain("UNIVERSITY_DESTINATIONS");
+    expect(universityHome).toContain("marketingForSite(site, university)");
   });
 
   test("data repository includes all supported universities in campus-contribution-data.js", () => {

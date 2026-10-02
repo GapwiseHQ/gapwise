@@ -4,6 +4,8 @@ import { readFile } from "node:fs/promises";
 describe("Gapwise marketing system", () => {
   test("tells the real five-product story without retired landing effects", async () => {
     const landing = await readFile("src/components/MarketingLandingImpl.tsx", "utf8");
+    const global = await readFile("src/components/GlobalMarketingHome.tsx", "utf8");
+    const university = await readFile("src/components/UniversityMarketingHome.tsx", "utf8");
     const app = await readFile("src/routes/_app.tsx", "utf8");
 
     for (const product of [
@@ -13,16 +15,18 @@ describe("Gapwise marketing system", () => {
       "Gapwise Data",
       "Gapwise Status",
     ]) {
-      expect(landing).toContain(product);
+      expect(global).toContain(product);
     }
 
-    expect(landing).toContain('to="/timetable" onClick={onDemo}');
-    expect(landing).toContain('to="/gaps" onClick={onDemo}');
-    expect(landing).not.toContain("https://ai.gapwise.ca/api/mcp");
-    expect(landing).not.toContain('to="/ops"');
-    expect(landing).toContain("https://docs.gapwise.ca");
-    expect(landing).toContain("https://data.gapwise.ca");
-    expect(landing).toContain("https://status.gapwise.ca");
+    expect(landing).toContain("<UniversityMarketingHome");
+    expect(university).toContain('to="/timetable"');
+    expect(university).toContain('to="/gaps"');
+    expect(university).toContain('to="/route"');
+    expect(global).not.toContain("https://ai.gapwise.ca/api/mcp");
+    expect(global).not.toContain('to="/ops"');
+    expect(global).toContain("https://docs.gapwise.ca");
+    expect(global).toContain("https://data.gapwise.ca");
+    expect(global).toContain("https://status.gapwise.ca");
     expect(app).toContain("<MarketingLanding");
     expect(app).not.toContain("landing-bento rise-in");
     expect(app).not.toContain("Private by design");
@@ -78,11 +82,11 @@ describe("Gapwise marketing system", () => {
   });
 
   test("showcases every supported university with exact canonical destinations and valid branding", async () => {
-    const landing = await readFile("src/components/MarketingLandingImpl.tsx", "utf8");
+    const landing = await readFile("src/components/GlobalMarketingHome.tsx", "utf8");
     const manifest = JSON.parse(await readFile("universities.json", "utf8"));
 
     expect(landing).toContain('id="universities"');
-    expect(landing).toContain("Gapwise across Canada.");
+    expect(landing).toContain("Built for your campus.");
     expect(landing).toContain("supportedUniversities()");
     expect(landing).toContain("canonicalUrlForUniversity");
 
@@ -183,30 +187,20 @@ describe("Gapwise marketing system", () => {
       expect(entry.campusScope).toBe(expected.scope);
       expect(entry.accentColor).toMatch(/^#[0-9a-fA-F]{6}$/);
       expect(entry.status).toBe("supported");
+      expect(entry.marketing.headline.length).toBeGreaterThan(20);
+      expect(entry.marketing.seoTitle).toContain("Gapwise for");
+      expect(entry.marketing.searchExamples).toHaveLength(3);
+      expect(entry.marketing.stats.buildings).toBeGreaterThan(0);
     }
   });
 
   test("simplifies explore nav to Platform, Universities, Ecosystem and removes card color strips (AND-257)", async () => {
-    const landing = await readFile("src/components/MarketingLandingImpl.tsx", "utf8");
-    const css = await readFile("src/components/marketing-landing.css", "utf8");
+    const landing = await readFile("src/components/GlobalMarketingHome.tsx", "utf8");
+    const css = await readFile("src/components/global-marketing-home.css", "utf8");
 
-    // Extract product-story-nav content
-    const navMatch = landing.match(/<nav className="product-story-nav"[\s\S]*?<\/nav>/);
-    expect(navMatch).not.toBeNull();
-    const navContent = navMatch![0];
-
-    // Nav has exactly Platform, Universities, Ecosystem
-    expect(navContent).toContain('href="#capabilities"');
-    expect(navContent).toContain("Platform");
-    expect(navContent).toContain('href="#universities"');
-    expect(navContent).toContain("Universities");
-    expect(navContent).toContain('href="#ecosystem"');
-    expect(navContent).toContain("Ecosystem");
-
-    // Nav does NOT have AI, Docs, Data links
-    expect(navContent).not.toContain("https://ai.gapwise.ca");
-    expect(navContent).not.toContain("https://docs.gapwise.ca");
-    expect(navContent).not.toContain("https://data.gapwise.ca");
+    expect(landing).toContain('id="platform"');
+    expect(landing).toContain('id="universities"');
+    expect(landing).toContain('id="ecosystem"');
 
     // No colored indicator bars in university or ecosystem cards
     expect(landing).not.toContain("university-card-indicator");
@@ -215,10 +209,10 @@ describe("Gapwise marketing system", () => {
     expect(css).not.toContain(".ecosystem-card-indicator");
 
     // Ecosystem cards still retain all four destinations
-    expect(landing).toContain('data-ecosystem="ai"');
-    expect(landing).toContain('data-ecosystem="docs"');
-    expect(landing).toContain('data-ecosystem="data"');
-    expect(landing).toContain('data-ecosystem="status"');
+    expect(landing).toContain('id: "ai"');
+    expect(landing).toContain('id: "docs"');
+    expect(landing).toContain('id: "data"');
+    expect(landing).toContain('id: "status"');
     expect(landing).toContain("https://ai.gapwise.ca");
     expect(landing).toContain("https://docs.gapwise.ca");
     expect(landing).toContain("https://data.gapwise.ca");

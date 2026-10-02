@@ -18,6 +18,28 @@ import { announceAppUpdate } from "./features/pwa/update-events";
 import { ensureCampusCatalog } from "./data/campuses";
 import { activeCampus, activeUniversity } from "./universities/registry";
 
+function removeStaticSeoMetadata() {
+  const comments = [...document.head.childNodes].filter(
+    (node): node is Comment => node.nodeType === Node.COMMENT_NODE,
+  );
+  const start = comments.find((node) => node.data.trim() === "gapwise-static-seo:start");
+  const end = comments.find((node) => node.data.trim() === "gapwise-static-seo:end");
+  if (!start || !end) return;
+
+  let current = start.nextSibling;
+  while (current && current !== end) {
+    const next = current.nextSibling;
+    current.remove();
+    current = next;
+  }
+  start.remove();
+  end.remove();
+}
+
+// Generated entry points carry crawler-readable metadata. Once JavaScript takes over,
+// remove that static block so TanStack Router owns one canonical set for the active host.
+removeStaticSeoMetadata();
+
 function syncUniversityBranding() {
   const university = activeUniversity();
   if (!university || university.id === "uoft") return;

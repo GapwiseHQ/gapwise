@@ -173,9 +173,11 @@ describe("branding metadata", () => {
 
     expect(indexRoute).toContain("const university = activeUniversity()");
     expect(indexRoute).toContain("Gapwise — University Timetable & Campus Navigation");
-    expect(indexRoute).toContain("const editionName = site?.name ?? university?.name");
-    expect(indexRoute).toContain("`Gapwise for ${editionName}");
+    expect(indexRoute).toContain("marketingForSite(site, university)");
+    expect(indexRoute).toContain("canonicalUrlForSite(site)");
     expect(indexRoute).toContain('{ name: "description", content: description }');
+    expect(indexRoute).toContain('{ property: "og:url", content: canonical }');
+    expect(indexRoute).toContain('rel: "canonical"');
   });
 });
 

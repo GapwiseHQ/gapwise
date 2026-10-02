@@ -41,7 +41,21 @@ function requireReference(
 }
 
 const universityManifest = JSON.parse(await readFile("universities.json", "utf8")) as {
-  universities: Array<{ id: string; name: string; hosts: string[]; status: string }>;
+  sites: Array<{
+    role: string;
+    universityId?: string;
+    campusId?: string;
+    name?: string;
+    canonicalHost: string;
+    presentation?: { marketing?: { seoTitle: string; seoDescription: string } };
+  }>;
+  universities: Array<{
+    id: string;
+    name: string;
+    hosts: string[];
+    status: string;
+    marketing: { seoTitle: string; seoDescription: string };
+  }>;
 };
 const supportedUniversityEntries = universityManifest.universities.filter(
   (university) => university.status === "supported",
@@ -185,23 +199,15 @@ requireText(robots, "Disallow: /api/", "robots.txt");
 requireText(robots, "Disallow: /oauth/", "robots.txt");
 requireText(robots, "Sitemap: https://gapwise.ca/sitemap.xml", "robots.txt");
 
-const UOFT_CAMPUS_EDITIONS = [
-  {
-    id: "utm",
-    name: "University of Toronto Mississauga",
-    origin: "https://utm.gapwise.ca",
-  },
-  {
-    id: "utsg",
-    name: "University of Toronto St. George",
-    origin: "https://utsg.gapwise.ca",
-  },
-  {
-    id: "utsc",
-    name: "University of Toronto Scarborough",
-    origin: "https://utsc.gapwise.ca",
-  },
-] as const;
+const UOFT_CAMPUS_EDITIONS = universityManifest.sites
+  .filter((site) => site.role === "campus-edition" && site.universityId === "uoft")
+  .map((site) => ({
+    id: site.campusId!,
+    name: site.name!,
+    origin: `https://${site.canonicalHost}`,
+    seoTitle: site.presentation!.marketing!.seoTitle,
+    seoDescription: site.presentation!.marketing!.seoDescription,
+  }));
 
 const CAMPUS_EDITION_PATHS = [
   "/about",
@@ -229,7 +235,7 @@ for (const campus of UOFT_CAMPUS_EDITIONS) {
 
   requireText(
     campusHome,
-    `<title>Gapwise for ${campus.name} — Timetable &amp; Campus Navigation</title>`,
+    `<title>${escapeHtml(campus.seoTitle)}</title>`,
     `${campus.id} homepage title`,
   );
   requireText(
@@ -250,7 +256,7 @@ for (const campus of UOFT_CAMPUS_EDITIONS) {
   requireText(campusRobots, `Sitemap: ${campus.origin}/sitemap.xml`, `${campus.id} robots.txt`);
   requireText(campusSitemap, `<loc>${campus.origin}/</loc>`, `${campus.id} sitemap`);
 
-  const expectedDescription = `Gapwise is a free and open-source timetable, campus navigation, and student planning platform for ${campus.name} students.`;
+  const expectedDescription = escapeHtml(campus.seoDescription);
   requireText(
     campusHome,
     `name="description" content="${expectedDescription}"`,
@@ -462,6 +468,9 @@ const ALL_UNIVERSITY_IDS = supportedUniversityEntries.map((university) => univer
 const ALL_UNIVERSITY_NAMES = Object.fromEntries(
   supportedUniversityEntries.map((university) => [university.id, university.name]),
 ) as Record<string, string>;
+const ALL_UNIVERSITY_TITLES = Object.fromEntries(
+  supportedUniversityEntries.map((university) => [university.id, university.marketing.seoTitle]),
+) as Record<string, string>;
 const ALL_UNIVERSITY_ORIGINS = Object.fromEntries(
   supportedUniversityEntries.map((university) => [university.id, `https://${university.hosts[0]}`]),
 ) as Record<string, string>;
@@ -517,7 +526,7 @@ for (const uniId of ALL_UNIVERSITY_IDS) {
     `<meta name="twitter:image:alt" content="${expectedAlt}" />`,
     `${uniId} twitter:image:alt`,
   );
-  const expectedTitle = `Gapwise for ${escapedName} — Timetable &amp; Campus Navigation`;
+  const expectedTitle = escapeHtml(ALL_UNIVERSITY_TITLES[uniId]!);
   requireText(html, `<meta property="og:title" content="${expectedTitle}" />`, `${uniId} og:title`);
   requireText(html, `<title>${expectedTitle}</title>`, `${uniId} title`);
 

@@ -42,7 +42,27 @@
         "heroDescription": "Plan classes, buildings, routes, and time between classes across the Mississauga campus.",
         "cardDescription": "Mississauga campus timetable planning, building discovery, and pedestrian routing.",
         "timetableLabel": "ACORN",
-        "visualLabel": "Mississauga"
+        "visualLabel": "Mississauga",
+        "marketing": {
+          "campusName": "Mississauga campus",
+          "headline": "Make every gap at UTM count.",
+          "description": "Bring your ACORN timetable into a UTM-specific workspace for classes, between-class time, building discovery, and routes across the Mississauga campus.",
+          "seoTitle": "Gapwise for University of Toronto Mississauga",
+          "seoDescription": "UTM timetable planning, Mississauga campus building search, gap planning, and pedestrian routing.",
+          "stats": { "buildings": 30, "entrances": 44, "pathSegments": 2546 },
+          "example": {
+            "day": "Tuesday",
+            "courseCode": "CSC108H5",
+            "buildingCode": "MN",
+            "buildingName": "Maanjiwe nendamowinan",
+            "room": "1210",
+            "nextCourseCode": "MAT102H5",
+            "nextBuildingCode": "DH",
+            "nextBuildingName": "Deerfield Hall",
+            "nextRoom": "2020"
+          },
+          "searchExamples": ["Maanjiwe nendamowinan", "Deerfield Hall", "UTM Library"]
+        }
       }
     },
     {
@@ -59,7 +79,27 @@
         "heroDescription": "Plan classes, buildings, routes, and time between classes across the downtown St. George campus.",
         "cardDescription": "Downtown St. George timetable planning, building discovery, and pedestrian routing.",
         "timetableLabel": "ACORN",
-        "visualLabel": "St. George"
+        "visualLabel": "St. George",
+        "marketing": {
+          "campusName": "St. George campus",
+          "headline": "Plan the distance between downtown classes.",
+          "description": "Connect your ACORN timetable to a St. George-specific view of classes, useful gaps, building search, and routes across the downtown campus.",
+          "seoTitle": "Gapwise for University of Toronto St. George",
+          "seoDescription": "UTSG timetable planning, St. George campus building search, gap planning, and pedestrian routing.",
+          "stats": { "buildings": 166, "entrances": 131, "pathSegments": 9805 },
+          "example": {
+            "day": "Monday",
+            "courseCode": "CSC108H1",
+            "buildingCode": "BA",
+            "buildingName": "Bahen Centre",
+            "room": "1160",
+            "nextCourseCode": "MAT137Y1",
+            "nextBuildingCode": "SS",
+            "nextBuildingName": "Sidney Smith Hall",
+            "nextRoom": "2102"
+          },
+          "searchExamples": ["Robarts Library", "Bahen Centre", "Sidney Smith Hall"]
+        }
       }
     },
     {
@@ -76,7 +116,27 @@
         "heroDescription": "Plan classes, buildings, routes, and time between classes across the Scarborough campus.",
         "cardDescription": "Scarborough campus timetable planning, building discovery, and pedestrian routing.",
         "timetableLabel": "ACORN",
-        "visualLabel": "Scarborough"
+        "visualLabel": "Scarborough",
+        "marketing": {
+          "campusName": "Scarborough campus",
+          "headline": "See your next move across UTSC.",
+          "description": "Bring your ACORN timetable into a Scarborough-specific workspace for classes, open time, building discovery, and campus walking routes.",
+          "seoTitle": "Gapwise for University of Toronto Scarborough",
+          "seoDescription": "UTSC timetable planning, Scarborough campus building search, gap planning, and pedestrian routing.",
+          "stats": { "buildings": 54, "entrances": 29, "pathSegments": 2184 },
+          "example": {
+            "day": "Monday",
+            "courseCode": "CSCA08H3",
+            "buildingCode": "SW",
+            "buildingName": "Science Wing",
+            "room": "319",
+            "nextCourseCode": "MATA31H3",
+            "nextBuildingCode": "HW",
+            "nextBuildingName": "Humanities Wing",
+            "nextRoom": "216"
+          },
+          "searchExamples": ["Academic Resource Centre", "Science Wing", "Sam Ibrahim Building"]
+        }
       }
     },
     {
@@ -352,6 +412,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": true },
       "routableCampuses": ["utm", "utsg", "utsc"],
       "dataPaths": ["data/utm", "data/utsg", "data/utsc"],
+      "marketing": {
+        "campusName": "Mississauga, St. George, and Scarborough",
+        "headline": "Three campuses. One clearer university day.",
+        "description": "Bring your ACORN timetable into a campus-aware workspace built for U of T. Choose the campus edition that matches your classes, then plan gaps, find buildings, and route between them.",
+        "seoTitle": "Gapwise for the University of Toronto",
+        "seoDescription": "Timetable planning, campus search, and pedestrian routing for University of Toronto students at UTM, UTSG, and UTSC.",
+        "stats": { "buildings": 250, "entrances": 204, "pathSegments": 14535 },
+        "example": {
+          "day": "Tuesday",
+          "courseCode": "CSC108H5",
+          "buildingCode": "MN",
+          "buildingName": "Maanjiwe nendamowinan",
+          "room": "1210",
+          "nextCourseCode": "MAT102H5",
+          "nextBuildingCode": "DH",
+          "nextBuildingName": "Deerfield Hall",
+          "nextRoom": "2020"
+        },
+        "searchExamples": ["Maanjiwe nendamowinan", "Bahen Centre", "Sam Ibrahim Building"]
+      },
       "status": "supported"
     },
     {
@@ -370,6 +450,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["carleton"],
       "dataPaths": ["universities/carleton/campus.json"],
+      "marketing": {
+        "campusName": "Ottawa campus",
+        "headline": "Navigate Carleton. Plan your schedule. Get to class.",
+        "description": "Turn a Carleton Central schedule into a day plan grounded in the Ottawa campus—from Tory Building lectures to the next walk across campus.",
+        "seoTitle": "Gapwise for Carleton University",
+        "seoDescription": "Carleton University timetable planning, building search, gap planning, and campus routing in one student-first workspace.",
+        "stats": { "buildings": 48, "entrances": 15, "pathSegments": 2009 },
+        "example": {
+          "day": "Wednesday",
+          "courseCode": "COMP 1405",
+          "buildingCode": "TB",
+          "buildingName": "Tory Building",
+          "room": "208",
+          "nextCourseCode": "BUSI 1004",
+          "nextBuildingCode": "DT",
+          "nextBuildingName": "Dunton Tower",
+          "nextRoom": "2203"
+        },
+        "searchExamples": ["MacOdrum Library", "Tory Building", "Dunton Tower"]
+      },
       "status": "supported"
     },
     {
@@ -388,6 +488,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["tmu"],
       "dataPaths": ["universities/tmu/campus.json"],
+      "marketing": {
+        "campusName": "Downtown Toronto campus",
+        "headline": "Move through downtown campus with your day in view.",
+        "description": "Connect your TMU schedule to the buildings and walking routes around the downtown campus, from ENG labs to the SLC and your next class.",
+        "seoTitle": "Gapwise for Toronto Metropolitan University",
+        "seoDescription": "TMU timetable planning, downtown campus search, gap planning, and pedestrian routing with university-specific schedule support.",
+        "stats": { "buildings": 30, "entrances": 47, "pathSegments": 2134 },
+        "example": {
+          "day": "Tuesday",
+          "courseCode": "CPS 109",
+          "buildingCode": "ENG",
+          "buildingName": "George Vari Engineering and Computing Centre",
+          "room": "LG11",
+          "nextCourseCode": "MTH 140",
+          "nextBuildingCode": "SLC",
+          "nextBuildingName": "Student Learning Centre",
+          "nextRoom": "508"
+        },
+        "searchExamples": ["Student Learning Centre", "Kerr Hall", "Ted Rogers School"]
+      },
       "status": "supported"
     },
     {
@@ -406,6 +526,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["queens"],
       "dataPaths": ["universities/queens/campus.json"],
+      "marketing": {
+        "campusName": "Kingston campus",
+        "headline": "Plan Queen's days from first lecture to last walk.",
+        "description": "See your SOLUS schedule alongside Kingston campus buildings, useful gaps, and routes between places like Walter Light Hall and Jeffery Hall.",
+        "seoTitle": "Gapwise for Queen's University",
+        "seoDescription": "Queen's University timetable planning, Kingston campus building search, gap planning, and pedestrian routing.",
+        "stats": { "buildings": 38, "entrances": 61, "pathSegments": 2494 },
+        "example": {
+          "day": "Tuesday",
+          "courseCode": "CISC 121",
+          "buildingCode": "WLH",
+          "buildingName": "Walter Light Hall",
+          "room": "210",
+          "nextCourseCode": "MATH 120",
+          "nextBuildingCode": "JEF",
+          "nextBuildingName": "Jeffery Hall",
+          "nextRoom": "127"
+        },
+        "searchExamples": ["Stauffer Library", "Goodes Hall", "Dunning Hall"]
+      },
       "status": "supported"
     },
     {
@@ -424,6 +564,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["waterloo"],
       "dataPaths": ["universities/laurier/campus.json"],
+      "marketing": {
+        "campusName": "Waterloo campus",
+        "headline": "Make the walk between Laurier classes part of the plan.",
+        "description": "Bring LORIS or MyLS schedule context into a Laurier-specific view of the Waterloo campus, its buildings, gaps, and pedestrian routes.",
+        "seoTitle": "Gapwise for Wilfrid Laurier University",
+        "seoDescription": "Laurier timetable planning, Waterloo campus building search, gap planning, and pedestrian routing.",
+        "stats": { "buildings": 28, "entrances": 31, "pathSegments": 2003 },
+        "example": {
+          "day": "Tuesday",
+          "courseCode": "CP 104",
+          "buildingCode": "LH",
+          "buildingName": "Lazaridis Hall",
+          "room": "1001",
+          "nextCourseCode": "BU 111",
+          "nextBuildingCode": "P",
+          "nextBuildingName": "Frank C. Peters Building",
+          "nextRoom": "1005"
+        },
+        "searchExamples": ["Lazaridis Hall", "Laurier Library", "Science Building"]
+      },
       "status": "supported"
     },
     {
@@ -442,6 +602,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["keele"],
       "dataPaths": ["universities/york/campus.json"],
+      "marketing": {
+        "campusName": "Keele campus",
+        "headline": "Keep your Keele campus day connected.",
+        "description": "Pair your York schedule with Keele campus building discovery, gap planning, and routes between Lassonde, Curtis Lecture Halls, and beyond.",
+        "seoTitle": "Gapwise for York University",
+        "seoDescription": "York University timetable planning, Keele campus search, gap planning, and pedestrian routing.",
+        "stats": { "buildings": 37, "entrances": 98, "pathSegments": 4417 },
+        "example": {
+          "day": "Wednesday",
+          "courseCode": "EECS 1022",
+          "buildingCode": "LAS",
+          "buildingName": "Lassonde Building",
+          "room": "1005",
+          "nextCourseCode": "MATH 1013",
+          "nextBuildingCode": "CLH",
+          "nextBuildingName": "Curtis Lecture Halls",
+          "nextRoom": "A"
+        },
+        "searchExamples": ["Vari Hall", "Scott Library", "Bergeron Centre"]
+      },
       "status": "supported"
     },
     {
@@ -460,6 +640,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["mcmaster"],
       "dataPaths": ["universities/mcmaster/campus.json"],
+      "marketing": {
+        "campusName": "Hamilton campus",
+        "headline": "Your McMaster schedule, mapped to campus.",
+        "description": "See Mosaic classes in campus context, plan the time between them, and find a route from Burke Science Building to your next room.",
+        "seoTitle": "Gapwise for McMaster University",
+        "seoDescription": "McMaster timetable planning, Hamilton campus building search, gap planning, and pedestrian routing.",
+        "stats": { "buildings": 42, "entrances": 89, "pathSegments": 2942 },
+        "example": {
+          "day": "Tuesday",
+          "courseCode": "COMPSCI 1MD3",
+          "buildingCode": "BSB",
+          "buildingName": "Burke Science Building",
+          "room": "147",
+          "nextCourseCode": "MATH 1ZA3",
+          "nextBuildingCode": "JHE",
+          "nextBuildingName": "John Hodgins Engineering Building",
+          "nextRoom": "264"
+        },
+        "searchExamples": ["Student Centre", "Burke Science Building", "MDCL"]
+      },
       "status": "supported"
     },
     {
@@ -478,6 +678,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["western"],
       "dataPaths": ["universities/western/campus.json"],
+      "marketing": {
+        "campusName": "London campus",
+        "headline": "Plan the space between classes at Western.",
+        "description": "Connect Draft My Schedule or Student Center classes with a Western-specific view of buildings, open time, and campus walking routes.",
+        "seoTitle": "Gapwise for Western University",
+        "seoDescription": "Western University timetable planning, London campus building search, gap planning, and pedestrian routing.",
+        "stats": { "buildings": 27, "entrances": 45, "pathSegments": 2952 },
+        "example": {
+          "day": "Tuesday",
+          "courseCode": "COMPSCI 1026A",
+          "buildingCode": "MC",
+          "buildingName": "Middlesex College",
+          "room": "110",
+          "nextCourseCode": "MATH 1600A",
+          "nextBuildingCode": "NSC",
+          "nextBuildingName": "Natural Sciences Centre",
+          "nextRoom": "145"
+        },
+        "searchExamples": ["University Community Centre", "Middlesex College", "Talbot College"]
+      },
       "status": "supported"
     },
     {
@@ -496,6 +716,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["guelph"],
       "dataPaths": ["universities/guelph/campus.json"],
+      "marketing": {
+        "campusName": "Guelph campus",
+        "headline": "Build a calmer day across the Guelph campus.",
+        "description": "Turn WebAdvisor or Student Planning classes into a campus-aware schedule with building search, useful gaps, and routes to the next room.",
+        "seoTitle": "Gapwise for the University of Guelph",
+        "seoDescription": "University of Guelph timetable planning, campus building search, gap planning, and pedestrian routing.",
+        "stats": { "buildings": 20, "entrances": 26, "pathSegments": 3161 },
+        "example": {
+          "day": "Tuesday",
+          "courseCode": "CIS 1300",
+          "buildingCode": "ROZH",
+          "buildingName": "Rozanski Hall",
+          "room": "104",
+          "nextCourseCode": "MATH 1200",
+          "nextBuildingCode": "THRN",
+          "nextBuildingName": "Thornbrough Building",
+          "nextRoom": "1200"
+        },
+        "searchExamples": ["McLaughlin Library", "University Centre", "Rozanski Hall"]
+      },
       "status": "supported"
     },
     {
@@ -514,6 +754,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["uottawa"],
       "dataPaths": ["universities/uottawa/campus.json"],
+      "marketing": {
+        "campusName": "Downtown Ottawa campus",
+        "headline": "See your uOttawa day before you cross campus.",
+        "description": "Connect your uoZone schedule with downtown campus buildings, the gaps between classes, and walking routes from SITE to Desmarais and beyond.",
+        "seoTitle": "Gapwise for the University of Ottawa",
+        "seoDescription": "uOttawa timetable planning, downtown campus building search, gap planning, and pedestrian routing.",
+        "stats": { "buildings": 25, "entrances": 21, "pathSegments": 3475 },
+        "example": {
+          "day": "Tuesday",
+          "courseCode": "CSI 2110",
+          "buildingCode": "STE",
+          "buildingName": "SITE Building",
+          "room": "0131",
+          "nextCourseCode": "MAT 1320",
+          "nextBuildingCode": "DMS",
+          "nextBuildingName": "Desmarais Building",
+          "nextRoom": "1160"
+        },
+        "searchExamples": ["Morisset Library", "Tabaret Hall", "SITE Building"]
+      },
       "status": "supported"
     },
     {
@@ -532,6 +792,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["brock"],
       "dataPaths": ["universities/brock/campus.json"],
+      "marketing": {
+        "campusName": "St. Catharines campus",
+        "headline": "Turn your Brock schedule into a campus plan.",
+        "description": "Bring your Brock course schedule into one view for classes, buildings, between-class time, and walking routes across the St. Catharines campus.",
+        "seoTitle": "Gapwise for Brock University",
+        "seoDescription": "Brock University timetable planning, St. Catharines campus building search, gap planning, and pedestrian routing.",
+        "stats": { "buildings": 16, "entrances": 42, "pathSegments": 2755 },
+        "example": {
+          "day": "Tuesday",
+          "courseCode": "COSC 1P02",
+          "buildingCode": "ST",
+          "buildingName": "Arthur Schmon Tower",
+          "room": "107",
+          "nextCourseCode": "MATH 1P66",
+          "nextBuildingCode": "TH",
+          "nextBuildingName": "Thistle Complex",
+          "nextRoom": "247"
+        },
+        "searchExamples": ["Arthur Schmon Tower", "Thistle Complex", "Goodman School"]
+      },
       "status": "supported"
     },
     {
@@ -553,6 +833,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["ubc-vancouver"],
       "dataPaths": ["universities/ubc/campus.json"],
+      "marketing": {
+        "campusName": "Vancouver / Point Grey campus",
+        "headline": "Plan the distance between UBC Vancouver classes.",
+        "description": "Turn Workday course rows into a Point Grey campus plan with building discovery, gap-aware timing, and pedestrian routing. UBC Okanagan is not yet supported.",
+        "seoTitle": "Gapwise for UBC Vancouver",
+        "seoDescription": "UBC Vancouver timetable planning, Point Grey campus building search, gap planning, and pedestrian routing.",
+        "stats": { "buildings": 236, "entrances": 905, "pathSegments": 11182 },
+        "example": {
+          "day": "Wednesday",
+          "courseCode": "CPSC 110",
+          "buildingCode": "ICCS",
+          "buildingName": "Computer Science Building",
+          "room": "X836",
+          "nextCourseCode": "ENGL 110",
+          "nextBuildingCode": "BUCH",
+          "nextBuildingName": "Buchanan Building",
+          "nextRoom": "A101"
+        },
+        "searchExamples": ["Irving K. Barber Library", "Buchanan Building", "Life Sciences Centre"]
+      },
       "status": "supported"
     },
     {
@@ -574,6 +874,26 @@
       "enabledFeatures": { "routing": true, "liveLocation": false },
       "routableCampuses": ["waterloo-main"],
       "dataPaths": ["universities/waterloo/campus.json"],
+      "marketing": {
+        "campusName": "Main campus",
+        "headline": "Keep your Waterloo schedule and campus route together.",
+        "description": "Paste your Quest schedule and see classes, buildings, useful gaps, and walking routes across main campus in one connected view.",
+        "seoTitle": "Gapwise for the University of Waterloo",
+        "seoDescription": "University of Waterloo timetable planning, main-campus building search, gap planning, and pedestrian routing.",
+        "stats": { "buildings": 68, "entrances": 210, "pathSegments": 13954 },
+        "example": {
+          "day": "Wednesday",
+          "courseCode": "MATH 135",
+          "buildingCode": "MC",
+          "buildingName": "Mathematics & Computer Building",
+          "room": "2066",
+          "nextCourseCode": "CS 135",
+          "nextBuildingCode": "DC",
+          "nextBuildingName": "William G. Davis Computer Research Centre",
+          "nextRoom": "1351"
+        },
+        "searchExamples": ["Davis Centre", "Quantum-Nano Centre", "Arts Lecture Hall"]
+      },
       "status": "supported"
     },
     {
@@ -598,6 +918,26 @@
       },
       "routableCampuses": ["mcgill-downtown"],
       "dataPaths": ["universities/mcgill/campus.json"],
+      "marketing": {
+        "campusName": "Downtown Montreal campus",
+        "headline": "Connect your McGill timetable to downtown campus.",
+        "description": "Import a myCourses calendar and plan classes, gaps, building discovery, and pedestrian routes across McGill's downtown campus.",
+        "seoTitle": "Gapwise for McGill University",
+        "seoDescription": "McGill timetable planning, downtown Montreal campus building search, gap planning, and pedestrian routing.",
+        "stats": { "buildings": 49, "entrances": 70, "pathSegments": 6432 },
+        "example": {
+          "day": "Wednesday",
+          "courseCode": "COMP 202",
+          "buildingCode": "LEA",
+          "buildingName": "Leacock Building",
+          "room": "132",
+          "nextCourseCode": "CHEM 110",
+          "nextBuildingCode": "MAASS",
+          "nextBuildingName": "Otto Maass Chemistry Building",
+          "nextRoom": "112"
+        },
+        "searchExamples": ["McCall MacBain Arts Building", "Burnside Hall", "Leacock Building"]
+      },
       "status": "supported"
     }
   ]
