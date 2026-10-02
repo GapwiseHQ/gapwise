@@ -84,7 +84,8 @@ test("mixed and ambiguous ACORN locations preserve the explicit campus edition",
     await importFixture(page, name);
     await openDayRoute(page, false);
     await expect(page.getByRole("searchbox", { name: "Search UTM buildings" })).toBeVisible();
-    expect(new URL(page.url()).searchParams.get("campus")).toBe("utm");
+    expect(new URL(page.url()).hostname).toBe(new URL(baseURL).hostname);
+    expect(new URL(page.url()).searchParams.get("campus")).toBeNull();
   }
 
   failures.assertClean();

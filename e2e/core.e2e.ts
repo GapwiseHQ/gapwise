@@ -13,8 +13,12 @@ const twoTermFixturePath = path.join(
 test("landing page is usable without an account", async ({ page }, testInfo) => {
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
   await expectLanding(page);
-  await expect(page).toHaveTitle("Gapwise for University of Toronto Mississauga — Timetable & Campus Navigation");
-  await expect(page.getByText("For University of Toronto Mississauga", { exact: true })).toBeVisible();
+  await expect(page).toHaveTitle(
+    "Gapwise for University of Toronto Mississauga — Timetable & Campus Navigation",
+  );
+  await expect(
+    page.getByText("For University of Toronto Mississauga", { exact: true }),
+  ).toBeVisible();
   await expect(page.getByRole("button", { name: "Import ACORN" })).toBeVisible();
   guard.assertClean();
 });

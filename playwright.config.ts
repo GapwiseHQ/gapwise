@@ -1,7 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
 
 const port = 4173;
-const localServerUrl = `http://127.0.0.1:${port}`;
+const localServerUrl = `http://localhost:${port}`;
 const localBaseUrl = `http://utm.localhost:${port}`;
 const baseURL = process.env.PLAYWRIGHT_BASE_URL ?? localBaseUrl;
 const useExternalServer = Boolean(process.env.PLAYWRIGHT_BASE_URL);
