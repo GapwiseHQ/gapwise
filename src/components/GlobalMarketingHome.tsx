@@ -14,10 +14,94 @@ import {
   Sparkles,
 } from "lucide-react";
 import { useMemo, useState, type CSSProperties } from "react";
-import { canonicalUrlForUniversity, supportedUniversities } from "@/universities/registry";
+import {
+  SITES,
+  canonicalUrlForUniversity,
+  supportedUniversities,
+  type University,
+} from "@/universities/registry";
 import "./global-marketing-home.css";
 
 const FEATURED_UNIVERSITY_IDS = ["uoft", "waterloo", "mcgill", "ubc", "mcmaster", "queens"];
+
+type UniversityDestination = {
+  id: string;
+  university: University;
+  shortName: string;
+  name: string;
+  scope: string;
+  href: string;
+  host: string;
+  searchText: string;
+  campusResult: boolean;
+};
+
+const SUPPORTED_UNIVERSITIES = supportedUniversities();
+const IMPLEMENTED_CAMPUS_COUNT = SUPPORTED_UNIVERSITIES.reduce(
+  (total, university) => total + university.campuses.length,
+  0,
+);
+
+const UNIVERSITY_DESTINATIONS: UniversityDestination[] = SUPPORTED_UNIVERSITIES.map(
+  (university) => ({
+    id: university.id,
+    university,
+    shortName: university.shortName,
+    name: university.name,
+    scope: university.campusScope,
+    href: canonicalUrlForUniversity(university),
+    host: university.hosts[0]!,
+    searchText: [
+      university.id,
+      university.name,
+      university.shortName,
+      university.campusScope,
+      ...university.hosts,
+      ...university.campuses,
+    ]
+      .join(" ")
+      .toLowerCase(),
+    campusResult: false,
+  }),
+);
+
+const CAMPUS_DESTINATIONS: UniversityDestination[] = SITES.filter(
+  (site) => site.role === "campus-edition",
+).flatMap((site) => {
+  const university = SUPPORTED_UNIVERSITIES.find((entry) => entry.id === site.universityId);
+  if (!university || !site.name || !site.shortName || !site.campusId) return [];
+  return [
+    {
+      id: site.id,
+      university,
+      shortName: site.shortName,
+      name: site.name,
+      scope: site.presentation?.cardDescription ?? university.campusScope,
+      href: `https://${site.canonicalHost}`,
+      host: site.canonicalHost,
+      searchText: [
+        site.id,
+        site.campusId,
+        site.name,
+        site.shortName,
+        site.canonicalHost,
+        university.id,
+        university.name,
+      ]
+        .join(" ")
+        .toLowerCase(),
+      campusResult: true,
+    },
+  ];
+});
+
+const exampleWeek = [
+  { day: "MON", course: "CSC108", room: "MN 1210", time: "09:00", offset: "12%" },
+  { day: "TUE", course: "MAT102", room: "IB 245", time: "12:00", offset: "47%" },
+  { day: "WED", course: "CSC108", room: "MN 1210", time: "09:00", offset: "12%" },
+  { day: "THU", course: "MAT102", room: "IB 245", time: "12:00", offset: "47%" },
+  { day: "FRI", course: "", room: "", time: "", offset: "0" },
+] as const;
 
 const ecosystemProducts = [
   {
@@ -90,15 +174,15 @@ function ProductPreview() {
           <span />
           <span />
         </div>
-        <span>Example student day</span>
-        <span className="global-home-window-campus">Campus</span>
+        <span>Tuesday · UTM example</span>
+        <span className="global-home-window-campus">Mississauga</span>
       </div>
 
       <div className="global-home-window-grid">
         <aside className="global-home-window-sidebar" aria-hidden="true">
           <div className="global-home-window-search">
             <Search />
-            <span>Search campus</span>
+            <span>Search UTM</span>
           </div>
           <p>Your day</p>
           <div className="global-home-window-nav-item is-active">Schedule</div>
@@ -112,15 +196,15 @@ function ProductPreview() {
               <span>Today</span>
               <strong>Your afternoon</strong>
             </div>
-            <small>3 classes · 2 gaps</small>
+            <small>2 classes · 1 useful gap</small>
           </div>
 
           <div className="global-home-timeline">
             <article>
               <i aria-hidden="true" />
               <div>
-                <strong>Lecture</strong>
-                <span>Campus building · Room 204</span>
+                <strong>CSC108H1 · Lecture</strong>
+                <span>Maanjiwe nendamowinan · MN 1270</span>
               </div>
               <time>11:00–12:00</time>
             </article>
@@ -129,7 +213,7 @@ function ProductPreview() {
               <i aria-hidden="true" />
               <div>
                 <strong>2 hour gap</strong>
-                <span>Plan · route · focus</span>
+                <span>1h 38m available after walking</span>
               </div>
               <ArrowRight aria-hidden="true" />
             </article>
@@ -137,8 +221,8 @@ function ProductPreview() {
             <article>
               <i aria-hidden="true" />
               <div>
-                <strong>Next class</strong>
-                <span>Science building · Lab 3</span>
+                <strong>MAT102H3 · Lecture</strong>
+                <span>Deerfield Hall · DH 2020</span>
               </div>
               <time>14:00–15:00</time>
             </article>
@@ -147,7 +231,7 @@ function ProductPreview() {
 
         <aside className="global-home-window-route">
           <div className="global-home-route-title">
-            <span>Route to next class</span>
+            <span>MN → DH</span>
             <Navigation aria-hidden="true" />
           </div>
           <div className="global-home-map" aria-hidden="true">
@@ -160,7 +244,7 @@ function ProductPreview() {
           <div className="global-home-route-metric">
             <div>
               <strong>7 min</strong>
-              <span>550 m walking</span>
+              <span>Walk to next class</span>
             </div>
             <em>On time</em>
           </div>
@@ -171,39 +255,22 @@ function ProductPreview() {
 }
 
 export function GlobalMarketingHome() {
-  const universities = supportedUniversities();
   const [query, setQuery] = useState("");
   const [showAll, setShowAll] = useState(false);
   const normalizedQuery = query.trim().toLowerCase();
-  const implementedCampusCount = universities.reduce(
-    (total, university) => total + university.campuses.length,
-    0,
-  );
 
-  const matchingUniversities = useMemo(() => {
-    if (!normalizedQuery) return universities;
-    return universities.filter((university) => {
-      const haystack = [
-        university.name,
-        university.shortName,
-        university.campusScope,
-        ...university.hosts,
-        ...university.campuses,
-      ]
-        .join(" ")
-        .toLowerCase();
-      return haystack.includes(normalizedQuery);
-    });
-  }, [normalizedQuery, universities]);
-
-  const visibleUniversities = useMemo(() => {
-    if (normalizedQuery) return matchingUniversities;
-    if (showAll) return universities;
+  const visibleDestinations = useMemo(() => {
+    if (normalizedQuery) {
+      return [...CAMPUS_DESTINATIONS, ...UNIVERSITY_DESTINATIONS].filter((destination) =>
+        destination.searchText.includes(normalizedQuery),
+      );
+    }
+    if (showAll) return UNIVERSITY_DESTINATIONS;
     const featured = FEATURED_UNIVERSITY_IDS.map((id) =>
-      universities.find((university) => university.id === id),
-    ).filter((university): university is (typeof universities)[number] => Boolean(university));
-    return featured.length ? featured : universities.slice(0, 6);
-  }, [matchingUniversities, normalizedQuery, showAll, universities]);
+      UNIVERSITY_DESTINATIONS.find((destination) => destination.id === id),
+    ).filter((destination): destination is UniversityDestination => Boolean(destination));
+    return featured.length ? featured : UNIVERSITY_DESTINATIONS.slice(0, 6);
+  }, [normalizedQuery, showAll]);
 
   return (
     <div className="global-home">
@@ -235,11 +302,11 @@ export function GlobalMarketingHome() {
 
       <section className="global-home-facts" aria-label="Gapwise platform facts">
         <div>
-          <strong>{universities.length}</strong>
+          <strong>{SUPPORTED_UNIVERSITIES.length}</strong>
           <span>supported universities</span>
         </div>
         <div>
-          <strong>{implementedCampusCount}</strong>
+          <strong>{IMPLEMENTED_CAMPUS_COUNT}</strong>
           <span>implemented campuses</span>
         </div>
         <div>
@@ -265,13 +332,24 @@ export function GlobalMarketingHome() {
           <div className="global-home-week" aria-label="Example weekly timetable">
             <div className="global-home-week-header">
               <strong>Week view</strong>
-              <span>Example schedule</span>
+              <span>Example · UTM</span>
             </div>
             <div className="global-home-week-days">
-              {["MON", "TUE", "WED", "THU", "FRI"].map((day, index) => (
-                <div key={day} className={index === 3 ? "is-current" : undefined}>
-                  <span>{day}</span>
-                  {index < 4 ? <i className={"event event-" + index} /> : null}
+              {exampleWeek.map((item, index) => (
+                <div key={item.day} className={index === 1 ? "is-current" : undefined}>
+                  <span>{item.day}</span>
+                  {item.course ? (
+                    <article
+                      className="event"
+                      style={{ "--event-offset": item.offset } as CSSProperties}
+                    >
+                      <strong>{item.course}</strong>
+                      <small>{item.room}</small>
+                      <time>{item.time}</time>
+                    </article>
+                  ) : (
+                    <em>Open day</em>
+                  )}
                 </div>
               ))}
             </div>
@@ -279,19 +357,40 @@ export function GlobalMarketingHome() {
         </div>
 
         <div className="global-home-feature-row is-reversed">
-          <div className="global-home-feature-visual global-home-route-visual" aria-hidden="true">
-            <div className="global-home-route-canvas">
-              <span className="route-building route-building-a" />
-              <span className="route-building route-building-b" />
-              <span className="route-curve" />
-              <span className="route-dot" />
-              <MapPin className="route-pin" />
+          <div
+            className="global-home-feature-visual global-home-route-visual"
+            aria-label="Example Gapwise plan from class through a two hour gap to the next class"
+          >
+            <div className="global-home-gap-flow">
+              <div>
+                <span>Class</span>
+                <strong>CSC108H1</strong>
+                <small>MN 1270 · ends 11:00</small>
+              </div>
+              <ArrowRight aria-hidden="true" />
+              <div className="is-gap">
+                <span>Gap</span>
+                <strong>2 hours</strong>
+                <small>1h 38m usable</small>
+              </div>
+              <ArrowRight aria-hidden="true" />
+              <div>
+                <span>Destination</span>
+                <strong>UTM Library</strong>
+                <small>Quiet study · HM</small>
+              </div>
+              <ArrowRight aria-hidden="true" />
+              <div>
+                <span>Next class</span>
+                <strong>MAT102H3</strong>
+                <small>DH 2020 · starts 13:00</small>
+              </div>
             </div>
             <div className="global-home-route-summary">
-              <p>Route</p>
-              <strong>7 min</strong>
-              <span>next class</span>
-              <em>Arrive early</em>
+              <p>Leave by</p>
+              <strong>12:48</strong>
+              <span>7 min walk + 5 min buffer</span>
+              <em>On time</em>
             </div>
           </div>
           <div className="global-home-feature-copy">
@@ -322,10 +421,17 @@ export function GlobalMarketingHome() {
               <span>quiet study near my next class</span>
               <kbd>⌘K</kbd>
             </div>
+            <p className="global-home-search-context">
+              UTM · next class in Deerfield Hall at 13:00
+            </p>
             {[
-              ["Campus library", "6 min · open now", "Quiet"],
-              ["Study commons", "8 min · near next class", "Nearby"],
-              ["Student centre", "4 min · open now", "Closest"],
+              [
+                "Hazel McCallion Academic Learning Centre",
+                "Library · HM · route available",
+                "Study",
+              ],
+              ["Deerfield Hall", "Building · next class in DH 2020", "Next class"],
+              ["Davis Food Court", "Dining · William G. Davis Building", "Food"],
             ].map(([name, detail, tag], index) => (
               <div
                 key={name}
@@ -356,7 +462,8 @@ export function GlobalMarketingHome() {
             <p className="global-home-eyebrow">Campus coverage</p>
             <h2 id="global-universities-title">Built for your campus.</h2>
             <p className="global-home-count">
-              {universities.length} universities · {implementedCampusCount} implemented campuses
+              {SUPPORTED_UNIVERSITIES.length} universities · {IMPLEMENTED_CAMPUS_COUNT} implemented
+              campuses
             </p>
           </div>
           <button
@@ -381,28 +488,31 @@ export function GlobalMarketingHome() {
             placeholder="Find your university or campus"
           />
           <span>
-            {visibleUniversities.length} / {universities.length}
+            {visibleDestinations.length} result{visibleDestinations.length === 1 ? "" : "s"}
           </span>
         </label>
 
         <div className="global-home-university-grid" aria-live="polite">
-          {visibleUniversities.map((university) => (
+          {visibleDestinations.map((destination) => (
             <a
-              key={university.id}
-              href={canonicalUrlForUniversity(university)}
+              key={destination.id}
+              href={destination.href}
               className="global-home-university-card"
-              style={{ "--university-accent": university.accentColor } as CSSProperties}
+              style={{ "--university-accent": destination.university.accentColor } as CSSProperties}
             >
               <div>
-                <span className="global-home-university-short">{university.shortName}</span>
-                <strong>{university.name}</strong>
-                <small>{university.campusScope}</small>
+                <span className="global-home-university-short">
+                  {destination.shortName}
+                  {destination.campusResult ? " · Campus edition" : ""}
+                </span>
+                <strong>{destination.name}</strong>
+                <small>{destination.scope}</small>
               </div>
               <ChevronRight aria-hidden="true" />
-              <span className="global-home-university-host">{university.hosts[0]}</span>
+              <span className="global-home-university-host">{destination.host}</span>
             </a>
           ))}
-          {visibleUniversities.length === 0 ? (
+          {visibleDestinations.length === 0 ? (
             <div className="global-home-university-empty">
               No supported university or campus matches “{query}”.
             </div>
@@ -492,7 +602,7 @@ export function GlobalMarketingHome() {
             <b>const</b> campuses = <b>await</b> gapwise.campuses.list()
           </code>
           <p>
-            <Check aria-hidden="true" /> {implementedCampusCount} campuses in current coverage
+            <Check aria-hidden="true" /> {IMPLEMENTED_CAMPUS_COUNT} campuses in current coverage
           </p>
         </div>
       </section>
