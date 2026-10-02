@@ -11,7 +11,7 @@ test("Today checks canonical destinations inside a live gap on mobile Safari", a
   await page.clock.setFixedTime(new Date("2026-09-07T15:30:00.000Z"));
 
   await page.goto("/today");
-  await page.getByRole("button", { name: /Try the .* demo/ }).click();
+  await page.getByRole("button", { name: "Try a demo", exact: true }).click();
   await expect(page).toHaveURL(/\/today$/);
   await expect(page.getByRole("heading", { name: "Can I go there?" })).toBeVisible();
   await expect(
