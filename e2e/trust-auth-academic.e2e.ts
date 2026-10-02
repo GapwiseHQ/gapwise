@@ -115,7 +115,7 @@ test("academic planning journey accepts work and exposes safe block actions", as
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
   const mobile = isMobileProject(testInfo.project.name);
   await page.goto("/");
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
 
   if (mobile) {
     const nav = page.getByRole("navigation", { name: "Main" });

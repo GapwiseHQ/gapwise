@@ -5,7 +5,7 @@ test("unified timetable export exposes the print-ready vector flow", async ({ pa
   test.skip(testInfo.project.name !== "chromium", "print export coverage runs once in Chromium");
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
   await expectLanding(page);
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable$/);
 
   await expect(page.getByRole("button", { name: "Print-ready" })).toHaveCount(0);

@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
-import { watchForAppFailures } from "./helpers";
+import manifest from "../universities.json" with { type: "json" };
+import { editionUrl, watchForAppFailures } from "./helpers";
 
 test("global homepage presents the multi-university Gapwise ecosystem", async ({
   page,
@@ -18,6 +19,29 @@ test("global homepage presents the multi-university Gapwise ecosystem", async ({
   await expect(page.getByText("For University of Toronto", { exact: true })).toHaveCount(0);
   await expect(page.getByText("This edition", { exact: true })).toHaveCount(0);
   await expect(page.getByRole("button", { name: /Search campus and classes/ })).toHaveCount(0);
+  failures.assertClean();
+});
+
+test("reserved hosts publish an honest planned state and canonicalize globally", async ({
+  page,
+  baseURL,
+}) => {
+  test.skip(test.info().project.name !== "chromium");
+  if (!baseURL) throw new Error("Playwright baseURL is required");
+  const failures = watchForAppFailures(page, baseURL);
+
+  await page.goto(editionUrl(baseURL, "harvard"));
+  await expect(
+    page.getByRole("heading", { name: "Harvard University edition coming soon" }),
+  ).toBeVisible();
+  await expect(page).toHaveTitle("Gapwise — University Timetable & Campus Navigation");
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    "href",
+    "https://gapwise.ca/",
+  );
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", "noindex, nofollow");
+  await expect(page.getByText(/preparing campus data and timetable adapters/)).toBeVisible();
+  await expect(page.getByText(/Mapped buildings|Routing segments/)).toHaveCount(0);
   failures.assertClean();
 });
 
@@ -110,7 +134,10 @@ test("University of Toronto hub links to three distinct campus editions", async 
     ["University of Toronto St. George", "https://utsg.gapwise.ca"],
     ["University of Toronto Scarborough", "https://utsc.gapwise.ca"],
   ] as const) {
-    await expect(page.getByRole("link", { name: new RegExp(name) })).toHaveAttribute("href", host);
+    await expect(page.getByRole("link", { name: new RegExp(name) }).first()).toHaveAttribute(
+      "href",
+      host,
+    );
   }
   failures.assertClean();
 });
@@ -129,7 +156,7 @@ test("U of T campus editions retain campus-scoped import experiences", async ({
     ["utsc", "University of Toronto Scarborough"],
   ] as const) {
     await page.goto(`/?campus=${campus}`);
-    await expect(page.getByText(`For ${name}`, { exact: true })).toBeVisible();
+    await expect(page.getByText(`Gapwise for ${name}`, { exact: true })).toBeVisible();
     await expect(page.getByRole("button", { name: "Import ACORN" })).toBeVisible();
   }
   failures.assertClean();
@@ -186,7 +213,7 @@ test("narrow UTM header preserves the full brand and contains its controls", asy
 
   await page.goto("/?campus=utm");
   await expect(
-    page.getByText("For University of Toronto Mississauga", { exact: true }),
+    page.getByText("Gapwise for University of Toronto Mississauga", { exact: true }),
   ).toBeVisible();
   const header = await page.evaluate(() => {
     const brand = document.querySelector<HTMLElement>(".brand-lockup");
@@ -219,3 +246,97 @@ test("narrow UTM header preserves the full brand and contains its controls", asy
   await page.screenshot({ path: test.info().outputPath("utm-320.png"), fullPage: false });
   failures.assertClean();
 });
+
+const supportedEditions = [
+  ["uoft", "Three campuses. One clearer university day."],
+  ["carleton", "Navigate Carleton. Plan your schedule. Get to class."],
+  ["tmu", "Move through downtown campus with your day in view."],
+  ["queens", "Plan Queen's days from first lecture to last walk."],
+  ["laurier", "Make the walk between Laurier classes part of the plan."],
+  ["york", "Keep your Keele campus day connected."],
+  ["mcmaster", "Your McMaster schedule, mapped to campus."],
+  ["western", "Plan the space between classes at Western."],
+  ["guelph", "Build a calmer day across the Guelph campus."],
+  ["uottawa", "See your uOttawa day before you cross campus."],
+  ["brock", "Turn your Brock schedule into a campus plan."],
+  ["ubc", "Plan the distance between UBC Vancouver classes."],
+  ["waterloo", "Keep your Waterloo schedule and campus route together."],
+  ["mcgill", "Connect your McGill timetable to downtown campus."],
+] as const;
+
+test("every supported university edition renders isolated registry-driven identity and metadata", async ({
+  page,
+  baseURL,
+}) => {
+  test.skip(test.info().project.name !== "chromium");
+  test.setTimeout(90_000);
+  if (!baseURL) throw new Error("Playwright baseURL is required");
+  const failures = watchForAppFailures(page, baseURL);
+
+  for (const [id, headline] of supportedEditions) {
+    const expectedTitle = manifest.universities.find((university) => university.id === id)
+      ?.marketing.seoTitle;
+    expect(expectedTitle).toBeTruthy();
+    await page.goto(`/?university=${id}`);
+    await expect(page.getByRole("heading", { name: headline })).toBeVisible();
+    await expect(page).toHaveTitle(expectedTitle!);
+    await expect(page.locator(".university-home-stats")).toBeVisible();
+    for (const [otherId, otherHeadline] of supportedEditions) {
+      if (otherId !== id)
+        await expect(page.getByRole("heading", { name: otherHeadline })).toHaveCount(0);
+    }
+  }
+  failures.assertClean();
+});
+
+test("campus aliases render distinct U of T editions without identity leaks", async ({
+  page,
+  baseURL,
+}) => {
+  test.skip(test.info().project.name !== "chromium");
+  if (!baseURL) throw new Error("Playwright baseURL is required");
+  const failures = watchForAppFailures(page, baseURL);
+  const campuses = [
+    ["utm", "Make every gap at UTM count.", "University of Toronto Mississauga"],
+    ["utsg", "Plan the distance between downtown classes.", "University of Toronto St. George"],
+    ["utsc", "See your next move across UTSC.", "University of Toronto Scarborough"],
+  ] as const;
+
+  for (const [campus, headline, identity] of campuses) {
+    await page.goto(`/?campus=${campus}`);
+    await expect(page.getByRole("heading", { name: headline })).toBeVisible();
+    await expect(page).toHaveTitle(new RegExp(`Gapwise for ${identity}`));
+    for (const [otherCampus, otherHeadline] of campuses) {
+      if (otherCampus !== campus)
+        await expect(page.getByRole("heading", { name: otherHeadline })).toHaveCount(0);
+    }
+  }
+  failures.assertClean();
+});
+
+for (const viewport of [
+  { width: 390, height: 844 },
+  { width: 1440, height: 900 },
+]) {
+  test(`university hero is usable without horizontal overflow at ${viewport.width}px`, async ({
+    page,
+    baseURL,
+  }) => {
+    test.skip(test.info().project.name !== "chromium");
+    if (!baseURL) throw new Error("Playwright baseURL is required");
+    await page.setViewportSize(viewport);
+    const failures = watchForAppFailures(page, baseURL);
+    await page.goto("/?university=carleton");
+    await expect(page.getByRole("button", { name: "Try the Carleton demo" })).toBeVisible();
+    const layout = await page.evaluate(() => ({
+      documentWidth: document.documentElement.scrollWidth,
+      viewportWidth: window.innerWidth,
+      ctaBottom: document
+        .querySelector<HTMLElement>(".university-home-primary")
+        ?.getBoundingClientRect().bottom,
+    }));
+    expect(layout.documentWidth).toBeLessThanOrEqual(layout.viewportWidth);
+    if (viewport.width >= 1000) expect(layout.ctaBottom).toBeLessThan(viewport.height);
+    failures.assertClean();
+  });
+}

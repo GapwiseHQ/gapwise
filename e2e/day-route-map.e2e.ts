@@ -35,7 +35,7 @@ test.describe("map-first Day Route", () => {
     });
 
     await page.goto("/");
-    await page.getByRole("button", { name: "Try a demo" }).click();
+    await page.getByRole("button", { name: /Try the .* demo/ }).click();
 
     if (test.info().project.name === "mobile-chromium") {
       const nav = page.getByRole("navigation", { name: "Main" });

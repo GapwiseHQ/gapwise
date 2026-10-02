@@ -25,7 +25,7 @@ async function expectNoSeriousAccessibilityViolations(page: Page) {
 
 async function openStableDemo(page: Page) {
   await expectLanding(page);
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page.getByRole("heading", { name: "Demo timetable" })).toBeVisible();
   await expect(page.getByRole("button", { name: "Update timetable" })).toBeEnabled();
 }

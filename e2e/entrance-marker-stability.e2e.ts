@@ -185,9 +185,9 @@ test("entrance markers keep MapLibre projection isolated from interactive stylin
   const projectionUrl = new URL(page.url());
   projectionUrl.searchParams.set("e2eMapProjection", "1");
   await page.goto(projectionUrl.toString());
-  await expect(page.getByRole("button", { name: "Try a demo" })).toBeVisible();
+  await expect(page.getByRole("button", { name: /Try the .* demo/ })).toBeVisible();
 
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await page
     .getByRole("group", { name: "View mode" })
     .getByRole("button", { name: "Day route" })
