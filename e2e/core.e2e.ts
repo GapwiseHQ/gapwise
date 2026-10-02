@@ -13,11 +13,9 @@ const twoTermFixturePath = path.join(
 test("landing page is usable without an account", async ({ page }, testInfo) => {
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
   await expectLanding(page);
-  await expect(page).toHaveTitle(
-    "Gapwise for University of Toronto Mississauga — Timetable & Campus Navigation",
-  );
+  await expect(page).toHaveTitle("Gapwise for University of Toronto Mississauga");
   await expect(
-    page.getByText("For University of Toronto Mississauga", { exact: true }),
+    page.getByText("Gapwise for University of Toronto Mississauga", { exact: true }),
   ).toBeVisible();
   await expect(page.getByRole("button", { name: "Import ACORN" })).toBeVisible();
   guard.assertClean();
@@ -28,9 +26,7 @@ test("bare fragments are removed without enabling hash routing", async ({ page }
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
 
   await page.goto("/#");
-  await expect(
-    page.getByRole("heading", { name: "Make every gap on campus count." }),
-  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Make every gap at UTM count." })).toBeVisible();
   await expect.poll(() => page.url().endsWith("#")).toBe(false);
 
   await page.evaluate(() => {
@@ -54,18 +50,14 @@ test("path navigation, refresh, and browser history use the SPA fallback", async
   await expect(page.getByRole("heading", { name: "Page not found" })).toBeVisible();
 
   await page.getByRole("link", { name: "Go home" }).click();
-  await expect(
-    page.getByRole("heading", { name: "Make every gap on campus count." }),
-  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Make every gap at UTM count." })).toBeVisible();
   expect(new URL(page.url()).pathname).toBe("/");
   expect(new URL(page.url()).hash).toBe("");
 
   await page.goBack();
   await expect(page.getByRole("heading", { name: "Page not found" })).toBeVisible();
   await page.goForward();
-  await expect(
-    page.getByRole("heading", { name: "Make every gap on campus count." }),
-  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Make every gap at UTM count." })).toBeVisible();
   guard.assertClean();
 });
 
@@ -118,7 +110,7 @@ test("route-driven navigation preserves a loaded timetable through history", asy
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
   await expectLanding(page);
 
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable$/);
   await expect(page.getByRole("heading", { name: "Demo timetable" })).toBeVisible();
 
@@ -151,9 +143,7 @@ test("route-driven navigation preserves a loaded timetable through history", asy
 
   await page.getByRole("link", { name: "Gapwise home" }).click();
   await expect(page).toHaveURL(/\/$/);
-  await expect(
-    page.getByRole("heading", { name: "Make every gap on campus count." }),
-  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Make every gap at UTM count." })).toBeVisible();
 
   await page.goBack();
   await expect(page).toHaveURL(/\/route\/?$/);
@@ -167,7 +157,7 @@ test("timetable export offers available terms and downloads light and dark PNGs"
   test.skip(testInfo.project.name !== "chromium", "PNG export coverage runs once in Chromium");
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
   await expectLanding(page);
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable$/);
 
   await page.getByRole("button", { name: "Account settings" }).click();
@@ -276,7 +266,7 @@ test("campus-day arrival settings route transit and parking through the map", as
   test.skip(testInfo.project.name !== "chromium", "commuter route coverage runs once");
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
   await expectLanding(page);
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await page
     .getByRole("group", { name: "View mode" })
     .getByRole("button", { name: "Day route" })
@@ -546,7 +536,10 @@ test("mobile term switching selects a scheduled weekday", async ({ page }, testI
       ].join("\r\n"),
     ),
   });
-  await page.getByRole("link", { name: "Timetable" }).click();
+  await page
+    .getByRole("navigation", { name: "Main" })
+    .getByRole("link", { name: "Timetable", exact: true })
+    .click();
   const weekdays = page.getByRole("group", { name: "Weekday" });
   await weekdays.getByRole("button", { name: /^Mon/ }).click();
   await expect(page.getByRole("heading", { name: "Monday", exact: true })).toBeVisible();
@@ -565,8 +558,11 @@ test("mobile weekday buttons expose native keyboard selection state", async ({
   test.skip(testInfo.project.name !== "mobile-chromium", "mobile keyboard regression runs once");
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
   await expectLanding(page);
-  await page.getByRole("button", { name: "Try a demo" }).click();
-  await page.getByRole("link", { name: "Timetable" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
+  await page
+    .getByRole("navigation", { name: "Main" })
+    .getByRole("link", { name: "Timetable", exact: true })
+    .click();
 
   const weekdays = page.getByRole("group", { name: "Weekday" });
   const monday = weekdays.getByRole("button", { name: /^Mon/ });
@@ -591,9 +587,7 @@ test("malformed calendar fails safely with a useful error", async ({ page }, tes
   });
 
   await expect(page.getByRole("alert")).toContainText("doesn't look like a calendar export");
-  const landingHeading = isMobileProject(testInfo.project.name)
-    ? "Start with your timetable."
-    : "Make every gap on campus count.";
+  const landingHeading = "Make every gap at UTM count.";
   await expect(page.getByRole("heading", { name: landingHeading })).toBeVisible();
   guard.assertClean();
 });
@@ -603,7 +597,7 @@ test("desktop demo moves between timetable, gaps, and route", async ({ page }, t
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
   await expectLanding(page);
 
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page.getByRole("heading", { name: "Demo timetable" })).toBeVisible();
   const visibleGapWindows = page.getByTestId("gap-window");
   await expect(visibleGapWindows.first()).toBeVisible();
@@ -624,7 +618,7 @@ test("mobile demo exposes the primary timetable and map navigation", async ({ pa
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
   await expectLanding(page);
 
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   const nav = page.getByRole("navigation", { name: "Main" });
   await expect(nav).toBeVisible();
   await expect(nav.getByRole("link", { name: "Today" })).toBeVisible();

@@ -8,7 +8,7 @@ test("entrance geographic anchor stays dimensionless and MapLibre-owned", async 
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
 
   await expectLanding(page);
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await page
     .getByRole("group", { name: "View mode" })
     .getByRole("button", { name: "Day route" })

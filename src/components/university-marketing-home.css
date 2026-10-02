@@ -1,0 +1,749 @@
+.university-home {
+  --university-home-accent: #4ea7fe;
+  --university-home-accent-text: color-mix(in oklab, var(--university-home-accent) 66%, black);
+  --university-home-line: color-mix(in oklab, var(--color-border) 88%, transparent);
+  --university-home-soft: color-mix(
+    in oklab,
+    var(--university-home-accent) 7%,
+    var(--color-background)
+  );
+  width: min(100%, 78rem);
+  margin-inline: auto;
+  color: var(--color-foreground);
+}
+
+.dark .university-home {
+  --university-home-accent-text: var(--university-home-accent);
+}
+
+.university-home a,
+.university-home button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.university-home a:focus-visible,
+.university-home button:focus-visible {
+  outline: 2px solid var(--university-home-accent);
+  outline-offset: 3px;
+}
+
+.university-home-hero {
+  position: relative;
+  display: grid;
+  min-height: min(48rem, calc(100svh - 3.5rem));
+  grid-template-columns: minmax(0, 0.87fr) minmax(27rem, 1.13fr);
+  grid-template-rows: 1fr auto;
+  gap: 2rem clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(2.5rem, 5vh, 4.5rem) 0 1.5rem;
+}
+
+.university-home-grid {
+  position: absolute;
+  inset: 0 calc(-1 * clamp(1rem, 4vw, 3rem));
+  pointer-events: none;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(to right, var(--university-home-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--university-home-line) 1px, transparent 1px);
+  background-size:
+    12.5% 100%,
+    100% 8rem;
+  mask-image: linear-gradient(to bottom, black, transparent 86%);
+}
+
+.university-home-intro,
+.university-home-visual,
+.university-home-stats {
+  position: relative;
+}
+
+.university-home-kicker {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  gap: 0.55rem;
+  border: 1px solid var(--university-home-line);
+  background: color-mix(in oklab, var(--university-home-soft) 70%, transparent);
+  padding: 0.42rem 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.11em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.university-home-kicker span {
+  width: 0.4rem;
+  height: 0.4rem;
+  flex: none;
+  border-radius: 999px;
+  background: var(--university-home-accent);
+  box-shadow: 0 0 0 0.22rem color-mix(in oklab, var(--university-home-accent) 14%, transparent);
+}
+
+.university-home h1 {
+  max-width: 11ch;
+  margin-top: 1.3rem;
+  font-family: var(--font-display);
+  font-size: clamp(3.1rem, 5.5vw, 5.9rem);
+  font-weight: 540;
+  letter-spacing: -0.068em;
+  line-height: 0.94;
+  text-wrap: balance;
+}
+
+.university-home-lede {
+  max-width: 39rem;
+  margin-top: 1.35rem;
+  color: var(--color-muted-foreground);
+  font-size: clamp(0.96rem, 1.25vw, 1.08rem);
+  line-height: 1.7;
+}
+
+.university-home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.55rem;
+}
+
+.university-home-primary,
+.university-home-secondary {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border-radius: 0.68rem;
+  padding: 0 1.1rem;
+  font-size: 0.8rem;
+  font-weight: 680;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease;
+}
+
+.university-home-primary {
+  border: 1px solid color-mix(in oklab, var(--university-home-accent) 62%, black);
+  background: color-mix(in oklab, var(--university-home-accent) 66%, black);
+  color: white;
+}
+
+.university-home-primary:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+.university-home-primary:hover:not(:disabled),
+.university-home-secondary:hover {
+  transform: translateY(-1px);
+}
+.university-home-primary svg,
+.university-home-secondary svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.university-home-secondary {
+  border: 1px solid var(--university-home-line);
+  background: color-mix(in oklab, var(--color-muted) 36%, transparent);
+}
+
+.university-home-feature-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.05rem;
+  margin-top: 1.35rem;
+}
+
+.university-home-feature-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  color: var(--color-muted-foreground);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.university-home-feature-links a:hover {
+  color: var(--university-home-accent);
+}
+.university-home-feature-links svg {
+  width: 0.82rem;
+  height: 0.82rem;
+}
+
+.university-product-window,
+.university-campus-chooser {
+  overflow: hidden;
+  border: 1px solid color-mix(in oklab, var(--university-home-accent) 20%, var(--color-border));
+  background: color-mix(in oklab, var(--color-background) 92%, var(--university-home-accent));
+  box-shadow: 0 2.8rem 6rem -4rem rgb(0 0 0 / 0.72);
+}
+
+.university-product-bar {
+  display: grid;
+  min-height: 2.65rem;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.8rem;
+  border-bottom: 1px solid var(--university-home-line);
+  padding: 0 0.85rem;
+  color: var(--color-muted-foreground);
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.university-product-dots {
+  display: flex;
+  gap: 0.3rem;
+}
+.university-product-dots i {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--color-muted);
+}
+.university-product-status {
+  justify-self: end;
+  color: color-mix(in oklab, var(--university-home-accent) 65%, var(--color-foreground));
+}
+.university-product-body {
+  display: grid;
+  min-height: 25rem;
+  grid-template-columns: minmax(0, 1fr) 12.5rem;
+}
+.university-product-schedule {
+  min-width: 0;
+  padding: 1.25rem;
+}
+.university-product-heading {
+  display: grid;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+.university-product-heading span,
+.university-route-heading {
+  color: var(--color-muted-foreground);
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.university-product-heading strong {
+  font-size: 0.87rem;
+  font-weight: 650;
+}
+.university-product-schedule article {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: center;
+  min-height: 5.4rem;
+  border: 1px solid var(--university-home-line);
+  padding: 0.75rem;
+}
+.university-product-schedule time {
+  color: var(--color-muted-foreground);
+  font-family: var(--font-mono);
+  font-size: 0.57rem;
+}
+.university-product-schedule article div {
+  min-width: 0;
+}
+.university-product-schedule article strong,
+.university-product-schedule article span {
+  display: block;
+}
+.university-product-schedule article strong {
+  font-size: 0.76rem;
+  font-weight: 680;
+}
+.university-product-schedule article span {
+  overflow: hidden;
+  margin-top: 0.25rem;
+  color: var(--color-muted-foreground);
+  font-size: 0.61rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.university-product-gap {
+  display: flex;
+  min-height: 3.35rem;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.55rem 0;
+  border-left: 2px solid var(--university-home-accent);
+  background: color-mix(in oklab, var(--university-home-accent) 7%, transparent);
+  padding: 0.6rem 0.75rem;
+  color: var(--color-muted-foreground);
+  font-size: 0.62rem;
+}
+.university-product-gap svg {
+  width: 0.85rem;
+  height: 0.85rem;
+  flex: none;
+  color: var(--university-home-accent);
+}
+.university-product-route {
+  border-left: 1px solid var(--university-home-line);
+  background: color-mix(in oklab, var(--color-muted) 18%, transparent);
+  padding: 1.05rem;
+}
+.university-route-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.university-route-heading svg {
+  width: 0.85rem;
+  color: var(--university-home-accent);
+}
+.university-route-map {
+  position: relative;
+  height: 13rem;
+  margin-top: 0.9rem;
+  overflow: hidden;
+  border: 1px solid var(--university-home-line);
+  background-image:
+    linear-gradient(var(--university-home-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--university-home-line) 1px, transparent 1px);
+  background-size: 1.5rem 1.5rem;
+}
+.university-route-building {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 2.6rem;
+  border: 1px solid var(--university-home-line);
+  background: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 650;
+}
+.university-route-building.is-origin {
+  top: 1.3rem;
+  left: 0.7rem;
+  transform: rotate(-5deg);
+}
+.university-route-building.is-destination {
+  right: 0.7rem;
+  bottom: 1.25rem;
+  transform: rotate(5deg);
+}
+.university-route-path {
+  position: absolute;
+  top: 4.5rem;
+  left: 3.4rem;
+  width: 5.7rem;
+  height: 4rem;
+  border-right: 2px solid var(--university-home-accent);
+  border-bottom: 2px solid var(--university-home-accent);
+  border-radius: 0 0 2.2rem;
+  transform: rotate(14deg);
+}
+.university-route-dot {
+  position: absolute;
+  width: 0.52rem;
+  height: 0.52rem;
+  border: 2px solid var(--color-background);
+  border-radius: 50%;
+  background: var(--university-home-accent);
+}
+.university-route-dot.is-origin {
+  top: 3.7rem;
+  left: 3.3rem;
+}
+.university-route-dot.is-destination {
+  right: 3.15rem;
+  bottom: 3.7rem;
+}
+.university-product-route > p {
+  display: grid;
+  gap: 0.18rem;
+  margin-top: 0.85rem;
+}
+.university-product-route > p strong {
+  font-size: 0.72rem;
+}
+.university-product-route > p span {
+  color: var(--color-muted-foreground);
+  font-size: 0.6rem;
+}
+
+.university-home-stats {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-block: 1px solid var(--university-home-line);
+}
+.university-home-stats div {
+  display: flex;
+  min-height: 4.8rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 1.25rem;
+  border-right: 1px solid var(--university-home-line);
+}
+.university-home-stats div:last-child {
+  border-right: 0;
+}
+.university-home-stats dt {
+  color: var(--color-muted-foreground);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.university-home-stats dd {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 620;
+  letter-spacing: -0.04em;
+}
+
+.university-campus-chooser {
+  display: grid;
+  padding: 1rem;
+  gap: 0.65rem;
+}
+.university-campus-chooser-header {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.5rem 0.35rem 0.9rem;
+}
+.university-campus-chooser-header span {
+  color: var(--color-muted-foreground);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.university-campus-chooser-header strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+.university-campus-chooser > a {
+  --campus-card-accent: var(--university-home-accent);
+  display: grid;
+  min-height: 5rem;
+  grid-template-columns: 2.5rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.8rem;
+  border: 1px solid var(--university-home-line);
+  background: color-mix(in oklab, var(--campus-card-accent) 5%, var(--color-background));
+  padding: 0.85rem;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease;
+}
+.university-campus-chooser > a:hover {
+  transform: translateX(3px);
+  border-color: color-mix(in oklab, var(--campus-card-accent) 45%, var(--color-border));
+}
+.university-campus-index {
+  color: var(--campus-card-accent);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+}
+.university-campus-chooser > a > span:nth-child(2) {
+  display: grid;
+  gap: 0.18rem;
+}
+.university-campus-chooser a strong {
+  font-size: 0.87rem;
+}
+.university-campus-chooser a small {
+  color: var(--color-muted-foreground);
+  font-size: 0.65rem;
+}
+.university-campus-chooser a svg {
+  width: 1rem;
+  color: var(--campus-card-accent);
+}
+
+.university-home-section {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  align-items: center;
+  border-bottom: 1px solid var(--university-home-line);
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  scroll-margin-top: 5rem;
+}
+.university-home-section-label {
+  color: var(--university-home-accent-text);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 650;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+.university-home-section h2 {
+  max-width: 14ch;
+  margin-top: 0.9rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 4vw, 3.7rem);
+  font-weight: 540;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  text-wrap: balance;
+}
+.university-home-section > div:first-child > p:last-of-type,
+.university-home-campus-section > p {
+  max-width: 36rem;
+  margin-top: 1.1rem;
+  color: var(--color-muted-foreground);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.university-search-preview {
+  overflow: hidden;
+  border: 1px solid var(--university-home-line);
+  background: color-mix(in oklab, var(--color-card) 96%, var(--university-home-accent));
+}
+.university-search-preview > div,
+.university-search-preview li {
+  display: grid;
+  align-items: center;
+  gap: 0.75rem;
+}
+.university-search-preview > div {
+  min-height: 3.3rem;
+  grid-template-columns: auto 1fr auto;
+  border-bottom: 1px solid var(--university-home-line);
+  padding: 0 1rem;
+  color: var(--color-muted-foreground);
+  font-size: 0.72rem;
+}
+.university-search-preview svg {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.university-search-preview kbd {
+  border: 1px solid var(--university-home-line);
+  padding: 0.18rem 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+}
+.university-search-preview li {
+  min-height: 3.7rem;
+  grid-template-columns: auto 1fr auto;
+  border-bottom: 1px solid var(--university-home-line);
+  padding: 0 1rem;
+  font-size: 0.75rem;
+}
+.university-search-preview li:last-child {
+  border-bottom: 0;
+}
+.university-search-preview li svg:first-child {
+  color: var(--university-home-accent);
+}
+.university-search-preview li svg:last-child {
+  color: var(--color-muted-foreground);
+}
+
+.university-home-quick-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid var(--university-home-line);
+}
+.university-home-quick-links a {
+  display: grid;
+  min-height: 12rem;
+  align-content: center;
+  border-right: 1px solid var(--university-home-line);
+  padding: 1.5rem;
+  transition: background-color 160ms ease;
+}
+.university-home-quick-links a:last-child {
+  border-right: 0;
+}
+.university-home-quick-links a:hover {
+  background: var(--university-home-soft);
+}
+.university-home-quick-links a > span {
+  display: grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  place-items: center;
+  border: 1px solid color-mix(in oklab, var(--university-home-accent) 35%, var(--color-border));
+  color: var(--university-home-accent);
+}
+.university-home-quick-links svg {
+  width: 1rem;
+}
+.university-home-quick-links strong {
+  margin-top: 1rem;
+  font-size: 0.84rem;
+}
+.university-home-quick-links small {
+  margin-top: 0.4rem;
+  color: var(--color-muted-foreground);
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.university-home-import > div:first-child > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.1rem;
+  color: var(--university-home-accent-text);
+  font-size: 0.75rem;
+  font-weight: 650;
+}
+.university-home-import > div:first-child > a svg {
+  width: 0.9rem;
+}
+.university-home-import-panel {
+  min-width: 0;
+  border-left: 1px solid var(--university-home-line);
+  padding-left: clamp(1.5rem, 4vw, 4rem);
+}
+.university-home-import-panel .upload-panel,
+.university-home-import-panel .upload-hero,
+.university-home-import-panel .surface {
+  box-shadow: none;
+}
+.university-home-import-panel button {
+  min-height: 2.75rem !important;
+}
+.university-home-offline {
+  margin-bottom: 0.75rem;
+  color: var(--color-muted-foreground);
+  font-size: 0.72rem;
+}
+.university-home-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0 2.5rem;
+  color: var(--color-muted-foreground);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+}
+.university-home-campus-section {
+  grid-template-columns: 0.75fr 1.25fr;
+}
+.university-home-campus-section > .university-home-section-label,
+.university-home-campus-section > h2,
+.university-home-campus-section > p {
+  grid-column: 1;
+}
+.university-home-campus-section > .university-campus-chooser {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+}
+
+@media (max-width: 960px) {
+  .university-home-hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-top: 3rem;
+  }
+  .university-home-intro {
+    max-width: 46rem;
+  }
+  .university-home-visual {
+    width: 100%;
+  }
+  .university-home-stats {
+    grid-column: 1;
+  }
+  .university-home-section,
+  .university-home-campus-section {
+    grid-template-columns: 1fr;
+  }
+  .university-home-campus-section > .university-home-section-label,
+  .university-home-campus-section > h2,
+  .university-home-campus-section > p,
+  .university-home-campus-section > .university-campus-chooser {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .university-home-hero {
+    gap: 2rem;
+    padding-top: 2.25rem;
+  }
+  .university-home h1 {
+    font-size: clamp(2.65rem, 14vw, 4rem);
+  }
+  .university-home-actions {
+    display: grid;
+  }
+  .university-home-primary,
+  .university-home-secondary {
+    width: 100%;
+  }
+  .university-product-bar {
+    grid-template-columns: 1fr auto;
+  }
+  .university-product-status {
+    display: none;
+  }
+  .university-product-body {
+    grid-template-columns: 1fr;
+  }
+  .university-product-route {
+    display: none;
+  }
+  .university-product-schedule {
+    padding: 0.9rem;
+  }
+  .university-home-stats {
+    grid-template-columns: 1fr;
+  }
+  .university-home-stats div {
+    min-height: 3.9rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--university-home-line);
+  }
+  .university-home-stats div:last-child {
+    border-bottom: 0;
+  }
+  .university-home-section {
+    padding: 3.5rem 0;
+  }
+  .university-home-quick-links {
+    grid-template-columns: 1fr;
+  }
+  .university-home-quick-links a {
+    min-height: 9.5rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--university-home-line);
+  }
+  .university-home-quick-links a:last-child {
+    border-bottom: 0;
+  }
+  .university-home-import-panel {
+    border-top: 1px solid var(--university-home-line);
+    border-left: 0;
+    padding-top: 1.5rem;
+    padding-left: 0;
+  }
+  .university-home-footer {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .university-home *,
+  .university-home *::before,
+  .university-home *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

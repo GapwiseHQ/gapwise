@@ -6,7 +6,24 @@ const SITE_ORIGIN = "https://gapwise.ca";
 const GITHUB_ORGANIZATION = "https://github.com/GapwiseHQ";
 const GITHUB_CORE = `${GITHUB_ORGANIZATION}/gapwise`;
 
+type UniversityMarketing = {
+  campusName: string;
+  headline: string;
+  description: string;
+  seoTitle: string;
+  seoDescription: string;
+};
+
 const universitiesManifest = JSON.parse(await readFile("universities.json", "utf8")) as {
+  sites: Array<{
+    role: string;
+    canonicalHost: string;
+    universityId?: string;
+    campusId?: string;
+    name?: string;
+    shortName?: string;
+    presentation?: { marketing?: UniversityMarketing };
+  }>;
   universities: Array<{
     id: string;
     name: string;
@@ -15,6 +32,7 @@ const universitiesManifest = JSON.parse(await readFile("universities.json", "utf
     hosts: string[];
     campuses: string[];
     enabledFeatures?: { routing?: boolean };
+    marketing: UniversityMarketing;
   }>;
 };
 const supportedUniversityCount = universitiesManifest.universities.length;
@@ -30,48 +48,37 @@ export type UniversityContext = {
   origin: string;
   routable: boolean;
   campusName?: string;
+  marketing: UniversityMarketing;
 };
 
+const uoftUniversity = universitiesManifest.universities.find(
+  (university) => university.id === "uoft",
+)!;
+const uoftHub = universitiesManifest.sites.find(
+  (site) => site.role === "university-hub" && site.universityId === "uoft",
+)!;
 export const UOFT_CONTEXT: UniversityContext = {
   id: "uoft",
-  name: "University of Toronto",
-  shortName: "U of T",
-  origin: "https://uoft.gapwise.ca",
+  name: uoftUniversity.name,
+  shortName: uoftUniversity.shortName,
+  origin: `https://${uoftHub.canonicalHost}`,
   routable: true,
+  marketing: uoftHub.presentation?.marketing ?? uoftUniversity.marketing,
 };
 
-const UOFT_CAMPUS_EDITIONS = [
-  {
-    campusId: "utm",
+const UOFT_CAMPUS_EDITIONS = universitiesManifest.sites
+  .filter((site) => site.role === "campus-edition" && site.universityId === "uoft")
+  .map((site) => ({
+    campusId: site.campusId!,
     context: {
       ...UOFT_CONTEXT,
-      name: "University of Toronto Mississauga",
-      shortName: "UTM",
-      origin: "https://utm.gapwise.ca",
-      campusName: "Mississauga campus",
+      name: site.name!,
+      shortName: site.shortName!,
+      origin: `https://${site.canonicalHost}`,
+      campusName: site.presentation!.marketing!.campusName,
+      marketing: site.presentation!.marketing!,
     },
-  },
-  {
-    campusId: "utsg",
-    context: {
-      ...UOFT_CONTEXT,
-      name: "University of Toronto St. George",
-      shortName: "UTSG",
-      origin: "https://utsg.gapwise.ca",
-      campusName: "St. George campus",
-    },
-  },
-  {
-    campusId: "utsc",
-    context: {
-      ...UOFT_CONTEXT,
-      name: "University of Toronto Scarborough",
-      shortName: "UTSC",
-      origin: "https://utsc.gapwise.ca",
-      campusName: "Scarborough campus",
-    },
-  },
-] as const satisfies ReadonlyArray<{ campusId: string; context: UniversityContext }>;
+  })) satisfies ReadonlyArray<{ campusId: string; context: UniversityContext }>;
 
 function socialImageUrl(uniContext?: UniversityContext) {
   if (!uniContext) return `${SITE_ORIGIN}/og-gapwise.png`;
@@ -380,6 +387,7 @@ function metadata(page: SeoPage, uniContext?: UniversityContext) {
       : "";
 
   return `
+    <!-- gapwise-static-seo:start -->
     <title>${title}</title>
     <meta name="description" content="${description}" />
     <meta name="application-name" content="Gapwise" />
@@ -400,7 +408,8 @@ function metadata(page: SeoPage, uniContext?: UniversityContext) {
     <meta name="twitter:title" content="${title}" />
     <meta name="twitter:description" content="${description}" />
     <meta name="twitter:image" content="${socialImage}" />
-    <meta name="twitter:image:alt" content="${socialImageAlt}" />${schema}`;
+    <meta name="twitter:image:alt" content="${socialImageAlt}" />${schema}
+    <!-- gapwise-static-seo:end -->`;
 }
 
 function fallback(page: SeoPage, uniContext?: UniversityContext) {
@@ -560,11 +569,10 @@ function getUniversityPage(page: SeoPage, uni: UniversityContext): SeoPage {
   if (page.path === "/") {
     return {
       path: "/",
-      title: `Gapwise for ${uni.name} — Timetable & Campus Navigation`,
-      description: `Gapwise is a free and open-source timetable, campus navigation, and student planning platform for ${uni.name} students.`,
-      heading: "Make the time between classes count.",
-      detail:
-        "Import your class schedule, understand the usable time between classes, and explore source-backed campus maps. Guest mode and a demo work without an account.",
+      title: uni.marketing.seoTitle,
+      description: uni.marketing.seoDescription,
+      heading: uni.marketing.headline,
+      detail: uni.marketing.description,
       sections: [
         {
           title: "Your timetable, connected to campus context",
@@ -693,6 +701,7 @@ for (const uni of universitiesManifest.universities) {
     shortName: uni.shortName,
     origin: uniOrigin,
     routable: Boolean(uni.enabledFeatures?.routing),
+    marketing: uni.marketing,
   };
 
   const uniSitemapUrl = `${uniOrigin}/sitemap.xml`;

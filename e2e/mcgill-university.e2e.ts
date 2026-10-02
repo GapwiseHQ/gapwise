@@ -10,7 +10,7 @@ test("McGill calendar import preserves downtown campus search and routing", asyn
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto(editionUrl(baseURL, "mcgill"));
-  await expect(page.getByText("For McGill University", { exact: true })).toBeVisible();
+  await expect(page.getByText("Gapwise for McGill University", { exact: true })).toBeVisible();
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("McGill");
 
   await page
@@ -49,7 +49,7 @@ test("McGill demo remains usable on the mobile campus map", async ({ page, baseU
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto(editionUrl(baseURL, "mcgill"));
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable/);
   await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();
   await expect(page.getByText("COMP 202").first()).toBeVisible();

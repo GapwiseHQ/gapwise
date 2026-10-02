@@ -16,7 +16,7 @@ test("Waterloo Quest import preserves the canonical campus through timetable and
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto(editionUrl(baseURL, "waterloo"));
-  await expect(page.getByText("For University of Waterloo", { exact: true })).toBeVisible();
+  await expect(page.getByText("Gapwise for University of Waterloo", { exact: true })).toBeVisible();
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("Waterloo");
 
   await page.getByRole("button", { name: "Paste Quest Class Schedule rows" }).click();
@@ -70,8 +70,8 @@ test("Waterloo has its own demo timetable and usable mobile campus map", async (
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto(editionUrl(baseURL, "waterloo"));
-  await expect(page.getByText("For University of Waterloo", { exact: true })).toBeVisible();
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await expect(page.getByText("Gapwise for University of Waterloo", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable/);
   await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();
   await expect(page.getByText("MATH 135").first()).toBeVisible();

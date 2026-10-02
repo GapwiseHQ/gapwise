@@ -8,7 +8,7 @@ test("mobile gap tool sheets keep their content vertically scrollable", async ({
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
 
   await expectLanding(page);
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   const nav = page.getByRole("navigation", { name: "Main" });
   await expect(nav).toBeVisible();
   await nav.getByRole("link", { name: "Timetable" }).click();

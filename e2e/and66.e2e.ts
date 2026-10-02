@@ -38,15 +38,13 @@ test("AND-66 first-run landing keeps activation clear on a narrow phone", async 
   await page.setViewportSize({ width: 360, height: 740 });
   await expectLanding(page);
 
-  await expect(
-    page.getByRole("heading", { name: "Make every gap on campus count." }),
-  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Make every gap at UTM count." })).toBeVisible();
   await expect(
     page.getByText(
       "Plan classes, buildings, routes, and time between classes across the Mississauga campus.",
     ),
   ).toBeVisible();
-  await expect(page.getByRole("button", { name: "Try a demo" })).toBeVisible();
+  await expect(page.getByRole("button", { name: /Try the .* demo/ })).toBeVisible();
   await expect(page.getByRole("link", { name: "Need help importing?" })).toHaveAttribute(
     "href",
     "/acorn-import",

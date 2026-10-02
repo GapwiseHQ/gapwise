@@ -74,12 +74,7 @@ export function watchForAppFailures(page: Page, baseURL: string) {
 
 export async function expectLanding(page: Page) {
   await page.goto("/");
-  const mobile = (page.viewportSize()?.width ?? 1280) < 768;
-  await expect(
-    page.getByRole("heading", {
-      name: mobile ? "Start with your timetable." : "Make every gap on campus count.",
-    }),
-  ).toBeVisible();
-  await expect(page.getByRole("button", { name: "Try a demo" })).toBeVisible();
+  await expect(page.locator(".university-home h1, .global-home h1").first()).toBeVisible();
+  await expect(page.locator(".university-home-primary").first()).toBeVisible();
   await expect(page.locator("#ics-file")).toHaveCount(1);
 }

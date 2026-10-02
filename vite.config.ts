@@ -44,34 +44,46 @@ export default defineConfig({
         server.middlewares.use((req, _res, next) => {
           if (!req.url) return next();
           const parsed = new URL(req.url, "http://localhost");
-          const host = (req.headers.host || "").toLowerCase();
+          const requestHost = (req.headers.host || "").toLowerCase().split(":")[0] ?? "";
+          const canonicalHost = requestHost.endsWith(".localhost")
+            ? `${requestHost.slice(0, -".localhost".length)}.gapwise.ca`
+            : requestHost === "localhost" || requestHost === "127.0.0.1"
+              ? "gapwise.ca"
+              : requestHost;
           const KNOWN_UNIVERSITIES = new Set(manifest.universities.map((u) => u.id));
-          let uniId = "uoft";
-          for (const u of manifest.universities) {
-            if (u.id !== "uoft" && host.includes(u.id)) {
-              uniId = u.id;
-              break;
-            }
-          }
+          const site = manifest.sites.find((candidate) => candidate.hosts.includes(canonicalHost));
           const queryUni = parsed.searchParams.get("university");
-          if (queryUni && KNOWN_UNIVERSITIES.has(queryUni)) {
-            uniId = queryUni;
-          }
+          const queryUniversity =
+            queryUni && KNOWN_UNIVERSITIES.has(queryUni)
+              ? manifest.universities.find((university) => university.id === queryUni)
+              : undefined;
+
+          const entryPoint = queryUniversity
+            ? `/_universities/${queryUniversity.id}/index.html`
+            : site?.role === "campus-edition" && site.campusId
+              ? `/_campuses/${site.campusId}/index.html`
+              : (site?.role === "university-hub" || site?.role === "single-campus-edition") &&
+                  site.universityId
+                ? `/_universities/${site.universityId}/index.html`
+                : "/_seo/index.html";
+          const assetUniversityId = queryUniversity?.id ?? site?.universityId;
 
           if (
             parsed.pathname === "/" ||
             parsed.pathname === "" ||
             parsed.pathname === "/index.html"
           ) {
-            req.url = `/_universities/${uniId}/index.html`;
+            req.url = entryPoint;
           } else if (parsed.pathname === "/og-card.png" || parsed.pathname === "/og-gapwise.png") {
-            req.url = `/universities/${uniId}/og-card.png`;
+            req.url = assetUniversityId
+              ? `/universities/${assetUniversityId}/og-card.png`
+              : "/_global/og-gapwise.png";
           } else if (
             !parsed.pathname.includes(".") &&
             !parsed.pathname.startsWith("/api") &&
             !parsed.pathname.startsWith("/v1")
           ) {
-            req.url = `/_universities/${uniId}/index.html`;
+            req.url = entryPoint;
           }
           next();
         });

@@ -1,6 +1,33 @@
 import manifest from "../../universities.json" with { type: "json" };
 
-export type University = (typeof manifest.universities)[number];
+export type UniversityMarketing = {
+  campusName: string;
+  headline: string;
+  description: string;
+  seoTitle: string;
+  seoDescription: string;
+  stats: {
+    buildings: number;
+    entrances: number;
+    pathSegments: number;
+  };
+  example: {
+    day: string;
+    courseCode: string;
+    buildingCode: string;
+    buildingName: string;
+    room: string;
+    nextCourseCode: string;
+    nextBuildingCode: string;
+    nextBuildingName: string;
+    nextRoom: string;
+  };
+  searchExamples: string[];
+};
+
+export type University = (typeof manifest.universities)[number] & {
+  marketing: UniversityMarketing;
+};
 
 export type SiteRole =
   "global" | "university-hub" | "campus-edition" | "single-campus-edition" | "reserved";
@@ -24,6 +51,7 @@ export type SiteDefinition = {
     ogTitle?: string;
     ogDescription?: string;
     links?: Array<{ label: string; href: string }>;
+    marketing?: UniversityMarketing;
   };
 };
 
@@ -84,6 +112,19 @@ export function validateUniversityManifest(
     if (!entry.accentColor?.trim() || !/^#[0-9a-fA-F]{6}$/.test(entry.accentColor))
       errors.push(`${entry.id}: valid hex accentColor is required`);
     if (!entry.campusScope?.trim()) errors.push(`${entry.id}: campusScope is required`);
+    if (!entry.marketing?.headline.trim() || !entry.marketing?.description.trim())
+      errors.push(`${entry.id}: university marketing copy is required`);
+    if (!entry.marketing?.seoTitle.trim() || !entry.marketing?.seoDescription.trim())
+      errors.push(`${entry.id}: university SEO metadata is required`);
+    if (
+      !entry.marketing ||
+      entry.marketing.stats.buildings < 1 ||
+      entry.marketing.stats.entrances < 1 ||
+      entry.marketing.stats.pathSegments < 1
+    )
+      errors.push(`${entry.id}: positive university coverage statistics are required`);
+    if (entry.marketing?.searchExamples.length !== 3)
+      errors.push(`${entry.id}: exactly three university search examples are required`);
     if (entry.status !== "planned" && !entry.dataPaths.length)
       errors.push(`${entry.id}: data paths are required`);
     for (const campus of entry.campuses) {
@@ -100,7 +141,27 @@ export function validateUniversityManifest(
 }
 
 export function universityById(id: string): University | null {
-  return manifest.universities.find((entry) => entry.id === id) ?? null;
+  return (manifest.universities.find((entry) => entry.id === id) as University | undefined) ?? null;
+}
+
+export function marketingForSite(
+  site: SiteDefinition | null,
+  university: University | null,
+): UniversityMarketing | null {
+  return site?.presentation?.marketing ?? university?.marketing ?? null;
+}
+
+export function displayNameForSite(
+  site: SiteDefinition | null,
+  university: University | null,
+): string {
+  return site?.name ?? university?.name ?? "Gapwise";
+}
+
+export function canonicalUrlForSite(site: SiteDefinition | null): string {
+  return site && site.role !== "reserved"
+    ? `https://${site.canonicalHost}/`
+    : "https://gapwise.ca/";
 }
 
 export function isPreviewOrLocalHost(hostname: string): boolean {

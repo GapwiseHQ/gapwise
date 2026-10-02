@@ -26,19 +26,16 @@ async function openDayRoute(page: Page, mobile: boolean) {
   }
 }
 
-test("ACORN building evidence activates the correct UTM, UTSG, and UTSC products", async ({
-  page,
-  baseURL,
-}) => {
-  test.skip(test.info().project.name !== "chromium");
-  if (!baseURL) throw new Error("Playwright baseURL is required");
-  const failures = watchForAppFailures(page, baseURL);
+for (const [name, campus, firstCode] of [
+  ["acorn-utm-sanitized.ics", "UTM", "MN"],
+  ["acorn-utsg-sanitized.ics", "UTSG", "BA"],
+  ["acorn-utsc-sanitized.ics", "UTSC", "HL"],
+] as const) {
+  test(`ACORN building evidence activates the ${campus} product`, async ({ page, baseURL }) => {
+    test.skip(test.info().project.name !== "chromium");
+    if (!baseURL) throw new Error("Playwright baseURL is required");
+    const failures = watchForAppFailures(page, baseURL);
 
-  for (const [name, campus, firstCode] of [
-    ["acorn-utm-sanitized.ics", "UTM", "MN"],
-    ["acorn-utsg-sanitized.ics", "UTSG", "BA"],
-    ["acorn-utsc-sanitized.ics", "UTSC", "HL"],
-  ] as const) {
     await importFixture(page, name);
     await openDayRoute(page, false);
 
@@ -67,10 +64,10 @@ test("ACORN building evidence activates the correct UTM, UTSG, and UTSC products
     await expect(page.getByRole("searchbox", { name: `Search ${campus} buildings` })).toBeVisible();
     await page.reload();
     await expect(page.getByRole("searchbox", { name: `Search ${campus} buildings` })).toBeVisible();
-  }
 
-  failures.assertClean();
-});
+    failures.assertClean();
+  });
+}
 
 test("mixed and ambiguous ACORN locations preserve the explicit campus edition", async ({
   page,

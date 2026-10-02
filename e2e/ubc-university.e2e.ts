@@ -16,7 +16,9 @@ test("UBC Workday paste import preserves the Vancouver campus through timetable 
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto(editionUrl(baseURL, "ubc"));
-  await expect(page.getByText("For University of British Columbia", { exact: true })).toBeVisible();
+  await expect(
+    page.getByText("Gapwise for University of British Columbia", { exact: true }),
+  ).toBeVisible();
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("UBC");
 
   await page.getByRole("button", { name: "Paste Workday View My Courses rows" }).click();
@@ -69,8 +71,10 @@ test("UBC has its own demo timetable and usable mobile campus map", async ({ pag
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto(editionUrl(baseURL, "ubc"));
-  await expect(page.getByText("For University of British Columbia", { exact: true })).toBeVisible();
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await expect(
+    page.getByText("Gapwise for University of British Columbia", { exact: true }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable/);
   await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();
   await expect(page.getByText("CPSC 110").first()).toBeVisible();

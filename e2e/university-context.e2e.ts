@@ -10,9 +10,9 @@ test("Carleton uses the canonical product screens and campus dataset", async ({
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto(editionUrl(baseURL, "carleton"));
-  await expect(page.getByText("For Carleton University", { exact: true })).toBeVisible();
+  await expect(page.getByText("Gapwise for Carleton University", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /Import Carleton/ })).toBeVisible();
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable/);
   if (test.info().project.name === "mobile-chromium") {
     await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();
@@ -44,9 +44,7 @@ test("explicit UTM local host preserves the campus edition", async ({ page, base
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
   await page.goto("/");
-  await expect(page).toHaveTitle(
-    "Gapwise for University of Toronto Mississauga — Timetable & Campus Navigation",
-  );
+  await expect(page).toHaveTitle("Gapwise for University of Toronto Mississauga");
   await expect(page.getByRole("button", { name: "Import ACORN" })).toBeVisible();
   failures.assertClean();
 });
@@ -133,12 +131,12 @@ test("Direct URL refresh preserves university context in local development", asy
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto(editionUrl(baseURL, "carleton"));
-  await expect(page.getByText("For Carleton University", { exact: true })).toBeVisible();
+  await expect(page.getByText("Gapwise for Carleton University", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /Import Carleton/ })).toBeVisible();
 
   // Refresh page
   await page.reload();
-  await expect(page.getByText("For Carleton University", { exact: true })).toBeVisible();
+  await expect(page.getByText("Gapwise for Carleton University", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /Import Carleton/ })).toBeVisible();
   failures.assertClean();
 });
@@ -154,12 +152,12 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
   // TMU
   await page.goto(editionUrl(baseURL, "tmu"));
   await expect(
-    page.getByText("For Toronto Metropolitan University", { exact: true }),
+    page.getByText("Gapwise for Toronto Metropolitan University", { exact: true }),
   ).toBeVisible();
   await expect(
     page.getByRole("button", { name: /Import (MyServiceHub|pasted schedule)/ }),
   ).toBeVisible();
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable/);
   if (test.info().project.name === "mobile-chromium") {
     await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();
@@ -168,9 +166,9 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
 
   // Queen's
   await page.goto(editionUrl(baseURL, "queens"));
-  await expect(page.getByText("For Queen's University", { exact: true })).toBeVisible();
+  await expect(page.getByText("Gapwise for Queen's University", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /Import (SOLUS|pasted schedule)/ })).toBeVisible();
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable/);
   if (test.info().project.name === "mobile-chromium") {
     await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();
@@ -179,9 +177,11 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
 
   // Laurier
   await page.goto(editionUrl(baseURL, "laurier"));
-  await expect(page.getByText("For Wilfrid Laurier University", { exact: true })).toBeVisible();
+  await expect(
+    page.getByText("Gapwise for Wilfrid Laurier University", { exact: true }),
+  ).toBeVisible();
   await expect(page.getByRole("button", { name: /Import (LORIS|pasted schedule)/ })).toBeVisible();
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable/);
   if (test.info().project.name === "mobile-chromium") {
     await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();

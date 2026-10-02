@@ -15,7 +15,7 @@ test("a timetable gap opens Gap Plan with that exact interval selected", async (
   const mobile = isMobileProject(testInfo.project.name);
 
   await page.goto("/");
-  await page.getByRole("button", { name: "Try a demo" }).click();
+  await page.getByRole("button", { name: /Try the .* demo/ }).click();
 
   if (mobile) {
     const nav = page.getByRole("navigation", { name: "Main" });

@@ -71,9 +71,7 @@ test("PWA metadata, service worker, and cached app shell are functional", async 
   await context.setOffline(true);
   try {
     await page.reload({ waitUntil: "domcontentloaded" });
-    await expect(
-      page.getByRole("heading", { name: "Make every gap on campus count." }),
-    ).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Make every gap at UTM count." })).toBeVisible();
     expect(await page.evaluate(() => Boolean(navigator.serviceWorker?.controller))).toBe(true);
   } finally {
     await context.setOffline(false);
