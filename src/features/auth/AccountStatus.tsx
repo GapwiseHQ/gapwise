@@ -51,17 +51,21 @@ function SignInStub({
         type="button"
         disabled={loading || !available}
         onClick={onActivate}
-        className="button-secondary inline-flex min-h-9 items-center gap-2 px-3 text-sm font-medium disabled:opacity-50"
+        className="button-secondary inline-flex min-h-9 min-w-9 items-center justify-center gap-2 p-2 text-sm font-medium disabled:opacity-50 sm:px-3"
+        aria-label="Sign in"
       >
-        <UserRound className="h-4 w-4" aria-hidden="true" /> Sign in
+        <UserRound className="h-4 w-4" aria-hidden="true" />
+        <span className="hidden sm:inline">Sign in</span>
       </button>
       <button
         type="button"
         disabled={loading}
         onClick={onOpenSettings}
-        className="button-secondary inline-flex min-h-9 items-center gap-2 px-3 text-sm font-medium disabled:opacity-50"
+        className="button-secondary inline-flex min-h-9 min-w-9 items-center justify-center gap-2 p-2 text-sm font-medium disabled:opacity-50 sm:px-3"
+        aria-label="Settings"
       >
-        <Settings2 className="h-4 w-4" aria-hidden="true" /> Settings
+        <Settings2 className="h-4 w-4" aria-hidden="true" />
+        <span className="hidden sm:inline">Settings</span>
       </button>
     </div>
   );

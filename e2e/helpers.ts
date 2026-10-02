@@ -4,9 +4,21 @@ export function isMobileProject(projectName: string) {
   return projectName.startsWith("mobile-");
 }
 
+export function editionUrl(baseURL: string, host: string, path = "/") {
+  const url = new URL(path, baseURL);
+  const isLocal =
+    url.hostname === "localhost" ||
+    url.hostname === "127.0.0.1" ||
+    url.hostname.endsWith(".localhost");
+  if (isLocal) url.hostname = `${host}.localhost`;
+  else url.searchParams.set("university", host);
+  return url.toString();
+}
+
 export function watchForAppFailures(page: Page, baseURL: string) {
   const failures: string[] = [];
   const appOrigin = new URL(baseURL).origin;
+  const appUrl = new URL(baseURL);
   const ignoredLocalInstrumentationPaths = [
     "/_vercel/insights/",
     "/_vercel/speed-insights/",
@@ -14,8 +26,15 @@ export function watchForAppFailures(page: Page, baseURL: string) {
   ];
 
   const isIgnoredLocalInstrumentationRequest = (url: URL) =>
-    url.origin === appOrigin &&
+    isFirstParty(url) &&
     ignoredLocalInstrumentationPaths.some((path) => url.pathname.startsWith(path));
+
+  const isFirstParty = (url: URL) =>
+    url.origin === appOrigin ||
+    (appUrl.hostname.endsWith(".localhost") &&
+      url.hostname.endsWith(".localhost") &&
+      url.protocol === appUrl.protocol &&
+      url.port === appUrl.port);
 
   page.on("pageerror", (error) => {
     failures.push(`pageerror: ${error.message}`);
@@ -34,7 +53,7 @@ export function watchForAppFailures(page: Page, baseURL: string) {
   page.on("response", (response) => {
     const url = new URL(response.url());
     if (isIgnoredLocalInstrumentationRequest(url)) return;
-    if (url.origin === appOrigin && response.status() >= 400) {
+    if (isFirstParty(url) && response.status() >= 400) {
       failures.push(`HTTP ${response.status()}: ${url.pathname}`);
     }
   });
@@ -42,7 +61,7 @@ export function watchForAppFailures(page: Page, baseURL: string) {
   page.on("requestfailed", (request) => {
     const url = new URL(request.url());
     if (isIgnoredLocalInstrumentationRequest(url)) return;
-    if (url.origin !== appOrigin) return;
+    if (!isFirstParty(url)) return;
     failures.push(`request failed: ${url.pathname} (${request.failure()?.errorText ?? "unknown"})`);
   });
 

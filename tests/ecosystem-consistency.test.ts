@@ -4,6 +4,7 @@ import { resolve } from "node:path";
 import manifest from "../universities.json";
 import { timetableAdapters, demoTimetableLoaders } from "@/universities/timetable-adapters";
 import {
+  siteForHostname,
   supportedUniversities,
   universityById,
   universityForHostname,
@@ -27,6 +28,34 @@ const EXPECTED_UNIVERSITY_IDS = [
 ] as const;
 
 describe("Gapwise Ecosystem Consistency", () => {
+  test("reserved hosts are modeled without entering supported university coverage", () => {
+    const reservedHosts = manifest.sites
+      .filter((site) => site.role === "reserved")
+      .flatMap((site) => site.hosts);
+    for (const host of [
+      "ubco.gapwise.ca",
+      "glendon.gapwise.ca",
+      "markham.gapwise.ca",
+      "harvard.gapwise.ca",
+      "yale.gapwise.ca",
+      "princeton.gapwise.ca",
+      "columbia.gapwise.ca",
+      "brown.gapwise.ca",
+      "dartmouth.gapwise.ca",
+      "cornell.gapwise.ca",
+      "upenn.gapwise.ca",
+      "stanford.gapwise.ca",
+      "mit.gapwise.ca",
+      "cmu.gapwise.ca",
+      "nyu.gapwise.ca",
+      "ucberkeley.gapwise.ca",
+    ]) {
+      expect(reservedHosts).toContain(host);
+      expect(manifest.universities.some((university) => university.hosts.includes(host))).toBe(
+        false,
+      );
+    }
+  });
   test("canonical registry contains exactly the supported universities", () => {
     expect(manifest.universities).toHaveLength(EXPECTED_UNIVERSITY_IDS.length);
     const ids = manifest.universities.map((u) => u.id);
@@ -39,6 +68,8 @@ describe("Gapwise Ecosystem Consistency", () => {
     for (const uni of manifest.universities) {
       expect(universityById(uni.id)).not.toBeNull();
       for (const host of uni.hosts) {
+        expect(siteForHostname(host)?.role).not.toBe("reserved");
+        expect(siteForHostname(host)?.universityId).toBe(uni.id);
         expect(universityForHostname(host)?.id).toBe(uni.id);
         expect(universityForHostname(host.toUpperCase())?.id).toBe(uni.id);
       }

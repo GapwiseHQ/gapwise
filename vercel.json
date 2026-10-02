@@ -24,6 +24,39 @@
       "permanent": true
     },
     {
+      "source": "/utm-timetable",
+      "has": [
+        {
+          "type": "host",
+          "value": "gapwise.ca"
+        }
+      ],
+      "destination": "https://utm.gapwise.ca/utm-timetable",
+      "permanent": true
+    },
+    {
+      "source": "/acorn-import",
+      "has": [
+        {
+          "type": "host",
+          "value": "gapwise.ca"
+        }
+      ],
+      "destination": "https://utm.gapwise.ca/acorn-import",
+      "permanent": true
+    },
+    {
+      "source": "/places/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "gapwise.ca"
+        }
+      ],
+      "destination": "https://utm.gapwise.ca/places/:path*",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
@@ -289,6 +322,41 @@
     {
       "source": "/v1/gaps/plan",
       "destination": "/api/v1?resource=gap-plan"
+    },
+    {
+      "source": "/(logo-mark.svg|favicon.*|apple-touch-icon.png|site.webmanifest)",
+      "has": [{ "type": "host", "value": "uoft.gapwise.ca" }],
+      "destination": "/universities/uoft/$1"
+    },
+    {
+      "source": "/(og-card.png|og-gapwise.png)",
+      "has": [{ "type": "host", "value": "uoft.gapwise.ca" }],
+      "destination": "/universities/uoft/og-card.png"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [{ "type": "host", "value": "uoft.gapwise.ca" }],
+      "destination": "/_universities/uoft/sitemap.xml"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [{ "type": "host", "value": "uoft.gapwise.ca" }],
+      "destination": "/_universities/uoft/robots.txt"
+    },
+    {
+      "source": "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
+      "has": [{ "type": "host", "value": "uoft.gapwise.ca" }],
+      "destination": "/_universities/uoft/_seo/$1.html"
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "uoft.gapwise.ca" }],
+      "destination": "/_universities/uoft/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "uoft.gapwise.ca" }],
+      "destination": "/_universities/uoft/index.html"
     },
     {
       "source": "/(logo-mark.svg|favicon.*|apple-touch-icon.png|site.webmanifest)",
@@ -1218,7 +1286,7 @@
           "value": "utm.gapwise.ca"
         }
       ],
-      "destination": "/universities/uoft/og-card.png"
+      "destination": "/campuses/utm/og-card.png"
     },
     {
       "source": "/sitemap.xml",
@@ -1288,7 +1356,7 @@
           "value": "utsg.gapwise.ca"
         }
       ],
-      "destination": "/universities/uoft/og-card.png"
+      "destination": "/campuses/utsg/og-card.png"
     },
     {
       "source": "/sitemap.xml",
@@ -1358,7 +1426,7 @@
           "value": "utsc.gapwise.ca"
         }
       ],
-      "destination": "/universities/uoft/og-card.png"
+      "destination": "/campuses/utsc/og-card.png"
     },
     {
       "source": "/sitemap.xml",
@@ -1412,7 +1480,7 @@
     },
     {
       "source": "/(og-card.png|og-gapwise.png)",
-      "destination": "/universities/uoft/og-card.png"
+      "destination": "/_global/og-gapwise.png"
     },
     {
       "source": "/(logo-mark.svg|favicon.*|apple-touch-icon.png|site.webmanifest)",
@@ -1439,10 +1507,6 @@
       "destination": "/_seo/open-source.html"
     },
     {
-      "source": "/utm-timetable",
-      "destination": "/_seo/utm-timetable.html"
-    },
-    {
       "source": "/campus-map",
       "destination": "/_seo/campus-map.html"
     },
@@ -1453,26 +1517,6 @@
     {
       "source": "/campus-routing",
       "destination": "/_seo/campus-routing.html"
-    },
-    {
-      "source": "/acorn-import",
-      "destination": "/_seo/acorn-import.html"
-    },
-    {
-      "source": "/places",
-      "destination": "/_seo/places.html"
-    },
-    {
-      "source": "/places/davis-food-court",
-      "destination": "/_seo/places--davis-food-court.html"
-    },
-    {
-      "source": "/places/utm-library",
-      "destination": "/_seo/places--utm-library.html"
-    },
-    {
-      "source": "/places/rawc",
-      "destination": "/_seo/places--rawc.html"
     },
     {
       "source": "/developers",
@@ -1508,11 +1552,11 @@
     },
     {
       "source": "/",
-      "destination": "/_universities/uoft/index.html"
+      "destination": "/_seo/index.html"
     },
     {
       "source": "/(.*)",
-      "destination": "/_universities/uoft/index.html"
+      "destination": "/_seo/index.html"
     }
   ]
 }

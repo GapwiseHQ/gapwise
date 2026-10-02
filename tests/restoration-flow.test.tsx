@@ -8,7 +8,7 @@ import { DEFAULT_USER_PREFERENCES } from "@/features/sync/preferences";
 import { DEFAULT_GAP_PREFERENCES } from "@/features/gaps/preferences";
 import { meeting } from "./fixtures";
 
-const browserWindow = new Window({ url: "https://gapwise.test/" });
+const browserWindow = new Window({ url: "https://utm.gapwise.test/" });
 const browserGlobals = globalThis as unknown as Record<string, unknown>;
 Object.assign(browserGlobals, {
   window: browserWindow,

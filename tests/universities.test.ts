@@ -19,6 +19,8 @@ import { parseIcs as parseUoftIcs } from "@/lib/ics-parser";
 import { parseCarletonIcs, carletonCampus } from "@/universities/carleton/adapter";
 import { timetableAdapters, loadDemoTimetable } from "@/universities/timetable-adapters";
 import {
+  campusForHostname,
+  siteForHostname,
   universityById,
   universityForHostname,
   validateUniversityManifest,
@@ -48,10 +50,11 @@ const carletonIcs = [
 
 describe("university registry", () => {
   test("resolves production hosts and local preview override", () => {
-    expect(universityForHostname("gapwise.ca")?.id).toBe("uoft");
-    expect(universityForHostname("GAPWISE.CA")?.id).toBe("uoft");
-    expect(universityForHostname("gapwise.ca.")?.id).toBe("uoft");
-    expect(universityForHostname("www.gapwise.ca")?.id).toBe("uoft");
+    expect(universityForHostname("gapwise.ca")).toBeNull();
+    expect(universityForHostname("GAPWISE.CA")).toBeNull();
+    expect(universityForHostname("gapwise.ca.")).toBeNull();
+    expect(universityForHostname("www.gapwise.ca")).toBeNull();
+    expect(universityForHostname("uoft.gapwise.ca")?.id).toBe("uoft");
     expect(universityForHostname("carleton.gapwise.ca")?.id).toBe("carleton");
     expect(universityForHostname("CARLETON.GAPWISE.CA.")?.id).toBe("carleton");
     expect(universityForHostname("tmu.gapwise.ca")?.id).toBe("tmu");
@@ -66,10 +69,10 @@ describe("university registry", () => {
     expect(universityForHostname("ubc.gapwise.ca")?.id).toBe("ubc");
     expect(universityForHostname("waterloo.gapwise.ca")?.id).toBe("waterloo");
     expect(universityForHostname("mcgill.gapwise.ca")?.id).toBe("mcgill");
-    expect(universityForHostname("localhost")?.id).toBe("uoft");
+    expect(universityForHostname("localhost")).toBeNull();
     expect(universityForHostname("localhost", "carleton")?.id).toBe("carleton");
     expect(universityForHostname("localhost", "tmu")?.id).toBe("tmu");
-    expect(universityForHostname("preview-branch.vercel.app")?.id).toBe("uoft");
+    expect(universityForHostname("preview-branch.vercel.app")).toBeNull();
     expect(universityForHostname("preview-branch.vercel.app", "queens")?.id).toBe("queens");
     expect(universityForHostname("preview-branch.vercel.app", "laurier")?.id).toBe("laurier");
     expect(universityForHostname("preview-branch.vercel.app", "york")?.id).toBe("york");
@@ -81,10 +84,70 @@ describe("university registry", () => {
     expect(universityForHostname("preview-branch.vercel.app", "ubc")?.id).toBe("ubc");
     expect(universityForHostname("preview-branch.vercel.app", "waterloo")?.id).toBe("waterloo");
     expect(universityForHostname("preview-branch.vercel.app", "mcgill")?.id).toBe("mcgill");
-    expect(universityForHostname("gapwise.ca", "carleton")?.id).toBe("uoft");
+    expect(universityForHostname("gapwise.ca", "carleton")).toBeNull();
     expect(universityForHostname("unknown.gapwise.ca")).toBeNull();
     expect(universityForHostname("attacker.com")).toBeNull();
     expect(universityById("nonexistent")).toBeNull();
+  });
+
+  test("resolves registry-driven global, hub, campus, single-campus, and reserved roles", () => {
+    expect(siteForHostname("gapwise.ca")?.role).toBe("global");
+    expect(siteForHostname("www.gapwise.ca")?.role).toBe("global");
+    expect(siteForHostname("localhost")?.role).toBe("global");
+    expect(siteForHostname("utm.localhost")).toMatchObject({
+      role: "campus-edition",
+      universityId: "uoft",
+      campusId: "utm",
+    });
+    expect(siteForHostname("preview-branch.vercel.app")?.role).toBe("global");
+    expect(siteForHostname("unknown.gapwise.ca")?.role).toBe("global");
+    expect(siteForHostname("attacker.example")?.role).toBe("global");
+    expect(siteForHostname("uoft.gapwise.ca")?.role).toBe("university-hub");
+    expect(siteForHostname("utm.gapwise.ca")).toMatchObject({
+      role: "campus-edition",
+      universityId: "uoft",
+      campusId: "utm",
+    });
+    expect(siteForHostname("mcgill.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(siteForHostname("harvard.gapwise.ca")?.role).toBe("reserved");
+    expect(universityForHostname("harvard.gapwise.ca")).toBeNull();
+    expect(campusForHostname("uoft.gapwise.ca")).toBeNull();
+    expect(campusForHostname("utm.gapwise.ca")).toBe("utm");
+    expect(campusForHostname("ubc.gapwise.ca")).toBe("ubc-vancouver");
+    expect(campusForHostname("ubcv.gapwise.ca")).toBeNull();
+    expect(campusForHostname("preview-branch.vercel.app")).toBeNull();
+    expect(campusForHostname("unknown.gapwise.ca")).toBeNull();
+  });
+
+  test("resolves the complete production host matrix without implicit UTM fallback", () => {
+    const expected = [
+      ["gapwise.ca", "global", null, null],
+      ["www.gapwise.ca", "global", null, null],
+      ["uoft.gapwise.ca", "university-hub", "uoft", null],
+      ["utm.gapwise.ca", "campus-edition", "uoft", "utm"],
+      ["utsg.gapwise.ca", "campus-edition", "uoft", "utsg"],
+      ["utsc.gapwise.ca", "campus-edition", "uoft", "utsc"],
+      ["carleton.gapwise.ca", "single-campus-edition", "carleton", "carleton"],
+      ["tmu.gapwise.ca", "single-campus-edition", "tmu", "tmu"],
+      ["queens.gapwise.ca", "single-campus-edition", "queens", "queens"],
+      ["laurier.gapwise.ca", "single-campus-edition", "laurier", "waterloo"],
+      ["mcmaster.gapwise.ca", "single-campus-edition", "mcmaster", "mcmaster"],
+      ["western.gapwise.ca", "single-campus-edition", "western", "western"],
+      ["guelph.gapwise.ca", "single-campus-edition", "guelph", "guelph"],
+      ["uottawa.gapwise.ca", "single-campus-edition", "uottawa", "uottawa"],
+      ["brock.gapwise.ca", "single-campus-edition", "brock", "brock"],
+      ["york.gapwise.ca", "single-campus-edition", "york", "keele"],
+      ["ubc.gapwise.ca", "single-campus-edition", "ubc", "ubc-vancouver"],
+      ["ubcv.gapwise.ca", "reserved", "ubc", "ubc-vancouver"],
+      ["waterloo.gapwise.ca", "single-campus-edition", "waterloo", "waterloo-main"],
+      ["mcgill.gapwise.ca", "single-campus-edition", "mcgill", "mcgill-downtown"],
+    ] as const;
+
+    for (const [host, role, universityId, campusId] of expected) {
+      expect(siteForHostname(host)).toMatchObject({ role });
+      expect(siteForHostname(host)?.universityId ?? null).toBe(universityId);
+      expect(siteForHostname(host)?.campusId ?? null).toBe(campusId);
+    }
   });
 
   test("rejects malformed manifest entries", () => {

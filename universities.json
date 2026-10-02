@@ -1,5 +1,340 @@
 {
   "schemaVersion": 1,
+  "sites": [
+    {
+      "id": "gapwise-global",
+      "role": "global",
+      "hosts": ["gapwise.ca", "www.gapwise.ca"],
+      "canonicalHost": "gapwise.ca",
+      "presentation": {
+        "accentColor": "#4EA7FE",
+        "heroEyebrow": "Free and open-source university software",
+        "heroDescription": "Gapwise brings timetable planning, campus search and maps, pedestrian routing, and the time between classes into one multi-university platform.",
+        "ogTitle": "Gapwise — University Timetable & Campus Navigation",
+        "ogDescription": "Free and open-source university timetable planning, campus navigation, routing, and between-class infrastructure."
+      }
+    },
+    {
+      "id": "uoft-hub",
+      "role": "university-hub",
+      "hosts": ["uoft.gapwise.ca"],
+      "canonicalHost": "uoft.gapwise.ca",
+      "universityId": "uoft",
+      "presentation": {
+        "accentColor": "#1E4B87",
+        "heroEyebrow": "Gapwise for the University of Toronto",
+        "heroDescription": "Choose UTM, UTSG, or UTSC for a timetable, campus map, building search, and routing experience grounded in that campus.",
+        "ogTitle": "Gapwise for the University of Toronto",
+        "ogDescription": "The Gapwise tri-campus hub for UTM, UTSG, and UTSC."
+      }
+    },
+    {
+      "id": "uoft-utm",
+      "role": "campus-edition",
+      "hosts": ["utm.gapwise.ca"],
+      "canonicalHost": "utm.gapwise.ca",
+      "universityId": "uoft",
+      "campusId": "utm",
+      "name": "University of Toronto Mississauga",
+      "shortName": "UTM",
+      "presentation": {
+        "accentColor": "#4EA7FE",
+        "heroDescription": "Plan classes, buildings, routes, and time between classes across the Mississauga campus.",
+        "cardDescription": "Mississauga campus timetable planning, building discovery, and pedestrian routing.",
+        "timetableLabel": "ACORN",
+        "visualLabel": "Mississauga"
+      }
+    },
+    {
+      "id": "uoft-utsg",
+      "role": "campus-edition",
+      "hosts": ["utsg.gapwise.ca"],
+      "canonicalHost": "utsg.gapwise.ca",
+      "universityId": "uoft",
+      "campusId": "utsg",
+      "name": "University of Toronto St. George",
+      "shortName": "UTSG",
+      "presentation": {
+        "accentColor": "#1E4B87",
+        "heroDescription": "Plan classes, buildings, routes, and time between classes across the downtown St. George campus.",
+        "cardDescription": "Downtown St. George timetable planning, building discovery, and pedestrian routing.",
+        "timetableLabel": "ACORN",
+        "visualLabel": "St. George"
+      }
+    },
+    {
+      "id": "uoft-utsc",
+      "role": "campus-edition",
+      "hosts": ["utsc.gapwise.ca"],
+      "canonicalHost": "utsc.gapwise.ca",
+      "universityId": "uoft",
+      "campusId": "utsc",
+      "name": "University of Toronto Scarborough",
+      "shortName": "UTSC",
+      "presentation": {
+        "accentColor": "#18A999",
+        "heroDescription": "Plan classes, buildings, routes, and time between classes across the Scarborough campus.",
+        "cardDescription": "Scarborough campus timetable planning, building discovery, and pedestrian routing.",
+        "timetableLabel": "ACORN",
+        "visualLabel": "Scarborough"
+      }
+    },
+    {
+      "id": "carleton-edition",
+      "role": "single-campus-edition",
+      "hosts": ["carleton.gapwise.ca"],
+      "canonicalHost": "carleton.gapwise.ca",
+      "universityId": "carleton",
+      "campusId": "carleton"
+    },
+    {
+      "id": "tmu-edition",
+      "role": "single-campus-edition",
+      "hosts": ["tmu.gapwise.ca"],
+      "canonicalHost": "tmu.gapwise.ca",
+      "universityId": "tmu",
+      "campusId": "tmu"
+    },
+    {
+      "id": "queens-edition",
+      "role": "single-campus-edition",
+      "hosts": ["queens.gapwise.ca"],
+      "canonicalHost": "queens.gapwise.ca",
+      "universityId": "queens",
+      "campusId": "queens"
+    },
+    {
+      "id": "laurier-edition",
+      "role": "single-campus-edition",
+      "hosts": ["laurier.gapwise.ca"],
+      "canonicalHost": "laurier.gapwise.ca",
+      "universityId": "laurier",
+      "campusId": "waterloo"
+    },
+    {
+      "id": "ubc-hub",
+      "role": "single-campus-edition",
+      "hosts": ["ubc.gapwise.ca"],
+      "canonicalHost": "ubc.gapwise.ca",
+      "universityId": "ubc",
+      "campusId": "ubc-vancouver"
+    },
+    {
+      "id": "ubc-vancouver",
+      "role": "reserved",
+      "hosts": ["ubcv.gapwise.ca"],
+      "canonicalHost": "ubcv.gapwise.ca",
+      "universityId": "ubc",
+      "campusId": "ubc-vancouver",
+      "name": "UBC Vancouver",
+      "shortName": "UBCV"
+    },
+    {
+      "id": "ubc-okanagan",
+      "role": "reserved",
+      "hosts": ["ubco.gapwise.ca"],
+      "canonicalHost": "ubco.gapwise.ca",
+      "universityId": "ubc",
+      "name": "UBC Okanagan",
+      "shortName": "UBCO"
+    },
+    {
+      "id": "york-hub",
+      "role": "single-campus-edition",
+      "hosts": ["york.gapwise.ca"],
+      "canonicalHost": "york.gapwise.ca",
+      "universityId": "york",
+      "campusId": "keele"
+    },
+    {
+      "id": "york-keele",
+      "role": "reserved",
+      "hosts": ["keele.gapwise.ca"],
+      "canonicalHost": "keele.gapwise.ca",
+      "universityId": "york",
+      "campusId": "keele",
+      "name": "York University Keele Campus",
+      "shortName": "Keele"
+    },
+    {
+      "id": "mcmaster-edition",
+      "role": "single-campus-edition",
+      "hosts": ["mcmaster.gapwise.ca"],
+      "canonicalHost": "mcmaster.gapwise.ca",
+      "universityId": "mcmaster",
+      "campusId": "mcmaster"
+    },
+    {
+      "id": "western-edition",
+      "role": "single-campus-edition",
+      "hosts": ["western.gapwise.ca"],
+      "canonicalHost": "western.gapwise.ca",
+      "universityId": "western",
+      "campusId": "western"
+    },
+    {
+      "id": "guelph-edition",
+      "role": "single-campus-edition",
+      "hosts": ["guelph.gapwise.ca"],
+      "canonicalHost": "guelph.gapwise.ca",
+      "universityId": "guelph",
+      "campusId": "guelph"
+    },
+    {
+      "id": "uottawa-edition",
+      "role": "single-campus-edition",
+      "hosts": ["uottawa.gapwise.ca"],
+      "canonicalHost": "uottawa.gapwise.ca",
+      "universityId": "uottawa",
+      "campusId": "uottawa"
+    },
+    {
+      "id": "brock-edition",
+      "role": "single-campus-edition",
+      "hosts": ["brock.gapwise.ca"],
+      "canonicalHost": "brock.gapwise.ca",
+      "universityId": "brock",
+      "campusId": "brock"
+    },
+    {
+      "id": "waterloo-edition",
+      "role": "single-campus-edition",
+      "hosts": ["waterloo.gapwise.ca"],
+      "canonicalHost": "waterloo.gapwise.ca",
+      "universityId": "waterloo",
+      "campusId": "waterloo-main"
+    },
+    {
+      "id": "mcgill-edition",
+      "role": "single-campus-edition",
+      "hosts": ["mcgill.gapwise.ca"],
+      "canonicalHost": "mcgill.gapwise.ca",
+      "universityId": "mcgill",
+      "campusId": "mcgill-downtown"
+    },
+    {
+      "id": "york-glendon",
+      "role": "reserved",
+      "hosts": ["glendon.gapwise.ca"],
+      "canonicalHost": "glendon.gapwise.ca",
+      "universityId": "york",
+      "name": "York University Glendon Campus",
+      "shortName": "Glendon"
+    },
+    {
+      "id": "york-markham",
+      "role": "reserved",
+      "hosts": ["markham.gapwise.ca"],
+      "canonicalHost": "markham.gapwise.ca",
+      "universityId": "york",
+      "name": "York University Markham Campus",
+      "shortName": "Markham"
+    },
+    {
+      "id": "harvard",
+      "role": "reserved",
+      "hosts": ["harvard.gapwise.ca"],
+      "canonicalHost": "harvard.gapwise.ca",
+      "name": "Harvard University",
+      "shortName": "Harvard"
+    },
+    {
+      "id": "yale",
+      "role": "reserved",
+      "hosts": ["yale.gapwise.ca"],
+      "canonicalHost": "yale.gapwise.ca",
+      "name": "Yale University",
+      "shortName": "Yale"
+    },
+    {
+      "id": "princeton",
+      "role": "reserved",
+      "hosts": ["princeton.gapwise.ca"],
+      "canonicalHost": "princeton.gapwise.ca",
+      "name": "Princeton University",
+      "shortName": "Princeton"
+    },
+    {
+      "id": "columbia",
+      "role": "reserved",
+      "hosts": ["columbia.gapwise.ca"],
+      "canonicalHost": "columbia.gapwise.ca",
+      "name": "Columbia University",
+      "shortName": "Columbia"
+    },
+    {
+      "id": "brown",
+      "role": "reserved",
+      "hosts": ["brown.gapwise.ca"],
+      "canonicalHost": "brown.gapwise.ca",
+      "name": "Brown University",
+      "shortName": "Brown"
+    },
+    {
+      "id": "dartmouth",
+      "role": "reserved",
+      "hosts": ["dartmouth.gapwise.ca"],
+      "canonicalHost": "dartmouth.gapwise.ca",
+      "name": "Dartmouth College",
+      "shortName": "Dartmouth"
+    },
+    {
+      "id": "cornell",
+      "role": "reserved",
+      "hosts": ["cornell.gapwise.ca"],
+      "canonicalHost": "cornell.gapwise.ca",
+      "name": "Cornell University",
+      "shortName": "Cornell"
+    },
+    {
+      "id": "upenn",
+      "role": "reserved",
+      "hosts": ["upenn.gapwise.ca"],
+      "canonicalHost": "upenn.gapwise.ca",
+      "name": "University of Pennsylvania",
+      "shortName": "Penn"
+    },
+    {
+      "id": "stanford",
+      "role": "reserved",
+      "hosts": ["stanford.gapwise.ca"],
+      "canonicalHost": "stanford.gapwise.ca",
+      "name": "Stanford University",
+      "shortName": "Stanford"
+    },
+    {
+      "id": "mit",
+      "role": "reserved",
+      "hosts": ["mit.gapwise.ca"],
+      "canonicalHost": "mit.gapwise.ca",
+      "name": "Massachusetts Institute of Technology",
+      "shortName": "MIT"
+    },
+    {
+      "id": "cmu",
+      "role": "reserved",
+      "hosts": ["cmu.gapwise.ca"],
+      "canonicalHost": "cmu.gapwise.ca",
+      "name": "Carnegie Mellon University",
+      "shortName": "CMU"
+    },
+    {
+      "id": "nyu",
+      "role": "reserved",
+      "hosts": ["nyu.gapwise.ca"],
+      "canonicalHost": "nyu.gapwise.ca",
+      "name": "New York University",
+      "shortName": "NYU"
+    },
+    {
+      "id": "ucberkeley",
+      "role": "reserved",
+      "hosts": ["ucberkeley.gapwise.ca"],
+      "canonicalHost": "ucberkeley.gapwise.ca",
+      "name": "University of California, Berkeley",
+      "shortName": "UC Berkeley"
+    }
+  ],
   "universities": [
     {
       "id": "uoft",
@@ -7,13 +342,7 @@
       "shortName": "U of T",
       "accentColor": "#4EA7FE",
       "campusScope": "Mississauga, St. George, and Scarborough",
-      "hosts": [
-        "gapwise.ca",
-        "www.gapwise.ca",
-        "utm.gapwise.ca",
-        "utsg.gapwise.ca",
-        "utsc.gapwise.ca"
-      ],
+      "hosts": ["uoft.gapwise.ca", "utm.gapwise.ca", "utsg.gapwise.ca", "utsc.gapwise.ca"],
       "campuses": ["utm", "utsg", "utsc"],
       "defaultCampus": "utm",
       "timetableAdapter": "acorn-ics",

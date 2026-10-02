@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ClipboardPaste, FileUp } from "lucide-react";
 import { clearFirstValuePending, markFirstValuePending } from "@/features/onboarding/first-value";
-import { activeUniversity } from "@/universities/registry";
+import { activeUniversity, type University } from "@/universities/registry";
 import "./onboarding/first-run.css";
 
 function ScheduleSkeleton() {
@@ -38,6 +38,7 @@ export function UploadPanel({
   onRememberChange,
   rememberAvailable = true,
   variant = "card",
+  university: universityOverride,
 }: {
   onFile: (file: File) => void;
   onDemo: () => void;
@@ -47,6 +48,7 @@ export function UploadPanel({
   onRememberChange: (value: boolean) => void;
   rememberAvailable?: boolean;
   variant?: "card" | "hero";
+  university?: University | null;
 }) {
   const inputRef = useRef<HTMLInputElement>(null);
   const importArmedRef = useRef(false);
@@ -54,7 +56,7 @@ export function UploadPanel({
   const [pasting, setPasting] = useState(false);
   const [pastedText, setPastedText] = useState("");
   const hero = variant === "hero";
-  const university = activeUniversity();
+  const university = universityOverride === undefined ? activeUniversity() : universityOverride;
   const calendarSource = university?.calendarSource ?? "calendar";
   const preferPaste = university?.preferredImportMethod === "paste";
   const acceptedFileTypes =

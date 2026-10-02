@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { watchForAppFailures } from "./helpers";
+import { editionUrl, watchForAppFailures } from "./helpers";
 
 test("McGill calendar import preserves downtown campus search and routing", async ({
   page,
@@ -9,7 +9,7 @@ test("McGill calendar import preserves downtown campus search and routing", asyn
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto("/?university=mcgill&campus=mcgill-downtown");
+  await page.goto(editionUrl(baseURL, "mcgill"));
   await expect(page.getByText("For McGill University", { exact: true })).toBeVisible();
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("McGill");
 
@@ -37,7 +37,7 @@ test("McGill calendar import preserves downtown campus search and routing", asyn
   await search.fill("LEA");
   await expect(page.getByTestId("building-search-result").first()).toContainText("Leacock");
 
-  await page.goto("/route?university=mcgill&campus=mcgill-downtown");
+  await page.goto(editionUrl(baseURL, "mcgill", "/route"));
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("McGill");
   await expect(page.getByRole("searchbox", { name: "Search McGill buildings" })).toBeVisible();
   failures.assertClean();
@@ -48,7 +48,7 @@ test("McGill demo remains usable on the mobile campus map", async ({ page, baseU
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto("/?university=mcgill&campus=mcgill-downtown");
+  await page.goto(editionUrl(baseURL, "mcgill"));
   await page.getByRole("button", { name: "Try a demo" }).click();
   await expect(page).toHaveURL(/\/timetable/);
   await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();

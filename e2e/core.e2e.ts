@@ -13,8 +13,12 @@ const twoTermFixturePath = path.join(
 test("landing page is usable without an account", async ({ page }, testInfo) => {
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
   await expectLanding(page);
-  await expect(page).toHaveTitle("Gapwise — University Timetable & Campus Navigation");
-  await expect(page.getByText("For University of Toronto", { exact: true })).toBeVisible();
+  await expect(page).toHaveTitle(
+    "Gapwise for University of Toronto Mississauga — Timetable & Campus Navigation",
+  );
+  await expect(
+    page.getByText("For University of Toronto Mississauga", { exact: true }),
+  ).toBeVisible();
   await expect(page.getByRole("button", { name: "Import ACORN" })).toBeVisible();
   guard.assertClean();
 });
@@ -241,44 +245,27 @@ test("campus explorer supports public building deep links and local search", asy
   guard.assertClean();
 });
 
-test("a first-time visitor can browse buildings on all three campus maps", async ({
+test("a first-time visitor can browse buildings on the campus edition", async ({
   page,
 }, testInfo) => {
   test.skip(
     !["chromium", "mobile-chromium"].includes(testInfo.project.name),
-    "tri-campus map journey runs in desktop and phone Chromium",
+    "campus map journey runs in desktop and phone Chromium",
   );
   const guard = watchForAppFailures(page, String(testInfo.project.use.baseURL));
 
   await page.goto("/route");
-  await expect(page.getByRole("heading", { name: "Choose a campus map" })).toBeVisible();
-
-  for (const [campus, campusId, query, building, buildingCode] of [
-    ["UTSG", "utsg", "Bahen", "Bahen Centre for Information Technology", "BA"],
-    ["UTSC", "utsc", "Science Wing", "Science Wing", "SW"],
-    ["UTM", "utm", "Maanjiwe", "Maanjiwe nendamowinan", "MN"],
-  ]) {
-    await page.getByRole("button", { name: campus, exact: true }).click();
-    const search = page.getByRole("searchbox", { name: `Search ${campus} buildings` });
-    await expect(search).toBeVisible();
-    await search.fill(query);
-    await search.press("Enter");
-    await expect(page.getByRole("heading", { name: building })).toBeVisible();
-    expect(new URL(page.url()).searchParams.get("campus")).toBe(campusId);
-    expect(new URL(page.url()).searchParams.get("building")).toBe(buildingCode);
-
-    if (campus === "UTSG") {
-      await page.reload();
-      await expect(page.getByRole("heading", { name: building })).toBeVisible();
-      await expect(page.getByRole("searchbox", { name: "Search UTSG buildings" })).toBeVisible();
-    }
-  }
-
-  await page.goBack();
-  await expect(page.getByRole("heading", { name: "Science Wing" })).toBeVisible();
-  await expect(page.getByRole("searchbox", { name: "Search UTSC buildings" })).toBeVisible();
-  await page.goForward();
+  const search = page.getByRole("searchbox", { name: "Search UTM buildings" });
+  await expect(search).toBeVisible();
+  await search.fill("Maanjiwe");
+  await search.press("Enter");
   await expect(page.getByRole("heading", { name: "Maanjiwe nendamowinan" })).toBeVisible();
+  expect(new URL(page.url()).searchParams.get("campus")).toBe("utm");
+  expect(new URL(page.url()).searchParams.get("building")).toBe("MN");
+
+  await page.reload();
+  await expect(page.getByRole("heading", { name: "Maanjiwe nendamowinan" })).toBeVisible();
+  await expect(page.getByRole("searchbox", { name: "Search UTM buildings" })).toBeVisible();
 
   guard.assertClean();
 });

@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
-import { watchForAppFailures } from "./helpers";
+import { editionUrl, watchForAppFailures } from "./helpers";
 
 const workdayFixture = readFileSync(
   new URL("../tests/fixtures/ubc-workday-sanitized.tsv", import.meta.url),
@@ -15,7 +15,7 @@ test("UBC Workday paste import preserves the Vancouver campus through timetable 
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto("/?university=ubc&campus=ubc-vancouver");
+  await page.goto(editionUrl(baseURL, "ubc"));
   await expect(page.getByText("For University of British Columbia", { exact: true })).toBeVisible();
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("UBC");
 
@@ -57,7 +57,7 @@ test("UBC Workday paste import preserves the Vancouver campus through timetable 
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("UBC");
   await expect(page.getByRole("searchbox", { name: "Search UBC buildings" })).toBeVisible();
 
-  await page.goto("/route?university=ubc&campus=ubc-vancouver");
+  await page.goto(editionUrl(baseURL, "ubc", "/route"));
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("UBC");
   await expect(page.getByRole("searchbox", { name: "Search UBC buildings" })).toBeVisible();
   failures.assertClean();
@@ -68,7 +68,7 @@ test("UBC has its own demo timetable and usable mobile campus map", async ({ pag
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto("/?university=ubc&campus=ubc-vancouver");
+  await page.goto(editionUrl(baseURL, "ubc"));
   await expect(page.getByText("For University of British Columbia", { exact: true })).toBeVisible();
   await page.getByRole("button", { name: "Try a demo" }).click();
   await expect(page).toHaveURL(/\/timetable/);
