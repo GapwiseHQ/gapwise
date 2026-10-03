@@ -17,13 +17,14 @@ import {
   getBuildingFootprintForCampus,
   resolveCampusBuildingLocation,
 } from "@/data/campuses";
+import { MAX_TIMETABLE_EVENTS, MAX_TIMETABLE_FILE_BYTES } from "@/features/timetable/import-limits";
 
 export class IcsParseError extends Error {
   override name = "IcsParseError";
 }
 
-export const MAX_ICS_FILE_BYTES = 2 * 1024 * 1024;
-export const MAX_ICS_EVENTS = 2_000;
+export const MAX_ICS_FILE_BYTES = MAX_TIMETABLE_FILE_BYTES;
+export const MAX_ICS_EVENTS = MAX_TIMETABLE_EVENTS;
 
 const DAY_MAP: Record<string, Weekday> = {
   MO: "Monday",

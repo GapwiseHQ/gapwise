@@ -22,9 +22,12 @@ export const Route = createFileRoute("/_app/")({
       : (marketing?.seoDescription ??
         "Gapwise connects university timetables, campus search, and pedestrian routing.");
     const canonical = canonicalUrlForSite(site);
-    const isPlanned = campus?.status === "planned" || university?.status === "planned";
+    const usesGlobalArtwork =
+      campus?.status === "planned" ||
+      university?.status === "planned" ||
+      university?.dataPaths.length === 0;
     const image =
-      isGlobal || isPlanned
+      isGlobal || usesGlobalArtwork
         ? `${canonical}og-gapwise.png`
         : site?.role === "campus-edition"
           ? `${canonical}campuses/${site.campusId}/og-card.png`

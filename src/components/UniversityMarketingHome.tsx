@@ -169,6 +169,36 @@ function PlannedPreview({ campus, university }: { campus: Campus | null; univers
   );
 }
 
+function TimetablePreview({ university }: { university: University }) {
+  return (
+    <div
+      className="university-planned-window"
+      aria-label={`${university.shortName} import support`}
+    >
+      <div className="university-planned-window-top">
+        <span>Gapwise timetable</span>
+        <strong>Import ready</strong>
+      </div>
+      <div className="university-planned-location">
+        <CalendarDays aria-hidden="true" />
+        <div>
+          <span>Supported source</span>
+          <strong>{university.calendarSource}</strong>
+          <small>{university.fileTypeLabel ?? ".ics calendar"}</small>
+        </div>
+      </div>
+      <div className="university-planned-lines" aria-hidden="true">
+        <i />
+        <i />
+        <i />
+      </div>
+      <p>
+        Your schedule is parsed privately in this browser. Campus maps and routing stay separate.
+      </p>
+    </div>
+  );
+}
+
 function statusLabel(status: CapabilityStatus) {
   return status === "supported" ? "Available" : status === "partial" ? "Partial" : "Planned";
 }
@@ -273,6 +303,11 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
   const accent = site.presentation?.accentColor ?? university.accentColor;
   const isHub = site.role === "university-hub";
   const isPlanned = !isHub && (campus?.status === "planned" || university.status === "planned");
+  const timetableOnly =
+    !isHub &&
+    campus?.capabilities.timetableImport === "supported" &&
+    campus.capabilities.buildingData === "planned";
+  const hasBuildingData = campus?.capabilities.buildingData !== "planned";
   const heroEyebrow = site.presentation?.heroEyebrow ?? `Gapwise for ${displayName}`;
   const heroDescription = site.presentation?.heroDescription ?? marketing.description;
 
@@ -350,10 +385,12 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
                 <Clock3 aria-hidden="true" />
                 Gap plan
               </Link>
-              <Link to="/route">
-                <MapPinned aria-hidden="true" />
-                Map & routing
-              </Link>
+              {hasBuildingData ? (
+                <Link to="/route">
+                  <MapPinned aria-hidden="true" />
+                  Map & routing
+                </Link>
+              ) : null}
             </nav>
           ) : null}
         </div>
@@ -362,6 +399,8 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
             <CampusChooser university={university} />
           ) : isPlanned ? (
             <PlannedPreview campus={campus} university={university} />
+          ) : timetableOnly ? (
+            <TimetablePreview university={university} />
           ) : marketing.example ? (
             <ProductPreview example={marketing.example} shortName={shortName} />
           ) : null}
@@ -406,38 +445,51 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
         </section>
       ) : (
         <>
-          <section
-            className="university-home-section university-home-discover"
-            aria-labelledby="university-discover-title"
-          >
-            <div>
-              <p className="university-home-section-label">Campus-aware by default</p>
-              <h2 id="university-discover-title">Search the places your schedule already knows.</h2>
-              <p>
-                Gapwise resolves class locations against the {marketing.campusName} building
-                registry, then keeps that context available for timetable, gap, and route views.
-              </p>
-            </div>
-            <div
-              className="university-search-preview"
-              aria-label={`Example ${shortName} building searches`}
+          {hasBuildingData ? (
+            <section
+              className="university-home-section university-home-discover"
+              aria-labelledby="university-discover-title"
             >
               <div>
-                <Search aria-hidden="true" />
-                <span>Search {shortName} buildings</span>
-                <kbd>⌘K</kbd>
+                <p className="university-home-section-label">Campus-aware by default</p>
+                <h2 id="university-discover-title">
+                  Search the places your schedule already knows.
+                </h2>
+                <p>
+                  Gapwise resolves class locations against the {marketing.campusName} building
+                  registry, then keeps that context available for timetable, gap, and route views.
+                </p>
               </div>
-              <ul>
-                {marketing.searchExamples.map((example) => (
-                  <li key={example}>
-                    <MapPinned aria-hidden="true" />
-                    <span>{example}</span>
-                    <ArrowRight aria-hidden="true" />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </section>
+              <div
+                className="university-search-preview"
+                aria-label={`Example ${shortName} building searches`}
+              >
+                <div>
+                  <Search aria-hidden="true" />
+                  <span>Search {shortName} buildings</span>
+                  <kbd>⌘K</kbd>
+                </div>
+                <ul>
+                  {marketing.searchExamples.map((example) => (
+                    <li key={example}>
+                      <MapPinned aria-hidden="true" />
+                      <span>{example}</span>
+                      <ArrowRight aria-hidden="true" />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+          ) : (
+            <section className="university-home-section university-home-planned-copy">
+              <p className="university-home-section-label">Timetable support is live</p>
+              <h2>Plan the week without unsupported map claims.</h2>
+              <p>
+                Gapwise imports class times and source locations now. Building search and routing
+                remain visibly planned until source-backed campus data is ready.
+              </p>
+            </section>
+          )}
           <section
             className="university-home-quick-links"
             aria-label={`${shortName} product links`}
@@ -456,13 +508,15 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
               <strong>Gap plan</strong>
               <small>Understand usable time between classes.</small>
             </Link>
-            <Link to="/route">
-              <span>
-                <Navigation aria-hidden="true" />
-              </span>
-              <strong>Campus routing</strong>
-              <small>Find buildings and plan the next walk.</small>
-            </Link>
+            {hasBuildingData ? (
+              <Link to="/route">
+                <span>
+                  <Navigation aria-hidden="true" />
+                </span>
+                <strong>Campus routing</strong>
+                <small>Find buildings and plan the next walk.</small>
+              </Link>
+            ) : null}
           </section>
           <section
             id="import-schedule"

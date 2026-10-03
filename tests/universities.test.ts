@@ -112,7 +112,7 @@ describe("university registry", () => {
     });
     expect(siteForHostname("mcgill.gapwise.ca")?.role).toBe("single-campus-edition");
     expect(siteForHostname("harvard.gapwise.ca")?.role).toBe("single-campus-edition");
-    expect(universityForHostname("harvard.gapwise.ca")?.status).toBe("planned");
+    expect(universityForHostname("harvard.gapwise.ca")?.status).toBe("partial");
     expect(campusForHostname("uoft.gapwise.ca")).toBeNull();
     expect(campusForHostname("utm.gapwise.ca")).toBe("utm");
     expect(campusForHostname("ubc.gapwise.ca")).toBeNull();
@@ -192,7 +192,7 @@ describe("university registry", () => {
     expect(find("ubco.gapwise.ca").some((entry) => entry.id === "ubc-okanagan")).toBe(true);
     expect(find("North York").some((entry) => entry.id === "keele")).toBe(true);
     expect(find("Berkeley").some((entry) => entry.id === "ucberkeley")).toBe(true);
-    expect(entries.some((entry) => entry.id === "harvard" && entry.status === "planned")).toBe(
+    expect(entries.some((entry) => entry.id === "harvard" && entry.status === "partial")).toBe(
       true,
     );
   });

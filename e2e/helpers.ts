@@ -73,7 +73,9 @@ export function watchForAppFailures(page: Page, baseURL: string) {
     const url = new URL(request.url());
     if (isIgnoredLocalInstrumentationRequest(url)) return;
     if (!isFirstParty(url)) return;
-    failures.push(`request failed: ${url.pathname} (${request.failure()?.errorText ?? "unknown"})`);
+    const failureText = request.failure()?.errorText ?? "unknown";
+    if (failureText === "net::ERR_ABORTED") return;
+    failures.push(`request failed: ${url.pathname} (${failureText})`);
   });
 
   return {

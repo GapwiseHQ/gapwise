@@ -47,6 +47,14 @@ for (const site of manifest.sites.filter((item) => item.role !== "global")) {
     if (university.status === "planned" && html.includes(`/universities/${university.id}/favicon`))
       throw new Error(`${site.id} references nonexistent planned branding assets.`);
   }
+  if (!university.dataPaths.length && html.includes(`/universities/${university.id}/favicon`))
+    throw new Error(`${site.id} references nonexistent university branding assets.`);
+  if (
+    campus?.capabilities.timetableImport === "supported" &&
+    campus.capabilities.buildingData === "planned" &&
+    /campus-(?:map|routing)/.test(siteMap)
+  )
+    throw new Error(`${site.id} sitemap advertises unavailable campus maps or routing.`);
   await access(`dist/_sites/${key}/robots.txt`);
 }
 

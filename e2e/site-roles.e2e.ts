@@ -2,6 +2,8 @@ import { expect, test } from "@playwright/test";
 import manifest from "../universities.json" with { type: "json" };
 import { editionUrl, watchForAppFailures } from "./helpers";
 
+test.use({ serviceWorkers: "block" });
+
 test("global homepage presents the multi-university Gapwise ecosystem", async ({
   page,
   baseURL,
@@ -14,7 +16,9 @@ test("global homepage presents the multi-university Gapwise ecosystem", async ({
   await expect(
     page.getByRole("heading", { name: "Make every gap on campus count." }),
   ).toBeVisible();
-  await expect(page.locator(".global-home-facts")).toContainText("14supported universities");
+  await expect(page.locator(".global-home-facts")).toContainText(
+    "27universities with timetable import",
+  );
   await expect(page.getByRole("link", { name: /Choose your university/ })).toBeVisible();
   await expect(page.getByText("For University of Toronto", { exact: true })).toHaveCount(0);
   await expect(page.getByText("This edition", { exact: true })).toHaveCount(0);
@@ -22,7 +26,7 @@ test("global homepage presents the multi-university Gapwise ecosystem", async ({
   failures.assertClean();
 });
 
-test("planned hosts publish personalized, indexable editions with honest capability status", async ({
+test("timetable-only hosts publish import support without map claims", async ({
   page,
   baseURL,
 }) => {
@@ -43,16 +47,16 @@ test("planned hosts publish personalized, indexable editions with honest capabil
     "content",
     "index, follow, max-image-preview:large",
   );
-  await expect(
-    page.getByText(/Personalized now\. Product support only when verified/),
-  ).toBeVisible();
+  await expect(page.getByText(/Timetable support is live/)).toBeVisible();
+  await expect(page.getByText(/Plan the week without unsupported map claims/)).toBeVisible();
   await expect(page.locator(".university-capabilities dd")).toHaveCount(4);
   await expect(page.locator(".university-capabilities dd")).toHaveText([
-    "Planned",
+    "Available",
     "Planned",
     "Planned",
     "Planned",
   ]);
+  await expect(page.locator("#ics-file")).toHaveCount(1);
   await expect(page.getByText(/Mapped buildings|Routing segments/)).toHaveCount(0);
   failures.assertClean();
 });
@@ -322,7 +326,7 @@ test("directory searches Canada and the U.S. without horizontal overflow", async
     "href",
     "https://gapwise.ca/universities",
   );
-  const search = page.getByPlaceholder(/Search by university/);
+  const search = page.getByPlaceholder("Search university, campus, or city");
   await search.fill("Pittsburgh");
   await expect(page.getByRole("link", { name: /Carnegie Mellon University/ })).toBeVisible();
   await search.fill("ubco.gapwise.ca");

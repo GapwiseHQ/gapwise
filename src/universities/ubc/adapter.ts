@@ -1,6 +1,7 @@
 import campusJson from "@/data/campuses/ubc/campus.json";
 import type { ActivityType, Meeting, ParsedTimetable, Term, Weekday } from "@/lib/timetable-types";
 import type { CampusSnapshot, Day, Meeting as UbcMeeting } from "../common/model";
+import { inferImportedCampus } from "../common/campus-inference";
 import { ubc } from "./config";
 import { parseUbcWorkdayText } from "./text-parser";
 
@@ -36,6 +37,13 @@ function term(value: string): Term {
 
 export function normalizeUbcMeeting(source: UbcMeeting): Meeting[] {
   const building = ubcCampus.buildings.find((item) => item.id === source.location.buildingId);
+  const campus = inferImportedCampus({
+    universityId: "ubc",
+    courseCode: source.courseCode,
+    sourceLocation: source.location.nativeText,
+    description: source.source.kind === "ubc-workday-okanagan" ? "UBCO Okanagan" : "UBCV Vancouver",
+    defaultCampusId: "ubc-vancouver",
+  });
   return source.days.map((day) => ({
     id: `${source.id}:${day}`,
     universityId: "ubc",
@@ -51,8 +59,9 @@ export function normalizeUbcMeeting(source: UbcMeeting): Meeting[] {
     buildingCode: building?.nativeCodes[0] ?? null,
     room: source.location.room,
     term: term(source.termLabel),
-    campus: "UBC-VANCOUVER",
-    locationUnknown: source.location.kind !== "physical" || !building,
+    campus,
+    locationUnknown:
+      source.location.kind !== "physical" || (campus === "UBC-VANCOUVER" && !building),
     locationType: source.location.kind,
     sourceLocation: source.location.nativeText,
     dateRange: { startDate: source.startDate, endDate: source.endDate },
@@ -76,7 +85,9 @@ export const ubcWorkdayAdapter = {
   label: "UBC Workday View My Courses",
   acceptedInputs: ["text/plain", ".txt", ".tsv"],
   detect(text: string): boolean {
-    return /\b[A-Z]{2,6}_V\s+\d{3}[A-Z]?-[A-Z0-9]+\b/.test(text) && /Meeting Patterns/i.test(text);
+    return (
+      /\b[A-Z]{2,6}_[VO]\s+\d{3}[A-Z]?-[A-Z0-9]+\b/.test(text) && /Meeting Patterns/i.test(text)
+    );
   },
   validate(text: string): { valid: boolean; error?: string } {
     if (!text.trim()) return { valid: false, error: "Schedule input cannot be empty." };

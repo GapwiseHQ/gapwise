@@ -754,9 +754,9 @@
       "marketing": {
         "campusName": "Keele, Glendon, and Markham",
         "headline": "Three campuses. One clearer York day.",
-        "description": "Choose the York campus edition that matches your day. Keele is supported today; Glendon and Markham have complete planned pages while campus data, timetable import, and routing are prepared and verified.",
+        "description": "Import York schedules across Keele, Glendon, and Markham. Building search and routing remain available only where source-backed campus data exists.",
         "seoTitle": "Gapwise for York University",
-        "seoDescription": "Explore Gapwise editions for York University at Keele, Glendon, and Markham, with clear supported and planned capability status.",
+        "seoDescription": "York timetable import across Keele, Glendon, and Markham, with clear capability status for campus maps and routing.",
         "stats": {
           "buildings": 37,
           "entrances": 98,
@@ -1039,9 +1039,9 @@
       "marketing": {
         "campusName": "Vancouver and Okanagan",
         "headline": "Two campuses. One clearer UBC day.",
-        "description": "Choose the UBC campus edition that matches your day. Vancouver / Point Grey is supported today; Okanagan has a complete planned page while campus-specific data and timetable support are verified.",
+        "description": "Import Workday schedules from UBC Vancouver or Okanagan. Building search and routing remain available only where source-backed campus data exists.",
         "seoTitle": "Gapwise for the University of British Columbia",
-        "seoDescription": "Explore Gapwise editions for UBC Vancouver and UBC Okanagan, with clear supported and planned capability status.",
+        "seoDescription": "UBC Workday timetable import for Vancouver and Okanagan, with clear capability status for campus maps and routing.",
         "stats": {
           "buildings": 236,
           "entrances": 905,
@@ -1177,17 +1177,19 @@
       "marketing": {
         "campusName": "Pittsburgh flagship campus",
         "headline": "Plan the space between classes at Carnegie Mellon.",
-        "description": "Gapwise's planned Carnegie Mellon edition is grounded in the flagship Pittsburgh campus. The personalized page and directory listing are live now; timetable import, verified building data, campus search, and routing are not yet available.",
+        "description": "Import an iCalendar class schedule for Carnegie Mellon's Pittsburgh campus. Verified building data, campus search, and routing remain planned.",
         "seoTitle": "Gapwise for Carnegie Mellon University",
-        "seoDescription": "Explore the planned Gapwise edition for Carnegie Mellon University's Pittsburgh campus, with transparent capability status and no unsupported routing or timetable claims.",
+        "seoDescription": "Carnegie Mellon timetable import and weekly planning for the Pittsburgh campus, with transparent status for maps and routing.",
         "searchExamples": ["Carnegie Mellon", "CMU", "Pittsburgh"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "cmu-calendar",
+      "acceptedFileTypes": ".ics,.vcs,text/calendar",
+      "fileTypeLabel": ".ics or .vcs",
+      "calendarSource": "CMU class calendar",
+      "calendarInstructions": "Export recurring class meetings as an iCalendar (.ics or .vcs) file.",
+      "calendarHelpUrl": "https://www.cmu.edu/hub/registrar/course-info/schedule-of-classes.html",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1208,17 +1210,19 @@
       "marketing": {
         "campusName": "Berkeley campus",
         "headline": "A calmer way to see the day at Berkeley.",
-        "description": "Explore the planned Gapwise edition for UC Berkeley's campus in the East Bay. Campus-specific timetable import, building records, search, and pedestrian routing remain planned until the underlying data is verified.",
+        "description": "Import an iCalendar class schedule for UC Berkeley. Verified building records, campus search, and pedestrian routing remain planned.",
         "seoTitle": "Gapwise for UC Berkeley",
-        "seoDescription": "Explore the planned Gapwise UC Berkeley edition with transparent status for timetable import, campus building data, search, and routing.",
+        "seoDescription": "UC Berkeley timetable import and weekly planning, with transparent status for campus building data, search, and routing.",
         "searchExamples": ["UC Berkeley", "Cal", "Berkeley"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "ucberkeley-calendar",
+      "acceptedFileTypes": ".ics,.vcs,text/calendar",
+      "fileTypeLabel": ".ics or .vcs",
+      "calendarSource": "Berkeley class calendar",
+      "calendarInstructions": "Export recurring class meetings from your calendar as an iCalendar (.ics or .vcs) file.",
+      "calendarHelpUrl": "https://calcentral.berkeley.edu/",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1239,17 +1243,19 @@
       "marketing": {
         "campusName": "Washington Square campus",
         "headline": "Keep an NYU day connected across the city.",
-        "description": "Explore the planned Gapwise edition centered on NYU's Washington Square campus in Greenwich Village. Verified campus search, routing, and timetable import are planned rather than assumed.",
+        "description": "Import an iCalendar class schedule for NYU's Washington Square campus. Verified campus search and routing remain planned.",
         "seoTitle": "Gapwise for New York University",
-        "seoDescription": "Explore the planned Gapwise NYU Washington Square edition, with honest capability status for timetable import, building data, search, and routing.",
+        "seoDescription": "NYU timetable import and weekly planning for Washington Square, with transparent status for maps, search, and routing.",
         "searchExamples": ["NYU", "Washington Square", "New York City"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "nyu-calendar",
+      "acceptedFileTypes": ".ics,.vcs,text/calendar",
+      "fileTypeLabel": ".ics or .vcs",
+      "calendarSource": "NYU class calendar",
+      "calendarInstructions": "Export recurring class meetings from your calendar as an iCalendar (.ics or .vcs) file.",
+      "calendarHelpUrl": "https://www.nyu.edu/students/student-information-and-resources/registration-records-and-graduation/registration.html",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1270,17 +1276,19 @@
       "marketing": {
         "campusName": "Cambridge campus",
         "headline": "Make the next move across MIT part of the plan.",
-        "description": "Explore the planned Gapwise edition for MIT's Cambridge campus along the Charles River. Timetable import, verified building search, and campus routing remain planned until campus-specific support is ready.",
+        "description": "Import MIT iCalendar and legacy vCalendar class schedules. Verified building search and campus routing remain planned.",
         "seoTitle": "Gapwise for MIT",
-        "seoDescription": "Explore the planned Gapwise MIT Cambridge edition, with transparent status for timetable import, campus building data, search, and routing.",
+        "seoDescription": "MIT timetable import for iCalendar and vCalendar class schedules, with transparent status for maps and routing.",
         "searchExamples": ["MIT", "Massachusetts Institute of Technology", "Cambridge"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "mit-calendar",
+      "acceptedFileTypes": ".ics,.vcs,text/calendar,text/x-vcalendar",
+      "fileTypeLabel": ".ics or .vcs",
+      "calendarSource": "MIT class calendar",
+      "calendarInstructions": "Download an iCalendar (.ics) or vCalendar (.vcs) class schedule.",
+      "calendarHelpUrl": "https://registrar.mit.edu/registration-academics/registration-information",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1301,17 +1309,19 @@
       "marketing": {
         "campusName": "Stanford campus",
         "headline": "See a sprawling Stanford day as one connected plan.",
-        "description": "Explore the planned Gapwise edition for Stanford's main campus on the San Francisco Peninsula. Verified building data, schedule import, search, and routing are planned and will not be simulated.",
+        "description": "Import an iCalendar class schedule for Stanford's main campus. Verified building data, search, and routing remain planned.",
         "seoTitle": "Gapwise for Stanford University",
-        "seoDescription": "Explore the planned Gapwise Stanford edition with clear status for timetable import, building data, campus search, and routing.",
+        "seoDescription": "Stanford timetable import and weekly planning, with clear status for building data, campus search, and routing.",
         "searchExamples": ["Stanford", "The Farm", "Stanford California"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "stanford-calendar",
+      "acceptedFileTypes": ".ics,.vcs,text/calendar",
+      "fileTypeLabel": ".ics or .vcs",
+      "calendarSource": "Stanford class calendar",
+      "calendarInstructions": "Export recurring class meetings from your calendar as an iCalendar (.ics or .vcs) file.",
+      "calendarHelpUrl": "https://studentservices.stanford.edu/my-academics/enroll-classes",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1332,17 +1342,19 @@
       "marketing": {
         "campusName": "Philadelphia campus",
         "headline": "Connect the time between classes at Penn.",
-        "description": "Explore the planned Gapwise edition for Penn's Philadelphia campus in University City. Timetable import and source-backed campus intelligence remain planned until verified support exists.",
+        "description": "Import an iCalendar class schedule for Penn's Philadelphia campus. Source-backed campus maps and routing remain planned.",
         "seoTitle": "Gapwise for the University of Pennsylvania",
-        "seoDescription": "Explore the planned Gapwise Penn edition in Philadelphia, with transparent capability status for timetable import, building data, search, and routing.",
+        "seoDescription": "Penn timetable import and weekly planning in Philadelphia, with transparent status for campus maps and routing.",
         "searchExamples": ["Penn", "UPenn", "Philadelphia"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "upenn-calendar",
+      "acceptedFileTypes": ".ics,.vcs,text/calendar",
+      "fileTypeLabel": ".ics or .vcs",
+      "calendarSource": "Penn class calendar",
+      "calendarInstructions": "Export recurring class meetings from your calendar as an iCalendar (.ics or .vcs) file.",
+      "calendarHelpUrl": "https://courses.upenn.edu/",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1363,17 +1375,19 @@
       "marketing": {
         "campusName": "Ithaca campus",
         "headline": "Plan the hills, walks, and gaps in a Cornell day.",
-        "description": "Explore the planned Gapwise edition for Cornell's main campus in Ithaca. Campus building data, timetable import, search, and routes remain planned pending source-backed validation.",
+        "description": "Import the iCal download from Cornell Class Roster Scheduler. Campus building data, search, and routes remain planned.",
         "seoTitle": "Gapwise for Cornell University",
-        "seoDescription": "Explore the planned Gapwise Cornell Ithaca edition, with transparent status for timetable import, campus data, search, and routing.",
+        "seoDescription": "Cornell Class Roster Scheduler timetable import for Ithaca, with transparent status for campus maps and routing.",
         "searchExamples": ["Cornell", "Ithaca", "Big Red"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "cornell-calendar",
+      "acceptedFileTypes": ".ics,text/calendar",
+      "fileTypeLabel": ".ics",
+      "calendarSource": "Cornell Scheduler iCal",
+      "calendarInstructions": "Use iCal Download in the Class Roster Scheduler and import the saved .ics file.",
+      "calendarHelpUrl": "https://classes.cornell.edu/content/SP23/using-scheduler",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1394,17 +1408,19 @@
       "marketing": {
         "campusName": "Hanover campus",
         "headline": "Keep a walkable Dartmouth day in view.",
-        "description": "Explore the planned Gapwise edition for Dartmouth's Hanover campus. The edition page is real today, while timetable import and verified campus intelligence remain planned.",
+        "description": "Import an iCalendar class schedule for Dartmouth's Hanover campus. Verified campus maps, search, and routing remain planned.",
         "seoTitle": "Gapwise for Dartmouth College",
-        "seoDescription": "Explore the planned Gapwise Dartmouth edition in Hanover, with honest capability status for timetable import, building data, search, and routing.",
+        "seoDescription": "Dartmouth timetable import and weekly planning in Hanover, with transparent status for campus maps and routing.",
         "searchExamples": ["Dartmouth", "Hanover", "Big Green"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "dartmouth-calendar",
+      "acceptedFileTypes": ".ics,.vcs,text/calendar",
+      "fileTypeLabel": ".ics or .vcs",
+      "calendarSource": "Dartmouth class calendar",
+      "calendarInstructions": "Export recurring class meetings from your calendar as an iCalendar (.ics or .vcs) file.",
+      "calendarHelpUrl": "https://courses.dartmouth.edu/",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1425,17 +1441,19 @@
       "marketing": {
         "campusName": "College Hill campus",
         "headline": "See the shape of a Brown day before the next walk.",
-        "description": "Explore the planned Gapwise edition for Brown's College Hill campus in Providence. Timetable import, campus building records, search, and routing remain planned until validated.",
+        "description": "Import the iCal download from Courses@Brown for College Hill. Campus building records, search, and routing remain planned.",
         "seoTitle": "Gapwise for Brown University",
-        "seoDescription": "Explore the planned Gapwise Brown edition in Providence, with transparent status for timetable import, building data, search, and routing.",
+        "seoDescription": "Courses@Brown iCal timetable import for College Hill, with transparent status for campus maps and routing.",
         "searchExamples": ["Brown", "College Hill", "Providence"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "brown-calendar",
+      "acceptedFileTypes": ".ics,text/calendar",
+      "fileTypeLabel": ".ics",
+      "calendarSource": "Courses@Brown iCal",
+      "calendarInstructions": "Use iCal Download in Courses@Brown and import the saved .ics file.",
+      "calendarHelpUrl": "https://ithelp.brown.edu/kb/articles/courses-brown-for-students",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1456,17 +1474,19 @@
       "marketing": {
         "campusName": "Morningside Heights campus",
         "headline": "Keep a Columbia day connected in Upper Manhattan.",
-        "description": "Explore the planned Gapwise edition centered on Columbia's Morningside Heights campus. Timetable import and verified building, search, and routing support remain planned.",
+        "description": "Import the calendar export from Columbia Vergil for Morningside Heights. Verified building, search, and routing support remain planned.",
         "seoTitle": "Gapwise for Columbia University",
-        "seoDescription": "Explore the planned Gapwise Columbia Morningside edition, with clear capability status for timetable import, campus data, search, and routing.",
+        "seoDescription": "Columbia Vergil timetable import for Morningside Heights, with clear status for maps, search, and routing.",
         "searchExamples": ["Columbia", "Morningside Heights", "New York City"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "columbia-calendar",
+      "acceptedFileTypes": ".ics,.vcs,text/calendar",
+      "fileTypeLabel": ".ics or .vcs",
+      "calendarSource": "Vergil calendar export",
+      "calendarInstructions": "Export your projected or registered schedule from Vergil as an iCalendar file.",
+      "calendarHelpUrl": "https://sishelp.sis.columbia.edu/vergil_student_guides",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1487,17 +1507,19 @@
       "marketing": {
         "campusName": "Princeton campus",
         "headline": "Make the walk between Princeton classes visible.",
-        "description": "Explore the planned Gapwise edition for Princeton's New Jersey campus. Timetable import and verified building, search, and routing data remain explicitly planned.",
+        "description": "Import an iCalendar class schedule for Princeton's New Jersey campus. Verified building, search, and routing data remain planned.",
         "seoTitle": "Gapwise for Princeton University",
-        "seoDescription": "Explore the planned Gapwise Princeton edition, with transparent capability status and no unsupported campus-data claims.",
+        "seoDescription": "Princeton timetable import and weekly planning, with transparent status for campus maps, search, and routing.",
         "searchExamples": ["Princeton", "Princeton University", "Princeton New Jersey"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "princeton-calendar",
+      "acceptedFileTypes": ".ics,.vcs,text/calendar",
+      "fileTypeLabel": ".ics or .vcs",
+      "calendarSource": "Princeton class calendar",
+      "calendarInstructions": "Export recurring class meetings from your calendar as an iCalendar (.ics or .vcs) file.",
+      "calendarHelpUrl": "https://registrar.princeton.edu/course-offerings/enrollment",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1518,17 +1540,19 @@
       "marketing": {
         "campusName": "New Haven campus",
         "headline": "Bring a Yale day into one thoughtful plan.",
-        "description": "Explore the planned Gapwise edition for Yale's campus in New Haven. Timetable import, verified campus search, building data, and routing remain planned until supported by real sources.",
+        "description": "Import an iCalendar class schedule for Yale's New Haven campus. Verified campus search, building data, and routing remain planned.",
         "seoTitle": "Gapwise for Yale University",
-        "seoDescription": "Explore the planned Gapwise Yale edition in New Haven, with clear status for timetable import, building data, search, and routing.",
+        "seoDescription": "Yale timetable import and weekly planning in New Haven, with clear status for campus maps, search, and routing.",
         "searchExamples": ["Yale", "New Haven", "Yale University"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "yale-calendar",
+      "acceptedFileTypes": ".ics,.vcs,text/calendar",
+      "fileTypeLabel": ".ics or .vcs",
+      "calendarSource": "Yale class calendar",
+      "calendarInstructions": "Export recurring class meetings from your calendar as an iCalendar (.ics or .vcs) file.",
+      "calendarHelpUrl": "https://courses.yale.edu/",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1549,17 +1573,19 @@
       "marketing": {
         "campusName": "Cambridge campus",
         "headline": "See the time between Harvard classes more clearly.",
-        "description": "Explore the planned Gapwise edition centered on Harvard's Cambridge campus. The page is available now; timetable import and source-backed building, search, and routing support remain planned.",
+        "description": "Import the Download Calendar file from my.harvard for Cambridge classes. Source-backed building, search, and routing support remain planned.",
         "seoTitle": "Gapwise for Harvard University",
-        "seoDescription": "Explore the planned Gapwise Harvard Cambridge edition, with transparent capability status for timetable import, building data, search, and routing.",
+        "seoDescription": "my.harvard timetable import for Cambridge classes, with transparent status for campus maps, search, and routing.",
         "searchExamples": ["Harvard", "Harvard Yard", "Cambridge"]
       },
       "country": "United States",
-      "status": "planned",
-      "timetableAdapter": "planned",
-      "calendarSource": "Timetable import",
-      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
-      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "status": "partial",
+      "timetableAdapter": "harvard-calendar",
+      "acceptedFileTypes": ".ics,text/calendar",
+      "fileTypeLabel": ".ics",
+      "calendarSource": "my.harvard calendar",
+      "calendarInstructions": "Use Download Calendar in my.harvard and import the saved .ics file.",
+      "calendarHelpUrl": "https://my.harvard.edu/",
       "enabledFeatures": {
         "routing": false,
         "liveLocation": false
@@ -1732,9 +1758,9 @@
       "country": "Canada",
       "hosts": ["glendon.gapwise.ca"],
       "aliases": ["Glendon College", "York Glendon", "Bayview"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -1742,9 +1768,9 @@
       "marketing": {
         "campusName": "Glendon campus in midtown Toronto",
         "headline": "A Glendon edition shaped around a bilingual campus day.",
-        "description": "Explore the planned Gapwise edition for York's intimate Glendon campus in midtown Toronto. The page is available now; timetable import, verified building search, and routing will arrive only after campus-specific validation.",
+        "description": "Import York calendar or schedule data for Glendon. Verified building search and routing remain planned until campus-specific validation is complete.",
         "seoTitle": "Gapwise for York University Glendon Campus",
-        "seoDescription": "Explore the planned Gapwise Glendon campus edition in Toronto, with honest capability status for timetable import, campus search, building data, and routing.",
+        "seoDescription": "York Glendon timetable import in Toronto, with honest capability status for campus search, building data, and routing.",
         "searchExamples": ["Glendon College", "York Glendon", "Toronto"]
       }
     },
@@ -1759,9 +1785,9 @@
       "country": "Canada",
       "hosts": ["markham.gapwise.ca"],
       "aliases": ["York Markham", "Markham Centre"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -1769,9 +1795,9 @@
       "marketing": {
         "campusName": "Markham campus",
         "headline": "Plan a connected day at York's newest core campus.",
-        "description": "Explore the planned Gapwise edition for York's Markham campus, where technology, entrepreneurship, and community partnerships shape the student experience. Campus data and timetable features remain planned until verified.",
+        "description": "Import York calendar or schedule data for Markham. Verified campus building data, search, and routing remain planned.",
         "seoTitle": "Gapwise for York University Markham Campus",
-        "seoDescription": "Explore the planned Gapwise Markham campus edition, with clear status for timetable import, building search, campus data, and routing.",
+        "seoDescription": "York Markham timetable import with clear status for building search, campus data, and routing.",
         "searchExamples": ["York Markham", "Markham Campus", "Markham"]
       }
     },
@@ -1900,9 +1926,9 @@
       "country": "Canada",
       "hosts": ["ubco.gapwise.ca"],
       "aliases": ["UBC Okanagan", "Okanagan", "Kelowna"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -1910,9 +1936,9 @@
       "marketing": {
         "campusName": "Okanagan campus in Kelowna",
         "headline": "A clearer campus day for UBC Okanagan.",
-        "description": "Explore the planned Gapwise edition for UBC's Okanagan campus in Kelowna. The edition is personalized and searchable now, while timetable import, verified campus data, and routing remain explicitly planned.",
+        "description": "Import UBC Okanagan Workday rows for a private weekly timetable. Verified campus data, search, and routing remain planned.",
         "seoTitle": "Gapwise for UBC Okanagan",
-        "seoDescription": "Explore the planned Gapwise UBC Okanagan edition in Kelowna, with transparent capability status for timetable import, building data, search, and routing.",
+        "seoDescription": "UBC Okanagan Workday timetable import in Kelowna, with transparent status for building data, search, and routing.",
         "searchExamples": ["UBC Okanagan", "UBCO", "Kelowna"]
       }
     },
@@ -1965,9 +1991,9 @@
       "country": "United States",
       "hosts": ["cmu.gapwise.ca"],
       "aliases": ["Carnegie Mellon", "CMU", "Pittsburgh"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -1984,9 +2010,9 @@
       "country": "United States",
       "hosts": ["ucberkeley.gapwise.ca"],
       "aliases": ["Berkeley", "Cal", "UCB"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -2003,9 +2029,9 @@
       "country": "United States",
       "hosts": ["nyu.gapwise.ca"],
       "aliases": ["NYU", "Washington Square", "Greenwich Village", "New York"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -2022,9 +2048,9 @@
       "country": "United States",
       "hosts": ["mit.gapwise.ca"],
       "aliases": ["MIT", "Mass Tech", "Cambridge"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -2041,9 +2067,9 @@
       "country": "United States",
       "hosts": ["stanford.gapwise.ca"],
       "aliases": ["Stanford", "Palo Alto", "The Farm"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -2060,9 +2086,9 @@
       "country": "United States",
       "hosts": ["upenn.gapwise.ca"],
       "aliases": ["UPenn", "Penn", "University City"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -2079,9 +2105,9 @@
       "country": "United States",
       "hosts": ["cornell.gapwise.ca"],
       "aliases": ["Cornell", "Ithaca", "Big Red"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -2098,9 +2124,9 @@
       "country": "United States",
       "hosts": ["dartmouth.gapwise.ca"],
       "aliases": ["Dartmouth", "Hanover", "Big Green"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -2117,9 +2143,9 @@
       "country": "United States",
       "hosts": ["brown.gapwise.ca"],
       "aliases": ["Brown", "College Hill", "Providence"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -2136,9 +2162,9 @@
       "country": "United States",
       "hosts": ["columbia.gapwise.ca"],
       "aliases": ["Columbia", "Morningside", "Morningside Heights", "New York"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -2155,9 +2181,9 @@
       "country": "United States",
       "hosts": ["princeton.gapwise.ca"],
       "aliases": ["Princeton", "Tigers", "Princeton NJ"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -2174,9 +2200,9 @@
       "country": "United States",
       "hosts": ["yale.gapwise.ca"],
       "aliases": ["Yale", "New Haven", "Bulldogs"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"
@@ -2193,9 +2219,9 @@
       "country": "United States",
       "hosts": ["harvard.gapwise.ca"],
       "aliases": ["Harvard", "Harvard Yard", "Cambridge"],
-      "status": "planned",
+      "status": "partial",
       "capabilities": {
-        "timetableImport": "planned",
+        "timetableImport": "supported",
         "buildingData": "planned",
         "search": "planned",
         "routing": "planned"

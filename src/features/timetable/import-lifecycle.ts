@@ -1,19 +1,23 @@
 import type { Meeting } from "@/lib/timetable-types";
 import { activeUniversity } from "@/universities/registry";
 import { timetableAdapters } from "@/universities/timetable-adapters";
+import { MAX_TIMETABLE_FILE_BYTES } from "./import-limits";
 
-export const MAX_ICS_FILE_BYTES = 2 * 1024 * 1024;
+export const MAX_ICS_FILE_BYTES = MAX_TIMETABLE_FILE_BYTES;
 
 export type TimetableImportResult = Awaited<ReturnType<typeof parseTimetableText>>;
 
 export function validateTimetableFile(file: Pick<File, "name" | "type" | "size">): string | null {
-  const isIcs = /\.ics$/i.test(file.name) || file.type === "text/calendar";
+  const isIcs =
+    /\.(?:ics|vcs)$/i.test(file.name) ||
+    file.type === "text/calendar" ||
+    file.type === "text/x-vcalendar";
   const isText = /\.(txt|tsv|csv)$/i.test(file.name) || file.type.startsWith("text/");
   const university = activeUniversity();
-  const allowsText = university ? university.id !== "uoft" : false;
+  const allowsText = /\.(?:txt|tsv|csv)\b/i.test(university?.acceptedFileTypes ?? "");
 
   if (!isIcs && (!allowsText || !isText)) {
-    return "That file type isn't supported. Please choose a .ics calendar file.";
+    return `That file type isn't supported. Please choose a ${university?.fileTypeLabel ?? ".ics"} calendar file.`;
   }
   if (file.size > MAX_ICS_FILE_BYTES) {
     return "That calendar is too large. Please choose an .ics file under 2 MB.";

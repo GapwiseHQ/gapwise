@@ -260,7 +260,7 @@ export function GlobalMarketingHome() {
       <section className="global-home-facts" aria-label="Gapwise platform facts">
         <div>
           <strong>{SUPPORTED_UNIVERSITIES.length}</strong>
-          <span>supported universities</span>
+          <span>universities with timetable import</span>
         </div>
         <div>
           <strong>{IMPLEMENTED_CAMPUS_COUNT}</strong>
@@ -419,7 +419,7 @@ export function GlobalMarketingHome() {
             <p className="global-home-eyebrow">Campus coverage</p>
             <h2 id="global-universities-title">Built for your campus.</h2>
             <p className="global-home-count">
-              {SUPPORTED_UNIVERSITIES.length} supported universities · planned editions across
+              {SUPPORTED_UNIVERSITIES.length} timetable-ready universities · campus coverage across
               Canada and the U.S.
             </p>
           </div>

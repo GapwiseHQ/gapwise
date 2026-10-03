@@ -29,6 +29,7 @@ type University = {
   campusScope: string;
   hosts: string[];
   status: Status;
+  dataPaths: string[];
   marketing: Marketing;
 };
 type Site = {
@@ -57,6 +58,8 @@ type Context = {
   origin: string;
   status: Status;
   routable: boolean;
+  timetableSupported: boolean;
+  buildingSupported: boolean;
   branded: boolean;
   location: string | undefined;
   marketing: Marketing;
@@ -80,7 +83,21 @@ const contexts: Context[] = manifest.sites
             (item) =>
               item.universityId === university.id && item.capabilities["routing"] === "supported",
           ),
-      branded: university.status !== "planned",
+      timetableSupported: campus
+        ? campus.capabilities["timetableImport"] === "supported"
+        : manifest.campuses.some(
+            (item) =>
+              item.universityId === university.id &&
+              item.capabilities["timetableImport"] === "supported",
+          ),
+      buildingSupported: campus
+        ? campus.capabilities["buildingData"] !== "planned"
+        : manifest.campuses.some(
+            (item) =>
+              item.universityId === university.id &&
+              item.capabilities["buildingData"] !== "planned",
+          ),
+      branded: university.dataPaths.length > 0,
       location: campus ? `${campus.city}, ${campus.region}` : undefined,
       marketing: site.presentation?.marketing ?? campus?.marketing ?? university.marketing,
     };
@@ -232,6 +249,9 @@ const commonPaths = new Set([
   "/accessibility",
 ]);
 const plannedPaths = new Set(["/"]);
+const timetablePaths = new Set(
+  [...commonPaths].filter((path) => path !== "/campus-map" && path !== "/campus-routing"),
+);
 const escapeHtml = (value: string) =>
   value
     .replaceAll("&", "&amp;")
@@ -245,24 +265,23 @@ const outputPath = (path: string) =>
 function schema(page: Page, context?: Context) {
   const origin = context?.origin ?? SITE_ORIGIN;
   const org = `${SITE_ORIGIN}/#organization`;
-  const features =
-    context?.status === "planned"
+  const features = !context?.timetableSupported
+    ? [
+        "Personalized university edition",
+        "Published capability status",
+        "Campus features marked as planned",
+      ]
+    : context
       ? [
-          "Personalized university edition",
-          "Published capability status",
-          "Campus features marked as planned",
+          "Browser-local timetable import",
+          "University-specific timetable identity",
+          ...(context.buildingSupported ? ["Source-backed campus search"] : []),
+          ...(context.routable ? ["Source-backed campus routing"] : []),
         ]
-      : context
-        ? [
-            "Browser-local timetable import",
-            "University-specific timetable identity",
-            "Source-backed campus search",
-            ...(context.routable ? ["Source-backed campus routing"] : []),
-          ]
-        : [
-            "University editions across Canada and the United States",
-            "Published capability status for every campus",
-          ];
+      : [
+          "University editions across Canada and the United States",
+          "Published capability status for every campus",
+        ];
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -327,12 +346,11 @@ function fallback(page: Page, context?: Context) {
         `<li><a href="https://${item.hosts[0]}">${escapeHtml(item.name)}</a> — ${escapeHtml(item.campusScope)} (${item.status})</li>`,
     )
     .join("");
-  const status =
-    context?.status === "planned"
-      ? "This personalized edition is planned. Timetable import, building data, search, and routing are not yet available."
-      : context?.status === "partial"
-        ? "This university has a mix of supported and planned campus capabilities."
-        : "Available features use supported, source-backed campus data.";
+  const status = !context?.timetableSupported
+    ? "This personalized edition is planned. Timetable import, building data, search, and routing are not yet available."
+    : context?.status === "partial"
+      ? "Timetable import is available. Building data, campus search, and routing remain clearly labeled by their current coverage."
+      : "Available features use supported, source-backed campus data.";
   const sections = (page.sections ?? [])
     .map(
       (item) =>
@@ -419,7 +437,12 @@ await writeFile(
 for (const context of contexts) {
   const directory = join("dist", "_sites", context.siteKey);
   await mkdir(join(directory, "_seo"), { recursive: true });
-  for (const page of pages.filter((item) => commonPaths.has(item.path))) {
+  const contextPaths = !context.timetableSupported
+    ? plannedPaths
+    : context.buildingSupported
+      ? commonPaths
+      : timetablePaths;
+  for (const page of pages.filter((item) => contextPaths.has(item.path))) {
     const html = render(base, editionPage(page, context), context);
     await writeFile(
       page.path === "/"
@@ -428,10 +451,7 @@ for (const context of contexts) {
       html,
     );
   }
-  await writeFile(
-    join(directory, "sitemap.xml"),
-    sitemap(context.origin, context.status === "planned" ? plannedPaths : commonPaths),
-  );
+  await writeFile(join(directory, "sitemap.xml"), sitemap(context.origin, contextPaths));
   await writeFile(join(directory, "robots.txt"), robots(context.origin));
 }
 await mkdir(join("dist", "_global"), { recursive: true });
