@@ -35,9 +35,9 @@ const totals = [...files].reduce(
   { js: 0, css: 0 },
 );
 
-// These leave modest headroom above the measured 11-university baseline with residences while still
-// catching accidental eager loading of MapLibre or timetable parsing code.
-const budgets = { js: 480 * 1024, css: 45 * 1024 };
+// The registry now includes every intentional Canada and U.S. edition. Keep only modest headroom
+// above that measured baseline while still catching eager MapLibre or timetable-parser loading.
+const budgets = { js: 500 * 1024, css: 45 * 1024 };
 for (const kind of ["js", "css"] as const) {
   if (totals[kind] > budgets[kind]) {
     throw new Error(

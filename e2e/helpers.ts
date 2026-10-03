@@ -15,6 +15,17 @@ export function editionUrl(baseURL: string, host: string, path = "/") {
   return url.toString();
 }
 
+export function campusEditionUrl(baseURL: string, host: string, campus: string, path = "/") {
+  const url = new URL(path, baseURL);
+  const isLocal =
+    url.hostname === "localhost" ||
+    url.hostname === "127.0.0.1" ||
+    url.hostname.endsWith(".localhost");
+  if (isLocal) url.hostname = `${host}.localhost`;
+  else url.searchParams.set("campus", campus);
+  return url.toString();
+}
+
 export function watchForAppFailures(page: Page, baseURL: string) {
   const failures: string[] = [];
   const appOrigin = new URL(baseURL).origin;

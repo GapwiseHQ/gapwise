@@ -50,23 +50,32 @@ export default defineConfig({
             : requestHost === "localhost" || requestHost === "127.0.0.1"
               ? "gapwise.ca"
               : requestHost;
-          const KNOWN_UNIVERSITIES = new Set(manifest.universities.map((u) => u.id));
           const site = manifest.sites.find((candidate) => candidate.hosts.includes(canonicalHost));
           const queryUni = parsed.searchParams.get("university");
-          const queryUniversity =
-            queryUni && KNOWN_UNIVERSITIES.has(queryUni)
-              ? manifest.universities.find((university) => university.id === queryUni)
-              : undefined;
-
-          const entryPoint = queryUniversity
-            ? `/_universities/${queryUniversity.id}/index.html`
-            : site?.role === "campus-edition" && site.campusId
-              ? `/_campuses/${site.campusId}/index.html`
-              : (site?.role === "university-hub" || site?.role === "single-campus-edition") &&
-                  site.universityId
-                ? `/_universities/${site.universityId}/index.html`
-                : "/_seo/index.html";
-          const assetUniversityId = queryUniversity?.id ?? site?.universityId;
+          const queryCampus = parsed.searchParams.get("campus");
+          const querySite = parsed.searchParams.get("site");
+          const selectedSite = querySite
+            ? querySite === "global"
+              ? manifest.sites.find((candidate) => candidate.role === "global")
+              : manifest.sites.find((candidate) => candidate.id === querySite)
+            : queryCampus
+              ? manifest.sites.find((candidate) => candidate.campusId === queryCampus)
+              : queryUni
+                ? manifest.sites.find(
+                    (candidate) =>
+                      candidate.universityId === queryUni &&
+                      (candidate.role === "university-hub" ||
+                        candidate.role === "single-campus-edition"),
+                  )
+                : site;
+          const siteKey =
+            selectedSite?.role === "global" ? undefined : selectedSite?.canonicalHost.split(".")[0];
+          const entryPoint = siteKey ? `/_sites/${siteKey}/index.html` : "/_seo/index.html";
+          const selectedUniversity = manifest.universities.find(
+            (university) => university.id === selectedSite?.universityId,
+          );
+          const assetUniversityId =
+            selectedUniversity?.status === "planned" ? undefined : selectedUniversity?.id;
 
           if (
             parsed.pathname === "/" ||

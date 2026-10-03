@@ -122,23 +122,16 @@ function RootComponent() {
     trackPageView(pathname, university?.id);
   }, [pathname, university?.id]);
 
-  if (!site || site.role === "reserved" || university?.status === "planned") {
-    const isPlanned = site?.role === "reserved" || university?.status === "planned";
-    const name = site?.name ?? university?.name;
-    const shortName = site?.shortName ?? university?.shortName ?? "GW";
+  if (!site) {
     return (
       <main className="flex min-h-screen items-center justify-center bg-background px-4 text-center">
         <div className="max-w-md">
           <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary text-foreground font-display font-semibold text-base border border-border">
-            {shortName}
+            GW
           </div>
-          <h1 className="font-display text-2xl font-semibold">
-            {isPlanned ? `${name} edition coming soon` : "University edition unavailable"}
-          </h1>
+          <h1 className="font-display text-2xl font-semibold">University edition unavailable</h1>
           <p className="mt-2 text-sm text-muted-foreground">
-            {isPlanned
-              ? `We are currently preparing campus data and timetable adapters for ${name}. Check back soon!`
-              : "This hostname is not registered with Gapwise."}
+            This hostname is not registered with Gapwise.
           </p>
           <a
             className="mt-6 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"

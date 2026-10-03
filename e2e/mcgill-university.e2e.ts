@@ -10,7 +10,9 @@ test("McGill calendar import preserves downtown campus search and routing", asyn
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto(editionUrl(baseURL, "mcgill"));
-  await expect(page.getByText("Gapwise for McGill University", { exact: true })).toBeVisible();
+  await expect(page.locator(".university-home-kicker")).toContainText(
+    "Gapwise for McGill University",
+  );
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("McGill");
 
   await page

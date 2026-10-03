@@ -355,7 +355,7 @@ export function searchGapwise(query: string, context: SearchIndexContext = {}): 
       bestScore = shortScore;
     }
 
-    const aliases = UNIVERSITY_ALIASES[uni.id] ?? [];
+    const aliases = [...(UNIVERSITY_ALIASES[uni.id] ?? []), ...uni.aliases, ...uni.hosts];
     for (const alias of aliases) {
       const as = scoreMatch(q, alias);
       if (as !== null && (bestScore === null || as < bestScore)) {

@@ -16,7 +16,7 @@ import { removeBareHash } from "./lib/url";
 import { announceAppUpdate } from "./features/pwa/update-events";
 
 import { ensureCampusCatalog } from "./data/campuses";
-import { activeCampus, activeUniversity } from "./universities/registry";
+import { activeCampus, activeUniversity, campusById } from "./universities/registry";
 
 function removeStaticSeoMetadata() {
   const comments = [...document.head.childNodes].filter(
@@ -42,7 +42,7 @@ removeStaticSeoMetadata();
 
 function syncUniversityBranding() {
   const university = activeUniversity();
-  if (!university || university.id === "uoft") return;
+  if (!university || university.id === "uoft" || university.status === "planned") return;
   const prefix = `/universities/${university.id}`;
   const svg = document.getElementById("app-icon-svg") as HTMLLinkElement | null;
   if (svg) svg.href = `${prefix}/logo-mark.svg`;
@@ -76,7 +76,10 @@ const updateServiceWorker = registerSW({
 });
 
 async function startApplication() {
-  await ensureCampusCatalog(activeCampus() ?? university?.defaultCampus);
+  const campusId = activeCampus() ?? university?.defaultCampus;
+  if (campusId && campusById(campusId)?.capabilities.buildingData !== "planned") {
+    await ensureCampusCatalog(campusId);
+  }
   const router = getRouter();
   createRoot(container!).render(
     <StrictMode>

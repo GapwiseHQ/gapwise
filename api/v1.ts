@@ -17,6 +17,7 @@ import {
 import type { RoutePreferences } from "../src/features/routing/types.js";
 import {
   allCampuses,
+  supportedCampuses,
   supportedUniversities,
   universityById,
 } from "../src/universities/registry.js";
@@ -236,7 +237,7 @@ function listCampusesHandler(url: URL, id: string) {
   requireKnownQuery(url, ["university", "id"]);
   const targetId = singleQuery(url, "id");
   const targetUniversity = singleQuery(url, "university");
-  const campuses = allCampuses().filter((campus) => {
+  const campuses = supportedCampuses().filter((campus) => {
     if (targetId && campus.id.toLowerCase() !== targetId.toLowerCase()) return false;
     if (targetUniversity && campus.universityId.toLowerCase() !== targetUniversity.toLowerCase())
       return false;
@@ -442,7 +443,7 @@ export async function fetchV1(request: Request, maybeNow?: unknown) {
             hosts: uni.hosts,
             status: uni.status,
           })),
-          supportedCampuses: allCampuses(),
+          supportedCampuses: supportedCampuses(),
           privacy: "Public campus intelligence only; no student or account data is exposed.",
         },
         {

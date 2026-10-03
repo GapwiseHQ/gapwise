@@ -15,9 +15,10 @@ import {
 } from "lucide-react";
 import { useMemo, useState, type CSSProperties } from "react";
 import {
-  SITES,
-  canonicalUrlForUniversity,
+  CAMPUSES,
+  normalizeUniversitySearch,
   supportedUniversities,
+  universityDirectoryEntries,
   type University,
 } from "@/universities/registry";
 import "./global-marketing-home.css";
@@ -37,69 +38,27 @@ type UniversityDestination = {
 };
 
 const SUPPORTED_UNIVERSITIES = supportedUniversities();
-const IMPLEMENTED_CAMPUS_COUNT = SUPPORTED_UNIVERSITIES.reduce(
-  (total, university) => total + university.campuses.length,
-  0,
-);
+const IMPLEMENTED_CAMPUS_COUNT = CAMPUSES.filter((campus) => campus.status === "supported").length;
 
-const UNIVERSITY_DESTINATIONS: UniversityDestination[] = SUPPORTED_UNIVERSITIES.map(
-  (university) => ({
-    id: university.id,
-    university,
-    shortName: university.shortName,
-    name: university.name,
-    scope: university.campusScope,
-    href: canonicalUrlForUniversity(university),
-    host: university.hosts[0]!,
-    searchText: [
-      university.id,
-      university.name,
-      university.shortName,
-      university.campusScope,
-      ...university.hosts,
-      ...university.campuses,
-    ]
-      .join(" ")
-      .toLowerCase(),
-    campusResult: false,
-  }),
-);
+const ALL_DESTINATIONS: UniversityDestination[] = universityDirectoryEntries().map((entry) => ({
+  id: entry.id,
+  university: entry.university,
+  shortName: entry.shortName,
+  name: entry.name,
+  scope: `${entry.scope} · ${entry.status === "planned" ? "Planned" : entry.status === "partial" ? "Partial" : "Supported"}`,
+  href: entry.href,
+  host: entry.host,
+  searchText: entry.searchText,
+  campusResult: entry.kind === "campus",
+}));
 
-const CAMPUS_DESTINATIONS: UniversityDestination[] = SITES.filter(
-  (site) => site.role === "campus-edition",
-).flatMap((site) => {
-  const university = SUPPORTED_UNIVERSITIES.find((entry) => entry.id === site.universityId);
-  if (!university || !site.name || !site.shortName || !site.campusId) return [];
-  return [
-    {
-      id: site.id,
-      university,
-      shortName: site.shortName,
-      name: site.name,
-      scope: site.presentation?.cardDescription ?? university.campusScope,
-      href: `https://${site.canonicalHost}`,
-      host: site.canonicalHost,
-      searchText: [
-        site.id,
-        site.campusId,
-        site.name,
-        site.shortName,
-        site.canonicalHost,
-        university.id,
-        university.name,
-      ]
-        .join(" ")
-        .toLowerCase(),
-      campusResult: true,
-    },
-  ];
-});
+const UNIVERSITY_DESTINATIONS = ALL_DESTINATIONS.filter((destination) => !destination.campusResult);
 
 const exampleWeek = [
-  { day: "MON", course: "CSC108", room: "MN 1210", time: "09:00", offset: "12%" },
-  { day: "TUE", course: "MAT102", room: "IB 245", time: "12:00", offset: "47%" },
-  { day: "WED", course: "CSC108", room: "MN 1210", time: "09:00", offset: "12%" },
-  { day: "THU", course: "MAT102", room: "IB 245", time: "12:00", offset: "47%" },
+  { day: "MON", course: "CSC108H5", room: "MN 1210", time: "09:00", offset: "12%" },
+  { day: "TUE", course: "MAT102H5", room: "DH 2020", time: "12:00", offset: "47%" },
+  { day: "WED", course: "CSC108H5", room: "MN 1210", time: "09:00", offset: "12%" },
+  { day: "THU", course: "MAT102H5", room: "DH 2020", time: "12:00", offset: "47%" },
   { day: "FRI", course: "", room: "", time: "", offset: "0" },
 ] as const;
 
@@ -203,7 +162,7 @@ function ProductPreview() {
             <article>
               <i aria-hidden="true" />
               <div>
-                <strong>CSC108H1 · Lecture</strong>
+                <strong>CSC108H5 · Lecture</strong>
                 <span>Maanjiwe nendamowinan · MN 1270</span>
               </div>
               <time>11:00–12:00</time>
@@ -221,7 +180,7 @@ function ProductPreview() {
             <article>
               <i aria-hidden="true" />
               <div>
-                <strong>MAT102H3 · Lecture</strong>
+                <strong>MAT102H5 · Lecture</strong>
                 <span>Deerfield Hall · DH 2020</span>
               </div>
               <time>14:00–15:00</time>
@@ -256,21 +215,19 @@ function ProductPreview() {
 
 export function GlobalMarketingHome() {
   const [query, setQuery] = useState("");
-  const [showAll, setShowAll] = useState(false);
-  const normalizedQuery = query.trim().toLowerCase();
+  const normalizedQuery = normalizeUniversitySearch(query);
 
   const visibleDestinations = useMemo(() => {
     if (normalizedQuery) {
-      return [...CAMPUS_DESTINATIONS, ...UNIVERSITY_DESTINATIONS].filter((destination) =>
+      return ALL_DESTINATIONS.filter((destination) =>
         destination.searchText.includes(normalizedQuery),
       );
     }
-    if (showAll) return UNIVERSITY_DESTINATIONS;
     const featured = FEATURED_UNIVERSITY_IDS.map((id) =>
       UNIVERSITY_DESTINATIONS.find((destination) => destination.id === id),
     ).filter((destination): destination is UniversityDestination => Boolean(destination));
     return featured.length ? featured : UNIVERSITY_DESTINATIONS.slice(0, 6);
-  }, [normalizedQuery, showAll]);
+  }, [normalizedQuery]);
 
   return (
     <div className="global-home">
@@ -364,7 +321,7 @@ export function GlobalMarketingHome() {
             <div className="global-home-gap-flow">
               <div>
                 <span>Class</span>
-                <strong>CSC108H1</strong>
+                <strong>CSC108H5</strong>
                 <small>MN 1270 · ends 11:00</small>
               </div>
               <ArrowRight aria-hidden="true" />
@@ -382,7 +339,7 @@ export function GlobalMarketingHome() {
               <ArrowRight aria-hidden="true" />
               <div>
                 <span>Next class</span>
-                <strong>MAT102H3</strong>
+                <strong>MAT102H5</strong>
                 <small>DH 2020 · starts 13:00</small>
               </div>
             </div>
@@ -462,26 +419,19 @@ export function GlobalMarketingHome() {
             <p className="global-home-eyebrow">Campus coverage</p>
             <h2 id="global-universities-title">Built for your campus.</h2>
             <p className="global-home-count">
-              {SUPPORTED_UNIVERSITIES.length} universities · {IMPLEMENTED_CAMPUS_COUNT} implemented
-              campuses
+              {SUPPORTED_UNIVERSITIES.length} supported universities · planned editions across
+              Canada and the U.S.
             </p>
           </div>
-          <button
-            type="button"
-            className="global-home-view-all"
-            onClick={() => {
-              setShowAll((current) => !current);
-              if (normalizedQuery) setQuery("");
-            }}
-          >
-            {showAll ? "Show featured universities" : "View all universities"}
+          <a href="/universities" className="global-home-view-all">
+            View all universities
             <ArrowRight aria-hidden="true" />
-          </button>
+          </a>
         </div>
 
         <label className="global-home-university-search">
           <Search aria-hidden="true" />
-          <span className="sr-only">Search all supported universities and campuses</span>
+          <span className="sr-only">Search all Gapwise universities and campuses</span>
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
@@ -514,7 +464,7 @@ export function GlobalMarketingHome() {
           ))}
           {visibleDestinations.length === 0 ? (
             <div className="global-home-university-empty">
-              No supported university or campus matches “{query}”.
+              No university or campus matches “{query}”.
             </div>
           ) : null}
         </div>

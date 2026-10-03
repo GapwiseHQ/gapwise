@@ -23,6 +23,8 @@ import {
   siteForHostname,
   universityById,
   universityForHostname,
+  universityDirectoryEntries,
+  normalizeUniversitySearch,
   validateUniversityManifest,
 } from "@/universities/registry";
 
@@ -90,7 +92,7 @@ describe("university registry", () => {
     expect(universityById("nonexistent")).toBeNull();
   });
 
-  test("resolves registry-driven global, hub, campus, single-campus, and reserved roles", () => {
+  test("resolves registry-driven global, hub, campus, single-campus, and planned editions", () => {
     expect(siteForHostname("gapwise.ca")?.role).toBe("global");
     expect(siteForHostname("www.gapwise.ca")?.role).toBe("global");
     expect(siteForHostname("localhost")?.role).toBe("global");
@@ -100,8 +102,8 @@ describe("university registry", () => {
       campusId: "utm",
     });
     expect(siteForHostname("preview-branch.vercel.app")?.role).toBe("global");
-    expect(siteForHostname("unknown.gapwise.ca")?.role).toBe("global");
-    expect(siteForHostname("attacker.example")?.role).toBe("global");
+    expect(siteForHostname("unknown.gapwise.ca")).toBeNull();
+    expect(siteForHostname("attacker.example")).toBeNull();
     expect(siteForHostname("uoft.gapwise.ca")?.role).toBe("university-hub");
     expect(siteForHostname("utm.gapwise.ca")).toMatchObject({
       role: "campus-edition",
@@ -109,45 +111,63 @@ describe("university registry", () => {
       campusId: "utm",
     });
     expect(siteForHostname("mcgill.gapwise.ca")?.role).toBe("single-campus-edition");
-    expect(siteForHostname("harvard.gapwise.ca")?.role).toBe("reserved");
-    expect(universityForHostname("harvard.gapwise.ca")).toBeNull();
+    expect(siteForHostname("harvard.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("harvard.gapwise.ca")?.status).toBe("planned");
     expect(campusForHostname("uoft.gapwise.ca")).toBeNull();
     expect(campusForHostname("utm.gapwise.ca")).toBe("utm");
-    expect(campusForHostname("ubc.gapwise.ca")).toBe("ubc-vancouver");
-    expect(campusForHostname("ubcv.gapwise.ca")).toBeNull();
+    expect(campusForHostname("ubc.gapwise.ca")).toBeNull();
+    expect(campusForHostname("ubcv.gapwise.ca")).toBe("ubc-vancouver");
     expect(campusForHostname("preview-branch.vercel.app")).toBeNull();
     expect(campusForHostname("unknown.gapwise.ca")).toBeNull();
   });
 
   test("resolves the complete production host matrix without implicit UTM fallback", () => {
-    const expected = [
-      ["gapwise.ca", "global", null, null],
-      ["www.gapwise.ca", "global", null, null],
-      ["uoft.gapwise.ca", "university-hub", "uoft", null],
-      ["utm.gapwise.ca", "campus-edition", "uoft", "utm"],
-      ["utsg.gapwise.ca", "campus-edition", "uoft", "utsg"],
-      ["utsc.gapwise.ca", "campus-edition", "uoft", "utsc"],
-      ["carleton.gapwise.ca", "single-campus-edition", "carleton", "carleton"],
-      ["tmu.gapwise.ca", "single-campus-edition", "tmu", "tmu"],
-      ["queens.gapwise.ca", "single-campus-edition", "queens", "queens"],
-      ["laurier.gapwise.ca", "single-campus-edition", "laurier", "waterloo"],
-      ["mcmaster.gapwise.ca", "single-campus-edition", "mcmaster", "mcmaster"],
-      ["western.gapwise.ca", "single-campus-edition", "western", "western"],
-      ["guelph.gapwise.ca", "single-campus-edition", "guelph", "guelph"],
-      ["uottawa.gapwise.ca", "single-campus-edition", "uottawa", "uottawa"],
-      ["brock.gapwise.ca", "single-campus-edition", "brock", "brock"],
-      ["york.gapwise.ca", "single-campus-edition", "york", "keele"],
-      ["ubc.gapwise.ca", "single-campus-edition", "ubc", "ubc-vancouver"],
-      ["ubcv.gapwise.ca", "reserved", "ubc", "ubc-vancouver"],
-      ["waterloo.gapwise.ca", "single-campus-edition", "waterloo", "waterloo-main"],
-      ["mcgill.gapwise.ca", "single-campus-edition", "mcgill", "mcgill-downtown"],
-    ] as const;
-
-    for (const [host, role, universityId, campusId] of expected) {
-      expect(siteForHostname(host)).toMatchObject({ role });
-      expect(siteForHostname(host)?.universityId ?? null).toBe(universityId);
-      expect(siteForHostname(host)?.campusId ?? null).toBe(campusId);
+    const slugs = [
+      "uoft",
+      "utm",
+      "utsg",
+      "utsc",
+      "carleton",
+      "tmu",
+      "laurier",
+      "queens",
+      "york",
+      "keele",
+      "glendon",
+      "markham",
+      "mcmaster",
+      "western",
+      "guelph",
+      "uottawa",
+      "brock",
+      "waterloo",
+      "mcgill",
+      "ubc",
+      "ubcv",
+      "ubco",
+      "cmu",
+      "ucberkeley",
+      "nyu",
+      "mit",
+      "stanford",
+      "upenn",
+      "cornell",
+      "dartmouth",
+      "brown",
+      "columbia",
+      "princeton",
+      "yale",
+      "harvard",
+    ];
+    expect(new Set(slugs).size).toBe(35);
+    for (const slug of slugs) {
+      const site = siteForHostname(`${slug}.gapwise.ca`);
+      expect(site).not.toBeNull();
+      expect(site?.id).not.toBe("global");
+      expect(universityForHostname(`${slug}.gapwise.ca`)).not.toBeNull();
     }
+    for (const slug of ["ai", "api", "docs", "sdk", "status", "data", "developers", "cli"])
+      expect(siteForHostname(`${slug}.gapwise.ca`)).toBeNull();
   });
 
   test("rejects malformed manifest entries", () => {
@@ -158,6 +178,23 @@ describe("university registry", () => {
         { ...uoft, id: "Invalid ID", hosts: ["gapwise.ca", "gapwise.ca"], defaultCampus: "other" },
       ]).length,
     ).toBeGreaterThanOrEqual(3);
+  });
+
+  test("directory search covers names, aliases, campuses, cities, and host slugs", () => {
+    const entries = universityDirectoryEntries();
+    const find = (query: string) => {
+      const normalized = normalizeUniversitySearch(query);
+      return entries.filter((entry) => entry.searchText.includes(normalized));
+    };
+    expect(find("Carnegie Mellon").some((entry) => entry.id === "cmu")).toBe(true);
+    expect(find("CMU").some((entry) => entry.id === "cmu")).toBe(true);
+    expect(find("Pittsburgh").some((entry) => entry.id === "cmu")).toBe(true);
+    expect(find("ubco.gapwise.ca").some((entry) => entry.id === "ubc-okanagan")).toBe(true);
+    expect(find("North York").some((entry) => entry.id === "keele")).toBe(true);
+    expect(find("Berkeley").some((entry) => entry.id === "ucberkeley")).toBe(true);
+    expect(entries.some((entry) => entry.id === "harvard" && entry.status === "planned")).toBe(
+      true,
+    );
   });
 });
 

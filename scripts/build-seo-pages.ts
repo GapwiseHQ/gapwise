@@ -3,104 +3,100 @@ import { dirname, join } from "node:path";
 import { PUBLIC_FEATURE_PAGES, editionFeatureMetadata } from "../src/content/public-feature-pages";
 
 const SITE_ORIGIN = "https://gapwise.ca";
-const GITHUB_ORGANIZATION = "https://github.com/GapwiseHQ";
-const GITHUB_CORE = `${GITHUB_ORGANIZATION}/gapwise`;
-
-type UniversityMarketing = {
+type Status = "supported" | "partial" | "planned";
+type Marketing = {
   campusName: string;
   headline: string;
   description: string;
   seoTitle: string;
   seoDescription: string;
 };
-
-const universitiesManifest = JSON.parse(await readFile("universities.json", "utf8")) as {
-  sites: Array<{
-    role: string;
-    canonicalHost: string;
-    universityId?: string;
-    campusId?: string;
-    name?: string;
-    shortName?: string;
-    presentation?: { marketing?: UniversityMarketing };
-  }>;
-  universities: Array<{
-    id: string;
-    name: string;
-    shortName: string;
-    campusScope: string;
-    hosts: string[];
-    campuses: string[];
-    enabledFeatures?: { routing?: boolean };
-    marketing: UniversityMarketing;
-  }>;
+type Campus = {
+  id: string;
+  universityId: string;
+  name: string;
+  shortName: string;
+  city: string;
+  region: string;
+  status: Status;
+  capabilities: Record<string, Status>;
+  marketing?: Marketing;
 };
-const supportedUniversityCount = universitiesManifest.universities.length;
-const supportedCampusCount = universitiesManifest.universities.reduce(
-  (count, university) => count + university.campuses.length,
-  0,
-);
-
-export type UniversityContext = {
+type University = {
   id: string;
   name: string;
   shortName: string;
+  campusScope: string;
+  hosts: string[];
+  status: Status;
+  marketing: Marketing;
+};
+type Site = {
+  id: string;
+  role: string;
+  canonicalHost: string;
+  universityId?: string;
+  campusId?: string;
+  name?: string;
+  shortName?: string;
+  presentation?: { marketing?: Marketing };
+};
+const manifest = JSON.parse(await readFile("universities.json", "utf8")) as {
+  sites: Site[];
+  universities: University[];
+  campuses: Campus[];
+};
+const supportedUniversities = manifest.universities.filter((item) => item.status !== "planned");
+const supportedCampuses = manifest.campuses.filter((item) => item.status === "supported");
+
+type Context = {
+  id: string;
+  siteKey: string;
+  name: string;
+  shortName: string;
   origin: string;
+  status: Status;
   routable: boolean;
-  campusName?: string;
-  marketing: UniversityMarketing;
+  branded: boolean;
+  location: string | undefined;
+  marketing: Marketing;
 };
-
-const uoftUniversity = universitiesManifest.universities.find(
-  (university) => university.id === "uoft",
-)!;
-const uoftHub = universitiesManifest.sites.find(
-  (site) => site.role === "university-hub" && site.universityId === "uoft",
-)!;
-export const UOFT_CONTEXT: UniversityContext = {
-  id: "uoft",
-  name: uoftUniversity.name,
-  shortName: uoftUniversity.shortName,
-  origin: `https://${uoftHub.canonicalHost}`,
-  routable: true,
-  marketing: uoftHub.presentation?.marketing ?? uoftUniversity.marketing,
-};
-
-const UOFT_CAMPUS_EDITIONS = universitiesManifest.sites
-  .filter((site) => site.role === "campus-edition" && site.universityId === "uoft")
-  .map((site) => ({
-    campusId: site.campusId!,
-    context: {
-      ...UOFT_CONTEXT,
-      name: site.name!,
-      shortName: site.shortName!,
+const contexts: Context[] = manifest.sites
+  .filter((site) => site.role !== "global")
+  .map((site) => {
+    const university = manifest.universities.find((item) => item.id === site.universityId);
+    const campus = manifest.campuses.find((item) => item.id === site.campusId);
+    if (!university) throw new Error(`Missing university for ${site.id}`);
+    return {
+      id: university.id,
+      siteKey: site.canonicalHost.split(".")[0]!,
+      name: site.name ?? campus?.name ?? university.name,
+      shortName: site.shortName ?? campus?.shortName ?? university.shortName,
       origin: `https://${site.canonicalHost}`,
-      campusName: site.presentation!.marketing!.campusName,
-      marketing: site.presentation!.marketing!,
-    },
-  })) satisfies ReadonlyArray<{ campusId: string; context: UniversityContext }>;
+      status: campus?.status ?? university.status,
+      routable: campus
+        ? campus.capabilities["routing"] === "supported"
+        : manifest.campuses.some(
+            (item) =>
+              item.universityId === university.id && item.capabilities["routing"] === "supported",
+          ),
+      branded: university.status !== "planned",
+      location: campus ? `${campus.city}, ${campus.region}` : undefined,
+      marketing: site.presentation?.marketing ?? campus?.marketing ?? university.marketing,
+    };
+  });
 
-function socialImageUrl(uniContext?: UniversityContext) {
-  if (!uniContext) return `${SITE_ORIGIN}/og-gapwise.png`;
-  const origin = uniContext.origin;
-  if (uniContext.campusName)
-    return `${origin}/campuses/${uniContext.shortName.toLowerCase()}/og-card.png`;
-  const id = uniContext.id;
-  return `${origin}/universities/${id}/og-card.png`;
-}
-
-type SeoSection = { title: string; body: string; bullets?: readonly string[] };
-type SeoPage = {
+type Section = { title: string; body: string };
+type Page = {
   path: string;
   title: string;
   description: string;
   heading: string;
   detail: string;
-  sections?: readonly SeoSection[];
+  sections?: readonly Section[];
   sitemap: boolean;
 };
-
-const FEATURE_PAGES: readonly SeoPage[] = Object.values(PUBLIC_FEATURE_PAGES).map((page) => ({
+const featurePages: Page[] = Object.values(PUBLIC_FEATURE_PAGES).map((page) => ({
   path: page.path,
   title: page.seoTitle,
   description: page.description,
@@ -109,443 +105,117 @@ const FEATURE_PAGES: readonly SeoPage[] = Object.values(PUBLIC_FEATURE_PAGES).ma
   sections: page.sections,
   sitemap: true,
 }));
-
-const PAGES: readonly SeoPage[] = [
+const pages: Page[] = [
   {
     path: "/",
     title: "Gapwise — University Timetable & Campus Navigation",
     description:
-      "Gapwise is a free and open-source timetable, campus navigation, and student planning platform for students across multiple Canadian universities.",
+      "Explore Gapwise university and campus editions across North America, with honest support status for timetables, campus data, search, and routing.",
     heading: "Make the time between classes count.",
-    detail: `Import your timetable in your browser, explore source-backed campus maps, understand the usable time between classes, and plan your campus day across ${supportedUniversityCount} Canadian universities and ${supportedCampusCount} campus models.`,
+    detail: `Explore ${manifest.universities.length} university editions and ${manifest.campuses.length} campus records, including ${supportedUniversities.length} currently supported universities and ${supportedCampuses.length} supported campuses.`,
     sections: [
       {
         title: "Your timetable, connected to campus context",
-        body: "Gapwise combines class times, rooms, campus identity, available deterministic travel time, and gap budgets so the schedule can answer more than when the next class begins.",
+        body: "Gapwise combines class times, rooms, campus identity, deterministic travel time, and gap budgets.",
       },
       {
         title: "Private by architecture",
-        body: "The original timetable file is parsed locally in the browser. Private sync is optional, public campus data stays separate from private student state, and foreground location is not retained as a movement history.",
+        body: "Supported timetable files are parsed locally in the browser. Private sync is optional and foreground location is not retained as movement history.",
       },
       {
-        title: "Algorithms where correctness matters",
-        body: "Gap durations, leave-by times, route selection, and other computable values use deterministic code. Optional AI interfaces are bounded to the places where interpretation is actually useful.",
+        title: "Clear about coverage",
+        body: "Every edition states whether timetable import, building data, search, and routing are supported, partial, or planned.",
       },
     ],
     sitemap: true,
   },
-  ...FEATURE_PAGES,
+  ...featurePages,
   {
     path: "/places",
     title: "UTM Campus Places — Gapwise",
     description:
-      "Explore source-backed UTM dining, study, service, library, and recreation places with explicit freshness and conservative handling of unknown hours.",
+      "Explore source-backed UTM dining, study, service, library, and recreation places.",
     heading: "Practical places at UTM, with source-backed details.",
-    detail:
-      "Gapwise keeps place identity, source provenance, and freshness explicit. Missing live hours stay unknown instead of being guessed as open or closed.",
-    sitemap: true,
-  },
-  {
-    path: "/places/davis-food-court",
-    title: "Davis Food Court at UTM — Gapwise",
-    description:
-      "Source-backed location and practical details for Davis Food Court in the William G. Davis Building at UTM.",
-    heading: "Davis Food Court at UTM",
-    detail:
-      "Gapwise records this dining location in the William G. Davis Building and links back to the official UTM Hospitality source for current information.",
-    sitemap: true,
-  },
-  {
-    path: "/places/utm-library",
-    title: "UTM Library — Hazel McCallion Academic Learning Centre | Gapwise",
-    description:
-      "Source-backed location and practical details for UTM's Hazel McCallion Academic Learning Centre and library.",
-    heading: "UTM Library and Hazel McCallion Academic Learning Centre",
-    detail:
-      "Gapwise records the library as a source-backed campus place for individual study, group study, and library services, while leaving unbundled current hours unknown.",
-    sitemap: true,
-  },
-  {
-    path: "/places/rawc",
-    title: "UTM RAWC — Recreation, Athletics & Wellness | Gapwise",
-    description:
-      "Source-backed location and practical details for UTM's Recreation, Athletics and Wellness Centre (RAWC).",
-    heading: "UTM Recreation, Athletics and Wellness Centre",
-    detail:
-      "Gapwise records RAWC as a source-backed recreation and fitness destination and links to the official UTM athletics source for current information.",
+    detail: "Gapwise keeps place identity, source provenance, and freshness explicit.",
     sitemap: true,
   },
   {
     path: "/developers",
     title: "Gapwise API & SDKs — Developers",
-    description: `Build with the Gapwise public campus building, place, routing, and deterministic gap-planning API, OpenAPI contract, and official SDKs across all ${supportedUniversityCount} supported Canadian universities.`,
+    description: `Build with the Gapwise public campus API for ${supportedUniversities.length} supported universities.`,
     heading: "Deterministic campus intelligence for developers.",
     detail:
-      "Gapwise publishes a bounded public API for campus buildings, places, routing, and gap planning across supported universities, with OpenAPI plus JavaScript/TypeScript and Python SDK documentation.",
+      "Gapwise publishes a bounded API for supported campus data, with OpenAPI and SDK documentation.",
     sitemap: true,
   },
   {
     path: "/ai",
     title: "Gapwise AI — Connect Gapwise to AI Assistants",
     description:
-      "Connect explicitly delegated Gapwise timetable context and deterministic campus intelligence to compatible AI assistants through Gapwise's secure remote MCP service.",
+      "Connect explicitly delegated Gapwise context and deterministic campus intelligence to compatible AI assistants.",
     heading: "Your Gapwise context, with an assistant you choose.",
     detail:
-      "Gapwise AI exposes public campus intelligence plus narrowly delegated timetable, availability, gap-planning, and compatibility-scoped planning capabilities. Academic meetings remain read-only and AI access can be revoked.",
+      "Gapwise AI exposes supported public campus intelligence plus narrowly delegated private planning capabilities.",
     sitemap: true,
   },
   {
     path: "/support",
     title: "Support — Gapwise",
     description:
-      "Support for Gapwise accounts, timetables, AI connectors, privacy, security, revocation, and troubleshooting.",
+      "Support for Gapwise accounts, timetables, AI connectors, privacy, security, and troubleshooting.",
     heading: "Help with Gapwise.",
     detail:
-      "Find first-party guidance for connector authorization, missing schedule context, rejected writes, revocation, privacy, security reporting, and service status.",
+      "Find first-party guidance for accounts, supported imports, privacy, security, and service status.",
     sitemap: true,
   },
   {
     path: "/trust",
     title: "Trust Center — Gapwise",
     description:
-      "Evidence-backed privacy, security, accessibility, data-flow, AI permission, incident-response, and independence information for Gapwise.",
+      "Evidence-backed privacy, security, accessibility, data-flow, AI permission, and incident-response information.",
     heading: "Gapwise Trust Center",
     detail:
-      "Review implementation-backed privacy and security boundaries, accessibility evidence, incident processes, subprocessors, AI permissions, and open items that still require human or provider confirmation.",
+      "Review implementation-backed privacy and security boundaries, accessibility evidence, and AI permissions.",
     sitemap: true,
   },
   {
     path: "/privacy",
     title: "Privacy — Gapwise",
     description:
-      "How Gapwise handles timetable, account, planning, AI, analytics, and foreground location data, including browser-local ACORN parsing.",
+      "How Gapwise handles timetable, account, planning, AI, analytics, and foreground location data.",
     heading: "Privacy at Gapwise",
     detail:
-      "The original ACORN .ics file is parsed in the browser. Guest mode is first-class, private cloud sync is optional, and precise live location is foreground-only when requested.",
+      "Supported schedule files are parsed in the browser. Guest mode is first-class and private sync is optional.",
     sitemap: true,
   },
   {
     path: "/security",
     title: "Vulnerability Disclosure — Gapwise",
-    description:
-      "How to report a suspected Gapwise security vulnerability privately and safely, including the preferred private reporting path.",
+    description: "How to report a suspected Gapwise security vulnerability privately and safely.",
     heading: "Report a Gapwise security issue privately.",
-    detail:
-      "Gapwise publishes a vulnerability disclosure policy and canonical security.txt. Do not place exploit details, credentials, tokens, or private student data in public issues.",
+    detail: "Gapwise publishes a vulnerability disclosure policy and canonical security.txt.",
     sitemap: true,
   },
   {
     path: "/accessibility",
     title: "Accessibility — Gapwise",
     description:
-      "Gapwise's accessibility target, current automated and keyboard-test evidence, known limitations, and feedback path.",
+      "Gapwise's accessibility target, current evidence, known limitations, and feedback path.",
     heading: "Accessibility is an ongoing Gapwise practice.",
-    detail:
-      "Gapwise uses WCAG 2.2 Level AA as a product and review target while clearly separating current automated evidence from manual or independent assessment that has not occurred.",
+    detail: "Gapwise uses WCAG 2.2 Level AA as a product and review target.",
     sitemap: true,
   },
   {
     path: "/terms",
     title: "Terms — Gapwise",
-    description:
-      "Terms and important notices for the independent Gapwise timetable, gap-planning, and campus-routing application across supported Canadian universities.",
+    description: "Terms and notices for the independent Gapwise application.",
     heading: "Gapwise terms and notices",
-    detail:
-      "Gapwise is an independent student project. Review the current product terms and notices without implying University of Toronto approval or endorsement.",
+    detail: "Gapwise is an independent student project and does not claim university endorsement.",
     sitemap: false,
   },
 ];
 
-function escapeHtml(value: string) {
-  return value
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
-}
-
-function canonicalUrl(path: string, origin: string = SITE_ORIGIN) {
-  return new URL(path, `${origin}/`).href;
-}
-
-function outputPath(path: string) {
-  if (path === "/") return "_seo/index.html";
-  return `_seo/${path.slice(1).replaceAll("/", "--")}.html`;
-}
-
-function homepageStructuredData(page: SeoPage, uniContext?: UniversityContext) {
-  const origin = uniContext?.origin ?? SITE_ORIGIN;
-  const organizationId = `${SITE_ORIGIN}/#organization`;
-  const websiteId = `${origin}/#website`;
-  const appId = `${origin}/#app`;
-  const founderId = `${SITE_ORIGIN}/#andrew-muratov`;
-  const isDedicatedTenant = Boolean(uniContext);
-  const uniName = isDedicatedTenant ? uniContext!.name : null;
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": organizationId,
-        name: "Gapwise",
-        url: `${SITE_ORIGIN}/`,
-        description:
-          "Gapwise is the free and open-source university timetable, campus navigation, routing, and student-planning platform for Canadian universities.",
-        logo: {
-          "@type": "ImageObject",
-          url: `${SITE_ORIGIN}/icon-512.png`,
-          width: 512,
-          height: 512,
-        },
-        founder: { "@id": founderId },
-        email: "support@gapwise.ca",
-        sameAs: [GITHUB_ORGANIZATION],
-      },
-      {
-        "@type": "Person",
-        "@id": founderId,
-        name: "Andrew Muratov",
-        url: "https://www.donotdisconnect.online/",
-        description: "Creator of Gapwise and the project's lead engineer.",
-        sameAs: ["https://github.com/andrewmuratov", "https://www.linkedin.com/in/andrewmuratov"],
-        knowsAbout: [
-          "Gapwise",
-          "Computer science",
-          "Information security",
-          "Mathematics",
-          "Software engineering",
-        ],
-      },
-      {
-        "@type": "WebSite",
-        "@id": websiteId,
-        name: uniName ? `Gapwise for ${uniName}` : "Gapwise",
-        url: `${origin}/`,
-        description: page.description,
-        inLanguage: "en-CA",
-        publisher: { "@id": organizationId },
-        ...(origin !== SITE_ORIGIN ? { isPartOf: { "@id": `${SITE_ORIGIN}/#website` } } : {}),
-      },
-      {
-        "@type": ["WebApplication", "SoftwareApplication"],
-        "@id": appId,
-        name: uniName ? `Gapwise for ${uniName}` : "Gapwise",
-        url: `${origin}/`,
-        description: page.description,
-        applicationCategory: "EducationalApplication",
-        operatingSystem: "Any",
-        isAccessibleForFree: true,
-        inLanguage: "en-CA",
-        creator: { "@id": founderId },
-        publisher: { "@id": organizationId },
-        isPartOf: { "@id": websiteId },
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "CAD",
-        },
-        audience: {
-          "@type": "Audience",
-          audienceType: uniName
-            ? `University students at ${uniName}`
-            : "University students across supported Canadian universities",
-        },
-        featureList: uniName
-          ? [
-              `Browser-local timetable import for ${uniName}`,
-              `Campus timetable identity`,
-              `Source-backed building maps for ${uniName}`,
-              ...(uniContext?.routable ? [`Source-backed campus pedestrian routing`] : []),
-              "Optional encrypted private sync",
-            ]
-          : [
-              `Browser-local timetable import across ${supportedUniversityCount} supported Canadian universities`,
-              `University-specific timetable identity across ${supportedCampusCount} campus models`,
-              `Source-backed building maps for all ${supportedUniversityCount} supported universities`,
-              "Campus pedestrian routing with source-classified entrances and explicit uncertainty",
-              "Optional encrypted private sync",
-            ],
-        sameAs: [GITHUB_CORE],
-      },
-    ],
-  };
-}
-
-function metadata(page: SeoPage, uniContext?: UniversityContext) {
-  const origin = uniContext?.origin ?? SITE_ORIGIN;
-  const canonical = canonicalUrl(page.path, origin);
-  const title = escapeHtml(page.title);
-  const description = escapeHtml(page.description);
-  const socialImage = socialImageUrl(uniContext);
-  const socialImageAlt = `Gapwise — ${escapeHtml(
-    uniContext?.name ?? "University timetable and campus navigation",
-  )}`;
-  const schema =
-    page.path === "/"
-      ? `\n    <script type="application/ld+json">${JSON.stringify(homepageStructuredData(page, uniContext)).replaceAll("<", "\\u003c")}</script>`
-      : "";
-
-  return `
-    <!-- gapwise-static-seo:start -->
-    <title>${title}</title>
-    <meta name="description" content="${description}" />
-    <meta name="application-name" content="Gapwise" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
-    <link rel="canonical" href="${canonical}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Gapwise" />
-    <meta property="og:locale" content="en_CA" />
-    <meta property="og:title" content="${title}" />
-    <meta property="og:description" content="${description}" />
-    <meta property="og:url" content="${canonical}" />
-    <meta property="og:image" content="${socialImage}" />
-    <meta property="og:image:secure_url" content="${socialImage}" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="${socialImageAlt}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${title}" />
-    <meta name="twitter:description" content="${description}" />
-    <meta name="twitter:image" content="${socialImage}" />
-    <meta name="twitter:image:alt" content="${socialImageAlt}" />${schema}
-    <!-- gapwise-static-seo:end -->`;
-}
-
-function fallback(page: SeoPage, uniContext?: UniversityContext) {
-  const links = uniContext
-    ? ([
-        ["/", "Gapwise home"],
-        ["/about", "About Gapwise"],
-        ["/universities", "Supported universities"],
-        ["/open-source", "Open source"],
-        ["/campus-map", "Campus map"],
-        ["/gap-planner", "Gap planner"],
-        ["/campus-routing", "Campus routing"],
-        ["/developers", "Developer API and SDKs"],
-        ["/ai", "Gapwise AI"],
-        ["/support", "Support"],
-        ["/trust", "Trust Center"],
-        ["/privacy", "Privacy"],
-        ["/security", "Security"],
-        ["/accessibility", "Accessibility"],
-      ] as const)
-    : ([
-        ["/", "Gapwise home"],
-        ["/about", "About Gapwise"],
-        ["/universities", "Supported universities"],
-        ["/open-source", "Open source"],
-        ["/utm-timetable", "UTM timetable"],
-        ["/gap-planner", "Gap planner"],
-        ["/campus-map", "Campus map"],
-        ["/campus-routing", "Campus routing"],
-        ["/acorn-import", "ACORN import"],
-        ["/places", "UTM campus places"],
-        ["/developers", "Developer API and SDKs"],
-        ["/ai", "Gapwise AI"],
-        ["/support", "Support"],
-        ["/trust", "Trust Center"],
-        ["/privacy", "Privacy"],
-        ["/security", "Security"],
-        ["/accessibility", "Accessibility"],
-      ] as const);
-
-  const navigation = links
-    .map(([href, label]) => `<a href="${href}">${escapeHtml(label)}</a>`)
-    .join(" · ");
-  const sections = (page.sections ?? [])
-    .map(
-      (section) =>
-        `<section><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.body)}</p>${
-          section.bullets?.length
-            ? `<ul>${section.bullets.map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join("")}</ul>`
-            : ""
-        }</section>`,
-    )
-    .join("\n");
-
-  const isDedicatedTenant = Boolean(uniContext);
-  const disclaimer = isDedicatedTenant
-    ? `Gapwise is an independent student project for students at ${escapeHtml(uniContext!.name)}. It is not an official service of ${escapeHtml(uniContext!.name)} and does not claim university approval, sponsorship, or endorsement.`
-    : `Gapwise is an independent student project for students across supported Canadian universities. It is not an official service of any university and does not claim university approval, sponsorship, or endorsement.`;
-
-  const universitiesSection =
-    page.path === "/" && !isDedicatedTenant
-      ? `<section aria-labelledby="supported-universities-heading">
-        <h2 id="supported-universities-heading">Supported Canadian Universities</h2>
-        <p>Gapwise provides dedicated editions with university-specific timetable import and source-backed campus data:</p>
-        <ul>${universitiesManifest.universities
-          .map(
-            (university) =>
-              `<li><a href="https://${university.hosts[0]}">${escapeHtml(university.name)}</a> — ${escapeHtml(university.campusScope)}</li>`,
-          )
-          .join("")}</ul>
-      </section>`
-      : "";
-
-  const uoftCampusesSection =
-    page.path === "/" && uniContext?.id === "uoft" && !uniContext.campusName
-      ? `<section aria-labelledby="uoft-campuses-heading">
-        <h2 id="uoft-campuses-heading">Choose your U of T campus</h2>
-        <ul>${UOFT_CAMPUS_EDITIONS.map(
-          ({ context }) => `<li><a href="${context.origin}">${escapeHtml(context.name)}</a></li>`,
-        ).join("")}</ul>
-      </section>`
-      : "";
-
-  return `<main data-gapwise-search-fallback style="max-width:60rem;margin:0 auto;padding:3rem 1.25rem;font-family:system-ui,sans-serif;line-height:1.65">
-      <p><strong>Gapwise</strong> — Timetable &amp; Campus Navigation</p>
-      <h1>${escapeHtml(page.heading)}</h1>
-      <p>${escapeHtml(page.description)}</p>
-      <p>${escapeHtml(page.detail)}</p>
-      ${page.path === "/" ? '<p>Gapwise was created by <a href="https://www.donotdisconnect.online/">Andrew Muratov</a>. <a href="https://github.com/GapwiseHQ/gapwise">Gapwise is open source on GitHub</a>.</p>' : ""}
-      ${universitiesSection}
-      ${uoftCampusesSection}
-      ${sections}
-      <p>${disclaimer}</p>
-      <nav aria-label="Gapwise public pages">${navigation}</nav>
-    </main>`;
-}
-
-function renderDocument(baseHtml: string, page: SeoPage, uniContext?: UniversityContext) {
-  if (!baseHtml.includes("</head>")) throw new Error("Built index is missing </head>.");
-  if (!/<div id="root"><\/div>/.test(baseHtml))
-    throw new Error("Built index is missing the empty #root mount point.");
-
-  let html = baseHtml
-    .replace("</head>", `${metadata(page, uniContext)}\n  </head>`)
-    .replace(/<div id="root"><\/div>/, `<div id="root">${fallback(page, uniContext)}</div>`);
-
-  if (uniContext) {
-    html = html
-      .replace(/href="\/logo-mark\.svg"/g, `href="/universities/${uniContext.id}/logo-mark.svg"`)
-      .replace(
-        /href="\/favicon-192x192\.png"/g,
-        `href="/universities/${uniContext.id}/favicon-192x192.png"`,
-      )
-      .replace(
-        /href="\/favicon-32x32\.png"/g,
-        `href="/universities/${uniContext.id}/favicon-32x32.png"`,
-      )
-      .replace(
-        /href="\/favicon-16x16\.png"/g,
-        `href="/universities/${uniContext.id}/favicon-16x16.png"`,
-      )
-      .replace(
-        /href="\/apple-touch-icon\.png"/g,
-        `href="/universities/${uniContext.id}/apple-touch-icon.png"`,
-      )
-      .replace(
-        /href="\/site\.webmanifest"/g,
-        `href="/universities/${uniContext.id}/site.webmanifest"`,
-      );
-  }
-
-  return html;
-}
-
-/** Pages available on every university edition (no U of T-specific content). */
-const UNIVERSITY_COMMON_PATHS = new Set([
+const commonPaths = new Set([
   "/",
   "/about",
   "/universities",
@@ -561,204 +231,214 @@ const UNIVERSITY_COMMON_PATHS = new Set([
   "/security",
   "/accessibility",
 ]);
+const plannedPaths = new Set(["/"]);
+const escapeHtml = (value: string) =>
+  value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+const outputPath = (path: string) =>
+  path === "/" ? "_seo/index.html" : `_seo/${path.slice(1).replaceAll("/", "--")}.html`;
 
-/** Institution-neutral pages published by the global ecosystem site. */
-const GLOBAL_PUBLIC_PATHS = UNIVERSITY_COMMON_PATHS;
+function schema(page: Page, context?: Context) {
+  const origin = context?.origin ?? SITE_ORIGIN;
+  const org = `${SITE_ORIGIN}/#organization`;
+  const features =
+    context?.status === "planned"
+      ? [
+          "Personalized university edition",
+          "Published capability status",
+          "Campus features marked as planned",
+        ]
+      : context
+        ? [
+            "Browser-local timetable import",
+            "University-specific timetable identity",
+            "Source-backed campus search",
+            ...(context.routable ? ["Source-backed campus routing"] : []),
+          ]
+        : [
+            "University editions across Canada and the United States",
+            "Published capability status for every campus",
+          ];
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": org,
+        name: "Gapwise",
+        url: `${SITE_ORIGIN}/`,
+        description:
+          "Gapwise is a university timetable, campus navigation, and student-planning platform with editions across North America.",
+        logo: { "@type": "ImageObject", url: `${SITE_ORIGIN}/icon-512.png` },
+        sameAs: ["https://github.com/GapwiseHQ"],
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${origin}/#website`,
+        name: context ? `Gapwise for ${context.name}` : "Gapwise",
+        url: `${origin}/`,
+        description: page.description,
+        publisher: { "@id": org },
+      },
+      {
+        "@type": ["WebApplication", "SoftwareApplication"],
+        "@id": `${origin}/#app`,
+        name: context ? `Gapwise for ${context.name}` : "Gapwise",
+        url: `${origin}/`,
+        description: page.description,
+        applicationCategory: "EducationalApplication",
+        operatingSystem: "Any",
+        isAccessibleForFree: true,
+        audience: {
+          "@type": "Audience",
+          audienceType: context
+            ? `University students at ${context.name}`
+            : "University students across North America",
+        },
+        featureList: features,
+      },
+    ],
+  };
+}
 
-function getUniversityPage(page: SeoPage, uni: UniversityContext): SeoPage {
-  if (page.path === "/") {
+function metadata(page: Page, context?: Context) {
+  const origin = context?.origin ?? SITE_ORIGIN;
+  const canonical = new URL(page.path, `${origin}/`).href;
+  const title = escapeHtml(page.title);
+  const description = escapeHtml(page.description);
+  const image = context?.branded
+    ? `${origin}/universities/${context.id}/og-card.png`
+    : `${SITE_ORIGIN}/og-gapwise.png`;
+  const jsonLd =
+    page.path === "/"
+      ? `\n<script type="application/ld+json">${JSON.stringify(schema(page, context)).replaceAll("<", "\\u003c")}</script>`
+      : "";
+  return `<!-- gapwise-static-seo:start --><title>${title}</title><meta name="description" content="${description}" /><meta name="application-name" content="Gapwise" /><meta name="robots" content="index, follow, max-image-preview:large" /><link rel="canonical" href="${canonical}" /><meta property="og:type" content="website" /><meta property="og:site_name" content="Gapwise" /><meta property="og:title" content="${title}" /><meta property="og:description" content="${description}" /><meta property="og:url" content="${canonical}" /><meta property="og:image" content="${image}" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="${title}" /><meta name="twitter:description" content="${description}" /><meta name="twitter:image" content="${image}" />${jsonLd}<!-- gapwise-static-seo:end -->`;
+}
+
+function fallback(page: Page, context?: Context) {
+  const directory = manifest.universities
+    .map(
+      (item) =>
+        `<li><a href="https://${item.hosts[0]}">${escapeHtml(item.name)}</a> — ${escapeHtml(item.campusScope)} (${item.status})</li>`,
+    )
+    .join("");
+  const status =
+    context?.status === "planned"
+      ? "This personalized edition is planned. Timetable import, building data, search, and routing are not yet available."
+      : context?.status === "partial"
+        ? "This university has a mix of supported and planned campus capabilities."
+        : "Available features use supported, source-backed campus data.";
+  const sections = (page.sections ?? [])
+    .map(
+      (item) =>
+        `<section><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.body)}</p></section>`,
+    )
+    .join("");
+  return `<main data-gapwise-search-fallback style="max-width:60rem;margin:0 auto;padding:3rem 1.25rem;font-family:system-ui,sans-serif;line-height:1.65"><p><strong>Gapwise</strong> — University &amp; campus editions</p><h1>${escapeHtml(page.heading)}</h1><p>${escapeHtml(page.description)}</p><p>${escapeHtml(page.detail)}</p>${context ? `<p><strong>${context.status.toUpperCase()}</strong>${context.location ? ` · ${escapeHtml(context.location)}` : ""}</p><p>${escapeHtml(status)}</p>` : ""}${page.path === "/" && !context ? `<section><h2>Explore Gapwise universities</h2><ul>${directory}</ul></section>` : ""}${sections}<p>Gapwise is independent and does not claim university endorsement.</p><nav><a href="/">Home</a> · <a href="/universities">Universities</a> · <a href="/about">About</a> · <a href="/support">Support</a></nav></main>`;
+}
+
+function render(base: string, page: Page, context?: Context) {
+  let html = base
+    .replace("</head>", `${metadata(page, context)}</head>`)
+    .replace(/<div id="root"><\/div>/, `<div id="root">${fallback(page, context)}</div>`);
+  if (context?.branded)
+    html = html
+      .replace(/href="\/logo-mark\.svg"/g, `href="/universities/${context.id}/logo-mark.svg"`)
+      .replace(
+        /href="\/favicon-192x192\.png"/g,
+        `href="/universities/${context.id}/favicon-192x192.png"`,
+      )
+      .replace(
+        /href="\/favicon-32x32\.png"/g,
+        `href="/universities/${context.id}/favicon-32x32.png"`,
+      )
+      .replace(
+        /href="\/favicon-16x16\.png"/g,
+        `href="/universities/${context.id}/favicon-16x16.png"`,
+      )
+      .replace(
+        /href="\/apple-touch-icon\.png"/g,
+        `href="/universities/${context.id}/apple-touch-icon.png"`,
+      )
+      .replace(
+        /href="\/site\.webmanifest"/g,
+        `href="/universities/${context.id}/site.webmanifest"`,
+      );
+  return html;
+}
+
+function editionPage(page: Page, context: Context): Page {
+  if (page.path === "/")
     return {
-      path: "/",
-      title: uni.marketing.seoTitle,
-      description: uni.marketing.seoDescription,
-      heading: uni.marketing.headline,
-      detail: uni.marketing.description,
-      sections: [
-        {
-          title: "Your timetable, connected to campus context",
-          body: "Gapwise combines class times, rooms, campus identity, available deterministic travel time, and gap budgets so the schedule can answer more than when the next class begins.",
-        },
-        {
-          title: "Private by architecture",
-          body: "The original timetable file is parsed locally in the browser. Private sync is optional, public campus data stays separate from private student state, and foreground location is not retained as a movement history.",
-        },
-        {
-          title: "Algorithms where correctness matters",
-          body: "Gap durations, leave-by times, route selection, and other computable values use deterministic code. Optional AI interfaces are bounded to the places where interpretation is actually useful.",
-        },
-      ],
-      sitemap: true,
+      ...page,
+      title: context.marketing.seoTitle,
+      description: context.marketing.seoDescription,
+      heading: context.marketing.headline,
+      detail: context.marketing.description,
     };
-  }
   if (["/about", "/campus-map", "/gap-planner", "/campus-routing"].includes(page.path)) {
-    const feature = Object.values(PUBLIC_FEATURE_PAGES).find(
-      (candidate) => candidate.path === page.path,
-    )!;
-    const { seoTitle, description } = editionFeatureMetadata(feature, uni.name);
-    return { ...page, title: seoTitle, description };
-  }
-  if (page.path === "/developers") {
+    const feature = Object.values(PUBLIC_FEATURE_PAGES).find((item) => item.path === page.path)!;
+    const edition = editionFeatureMetadata(feature, context.name);
     return {
       ...page,
-      title: `Gapwise API & SDKs — Developers`,
-      description: `Build with the Gapwise public campus building, place, routing, and deterministic gap-planning API, OpenAPI contract, and official SDKs.`,
-      heading: `Deterministic campus intelligence for developers.`,
-      detail: `Gapwise publishes a bounded public API for campus buildings, places, routing, and gap planning, with OpenAPI plus JavaScript/TypeScript and Python SDK documentation.`,
-    };
-  }
-  if (page.path === "/privacy") {
-    return {
-      ...page,
-      description: `How Gapwise handles timetable, account, planning, AI, analytics, and foreground location data for ${uni.name} students.`,
-      detail: `The original schedule file is parsed in the browser. Guest mode is first-class, private cloud sync is optional, and precise live location is foreground-only when requested.`,
+      title: edition.seoTitle,
+      description:
+        context.status === "planned"
+          ? `${context.name} has a personalized Gapwise edition. ${feature.title} support is planned and not yet available.`
+          : edition.description,
     };
   }
   return page;
 }
-
-function renderSitemap(origin: string = SITE_ORIGIN, paths?: Set<string>) {
-  const urls = PAGES.filter((page) => page.sitemap && (!paths || paths.has(page.path)))
+function sitemap(origin = SITE_ORIGIN, paths = commonPaths) {
+  const urls = pages
+    .filter((page) => page.sitemap && paths.has(page.path))
     .map((page) => `  <url><loc>${new URL(page.path, `${origin}/`).href}</loc></url>`)
     .join("\n");
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
 }
+const robots = (origin: string) =>
+  `User-agent: *\nAllow: /\nDisallow: /_seo/\nDisallow: /api/\nDisallow: /v1\nDisallow: /oauth/\n\nSitemap: ${origin}/sitemap.xml\n`;
 
-function renderRobotsTxt(sitemapUrl: string) {
-  return `User-agent: *\nAllow: /\nDisallow: /_seo/\nDisallow: /api/\nDisallow: /v1\nDisallow: /oauth/\n\nSitemap: ${sitemapUrl}\n`;
-}
-
-const distIndexPath = join("dist", "index.html");
-const baseHtml = await readFile(distIndexPath, "utf8");
-
-for (const page of PAGES) {
+const base = await readFile(join("dist", "index.html"), "utf8");
+for (const page of pages) {
   const destination = join("dist", outputPath(page.path));
   await mkdir(dirname(destination), { recursive: true });
-  await writeFile(destination, renderDocument(baseHtml, page));
+  await writeFile(destination, render(base, page));
 }
-
-const expectedSitemap = renderSitemap(SITE_ORIGIN, GLOBAL_PUBLIC_PATHS);
-const committedSitemap = await readFile(join("public", "sitemap.xml"), "utf8");
-if (committedSitemap !== expectedSitemap) {
-  throw new Error("public/sitemap.xml is out of sync with the production SEO page inventory.");
-}
-await writeFile(join("dist", "_seo", "sitemap.xml"), expectedSitemap);
+await writeFile(join("dist", "_seo", "sitemap.xml"), sitemap());
 await writeFile(
   join("dist", "_seo", "robots.txt"),
   await readFile(join("public", "robots.txt"), "utf8"),
 );
-
-// Write U of T tenant entry point and sitemap/robots
-const uoftTenantDir = join("dist", "_universities", "uoft");
-const uoftTenantSeoDir = join(uoftTenantDir, "_seo");
-await mkdir(uoftTenantDir, { recursive: true });
-await mkdir(uoftTenantSeoDir, { recursive: true });
-for (const page of PAGES.filter((candidate) => UNIVERSITY_COMMON_PATHS.has(candidate.path))) {
-  const html = renderDocument(baseHtml, getUniversityPage(page, UOFT_CONTEXT), UOFT_CONTEXT);
-  if (page.path === "/") await writeFile(join(uoftTenantDir, "index.html"), html);
-  else
+for (const context of contexts) {
+  const directory = join("dist", "_sites", context.siteKey);
+  await mkdir(join(directory, "_seo"), { recursive: true });
+  for (const page of pages.filter((item) => commonPaths.has(item.path))) {
+    const html = render(base, editionPage(page, context), context);
     await writeFile(
-      join(uoftTenantSeoDir, `${page.path.slice(1).replaceAll("/", "--")}.html`),
+      page.path === "/"
+        ? join(directory, "index.html")
+        : join(directory, "_seo", `${page.path.slice(1).replaceAll("/", "--")}.html`),
       html,
     );
-}
-const uoftSitemap = renderSitemap(UOFT_CONTEXT.origin, UNIVERSITY_COMMON_PATHS);
-await writeFile(join(uoftTenantDir, "sitemap.xml"), uoftSitemap);
-await writeFile(
-  join(uoftTenantDir, "robots.txt"),
-  renderRobotsTxt(`${UOFT_CONTEXT.origin}/sitemap.xml`),
-);
-
-for (const { campusId, context } of UOFT_CAMPUS_EDITIONS) {
-  const campusDir = join("dist", "_campuses", campusId);
-  const campusSeoDir = join(campusDir, "_seo");
-  await mkdir(campusSeoDir, { recursive: true });
-
-  for (const page of PAGES.filter((candidate) => UNIVERSITY_COMMON_PATHS.has(candidate.path))) {
-    const campusPage = getUniversityPage(page, context);
-    const html = renderDocument(baseHtml, campusPage, context);
-    if (page.path === "/") {
-      await writeFile(join(campusDir, "index.html"), html);
-    } else {
-      await writeFile(join(campusSeoDir, `${page.path.slice(1).replaceAll("/", "--")}.html`), html);
-    }
   }
-
-  const campusSitemap = renderSitemap(context.origin, UNIVERSITY_COMMON_PATHS);
-  await writeFile(join(campusDir, "sitemap.xml"), campusSitemap);
-  await writeFile(join(campusDir, "robots.txt"), renderRobotsTxt(`${context.origin}/sitemap.xml`));
+  await writeFile(
+    join(directory, "sitemap.xml"),
+    sitemap(context.origin, context.status === "planned" ? plannedPaths : commonPaths),
+  );
+  await writeFile(join(directory, "robots.txt"), robots(context.origin));
 }
-
-let universityCount = 0;
-const universityPageCounts: Record<string, number> = {};
-
-for (const uni of universitiesManifest.universities) {
-  if (uni.id === "uoft") continue;
-
-  const uniOrigin = `https://${uni.hosts[0]}`;
-  const uniContext: UniversityContext = {
-    id: uni.id,
-    name: uni.name,
-    shortName: uni.shortName,
-    origin: uniOrigin,
-    routable: Boolean(uni.enabledFeatures?.routing),
-    marketing: uni.marketing,
-  };
-
-  const uniSitemapUrl = `${uniOrigin}/sitemap.xml`;
-  const uniSitemap = renderSitemap(uniOrigin, UNIVERSITY_COMMON_PATHS);
-  const uniRobots = renderRobotsTxt(uniSitemapUrl);
-
-  const tenantDir = join("dist", "_universities", uni.id);
-  const tenantSeoDir = join(tenantDir, "_seo");
-  await mkdir(tenantSeoDir, { recursive: true });
-
-  const commonPages = PAGES.filter((p) => UNIVERSITY_COMMON_PATHS.has(p.path));
-  for (const page of commonPages) {
-    const uniPage = getUniversityPage(page, uniContext);
-    const html = renderDocument(baseHtml, uniPage, uniContext);
-    if (page.path === "/") {
-      await writeFile(join(tenantDir, "index.html"), html);
-    } else {
-      const fileName = `${page.path.slice(1).replaceAll("/", "--")}.html`;
-      await writeFile(join(tenantSeoDir, fileName), html);
-    }
-  }
-
-  await writeFile(join(tenantDir, "sitemap.xml"), uniSitemap);
-  await writeFile(join(tenantDir, "robots.txt"), uniRobots);
-
-  const uniPageCount = commonPages.filter((p) => p.sitemap).length;
-  universityPageCounts[uni.id] = uniPageCount;
-  universityCount++;
-}
-
-// Preserve the global cards under a private output path before removing the public
-// copies, so host-specific rewrites cannot be shadowed by Vercel's static-file lookup.
-const globalAssetDir = join("dist", "_global");
-await mkdir(globalAssetDir, { recursive: true });
-await copyFile(join("dist", "og-gapwise.png"), join(globalAssetDir, "og-gapwise.png"));
-await copyFile(join("dist", "og-card.png"), join(globalAssetDir, "og-card.png"));
-
-// Remove root files so they cannot shadow host-specific rewrites on Vercel.
-await rm(join("dist", "index.html"), { force: true });
-await rm(join("dist", "sitemap.xml"), { force: true });
-await rm(join("dist", "robots.txt"), { force: true });
-await rm(join("dist", "og-gapwise.png"), { force: true });
-await rm(join("dist", "og-card.png"), { force: true });
-
-const globalPageCount = PAGES.filter(
-  (page) => page.sitemap && GLOBAL_PUBLIC_PATHS.has(page.path),
-).length;
+await mkdir(join("dist", "_global"), { recursive: true });
+await copyFile(join("dist", "og-gapwise.png"), join("dist", "_global", "og-gapwise.png"));
+await copyFile(join("dist", "og-card.png"), join("dist", "_global", "og-card.png"));
+for (const name of ["index.html", "sitemap.xml", "robots.txt", "og-gapwise.png", "og-card.png"])
+  await rm(join("dist", name), { force: true });
 console.log(
-  `Generated ${PAGES.length} Gapwise HTML entry points and ${globalPageCount} global sitemap URLs.`,
-);
-console.log(
-  `Generated per-university sitemap + robots.txt for ${universityCount} university editions: ${Object.entries(
-    universityPageCounts,
-  )
-    .map(([id, n]) => `${id}(${n})`)
-    .join(", ")}.`,
-);
-console.log(
-  `Generated host-specific metadata, sitemap, and robots.txt for ${UOFT_CAMPUS_EDITIONS.length} U of T campus editions.`,
+  `Generated ${pages.length} global SEO pages and ${contexts.length} hostname-specific editions.`,
 );

@@ -19,6 +19,7 @@ import {
 import { listPublicBuildings } from "../src/server/public-campus/service.js";
 import residenceMatrix from "../src/data/campuses/generated/residence-coverage-matrix.json" with { type: "json" };
 import type { UserPreferences } from "../src/features/sync/preferences.js";
+import { supportedCampuses } from "../src/universities/registry.js";
 
 const DEFAULT_PREFS: UserPreferences = {
   theme: "system",
@@ -48,11 +49,7 @@ const DEFAULT_PREFS: UserPreferences = {
 
 describe("First-class multi-university residence platform", () => {
   beforeAll(async () => {
-    await Promise.all(
-      manifest.universities.flatMap((university) =>
-        university.campuses.map((campus) => ensureCampusCatalog(campus)),
-      ),
-    );
+    await Promise.all(supportedCampuses().map((campus) => ensureCampusCatalog(campus.id)));
   });
 
   it("provides verified residence coverage across every supported campus model", () => {
@@ -61,21 +58,19 @@ describe("First-class multi-university residence platform", () => {
     expect(residenceMatrix.summary.universitiesWithResidenceCoverage).toBe(13);
     expect(residenceMatrix.summary.totalResidences).toBeGreaterThanOrEqual(199);
 
-    for (const university of manifest.universities) {
-      for (const campus of university.campuses) {
-        const campusId = campus as GapwiseCampusId;
-        const residences = campusResidenceBuildings(campusId);
-        expect(residences.length).toBeGreaterThan(0);
+    for (const campus of supportedCampuses()) {
+      const campusId = campus.id as GapwiseCampusId;
+      const residences = campusResidenceBuildings(campusId);
+      expect(residences.length).toBeGreaterThan(0);
 
-        for (const res of residences) {
-          expect(res.category).toBe("residence");
-          expect(res.code).toBeTruthy();
-          expect(res.name).toBeTruthy();
-          // Fail-closed privacy guard: no room-level or student-name data
-          expect(res.name).not.toMatch(/room\s*\d+/i);
-          expect(res.name).not.toMatch(/unit\s*\d+/i);
-          expect(res.name).not.toMatch(/suite\s*\d+/i);
-        }
+      for (const res of residences) {
+        expect(res.category).toBe("residence");
+        expect(res.code).toBeTruthy();
+        expect(res.name).toBeTruthy();
+        // Fail-closed privacy guard: no room-level or student-name data
+        expect(res.name).not.toMatch(/room\s*\d+/i);
+        expect(res.name).not.toMatch(/unit\s*\d+/i);
+        expect(res.name).not.toMatch(/suite\s*\d+/i);
       }
     }
   });
