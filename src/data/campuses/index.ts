@@ -452,15 +452,11 @@ const CAMPUS_FALLBACK_BOUNDS: Record<string, [[number, number], [number, number]
 };
 
 export const CAMPUS_LABELS: Record<string, string> = {
-  ...Object.fromEntries(
-    manifest.campuses.map((campus) => [campus.id, campus.name]),
-  ),
+  ...Object.fromEntries(manifest.campuses.map((campus) => [campus.id, campus.name])),
 };
 
 export const CAMPUS_SHORT_LABELS: Record<string, string> = {
-  ...Object.fromEntries(
-    manifest.campuses.map((campus) => [campus.id, campus.shortName]),
-  ),
+  ...Object.fromEntries(manifest.campuses.map((campus) => [campus.id, campus.shortName])),
 };
 
 const SUPPORTED_CAMPUS_IDS = new Set<string>(

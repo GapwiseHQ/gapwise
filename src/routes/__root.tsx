@@ -82,9 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     const university = activeUniversity();
     const site = activeSite();
     const assetPrefix =
-      university && site?.role !== "global"
-        ? `/universities/${university.id}`
-        : "";
+      university && site?.role !== "global" ? `/universities/${university.id}` : "";
     return {
       meta: [
         { name: "theme-color", content: "#0d1117" },

@@ -4,10 +4,7 @@
     {
       "id": "gapwise-global",
       "role": "global",
-      "hosts": [
-        "gapwise.ca",
-        "www.gapwise.ca"
-      ],
+      "hosts": ["gapwise.ca", "www.gapwise.ca"],
       "canonicalHost": "gapwise.ca",
       "presentation": {
         "accentColor": "#4EA7FE",
@@ -20,9 +17,7 @@
     {
       "id": "uoft-hub",
       "role": "university-hub",
-      "hosts": [
-        "uoft.gapwise.ca"
-      ],
+      "hosts": ["uoft.gapwise.ca"],
       "canonicalHost": "uoft.gapwise.ca",
       "universityId": "uoft",
       "presentation": {
@@ -36,9 +31,7 @@
     {
       "id": "uoft-utm",
       "role": "campus-edition",
-      "hosts": [
-        "utm.gapwise.ca"
-      ],
+      "hosts": ["utm.gapwise.ca"],
       "canonicalHost": "utm.gapwise.ca",
       "universityId": "uoft",
       "campusId": "utm",
@@ -72,20 +65,14 @@
             "nextBuildingName": "Deerfield Hall",
             "nextRoom": "2020"
           },
-          "searchExamples": [
-            "Maanjiwe nendamowinan",
-            "Deerfield Hall",
-            "UTM Library"
-          ]
+          "searchExamples": ["Maanjiwe nendamowinan", "Deerfield Hall", "UTM Library"]
         }
       }
     },
     {
       "id": "uoft-utsg",
       "role": "campus-edition",
-      "hosts": [
-        "utsg.gapwise.ca"
-      ],
+      "hosts": ["utsg.gapwise.ca"],
       "canonicalHost": "utsg.gapwise.ca",
       "universityId": "uoft",
       "campusId": "utsg",
@@ -119,20 +106,14 @@
             "nextBuildingName": "Sidney Smith Hall",
             "nextRoom": "2102"
           },
-          "searchExamples": [
-            "Robarts Library",
-            "Bahen Centre",
-            "Sidney Smith Hall"
-          ]
+          "searchExamples": ["Robarts Library", "Bahen Centre", "Sidney Smith Hall"]
         }
       }
     },
     {
       "id": "uoft-utsc",
       "role": "campus-edition",
-      "hosts": [
-        "utsc.gapwise.ca"
-      ],
+      "hosts": ["utsc.gapwise.ca"],
       "canonicalHost": "utsc.gapwise.ca",
       "universityId": "uoft",
       "campusId": "utsc",
@@ -166,20 +147,14 @@
             "nextBuildingName": "Humanities Wing",
             "nextRoom": "216"
           },
-          "searchExamples": [
-            "Academic Resource Centre",
-            "Science Wing",
-            "Sam Ibrahim Building"
-          ]
+          "searchExamples": ["Academic Resource Centre", "Science Wing", "Sam Ibrahim Building"]
         }
       }
     },
     {
       "id": "carleton-hub",
       "role": "university-hub",
-      "hosts": [
-        "carleton.gapwise.ca"
-      ],
+      "hosts": ["carleton.gapwise.ca"],
       "canonicalHost": "carleton.gapwise.ca",
       "universityId": "carleton",
       "presentation": {
@@ -193,9 +168,7 @@
     {
       "id": "tmu-hub",
       "role": "university-hub",
-      "hosts": [
-        "tmu.gapwise.ca"
-      ],
+      "hosts": ["tmu.gapwise.ca"],
       "canonicalHost": "tmu.gapwise.ca",
       "universityId": "tmu",
       "presentation": {
@@ -209,9 +182,7 @@
     {
       "id": "queens-hub",
       "role": "university-hub",
-      "hosts": [
-        "queens.gapwise.ca"
-      ],
+      "hosts": ["queens.gapwise.ca"],
       "canonicalHost": "queens.gapwise.ca",
       "universityId": "queens",
       "presentation": {
@@ -225,9 +196,7 @@
     {
       "id": "laurier-hub",
       "role": "university-hub",
-      "hosts": [
-        "laurier.gapwise.ca"
-      ],
+      "hosts": ["laurier.gapwise.ca"],
       "canonicalHost": "laurier.gapwise.ca",
       "universityId": "laurier",
       "presentation": {
@@ -241,9 +210,7 @@
     {
       "id": "york-hub",
       "role": "university-hub",
-      "hosts": [
-        "york.gapwise.ca"
-      ],
+      "hosts": ["york.gapwise.ca"],
       "canonicalHost": "york.gapwise.ca",
       "universityId": "york",
       "presentation": {
@@ -257,9 +224,7 @@
     {
       "id": "york-keele",
       "role": "campus-edition",
-      "hosts": [
-        "keele.gapwise.ca"
-      ],
+      "hosts": ["keele.gapwise.ca"],
       "canonicalHost": "keele.gapwise.ca",
       "universityId": "york",
       "campusId": "keele",
@@ -275,9 +240,7 @@
     {
       "id": "york-glendon",
       "role": "campus-edition",
-      "hosts": [
-        "glendon.gapwise.ca"
-      ],
+      "hosts": ["glendon.gapwise.ca"],
       "canonicalHost": "glendon.gapwise.ca",
       "universityId": "york",
       "campusId": "glendon",
@@ -310,20 +273,14 @@
             "nextBuildingName": "Leslie Frost Library",
             "nextRoom": "201"
           },
-          "searchExamples": [
-            "York Hall",
-            "Leslie Frost Library",
-            "Proctor Field House"
-          ]
+          "searchExamples": ["York Hall", "Leslie Frost Library", "Proctor Field House"]
         }
       }
     },
     {
       "id": "york-markham",
       "role": "campus-edition",
-      "hosts": [
-        "markham.gapwise.ca"
-      ],
+      "hosts": ["markham.gapwise.ca"],
       "canonicalHost": "markham.gapwise.ca",
       "universityId": "york",
       "campusId": "markham",
@@ -367,9 +324,7 @@
     {
       "id": "mcmaster-hub",
       "role": "university-hub",
-      "hosts": [
-        "mcmaster.gapwise.ca"
-      ],
+      "hosts": ["mcmaster.gapwise.ca"],
       "canonicalHost": "mcmaster.gapwise.ca",
       "universityId": "mcmaster",
       "presentation": {
@@ -383,9 +338,7 @@
     {
       "id": "western-hub",
       "role": "university-hub",
-      "hosts": [
-        "western.gapwise.ca"
-      ],
+      "hosts": ["western.gapwise.ca"],
       "canonicalHost": "western.gapwise.ca",
       "universityId": "western",
       "presentation": {
@@ -399,9 +352,7 @@
     {
       "id": "guelph-hub",
       "role": "university-hub",
-      "hosts": [
-        "guelph.gapwise.ca"
-      ],
+      "hosts": ["guelph.gapwise.ca"],
       "canonicalHost": "guelph.gapwise.ca",
       "universityId": "guelph",
       "presentation": {
@@ -415,9 +366,7 @@
     {
       "id": "uottawa-hub",
       "role": "university-hub",
-      "hosts": [
-        "uottawa.gapwise.ca"
-      ],
+      "hosts": ["uottawa.gapwise.ca"],
       "canonicalHost": "uottawa.gapwise.ca",
       "universityId": "uottawa",
       "presentation": {
@@ -431,9 +380,7 @@
     {
       "id": "brock-hub",
       "role": "university-hub",
-      "hosts": [
-        "brock.gapwise.ca"
-      ],
+      "hosts": ["brock.gapwise.ca"],
       "canonicalHost": "brock.gapwise.ca",
       "universityId": "brock",
       "presentation": {
@@ -447,9 +394,7 @@
     {
       "id": "ubc-hub",
       "role": "university-hub",
-      "hosts": [
-        "ubc.gapwise.ca"
-      ],
+      "hosts": ["ubc.gapwise.ca"],
       "canonicalHost": "ubc.gapwise.ca",
       "universityId": "ubc",
       "presentation": {
@@ -463,9 +408,7 @@
     {
       "id": "ubc-ubc-vancouver",
       "role": "campus-edition",
-      "hosts": [
-        "ubcv.gapwise.ca"
-      ],
+      "hosts": ["ubcv.gapwise.ca"],
       "canonicalHost": "ubcv.gapwise.ca",
       "universityId": "ubc",
       "campusId": "ubc-vancouver",
@@ -481,9 +424,7 @@
     {
       "id": "ubc-ubc-okanagan",
       "role": "campus-edition",
-      "hosts": [
-        "ubco.gapwise.ca"
-      ],
+      "hosts": ["ubco.gapwise.ca"],
       "canonicalHost": "ubco.gapwise.ca",
       "universityId": "ubc",
       "campusId": "ubc-okanagan",
@@ -527,9 +468,7 @@
     {
       "id": "waterloo-hub",
       "role": "university-hub",
-      "hosts": [
-        "waterloo.gapwise.ca"
-      ],
+      "hosts": ["waterloo.gapwise.ca"],
       "canonicalHost": "waterloo.gapwise.ca",
       "universityId": "waterloo",
       "presentation": {
@@ -543,9 +482,7 @@
     {
       "id": "mcgill-hub",
       "role": "university-hub",
-      "hosts": [
-        "mcgill.gapwise.ca"
-      ],
+      "hosts": ["mcgill.gapwise.ca"],
       "canonicalHost": "mcgill.gapwise.ca",
       "universityId": "mcgill",
       "presentation": {
@@ -559,9 +496,7 @@
     {
       "id": "cmu-hub",
       "role": "university-hub",
-      "hosts": [
-        "cmu.gapwise.ca"
-      ],
+      "hosts": ["cmu.gapwise.ca"],
       "canonicalHost": "cmu.gapwise.ca",
       "universityId": "cmu",
       "presentation": {
@@ -575,9 +510,7 @@
     {
       "id": "ucberkeley-hub",
       "role": "university-hub",
-      "hosts": [
-        "ucberkeley.gapwise.ca"
-      ],
+      "hosts": ["ucberkeley.gapwise.ca"],
       "canonicalHost": "ucberkeley.gapwise.ca",
       "universityId": "ucberkeley",
       "presentation": {
@@ -591,9 +524,7 @@
     {
       "id": "nyu-hub",
       "role": "university-hub",
-      "hosts": [
-        "nyu.gapwise.ca"
-      ],
+      "hosts": ["nyu.gapwise.ca"],
       "canonicalHost": "nyu.gapwise.ca",
       "universityId": "nyu",
       "presentation": {
@@ -607,9 +538,7 @@
     {
       "id": "mit-hub",
       "role": "university-hub",
-      "hosts": [
-        "mit.gapwise.ca"
-      ],
+      "hosts": ["mit.gapwise.ca"],
       "canonicalHost": "mit.gapwise.ca",
       "universityId": "mit",
       "presentation": {
@@ -623,9 +552,7 @@
     {
       "id": "stanford-hub",
       "role": "university-hub",
-      "hosts": [
-        "stanford.gapwise.ca"
-      ],
+      "hosts": ["stanford.gapwise.ca"],
       "canonicalHost": "stanford.gapwise.ca",
       "universityId": "stanford",
       "presentation": {
@@ -639,9 +566,7 @@
     {
       "id": "upenn-hub",
       "role": "university-hub",
-      "hosts": [
-        "upenn.gapwise.ca"
-      ],
+      "hosts": ["upenn.gapwise.ca"],
       "canonicalHost": "upenn.gapwise.ca",
       "universityId": "upenn",
       "presentation": {
@@ -655,9 +580,7 @@
     {
       "id": "cornell-hub",
       "role": "university-hub",
-      "hosts": [
-        "cornell.gapwise.ca"
-      ],
+      "hosts": ["cornell.gapwise.ca"],
       "canonicalHost": "cornell.gapwise.ca",
       "universityId": "cornell",
       "presentation": {
@@ -671,9 +594,7 @@
     {
       "id": "dartmouth-hub",
       "role": "university-hub",
-      "hosts": [
-        "dartmouth.gapwise.ca"
-      ],
+      "hosts": ["dartmouth.gapwise.ca"],
       "canonicalHost": "dartmouth.gapwise.ca",
       "universityId": "dartmouth",
       "presentation": {
@@ -687,9 +608,7 @@
     {
       "id": "brown-hub",
       "role": "university-hub",
-      "hosts": [
-        "brown.gapwise.ca"
-      ],
+      "hosts": ["brown.gapwise.ca"],
       "canonicalHost": "brown.gapwise.ca",
       "universityId": "brown",
       "presentation": {
@@ -703,9 +622,7 @@
     {
       "id": "columbia-hub",
       "role": "university-hub",
-      "hosts": [
-        "columbia.gapwise.ca"
-      ],
+      "hosts": ["columbia.gapwise.ca"],
       "canonicalHost": "columbia.gapwise.ca",
       "universityId": "columbia",
       "presentation": {
@@ -719,9 +636,7 @@
     {
       "id": "princeton-hub",
       "role": "university-hub",
-      "hosts": [
-        "princeton.gapwise.ca"
-      ],
+      "hosts": ["princeton.gapwise.ca"],
       "canonicalHost": "princeton.gapwise.ca",
       "universityId": "princeton",
       "presentation": {
@@ -735,9 +650,7 @@
     {
       "id": "yale-hub",
       "role": "university-hub",
-      "hosts": [
-        "yale.gapwise.ca"
-      ],
+      "hosts": ["yale.gapwise.ca"],
       "canonicalHost": "yale.gapwise.ca",
       "universityId": "yale",
       "presentation": {
@@ -751,9 +664,7 @@
     {
       "id": "harvard-hub",
       "role": "university-hub",
-      "hosts": [
-        "harvard.gapwise.ca"
-      ],
+      "hosts": ["harvard.gapwise.ca"],
       "canonicalHost": "harvard.gapwise.ca",
       "universityId": "harvard",
       "presentation": {
@@ -772,17 +683,8 @@
       "shortName": "U of T",
       "accentColor": "#4EA7FE",
       "campusScope": "UTM, UTSG, UTSC",
-      "hosts": [
-        "uoft.gapwise.ca",
-        "utm.gapwise.ca",
-        "utsg.gapwise.ca",
-        "utsc.gapwise.ca"
-      ],
-      "campuses": [
-        "utm",
-        "utsg",
-        "utsc"
-      ],
+      "hosts": ["uoft.gapwise.ca", "utm.gapwise.ca", "utsg.gapwise.ca", "utsc.gapwise.ca"],
+      "campuses": ["utm", "utsg", "utsc"],
       "defaultCampus": "utm",
       "timetableAdapter": "acorn-ics",
       "calendarSource": "ACORN",
@@ -792,16 +694,8 @@
         "routing": true,
         "liveLocation": true
       },
-      "routableCampuses": [
-        "utm",
-        "utsg",
-        "utsc"
-      ],
-      "dataPaths": [
-        "data/utm",
-        "data/utsg",
-        "data/utsc"
-      ],
+      "routableCampuses": ["utm", "utsg", "utsc"],
+      "dataPaths": ["data/utm", "data/utsg", "data/utsc"],
       "marketing": {
         "campusName": "Mississauga, St. George, and Scarborough",
         "headline": "Three campuses. One clearer university day.",
@@ -824,19 +718,11 @@
           "nextBuildingName": "Deerfield Hall",
           "nextRoom": "2020"
         },
-        "searchExamples": [
-          "Maanjiwe nendamowinan",
-          "Bahen Centre",
-          "Sam Ibrahim Building"
-        ]
+        "searchExamples": ["Maanjiwe nendamowinan", "Bahen Centre", "Sam Ibrahim Building"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "U of T",
-        "UofT",
-        "Toronto"
-      ]
+      "aliases": ["U of T", "UofT", "Toronto"]
     },
     {
       "id": "carleton",
@@ -844,13 +730,8 @@
       "shortName": "Carleton",
       "accentColor": "#E31B23",
       "campusScope": "Carleton, Dominion-Chalmers",
-      "hosts": [
-        "carleton.gapwise.ca"
-      ],
-      "campuses": [
-        "carleton",
-        "carleton-dominion-chalmers"
-      ],
+      "hosts": ["carleton.gapwise.ca"],
+      "campuses": ["carleton", "carleton-dominion-chalmers"],
       "defaultCampus": "carleton",
       "timetableAdapter": "carleton-ics",
       "calendarSource": "Carleton Central",
@@ -860,12 +741,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "carleton"
-      ],
-      "dataPaths": [
-        "universities/carleton/campus.json"
-      ],
+      "routableCampuses": ["carleton"],
+      "dataPaths": ["universities/carleton/campus.json"],
       "marketing": {
         "campusName": "Ottawa campus",
         "headline": "Navigate Carleton. Plan your schedule. Get to class.",
@@ -888,19 +765,11 @@
           "nextBuildingName": "Dunton Tower",
           "nextRoom": "2203"
         },
-        "searchExamples": [
-          "MacOdrum Library",
-          "Tory Building",
-          "Dunton Tower"
-        ]
+        "searchExamples": ["MacOdrum Library", "Tory Building", "Dunton Tower"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "Carleton",
-        "CU",
-        "Ravens"
-      ]
+      "aliases": ["Carleton", "CU", "Ravens"]
     },
     {
       "id": "tmu",
@@ -908,13 +777,8 @@
       "shortName": "TMU",
       "accentColor": "#0284c7",
       "campusScope": "TMU, Brampton",
-      "hosts": [
-        "tmu.gapwise.ca"
-      ],
-      "campuses": [
-        "tmu",
-        "tmu-brampton"
-      ],
+      "hosts": ["tmu.gapwise.ca"],
+      "campuses": ["tmu", "tmu-brampton"],
       "defaultCampus": "tmu",
       "timetableAdapter": "tmu-schedule",
       "calendarSource": "MyServiceHub & Google Calendar",
@@ -924,12 +788,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "tmu"
-      ],
-      "dataPaths": [
-        "universities/tmu/campus.json"
-      ],
+      "routableCampuses": ["tmu"],
+      "dataPaths": ["universities/tmu/campus.json"],
       "marketing": {
         "campusName": "Downtown Toronto campus",
         "headline": "Move through downtown campus with your day in view.",
@@ -952,19 +812,11 @@
           "nextBuildingName": "Student Learning Centre",
           "nextRoom": "508"
         },
-        "searchExamples": [
-          "Student Learning Centre",
-          "Kerr Hall",
-          "Ted Rogers School"
-        ]
+        "searchExamples": ["Student Learning Centre", "Kerr Hall", "Ted Rogers School"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "Toronto Metropolitan",
-        "TMU",
-        "Ryerson"
-      ]
+      "aliases": ["Toronto Metropolitan", "TMU", "Ryerson"]
     },
     {
       "id": "queens",
@@ -972,13 +824,8 @@
       "shortName": "Queen's",
       "accentColor": "#f59e0b",
       "campusScope": "Queen's, West Campus",
-      "hosts": [
-        "queens.gapwise.ca"
-      ],
-      "campuses": [
-        "queens",
-        "queens-west"
-      ],
+      "hosts": ["queens.gapwise.ca"],
+      "campuses": ["queens", "queens-west"],
       "defaultCampus": "queens",
       "timetableAdapter": "queens-schedule",
       "calendarSource": "SOLUS Student Center",
@@ -988,12 +835,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "queens"
-      ],
-      "dataPaths": [
-        "universities/queens/campus.json"
-      ],
+      "routableCampuses": ["queens"],
+      "dataPaths": ["universities/queens/campus.json"],
       "marketing": {
         "campusName": "Kingston campus",
         "headline": "Plan Queen's days from first lecture to last walk.",
@@ -1016,19 +859,11 @@
           "nextBuildingName": "Jeffery Hall",
           "nextRoom": "127"
         },
-        "searchExamples": [
-          "Stauffer Library",
-          "Goodes Hall",
-          "Dunning Hall"
-        ]
+        "searchExamples": ["Stauffer Library", "Goodes Hall", "Dunning Hall"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "Queens",
-        "Queen’s",
-        "QU"
-      ]
+      "aliases": ["Queens", "Queen’s", "QU"]
     },
     {
       "id": "laurier",
@@ -1036,14 +871,8 @@
       "shortName": "Laurier",
       "accentColor": "#8b5cf6",
       "campusScope": "Laurier, Brantford, Milton",
-      "hosts": [
-        "laurier.gapwise.ca"
-      ],
-      "campuses": [
-        "waterloo",
-        "laurier-brantford",
-        "laurier-milton"
-      ],
+      "hosts": ["laurier.gapwise.ca"],
+      "campuses": ["waterloo", "laurier-brantford", "laurier-milton"],
       "defaultCampus": "waterloo",
       "timetableAdapter": "laurier-schedule",
       "calendarSource": "LORIS & MyLS",
@@ -1053,12 +882,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "waterloo"
-      ],
-      "dataPaths": [
-        "universities/laurier/campus.json"
-      ],
+      "routableCampuses": ["waterloo"],
+      "dataPaths": ["universities/laurier/campus.json"],
       "marketing": {
         "campusName": "Waterloo campus",
         "headline": "Make the walk between Laurier classes part of the plan.",
@@ -1081,19 +906,11 @@
           "nextBuildingName": "Frank C. Peters Building",
           "nextRoom": "1005"
         },
-        "searchExamples": [
-          "Lazaridis Hall",
-          "Laurier Library",
-          "Science Building"
-        ]
+        "searchExamples": ["Lazaridis Hall", "Laurier Library", "Science Building"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "Laurier",
-        "WLU",
-        "Wilfrid Laurier"
-      ]
+      "aliases": ["Laurier", "WLU", "Wilfrid Laurier"]
     },
     {
       "id": "york",
@@ -1101,17 +918,8 @@
       "shortName": "York",
       "accentColor": "#E31837",
       "campusScope": "Keele, Glendon, Markham",
-      "hosts": [
-        "york.gapwise.ca",
-        "keele.gapwise.ca",
-        "glendon.gapwise.ca",
-        "markham.gapwise.ca"
-      ],
-      "campuses": [
-        "keele",
-        "glendon",
-        "markham"
-      ],
+      "hosts": ["york.gapwise.ca", "keele.gapwise.ca", "glendon.gapwise.ca", "markham.gapwise.ca"],
+      "campuses": ["keele", "glendon", "markham"],
       "defaultCampus": "keele",
       "timetableAdapter": "york-schedule",
       "calendarSource": "Visual Schedule Builder & REM",
@@ -1121,12 +929,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "keele"
-      ],
-      "dataPaths": [
-        "universities/york/campus.json"
-      ],
+      "routableCampuses": ["keele"],
+      "dataPaths": ["universities/york/campus.json"],
       "marketing": {
         "campusName": "Keele, Glendon, and Markham",
         "headline": "Three campuses. One clearer York day.",
@@ -1149,19 +953,11 @@
           "nextBuildingName": "Curtis Lecture Halls",
           "nextRoom": "A"
         },
-        "searchExamples": [
-          "Vari Hall",
-          "Scott Library",
-          "Bergeron Centre"
-        ]
+        "searchExamples": ["Vari Hall", "Scott Library", "Bergeron Centre"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "York",
-        "YorkU",
-        "YU"
-      ]
+      "aliases": ["York", "YorkU", "YU"]
     },
     {
       "id": "mcmaster",
@@ -1169,13 +965,8 @@
       "shortName": "McMaster",
       "accentColor": "#7A003C",
       "campusScope": "McMaster, Burlington",
-      "hosts": [
-        "mcmaster.gapwise.ca"
-      ],
-      "campuses": [
-        "mcmaster",
-        "mcmaster-burlington"
-      ],
+      "hosts": ["mcmaster.gapwise.ca"],
+      "campuses": ["mcmaster", "mcmaster-burlington"],
       "defaultCampus": "mcmaster",
       "timetableAdapter": "mcmaster-schedule",
       "calendarSource": "Mosaic & Outlook Calendar",
@@ -1185,12 +976,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "mcmaster"
-      ],
-      "dataPaths": [
-        "universities/mcmaster/campus.json"
-      ],
+      "routableCampuses": ["mcmaster"],
+      "dataPaths": ["universities/mcmaster/campus.json"],
       "marketing": {
         "campusName": "Hamilton campus",
         "headline": "Your McMaster schedule, mapped to campus.",
@@ -1213,18 +1000,11 @@
           "nextBuildingName": "John Hodgins Engineering Building",
           "nextRoom": "264"
         },
-        "searchExamples": [
-          "Student Centre",
-          "Burke Science Building",
-          "MDCL"
-        ]
+        "searchExamples": ["Student Centre", "Burke Science Building", "MDCL"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "McMaster",
-        "Mac"
-      ]
+      "aliases": ["McMaster", "Mac"]
     },
     {
       "id": "western",
@@ -1232,14 +1012,8 @@
       "shortName": "Western",
       "accentColor": "#4F2683",
       "campusScope": "Western, Huron, King's",
-      "hosts": [
-        "western.gapwise.ca"
-      ],
-      "campuses": [
-        "western",
-        "western-huron",
-        "western-kings"
-      ],
+      "hosts": ["western.gapwise.ca"],
+      "campuses": ["western", "western-huron", "western-kings"],
       "defaultCampus": "western",
       "timetableAdapter": "western-schedule",
       "calendarSource": "Draft My Schedule & Student Center",
@@ -1249,12 +1023,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "western"
-      ],
-      "dataPaths": [
-        "universities/western/campus.json"
-      ],
+      "routableCampuses": ["western"],
+      "dataPaths": ["universities/western/campus.json"],
       "marketing": {
         "campusName": "London campus",
         "headline": "Plan the space between classes at Western.",
@@ -1277,18 +1047,11 @@
           "nextBuildingName": "Natural Sciences Centre",
           "nextRoom": "145"
         },
-        "searchExamples": [
-          "University Community Centre",
-          "Middlesex College",
-          "Talbot College"
-        ]
+        "searchExamples": ["University Community Centre", "Middlesex College", "Talbot College"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "Western",
-        "UWO"
-      ]
+      "aliases": ["Western", "UWO"]
     },
     {
       "id": "guelph",
@@ -1296,14 +1059,8 @@
       "shortName": "Guelph",
       "accentColor": "#C20430",
       "campusScope": "Guelph, Ridgetown, Guelph-Humber",
-      "hosts": [
-        "guelph.gapwise.ca"
-      ],
-      "campuses": [
-        "guelph",
-        "guelph-ridgetown",
-        "guelph-humber"
-      ],
+      "hosts": ["guelph.gapwise.ca"],
+      "campuses": ["guelph", "guelph-ridgetown", "guelph-humber"],
       "defaultCampus": "guelph",
       "timetableAdapter": "guelph-schedule",
       "calendarSource": "WebAdvisor & Student Planning",
@@ -1313,12 +1070,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "guelph"
-      ],
-      "dataPaths": [
-        "universities/guelph/campus.json"
-      ],
+      "routableCampuses": ["guelph"],
+      "dataPaths": ["universities/guelph/campus.json"],
       "marketing": {
         "campusName": "Guelph campus",
         "headline": "Build a calmer day across the Guelph campus.",
@@ -1341,19 +1094,11 @@
           "nextBuildingName": "Thornbrough Building",
           "nextRoom": "1200"
         },
-        "searchExamples": [
-          "McLaughlin Library",
-          "University Centre",
-          "Rozanski Hall"
-        ]
+        "searchExamples": ["McLaughlin Library", "University Centre", "Rozanski Hall"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "Guelph",
-        "U of G",
-        "UofG"
-      ]
+      "aliases": ["Guelph", "U of G", "UofG"]
     },
     {
       "id": "uottawa",
@@ -1361,13 +1106,8 @@
       "shortName": "uOttawa",
       "accentColor": "#8F001A",
       "campusScope": "uOttawa, Alta Vista",
-      "hosts": [
-        "uottawa.gapwise.ca"
-      ],
-      "campuses": [
-        "uottawa",
-        "uottawa-alta-vista"
-      ],
+      "hosts": ["uottawa.gapwise.ca"],
+      "campuses": ["uottawa", "uottawa-alta-vista"],
       "defaultCampus": "uottawa",
       "timetableAdapter": "uottawa-schedule",
       "calendarSource": "uoZone & Enrolment",
@@ -1377,12 +1117,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "uottawa"
-      ],
-      "dataPaths": [
-        "universities/uottawa/campus.json"
-      ],
+      "routableCampuses": ["uottawa"],
+      "dataPaths": ["universities/uottawa/campus.json"],
       "marketing": {
         "campusName": "Downtown Ottawa campus",
         "headline": "See your uOttawa day before you cross campus.",
@@ -1405,18 +1141,11 @@
           "nextBuildingName": "Desmarais Building",
           "nextRoom": "1160"
         },
-        "searchExamples": [
-          "Morisset Library",
-          "Tabaret Hall",
-          "SITE Building"
-        ]
+        "searchExamples": ["Morisset Library", "Tabaret Hall", "SITE Building"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "uOttawa",
-        "Ottawa U"
-      ]
+      "aliases": ["uOttawa", "Ottawa U"]
     },
     {
       "id": "brock",
@@ -1424,13 +1153,8 @@
       "shortName": "Brock",
       "accentColor": "#CC0000",
       "campusScope": "Brock, Downtown MIW",
-      "hosts": [
-        "brock.gapwise.ca"
-      ],
-      "campuses": [
-        "brock",
-        "brock-miw"
-      ],
+      "hosts": ["brock.gapwise.ca"],
+      "campuses": ["brock", "brock-miw"],
       "defaultCampus": "brock",
       "timetableAdapter": "brock-schedule",
       "calendarSource": "my.brocku.ca & Course Planning",
@@ -1440,12 +1164,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "brock"
-      ],
-      "dataPaths": [
-        "universities/brock/campus.json"
-      ],
+      "routableCampuses": ["brock"],
+      "dataPaths": ["universities/brock/campus.json"],
       "marketing": {
         "campusName": "St. Catharines campus",
         "headline": "Turn your Brock schedule into a campus plan.",
@@ -1468,18 +1188,11 @@
           "nextBuildingName": "Thistle Complex",
           "nextRoom": "247"
         },
-        "searchExamples": [
-          "Arthur Schmon Tower",
-          "Thistle Complex",
-          "Goodman School"
-        ]
+        "searchExamples": ["Arthur Schmon Tower", "Thistle Complex", "Goodman School"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "Brock",
-        "Badgers"
-      ]
+      "aliases": ["Brock", "Badgers"]
     },
     {
       "id": "ubc",
@@ -1487,15 +1200,8 @@
       "shortName": "UBC",
       "accentColor": "#002145",
       "campusScope": "UBCV, UBC Okanagan",
-      "hosts": [
-        "ubc.gapwise.ca",
-        "ubcv.gapwise.ca",
-        "ubco.gapwise.ca"
-      ],
-      "campuses": [
-        "ubc-vancouver",
-        "ubc-okanagan"
-      ],
+      "hosts": ["ubc.gapwise.ca", "ubcv.gapwise.ca", "ubco.gapwise.ca"],
+      "campuses": ["ubc-vancouver", "ubc-okanagan"],
       "defaultCampus": "ubc-vancouver",
       "timetableAdapter": "ubc-workday",
       "calendarSource": "Workday View My Courses",
@@ -1508,12 +1214,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "ubc-vancouver"
-      ],
-      "dataPaths": [
-        "universities/ubc/campus.json"
-      ],
+      "routableCampuses": ["ubc-vancouver"],
+      "dataPaths": ["universities/ubc/campus.json"],
       "marketing": {
         "campusName": "Vancouver and Okanagan",
         "headline": "Two campuses. One clearer UBC day.",
@@ -1536,18 +1238,11 @@
           "nextBuildingName": "Buchanan Building",
           "nextRoom": "A101"
         },
-        "searchExamples": [
-          "Irving K. Barber Library",
-          "Buchanan Building",
-          "Life Sciences Centre"
-        ]
+        "searchExamples": ["Irving K. Barber Library", "Buchanan Building", "Life Sciences Centre"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "UBC",
-        "British Columbia"
-      ]
+      "aliases": ["UBC", "British Columbia"]
     },
     {
       "id": "waterloo",
@@ -1555,9 +1250,7 @@
       "shortName": "Waterloo",
       "accentColor": "#D6A800",
       "campusScope": "Waterloo, Cambridge, Kitchener, Stratford",
-      "hosts": [
-        "waterloo.gapwise.ca"
-      ],
+      "hosts": ["waterloo.gapwise.ca"],
       "campuses": [
         "waterloo-main",
         "waterloo-cambridge",
@@ -1576,12 +1269,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "waterloo-main"
-      ],
-      "dataPaths": [
-        "universities/waterloo/campus.json"
-      ],
+      "routableCampuses": ["waterloo-main"],
+      "dataPaths": ["universities/waterloo/campus.json"],
       "marketing": {
         "campusName": "Main campus",
         "headline": "Keep your Waterloo schedule and campus route together.",
@@ -1604,19 +1293,11 @@
           "nextBuildingName": "William G. Davis Computer Research Centre",
           "nextRoom": "1351"
         },
-        "searchExamples": [
-          "Davis Centre",
-          "Quantum-Nano Centre",
-          "Arts Lecture Hall"
-        ]
+        "searchExamples": ["Davis Centre", "Quantum-Nano Centre", "Arts Lecture Hall"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "Waterloo",
-        "UWaterloo",
-        "UW"
-      ]
+      "aliases": ["Waterloo", "UWaterloo", "UW"]
     },
     {
       "id": "mcgill",
@@ -1624,13 +1305,8 @@
       "shortName": "McGill",
       "accentColor": "#ED1B2F",
       "campusScope": "McGill, Macdonald",
-      "hosts": [
-        "mcgill.gapwise.ca"
-      ],
-      "campuses": [
-        "mcgill-downtown",
-        "mcgill-macdonald"
-      ],
+      "hosts": ["mcgill.gapwise.ca"],
+      "campuses": ["mcgill-downtown", "mcgill-macdonald"],
       "defaultCampus": "mcgill-downtown",
       "timetableAdapter": "mcgill-my-courses-ics",
       "calendarSource": "myCourses calendar export",
@@ -1643,12 +1319,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "mcgill-downtown"
-      ],
-      "dataPaths": [
-        "universities/mcgill/campus.json"
-      ],
+      "routableCampuses": ["mcgill-downtown"],
+      "dataPaths": ["universities/mcgill/campus.json"],
       "marketing": {
         "campusName": "Downtown Montreal campus",
         "headline": "Connect your McGill timetable to downtown campus.",
@@ -1671,18 +1343,11 @@
           "nextBuildingName": "Otto Maass Chemistry Building",
           "nextRoom": "112"
         },
-        "searchExamples": [
-          "McCall MacBain Arts Building",
-          "Burnside Hall",
-          "Leacock Building"
-        ]
+        "searchExamples": ["McCall MacBain Arts Building", "Burnside Hall", "Leacock Building"]
       },
       "status": "supported",
       "country": "Canada",
-      "aliases": [
-        "McGill",
-        "McGill University"
-      ]
+      "aliases": ["McGill", "McGill University"]
     },
     {
       "id": "cmu",
@@ -1690,30 +1355,17 @@
       "shortName": "CMU",
       "accentColor": "#C41230",
       "campusScope": "CMU Pittsburgh, Silicon Valley",
-      "hosts": [
-        "cmu.gapwise.ca"
-      ],
-      "campuses": [
-        "cmu-pittsburgh",
-        "cmu-silicon-valley"
-      ],
+      "hosts": ["cmu.gapwise.ca"],
+      "campuses": ["cmu-pittsburgh", "cmu-silicon-valley"],
       "defaultCampus": "cmu-pittsburgh",
-      "aliases": [
-        "Carnegie Mellon",
-        "CMU",
-        "Pittsburgh"
-      ],
+      "aliases": ["Carnegie Mellon", "CMU", "Pittsburgh"],
       "marketing": {
         "campusName": "Pittsburgh flagship campus",
         "headline": "Plan the space between classes at Carnegie Mellon.",
         "description": "Import an iCalendar class schedule for Carnegie Mellon's Pittsburgh campus. Verified building data, campus search, and routing remain planned.",
         "seoTitle": "Gapwise for Carnegie Mellon University",
         "seoDescription": "Carnegie Mellon timetable import and weekly planning for the Pittsburgh campus, with transparent status for maps and routing.",
-        "searchExamples": [
-          "Carnegie Mellon",
-          "CMU",
-          "Pittsburgh"
-        ],
+        "searchExamples": ["Carnegie Mellon", "CMU", "Pittsburgh"],
         "stats": {
           "buildings": 12,
           "entrances": 12,
@@ -1732,12 +1384,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "cmu-pittsburgh"
-      ],
-      "dataPaths": [
-        "universities/cmu/campus.json"
-      ]
+      "routableCampuses": ["cmu-pittsburgh"],
+      "dataPaths": ["universities/cmu/campus.json"]
     },
     {
       "id": "ucberkeley",
@@ -1745,30 +1393,17 @@
       "shortName": "UC Berkeley",
       "accentColor": "#003262",
       "campusScope": "Berkeley Main, Richmond",
-      "hosts": [
-        "ucberkeley.gapwise.ca"
-      ],
-      "campuses": [
-        "ucberkeley-main",
-        "ucberkeley-richmond"
-      ],
+      "hosts": ["ucberkeley.gapwise.ca"],
+      "campuses": ["ucberkeley-main", "ucberkeley-richmond"],
       "defaultCampus": "ucberkeley-main",
-      "aliases": [
-        "Berkeley",
-        "Cal",
-        "UCB"
-      ],
+      "aliases": ["Berkeley", "Cal", "UCB"],
       "marketing": {
         "campusName": "Berkeley campus",
         "headline": "A calmer way to see the day at Berkeley.",
         "description": "Import an iCalendar class schedule for UC Berkeley. Verified building records, campus search, and pedestrian routing remain planned.",
         "seoTitle": "Gapwise for UC Berkeley",
         "seoDescription": "UC Berkeley timetable import and weekly planning, with transparent status for campus building data, search, and routing.",
-        "searchExamples": [
-          "UC Berkeley",
-          "Cal",
-          "Berkeley"
-        ],
+        "searchExamples": ["UC Berkeley", "Cal", "Berkeley"],
         "stats": {
           "buildings": 12,
           "entrances": 12,
@@ -1787,12 +1422,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "ucberkeley-main"
-      ],
-      "dataPaths": [
-        "universities/ucberkeley/campus.json"
-      ]
+      "routableCampuses": ["ucberkeley-main"],
+      "dataPaths": ["universities/ucberkeley/campus.json"]
     },
     {
       "id": "nyu",
@@ -1800,30 +1431,17 @@
       "shortName": "NYU",
       "accentColor": "#57068C",
       "campusScope": "Washington Square, Brooklyn (Tandon)",
-      "hosts": [
-        "nyu.gapwise.ca"
-      ],
-      "campuses": [
-        "nyu-washington-square",
-        "nyu-brooklyn"
-      ],
+      "hosts": ["nyu.gapwise.ca"],
+      "campuses": ["nyu-washington-square", "nyu-brooklyn"],
       "defaultCampus": "nyu-washington-square",
-      "aliases": [
-        "NYU",
-        "Washington Square",
-        "Greenwich Village"
-      ],
+      "aliases": ["NYU", "Washington Square", "Greenwich Village"],
       "marketing": {
         "campusName": "Washington Square campus",
         "headline": "Keep an NYU day connected across the city.",
         "description": "Import an iCalendar class schedule for NYU's Washington Square campus. Verified campus search and routing remain planned.",
         "seoTitle": "Gapwise for New York University",
         "seoDescription": "NYU timetable import and weekly planning for Washington Square, with transparent status for maps, search, and routing.",
-        "searchExamples": [
-          "NYU",
-          "Washington Square",
-          "New York City"
-        ],
+        "searchExamples": ["NYU", "Washington Square", "New York City"],
         "stats": {
           "buildings": 11,
           "entrances": 11,
@@ -1842,12 +1460,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "nyu-washington-square"
-      ],
-      "dataPaths": [
-        "universities/nyu/campus.json"
-      ]
+      "routableCampuses": ["nyu-washington-square"],
+      "dataPaths": ["universities/nyu/campus.json"]
     },
     {
       "id": "mit",
@@ -1855,30 +1469,17 @@
       "shortName": "MIT",
       "accentColor": "#A31F34",
       "campusScope": "MIT Cambridge, Lincoln Lab",
-      "hosts": [
-        "mit.gapwise.ca"
-      ],
-      "campuses": [
-        "mit-cambridge",
-        "mit-lincoln-lab"
-      ],
+      "hosts": ["mit.gapwise.ca"],
+      "campuses": ["mit-cambridge", "mit-lincoln-lab"],
       "defaultCampus": "mit-cambridge",
-      "aliases": [
-        "MIT",
-        "Mass Tech",
-        "Cambridge"
-      ],
+      "aliases": ["MIT", "Mass Tech", "Cambridge"],
       "marketing": {
         "campusName": "Cambridge campus",
         "headline": "Make the next move across MIT part of the plan.",
         "description": "Import MIT iCalendar and legacy vCalendar class schedules. Verified building search and campus routing remain planned.",
         "seoTitle": "Gapwise for MIT",
         "seoDescription": "MIT timetable import for iCalendar and vCalendar class schedules, with transparent status for maps and routing.",
-        "searchExamples": [
-          "MIT",
-          "Massachusetts Institute of Technology",
-          "Cambridge"
-        ],
+        "searchExamples": ["MIT", "Massachusetts Institute of Technology", "Cambridge"],
         "stats": {
           "buildings": 11,
           "entrances": 11,
@@ -1897,12 +1498,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "mit-cambridge"
-      ],
-      "dataPaths": [
-        "universities/mit/campus.json"
-      ]
+      "routableCampuses": ["mit-cambridge"],
+      "dataPaths": ["universities/mit/campus.json"]
     },
     {
       "id": "stanford",
@@ -1910,30 +1507,17 @@
       "shortName": "Stanford",
       "accentColor": "#8C1515",
       "campusScope": "Stanford Main, Redwood City",
-      "hosts": [
-        "stanford.gapwise.ca"
-      ],
-      "campuses": [
-        "stanford-main",
-        "stanford-redwood-city"
-      ],
+      "hosts": ["stanford.gapwise.ca"],
+      "campuses": ["stanford-main", "stanford-redwood-city"],
       "defaultCampus": "stanford-main",
-      "aliases": [
-        "Stanford",
-        "The Farm",
-        "Palo Alto"
-      ],
+      "aliases": ["Stanford", "The Farm", "Palo Alto"],
       "marketing": {
         "campusName": "Stanford campus",
         "headline": "See a sprawling Stanford day as one connected plan.",
         "description": "Import an iCalendar class schedule for Stanford's main campus. Verified building data, search, and routing remain planned.",
         "seoTitle": "Gapwise for Stanford University",
         "seoDescription": "Stanford timetable import and weekly planning, with clear status for building data, campus search, and routing.",
-        "searchExamples": [
-          "Stanford",
-          "The Farm",
-          "Stanford California"
-        ],
+        "searchExamples": ["Stanford", "The Farm", "Stanford California"],
         "stats": {
           "buildings": 11,
           "entrances": 11,
@@ -1952,12 +1536,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "stanford-main"
-      ],
-      "dataPaths": [
-        "universities/stanford/campus.json"
-      ]
+      "routableCampuses": ["stanford-main"],
+      "dataPaths": ["universities/stanford/campus.json"]
     },
     {
       "id": "upenn",
@@ -1965,31 +1545,17 @@
       "shortName": "Penn",
       "accentColor": "#011F5B",
       "campusScope": "Penn Philadelphia, Pennovation Works, New Bolton Center",
-      "hosts": [
-        "upenn.gapwise.ca"
-      ],
-      "campuses": [
-        "upenn-philadelphia",
-        "upenn-pennovation",
-        "upenn-new-bolton"
-      ],
+      "hosts": ["upenn.gapwise.ca"],
+      "campuses": ["upenn-philadelphia", "upenn-pennovation", "upenn-new-bolton"],
       "defaultCampus": "upenn-philadelphia",
-      "aliases": [
-        "UPenn",
-        "Penn",
-        "University City"
-      ],
+      "aliases": ["UPenn", "Penn", "University City"],
       "marketing": {
         "campusName": "Philadelphia campus",
         "headline": "Connect the time between classes at Penn.",
         "description": "Import an iCalendar class schedule for Penn's Philadelphia campus. Source-backed campus maps and routing remain planned.",
         "seoTitle": "Gapwise for the University of Pennsylvania",
         "seoDescription": "Penn timetable import and weekly planning in Philadelphia, with transparent status for campus maps and routing.",
-        "searchExamples": [
-          "Penn",
-          "UPenn",
-          "Philadelphia"
-        ],
+        "searchExamples": ["Penn", "UPenn", "Philadelphia"],
         "stats": {
           "buildings": 16,
           "entrances": 16,
@@ -2008,12 +1574,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "upenn-philadelphia"
-      ],
-      "dataPaths": [
-        "universities/upenn/campus.json"
-      ]
+      "routableCampuses": ["upenn-philadelphia"],
+      "dataPaths": ["universities/upenn/campus.json"]
     },
     {
       "id": "cornell",
@@ -2021,31 +1583,17 @@
       "shortName": "Cornell",
       "accentColor": "#B31B1B",
       "campusScope": "Cornell Ithaca, Cornell Tech, Weill Cornell",
-      "hosts": [
-        "cornell.gapwise.ca"
-      ],
-      "campuses": [
-        "cornell-ithaca",
-        "cornell-tech",
-        "cornell-weill"
-      ],
+      "hosts": ["cornell.gapwise.ca"],
+      "campuses": ["cornell-ithaca", "cornell-tech", "cornell-weill"],
       "defaultCampus": "cornell-ithaca",
-      "aliases": [
-        "Cornell",
-        "Ithaca",
-        "Big Red"
-      ],
+      "aliases": ["Cornell", "Ithaca", "Big Red"],
       "marketing": {
         "campusName": "Ithaca campus",
         "headline": "Plan the hills, walks, and gaps in a Cornell day.",
         "description": "Import the iCal download from Cornell Class Roster Scheduler. Campus building data, search, and routes remain planned.",
         "seoTitle": "Gapwise for Cornell University",
         "seoDescription": "Cornell Class Roster Scheduler timetable import for Ithaca, with transparent status for campus maps and routing.",
-        "searchExamples": [
-          "Cornell",
-          "Ithaca",
-          "Big Red"
-        ],
+        "searchExamples": ["Cornell", "Ithaca", "Big Red"],
         "stats": {
           "buildings": 16,
           "entrances": 16,
@@ -2064,12 +1612,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "cornell-ithaca"
-      ],
-      "dataPaths": [
-        "universities/cornell/campus.json"
-      ]
+      "routableCampuses": ["cornell-ithaca"],
+      "dataPaths": ["universities/cornell/campus.json"]
     },
     {
       "id": "dartmouth",
@@ -2077,30 +1621,17 @@
       "shortName": "Dartmouth",
       "accentColor": "#00693E",
       "campusScope": "Dartmouth Hanover, Dartmouth Lebanon",
-      "hosts": [
-        "dartmouth.gapwise.ca"
-      ],
-      "campuses": [
-        "dartmouth-hanover",
-        "dartmouth-lebanon"
-      ],
+      "hosts": ["dartmouth.gapwise.ca"],
+      "campuses": ["dartmouth-hanover", "dartmouth-lebanon"],
       "defaultCampus": "dartmouth-hanover",
-      "aliases": [
-        "Dartmouth",
-        "Hanover",
-        "Big Green"
-      ],
+      "aliases": ["Dartmouth", "Hanover", "Big Green"],
       "marketing": {
         "campusName": "Hanover campus",
         "headline": "Keep a walkable Dartmouth day in view.",
         "description": "Import an iCalendar class schedule for Dartmouth's Hanover campus. Verified campus maps, search, and routing remain planned.",
         "seoTitle": "Gapwise for Dartmouth College",
         "seoDescription": "Dartmouth timetable import and weekly planning in Hanover, with transparent status for campus maps and routing.",
-        "searchExamples": [
-          "Dartmouth",
-          "Hanover",
-          "Big Green"
-        ],
+        "searchExamples": ["Dartmouth", "Hanover", "Big Green"],
         "stats": {
           "buildings": 11,
           "entrances": 11,
@@ -2119,12 +1650,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "dartmouth-hanover"
-      ],
-      "dataPaths": [
-        "universities/dartmouth/campus.json"
-      ]
+      "routableCampuses": ["dartmouth-hanover"],
+      "dataPaths": ["universities/dartmouth/campus.json"]
     },
     {
       "id": "brown",
@@ -2132,30 +1659,17 @@
       "shortName": "Brown",
       "accentColor": "#4E3629",
       "campusScope": "Brown College Hill, Jewelry District",
-      "hosts": [
-        "brown.gapwise.ca"
-      ],
-      "campuses": [
-        "brown-providence",
-        "brown-jewelry-district"
-      ],
+      "hosts": ["brown.gapwise.ca"],
+      "campuses": ["brown-providence", "brown-jewelry-district"],
       "defaultCampus": "brown-providence",
-      "aliases": [
-        "Brown",
-        "College Hill",
-        "Providence"
-      ],
+      "aliases": ["Brown", "College Hill", "Providence"],
       "marketing": {
         "campusName": "College Hill campus",
         "headline": "See the shape of a Brown day before the next walk.",
         "description": "Import the iCal download from Courses@Brown for College Hill. Campus building records, search, and routing remain planned.",
         "seoTitle": "Gapwise for Brown University",
         "seoDescription": "Courses@Brown iCal timetable import for College Hill, with transparent status for campus maps and routing.",
-        "searchExamples": [
-          "Brown",
-          "College Hill",
-          "Providence"
-        ],
+        "searchExamples": ["Brown", "College Hill", "Providence"],
         "stats": {
           "buildings": 11,
           "entrances": 11,
@@ -2174,12 +1688,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "brown-providence"
-      ],
-      "dataPaths": [
-        "universities/brown/campus.json"
-      ]
+      "routableCampuses": ["brown-providence"],
+      "dataPaths": ["universities/brown/campus.json"]
     },
     {
       "id": "columbia",
@@ -2187,31 +1697,17 @@
       "shortName": "Columbia",
       "accentColor": "#1D4F91",
       "campusScope": "Morningside, Manhattanville, Columbia CUIMC",
-      "hosts": [
-        "columbia.gapwise.ca"
-      ],
-      "campuses": [
-        "columbia-morningside",
-        "columbia-manhattanville",
-        "columbia-cuimc"
-      ],
+      "hosts": ["columbia.gapwise.ca"],
+      "campuses": ["columbia-morningside", "columbia-manhattanville", "columbia-cuimc"],
       "defaultCampus": "columbia-morningside",
-      "aliases": [
-        "Columbia",
-        "Morningside",
-        "Morningside Heights"
-      ],
+      "aliases": ["Columbia", "Morningside", "Morningside Heights"],
       "marketing": {
         "campusName": "Morningside Heights campus",
         "headline": "Keep a Columbia day connected in Upper Manhattan.",
         "description": "Import the calendar export from Columbia Vergil for Morningside Heights. Verified building, search, and routing support remain planned.",
         "seoTitle": "Gapwise for Columbia University",
         "seoDescription": "Columbia Vergil timetable import for Morningside Heights, with clear status for maps, search, and routing.",
-        "searchExamples": [
-          "Columbia",
-          "Morningside Heights",
-          "New York City"
-        ],
+        "searchExamples": ["Columbia", "Morningside Heights", "New York City"],
         "stats": {
           "buildings": 16,
           "entrances": 16,
@@ -2230,12 +1726,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "columbia-morningside"
-      ],
-      "dataPaths": [
-        "universities/columbia/campus.json"
-      ]
+      "routableCampuses": ["columbia-morningside"],
+      "dataPaths": ["universities/columbia/campus.json"]
     },
     {
       "id": "princeton",
@@ -2243,31 +1735,17 @@
       "shortName": "Princeton",
       "accentColor": "#E77500",
       "campusScope": "Princeton Main, Forrestal, Meadows",
-      "hosts": [
-        "princeton.gapwise.ca"
-      ],
-      "campuses": [
-        "princeton-main",
-        "princeton-forrestal",
-        "princeton-meadows"
-      ],
+      "hosts": ["princeton.gapwise.ca"],
+      "campuses": ["princeton-main", "princeton-forrestal", "princeton-meadows"],
       "defaultCampus": "princeton-main",
-      "aliases": [
-        "Princeton",
-        "Tigers",
-        "Princeton NJ"
-      ],
+      "aliases": ["Princeton", "Tigers", "Princeton NJ"],
       "marketing": {
         "campusName": "Princeton campus",
         "headline": "Make the walk between Princeton classes visible.",
         "description": "Import an iCalendar class schedule for Princeton's New Jersey campus. Verified building, search, and routing data remain planned.",
         "seoTitle": "Gapwise for Princeton University",
         "seoDescription": "Princeton timetable import and weekly planning, with transparent status for campus maps, search, and routing.",
-        "searchExamples": [
-          "Princeton",
-          "Princeton University",
-          "Princeton New Jersey"
-        ],
+        "searchExamples": ["Princeton", "Princeton University", "Princeton New Jersey"],
         "stats": {
           "buildings": 16,
           "entrances": 16,
@@ -2286,12 +1764,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "princeton-main"
-      ],
-      "dataPaths": [
-        "universities/princeton/campus.json"
-      ]
+      "routableCampuses": ["princeton-main"],
+      "dataPaths": ["universities/princeton/campus.json"]
     },
     {
       "id": "yale",
@@ -2299,31 +1773,17 @@
       "shortName": "Yale",
       "accentColor": "#00356B",
       "campusScope": "Yale Central, Yale Medical, Yale West",
-      "hosts": [
-        "yale.gapwise.ca"
-      ],
-      "campuses": [
-        "yale-new-haven",
-        "yale-medical",
-        "yale-west"
-      ],
+      "hosts": ["yale.gapwise.ca"],
+      "campuses": ["yale-new-haven", "yale-medical", "yale-west"],
       "defaultCampus": "yale-new-haven",
-      "aliases": [
-        "Yale",
-        "New Haven",
-        "Bulldogs"
-      ],
+      "aliases": ["Yale", "New Haven", "Bulldogs"],
       "marketing": {
         "campusName": "New Haven campus",
         "headline": "Bring a Yale day into one thoughtful plan.",
         "description": "Import an iCalendar class schedule for Yale's New Haven campus. Verified campus search, building data, and routing remain planned.",
         "seoTitle": "Gapwise for Yale University",
         "seoDescription": "Yale timetable import and weekly planning in New Haven, with clear status for campus maps, search, and routing.",
-        "searchExamples": [
-          "Yale",
-          "New Haven",
-          "Yale University"
-        ],
+        "searchExamples": ["Yale", "New Haven", "Yale University"],
         "stats": {
           "buildings": 16,
           "entrances": 16,
@@ -2342,12 +1802,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "yale-new-haven"
-      ],
-      "dataPaths": [
-        "universities/yale/campus.json"
-      ]
+      "routableCampuses": ["yale-new-haven"],
+      "dataPaths": ["universities/yale/campus.json"]
     },
     {
       "id": "harvard",
@@ -2355,31 +1811,17 @@
       "shortName": "Harvard",
       "accentColor": "#A51C30",
       "campusScope": "Harvard Cambridge, Harvard Allston, Harvard Longwood",
-      "hosts": [
-        "harvard.gapwise.ca"
-      ],
-      "campuses": [
-        "harvard-cambridge",
-        "harvard-allston",
-        "harvard-longwood"
-      ],
+      "hosts": ["harvard.gapwise.ca"],
+      "campuses": ["harvard-cambridge", "harvard-allston", "harvard-longwood"],
       "defaultCampus": "harvard-cambridge",
-      "aliases": [
-        "Harvard",
-        "Harvard Yard",
-        "Cambridge"
-      ],
+      "aliases": ["Harvard", "Harvard Yard", "Cambridge"],
       "marketing": {
         "campusName": "Cambridge campus",
         "headline": "See the time between Harvard classes more clearly.",
         "description": "Import the Download Calendar file from my.harvard for Cambridge classes. Source-backed building, search, and routing support remain planned.",
         "seoTitle": "Gapwise for Harvard University",
         "seoDescription": "my.harvard timetable import for Cambridge classes, with transparent status for campus maps, search, and routing.",
-        "searchExamples": [
-          "Harvard",
-          "Harvard Yard",
-          "Cambridge"
-        ],
+        "searchExamples": ["Harvard", "Harvard Yard", "Cambridge"],
         "stats": {
           "buildings": 16,
           "entrances": 16,
@@ -2398,12 +1840,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "harvard-cambridge"
-      ],
-      "dataPaths": [
-        "universities/harvard/campus.json"
-      ]
+      "routableCampuses": ["harvard-cambridge"],
+      "dataPaths": ["universities/harvard/campus.json"]
     }
   ],
   "campuses": [
@@ -2416,14 +1854,8 @@
       "city": "Mississauga",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "utm.gapwise.ca"
-      ],
-      "aliases": [
-        "Mississauga",
-        "U of T Mississauga",
-        "Erindale"
-      ],
+      "hosts": ["utm.gapwise.ca"],
+      "aliases": ["Mississauga", "U of T Mississauga", "Erindale"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2441,14 +1873,8 @@
       "city": "Toronto",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "utsg.gapwise.ca"
-      ],
-      "aliases": [
-        "St George",
-        "Downtown Toronto",
-        "U of T St. George"
-      ],
+      "hosts": ["utsg.gapwise.ca"],
+      "aliases": ["St George", "Downtown Toronto", "U of T St. George"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2466,13 +1892,8 @@
       "city": "Toronto",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "utsc.gapwise.ca"
-      ],
-      "aliases": [
-        "Scarborough",
-        "U of T Scarborough"
-      ],
+      "hosts": ["utsc.gapwise.ca"],
+      "aliases": ["Scarborough", "U of T Scarborough"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2490,13 +1911,8 @@
       "city": "Ottawa",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "carleton.gapwise.ca"
-      ],
-      "aliases": [
-        "CU",
-        "Ravens"
-      ],
+      "hosts": ["carleton.gapwise.ca"],
+      "aliases": ["CU", "Ravens"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2514,14 +1930,8 @@
       "city": "Toronto",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "tmu.gapwise.ca"
-      ],
-      "aliases": [
-        "Toronto Metropolitan",
-        "Ryerson",
-        "RU"
-      ],
+      "hosts": ["tmu.gapwise.ca"],
+      "aliases": ["Toronto Metropolitan", "Ryerson", "RU"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2539,14 +1949,8 @@
       "city": "Kingston",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "queens.gapwise.ca"
-      ],
-      "aliases": [
-        "Queens",
-        "QU",
-        "Gaels"
-      ],
+      "hosts": ["queens.gapwise.ca"],
+      "aliases": ["Queens", "QU", "Gaels"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2564,14 +1968,8 @@
       "city": "Waterloo",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "laurier.gapwise.ca"
-      ],
-      "aliases": [
-        "Laurier",
-        "WLU",
-        "Golden Hawks"
-      ],
+      "hosts": ["laurier.gapwise.ca"],
+      "aliases": ["Laurier", "WLU", "Golden Hawks"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2589,13 +1987,8 @@
       "city": "Toronto",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "keele.gapwise.ca"
-      ],
-      "aliases": [
-        "York Keele",
-        "North York"
-      ],
+      "hosts": ["keele.gapwise.ca"],
+      "aliases": ["York Keele", "North York"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2613,15 +2006,8 @@
       "city": "Toronto",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "glendon.gapwise.ca"
-      ],
-      "aliases": [
-        "York University Glendon Campus",
-        "Glendon",
-        "Glendon campus",
-        "Toronto"
-      ],
+      "hosts": ["glendon.gapwise.ca"],
+      "aliases": ["York University Glendon Campus", "Glendon", "Glendon campus", "Toronto"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2651,11 +2037,7 @@
           "nextBuildingName": "Leslie Frost Library",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "York Hall",
-          "Leslie Frost Library",
-          "Proctor Field House"
-        ]
+        "searchExamples": ["York Hall", "Leslie Frost Library", "Proctor Field House"]
       }
     },
     {
@@ -2667,15 +2049,8 @@
       "city": "Markham",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "markham.gapwise.ca"
-      ],
-      "aliases": [
-        "York University Markham Campus",
-        "Markham",
-        "Markham campus",
-        "Markham"
-      ],
+      "hosts": ["markham.gapwise.ca"],
+      "aliases": ["York University Markham Campus", "Markham", "Markham campus", "Markham"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2721,13 +2096,8 @@
       "city": "Hamilton",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "mcmaster.gapwise.ca"
-      ],
-      "aliases": [
-        "Mac",
-        "Marauders"
-      ],
+      "hosts": ["mcmaster.gapwise.ca"],
+      "aliases": ["Mac", "Marauders"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2745,13 +2115,8 @@
       "city": "London",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "western.gapwise.ca"
-      ],
-      "aliases": [
-        "UWO",
-        "Mustangs"
-      ],
+      "hosts": ["western.gapwise.ca"],
+      "aliases": ["UWO", "Mustangs"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2769,14 +2134,8 @@
       "city": "Guelph",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "guelph.gapwise.ca"
-      ],
-      "aliases": [
-        "U of G",
-        "UofG",
-        "Gryphons"
-      ],
+      "hosts": ["guelph.gapwise.ca"],
+      "aliases": ["U of G", "UofG", "Gryphons"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2794,14 +2153,8 @@
       "city": "Ottawa",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "uottawa.gapwise.ca"
-      ],
-      "aliases": [
-        "University of Ottawa",
-        "Ottawa U",
-        "Gee-Gees"
-      ],
+      "hosts": ["uottawa.gapwise.ca"],
+      "aliases": ["University of Ottawa", "Ottawa U", "Gee-Gees"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2819,13 +2172,8 @@
       "city": "St. Catharines",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "brock.gapwise.ca"
-      ],
-      "aliases": [
-        "Badgers",
-        "Niagara"
-      ],
+      "hosts": ["brock.gapwise.ca"],
+      "aliases": ["Badgers", "Niagara"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2843,14 +2191,8 @@
       "city": "Vancouver",
       "region": "British Columbia",
       "country": "Canada",
-      "hosts": [
-        "ubcv.gapwise.ca"
-      ],
-      "aliases": [
-        "UBC Vancouver",
-        "Point Grey",
-        "Vancouver campus"
-      ],
+      "hosts": ["ubcv.gapwise.ca"],
+      "aliases": ["UBC Vancouver", "Point Grey", "Vancouver campus"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2868,15 +2210,8 @@
       "city": "Kelowna",
       "region": "British Columbia",
       "country": "Canada",
-      "hosts": [
-        "ubco.gapwise.ca"
-      ],
-      "aliases": [
-        "UBC Okanagan Campus",
-        "UBC Okanagan",
-        "Okanagan campus",
-        "Kelowna"
-      ],
+      "hosts": ["ubco.gapwise.ca"],
+      "aliases": ["UBC Okanagan Campus", "UBC Okanagan", "Okanagan campus", "Kelowna"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2922,14 +2257,8 @@
       "city": "Waterloo",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": [
-        "waterloo.gapwise.ca"
-      ],
-      "aliases": [
-        "UWaterloo",
-        "UW",
-        "Warriors"
-      ],
+      "hosts": ["waterloo.gapwise.ca"],
+      "aliases": ["UWaterloo", "UW", "Warriors"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2947,14 +2276,8 @@
       "city": "Montreal",
       "region": "Quebec",
       "country": "Canada",
-      "hosts": [
-        "mcgill.gapwise.ca"
-      ],
-      "aliases": [
-        "McGill Downtown",
-        "Montréal",
-        "Montreal"
-      ],
+      "hosts": ["mcgill.gapwise.ca"],
+      "aliases": ["McGill Downtown", "Montréal", "Montreal"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -2972,9 +2295,7 @@
       "city": "Pittsburgh",
       "region": "Pennsylvania",
       "country": "United States",
-      "hosts": [
-        "cmu.gapwise.ca"
-      ],
+      "hosts": ["cmu.gapwise.ca"],
       "aliases": [
         "Carnegie Mellon University Pittsburgh Campus",
         "CMU Pittsburgh",
@@ -3010,11 +2331,7 @@
           "nextBuildingName": "Wean Hall",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Gates and Hillman Centers",
-          "Wean Hall",
-          "Doherty Hall"
-        ]
+        "searchExamples": ["Gates and Hillman Centers", "Wean Hall", "Doherty Hall"]
       }
     },
     {
@@ -3026,9 +2343,7 @@
       "city": "Berkeley",
       "region": "California",
       "country": "United States",
-      "hosts": [
-        "ucberkeley.gapwise.ca"
-      ],
+      "hosts": ["ucberkeley.gapwise.ca"],
       "aliases": [
         "University of California, Berkeley Campus",
         "Berkeley Main",
@@ -3064,11 +2379,7 @@
           "nextBuildingName": "Cory Hall",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Soda Hall",
-          "Cory Hall",
-          "Wheeler Hall"
-        ]
+        "searchExamples": ["Soda Hall", "Cory Hall", "Wheeler Hall"]
       }
     },
     {
@@ -3080,9 +2391,7 @@
       "city": "New York",
       "region": "New York",
       "country": "United States",
-      "hosts": [
-        "nyu.gapwise.ca"
-      ],
+      "hosts": ["nyu.gapwise.ca"],
       "aliases": [
         "New York University Washington Square Campus",
         "Washington Square",
@@ -3134,9 +2443,7 @@
       "city": "Cambridge",
       "region": "Massachusetts",
       "country": "United States",
-      "hosts": [
-        "mit.gapwise.ca"
-      ],
+      "hosts": ["mit.gapwise.ca"],
       "aliases": [
         "Massachusetts Institute of Technology Cambridge Campus",
         "MIT Cambridge",
@@ -3188,15 +2495,8 @@
       "city": "Stanford",
       "region": "California",
       "country": "United States",
-      "hosts": [
-        "stanford.gapwise.ca"
-      ],
-      "aliases": [
-        "Stanford University Main Campus",
-        "Stanford Main",
-        "Main campus",
-        "Stanford"
-      ],
+      "hosts": ["stanford.gapwise.ca"],
+      "aliases": ["Stanford University Main Campus", "Stanford Main", "Main campus", "Stanford"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -3242,9 +2542,7 @@
       "city": "Philadelphia",
       "region": "Pennsylvania",
       "country": "United States",
-      "hosts": [
-        "upenn.gapwise.ca"
-      ],
+      "hosts": ["upenn.gapwise.ca"],
       "aliases": [
         "University of Pennsylvania Philadelphia Campus",
         "Penn Philadelphia",
@@ -3280,11 +2578,7 @@
           "nextBuildingName": "Van Pelt-Dietrich Library",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "College Hall",
-          "Van Pelt-Dietrich Library",
-          "Levine Hall (SEAS)"
-        ]
+        "searchExamples": ["College Hall", "Van Pelt-Dietrich Library", "Levine Hall (SEAS)"]
       }
     },
     {
@@ -3296,15 +2590,8 @@
       "city": "Ithaca",
       "region": "New York",
       "country": "United States",
-      "hosts": [
-        "cornell.gapwise.ca"
-      ],
-      "aliases": [
-        "Cornell University Ithaca Campus",
-        "Cornell Ithaca",
-        "Ithaca campus",
-        "Ithaca"
-      ],
+      "hosts": ["cornell.gapwise.ca"],
+      "aliases": ["Cornell University Ithaca Campus", "Cornell Ithaca", "Ithaca campus", "Ithaca"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -3334,11 +2621,7 @@
           "nextBuildingName": "Olin Library",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Uris Library & McGraw Tower",
-          "Olin Library",
-          "Gates Hall (Computing)"
-        ]
+        "searchExamples": ["Uris Library & McGraw Tower", "Olin Library", "Gates Hall (Computing)"]
       }
     },
     {
@@ -3350,9 +2633,7 @@
       "city": "Hanover",
       "region": "New Hampshire",
       "country": "United States",
-      "hosts": [
-        "dartmouth.gapwise.ca"
-      ],
+      "hosts": ["dartmouth.gapwise.ca"],
       "aliases": [
         "Dartmouth College Hanover Campus",
         "Dartmouth Hanover",
@@ -3404,9 +2685,7 @@
       "city": "Providence",
       "region": "Rhode Island",
       "country": "United States",
-      "hosts": [
-        "brown.gapwise.ca"
-      ],
+      "hosts": ["brown.gapwise.ca"],
       "aliases": [
         "Brown University College Hill Campus",
         "Brown College Hill",
@@ -3442,11 +2721,7 @@
           "nextBuildingName": "Rockefeller Library",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "University Hall",
-          "Rockefeller Library",
-          "Sciences Library"
-        ]
+        "searchExamples": ["University Hall", "Rockefeller Library", "Sciences Library"]
       }
     },
     {
@@ -3458,9 +2733,7 @@
       "city": "New York",
       "region": "New York",
       "country": "United States",
-      "hosts": [
-        "columbia.gapwise.ca"
-      ],
+      "hosts": ["columbia.gapwise.ca"],
       "aliases": [
         "Columbia University Morningside Campus",
         "Morningside",
@@ -3496,11 +2769,7 @@
           "nextBuildingName": "Butler Library",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Low Memorial Library",
-          "Butler Library",
-          "Pupin Physics Laboratories"
-        ]
+        "searchExamples": ["Low Memorial Library", "Butler Library", "Pupin Physics Laboratories"]
       }
     },
     {
@@ -3512,15 +2781,8 @@
       "city": "Princeton",
       "region": "New Jersey",
       "country": "United States",
-      "hosts": [
-        "princeton.gapwise.ca"
-      ],
-      "aliases": [
-        "Princeton University Main Campus",
-        "Princeton Main",
-        "Main campus",
-        "Princeton"
-      ],
+      "hosts": ["princeton.gapwise.ca"],
+      "aliases": ["Princeton University Main Campus", "Princeton Main", "Main campus", "Princeton"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -3550,11 +2812,7 @@
           "nextBuildingName": "Firestone Library",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Nassau Hall",
-          "Firestone Library",
-          "Frist Campus Center"
-        ]
+        "searchExamples": ["Nassau Hall", "Firestone Library", "Frist Campus Center"]
       }
     },
     {
@@ -3566,15 +2824,8 @@
       "city": "New Haven",
       "region": "Connecticut",
       "country": "United States",
-      "hosts": [
-        "yale.gapwise.ca"
-      ],
-      "aliases": [
-        "Yale University Central Campus",
-        "Yale Central",
-        "Central campus",
-        "New Haven"
-      ],
+      "hosts": ["yale.gapwise.ca"],
+      "aliases": ["Yale University Central Campus", "Yale Central", "Central campus", "New Haven"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -3620,9 +2871,7 @@
       "city": "Cambridge",
       "region": "Massachusetts",
       "country": "United States",
-      "hosts": [
-        "harvard.gapwise.ca"
-      ],
+      "hosts": ["harvard.gapwise.ca"],
       "aliases": [
         "Harvard University Cambridge Campus",
         "Harvard Cambridge",
@@ -3658,11 +2907,7 @@
           "nextBuildingName": "Science Center",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Widener Memorial Library",
-          "Science Center",
-          "Sever Hall"
-        ]
+        "searchExamples": ["Widener Memorial Library", "Science Center", "Sever Hall"]
       }
     },
     {
@@ -3779,12 +3024,7 @@
       "region": "Ontario",
       "country": "Canada",
       "hosts": [],
-      "aliases": [
-        "Queen's University West Campus",
-        "West Campus",
-        "West campus",
-        "Kingston"
-      ],
+      "aliases": ["Queen's University West Campus", "West Campus", "West campus", "Kingston"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -3814,11 +3054,7 @@
           "nextBuildingName": "Jean Royce Hall",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Duncan McArthur Hall",
-          "Jean Royce Hall",
-          "Richardson Memorial Stadium"
-        ]
+        "searchExamples": ["Duncan McArthur Hall", "Jean Royce Hall", "Richardson Memorial Stadium"]
       }
     },
     {
@@ -3866,11 +3102,7 @@
           "nextBuildingName": "Grand River Hall",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Carnegie Building",
-          "Grand River Hall",
-          "One Market"
-        ]
+        "searchExamples": ["Carnegie Building", "Grand River Hall", "One Market"]
       }
     },
     {
@@ -3883,12 +3115,7 @@
       "region": "Ontario",
       "country": "Canada",
       "hosts": [],
-      "aliases": [
-        "Wilfrid Laurier University Milton Campus",
-        "Milton",
-        "Milton campus",
-        "Milton"
-      ],
+      "aliases": ["Wilfrid Laurier University Milton Campus", "Milton", "Milton campus", "Milton"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -3970,11 +3197,7 @@
           "nextBuildingName": "South Service Pavilion",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Ron Joyce Centre",
-          "South Service Pavilion",
-          "DeGroote Executive Wing"
-        ]
+        "searchExamples": ["Ron Joyce Centre", "South Service Pavilion", "DeGroote Executive Wing"]
       }
     },
     {
@@ -3987,12 +3210,7 @@
       "region": "Ontario",
       "country": "Canada",
       "hosts": [],
-      "aliases": [
-        "Huron University College Campus",
-        "Huron",
-        "Huron campus",
-        "London"
-      ],
+      "aliases": ["Huron University College Campus", "Huron", "Huron campus", "London"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -4022,11 +3240,7 @@
           "nextBuildingName": "Kingsmill Chamber Hall",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "O'Neil-Ridley Hall",
-          "Kingsmill Chamber Hall",
-          "Huron Student Centre"
-        ]
+        "searchExamples": ["O'Neil-Ridley Hall", "Kingsmill Chamber Hall", "Huron Student Centre"]
       }
     },
     {
@@ -4039,12 +3253,7 @@
       "region": "Ontario",
       "country": "Canada",
       "hosts": [],
-      "aliases": [
-        "King's University College Campus",
-        "King's",
-        "King's campus",
-        "London"
-      ],
+      "aliases": ["King's University College Campus", "King's", "King's campus", "London"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -4074,11 +3283,7 @@
           "nextBuildingName": "King's Student Life Centre",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Dante Lenardon Hall",
-          "King's Student Life Centre",
-          "Wemple Building"
-        ]
+        "searchExamples": ["Dante Lenardon Hall", "King's Student Life Centre", "Wemple Building"]
       }
     },
     {
@@ -4126,11 +3331,7 @@
           "nextBuildingName": "Wilson Hall",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Ridgetown Agronomy Hall",
-          "Wilson Hall",
-          "Reek Building"
-        ]
+        "searchExamples": ["Ridgetown Agronomy Hall", "Wilson Hall", "Reek Building"]
       }
     },
     {
@@ -4490,11 +3691,7 @@
           "nextBuildingName": "Raymond Building",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Macdonald-Stewart Building",
-          "Raymond Building",
-          "Barton Building"
-        ]
+        "searchExamples": ["Macdonald-Stewart Building", "Raymond Building", "Barton Building"]
       }
     },
     {
@@ -4646,11 +3843,7 @@
           "nextBuildingName": "370 Jay Street",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Rogers Hall (Tandon)",
-          "370 Jay Street",
-          "Bern Dibner Building"
-        ]
+        "searchExamples": ["Rogers Hall (Tandon)", "370 Jay Street", "Bern Dibner Building"]
       }
     },
     {
@@ -4750,11 +3943,7 @@
           "nextBuildingName": "University Hall",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Cardinal Hall",
-          "University Hall",
-          "Discovery Hall"
-        ]
+        "searchExamples": ["Cardinal Hall", "University Hall", "Discovery Hall"]
       }
     },
     {
@@ -4854,11 +4043,7 @@
           "nextBuildingName": "Alumni Hall",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Ryan Veterinary Hospital",
-          "Alumni Hall",
-          "Woerner Research Center"
-        ]
+        "searchExamples": ["Ryan Veterinary Hospital", "Alumni Hall", "Woerner Research Center"]
       }
     },
     {
@@ -4871,12 +4056,7 @@
       "region": "New York",
       "country": "United States",
       "hosts": [],
-      "aliases": [
-        "Cornell Tech Campus",
-        "Cornell Tech",
-        "Cornell Tech campus",
-        "New York"
-      ],
+      "aliases": ["Cornell Tech Campus", "Cornell Tech", "Cornell Tech campus", "New York"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -4958,11 +4138,7 @@
           "nextBuildingName": "Belfer Research Building",
           "nextRoom": "201"
         },
-        "searchExamples": [
-          "Weill Greenberg Center",
-          "Belfer Research Building",
-          "Whitney Pavilion"
-        ]
+        "searchExamples": ["Weill Greenberg Center", "Belfer Research Building", "Whitney Pavilion"]
       }
     },
     {
@@ -5287,12 +4463,7 @@
       "region": "Connecticut",
       "country": "United States",
       "hosts": [],
-      "aliases": [
-        "Yale School of Medicine Campus",
-        "Yale Medical",
-        "Medical campus",
-        "New Haven"
-      ],
+      "aliases": ["Yale School of Medicine Campus", "Yale Medical", "Medical campus", "New Haven"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
@@ -5339,12 +4510,7 @@
       "region": "Connecticut",
       "country": "United States",
       "hosts": [],
-      "aliases": [
-        "Yale University West Campus",
-        "Yale West",
-        "West campus",
-        "West Haven"
-      ],
+      "aliases": ["Yale University West Campus", "Yale West", "West campus", "West Haven"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
