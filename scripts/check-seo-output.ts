@@ -32,7 +32,21 @@ for (const site of manifest.sites.filter((item) => item.role !== "global")) {
   const status = campus?.status ?? university.status;
   const marketing = site.presentation?.marketing ?? campus?.marketing ?? university.marketing;
   const html = await readFile(`dist/_sites/${key}/index.html`, "utf8");
-  expectIncludes(html, `<title>${escapeHtml(marketing.seoTitle)}</title>`, `${site.id} title`);
+  const title = escapeHtml(marketing.seoTitle);
+  const description = escapeHtml(marketing.seoDescription);
+  const socialImage = `https://${site.canonicalHost}/universities/${university.id}/og-card.png`;
+  expectIncludes(html, `<title>${title}</title>`, `${site.id} title`);
+  expectIncludes(html, `name="description" content="${description}"`, `${site.id} description`);
+  expectIncludes(html, `property="og:title" content="${title}"`, `${site.id} open graph title`);
+  expectIncludes(
+    html,
+    `property="og:description" content="${description}"`,
+    `${site.id} open graph description`,
+  );
+  expectIncludes(html, `property="og:image" content="${socialImage}"`, `${site.id} image`);
+  expectIncludes(html, `name="twitter:title" content="${title}"`, `${site.id} X title`);
+  expectIncludes(html, `name="twitter:image" content="${socialImage}"`, `${site.id} X image`);
+  expectIncludes(html, `href="/universities/${university.id}/logo-mark.svg"`, `${site.id} logo`);
   expectIncludes(html, `href="https://${site.canonicalHost}/"`, `${site.id} canonical`);
   expectIncludes(html, `content="https://${site.canonicalHost}/"`, `${site.id} open graph URL`);
   expectIncludes(html, escapeHtml(marketing.headline), `${site.id} fallback`);

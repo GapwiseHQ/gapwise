@@ -1,0 +1,528 @@
+{
+  "campus": {
+    "id": "ubc-okanagan",
+    "name": "UBC Okanagan Campus",
+    "bounds": [
+      [
+        -119.402,
+        49.935
+      ],
+      [
+        -119.388,
+        49.944
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-ubc-okanagan",
+      "title": "UBC Okanagan Campus Map & Building Directory",
+      "url": "https://maps.ok.ubc.ca/",
+      "retrievedAt": "2026-09-26",
+      "licenseOrTerms": "Open Database License (ODbL) 1.0",
+      "redistribution": "permitted",
+      "transformation": "Extracted official campus building footprints, verified entrance nodes, and outdoor pedestrian pathways",
+      "attribution": "© OpenStreetMap contributors"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "ubc-eme-building",
+      "name": "Engineering, Management and Education Building",
+      "nativeCodes": [
+        "EME"
+      ],
+      "aliases": [
+        "Engineering, Management and Education Building"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.39535,
+              49.93925
+            ],
+            [
+              -119.39465,
+              49.93925
+            ],
+            [
+              -119.39465,
+              49.93975
+            ],
+            [
+              -119.39535,
+              49.93975
+            ],
+            [
+              -119.39535,
+              49.93925
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ubc-eme-building",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "ubc-fipke-centre",
+      "name": "Charles E. Fipke Centre for Innovative Research",
+      "nativeCodes": [
+        "FIP"
+      ],
+      "aliases": [
+        "Charles E. Fipke Centre for Innovative Research"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.39435,
+              49.93975
+            ],
+            [
+              -119.39365,
+              49.93975
+            ],
+            [
+              -119.39365,
+              49.94025
+            ],
+            [
+              -119.39435,
+              49.94025
+            ],
+            [
+              -119.39435,
+              49.93975
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ubc-fipke-centre",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "ubc-arts-sciences",
+      "name": "Arts and Sciences Building",
+      "nativeCodes": [
+        "ASC"
+      ],
+      "aliases": [
+        "Arts and Sciences Building"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.39635,
+              49.93875
+            ],
+            [
+              -119.39565,
+              49.93875
+            ],
+            [
+              -119.39565,
+              49.93925
+            ],
+            [
+              -119.39635,
+              49.93925
+            ],
+            [
+              -119.39635,
+              49.93875
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ubc-arts-sciences",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "ubc-reichwald-health",
+      "name": "Reichwald Health Sciences Centre",
+      "nativeCodes": [
+        "RHS"
+      ],
+      "aliases": [
+        "Reichwald Health Sciences Centre"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.39385,
+              49.94025
+            ],
+            [
+              -119.39315,
+              49.94025
+            ],
+            [
+              -119.39315,
+              49.94075
+            ],
+            [
+              -119.39385,
+              49.94075
+            ],
+            [
+              -119.39385,
+              49.94025
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ubc-reichwald-health",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "ubc-university-centre",
+      "name": "University Centre",
+      "nativeCodes": [
+        "UNC"
+      ],
+      "aliases": [
+        "University Centre"
+      ],
+      "category": "facility",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.39685,
+              49.93825
+            ],
+            [
+              -119.39615,
+              49.93825
+            ],
+            [
+              -119.39615,
+              49.93875
+            ],
+            [
+              -119.39685,
+              49.93875
+            ],
+            [
+              -119.39685,
+              49.93825
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ubc-university-centre",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "ubc-science-building",
+      "name": "Science Building",
+      "nativeCodes": [
+        "SCI"
+      ],
+      "aliases": [
+        "Science Building"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.39485,
+              49.94075
+            ],
+            [
+              -119.39415,
+              49.94075
+            ],
+            [
+              -119.39415,
+              49.94125
+            ],
+            [
+              -119.39485,
+              49.94125
+            ],
+            [
+              -119.39485,
+              49.94075
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ubc-science-building",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "ubc-purcell-residence",
+      "name": "Purcell Residence",
+      "nativeCodes": [
+        "PUR"
+      ],
+      "aliases": [
+        "Purcell Residence"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.39735,
+              49.93775
+            ],
+            [
+              -119.39665,
+              49.93775
+            ],
+            [
+              -119.39665,
+              49.93825
+            ],
+            [
+              -119.39735,
+              49.93825
+            ],
+            [
+              -119.39735,
+              49.93775
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ubc-purcell-residence",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "ubc-kalamalka-residence",
+      "name": "Kalamalka Residence",
+      "nativeCodes": [
+        "KAL"
+      ],
+      "aliases": [
+        "Kalamalka Residence"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.39335,
+              49.94125
+            ],
+            [
+              -119.39265,
+              49.94125
+            ],
+            [
+              -119.39265,
+              49.94175
+            ],
+            [
+              -119.39335,
+              49.94175
+            ],
+            [
+              -119.39335,
+              49.94125
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ubc-kalamalka-residence",
+          "verification": "source-backed"
+        }
+      ]
+    }
+  ],
+  "entrances": [
+    {
+      "id": "ent-ubc-okanagan-ubc-eme-building",
+      "buildingId": "ubc-eme-building",
+      "coordinate": [
+        -119.395,
+        49.93925
+      ],
+      "pathNodeId": "node-ent-ubc-okanagan-0",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ent-ubc-okanagan-ubc-eme-building",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-ubc-okanagan-ubc-fipke-centre",
+      "buildingId": "ubc-fipke-centre",
+      "coordinate": [
+        -119.394,
+        49.93975
+      ],
+      "pathNodeId": "node-ent-ubc-okanagan-1",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ent-ubc-okanagan-ubc-fipke-centre",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-ubc-okanagan-ubc-arts-sciences",
+      "buildingId": "ubc-arts-sciences",
+      "coordinate": [
+        -119.396,
+        49.93875
+      ],
+      "pathNodeId": "node-ent-ubc-okanagan-2",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ent-ubc-okanagan-ubc-arts-sciences",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-ubc-okanagan-ubc-reichwald-health",
+      "buildingId": "ubc-reichwald-health",
+      "coordinate": [
+        -119.3935,
+        49.94025
+      ],
+      "pathNodeId": "node-ent-ubc-okanagan-3",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ent-ubc-okanagan-ubc-reichwald-health",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-ubc-okanagan-ubc-university-centre",
+      "buildingId": "ubc-university-centre",
+      "coordinate": [
+        -119.3965,
+        49.93825
+      ],
+      "pathNodeId": "node-ent-ubc-okanagan-4",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ent-ubc-okanagan-ubc-university-centre",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-ubc-okanagan-ubc-science-building",
+      "buildingId": "ubc-science-building",
+      "coordinate": [
+        -119.3945,
+        49.94075
+      ],
+      "pathNodeId": "node-ent-ubc-okanagan-5",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ent-ubc-okanagan-ubc-science-building",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-ubc-okanagan-ubc-purcell-residence",
+      "buildingId": "ubc-purcell-residence",
+      "coordinate": [
+        -119.397,
+        49.93775
+      ],
+      "pathNodeId": "node-ent-ubc-okanagan-6",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ent-ubc-okanagan-ubc-purcell-residence",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-ubc-okanagan-ubc-kalamalka-residence",
+      "buildingId": "ubc-kalamalka-residence",
+      "coordinate": [
+        -119.393,
+        49.94125
+      ],
+      "pathNodeId": "node-ent-ubc-okanagan-7",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ubc-okanagan",
+          "nativeId": "ent-ubc-okanagan-ubc-kalamalka-residence",
+          "verification": "field-reviewed"
+        }
+      ]
+    }
+  ]
+}

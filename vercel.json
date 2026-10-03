@@ -328,7 +328,7 @@
       "has": [
         {
           "type": "host",
-          "value": "(?<site>uoft|utm|utsg|utsc|carleton|tmu|queens|laurier|ubc|ubcv|ubco|york|keele|mcmaster|western|guelph|uottawa|brock|waterloo|mcgill|glendon|markham|harvard|yale|princeton|columbia|brown|dartmouth|cornell|upenn|stanford|mit|cmu|nyu|ucberkeley)\\.gapwise\\.ca"
+          "value": "(?<site>(?!api\\b)[a-z0-9-]+)\\.gapwise\\.ca"
         }
       ],
       "destination": "/_sites/:site/sitemap.xml"
@@ -338,7 +338,7 @@
       "has": [
         {
           "type": "host",
-          "value": "(?<site>uoft|utm|utsg|utsc|carleton|tmu|queens|laurier|ubc|ubcv|ubco|york|keele|mcmaster|western|guelph|uottawa|brock|waterloo|mcgill|glendon|markham|harvard|yale|princeton|columbia|brown|dartmouth|cornell|upenn|stanford|mit|cmu|nyu|ucberkeley)\\.gapwise\\.ca"
+          "value": "(?<site>(?!api\\b)[a-z0-9-]+)\\.gapwise\\.ca"
         }
       ],
       "destination": "/_sites/:site/robots.txt"
@@ -348,7 +348,7 @@
       "has": [
         {
           "type": "host",
-          "value": "(?<site>uoft|utm|utsg|utsc|carleton|tmu|queens|laurier|ubc|ubcv|ubco|york|keele|mcmaster|western|guelph|uottawa|brock|waterloo|mcgill|glendon|markham|harvard|yale|princeton|columbia|brown|dartmouth|cornell|upenn|stanford|mit|cmu|nyu|ucberkeley)\\.gapwise\\.ca"
+          "value": "(?<site>(?!api\\b)[a-z0-9-]+)\\.gapwise\\.ca"
         }
       ],
       "destination": "/_sites/:site/_seo/:path.html"
@@ -358,7 +358,7 @@
       "has": [
         {
           "type": "host",
-          "value": "(?<site>uoft|utm|utsg|utsc|carleton|tmu|queens|laurier|ubc|ubcv|ubco|york|keele|mcmaster|western|guelph|uottawa|brock|waterloo|mcgill|glendon|markham|harvard|yale|princeton|columbia|brown|dartmouth|cornell|upenn|stanford|mit|cmu|nyu|ucberkeley)\\.gapwise\\.ca"
+          "value": "(?<site>(?!api\\b)[a-z0-9-]+)\\.gapwise\\.ca"
         }
       ],
       "destination": "/_sites/:site/index.html"
@@ -368,7 +368,7 @@
       "has": [
         {
           "type": "host",
-          "value": "(?<site>uoft|utm|utsg|utsc|carleton|tmu|queens|laurier|ubc|ubcv|ubco|york|keele|mcmaster|western|guelph|uottawa|brock|waterloo|mcgill|glendon|markham|harvard|yale|princeton|columbia|brown|dartmouth|cornell|upenn|stanford|mit|cmu|nyu|ucberkeley)\\.gapwise\\.ca"
+          "value": "(?<site>(?!api\\b)[a-z0-9-]+)\\.gapwise\\.ca"
         }
       ],
       "destination": "/_sites/:site/index.html"

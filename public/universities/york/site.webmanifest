@@ -1,6 +1,6 @@
 {
   "name": "Gapwise — York University",
-  "short_name": "Gapwise",
+  "short_name": "Gapwise · York",
   "icons": [
     {
       "src": "/universities/york/icon-192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#0d1117",
+  "theme_color": "#E31837",
   "background_color": "#0d1117",
   "display": "standalone",
   "start_url": "/"

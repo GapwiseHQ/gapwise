@@ -1,0 +1,20 @@
+{
+  "name": "Gapwise — Stanford University",
+  "short_name": "Gapwise · Stanford",
+  "icons": [
+    {
+      "src": "/universities/stanford/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/universities/stanford/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#8C1515",
+  "background_color": "#0d1117",
+  "display": "standalone",
+  "start_url": "/"
+}

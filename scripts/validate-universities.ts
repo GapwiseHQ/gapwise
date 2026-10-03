@@ -5,6 +5,7 @@ import { validateUniversityManifest } from "../src/universities/registry.js";
 import { getCampusSnapshot } from "../src/server/public-campus/campus-snapshots.js";
 import { routeBetweenBuildings } from "../src/features/routing/campus-outdoor-graph.js";
 import { timetableAdapters, demoTimetableLoaders } from "../src/universities/timetable-adapters.js";
+import { verifyUniversityBrandAssets } from "./university-brand-assets.js";
 
 const errors: string[] = [];
 const warnings: string[] = [];
@@ -169,6 +170,8 @@ for (const uni of manifest.universities) {
     }
   }
 }
+
+errors.push(...(await verifyUniversityBrandAssets(manifest.universities)));
 
 console.log("\n--- Validation Results ---");
 if (warnings.length > 0) {

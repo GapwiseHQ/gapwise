@@ -1,6 +1,6 @@
 {
   "name": "Gapwise — University of Ottawa",
-  "short_name": "Gapwise",
+  "short_name": "Gapwise · uOttawa",
   "icons": [
     {
       "src": "/universities/uottawa/icon-192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#0d1117",
+  "theme_color": "#8F001A",
   "background_color": "#0d1117",
   "display": "standalone",
   "start_url": "/"

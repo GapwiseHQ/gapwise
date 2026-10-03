@@ -36,8 +36,26 @@ export const CAMPUS_SNAPSHOTS: Record<string, CampusSnapshot> = {
   "mcgill-downtown": mcgillSnapshot as unknown as CampusSnapshot,
 };
 
+import { readFileSync, existsSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 export function getCampusSnapshot(campusId: string): CampusSnapshot | null {
-  return CAMPUS_SNAPSHOTS[campusId.toLowerCase()] ?? null;
+  const normalized = campusId.toLowerCase();
+  if (CAMPUS_SNAPSHOTS[normalized]) return CAMPUS_SNAPSHOTS[normalized];
+  const candidatePath = resolve(__dirname, `../../data/campuses/${normalized}/campus.json`);
+  if (existsSync(candidatePath)) {
+    try {
+      const loaded = JSON.parse(readFileSync(candidatePath, "utf8")) as CampusSnapshot;
+      CAMPUS_SNAPSHOTS[normalized] = loaded;
+      return loaded;
+    } catch {
+      return null;
+    }
+  }
+  return null;
 }
 
 function unique<T>(array: T[]): T[] {
@@ -71,7 +89,22 @@ const CAMPUS_BUILDING_CONFIGURATIONS: Record<string, BuildingConfiguration[]> = 
 };
 
 export function campusBuildingConfigurations(campusId: string): BuildingConfiguration[] {
-  return CAMPUS_BUILDING_CONFIGURATIONS[campusId.toLowerCase()] ?? [];
+  const normalized = campusId.toLowerCase();
+  if (CAMPUS_BUILDING_CONFIGURATIONS[normalized]) return CAMPUS_BUILDING_CONFIGURATIONS[normalized];
+  const snapshot = getCampusSnapshot(normalized);
+  if (snapshot) {
+    const configs = snapshot.buildings.map((b) => ({
+      code: (b.nativeCodes[0] ?? b.id).toUpperCase(),
+      name: b.name,
+      category: (b.category === "residence" || b.category === "academic"
+        ? b.category
+        : "facility") as BuildingConfiguration["category"],
+      aliases: unique([b.id, ...(b.aliases ?? []), ...b.nativeCodes.slice(1)]),
+    }));
+    CAMPUS_BUILDING_CONFIGURATIONS[normalized] = configs;
+    return configs;
+  }
+  return [];
 }
 
 export function campusResidenceBuildings(campusId: string): BuildingConfiguration[] {

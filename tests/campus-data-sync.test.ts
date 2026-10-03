@@ -34,21 +34,13 @@ async function fixture() {
   await put("gapwise/src/data/utm/entrances.geojson", "old mirror\n");
   await put("gapwise/src/data/utm/obsolete.json", "obsolete\n");
   await put("gapwise/public/data/utm-campus-v1.json", "old snapshot\n");
-  for (const uni of [
-    "carleton",
-    "tmu",
-    "queens",
-    "laurier",
-    "york",
-    "mcmaster",
-    "western",
-    "guelph",
-    "uottawa",
-    "brock",
-    "ubc",
-    "waterloo",
-    "mcgill",
-  ]) {
+  const manifest = JSON.parse(await readFile("universities.json", "utf8")) as {
+    universities: Array<{ id: string; dataPaths: string[] }>;
+  };
+  const syncUnis = manifest.universities
+    .filter((u) => u.id !== "uoft" && u.dataPaths.length > 0)
+    .map((u) => u.id);
+  for (const uni of syncUnis) {
     await mkdir(join(root, `data/universities/${uni}`), { recursive: true });
     await mkdir(join(root, `gapwise/src/data/campuses/${uni}`), { recursive: true });
     await put(
@@ -111,21 +103,13 @@ describe("canonical campus mirror CLI", () => {
         entrances: [],
       });
     }
-    for (const uni of [
-      "carleton",
-      "tmu",
-      "queens",
-      "laurier",
-      "york",
-      "mcmaster",
-      "western",
-      "guelph",
-      "uottawa",
-      "brock",
-      "ubc",
-      "waterloo",
-      "mcgill",
-    ]) {
+    const manifest = JSON.parse(await readFile("universities.json", "utf8")) as {
+      universities: Array<{ id: string; dataPaths: string[] }>;
+    };
+    const syncUnis = manifest.universities
+      .filter((u) => u.id !== "uoft" && u.dataPaths.length > 0)
+      .map((u) => u.id);
+    for (const uni of syncUnis) {
       expect(await f.read(`gapwise/src/data/campuses/${uni}/campus.json`)).toBe(
         await f.read(`data/universities/${uni}/campus.json`),
       );

@@ -1,6 +1,6 @@
 {
   "name": "Gapwise — Carleton University",
-  "short_name": "Gapwise",
+  "short_name": "Gapwise · Carleton",
   "icons": [
     {
       "src": "/universities/carleton/icon-192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#0d1117",
+  "theme_color": "#E31B23",
   "background_color": "#0d1117",
   "display": "standalone",
   "start_url": "/"

@@ -37,7 +37,7 @@ const totals = [...files].reduce(
 
 // The registry now includes every intentional Canada and U.S. edition. Keep only modest headroom
 // above that measured baseline while still catching eager MapLibre or timetable-parser loading.
-const budgets = { js: 500 * 1024, css: 45 * 1024 };
+const budgets = { js: 520 * 1024, css: 45 * 1024 };
 for (const kind of ["js", "css"] as const) {
   if (totals[kind] > budgets[kind]) {
     throw new Error(

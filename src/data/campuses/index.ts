@@ -188,9 +188,61 @@ const CAMPUS_FALLBACK_BOUNDS: Record<string, [[number, number], [number, number]
     [-79.205, 43.772],
     [-79.165, 43.7995],
   ],
+  carleton: [
+    [-75.705, 45.38],
+    [-75.688, 45.394],
+  ],
+  tmu: [
+    [-79.385, 43.654],
+    [-79.373, 43.662],
+  ],
+  queens: [
+    [-76.502, 44.221],
+    [-76.49, 44.232],
+  ],
+  waterloo: [
+    [-80.536, 43.47],
+    [-80.523, 43.479],
+  ],
+  keele: [
+    [-79.515, 43.766],
+    [-79.493, 43.782],
+  ],
+  glendon: [
+    [-79.385, 43.723],
+    [-79.372, 43.732],
+  ],
+  markham: [
+    [-79.331, 43.847],
+    [-79.318, 43.856],
+  ],
+  mcmaster: [
+    [-79.932, 43.256],
+    [-79.91, 43.268],
+  ],
+  western: [
+    [-81.285, 43],
+    [-81.265, 43.018],
+  ],
+  guelph: [
+    [-80.235, 43.524],
+    [-80.215, 43.538],
+  ],
+  uottawa: [
+    [-75.69, 45.416],
+    [-75.674, 45.426],
+  ],
+  brock: [
+    [-79.256, 43.112],
+    [-79.24, 43.125],
+  ],
   "ubc-vancouver": [
-    [-123.2622, 49.2417],
-    [-123.2265, 49.2731],
+    [-123.2622191, 49.2417041],
+    [-123.2264828, 49.2730726],
+  ],
+  "ubc-okanagan": [
+    [-119.402, 49.935],
+    [-119.388, 49.944],
   ],
   "waterloo-main": [
     [-80.558, 43.462],
@@ -199,6 +251,198 @@ const CAMPUS_FALLBACK_BOUNDS: Record<string, [[number, number], [number, number]
   "mcgill-downtown": [
     [-73.584, 45.499],
     [-73.57, 45.514],
+  ],
+  "cmu-pittsburgh": [
+    [-79.949, 40.439],
+    [-79.938, 40.448],
+  ],
+  "ucberkeley-main": [
+    [-122.265, 37.867],
+    [-122.252, 37.876],
+  ],
+  "nyu-washington-square": [
+    [-74.003, 40.725],
+    [-73.99, 40.734],
+  ],
+  "mit-cambridge": [
+    [-71.1, 42.355],
+    [-71.087, 42.364],
+  ],
+  "stanford-main": [
+    [-122.176, 37.423],
+    [-122.163, 37.432],
+  ],
+  "upenn-philadelphia": [
+    [-75.2, 39.948],
+    [-75.187, 39.957],
+  ],
+  "cornell-ithaca": [
+    [-76.489, 42.444],
+    [-76.476, 42.453],
+  ],
+  "dartmouth-hanover": [
+    [-72.295, 43.7],
+    [-72.282, 43.709],
+  ],
+  "brown-providence": [
+    [-71.409, 41.822],
+    [-71.396, 41.831],
+  ],
+  "columbia-morningside": [
+    [-73.969, 40.803],
+    [-73.956, 40.812],
+  ],
+  "princeton-main": [
+    [-74.663, 40.344],
+    [-74.65, 40.353],
+  ],
+  "yale-new-haven": [
+    [-72.933, 41.307],
+    [-72.92, 41.316],
+  ],
+  "harvard-cambridge": [
+    [-71.123, 42.371],
+    [-71.11, 42.38],
+  ],
+  "carleton-dominion-chalmers": [
+    [-75.702, 45.4135],
+    [-75.694, 45.4195],
+  ],
+  "tmu-brampton": [
+    [-79.728, 43.713],
+    [-79.717, 43.722],
+  ],
+  "queens-west": [
+    [-76.524, 44.221],
+    [-76.509, 44.23],
+  ],
+  "laurier-brantford": [
+    [-80.27, 43.135],
+    [-80.259, 43.144],
+  ],
+  "laurier-milton": [
+    [-79.872, 43.483],
+    [-79.859, 43.493],
+  ],
+  "mcmaster-burlington": [
+    [-79.775, 43.36],
+    [-79.763, 43.369],
+  ],
+  "western-huron": [
+    [-81.286, 43.003],
+    [-81.274, 43.012],
+  ],
+  "western-kings": [
+    [-81.264, 43.008],
+    [-81.252, 43.017],
+  ],
+  "guelph-ridgetown": [
+    [-81.886, 42.441],
+    [-81.873, 42.45],
+  ],
+  "guelph-humber": [
+    [-81.614, 43.725],
+    [-81.602, 43.734],
+  ],
+  "uottawa-alta-vista": [
+    [-75.658, 45.398],
+    [-75.645, 45.407],
+  ],
+  "brock-miw": [
+    [-79.249, 43.154],
+    [-79.238, 43.163],
+  ],
+  "waterloo-cambridge": [
+    [-80.323, 43.355],
+    [-80.312, 43.363],
+  ],
+  "waterloo-kitchener": [
+    [-80.505, 43.449],
+    [-80.494, 43.458],
+  ],
+  "waterloo-stratford": [
+    [-80.982, 43.366],
+    [-80.971, 43.375],
+  ],
+  "mcgill-macdonald": [
+    [-73.949, 45.402],
+    [-73.936, 45.411],
+  ],
+  "cmu-silicon-valley": [
+    [-122.068, 37.406],
+    [-122.056, 37.415],
+  ],
+  "ucberkeley-richmond": [
+    [-122.339, 37.911],
+    [-122.326, 37.92],
+  ],
+  "nyu-brooklyn": [
+    [-73.992, 40.69],
+    [-73.981, 40.699],
+  ],
+  "mit-lincoln-lab": [
+    [-71.275, 42.454],
+    [-71.263, 42.463],
+  ],
+  "stanford-redwood-city": [
+    [-122.222, 37.484],
+    [-122.209, 37.493],
+  ],
+  "upenn-pennovation": [
+    [-75.208, 39.936],
+    [-75.195, 39.945],
+  ],
+  "upenn-new-bolton": [
+    [-75.789, 39.847],
+    [-75.776, 39.856],
+  ],
+  "cornell-tech": [
+    [-73.962, 40.751],
+    [-73.949, 40.76],
+  ],
+  "cornell-weill": [
+    [-73.96, 40.761],
+    [-73.948, 40.769],
+  ],
+  "dartmouth-lebanon": [
+    [-72.281, 43.662],
+    [-72.268, 43.671],
+  ],
+  "brown-jewelry-district": [
+    [-71.416, 41.815],
+    [-71.403, 41.824],
+  ],
+  "columbia-manhattanville": [
+    [-73.965, 40.813],
+    [-73.952, 40.822],
+  ],
+  "columbia-cuimc": [
+    [-73.948, 40.838],
+    [-73.935, 40.847],
+  ],
+  "princeton-forrestal": [
+    [-74.611, 40.347],
+    [-74.598, 40.356],
+  ],
+  "princeton-meadows": [
+    [-74.653, 40.335],
+    [-74.64, 40.344],
+  ],
+  "yale-medical": [
+    [-72.941, 41.299],
+    [-72.928, 41.308],
+  ],
+  "yale-west": [
+    [-72.996, 41.254],
+    [-72.983, 41.263],
+  ],
+  "harvard-allston": [
+    [-71.134, 42.36],
+    [-71.121, 42.369],
+  ],
+  "harvard-longwood": [
+    [-71.11, 42.332],
+    [-71.097, 42.341],
   ],
   ...Object.fromEntries(
     Object.entries(universityCatalogs)
@@ -368,6 +612,57 @@ export function ensureCampusCatalog(campusId: string | null | undefined): Promis
     "ubc-vancouver": () => import("./ubc/catalog.json?raw"),
     "waterloo-main": () => import("./waterloo/catalog.json?raw"),
     "mcgill-downtown": () => import("./mcgill/catalog.json?raw"),
+    glendon: () => import("./glendon/catalog.json?raw"),
+    markham: () => import("./markham/catalog.json?raw"),
+    "ubc-okanagan": () => import("./ubc-okanagan/catalog.json?raw"),
+    "cmu-pittsburgh": () => import("./cmu-pittsburgh/catalog.json?raw"),
+    "ucberkeley-main": () => import("./ucberkeley-main/catalog.json?raw"),
+    "nyu-washington-square": () => import("./nyu-washington-square/catalog.json?raw"),
+    "mit-cambridge": () => import("./mit-cambridge/catalog.json?raw"),
+    "stanford-main": () => import("./stanford-main/catalog.json?raw"),
+    "upenn-philadelphia": () => import("./upenn-philadelphia/catalog.json?raw"),
+    "cornell-ithaca": () => import("./cornell-ithaca/catalog.json?raw"),
+    "dartmouth-hanover": () => import("./dartmouth-hanover/catalog.json?raw"),
+    "brown-providence": () => import("./brown-providence/catalog.json?raw"),
+    "columbia-morningside": () => import("./columbia-morningside/catalog.json?raw"),
+    "princeton-main": () => import("./princeton-main/catalog.json?raw"),
+    "yale-new-haven": () => import("./yale-new-haven/catalog.json?raw"),
+    "harvard-cambridge": () => import("./harvard-cambridge/catalog.json?raw"),
+    "carleton-dominion-chalmers": () => import("./carleton-dominion-chalmers/catalog.json?raw"),
+    "tmu-brampton": () => import("./tmu-brampton/catalog.json?raw"),
+    "queens-west": () => import("./queens-west/catalog.json?raw"),
+    "laurier-brantford": () => import("./laurier-brantford/catalog.json?raw"),
+    "laurier-milton": () => import("./laurier-milton/catalog.json?raw"),
+    "mcmaster-burlington": () => import("./mcmaster-burlington/catalog.json?raw"),
+    "western-huron": () => import("./western-huron/catalog.json?raw"),
+    "western-kings": () => import("./western-kings/catalog.json?raw"),
+    "guelph-ridgetown": () => import("./guelph-ridgetown/catalog.json?raw"),
+    "guelph-humber": () => import("./guelph-humber/catalog.json?raw"),
+    "uottawa-alta-vista": () => import("./uottawa-alta-vista/catalog.json?raw"),
+    "brock-miw": () => import("./brock-miw/catalog.json?raw"),
+    "waterloo-cambridge": () => import("./waterloo-cambridge/catalog.json?raw"),
+    "waterloo-kitchener": () => import("./waterloo-kitchener/catalog.json?raw"),
+    "waterloo-stratford": () => import("./waterloo-stratford/catalog.json?raw"),
+    "mcgill-macdonald": () => import("./mcgill-macdonald/catalog.json?raw"),
+    "cmu-silicon-valley": () => import("./cmu-silicon-valley/catalog.json?raw"),
+    "ucberkeley-richmond": () => import("./ucberkeley-richmond/catalog.json?raw"),
+    "nyu-brooklyn": () => import("./nyu-brooklyn/catalog.json?raw"),
+    "mit-lincoln-lab": () => import("./mit-lincoln-lab/catalog.json?raw"),
+    "stanford-redwood-city": () => import("./stanford-redwood-city/catalog.json?raw"),
+    "upenn-pennovation": () => import("./upenn-pennovation/catalog.json?raw"),
+    "upenn-new-bolton": () => import("./upenn-new-bolton/catalog.json?raw"),
+    "cornell-tech": () => import("./cornell-tech/catalog.json?raw"),
+    "cornell-weill": () => import("./cornell-weill/catalog.json?raw"),
+    "dartmouth-lebanon": () => import("./dartmouth-lebanon/catalog.json?raw"),
+    "brown-jewelry-district": () => import("./brown-jewelry-district/catalog.json?raw"),
+    "columbia-manhattanville": () => import("./columbia-manhattanville/catalog.json?raw"),
+    "columbia-cuimc": () => import("./columbia-cuimc/catalog.json?raw"),
+    "princeton-forrestal": () => import("./princeton-forrestal/catalog.json?raw"),
+    "princeton-meadows": () => import("./princeton-meadows/catalog.json?raw"),
+    "yale-medical": () => import("./yale-medical/catalog.json?raw"),
+    "yale-west": () => import("./yale-west/catalog.json?raw"),
+    "harvard-allston": () => import("./harvard-allston/catalog.json?raw"),
+    "harvard-longwood": () => import("./harvard-longwood/catalog.json?raw"),
   };
   const loader = catalogLoaders[canonicalId];
   const load = loader

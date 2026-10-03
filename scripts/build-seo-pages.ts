@@ -97,7 +97,7 @@ const contexts: Context[] = manifest.sites
               item.universityId === university.id &&
               item.capabilities["buildingData"] !== "planned",
           ),
-      branded: university.dataPaths.length > 0,
+      branded: true,
       location: campus ? `${campus.city}, ${campus.region}` : undefined,
       marketing: site.presentation?.marketing ?? campus?.marketing ?? university.marketing,
     };

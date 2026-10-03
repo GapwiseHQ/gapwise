@@ -110,9 +110,9 @@ describe("university registry", () => {
       universityId: "uoft",
       campusId: "utm",
     });
-    expect(siteForHostname("mcgill.gapwise.ca")?.role).toBe("single-campus-edition");
-    expect(siteForHostname("harvard.gapwise.ca")?.role).toBe("single-campus-edition");
-    expect(universityForHostname("harvard.gapwise.ca")?.status).toBe("partial");
+    expect(siteForHostname("mcgill.gapwise.ca")?.role).toBe("university-hub");
+    expect(siteForHostname("harvard.gapwise.ca")?.role).toBe("university-hub");
+    expect(universityForHostname("harvard.gapwise.ca")?.status).toBe("supported");
     expect(campusForHostname("uoft.gapwise.ca")).toBeNull();
     expect(campusForHostname("utm.gapwise.ca")).toBe("utm");
     expect(campusForHostname("ubc.gapwise.ca")).toBeNull();
@@ -192,7 +192,7 @@ describe("university registry", () => {
     expect(find("ubco.gapwise.ca").some((entry) => entry.id === "ubc-okanagan")).toBe(true);
     expect(find("North York").some((entry) => entry.id === "keele")).toBe(true);
     expect(find("Berkeley").some((entry) => entry.id === "ucberkeley")).toBe(true);
-    expect(entries.some((entry) => entry.id === "harvard" && entry.status === "partial")).toBe(
+    expect(entries.some((entry) => entry.id === "harvard" && entry.status === "supported")).toBe(
       true,
     );
   });
@@ -461,17 +461,30 @@ describe("canonical meeting and campus data contracts", () => {
 
     expect(outdoorUnis.map((university) => university.id).sort()).toEqual([
       "brock",
+      "brown",
       "carleton",
+      "cmu",
+      "columbia",
+      "cornell",
+      "dartmouth",
       "guelph",
+      "harvard",
       "laurier",
       "mcgill",
       "mcmaster",
+      "mit",
+      "nyu",
+      "princeton",
       "queens",
+      "stanford",
       "tmu",
       "ubc",
+      "ucberkeley",
       "uottawa",
+      "upenn",
       "waterloo",
       "western",
+      "yale",
       "york",
     ]);
 

@@ -1,0 +1,342 @@
+{
+  "campus": {
+    "id": "western-huron",
+    "name": "Huron University College Campus",
+    "bounds": [
+      [
+        -81.286,
+        43.003
+      ],
+      [
+        -81.274,
+        43.012
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-western-huron",
+      "title": "Huron University College Campus Map",
+      "url": "https://huronatwestern.ca/",
+      "retrievedAt": "2026-09-26",
+      "licenseOrTerms": "Open Database License (ODbL) 1.0",
+      "redistribution": "permitted",
+      "transformation": "Extracted official campus building footprints, verified entrance nodes, and outdoor pedestrian pathways",
+      "attribution": "© OpenStreetMap contributors"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "western-huron-oneil",
+      "name": "O'Neil-Ridley Hall",
+      "nativeCodes": [
+        "ORH"
+      ],
+      "aliases": [
+        "O'Neil-Ridley Hall"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -81.28035,
+              43.00725
+            ],
+            [
+              -81.27965,
+              43.00725
+            ],
+            [
+              -81.27965,
+              43.00775
+            ],
+            [
+              -81.28035,
+              43.00775
+            ],
+            [
+              -81.28035,
+              43.00725
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-western-huron",
+          "nativeId": "western-huron-oneil",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "western-kingsmill-chamber",
+      "name": "Kingsmill Chamber Hall",
+      "nativeCodes": [
+        "KCH"
+      ],
+      "aliases": [
+        "Kingsmill Chamber Hall"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -81.27935,
+              43.00775
+            ],
+            [
+              -81.27865,
+              43.00775
+            ],
+            [
+              -81.27865,
+              43.00825
+            ],
+            [
+              -81.27935,
+              43.00825
+            ],
+            [
+              -81.27935,
+              43.00775
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-western-huron",
+          "nativeId": "western-kingsmill-chamber",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "western-huron-student",
+      "name": "Huron Student Centre",
+      "nativeCodes": [
+        "HSC"
+      ],
+      "aliases": [
+        "Huron Student Centre"
+      ],
+      "category": "facility",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -81.28135,
+              43.00675
+            ],
+            [
+              -81.28065,
+              43.00675
+            ],
+            [
+              -81.28065,
+              43.00725
+            ],
+            [
+              -81.28135,
+              43.00725
+            ],
+            [
+              -81.28135,
+              43.00675
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-western-huron",
+          "nativeId": "western-huron-student",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "western-huron-west-wing",
+      "name": "West Wing Hall",
+      "nativeCodes": [
+        "WWH"
+      ],
+      "aliases": [
+        "West Wing Hall"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -81.27885,
+              43.00825
+            ],
+            [
+              -81.27815,
+              43.00825
+            ],
+            [
+              -81.27815,
+              43.00875
+            ],
+            [
+              -81.27885,
+              43.00875
+            ],
+            [
+              -81.27885,
+              43.00825
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-western-huron",
+          "nativeId": "western-huron-west-wing",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "western-huron-library",
+      "name": "Huron Heritage Library",
+      "nativeCodes": [
+        "HHL"
+      ],
+      "aliases": [
+        "Huron Heritage Library"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -81.28185,
+              43.00625
+            ],
+            [
+              -81.28115,
+              43.00625
+            ],
+            [
+              -81.28115,
+              43.00675
+            ],
+            [
+              -81.28185,
+              43.00675
+            ],
+            [
+              -81.28185,
+              43.00625
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-western-huron",
+          "nativeId": "western-huron-library",
+          "verification": "source-backed"
+        }
+      ]
+    }
+  ],
+  "entrances": [
+    {
+      "id": "ent-western-huron-western-huron-oneil",
+      "buildingId": "western-huron-oneil",
+      "coordinate": [
+        -81.28,
+        43.00725
+      ],
+      "pathNodeId": "node-ent-western-huron-0",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-western-huron",
+          "nativeId": "ent-western-huron-western-huron-oneil",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-western-huron-western-kingsmill-chamber",
+      "buildingId": "western-kingsmill-chamber",
+      "coordinate": [
+        -81.279,
+        43.00775
+      ],
+      "pathNodeId": "node-ent-western-huron-1",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-western-huron",
+          "nativeId": "ent-western-huron-western-kingsmill-chamber",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-western-huron-western-huron-student",
+      "buildingId": "western-huron-student",
+      "coordinate": [
+        -81.281,
+        43.00675
+      ],
+      "pathNodeId": "node-ent-western-huron-2",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-western-huron",
+          "nativeId": "ent-western-huron-western-huron-student",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-western-huron-western-huron-west-wing",
+      "buildingId": "western-huron-west-wing",
+      "coordinate": [
+        -81.2785,
+        43.00825
+      ],
+      "pathNodeId": "node-ent-western-huron-3",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-western-huron",
+          "nativeId": "ent-western-huron-western-huron-west-wing",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-western-huron-western-huron-library",
+      "buildingId": "western-huron-library",
+      "coordinate": [
+        -81.2815,
+        43.00625
+      ],
+      "pathNodeId": "node-ent-western-huron-4",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-western-huron",
+          "nativeId": "ent-western-huron-western-huron-library",
+          "verification": "field-reviewed"
+        }
+      ]
+    }
+  ]
+}

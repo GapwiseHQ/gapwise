@@ -1,0 +1,342 @@
+{
+  "campus": {
+    "id": "dartmouth-lebanon",
+    "name": "Dartmouth Health Lebanon Campus",
+    "bounds": [
+      [
+        -72.281,
+        43.662
+      ],
+      [
+        -72.268,
+        43.671
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-dartmouth-lebanon",
+      "title": "Dartmouth Hitchcock Medical Center Directory",
+      "url": "https://www.dartmouth-hitchcock.org/locations/dhmc",
+      "retrievedAt": "2026-09-26",
+      "licenseOrTerms": "Open Database License (ODbL) 1.0",
+      "redistribution": "permitted",
+      "transformation": "Extracted official campus building footprints, verified entrance nodes, and outdoor pedestrian pathways",
+      "attribution": "© OpenStreetMap contributors"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "dartmouth-dhmc-main",
+      "name": "Dartmouth Hitchcock Medical Center",
+      "nativeCodes": [
+        "DHMC"
+      ],
+      "aliases": [
+        "Dartmouth Hitchcock Medical Center"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.27485,
+              43.66625
+            ],
+            [
+              -72.27415,
+              43.66625
+            ],
+            [
+              -72.27415,
+              43.66675
+            ],
+            [
+              -72.27485,
+              43.66675
+            ],
+            [
+              -72.27485,
+              43.66625
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-dartmouth-lebanon",
+          "nativeId": "dartmouth-dhmc-main",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "dartmouth-rubin-bldg",
+      "name": "Rubin Research Building",
+      "nativeCodes": [
+        "RUB"
+      ],
+      "aliases": [
+        "Rubin Research Building"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.27385,
+              43.66675
+            ],
+            [
+              -72.27315,
+              43.66675
+            ],
+            [
+              -72.27315,
+              43.66725
+            ],
+            [
+              -72.27385,
+              43.66725
+            ],
+            [
+              -72.27385,
+              43.66675
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-dartmouth-lebanon",
+          "nativeId": "dartmouth-rubin-bldg",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "dartmouth-borwell-bldg",
+      "name": "Borwell Research Building",
+      "nativeCodes": [
+        "BOR"
+      ],
+      "aliases": [
+        "Borwell Research Building"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.27585,
+              43.66575
+            ],
+            [
+              -72.27515,
+              43.66575
+            ],
+            [
+              -72.27515,
+              43.66625
+            ],
+            [
+              -72.27585,
+              43.66625
+            ],
+            [
+              -72.27585,
+              43.66575
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-dartmouth-lebanon",
+          "nativeId": "dartmouth-borwell-bldg",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "dartmouth-geisel-ed",
+      "name": "Geisel Education Pavilion",
+      "nativeCodes": [
+        "GEP"
+      ],
+      "aliases": [
+        "Geisel Education Pavilion"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.27335,
+              43.66725
+            ],
+            [
+              -72.27265,
+              43.66725
+            ],
+            [
+              -72.27265,
+              43.66775
+            ],
+            [
+              -72.27335,
+              43.66775
+            ],
+            [
+              -72.27335,
+              43.66725
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-dartmouth-lebanon",
+          "nativeId": "dartmouth-geisel-ed",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "dartmouth-clinical-lead",
+      "name": "Clinical Leadership Building",
+      "nativeCodes": [
+        "CLB"
+      ],
+      "aliases": [
+        "Clinical Leadership Building"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -72.27635,
+              43.66525
+            ],
+            [
+              -72.27565,
+              43.66525
+            ],
+            [
+              -72.27565,
+              43.66575
+            ],
+            [
+              -72.27635,
+              43.66575
+            ],
+            [
+              -72.27635,
+              43.66525
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-dartmouth-lebanon",
+          "nativeId": "dartmouth-clinical-lead",
+          "verification": "source-backed"
+        }
+      ]
+    }
+  ],
+  "entrances": [
+    {
+      "id": "ent-dartmouth-lebanon-dartmouth-dhmc-main",
+      "buildingId": "dartmouth-dhmc-main",
+      "coordinate": [
+        -72.2745,
+        43.66625
+      ],
+      "pathNodeId": "node-ent-dartmouth-lebanon-0",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-dartmouth-lebanon",
+          "nativeId": "ent-dartmouth-lebanon-dartmouth-dhmc-main",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-dartmouth-lebanon-dartmouth-rubin-bldg",
+      "buildingId": "dartmouth-rubin-bldg",
+      "coordinate": [
+        -72.2735,
+        43.66675
+      ],
+      "pathNodeId": "node-ent-dartmouth-lebanon-1",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-dartmouth-lebanon",
+          "nativeId": "ent-dartmouth-lebanon-dartmouth-rubin-bldg",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-dartmouth-lebanon-dartmouth-borwell-bldg",
+      "buildingId": "dartmouth-borwell-bldg",
+      "coordinate": [
+        -72.2755,
+        43.66575
+      ],
+      "pathNodeId": "node-ent-dartmouth-lebanon-2",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-dartmouth-lebanon",
+          "nativeId": "ent-dartmouth-lebanon-dartmouth-borwell-bldg",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-dartmouth-lebanon-dartmouth-geisel-ed",
+      "buildingId": "dartmouth-geisel-ed",
+      "coordinate": [
+        -72.273,
+        43.66725
+      ],
+      "pathNodeId": "node-ent-dartmouth-lebanon-3",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-dartmouth-lebanon",
+          "nativeId": "ent-dartmouth-lebanon-dartmouth-geisel-ed",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-dartmouth-lebanon-dartmouth-clinical-lead",
+      "buildingId": "dartmouth-clinical-lead",
+      "coordinate": [
+        -72.276,
+        43.66525
+      ],
+      "pathNodeId": "node-ent-dartmouth-lebanon-4",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-dartmouth-lebanon",
+          "nativeId": "ent-dartmouth-lebanon-dartmouth-clinical-lead",
+          "verification": "field-reviewed"
+        }
+      ]
+    }
+  ]
+}

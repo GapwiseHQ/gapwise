@@ -1,6 +1,6 @@
 {
   "name": "Gapwise — Wilfrid Laurier University",
-  "short_name": "Gapwise",
+  "short_name": "Gapwise · Laurier",
   "icons": [
     {
       "src": "/universities/laurier/icon-192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#0d1117",
+  "theme_color": "#8b5cf6",
   "background_color": "#0d1117",
   "display": "standalone",
   "start_url": "/"

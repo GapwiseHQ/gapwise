@@ -9,6 +9,7 @@ import {
   universityById,
   universityForHostname,
 } from "@/universities/registry";
+import { verifyUniversityBrandAssets } from "../scripts/university-brand-assets";
 
 const EXPECTED_UNIVERSITY_IDS = [
   "uoft",
@@ -28,18 +29,7 @@ const EXPECTED_UNIVERSITY_IDS = [
 ] as const;
 
 describe("Gapwise Ecosystem Consistency", () => {
-  test("timetable-only hosts are live without claiming map coverage", () => {
-    const timetableOnlyHosts = manifest.sites
-      .filter((site) => {
-        const university = manifest.universities.find((item) => item.id === site.universityId);
-        const campus = manifest.campuses.find((item) => item.id === site.campusId);
-        return (
-          campus?.capabilities.timetableImport === "supported" &&
-          campus.capabilities.buildingData === "planned" &&
-          university?.status === "partial"
-        );
-      })
-      .flatMap((site) => site.hosts);
+  test("all university and campus hosts are live and supported", () => {
     for (const host of [
       "ubco.gapwise.ca",
       "glendon.gapwise.ca",
@@ -58,9 +48,9 @@ describe("Gapwise Ecosystem Consistency", () => {
       "nyu.gapwise.ca",
       "ucberkeley.gapwise.ca",
     ]) {
-      expect(timetableOnlyHosts).toContain(host);
       expect(siteForHostname(host)?.role).not.toBe("reserved");
       expect(universityForHostname(host)).not.toBeNull();
+      expect(universityForHostname(host)?.status).toBe("supported");
     }
   });
   test("canonical registry distinguishes current and planned universities", () => {
@@ -119,6 +109,10 @@ describe("Gapwise Ecosystem Consistency", () => {
       expect(existsSync(resolve(dir, "favicon-32x32.png"))).toBe(true);
       expect(existsSync(resolve(dir, "apple-touch-icon.png"))).toBe(true);
     }
+  });
+
+  test("every university branding directory exactly matches its registry entry", async () => {
+    expect(await verifyUniversityBrandAssets(manifest.universities)).toEqual([]);
   });
 
   test("vercel.json resolves every intentional university hostname generically", () => {

@@ -1,0 +1,20 @@
+{
+  "name": "Gapwise — Princeton University",
+  "short_name": "Gapwise · Princeton",
+  "icons": [
+    {
+      "src": "/universities/princeton/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/universities/princeton/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#E77500",
+  "background_color": "#0d1117",
+  "display": "standalone",
+  "start_url": "/"
+}

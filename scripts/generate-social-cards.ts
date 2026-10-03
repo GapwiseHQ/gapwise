@@ -1,6 +1,8 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import sharp from "sharp";
+import manifest from "../universities.json" with { type: "json" };
+import { renderUniversityCard } from "./university-brand-assets";
 
 type CardConfig = {
   outputPath: string;
@@ -242,7 +244,20 @@ const CARDS: CardConfig[] = [
   },
 ];
 
-for (const card of CARDS) {
+for (const university of manifest.universities) {
+  const outputPath = `public/universities/${university.id}/og-card.png`;
+  const target = resolve(import.meta.dirname, "..", outputPath);
+  await mkdir(dirname(target), { recursive: true });
+  const png = await sharp(Buffer.from(renderUniversityCard(university)))
+    .png()
+    .toBuffer();
+  await writeFile(target, png);
+  console.log(`Generated registry social card: ${outputPath} (${png.length} bytes)`);
+}
+
+for (const card of CARDS.filter(
+  ({ outputPath }) => !outputPath.startsWith("public/universities/"),
+)) {
   const target = resolve(import.meta.dirname, "..", card.outputPath);
   await mkdir(dirname(target), { recursive: true });
   const svg = renderSvg(card);
@@ -251,4 +266,6 @@ for (const card of CARDS) {
   console.log(`Generated social card: ${card.outputPath} (${png.length} bytes)`);
 }
 
-console.log(`Successfully generated all ${CARDS.length} social preview cards.`);
+console.log(
+  `Successfully generated ${manifest.universities.length} university and ${CARDS.filter(({ outputPath }) => !outputPath.startsWith("public/universities/")).length} shared social preview cards.`,
+);

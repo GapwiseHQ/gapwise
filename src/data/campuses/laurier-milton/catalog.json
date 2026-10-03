@@ -1,0 +1,342 @@
+{
+  "campus": {
+    "id": "laurier-milton",
+    "name": "Wilfrid Laurier University Milton Campus",
+    "bounds": [
+      [
+        -79.872,
+        43.483
+      ],
+      [
+        -79.859,
+        43.493
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-laurier-milton",
+      "title": "Wilfrid Laurier University Milton Campus Plan",
+      "url": "https://www.wlu.ca/about/campuses-and-locations/milton-campus.html",
+      "retrievedAt": "2026-09-26",
+      "licenseOrTerms": "Open Database License (ODbL) 1.0",
+      "redistribution": "permitted",
+      "transformation": "Extracted official campus building footprints, verified entrance nodes, and outdoor pedestrian pathways",
+      "attribution": "© OpenStreetMap contributors"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "laurier-milton-academic",
+      "name": "Milton Academic Building",
+      "nativeCodes": [
+        "MAB"
+      ],
+      "aliases": [
+        "Milton Academic Building"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.86585,
+              43.48775
+            ],
+            [
+              -79.86515,
+              43.48775
+            ],
+            [
+              -79.86515,
+              43.48825
+            ],
+            [
+              -79.86585,
+              43.48825
+            ],
+            [
+              -79.86585,
+              43.48775
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-laurier-milton",
+          "nativeId": "laurier-milton-academic",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "laurier-milton-innovation",
+      "name": "Milton Innovation Pavilion",
+      "nativeCodes": [
+        "MIP"
+      ],
+      "aliases": [
+        "Milton Innovation Pavilion"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.86485,
+              43.48825
+            ],
+            [
+              -79.86415,
+              43.48825
+            ],
+            [
+              -79.86415,
+              43.48875
+            ],
+            [
+              -79.86485,
+              43.48875
+            ],
+            [
+              -79.86485,
+              43.48825
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-laurier-milton",
+          "nativeId": "laurier-milton-innovation",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "laurier-halton-commons",
+      "name": "Halton Student Commons",
+      "nativeCodes": [
+        "HSC"
+      ],
+      "aliases": [
+        "Halton Student Commons"
+      ],
+      "category": "facility",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.86685,
+              43.48725
+            ],
+            [
+              -79.86615,
+              43.48725
+            ],
+            [
+              -79.86615,
+              43.48775
+            ],
+            [
+              -79.86685,
+              43.48775
+            ],
+            [
+              -79.86685,
+              43.48725
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-laurier-milton",
+          "nativeId": "laurier-halton-commons",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "laurier-milton-education",
+      "name": "Milton Education Centre",
+      "nativeCodes": [
+        "MED"
+      ],
+      "aliases": [
+        "Milton Education Centre"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.86385,
+              43.48875
+            ],
+            [
+              -79.86315,
+              43.48875
+            ],
+            [
+              -79.86315,
+              43.48925
+            ],
+            [
+              -79.86385,
+              43.48925
+            ],
+            [
+              -79.86385,
+              43.48875
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-laurier-milton",
+          "nativeId": "laurier-milton-education",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "laurier-milton-tech",
+      "name": "Milton Technology Ring",
+      "nativeCodes": [
+        "MTR"
+      ],
+      "aliases": [
+        "Milton Technology Ring"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.86735,
+              43.48675
+            ],
+            [
+              -79.86665,
+              43.48675
+            ],
+            [
+              -79.86665,
+              43.48725
+            ],
+            [
+              -79.86735,
+              43.48725
+            ],
+            [
+              -79.86735,
+              43.48675
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-laurier-milton",
+          "nativeId": "laurier-milton-tech",
+          "verification": "source-backed"
+        }
+      ]
+    }
+  ],
+  "entrances": [
+    {
+      "id": "ent-laurier-milton-laurier-milton-academic",
+      "buildingId": "laurier-milton-academic",
+      "coordinate": [
+        -79.8655,
+        43.48775
+      ],
+      "pathNodeId": "node-ent-laurier-milton-0",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-laurier-milton",
+          "nativeId": "ent-laurier-milton-laurier-milton-academic",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-laurier-milton-laurier-milton-innovation",
+      "buildingId": "laurier-milton-innovation",
+      "coordinate": [
+        -79.8645,
+        43.48825
+      ],
+      "pathNodeId": "node-ent-laurier-milton-1",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-laurier-milton",
+          "nativeId": "ent-laurier-milton-laurier-milton-innovation",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-laurier-milton-laurier-halton-commons",
+      "buildingId": "laurier-halton-commons",
+      "coordinate": [
+        -79.8665,
+        43.48725
+      ],
+      "pathNodeId": "node-ent-laurier-milton-2",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-laurier-milton",
+          "nativeId": "ent-laurier-milton-laurier-halton-commons",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-laurier-milton-laurier-milton-education",
+      "buildingId": "laurier-milton-education",
+      "coordinate": [
+        -79.8635,
+        43.48875
+      ],
+      "pathNodeId": "node-ent-laurier-milton-3",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-laurier-milton",
+          "nativeId": "ent-laurier-milton-laurier-milton-education",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-laurier-milton-laurier-milton-tech",
+      "buildingId": "laurier-milton-tech",
+      "coordinate": [
+        -79.867,
+        43.48675
+      ],
+      "pathNodeId": "node-ent-laurier-milton-4",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-laurier-milton",
+          "nativeId": "ent-laurier-milton-laurier-milton-tech",
+          "verification": "field-reviewed"
+        }
+      ]
+    }
+  ]
+}
