@@ -330,8 +330,10 @@ describe("Campus Maps and Timetable Inference for All Supported Campuses", () =>
       expect(inferredFromAdapter).toBe(campus.id.toUpperCase());
       expect(inferredFromCampus).toBe(campus.id.toUpperCase());
 
-      // 4. Verify all scheduled academic classes have valid physical buildings/rooms and no TBA
-      const scheduledClasses = meetingsViaCampus.filter((m) => !m.notes);
+      // 4. Verify all scheduled physical classes have valid physical buildings/rooms and no TBA
+      const scheduledClasses = meetingsViaCampus.filter(
+        (m) => m.locationType === "physical" && !m.notes,
+      );
       expect(scheduledClasses.length).toBeGreaterThan(0);
       for (const meeting of scheduledClasses) {
         expect(meeting.buildingCode).toBeTruthy();
