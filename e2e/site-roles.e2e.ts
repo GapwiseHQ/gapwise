@@ -2,6 +2,8 @@ import { expect, test } from "@playwright/test";
 import manifest from "../universities.json" with { type: "json" };
 import { editionUrl, watchForAppFailures } from "./helpers";
 
+test.use({ serviceWorkers: "block" });
+
 test("global homepage presents the multi-university Gapwise ecosystem", async ({
   page,
   baseURL,
