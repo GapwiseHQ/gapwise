@@ -188,6 +188,18 @@ const CAMPUS_FALLBACK_BOUNDS: Record<string, [[number, number], [number, number]
     [-79.205, 43.772],
     [-79.165, 43.7995],
   ],
+  "ubc-vancouver": [
+    [-123.2622, 49.2417],
+    [-123.2265, 49.2731],
+  ],
+  "waterloo-main": [
+    [-80.558, 43.462],
+    [-80.522, 43.493],
+  ],
+  "mcgill-downtown": [
+    [-73.584, 45.499],
+    [-73.57, 45.514],
+  ],
   ...Object.fromEntries(
     Object.entries(universityCatalogs)
       .filter(([, catalog]) => catalog.campus?.bounds)
@@ -221,9 +233,17 @@ export const CAMPUS_SHORT_LABELS: Record<string, string> = {
   ),
 };
 
+const SUPPORTED_CAMPUS_IDS = new Set<string>(
+  manifest.campuses
+    .filter((candidate) => candidate.status === "supported")
+    .map((candidate) => candidate.id),
+);
+
 export function gapwiseCampusIdForCampus(campus: Campus | undefined): GapwiseCampusId | null {
   const id = campus?.toLowerCase();
-  return id && id in CONFIGURATIONS ? (id as GapwiseCampusId) : null;
+  return id && (id in CONFIGURATIONS || SUPPORTED_CAMPUS_IDS.has(id))
+    ? (id as GapwiseCampusId)
+    : null;
 }
 
 function normalizeText(value: string) {
@@ -336,21 +356,26 @@ const campusCatalogLoads = new Map<string, Promise<void>>();
 
 /** Load large, edition-specific map/search data before rendering that campus. */
 export function ensureCampusCatalog(campusId: string | null | undefined): Promise<void> {
-  if (!campusId || universityCatalogs[campusId] || campusId === "utm") return Promise.resolve();
-  const existing = campusCatalogLoads.get(campusId);
+  if (!campusId) return Promise.resolve();
+  const normalized = campusId.toLowerCase();
+  const campusRecord = manifest.campuses.find((entry) => entry.id === normalized);
+  const universityRecord = manifest.universities.find((entry) => entry.id === normalized);
+  const canonicalId = campusRecord?.id ?? universityRecord?.defaultCampus ?? normalized;
+  if (universityCatalogs[canonicalId] || canonicalId === "utm") return Promise.resolve();
+  const existing = campusCatalogLoads.get(canonicalId);
   if (existing) return existing;
   const catalogLoaders: Record<string, () => Promise<{ default: string }>> = {
     "ubc-vancouver": () => import("./ubc/catalog.json?raw"),
     "waterloo-main": () => import("./waterloo/catalog.json?raw"),
     "mcgill-downtown": () => import("./mcgill/catalog.json?raw"),
   };
-  const loader = catalogLoaders[campusId];
+  const loader = catalogLoaders[canonicalId];
   const load = loader
     ? loader().then((module) => {
-        registerUniversityCatalog(campusId, JSON.parse(module.default) as UniversityCatalog);
+        registerUniversityCatalog(canonicalId, JSON.parse(module.default) as UniversityCatalog);
       })
     : Promise.resolve();
-  campusCatalogLoads.set(campusId, load);
+  campusCatalogLoads.set(canonicalId, load);
   return load;
 }
 

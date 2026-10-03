@@ -5,7 +5,7 @@ import {
   createScheduleTransitionPlanner,
   type TransitionPlanner,
 } from "@/features/routing/transition";
-import { activeCampus, activeUniversity } from "@/universities/registry";
+import { activeCampus, activeUniversity, universityByCampus } from "@/universities/registry";
 import { chooseDefaultTerm } from "@/lib/calendar-awareness";
 import { findGaps } from "@/lib/gaps";
 import { availableScheduleTerms, composeTermSchedule } from "@/lib/personal-scheduler";
@@ -15,10 +15,11 @@ const EMPTY_MEETINGS: Meeting[] = [];
 
 /** Owns the selected-term facts shared by responsive timetable, Today, and gap views. */
 export function useSelectedScheduleContext(meetings: Meeting[] | null) {
-  const university = activeUniversity();
-  const universityId = university?.id;
   const inferredCampus = inferredCampusForMeetings(meetings ?? EMPTY_MEETINGS)?.toLowerCase();
   const currentCampus = (inferredCampus ?? activeCampus() ?? "").toLowerCase();
+  const university =
+    activeUniversity() ?? (currentCampus ? (universityByCampus(currentCampus) ?? null) : null);
+  const universityId = university?.id;
 
   const isOutdoorCampus = Boolean(
     (universityId && universityId !== "uoft" && university?.enabledFeatures.routing) ||

@@ -9,6 +9,7 @@ import {
 import { getCampusLocationDisplay } from "@/features/routing/location-presentation";
 import {
   CAMPUS_SHORT_LABELS,
+  ensureCampusCatalog,
   gapwiseCampusIdForCampus,
   type GapwiseCampusId,
 } from "@/data/campuses";
@@ -18,7 +19,12 @@ import {
   locationLabel,
   meetingCampus,
 } from "@/lib/timetable-types";
-import { activeCampus, activeUniversity } from "@/universities/registry";
+import {
+  activeCampus,
+  activeUniversity,
+  universityByCampus,
+  universityById,
+} from "@/universities/registry";
 
 type CampusExplorerProps = Omit<
   CampusMapProps,
@@ -48,10 +54,22 @@ export function CampusExplorer({
   onSelectMeeting,
   ...mapProps
 }: CampusExplorerProps) {
-  const university = activeUniversity();
+  const hostCampus = (activeCampus() as GapwiseCampusId | null) ?? null;
+  const inferredCampusId = useMemo(
+    () => gapwiseCampusIdForCampus(inferredCampusForMeetings(mapProps.meetings) ?? "UNKNOWN"),
+    [mapProps.meetings],
+  );
+  const meetingUniId = mapProps.meetings[0]?.universityId;
+  const initialCampusCandidate = selectedCampusId ?? inferredCampusId ?? hostCampus ?? null;
+  const university = useMemo(
+    () =>
+      activeUniversity() ??
+      (initialCampusCandidate ? (universityByCampus(initialCampusCandidate) ?? null) : null) ??
+      (meetingUniId ? (universityById(meetingUniId) ?? null) : null),
+    [initialCampusCandidate, meetingUniId],
+  );
   const campusIds = useMemo(() => (university?.campuses ?? []) as GapwiseCampusId[], [university]);
   const defaultCampus = university?.defaultCampus as GapwiseCampusId | undefined;
-  const hostCampus = (activeCampus() as GapwiseCampusId | null) ?? null;
   const urlCampus = campusIds.includes(selectedCampusId as GapwiseCampusId)
     ? (selectedCampusId as GapwiseCampusId)
     : null;
@@ -71,10 +89,8 @@ export function CampusExplorer({
   const searchRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLElement>(null);
   const previousSelectedMeetingIdRef = useRef(mapProps.selectedMeetingId);
-  const inferredCampusId = useMemo(
-    () => gapwiseCampusIdForCampus(inferredCampusForMeetings(mapProps.meetings) ?? "UNKNOWN"),
-    [mapProps.meetings],
-  );
+  const [, setCatalogLoadedCampus] = useState<string | null>(null);
+
   // Respect an explicit URL/user override, a uniquely inferred schedule campus,
   // or deterministic host campus. An automatically selected first meeting must
   // never turn a genuine multi-campus schedule into an implicit UTM selection.
@@ -82,7 +98,20 @@ export function CampusExplorer({
     campusOverride ??
     inferredCampusId ??
     hostCampus ??
+    urlCampus ??
     (selectedBuildingCode || campusIds.length === 1 ? (defaultCampus ?? null) : null);
+
+  useEffect(() => {
+    if (!activeCampusId) return;
+    let cancelled = false;
+    void ensureCampusCatalog(activeCampusId).then(() => {
+      if (!cancelled) setCatalogLoadedCampus(activeCampusId);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [activeCampusId]);
+
   const activeMeetings = useMemo(
     () =>
       activeCampusId
@@ -265,7 +294,12 @@ export function CampusExplorer({
         campusId={activeCampusId}
         meetings={activeMeetings}
         segments={activeSegments}
-        dayAnchor={activeCampusId === "utm" ? mapProps.dayAnchor : null}
+        dayAnchor={
+          mapProps.dayAnchor &&
+          (!mapProps.dayAnchor.campus || mapProps.dayAnchor.campus.toLowerCase() === activeCampusId)
+            ? mapProps.dayAnchor
+            : null
+        }
         onSelectMeeting={selectMeetingFromMap}
         selectedBuildingCode={selectedBuildingCode}
         onSelectBuilding={selectFromMap}
