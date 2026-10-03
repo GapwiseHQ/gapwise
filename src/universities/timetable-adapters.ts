@@ -358,7 +358,16 @@ export async function loadDemoTimetable(
   adapterId?: string,
   campusId?: string | null,
 ): Promise<Meeting[]> {
-  const loader = adapterId ? demoTimetableLoaders[adapterId] : undefined;
-  if (loader) return loader(campusId ?? undefined);
+  const normalizedCampus = campusId?.toLowerCase();
+  let resolvedAdapterId = adapterId;
+  if (!resolvedAdapterId && normalizedCampus) {
+    const { universityByCampus, universityById } = await import("@/universities/registry");
+    const uni = universityByCampus(normalizedCampus) ?? universityById(normalizedCampus);
+    if (uni?.timetableAdapter) {
+      resolvedAdapterId = uni.timetableAdapter;
+    }
+  }
+  const loader = resolvedAdapterId ? demoTimetableLoaders[resolvedAdapterId] : undefined;
+  if (loader) return loader(normalizedCampus ?? undefined);
   return (await import("@/lib/demo-timetable")).DEMO_MEETINGS;
 }

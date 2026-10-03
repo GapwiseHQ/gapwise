@@ -25,6 +25,9 @@ import {
   universityByCampus,
   universityById,
 } from "@/universities/registry";
+import { loadDemoTimetable } from "@/universities/timetable-adapters";
+import { UTM_ROUTING_GRAPH } from "@/data/utm/campus";
+import { createScheduleTransitionPlanner } from "@/features/routing/transition";
 import manifest from "../universities.json" with { type: "json" };
 
 describe("Campus Maps and Timetable Inference for All Supported Campuses", () => {
@@ -305,5 +308,73 @@ describe("Campus Maps and Timetable Inference for All Supported Campuses", () =>
     );
     expect(crossCampusRoute.status).toBe("unavailable");
     expect(crossCampusRoute.message).toContain("same campus");
+  });
+
+  test("all 16 supported campuses load realistic university-specific demo schedules with campus inference, valid buildings, and routed transitions", async () => {
+    for (const campus of supportedCampuses) {
+      const university = universityById(campus.universityId);
+      expect(university).not.toBeNull();
+      if (!university) continue;
+
+      // 1. Test loading via university adapter and campus
+      const meetingsViaAdapter = await loadDemoTimetable(university.timetableAdapter, campus.id);
+      expect(meetingsViaAdapter.length).toBeGreaterThanOrEqual(6);
+
+      // 2. Test loading dynamically resolved by campus ID alone
+      const meetingsViaCampus = await loadDemoTimetable(undefined, campus.id);
+      expect(meetingsViaCampus.length).toBeGreaterThanOrEqual(6);
+
+      // 3. Verify campus inference
+      const inferredFromAdapter = inferredCampusForMeetings(meetingsViaAdapter);
+      const inferredFromCampus = inferredCampusForMeetings(meetingsViaCampus);
+      expect(inferredFromAdapter).toBe(campus.id.toUpperCase());
+      expect(inferredFromCampus).toBe(campus.id.toUpperCase());
+
+      // 4. Verify all scheduled physical classes have valid physical buildings/rooms and no TBA
+      const scheduledClasses = meetingsViaCampus.filter(
+        (m) => m.locationType === "physical" && !m.notes,
+      );
+      expect(scheduledClasses.length).toBeGreaterThan(0);
+      for (const meeting of scheduledClasses) {
+        expect(meeting.buildingCode).toBeTruthy();
+        expect(meeting.room).toBeTruthy();
+        expect(meeting.locationUnknown).toBe(false);
+      }
+
+      // 5. Verify timetable -> campus inference -> building -> map/routing works
+      // Consecutive meetings on the same day in different buildings must produce a valid route
+      const routingKey = university.id === "uoft" ? campus.id : university.id;
+      const planner =
+        campus.id === "utm"
+          ? createScheduleTransitionPlanner(UTM_ROUTING_GRAPH, meetingsViaCampus)
+          : await getOutdoorCampusTransitionPlanner(routingKey);
+      expect(planner).not.toBeNull();
+
+      const days = [...new Set(meetingsViaCampus.map((m) => m.weekday))];
+      let routedCount = 0;
+
+      for (const day of days) {
+        const dayMeetings = meetingsViaCampus
+          .filter((m) => m.weekday === day && m.buildingCode && !m.notes)
+          .sort((a, b) => a.startTime - b.startTime);
+
+        for (let i = 0; i < dayMeetings.length - 1; i++) {
+          const from = dayMeetings[i]!;
+          const to = dayMeetings[i + 1]!;
+          if (from.buildingCode !== to.buildingCode) {
+            const route = planner!(from, to, {
+              mode: "fastest",
+              walkingSpeedMps: 1.4,
+            });
+            if (route.status === "routed") {
+              routedCount++;
+              expect(route.result?.totalDistanceMeters).toBeGreaterThan(0);
+            }
+          }
+        }
+      }
+
+      expect(routedCount).toBeGreaterThanOrEqual(1);
+    }
   });
 });
