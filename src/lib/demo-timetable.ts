@@ -91,8 +91,8 @@ const ROWS: Row[] = [
     weekday: "Wednesday",
     start: h(12),
     end: h(15),
-    building: null,
-    room: null,
+    building: "CC",
+    room: "1080",
     term: "Fall",
   },
   {
@@ -200,8 +200,8 @@ const ROWS: Row[] = [
     weekday: "Wednesday",
     start: h(14),
     end: h(16),
-    building: null,
-    room: null,
+    building: "KN",
+    room: "120",
     term: "Winter",
   },
   {
