@@ -341,8 +341,8 @@ const CAMPUS_FALLBACK_BOUNDS: Record<string, [[number, number], [number, number]
     [-81.873, 42.45],
   ],
   "guelph-humber": [
-    [-81.614, 43.725],
-    [-81.602, 43.734],
+    [-79.612, 43.724],
+    [-79.6, 43.733],
   ],
   "uottawa-alta-vista": [
     [-75.658, 45.398],
@@ -405,8 +405,8 @@ const CAMPUS_FALLBACK_BOUNDS: Record<string, [[number, number], [number, number]
     [-73.948, 40.769],
   ],
   "dartmouth-lebanon": [
-    [-72.281, 43.662],
-    [-72.268, 43.671],
+    [-72.28, 43.67],
+    [-72.262, 43.68],
   ],
   "brown-jewelry-district": [
     [-71.416, 41.815],
@@ -452,28 +452,14 @@ const CAMPUS_FALLBACK_BOUNDS: Record<string, [[number, number], [number, number]
 };
 
 export const CAMPUS_LABELS: Record<string, string> = {
-  utm: "University of Toronto Mississauga",
-  utsg: "University of Toronto St. George",
-  utsc: "University of Toronto Scarborough",
   ...Object.fromEntries(
-    manifest.universities.flatMap((university) =>
-      university.id === "uoft"
-        ? []
-        : university.campuses.map((campus) => [campus, university.name]),
-    ),
+    manifest.campuses.map((campus) => [campus.id, campus.name]),
   ),
 };
 
 export const CAMPUS_SHORT_LABELS: Record<string, string> = {
-  utm: "UTM",
-  utsg: "UTSG",
-  utsc: "UTSC",
   ...Object.fromEntries(
-    manifest.universities.flatMap((university) =>
-      university.id === "uoft"
-        ? []
-        : university.campuses.map((campus) => [campus, university.shortName]),
-    ),
+    manifest.campuses.map((campus) => [campus.id, campus.shortName]),
   ),
 };
 

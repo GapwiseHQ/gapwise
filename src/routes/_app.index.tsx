@@ -26,10 +26,12 @@ export const Route = createFileRoute("/_app/")({
       campus?.status === "planned" ||
       university?.status === "planned" ||
       university?.dataPaths.length === 0;
+    const hasDedicatedCampusCard =
+      site?.campusId && ["utm", "utsg", "utsc"].includes(site.campusId);
     const image =
       isGlobal || usesGlobalArtwork
         ? `${canonical}og-gapwise.png`
-        : site?.role === "campus-edition"
+        : site?.role === "campus-edition" && hasDedicatedCampusCard
           ? `${canonical}campuses/${site.campusId}/og-card.png`
           : `${canonical}universities/${university?.id}/og-card.png`;
     return {

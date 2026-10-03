@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     const university = activeUniversity();
     const site = activeSite();
     const assetPrefix =
-      university && university.id !== "uoft" && site?.role !== "global"
+      university && site?.role !== "global"
         ? `/universities/${university.id}`
         : "";
     return {

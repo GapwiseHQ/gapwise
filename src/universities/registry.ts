@@ -438,7 +438,12 @@ export function canonicalUrlForUniversity(university: University): string {
 }
 
 export function canonicalUrlForCampus(campus: Campus): string {
-  return `https://${campus.hosts[0]}`;
+  if (campus.hosts && campus.hosts.length > 0) {
+    return `https://${campus.hosts[0]}`;
+  }
+  const university = universityById(campus.universityId);
+  const uniUrl = university ? canonicalUrlForUniversity(university) : "https://gapwise.ca";
+  return `${uniUrl}/?campus=${campus.id}`;
 }
 
 export function universityDirectoryEntries(): UniversityDirectoryEntry[] {
@@ -480,34 +485,38 @@ export function universityDirectoryEntries(): UniversityDirectoryEntry[] {
     if (campuses.length <= 1) return [universityEntry];
     return [
       universityEntry,
-      ...campuses.map((campus): UniversityDirectoryEntry => ({
-        id: campus.id,
-        kind: "campus",
-        university,
-        campus,
-        name: campus.name,
-        shortName: campus.shortName,
-        scope: campus.campusName,
-        location: `${campus.city}, ${campus.region}`,
-        status: campus.status,
-        href: canonicalUrlForCampus(campus),
-        host: campus.hosts[0]!,
-        searchText: normalizeUniversitySearch(
-          [
-            campus.id,
-            campus.name,
-            campus.shortName,
-            campus.campusName,
-            campus.city,
-            campus.region,
-            campus.country,
-            campus.hosts[0],
-            ...campus.aliases,
-            university.name,
-            university.shortName,
-          ].join(" "),
-        ),
-      })),
+      ...campuses.map((campus): UniversityDirectoryEntry => {
+        const campusHref = canonicalUrlForCampus(campus);
+        const campusHost = campus.hosts[0] ?? campusHref.replace(/^https:\/\//, "");
+        return {
+          id: campus.id,
+          kind: "campus",
+          university,
+          campus,
+          name: campus.name,
+          shortName: campus.shortName,
+          scope: campus.campusName,
+          location: `${campus.city}, ${campus.region}`,
+          status: campus.status,
+          href: campusHref,
+          host: campusHost,
+          searchText: normalizeUniversitySearch(
+            [
+              campus.id,
+              campus.name,
+              campus.shortName,
+              campus.campusName,
+              campus.city,
+              campus.region,
+              campus.country,
+              campusHost,
+              ...campus.aliases,
+              university.name,
+              university.shortName,
+            ].join(" "),
+          ),
+        };
+      }),
     ];
   });
 }

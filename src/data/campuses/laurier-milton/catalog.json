@@ -15,70 +15,25 @@
   },
   "sources": [
     {
-      "id": "src-laurier-milton",
-      "title": "Wilfrid Laurier University Milton Campus Plan",
-      "url": "https://www.wlu.ca/about/campuses-and-locations/milton-campus.html",
-      "retrievedAt": "2026-09-26",
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org",
+      "retrievedAt": "2026-10-03",
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
-      "transformation": "Extracted official campus building footprints, verified entrance nodes, and outdoor pedestrian pathways",
-      "attribution": "© OpenStreetMap contributors"
+      "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
+      "attribution": "\u00a9 OpenStreetMap contributors"
     }
   ],
   "buildings": [
     {
-      "id": "laurier-milton-academic",
-      "name": "Milton Academic Building",
+      "id": "laurier-1015-bronte-street-south",
+      "name": "1015 Bronte Street South",
       "nativeCodes": [
-        "MAB"
+        "1BSS"
       ],
       "aliases": [
-        "Milton Academic Building"
-      ],
-      "category": "academic",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -79.86585,
-              43.48775
-            ],
-            [
-              -79.86515,
-              43.48775
-            ],
-            [
-              -79.86515,
-              43.48825
-            ],
-            [
-              -79.86585,
-              43.48825
-            ],
-            [
-              -79.86585,
-              43.48775
-            ]
-          ]
-        ]
-      },
-      "provenance": [
-        {
-          "sourceId": "src-laurier-milton",
-          "nativeId": "laurier-milton-academic",
-          "verification": "source-backed"
-        }
-      ]
-    },
-    {
-      "id": "laurier-milton-innovation",
-      "name": "Milton Innovation Pavilion",
-      "nativeCodes": [
-        "MIP"
-      ],
-      "aliases": [
-        "Milton Innovation Pavilion"
+        "1015 Bronte Street South"
       ],
       "category": "residence",
       "geometry": {
@@ -86,44 +41,41 @@
         "coordinates": [
           [
             [
-              -79.86485,
-              43.48825
+              -79.8593693,
+              43.4879125
             ],
             [
-              -79.86415,
-              43.48825
+              -79.8595994,
+              43.487695
             ],
             [
-              -79.86415,
-              43.48875
+              -79.8597814,
+              43.4878117
             ],
             [
-              -79.86485,
-              43.48875
+              -79.8595521,
+              43.4880221
             ],
             [
-              -79.86485,
-              43.48825
+              -79.8595017,
+              43.4879913
+            ],
+            [
+              -79.8593693,
+              43.4879125
             ]
           ]
         ]
-      },
-      "provenance": [
-        {
-          "sourceId": "src-laurier-milton",
-          "nativeId": "laurier-milton-innovation",
-          "verification": "source-backed"
-        }
-      ]
+      }
     },
     {
-      "id": "laurier-halton-commons",
-      "name": "Halton Student Commons",
+      "id": "laurier-lcbo",
+      "name": "LCBO",
       "nativeCodes": [
-        "HSC"
+        "LCBO"
       ],
       "aliases": [
-        "Halton Student Commons"
+        "LCBO"
       ],
       "category": "facility",
       "geometry": {
@@ -131,212 +83,157 @@
         "coordinates": [
           [
             [
-              -79.86685,
-              43.48725
+              -79.8590077,
+              43.4883344
             ],
             [
-              -79.86615,
-              43.48725
+              -79.8588134,
+              43.4882373
             ],
             [
-              -79.86615,
-              43.48775
+              -79.8585737,
+              43.4884908
             ],
             [
-              -79.86685,
-              43.48775
+              -79.8588795,
+              43.4886679
             ],
             [
-              -79.86685,
-              43.48725
+              -79.8588963,
+              43.4886493
+            ],
+            [
+              -79.8588379,
+              43.4886092
+            ],
+            [
+              -79.8590827,
+              43.4883821
+            ],
+            [
+              -79.8590077,
+              43.4883344
             ]
           ]
         ]
-      },
-      "provenance": [
-        {
-          "sourceId": "src-laurier-milton",
-          "nativeId": "laurier-halton-commons",
-          "verification": "source-backed"
-        }
-      ]
+      }
     },
     {
-      "id": "laurier-milton-education",
-      "name": "Milton Education Centre",
+      "id": "laurier-1075-bronte-street-south",
+      "name": "1075 Bronte Street South",
       "nativeCodes": [
-        "MED"
+        "1075"
       ],
       "aliases": [
-        "Milton Education Centre"
+        "1075 Bronte Street South"
       ],
-      "category": "academic",
+      "category": "facility",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -79.86385,
-              43.48875
+              -79.8590579,
+              43.4874977
             ],
             [
-              -79.86315,
-              43.48875
+              -79.8588837,
+              43.4873888
             ],
             [
-              -79.86315,
-              43.48925
+              -79.8590105,
+              43.487282
             ],
             [
-              -79.86385,
-              43.48925
+              -79.8592421,
+              43.4874268
             ],
             [
-              -79.86385,
-              43.48875
+              -79.8591182,
+              43.4875311
+            ],
+            [
+              -79.8591009,
+              43.4875203
+            ],
+            [
+              -79.8590625,
+              43.4875526
+            ],
+            [
+              -79.8590224,
+              43.4875276
+            ],
+            [
+              -79.8590579,
+              43.4874977
             ]
           ]
         ]
-      },
-      "provenance": [
-        {
-          "sourceId": "src-laurier-milton",
-          "nativeId": "laurier-milton-education",
-          "verification": "source-backed"
-        }
-      ]
+      }
     },
     {
-      "id": "laurier-milton-tech",
-      "name": "Milton Technology Ring",
+      "id": "laurier-805-bronte-street-south",
+      "name": "805 Bronte Street South",
       "nativeCodes": [
-        "MTR"
+        "8BSS"
       ],
       "aliases": [
-        "Milton Technology Ring"
+        "805 Bronte Street South"
       ],
-      "category": "academic",
+      "category": "facility",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -79.86735,
-              43.48675
+              -79.8661773,
+              43.4928249
             ],
             [
-              -79.86665,
-              43.48675
+              -79.8662657,
+              43.4927589
             ],
             [
-              -79.86665,
-              43.48725
+              -79.8661804,
+              43.4926988
             ],
             [
-              -79.86735,
-              43.48725
+              -79.8662176,
+              43.4926711
             ],
             [
-              -79.86735,
-              43.48675
+              -79.8661323,
+              43.4926111
+            ],
+            [
+              -79.866075,
+              43.4926539
+            ],
+            [
+              -79.8660303,
+              43.4926225
+            ],
+            [
+              -79.8659406,
+              43.4926895
+            ],
+            [
+              -79.8660097,
+              43.4927382
+            ],
+            [
+              -79.8660313,
+              43.492722
+            ],
+            [
+              -79.8661773,
+              43.4928249
             ]
           ]
         ]
-      },
-      "provenance": [
-        {
-          "sourceId": "src-laurier-milton",
-          "nativeId": "laurier-milton-tech",
-          "verification": "source-backed"
-        }
-      ]
+      }
     }
   ],
-  "entrances": [
-    {
-      "id": "ent-laurier-milton-laurier-milton-academic",
-      "buildingId": "laurier-milton-academic",
-      "coordinate": [
-        -79.8655,
-        43.48775
-      ],
-      "pathNodeId": "node-ent-laurier-milton-0",
-      "access": "public",
-      "provenance": [
-        {
-          "sourceId": "src-laurier-milton",
-          "nativeId": "ent-laurier-milton-laurier-milton-academic",
-          "verification": "field-reviewed"
-        }
-      ]
-    },
-    {
-      "id": "ent-laurier-milton-laurier-milton-innovation",
-      "buildingId": "laurier-milton-innovation",
-      "coordinate": [
-        -79.8645,
-        43.48825
-      ],
-      "pathNodeId": "node-ent-laurier-milton-1",
-      "access": "public",
-      "provenance": [
-        {
-          "sourceId": "src-laurier-milton",
-          "nativeId": "ent-laurier-milton-laurier-milton-innovation",
-          "verification": "field-reviewed"
-        }
-      ]
-    },
-    {
-      "id": "ent-laurier-milton-laurier-halton-commons",
-      "buildingId": "laurier-halton-commons",
-      "coordinate": [
-        -79.8665,
-        43.48725
-      ],
-      "pathNodeId": "node-ent-laurier-milton-2",
-      "access": "public",
-      "provenance": [
-        {
-          "sourceId": "src-laurier-milton",
-          "nativeId": "ent-laurier-milton-laurier-halton-commons",
-          "verification": "field-reviewed"
-        }
-      ]
-    },
-    {
-      "id": "ent-laurier-milton-laurier-milton-education",
-      "buildingId": "laurier-milton-education",
-      "coordinate": [
-        -79.8635,
-        43.48875
-      ],
-      "pathNodeId": "node-ent-laurier-milton-3",
-      "access": "public",
-      "provenance": [
-        {
-          "sourceId": "src-laurier-milton",
-          "nativeId": "ent-laurier-milton-laurier-milton-education",
-          "verification": "field-reviewed"
-        }
-      ]
-    },
-    {
-      "id": "ent-laurier-milton-laurier-milton-tech",
-      "buildingId": "laurier-milton-tech",
-      "coordinate": [
-        -79.867,
-        43.48675
-      ],
-      "pathNodeId": "node-ent-laurier-milton-4",
-      "access": "public",
-      "provenance": [
-        {
-          "sourceId": "src-laurier-milton",
-          "nativeId": "ent-laurier-milton-laurier-milton-tech",
-          "verification": "field-reviewed"
-        }
-      ]
-    }
-  ]
+  "entrances": []
 }
