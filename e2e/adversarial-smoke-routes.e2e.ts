@@ -5,13 +5,13 @@ const targets = [
   { id: "uoft", query: "", name: "University of Toronto", sampleCourse: "DEM101H5" },
   {
     id: "guelph",
-    query: "?site=guelph-guelph",
+    query: "?university=guelph",
     name: "University of Guelph",
     sampleCourse: "CIS 1300",
   },
   {
     id: "mcmaster",
-    query: "?site=mcmaster-mcmaster",
+    query: "?university=mcmaster",
     name: "McMaster University",
     sampleCourse: "COMPSCI 1MD3",
   },
@@ -23,7 +23,7 @@ const targets = [
   },
   {
     id: "brock",
-    query: "?site=brock-brock",
+    query: "?university=brock",
     name: "Brock University",
     sampleCourse: "COSC 1P02",
   },

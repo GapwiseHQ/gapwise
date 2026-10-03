@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 import manifest from "../universities.json" with { type: "json" };
-import { watchForAppFailures } from "./helpers";
+import { editionUrl, watchForAppFailures } from "./helpers";
 
 test.use({ serviceWorkers: "block" });
 
@@ -34,14 +34,14 @@ test("newly mapped campus hosts publish complete supported capabilities", async 
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto("/?site=harvard-harvard-cambridge");
+  await page.goto(editionUrl(baseURL, "harvard"));
   await expect(
-    page.getByRole("heading", { name: "Make every gap at Harvard Cambridge count." }),
+    page.getByRole("heading", { name: "See the time between Harvard classes more clearly." }),
   ).toBeVisible();
-  await expect(page).toHaveTitle("Gapwise for Harvard University Cambridge Campus");
+  await expect(page).toHaveTitle("Gapwise for Harvard University");
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     "href",
-    "https://harvard-cambridge.gapwise.ca/",
+    "https://harvard.gapwise.ca/",
   );
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
     "content",
@@ -79,7 +79,7 @@ test("global university chooser finds registry aliases and direct campus edition
     ["mcgill", /McGill University/, "https://mcgill.gapwise.ca"],
     ["waterloo", /University of Waterloo/, "https://waterloo.gapwise.ca"],
     ["york", /York University/, "https://york.gapwise.ca"],
-    ["laurier", /Wilfrid Laurier University/, "https://laurier-waterloo.gapwise.ca"],
+    ["laurier", /Wilfrid Laurier University/, "https://laurier.gapwise.ca"],
     ["metropolitan", /Toronto Metropolitan University/, "https://tmu.gapwise.ca"],
     ["tmu", /Toronto Metropolitan University/, "https://tmu.gapwise.ca"],
   ] as const) {
@@ -403,7 +403,7 @@ for (const viewport of [
   { width: 390, height: 844 },
   { width: 1440, height: 900 },
 ]) {
-  test(`campus hero is usable without horizontal overflow at ${viewport.width}px`, async ({
+  test(`university hero is usable without horizontal overflow at ${viewport.width}px`, async ({
     page,
     baseURL,
   }) => {
@@ -411,7 +411,7 @@ for (const viewport of [
     if (!baseURL) throw new Error("Playwright baseURL is required");
     await page.setViewportSize(viewport);
     const failures = watchForAppFailures(page, baseURL);
-    await page.goto("/?site=carleton-carleton");
+    await page.goto("/?university=carleton");
     await expect(page.getByRole("button", { name: "Try the Carleton demo" })).toBeVisible();
     const layout = await page.evaluate(() => ({
       documentWidth: document.documentElement.scrollWidth,
