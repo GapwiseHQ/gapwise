@@ -21,11 +21,11 @@
       "canonicalHost": "uoft.gapwise.ca",
       "universityId": "uoft",
       "presentation": {
-        "accentColor": "#4EA7FE",
+        "accentColor": "#1E4B87",
         "heroEyebrow": "Gapwise for University of Toronto",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all University of Toronto campuses.",
+        "heroDescription": "Choose UTM, UTSG, or UTSC for a timetable, campus map, building search, and routing experience grounded in that campus.",
         "ogTitle": "Gapwise for University of Toronto",
-        "ogDescription": "Multi-campus timetable and navigation platform for University of Toronto."
+        "ogDescription": "The Gapwise tri-campus hub for UTM, UTSG, and UTSC."
       }
     },
     {
@@ -49,7 +49,11 @@
           "description": "Bring your ACORN timetable into a UTM-specific workspace for classes, between-class time, building discovery, and routes across the Mississauga campus.",
           "seoTitle": "Gapwise for University of Toronto Mississauga",
           "seoDescription": "UTM timetable planning, Mississauga campus building search, gap planning, and pedestrian routing.",
-          "stats": { "buildings": 30, "entrances": 44, "pathSegments": 2546 },
+          "stats": {
+            "buildings": 30,
+            "entrances": 44,
+            "pathSegments": 2546
+          },
           "example": {
             "day": "Tuesday",
             "courseCode": "CSC108H5",
@@ -86,7 +90,11 @@
           "description": "Connect your ACORN timetable to a St. George-specific view of classes, useful gaps, building search, and routes across the downtown campus.",
           "seoTitle": "Gapwise for University of Toronto St. George",
           "seoDescription": "UTSG timetable planning, St. George campus building search, gap planning, and pedestrian routing.",
-          "stats": { "buildings": 166, "entrances": 131, "pathSegments": 9805 },
+          "stats": {
+            "buildings": 166,
+            "entrances": 131,
+            "pathSegments": 9805
+          },
           "example": {
             "day": "Monday",
             "courseCode": "CSC108H1",
@@ -123,7 +131,11 @@
           "description": "Bring your ACORN timetable into a Scarborough-specific workspace for classes, open time, building discovery, and campus walking routes.",
           "seoTitle": "Gapwise for University of Toronto Scarborough",
           "seoDescription": "UTSC timetable planning, Scarborough campus building search, gap planning, and pedestrian routing.",
-          "stats": { "buildings": 54, "entrances": 29, "pathSegments": 2184 },
+          "stats": {
+            "buildings": 54,
+            "entrances": 29,
+            "pathSegments": 2184
+          },
           "example": {
             "day": "Monday",
             "courseCode": "CSCA08H3",
@@ -140,354 +152,103 @@
       }
     },
     {
-      "id": "carleton-hub",
-      "role": "university-hub",
+      "id": "carleton-edition",
+      "role": "single-campus-edition",
       "hosts": ["carleton.gapwise.ca"],
       "canonicalHost": "carleton.gapwise.ca",
       "universityId": "carleton",
-      "presentation": {
-        "accentColor": "#E31B23",
-        "heroEyebrow": "Gapwise for Carleton University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Carleton University campuses.",
-        "ogTitle": "Gapwise for Carleton University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Carleton University."
-      }
+      "campusId": "carleton"
     },
     {
-      "id": "carleton-carleton",
-      "role": "campus-edition",
-      "hosts": ["cu-ottawa.gapwise.ca"],
-      "canonicalHost": "cu-ottawa.gapwise.ca",
-      "universityId": "carleton",
-      "campusId": "carleton",
-      "name": "Carleton University Ottawa Campus",
-      "shortName": "Carleton",
-      "presentation": {
-        "accentColor": "#E31B23",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Carleton University Ottawa Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Carleton.",
-        "visualLabel": "Carleton"
-      }
-    },
-    {
-      "id": "carleton-carleton-dominion-chalmers",
-      "role": "campus-edition",
-      "hosts": ["carleton-dominion-chalmers.gapwise.ca"],
-      "canonicalHost": "carleton-dominion-chalmers.gapwise.ca",
-      "universityId": "carleton",
-      "campusId": "carleton-dominion-chalmers",
-      "name": "Carleton Dominion-Chalmers Centre",
-      "shortName": "Dominion-Chalmers",
-      "presentation": {
-        "accentColor": "#E31B23",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Carleton Dominion-Chalmers Centre.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Dominion-Chalmers.",
-        "visualLabel": "Dominion-Chalmers",
-        "marketing": {
-          "campusName": "Dominion-Chalmers Centre",
-          "headline": "Make every gap at Dominion-Chalmers count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Carleton Dominion-Chalmers Centre.",
-          "seoTitle": "Gapwise for Carleton Dominion-Chalmers Centre",
-          "seoDescription": "Dominion-Chalmers timetable planning, campus building discovery, and pedestrian routing in Ottawa.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "CDCC 101",
-            "buildingCode": "CDCC",
-            "buildingName": "Carleton Dominion-Chalmers Centre",
-            "room": "101",
-            "nextCourseCode": "CH 102",
-            "nextBuildingCode": "CH",
-            "nextBuildingName": "Chalmers Main Performance Hall",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Carleton Dominion-Chalmers Centre",
-            "Chalmers Main Performance Hall",
-            "Woodside Arts Hall"
-          ]
-        }
-      }
-    },
-    {
-      "id": "tmu-hub",
-      "role": "university-hub",
+      "id": "tmu-edition",
+      "role": "single-campus-edition",
       "hosts": ["tmu.gapwise.ca"],
       "canonicalHost": "tmu.gapwise.ca",
       "universityId": "tmu",
-      "presentation": {
-        "accentColor": "#0284c7",
-        "heroEyebrow": "Gapwise for Toronto Metropolitan University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Toronto Metropolitan University campuses.",
-        "ogTitle": "Gapwise for Toronto Metropolitan University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Toronto Metropolitan University."
-      }
+      "campusId": "tmu"
     },
     {
-      "id": "tmu-tmu",
-      "role": "campus-edition",
-      "hosts": ["tmu-downtown.gapwise.ca"],
-      "canonicalHost": "tmu-downtown.gapwise.ca",
-      "universityId": "tmu",
-      "campusId": "tmu",
-      "name": "Toronto Metropolitan University Downtown Campus",
-      "shortName": "TMU",
-      "presentation": {
-        "accentColor": "#0284c7",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Toronto Metropolitan University Downtown Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at TMU.",
-        "visualLabel": "TMU"
-      }
-    },
-    {
-      "id": "tmu-tmu-brampton",
-      "role": "campus-edition",
-      "hosts": ["tmu-brampton.gapwise.ca"],
-      "canonicalHost": "tmu-brampton.gapwise.ca",
-      "universityId": "tmu",
-      "campusId": "tmu-brampton",
-      "name": "Toronto Metropolitan University Brampton Campus",
-      "shortName": "Brampton",
-      "presentation": {
-        "accentColor": "#0284c7",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Toronto Metropolitan University Brampton Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Brampton.",
-        "visualLabel": "Brampton",
-        "marketing": {
-          "campusName": "Brampton campus",
-          "headline": "Make every gap at Brampton count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Toronto Metropolitan University Brampton Campus.",
-          "seoTitle": "Gapwise for Toronto Metropolitan University Brampton Campus",
-          "seoDescription": "Brampton timetable planning, campus building discovery, and pedestrian routing in Brampton.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "BMB 101",
-            "buildingCode": "BMB",
-            "buildingName": "Bramalea Medical Building",
-            "room": "101",
-            "nextCourseCode": "BAH 102",
-            "nextBuildingCode": "BAH",
-            "nextBuildingName": "Brampton Academic Hall",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Bramalea Medical Building",
-            "Brampton Academic Hall",
-            "Brampton Health Sciences Centre"
-          ]
-        }
-      }
-    },
-    {
-      "id": "queens-hub",
-      "role": "university-hub",
+      "id": "queens-edition",
+      "role": "single-campus-edition",
       "hosts": ["queens.gapwise.ca"],
       "canonicalHost": "queens.gapwise.ca",
       "universityId": "queens",
-      "presentation": {
-        "accentColor": "#f59e0b",
-        "heroEyebrow": "Gapwise for Queen's University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Queen's University campuses.",
-        "ogTitle": "Gapwise for Queen's University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Queen's University."
-      }
+      "campusId": "queens"
     },
     {
-      "id": "queens-queens",
-      "role": "campus-edition",
-      "hosts": ["queens-main.gapwise.ca"],
-      "canonicalHost": "queens-main.gapwise.ca",
-      "universityId": "queens",
-      "campusId": "queens",
-      "name": "Queen's University Kingston Campus",
-      "shortName": "Queen's",
-      "presentation": {
-        "accentColor": "#f59e0b",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Queen's University Kingston Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Queen's.",
-        "visualLabel": "Queen's"
-      }
-    },
-    {
-      "id": "queens-queens-west",
-      "role": "campus-edition",
-      "hosts": ["queens-west.gapwise.ca"],
-      "canonicalHost": "queens-west.gapwise.ca",
-      "universityId": "queens",
-      "campusId": "queens-west",
-      "name": "Queen's University West Campus",
-      "shortName": "West Campus",
-      "presentation": {
-        "accentColor": "#f59e0b",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Queen's University West Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at West Campus.",
-        "visualLabel": "West Campus",
-        "marketing": {
-          "campusName": "West campus",
-          "headline": "Make every gap at West Campus count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Queen's University West Campus.",
-          "seoTitle": "Gapwise for Queen's University West Campus",
-          "seoDescription": "West Campus timetable planning, campus building discovery, and pedestrian routing in Kingston.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "MAC 101",
-            "buildingCode": "MAC",
-            "buildingName": "Duncan McArthur Hall",
-            "room": "101",
-            "nextCourseCode": "JRH 102",
-            "nextBuildingCode": "JRH",
-            "nextBuildingName": "Jean Royce Hall",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Duncan McArthur Hall",
-            "Jean Royce Hall",
-            "Richardson Memorial Stadium"
-          ]
-        }
-      }
-    },
-    {
-      "id": "laurier-hub",
-      "role": "university-hub",
+      "id": "laurier-edition",
+      "role": "single-campus-edition",
       "hosts": ["laurier.gapwise.ca"],
       "canonicalHost": "laurier.gapwise.ca",
       "universityId": "laurier",
-      "presentation": {
-        "accentColor": "#8b5cf6",
-        "heroEyebrow": "Gapwise for Wilfrid Laurier University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Wilfrid Laurier University campuses.",
-        "ogTitle": "Gapwise for Wilfrid Laurier University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Wilfrid Laurier University."
-      }
+      "campusId": "waterloo"
     },
     {
-      "id": "laurier-waterloo",
-      "role": "campus-edition",
-      "hosts": ["laurier-waterloo.gapwise.ca"],
-      "canonicalHost": "laurier-waterloo.gapwise.ca",
-      "universityId": "laurier",
-      "campusId": "waterloo",
-      "name": "Wilfrid Laurier University Waterloo Campus",
-      "shortName": "Laurier",
-      "presentation": {
-        "accentColor": "#8b5cf6",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Wilfrid Laurier University Waterloo Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Laurier.",
-        "visualLabel": "Laurier"
-      }
+      "id": "ubc-hub",
+      "role": "university-hub",
+      "hosts": ["ubc.gapwise.ca"],
+      "canonicalHost": "ubc.gapwise.ca",
+      "universityId": "ubc"
     },
     {
-      "id": "laurier-laurier-brantford",
+      "id": "ubc-vancouver",
       "role": "campus-edition",
-      "hosts": ["laurier-brantford.gapwise.ca"],
-      "canonicalHost": "laurier-brantford.gapwise.ca",
-      "universityId": "laurier",
-      "campusId": "laurier-brantford",
-      "name": "Wilfrid Laurier University Brantford Campus",
-      "shortName": "Brantford",
+      "hosts": ["ubcv.gapwise.ca"],
+      "canonicalHost": "ubcv.gapwise.ca",
+      "universityId": "ubc",
+      "campusId": "ubc-vancouver",
+      "name": "UBC Vancouver",
+      "shortName": "UBCV",
       "presentation": {
-        "accentColor": "#8b5cf6",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Wilfrid Laurier University Brantford Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Brantford.",
-        "visualLabel": "Brantford",
         "marketing": {
-          "campusName": "Brantford campus",
-          "headline": "Make every gap at Brantford count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Wilfrid Laurier University Brantford Campus.",
-          "seoTitle": "Gapwise for Wilfrid Laurier University Brantford Campus",
-          "seoDescription": "Brantford timetable planning, campus building discovery, and pedestrian routing in Brantford.",
+          "campusName": "Vancouver / Point Grey campus",
+          "headline": "Plan the distance between UBC Vancouver classes.",
+          "description": "Turn Workday course rows into a Point Grey campus plan with building discovery, gap-aware timing, and pedestrian routing. UBC Okanagan is not yet supported.",
+          "seoTitle": "Gapwise for UBC Vancouver",
+          "seoDescription": "UBC Vancouver timetable planning, Point Grey campus building search, gap planning, and pedestrian routing.",
           "stats": {
-            "buildings": 7,
-            "entrances": 7,
-            "pathSegments": 38
+            "buildings": 236,
+            "entrances": 905,
+            "pathSegments": 11182
           },
           "example": {
-            "day": "Monday",
-            "courseCode": "CB 101",
-            "buildingCode": "CB",
-            "buildingName": "Carnegie Building",
-            "room": "101",
-            "nextCourseCode": "GRH 102",
-            "nextBuildingCode": "GRH",
-            "nextBuildingName": "Grand River Hall",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Carnegie Building", "Grand River Hall", "One Market"]
-        }
-      }
-    },
-    {
-      "id": "laurier-laurier-milton",
-      "role": "campus-edition",
-      "hosts": ["laurier-milton.gapwise.ca"],
-      "canonicalHost": "laurier-milton.gapwise.ca",
-      "universityId": "laurier",
-      "campusId": "laurier-milton",
-      "name": "Wilfrid Laurier University Milton Campus",
-      "shortName": "Milton",
-      "presentation": {
-        "accentColor": "#8b5cf6",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Wilfrid Laurier University Milton Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Milton.",
-        "visualLabel": "Milton",
-        "marketing": {
-          "campusName": "Milton campus",
-          "headline": "Make every gap at Milton count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Wilfrid Laurier University Milton Campus.",
-          "seoTitle": "Gapwise for Wilfrid Laurier University Milton Campus",
-          "seoDescription": "Milton timetable planning, campus building discovery, and pedestrian routing in Milton.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "MAB 101",
-            "buildingCode": "MAB",
-            "buildingName": "Milton Academic Building",
-            "room": "101",
-            "nextCourseCode": "MIP 102",
-            "nextBuildingCode": "MIP",
-            "nextBuildingName": "Milton Innovation Pavilion",
-            "nextRoom": "201"
+            "day": "Wednesday",
+            "courseCode": "CPSC 110",
+            "buildingCode": "ICCS",
+            "buildingName": "Computer Science Building",
+            "room": "X836",
+            "nextCourseCode": "ENGL 110",
+            "nextBuildingCode": "BUCH",
+            "nextBuildingName": "Buchanan Building",
+            "nextRoom": "A101"
           },
           "searchExamples": [
-            "Milton Academic Building",
-            "Milton Innovation Pavilion",
-            "Halton Student Commons"
+            "Irving K. Barber Library",
+            "Buchanan Building",
+            "Life Sciences Centre"
           ]
-        }
+        },
+        "accentColor": "#002145",
+        "visualLabel": "Vancouver / Point Grey",
+        "cardDescription": "Supported timetable planning, building search, and routing at UBC Vancouver."
       }
+    },
+    {
+      "id": "ubc-okanagan",
+      "role": "campus-edition",
+      "hosts": ["ubco.gapwise.ca"],
+      "canonicalHost": "ubco.gapwise.ca",
+      "universityId": "ubc",
+      "name": "UBC Okanagan",
+      "shortName": "UBCO",
+      "campusId": "ubc-okanagan"
     },
     {
       "id": "york-hub",
       "role": "university-hub",
       "hosts": ["york.gapwise.ca"],
       "canonicalHost": "york.gapwise.ca",
-      "universityId": "york",
-      "presentation": {
-        "accentColor": "#E31837",
-        "heroEyebrow": "Gapwise for York University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all York University campuses.",
-        "ogTitle": "Gapwise for York University",
-        "ogDescription": "Multi-campus timetable and navigation platform for York University."
-      }
+      "universityId": "york"
     },
     {
       "id": "york-keele",
@@ -499,11 +260,90 @@
       "name": "York University Keele Campus",
       "shortName": "Keele",
       "presentation": {
+        "marketing": {
+          "campusName": "Keele campus",
+          "headline": "Keep your Keele campus day connected.",
+          "description": "Pair your York schedule with Keele campus building discovery, gap planning, and routes between Lassonde, Curtis Lecture Halls, and beyond.",
+          "seoTitle": "Gapwise for York University",
+          "seoDescription": "York University timetable planning, Keele campus search, gap planning, and pedestrian routing.",
+          "stats": {
+            "buildings": 37,
+            "entrances": 98,
+            "pathSegments": 4417
+          },
+          "example": {
+            "day": "Wednesday",
+            "courseCode": "EECS 1022",
+            "buildingCode": "LAS",
+            "buildingName": "Lassonde Building",
+            "room": "1005",
+            "nextCourseCode": "MATH 1013",
+            "nextBuildingCode": "CLH",
+            "nextBuildingName": "Curtis Lecture Halls",
+            "nextRoom": "A"
+          },
+          "searchExamples": ["Vari Hall", "Scott Library", "Bergeron Centre"]
+        },
         "accentColor": "#E31837",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across York University Keele Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Keele.",
-        "visualLabel": "Keele"
+        "visualLabel": "Keele",
+        "cardDescription": "Supported timetable planning, building search, and routing at York Keele."
       }
+    },
+    {
+      "id": "mcmaster-edition",
+      "role": "single-campus-edition",
+      "hosts": ["mcmaster.gapwise.ca"],
+      "canonicalHost": "mcmaster.gapwise.ca",
+      "universityId": "mcmaster",
+      "campusId": "mcmaster"
+    },
+    {
+      "id": "western-edition",
+      "role": "single-campus-edition",
+      "hosts": ["western.gapwise.ca"],
+      "canonicalHost": "western.gapwise.ca",
+      "universityId": "western",
+      "campusId": "western"
+    },
+    {
+      "id": "guelph-edition",
+      "role": "single-campus-edition",
+      "hosts": ["guelph.gapwise.ca"],
+      "canonicalHost": "guelph.gapwise.ca",
+      "universityId": "guelph",
+      "campusId": "guelph"
+    },
+    {
+      "id": "uottawa-edition",
+      "role": "single-campus-edition",
+      "hosts": ["uottawa.gapwise.ca"],
+      "canonicalHost": "uottawa.gapwise.ca",
+      "universityId": "uottawa",
+      "campusId": "uottawa"
+    },
+    {
+      "id": "brock-edition",
+      "role": "single-campus-edition",
+      "hosts": ["brock.gapwise.ca"],
+      "canonicalHost": "brock.gapwise.ca",
+      "universityId": "brock",
+      "campusId": "brock"
+    },
+    {
+      "id": "waterloo-edition",
+      "role": "single-campus-edition",
+      "hosts": ["waterloo.gapwise.ca"],
+      "canonicalHost": "waterloo.gapwise.ca",
+      "universityId": "waterloo",
+      "campusId": "waterloo-main"
+    },
+    {
+      "id": "mcgill-edition",
+      "role": "single-campus-edition",
+      "hosts": ["mcgill.gapwise.ca"],
+      "canonicalHost": "mcgill.gapwise.ca",
+      "universityId": "mcgill",
+      "campusId": "mcgill-downtown"
     },
     {
       "id": "york-glendon",
@@ -511,39 +351,9 @@
       "hosts": ["glendon.gapwise.ca"],
       "canonicalHost": "glendon.gapwise.ca",
       "universityId": "york",
-      "campusId": "glendon",
       "name": "York University Glendon Campus",
       "shortName": "Glendon",
-      "presentation": {
-        "accentColor": "#E31837",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across York University Glendon Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Glendon.",
-        "visualLabel": "Glendon",
-        "marketing": {
-          "campusName": "Glendon campus",
-          "headline": "Make every gap at Glendon count.",
-          "description": "Plan classes, buildings, routes, and time between classes across York University Glendon Campus.",
-          "seoTitle": "Gapwise for York University Glendon Campus",
-          "seoDescription": "Glendon timetable planning, campus building discovery, and pedestrian routing in Toronto.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "YH 101",
-            "buildingCode": "YH",
-            "buildingName": "York Hall",
-            "room": "101",
-            "nextCourseCode": "FL 102",
-            "nextBuildingCode": "FL",
-            "nextBuildingName": "Leslie Frost Library",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["York Hall", "Leslie Frost Library", "Proctor Field House"]
-        }
-      }
+      "campusId": "glendon"
     },
     {
       "id": "york-markham",
@@ -551,2345 +361,139 @@
       "hosts": ["markham.gapwise.ca"],
       "canonicalHost": "markham.gapwise.ca",
       "universityId": "york",
-      "campusId": "markham",
       "name": "York University Markham Campus",
       "shortName": "Markham",
-      "presentation": {
-        "accentColor": "#E31837",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across York University Markham Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Markham.",
-        "visualLabel": "Markham",
-        "marketing": {
-          "campusName": "Markham campus",
-          "headline": "Make every gap at Markham count.",
-          "description": "Plan classes, buildings, routes, and time between classes across York University Markham Campus.",
-          "seoTitle": "Gapwise for York University Markham Campus",
-          "seoDescription": "Markham timetable planning, campus building discovery, and pedestrian routing in Markham.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "MCAB 101",
-            "buildingCode": "MCAB",
-            "buildingName": "Markham Academic Building",
-            "room": "101",
-            "nextCourseCode": "MSC 102",
-            "nextBuildingCode": "MSC",
-            "nextBuildingName": "Markham Student Centre",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Markham Academic Building",
-            "Markham Student Centre",
-            "Markham Innovation Hub"
-          ]
-        }
-      }
+      "campusId": "markham"
     },
     {
-      "id": "mcmaster-hub",
-      "role": "university-hub",
-      "hosts": ["mcmaster.gapwise.ca"],
-      "canonicalHost": "mcmaster.gapwise.ca",
-      "universityId": "mcmaster",
-      "presentation": {
-        "accentColor": "#7A003C",
-        "heroEyebrow": "Gapwise for McMaster University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all McMaster University campuses.",
-        "ogTitle": "Gapwise for McMaster University",
-        "ogDescription": "Multi-campus timetable and navigation platform for McMaster University."
-      }
-    },
-    {
-      "id": "mcmaster-mcmaster",
-      "role": "campus-edition",
-      "hosts": ["mcmaster-main.gapwise.ca"],
-      "canonicalHost": "mcmaster-main.gapwise.ca",
-      "universityId": "mcmaster",
-      "campusId": "mcmaster",
-      "name": "McMaster University Hamilton Campus",
-      "shortName": "McMaster",
-      "presentation": {
-        "accentColor": "#7A003C",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across McMaster University Hamilton Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at McMaster.",
-        "visualLabel": "McMaster"
-      }
-    },
-    {
-      "id": "mcmaster-mcmaster-burlington",
-      "role": "campus-edition",
-      "hosts": ["mcmaster-burlington.gapwise.ca"],
-      "canonicalHost": "mcmaster-burlington.gapwise.ca",
-      "universityId": "mcmaster",
-      "campusId": "mcmaster-burlington",
-      "name": "McMaster University Ron Joyce Centre",
-      "shortName": "Burlington",
-      "presentation": {
-        "accentColor": "#7A003C",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across McMaster University Ron Joyce Centre.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Burlington.",
-        "visualLabel": "Burlington",
-        "marketing": {
-          "campusName": "Ron Joyce Centre",
-          "headline": "Make every gap at Burlington count.",
-          "description": "Plan classes, buildings, routes, and time between classes across McMaster University Ron Joyce Centre.",
-          "seoTitle": "Gapwise for McMaster University Ron Joyce Centre",
-          "seoDescription": "Burlington timetable planning, campus building discovery, and pedestrian routing in Burlington.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "RJC 101",
-            "buildingCode": "RJC",
-            "buildingName": "Ron Joyce Centre",
-            "room": "101",
-            "nextCourseCode": "SSP 102",
-            "nextBuildingCode": "SSP",
-            "nextBuildingName": "South Service Pavilion",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Ron Joyce Centre",
-            "South Service Pavilion",
-            "DeGroote Executive Wing"
-          ]
-        }
-      }
-    },
-    {
-      "id": "western-hub",
-      "role": "university-hub",
-      "hosts": ["western.gapwise.ca"],
-      "canonicalHost": "western.gapwise.ca",
-      "universityId": "western",
-      "presentation": {
-        "accentColor": "#4F2683",
-        "heroEyebrow": "Gapwise for Western University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Western University campuses.",
-        "ogTitle": "Gapwise for Western University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Western University."
-      }
-    },
-    {
-      "id": "western-western",
-      "role": "campus-edition",
-      "hosts": ["western-main.gapwise.ca"],
-      "canonicalHost": "western-main.gapwise.ca",
-      "universityId": "western",
-      "campusId": "western",
-      "name": "Western University London Campus",
-      "shortName": "Western",
-      "presentation": {
-        "accentColor": "#4F2683",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Western University London Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Western.",
-        "visualLabel": "Western"
-      }
-    },
-    {
-      "id": "western-western-huron",
-      "role": "campus-edition",
-      "hosts": ["western-huron.gapwise.ca"],
-      "canonicalHost": "western-huron.gapwise.ca",
-      "universityId": "western",
-      "campusId": "western-huron",
-      "name": "Huron University College Campus",
-      "shortName": "Huron",
-      "presentation": {
-        "accentColor": "#4F2683",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Huron University College Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Huron.",
-        "visualLabel": "Huron",
-        "marketing": {
-          "campusName": "Huron campus",
-          "headline": "Make every gap at Huron count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Huron University College Campus.",
-          "seoTitle": "Gapwise for Huron University College Campus",
-          "seoDescription": "Huron timetable planning, campus building discovery, and pedestrian routing in London.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "ORH 101",
-            "buildingCode": "ORH",
-            "buildingName": "O'Neil-Ridley Hall",
-            "room": "101",
-            "nextCourseCode": "KCH 102",
-            "nextBuildingCode": "KCH",
-            "nextBuildingName": "Kingsmill Chamber Hall",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["O'Neil-Ridley Hall", "Kingsmill Chamber Hall", "Huron Student Centre"]
-        }
-      }
-    },
-    {
-      "id": "western-western-kings",
-      "role": "campus-edition",
-      "hosts": ["western-kings.gapwise.ca"],
-      "canonicalHost": "western-kings.gapwise.ca",
-      "universityId": "western",
-      "campusId": "western-kings",
-      "name": "King's University College Campus",
-      "shortName": "King's",
-      "presentation": {
-        "accentColor": "#4F2683",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across King's University College Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at King's.",
-        "visualLabel": "King's",
-        "marketing": {
-          "campusName": "King's campus",
-          "headline": "Make every gap at King's count.",
-          "description": "Plan classes, buildings, routes, and time between classes across King's University College Campus.",
-          "seoTitle": "Gapwise for King's University College Campus",
-          "seoDescription": "King's timetable planning, campus building discovery, and pedestrian routing in London.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "DLH 101",
-            "buildingCode": "DLH",
-            "buildingName": "Dante Lenardon Hall",
-            "room": "101",
-            "nextCourseCode": "SLC 102",
-            "nextBuildingCode": "SLC",
-            "nextBuildingName": "King's Student Life Centre",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Dante Lenardon Hall", "King's Student Life Centre", "Wemple Building"]
-        }
-      }
-    },
-    {
-      "id": "guelph-hub",
-      "role": "university-hub",
-      "hosts": ["guelph.gapwise.ca"],
-      "canonicalHost": "guelph.gapwise.ca",
-      "universityId": "guelph",
-      "presentation": {
-        "accentColor": "#C20430",
-        "heroEyebrow": "Gapwise for University of Guelph",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all University of Guelph campuses.",
-        "ogTitle": "Gapwise for University of Guelph",
-        "ogDescription": "Multi-campus timetable and navigation platform for University of Guelph."
-      }
-    },
-    {
-      "id": "guelph-guelph",
-      "role": "campus-edition",
-      "hosts": ["guelph-main.gapwise.ca"],
-      "canonicalHost": "guelph-main.gapwise.ca",
-      "universityId": "guelph",
-      "campusId": "guelph",
-      "name": "University of Guelph Main Campus",
-      "shortName": "Guelph",
-      "presentation": {
-        "accentColor": "#C20430",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of Guelph Main Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Guelph.",
-        "visualLabel": "Guelph"
-      }
-    },
-    {
-      "id": "guelph-guelph-ridgetown",
-      "role": "campus-edition",
-      "hosts": ["guelph-ridgetown.gapwise.ca"],
-      "canonicalHost": "guelph-ridgetown.gapwise.ca",
-      "universityId": "guelph",
-      "campusId": "guelph-ridgetown",
-      "name": "University of Guelph Ridgetown Campus",
-      "shortName": "Ridgetown",
-      "presentation": {
-        "accentColor": "#C20430",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of Guelph Ridgetown Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Ridgetown.",
-        "visualLabel": "Ridgetown",
-        "marketing": {
-          "campusName": "Ridgetown campus",
-          "headline": "Make every gap at Ridgetown count.",
-          "description": "Plan classes, buildings, routes, and time between classes across University of Guelph Ridgetown Campus.",
-          "seoTitle": "Gapwise for University of Guelph Ridgetown Campus",
-          "seoDescription": "Ridgetown timetable planning, campus building discovery, and pedestrian routing in Ridgetown.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "AGH 101",
-            "buildingCode": "AGH",
-            "buildingName": "Ridgetown Agronomy Hall",
-            "room": "101",
-            "nextCourseCode": "WH 102",
-            "nextBuildingCode": "WH",
-            "nextBuildingName": "Wilson Hall",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Ridgetown Agronomy Hall", "Wilson Hall", "Reek Building"]
-        }
-      }
-    },
-    {
-      "id": "guelph-guelph-humber",
-      "role": "campus-edition",
-      "hosts": ["guelph-humber.gapwise.ca"],
-      "canonicalHost": "guelph-humber.gapwise.ca",
-      "universityId": "guelph",
-      "campusId": "guelph-humber",
-      "name": "University of Guelph-Humber Campus",
-      "shortName": "Guelph-Humber",
-      "presentation": {
-        "accentColor": "#C20430",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of Guelph-Humber Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Guelph-Humber.",
-        "visualLabel": "Guelph-Humber",
-        "marketing": {
-          "campusName": "Guelph-Humber campus",
-          "headline": "Make every gap at Guelph-Humber count.",
-          "description": "Plan classes, buildings, routes, and time between classes across University of Guelph-Humber Campus.",
-          "seoTitle": "Gapwise for University of Guelph-Humber Campus",
-          "seoDescription": "Guelph-Humber timetable planning, campus building discovery, and pedestrian routing in Toronto.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "GHB 101",
-            "buildingCode": "GHB",
-            "buildingName": "Guelph-Humber Main Building",
-            "room": "101",
-            "nextCourseCode": "NAW 102",
-            "nextBuildingCode": "NAW",
-            "nextBuildingName": "Humber North Academic Wing",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Guelph-Humber Main Building",
-            "Humber North Academic Wing",
-            "Media & Digital Studios"
-          ]
-        }
-      }
-    },
-    {
-      "id": "uottawa-hub",
-      "role": "university-hub",
-      "hosts": ["uottawa.gapwise.ca"],
-      "canonicalHost": "uottawa.gapwise.ca",
-      "universityId": "uottawa",
-      "presentation": {
-        "accentColor": "#8F001A",
-        "heroEyebrow": "Gapwise for University of Ottawa",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all University of Ottawa campuses.",
-        "ogTitle": "Gapwise for University of Ottawa",
-        "ogDescription": "Multi-campus timetable and navigation platform for University of Ottawa."
-      }
-    },
-    {
-      "id": "uottawa-uottawa",
-      "role": "campus-edition",
-      "hosts": ["uottawa-downtown.gapwise.ca"],
-      "canonicalHost": "uottawa-downtown.gapwise.ca",
-      "universityId": "uottawa",
-      "campusId": "uottawa",
-      "name": "University of Ottawa Downtown Campus",
-      "shortName": "uOttawa",
-      "presentation": {
-        "accentColor": "#8F001A",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of Ottawa Downtown Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at uOttawa.",
-        "visualLabel": "uOttawa"
-      }
-    },
-    {
-      "id": "uottawa-uottawa-alta-vista",
-      "role": "campus-edition",
-      "hosts": ["uottawa-alta-vista.gapwise.ca"],
-      "canonicalHost": "uottawa-alta-vista.gapwise.ca",
-      "universityId": "uottawa",
-      "campusId": "uottawa-alta-vista",
-      "name": "University of Ottawa Alta Vista Campus",
-      "shortName": "Alta Vista",
-      "presentation": {
-        "accentColor": "#8F001A",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of Ottawa Alta Vista Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Alta Vista.",
-        "visualLabel": "Alta Vista",
-        "marketing": {
-          "campusName": "Alta Vista campus",
-          "headline": "Make every gap at Alta Vista count.",
-          "description": "Plan classes, buildings, routes, and time between classes across University of Ottawa Alta Vista Campus.",
-          "seoTitle": "Gapwise for University of Ottawa Alta Vista Campus",
-          "seoDescription": "Alta Vista timetable planning, campus building discovery, and pedestrian routing in Ottawa.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "RGN 101",
-            "buildingCode": "RGN",
-            "buildingName": "Roger Guindon Hall",
-            "room": "101",
-            "nextCourseCode": "PMB 102",
-            "nextBuildingCode": "PMB",
-            "nextBuildingName": "Peter Morand Building",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Roger Guindon Hall",
-            "Peter Morand Building",
-            "Alta Vista Health Sciences Centre"
-          ]
-        }
-      }
-    },
-    {
-      "id": "brock-hub",
-      "role": "university-hub",
-      "hosts": ["brock.gapwise.ca"],
-      "canonicalHost": "brock.gapwise.ca",
-      "universityId": "brock",
-      "presentation": {
-        "accentColor": "#CC0000",
-        "heroEyebrow": "Gapwise for Brock University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Brock University campuses.",
-        "ogTitle": "Gapwise for Brock University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Brock University."
-      }
-    },
-    {
-      "id": "brock-brock",
-      "role": "campus-edition",
-      "hosts": ["brock-main.gapwise.ca"],
-      "canonicalHost": "brock-main.gapwise.ca",
-      "universityId": "brock",
-      "campusId": "brock",
-      "name": "Brock University St. Catharines Campus",
-      "shortName": "Brock",
-      "presentation": {
-        "accentColor": "#CC0000",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Brock University St. Catharines Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Brock.",
-        "visualLabel": "Brock"
-      }
-    },
-    {
-      "id": "brock-brock-miw",
-      "role": "campus-edition",
-      "hosts": ["brock-miw.gapwise.ca"],
-      "canonicalHost": "brock-miw.gapwise.ca",
-      "universityId": "brock",
-      "campusId": "brock-miw",
-      "name": "Marilyn I. Walker School of Fine and Performing Arts Campus",
-      "shortName": "Downtown MIW",
-      "presentation": {
-        "accentColor": "#CC0000",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Marilyn I. Walker School of Fine and Performing Arts Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Downtown MIW.",
-        "visualLabel": "Downtown MIW",
-        "marketing": {
-          "campusName": "Downtown Arts campus",
-          "headline": "Make every gap at Downtown MIW count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Marilyn I. Walker School of Fine and Performing Arts Campus.",
-          "seoTitle": "Gapwise for Marilyn I. Walker School of Fine and Performing Arts Campus",
-          "seoDescription": "Downtown MIW timetable planning, campus building discovery, and pedestrian routing in St. Catharines.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "MIW 101",
-            "buildingCode": "MIW",
-            "buildingName": "Marilyn I. Walker Centre",
-            "room": "101",
-            "nextCourseCode": "RT 102",
-            "nextBuildingCode": "RT",
-            "nextBuildingName": "Robertson Theatre",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Marilyn I. Walker Centre",
-            "Robertson Theatre",
-            "Visual Arts Studio Pavilion"
-          ]
-        }
-      }
-    },
-    {
-      "id": "ubc-hub",
-      "role": "university-hub",
-      "hosts": ["ubc.gapwise.ca"],
-      "canonicalHost": "ubc.gapwise.ca",
-      "universityId": "ubc",
-      "presentation": {
-        "accentColor": "#002145",
-        "heroEyebrow": "Gapwise for University of British Columbia",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all University of British Columbia campuses.",
-        "ogTitle": "Gapwise for University of British Columbia",
-        "ogDescription": "Multi-campus timetable and navigation platform for University of British Columbia."
-      }
-    },
-    {
-      "id": "ubc-ubc-vancouver",
-      "role": "campus-edition",
-      "hosts": ["ubcv.gapwise.ca"],
-      "canonicalHost": "ubcv.gapwise.ca",
-      "universityId": "ubc",
-      "campusId": "ubc-vancouver",
-      "name": "UBC Vancouver",
-      "shortName": "UBCV",
-      "presentation": {
-        "accentColor": "#002145",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across UBC Vancouver.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at UBCV.",
-        "visualLabel": "UBCV"
-      }
-    },
-    {
-      "id": "ubc-ubc-okanagan",
-      "role": "campus-edition",
-      "hosts": ["ubco.gapwise.ca"],
-      "canonicalHost": "ubco.gapwise.ca",
-      "universityId": "ubc",
-      "campusId": "ubc-okanagan",
-      "name": "UBC Okanagan Campus",
-      "shortName": "UBC Okanagan",
-      "presentation": {
-        "accentColor": "#002145",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across UBC Okanagan Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at UBC Okanagan.",
-        "visualLabel": "UBC Okanagan",
-        "marketing": {
-          "campusName": "Okanagan campus",
-          "headline": "Make every gap at UBC Okanagan count.",
-          "description": "Plan classes, buildings, routes, and time between classes across UBC Okanagan Campus.",
-          "seoTitle": "Gapwise for UBC Okanagan Campus",
-          "seoDescription": "UBC Okanagan timetable planning, campus building discovery, and pedestrian routing in Kelowna.",
-          "stats": {
-            "buildings": 8,
-            "entrances": 8,
-            "pathSegments": 42
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "EME 101",
-            "buildingCode": "EME",
-            "buildingName": "Engineering, Management and Education Building",
-            "room": "101",
-            "nextCourseCode": "FIP 102",
-            "nextBuildingCode": "FIP",
-            "nextBuildingName": "Charles E. Fipke Centre for Innovative Research",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Engineering, Management and Education Building",
-            "Charles E. Fipke Centre for Innovative Research",
-            "Arts and Sciences Building"
-          ]
-        }
-      }
-    },
-    {
-      "id": "waterloo-hub",
-      "role": "university-hub",
-      "hosts": ["waterloo.gapwise.ca"],
-      "canonicalHost": "waterloo.gapwise.ca",
-      "universityId": "waterloo",
-      "presentation": {
-        "accentColor": "#D6A800",
-        "heroEyebrow": "Gapwise for University of Waterloo",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all University of Waterloo campuses.",
-        "ogTitle": "Gapwise for University of Waterloo",
-        "ogDescription": "Multi-campus timetable and navigation platform for University of Waterloo."
-      }
-    },
-    {
-      "id": "waterloo-waterloo-main",
-      "role": "campus-edition",
-      "hosts": ["waterloo-main.gapwise.ca"],
-      "canonicalHost": "waterloo-main.gapwise.ca",
-      "universityId": "waterloo",
-      "campusId": "waterloo-main",
-      "name": "University of Waterloo Main Campus",
-      "shortName": "Waterloo",
-      "presentation": {
-        "accentColor": "#D6A800",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of Waterloo Main Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Waterloo.",
-        "visualLabel": "Waterloo"
-      }
-    },
-    {
-      "id": "waterloo-waterloo-cambridge",
-      "role": "campus-edition",
-      "hosts": ["waterloo-cambridge.gapwise.ca"],
-      "canonicalHost": "waterloo-cambridge.gapwise.ca",
-      "universityId": "waterloo",
-      "campusId": "waterloo-cambridge",
-      "name": "University of Waterloo Cambridge Campus",
-      "shortName": "Cambridge",
-      "presentation": {
-        "accentColor": "#D6A800",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of Waterloo Cambridge Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Cambridge.",
-        "visualLabel": "Cambridge",
-        "marketing": {
-          "campusName": "School of Architecture Cambridge campus",
-          "headline": "Make every gap at Cambridge count.",
-          "description": "Plan classes, buildings, routes, and time between classes across University of Waterloo Cambridge Campus.",
-          "seoTitle": "Gapwise for University of Waterloo Cambridge Campus",
-          "seoDescription": "Cambridge timetable planning, campus building discovery, and pedestrian routing in Cambridge.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "ARC 101",
-            "buildingCode": "ARC",
-            "buildingName": "School of Architecture Building",
-            "room": "101",
-            "nextCourseCode": "GRDS 102",
-            "nextBuildingCode": "GRDS",
-            "nextBuildingName": "Grand River Design Studios",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "School of Architecture Building",
-            "Grand River Design Studios",
-            "Digital Fabrication Centre"
-          ]
-        }
-      }
-    },
-    {
-      "id": "waterloo-waterloo-kitchener",
-      "role": "campus-edition",
-      "hosts": ["waterloo-kitchener.gapwise.ca"],
-      "canonicalHost": "waterloo-kitchener.gapwise.ca",
-      "universityId": "waterloo",
-      "campusId": "waterloo-kitchener",
-      "name": "University of Waterloo Kitchener Campus",
-      "shortName": "Kitchener",
-      "presentation": {
-        "accentColor": "#D6A800",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of Waterloo Kitchener Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Kitchener.",
-        "visualLabel": "Kitchener",
-        "marketing": {
-          "campusName": "Health Sciences Kitchener campus",
-          "headline": "Make every gap at Kitchener count.",
-          "description": "Plan classes, buildings, routes, and time between classes across University of Waterloo Kitchener Campus.",
-          "seoTitle": "Gapwise for University of Waterloo Kitchener Campus",
-          "seoDescription": "Kitchener timetable planning, campus building discovery, and pedestrian routing in Kitchener.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "PHR 101",
-            "buildingCode": "PHR",
-            "buildingName": "School of Pharmacy",
-            "room": "101",
-            "nextCourseCode": "CFM 102",
-            "nextBuildingCode": "CFM",
-            "nextBuildingName": "Center for Family Medicine",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "School of Pharmacy",
-            "Center for Family Medicine",
-            "Integrated Health Building"
-          ]
-        }
-      }
-    },
-    {
-      "id": "waterloo-waterloo-stratford",
-      "role": "campus-edition",
-      "hosts": ["waterloo-stratford.gapwise.ca"],
-      "canonicalHost": "waterloo-stratford.gapwise.ca",
-      "universityId": "waterloo",
-      "campusId": "waterloo-stratford",
-      "name": "University of Waterloo Stratford School",
-      "shortName": "Stratford",
-      "presentation": {
-        "accentColor": "#D6A800",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of Waterloo Stratford School.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Stratford.",
-        "visualLabel": "Stratford",
-        "marketing": {
-          "campusName": "Stratford campus",
-          "headline": "Make every gap at Stratford count.",
-          "description": "Plan classes, buildings, routes, and time between classes across University of Waterloo Stratford School.",
-          "seoTitle": "Gapwise for University of Waterloo Stratford School",
-          "seoDescription": "Stratford timetable planning, campus building discovery, and pedestrian routing in Stratford.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "DMS 101",
-            "buildingCode": "DMS",
-            "buildingName": "Stratford Interactive Media Building",
-            "room": "101",
-            "nextCourseCode": "MCS 102",
-            "nextBuildingCode": "MCS",
-            "nextBuildingName": "Media Creation Studios",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Stratford Interactive Media Building",
-            "Media Creation Studios",
-            "Digital Innovation Atrium"
-          ]
-        }
-      }
-    },
-    {
-      "id": "mcgill-hub",
-      "role": "university-hub",
-      "hosts": ["mcgill.gapwise.ca"],
-      "canonicalHost": "mcgill.gapwise.ca",
-      "universityId": "mcgill",
-      "presentation": {
-        "accentColor": "#ED1B2F",
-        "heroEyebrow": "Gapwise for McGill University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all McGill University campuses.",
-        "ogTitle": "Gapwise for McGill University",
-        "ogDescription": "Multi-campus timetable and navigation platform for McGill University."
-      }
-    },
-    {
-      "id": "mcgill-mcgill-downtown",
-      "role": "campus-edition",
-      "hosts": ["mcgill-downtown.gapwise.ca"],
-      "canonicalHost": "mcgill-downtown.gapwise.ca",
-      "universityId": "mcgill",
-      "campusId": "mcgill-downtown",
-      "name": "McGill University Downtown Campus",
-      "shortName": "McGill",
-      "presentation": {
-        "accentColor": "#ED1B2F",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across McGill University Downtown Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at McGill.",
-        "visualLabel": "McGill"
-      }
-    },
-    {
-      "id": "mcgill-mcgill-macdonald",
-      "role": "campus-edition",
-      "hosts": ["mcgill-macdonald.gapwise.ca"],
-      "canonicalHost": "mcgill-macdonald.gapwise.ca",
-      "universityId": "mcgill",
-      "campusId": "mcgill-macdonald",
-      "name": "McGill University Macdonald Campus",
-      "shortName": "Macdonald",
-      "presentation": {
-        "accentColor": "#ED1B2F",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across McGill University Macdonald Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Macdonald.",
-        "visualLabel": "Macdonald",
-        "marketing": {
-          "campusName": "Macdonald campus",
-          "headline": "Make every gap at Macdonald count.",
-          "description": "Plan classes, buildings, routes, and time between classes across McGill University Macdonald Campus.",
-          "seoTitle": "Gapwise for McGill University Macdonald Campus",
-          "seoDescription": "Macdonald timetable planning, campus building discovery, and pedestrian routing in Sainte-Anne-de-Bellevue.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "MS 101",
-            "buildingCode": "MS",
-            "buildingName": "Macdonald-Stewart Building",
-            "room": "101",
-            "nextCourseCode": "R 102",
-            "nextBuildingCode": "R",
-            "nextBuildingName": "Raymond Building",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Macdonald-Stewart Building", "Raymond Building", "Barton Building"]
-        }
-      }
-    },
-    {
-      "id": "cmu-hub",
-      "role": "university-hub",
-      "hosts": ["cmu.gapwise.ca"],
-      "canonicalHost": "cmu.gapwise.ca",
-      "universityId": "cmu",
-      "presentation": {
-        "accentColor": "#C41230",
-        "heroEyebrow": "Gapwise for Carnegie Mellon University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Carnegie Mellon University campuses.",
-        "ogTitle": "Gapwise for Carnegie Mellon University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Carnegie Mellon University."
-      }
-    },
-    {
-      "id": "cmu-cmu-pittsburgh",
-      "role": "campus-edition",
-      "hosts": ["cmu-pittsburgh.gapwise.ca"],
-      "canonicalHost": "cmu-pittsburgh.gapwise.ca",
-      "universityId": "cmu",
-      "campusId": "cmu-pittsburgh",
-      "name": "Carnegie Mellon University Pittsburgh Campus",
-      "shortName": "CMU Pittsburgh",
-      "presentation": {
-        "accentColor": "#C41230",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Carnegie Mellon University Pittsburgh Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at CMU Pittsburgh.",
-        "visualLabel": "CMU Pittsburgh",
-        "marketing": {
-          "campusName": "Pittsburgh campus",
-          "headline": "Make every gap at CMU Pittsburgh count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Carnegie Mellon University Pittsburgh Campus.",
-          "seoTitle": "Gapwise for Carnegie Mellon University Pittsburgh Campus",
-          "seoDescription": "CMU Pittsburgh timetable planning, campus building discovery, and pedestrian routing in Pittsburgh.",
-          "stats": {
-            "buildings": 7,
-            "entrances": 7,
-            "pathSegments": 38
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "GHC 101",
-            "buildingCode": "GHC",
-            "buildingName": "Gates and Hillman Centers",
-            "room": "101",
-            "nextCourseCode": "WEH 102",
-            "nextBuildingCode": "WEH",
-            "nextBuildingName": "Wean Hall",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Gates and Hillman Centers", "Wean Hall", "Doherty Hall"]
-        }
-      }
-    },
-    {
-      "id": "cmu-cmu-silicon-valley",
-      "role": "campus-edition",
-      "hosts": ["cmu-silicon-valley.gapwise.ca"],
-      "canonicalHost": "cmu-silicon-valley.gapwise.ca",
-      "universityId": "cmu",
-      "campusId": "cmu-silicon-valley",
-      "name": "Carnegie Mellon University Silicon Valley Campus",
-      "shortName": "Silicon Valley",
-      "presentation": {
-        "accentColor": "#C41230",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Carnegie Mellon University Silicon Valley Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Silicon Valley.",
-        "visualLabel": "Silicon Valley",
-        "marketing": {
-          "campusName": "Silicon Valley campus",
-          "headline": "Make every gap at Silicon Valley count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Carnegie Mellon University Silicon Valley Campus.",
-          "seoTitle": "Gapwise for Carnegie Mellon University Silicon Valley Campus",
-          "seoDescription": "Silicon Valley timetable planning, campus building discovery, and pedestrian routing in Mountain View.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "B23 101",
-            "buildingCode": "B23",
-            "buildingName": "NASA Ames Building 23",
-            "room": "101",
-            "nextCourseCode": "SVIP 102",
-            "nextBuildingCode": "SVIP",
-            "nextBuildingName": "Silicon Valley Innovation Pavilion",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "NASA Ames Building 23",
-            "Silicon Valley Innovation Pavilion",
-            "Software Engineering Lab"
-          ]
-        }
-      }
-    },
-    {
-      "id": "ucberkeley-hub",
-      "role": "university-hub",
-      "hosts": ["ucberkeley.gapwise.ca"],
-      "canonicalHost": "ucberkeley.gapwise.ca",
-      "universityId": "ucberkeley",
-      "presentation": {
-        "accentColor": "#003262",
-        "heroEyebrow": "Gapwise for University of California, Berkeley",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all University of California, Berkeley campuses.",
-        "ogTitle": "Gapwise for University of California, Berkeley",
-        "ogDescription": "Multi-campus timetable and navigation platform for University of California, Berkeley."
-      }
-    },
-    {
-      "id": "ucberkeley-ucberkeley-main",
-      "role": "campus-edition",
-      "hosts": ["ucberkeley-main.gapwise.ca"],
-      "canonicalHost": "ucberkeley-main.gapwise.ca",
-      "universityId": "ucberkeley",
-      "campusId": "ucberkeley-main",
-      "name": "University of California, Berkeley Campus",
-      "shortName": "Berkeley Main",
-      "presentation": {
-        "accentColor": "#003262",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of California, Berkeley Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Berkeley Main.",
-        "visualLabel": "Berkeley Main",
-        "marketing": {
-          "campusName": "Berkeley campus",
-          "headline": "Make every gap at Berkeley Main count.",
-          "description": "Plan classes, buildings, routes, and time between classes across University of California, Berkeley Campus.",
-          "seoTitle": "Gapwise for University of California, Berkeley Campus",
-          "seoDescription": "Berkeley Main timetable planning, campus building discovery, and pedestrian routing in Berkeley.",
-          "stats": {
-            "buildings": 7,
-            "entrances": 7,
-            "pathSegments": 38
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "SODA 101",
-            "buildingCode": "SODA",
-            "buildingName": "Soda Hall",
-            "room": "101",
-            "nextCourseCode": "CORY 102",
-            "nextBuildingCode": "CORY",
-            "nextBuildingName": "Cory Hall",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Soda Hall", "Cory Hall", "Wheeler Hall"]
-        }
-      }
-    },
-    {
-      "id": "ucberkeley-ucberkeley-richmond",
-      "role": "campus-edition",
-      "hosts": ["ucberkeley-richmond.gapwise.ca"],
-      "canonicalHost": "ucberkeley-richmond.gapwise.ca",
-      "universityId": "ucberkeley",
-      "campusId": "ucberkeley-richmond",
-      "name": "UC Berkeley Richmond Field Station",
-      "shortName": "Richmond",
-      "presentation": {
-        "accentColor": "#003262",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across UC Berkeley Richmond Field Station.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Richmond.",
-        "visualLabel": "Richmond",
-        "marketing": {
-          "campusName": "Richmond Field Station campus",
-          "headline": "Make every gap at Richmond count.",
-          "description": "Plan classes, buildings, routes, and time between classes across UC Berkeley Richmond Field Station.",
-          "seoTitle": "Gapwise for UC Berkeley Richmond Field Station",
-          "seoDescription": "Richmond timetable planning, campus building discovery, and pedestrian routing in Richmond.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "RFS478 101",
-            "buildingCode": "RFS478",
-            "buildingName": "Richmond Field Station Building 478",
-            "room": "101",
-            "nextCourseCode": "EERC 102",
-            "nextBuildingCode": "EERC",
-            "nextBuildingName": "Earthquake Engineering Research Center",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Richmond Field Station Building 478",
-            "Earthquake Engineering Research Center",
-            "Environmental Engineering Lab"
-          ]
-        }
-      }
-    },
-    {
-      "id": "nyu-hub",
-      "role": "university-hub",
-      "hosts": ["nyu.gapwise.ca"],
-      "canonicalHost": "nyu.gapwise.ca",
-      "universityId": "nyu",
-      "presentation": {
-        "accentColor": "#57068C",
-        "heroEyebrow": "Gapwise for New York University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all New York University campuses.",
-        "ogTitle": "Gapwise for New York University",
-        "ogDescription": "Multi-campus timetable and navigation platform for New York University."
-      }
-    },
-    {
-      "id": "nyu-nyu-washington-square",
-      "role": "campus-edition",
-      "hosts": ["nyu-washington-square.gapwise.ca"],
-      "canonicalHost": "nyu-washington-square.gapwise.ca",
-      "universityId": "nyu",
-      "campusId": "nyu-washington-square",
-      "name": "New York University Washington Square Campus",
-      "shortName": "Washington Square",
-      "presentation": {
-        "accentColor": "#57068C",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across New York University Washington Square Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Washington Square.",
-        "visualLabel": "Washington Square",
-        "marketing": {
-          "campusName": "Washington Square campus",
-          "headline": "Make every gap at Washington Square count.",
-          "description": "Plan classes, buildings, routes, and time between classes across New York University Washington Square Campus.",
-          "seoTitle": "Gapwise for New York University Washington Square Campus",
-          "seoDescription": "Washington Square timetable planning, campus building discovery, and pedestrian routing in New York.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "SILV 101",
-            "buildingCode": "SILV",
-            "buildingName": "Silver Center for Arts and Science",
-            "room": "101",
-            "nextCourseCode": "BOBST 102",
-            "nextBuildingCode": "BOBST",
-            "nextBuildingName": "Elmer Holmes Bobst Library",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Silver Center for Arts and Science",
-            "Elmer Holmes Bobst Library",
-            "Kimmel Center for University Life"
-          ]
-        }
-      }
-    },
-    {
-      "id": "nyu-nyu-brooklyn",
-      "role": "campus-edition",
-      "hosts": ["nyu-brooklyn.gapwise.ca"],
-      "canonicalHost": "nyu-brooklyn.gapwise.ca",
-      "universityId": "nyu",
-      "campusId": "nyu-brooklyn",
-      "name": "New York University Brooklyn Campus",
-      "shortName": "Brooklyn (Tandon)",
-      "presentation": {
-        "accentColor": "#57068C",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across New York University Brooklyn Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Brooklyn (Tandon).",
-        "visualLabel": "Brooklyn (Tandon)",
-        "marketing": {
-          "campusName": "Brooklyn campus",
-          "headline": "Make every gap at Brooklyn (Tandon) count.",
-          "description": "Plan classes, buildings, routes, and time between classes across New York University Brooklyn Campus.",
-          "seoTitle": "Gapwise for New York University Brooklyn Campus",
-          "seoDescription": "Brooklyn (Tandon) timetable planning, campus building discovery, and pedestrian routing in Brooklyn.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "RH 101",
-            "buildingCode": "RH",
-            "buildingName": "Rogers Hall (Tandon)",
-            "room": "101",
-            "nextCourseCode": "J370 102",
-            "nextBuildingCode": "J370",
-            "nextBuildingName": "370 Jay Street",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Rogers Hall (Tandon)", "370 Jay Street", "Bern Dibner Building"]
-        }
-      }
-    },
-    {
-      "id": "mit-hub",
-      "role": "university-hub",
-      "hosts": ["mit.gapwise.ca"],
-      "canonicalHost": "mit.gapwise.ca",
-      "universityId": "mit",
-      "presentation": {
-        "accentColor": "#A31F34",
-        "heroEyebrow": "Gapwise for Massachusetts Institute of Technology",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Massachusetts Institute of Technology campuses.",
-        "ogTitle": "Gapwise for Massachusetts Institute of Technology",
-        "ogDescription": "Multi-campus timetable and navigation platform for Massachusetts Institute of Technology."
-      }
-    },
-    {
-      "id": "mit-mit-cambridge",
-      "role": "campus-edition",
-      "hosts": ["mit-cambridge.gapwise.ca"],
-      "canonicalHost": "mit-cambridge.gapwise.ca",
-      "universityId": "mit",
-      "campusId": "mit-cambridge",
-      "name": "Massachusetts Institute of Technology Cambridge Campus",
-      "shortName": "MIT Cambridge",
-      "presentation": {
-        "accentColor": "#A31F34",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Massachusetts Institute of Technology Cambridge Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at MIT Cambridge.",
-        "visualLabel": "MIT Cambridge",
-        "marketing": {
-          "campusName": "Cambridge campus",
-          "headline": "Make every gap at MIT Cambridge count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Massachusetts Institute of Technology Cambridge Campus.",
-          "seoTitle": "Gapwise for Massachusetts Institute of Technology Cambridge Campus",
-          "seoDescription": "MIT Cambridge timetable planning, campus building discovery, and pedestrian routing in Cambridge.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "BLD10 101",
-            "buildingCode": "BLD10",
-            "buildingName": "Maclaurin Building & Great Dome",
-            "room": "101",
-            "nextCourseCode": "BLD32 102",
-            "nextBuildingCode": "BLD32",
-            "nextBuildingName": "Ray and Maria Stata Center",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Maclaurin Building & Great Dome",
-            "Ray and Maria Stata Center",
-            "Rogers Building"
-          ]
-        }
-      }
-    },
-    {
-      "id": "mit-mit-lincoln-lab",
-      "role": "campus-edition",
-      "hosts": ["mit-lincoln-lab.gapwise.ca"],
-      "canonicalHost": "mit-lincoln-lab.gapwise.ca",
-      "universityId": "mit",
-      "campusId": "mit-lincoln-lab",
-      "name": "MIT Lincoln Laboratory Campus",
-      "shortName": "Lincoln Lab",
-      "presentation": {
-        "accentColor": "#A31F34",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across MIT Lincoln Laboratory Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Lincoln Lab.",
-        "visualLabel": "Lincoln Lab",
-        "marketing": {
-          "campusName": "Lincoln Laboratory campus",
-          "headline": "Make every gap at Lincoln Lab count.",
-          "description": "Plan classes, buildings, routes, and time between classes across MIT Lincoln Laboratory Campus.",
-          "seoTitle": "Gapwise for MIT Lincoln Laboratory Campus",
-          "seoDescription": "Lincoln Lab timetable planning, campus building discovery, and pedestrian routing in Lexington.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "LLA 101",
-            "buildingCode": "LLA",
-            "buildingName": "Lincoln Laboratory Main Complex",
-            "room": "101",
-            "nextCourseCode": "LLB 102",
-            "nextBuildingCode": "LLB",
-            "nextBuildingName": "Technology Office Building",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Lincoln Laboratory Main Complex",
-            "Technology Office Building",
-            "Advanced Microelectronics Laboratory"
-          ]
-        }
-      }
-    },
-    {
-      "id": "stanford-hub",
-      "role": "university-hub",
-      "hosts": ["stanford.gapwise.ca"],
-      "canonicalHost": "stanford.gapwise.ca",
-      "universityId": "stanford",
-      "presentation": {
-        "accentColor": "#8C1515",
-        "heroEyebrow": "Gapwise for Stanford University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Stanford University campuses.",
-        "ogTitle": "Gapwise for Stanford University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Stanford University."
-      }
-    },
-    {
-      "id": "stanford-stanford-main",
-      "role": "campus-edition",
-      "hosts": ["stanford-main.gapwise.ca"],
-      "canonicalHost": "stanford-main.gapwise.ca",
-      "universityId": "stanford",
-      "campusId": "stanford-main",
-      "name": "Stanford University Main Campus",
-      "shortName": "Stanford Main",
-      "presentation": {
-        "accentColor": "#8C1515",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Stanford University Main Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Stanford Main.",
-        "visualLabel": "Stanford Main",
-        "marketing": {
-          "campusName": "Main campus",
-          "headline": "Make every gap at Stanford Main count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Stanford University Main Campus.",
-          "seoTitle": "Gapwise for Stanford University Main Campus",
-          "seoDescription": "Stanford Main timetable planning, campus building discovery, and pedestrian routing in Stanford.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "MEMCHU 101",
-            "buildingCode": "MEMCHU",
-            "buildingName": "Memorial Church & Main Quad",
-            "room": "101",
-            "nextCourseCode": "HUANG 102",
-            "nextBuildingCode": "HUANG",
-            "nextBuildingName": "Huang Engineering Center",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Memorial Church & Main Quad",
-            "Huang Engineering Center",
-            "Gates Computer Science Building"
-          ]
-        }
-      }
-    },
-    {
-      "id": "stanford-stanford-redwood-city",
-      "role": "campus-edition",
-      "hosts": ["stanford-redwood-city.gapwise.ca"],
-      "canonicalHost": "stanford-redwood-city.gapwise.ca",
-      "universityId": "stanford",
-      "campusId": "stanford-redwood-city",
-      "name": "Stanford Redwood City Campus",
-      "shortName": "Redwood City",
-      "presentation": {
-        "accentColor": "#8C1515",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Stanford Redwood City Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Redwood City.",
-        "visualLabel": "Redwood City",
-        "marketing": {
-          "campusName": "Redwood City campus",
-          "headline": "Make every gap at Redwood City count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Stanford Redwood City Campus.",
-          "seoTitle": "Gapwise for Stanford Redwood City Campus",
-          "seoDescription": "Redwood City timetable planning, campus building discovery, and pedestrian routing in Redwood City.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "CH 101",
-            "buildingCode": "CH",
-            "buildingName": "Cardinal Hall",
-            "room": "101",
-            "nextCourseCode": "UH 102",
-            "nextBuildingCode": "UH",
-            "nextBuildingName": "University Hall",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Cardinal Hall", "University Hall", "Discovery Hall"]
-        }
-      }
-    },
-    {
-      "id": "upenn-hub",
-      "role": "university-hub",
-      "hosts": ["upenn.gapwise.ca"],
-      "canonicalHost": "upenn.gapwise.ca",
-      "universityId": "upenn",
-      "presentation": {
-        "accentColor": "#011F5B",
-        "heroEyebrow": "Gapwise for University of Pennsylvania",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all University of Pennsylvania campuses.",
-        "ogTitle": "Gapwise for University of Pennsylvania",
-        "ogDescription": "Multi-campus timetable and navigation platform for University of Pennsylvania."
-      }
-    },
-    {
-      "id": "upenn-upenn-philadelphia",
-      "role": "campus-edition",
-      "hosts": ["upenn-philadelphia.gapwise.ca"],
-      "canonicalHost": "upenn-philadelphia.gapwise.ca",
-      "universityId": "upenn",
-      "campusId": "upenn-philadelphia",
-      "name": "University of Pennsylvania Philadelphia Campus",
-      "shortName": "Penn Philadelphia",
-      "presentation": {
-        "accentColor": "#011F5B",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of Pennsylvania Philadelphia Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Penn Philadelphia.",
-        "visualLabel": "Penn Philadelphia",
-        "marketing": {
-          "campusName": "Philadelphia campus",
-          "headline": "Make every gap at Penn Philadelphia count.",
-          "description": "Plan classes, buildings, routes, and time between classes across University of Pennsylvania Philadelphia Campus.",
-          "seoTitle": "Gapwise for University of Pennsylvania Philadelphia Campus",
-          "seoDescription": "Penn Philadelphia timetable planning, campus building discovery, and pedestrian routing in Philadelphia.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "COLH 101",
-            "buildingCode": "COLH",
-            "buildingName": "College Hall",
-            "room": "101",
-            "nextCourseCode": "VPL 102",
-            "nextBuildingCode": "VPL",
-            "nextBuildingName": "Van Pelt-Dietrich Library",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["College Hall", "Van Pelt-Dietrich Library", "Levine Hall (SEAS)"]
-        }
-      }
-    },
-    {
-      "id": "upenn-upenn-pennovation",
-      "role": "campus-edition",
-      "hosts": ["upenn-pennovation.gapwise.ca"],
-      "canonicalHost": "upenn-pennovation.gapwise.ca",
-      "universityId": "upenn",
-      "campusId": "upenn-pennovation",
-      "name": "Pennovation Works Campus",
-      "shortName": "Pennovation Works",
-      "presentation": {
-        "accentColor": "#011F5B",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Pennovation Works Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Pennovation Works.",
-        "visualLabel": "Pennovation Works",
-        "marketing": {
-          "campusName": "Pennovation Works campus",
-          "headline": "Make every gap at Pennovation Works count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Pennovation Works Campus.",
-          "seoTitle": "Gapwise for Pennovation Works Campus",
-          "seoDescription": "Pennovation Works timetable planning, campus building discovery, and pedestrian routing in Philadelphia.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "PNC 101",
-            "buildingCode": "PNC",
-            "buildingName": "Pennovation Center",
-            "room": "101",
-            "nextCourseCode": "PERCH 102",
-            "nextBuildingCode": "PERCH",
-            "nextBuildingName": "PERCH Robotics Laboratory",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Pennovation Center",
-            "PERCH Robotics Laboratory",
-            "Invention Works Pavilion"
-          ]
-        }
-      }
-    },
-    {
-      "id": "upenn-upenn-new-bolton",
-      "role": "campus-edition",
-      "hosts": ["upenn-new-bolton.gapwise.ca"],
-      "canonicalHost": "upenn-new-bolton.gapwise.ca",
-      "universityId": "upenn",
-      "campusId": "upenn-new-bolton",
-      "name": "University of Pennsylvania New Bolton Center",
-      "shortName": "New Bolton Center",
-      "presentation": {
-        "accentColor": "#011F5B",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across University of Pennsylvania New Bolton Center.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at New Bolton Center.",
-        "visualLabel": "New Bolton Center",
-        "marketing": {
-          "campusName": "New Bolton Center campus",
-          "headline": "Make every gap at New Bolton Center count.",
-          "description": "Plan classes, buildings, routes, and time between classes across University of Pennsylvania New Bolton Center.",
-          "seoTitle": "Gapwise for University of Pennsylvania New Bolton Center",
-          "seoDescription": "New Bolton Center timetable planning, campus building discovery, and pedestrian routing in Kennett Square.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "RVH 101",
-            "buildingCode": "RVH",
-            "buildingName": "Ryan Veterinary Hospital",
-            "room": "101",
-            "nextCourseCode": "ALH 102",
-            "nextBuildingCode": "ALH",
-            "nextBuildingName": "Alumni Hall",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Ryan Veterinary Hospital", "Alumni Hall", "Woerner Research Center"]
-        }
-      }
-    },
-    {
-      "id": "cornell-hub",
-      "role": "university-hub",
-      "hosts": ["cornell.gapwise.ca"],
-      "canonicalHost": "cornell.gapwise.ca",
-      "universityId": "cornell",
-      "presentation": {
-        "accentColor": "#B31B1B",
-        "heroEyebrow": "Gapwise for Cornell University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Cornell University campuses.",
-        "ogTitle": "Gapwise for Cornell University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Cornell University."
-      }
-    },
-    {
-      "id": "cornell-cornell-ithaca",
-      "role": "campus-edition",
-      "hosts": ["cornell-ithaca.gapwise.ca"],
-      "canonicalHost": "cornell-ithaca.gapwise.ca",
-      "universityId": "cornell",
-      "campusId": "cornell-ithaca",
-      "name": "Cornell University Ithaca Campus",
-      "shortName": "Cornell Ithaca",
-      "presentation": {
-        "accentColor": "#B31B1B",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Cornell University Ithaca Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Cornell Ithaca.",
-        "visualLabel": "Cornell Ithaca",
-        "marketing": {
-          "campusName": "Ithaca campus",
-          "headline": "Make every gap at Cornell Ithaca count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Cornell University Ithaca Campus.",
-          "seoTitle": "Gapwise for Cornell University Ithaca Campus",
-          "seoDescription": "Cornell Ithaca timetable planning, campus building discovery, and pedestrian routing in Ithaca.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "URIS 101",
-            "buildingCode": "URIS",
-            "buildingName": "Uris Library & McGraw Tower",
-            "room": "101",
-            "nextCourseCode": "OLIN 102",
-            "nextBuildingCode": "OLIN",
-            "nextBuildingName": "Olin Library",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Uris Library & McGraw Tower",
-            "Olin Library",
-            "Gates Hall (Computing)"
-          ]
-        }
-      }
-    },
-    {
-      "id": "cornell-cornell-tech",
-      "role": "campus-edition",
-      "hosts": ["cornell-tech.gapwise.ca"],
-      "canonicalHost": "cornell-tech.gapwise.ca",
-      "universityId": "cornell",
-      "campusId": "cornell-tech",
-      "name": "Cornell Tech Campus",
-      "shortName": "Cornell Tech",
-      "presentation": {
-        "accentColor": "#B31B1B",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Cornell Tech Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Cornell Tech.",
-        "visualLabel": "Cornell Tech",
-        "marketing": {
-          "campusName": "Cornell Tech campus",
-          "headline": "Make every gap at Cornell Tech count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Cornell Tech Campus.",
-          "seoTitle": "Gapwise for Cornell Tech Campus",
-          "seoDescription": "Cornell Tech timetable planning, campus building discovery, and pedestrian routing in New York.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "BLM 101",
-            "buildingCode": "BLM",
-            "buildingName": "Emma and Georgina Bloomberg Center",
-            "room": "101",
-            "nextCourseCode": "TATA 102",
-            "nextBuildingCode": "TATA",
-            "nextBuildingName": "Tata Innovation Center",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Emma and Georgina Bloomberg Center",
-            "Tata Innovation Center",
-            "The Bridge at Cornell Tech"
-          ]
-        }
-      }
-    },
-    {
-      "id": "cornell-cornell-weill",
-      "role": "campus-edition",
-      "hosts": ["cornell-weill.gapwise.ca"],
-      "canonicalHost": "cornell-weill.gapwise.ca",
-      "universityId": "cornell",
-      "campusId": "cornell-weill",
-      "name": "Weill Cornell Medicine Campus",
-      "shortName": "Weill Cornell",
-      "presentation": {
-        "accentColor": "#B31B1B",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Weill Cornell Medicine Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Weill Cornell.",
-        "visualLabel": "Weill Cornell",
-        "marketing": {
-          "campusName": "Weill Cornell Medicine campus",
-          "headline": "Make every gap at Weill Cornell count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Weill Cornell Medicine Campus.",
-          "seoTitle": "Gapwise for Weill Cornell Medicine Campus",
-          "seoDescription": "Weill Cornell timetable planning, campus building discovery, and pedestrian routing in New York.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "WGC 101",
-            "buildingCode": "WGC",
-            "buildingName": "Weill Greenberg Center",
-            "room": "101",
-            "nextCourseCode": "BRB 102",
-            "nextBuildingCode": "BRB",
-            "nextBuildingName": "Belfer Research Building",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Weill Greenberg Center",
-            "Belfer Research Building",
-            "Whitney Pavilion"
-          ]
-        }
-      }
-    },
-    {
-      "id": "dartmouth-hub",
-      "role": "university-hub",
-      "hosts": ["dartmouth.gapwise.ca"],
-      "canonicalHost": "dartmouth.gapwise.ca",
-      "universityId": "dartmouth",
-      "presentation": {
-        "accentColor": "#00693E",
-        "heroEyebrow": "Gapwise for Dartmouth College",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Dartmouth College campuses.",
-        "ogTitle": "Gapwise for Dartmouth College",
-        "ogDescription": "Multi-campus timetable and navigation platform for Dartmouth College."
-      }
-    },
-    {
-      "id": "dartmouth-dartmouth-hanover",
-      "role": "campus-edition",
-      "hosts": ["dartmouth-hanover.gapwise.ca"],
-      "canonicalHost": "dartmouth-hanover.gapwise.ca",
-      "universityId": "dartmouth",
-      "campusId": "dartmouth-hanover",
-      "name": "Dartmouth College Hanover Campus",
-      "shortName": "Dartmouth Hanover",
-      "presentation": {
-        "accentColor": "#00693E",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Dartmouth College Hanover Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Dartmouth Hanover.",
-        "visualLabel": "Dartmouth Hanover",
-        "marketing": {
-          "campusName": "Hanover campus",
-          "headline": "Make every gap at Dartmouth Hanover count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Dartmouth College Hanover Campus.",
-          "seoTitle": "Gapwise for Dartmouth College Hanover Campus",
-          "seoDescription": "Dartmouth Hanover timetable planning, campus building discovery, and pedestrian routing in Hanover.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "BAK 101",
-            "buildingCode": "BAK",
-            "buildingName": "Baker-Berry Library",
-            "room": "101",
-            "nextCourseCode": "DH 102",
-            "nextBuildingCode": "DH",
-            "nextBuildingName": "Dartmouth Hall",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Baker-Berry Library",
-            "Dartmouth Hall",
-            "Cummings Hall (Thayer Engineering)"
-          ]
-        }
-      }
-    },
-    {
-      "id": "dartmouth-dartmouth-lebanon",
-      "role": "campus-edition",
-      "hosts": ["dartmouth-lebanon.gapwise.ca"],
-      "canonicalHost": "dartmouth-lebanon.gapwise.ca",
-      "universityId": "dartmouth",
-      "campusId": "dartmouth-lebanon",
-      "name": "Dartmouth Health Lebanon Campus",
-      "shortName": "Dartmouth Lebanon",
-      "presentation": {
-        "accentColor": "#00693E",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Dartmouth Health Lebanon Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Dartmouth Lebanon.",
-        "visualLabel": "Dartmouth Lebanon",
-        "marketing": {
-          "campusName": "Lebanon Health Sciences campus",
-          "headline": "Make every gap at Dartmouth Lebanon count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Dartmouth Health Lebanon Campus.",
-          "seoTitle": "Gapwise for Dartmouth Health Lebanon Campus",
-          "seoDescription": "Dartmouth Lebanon timetable planning, campus building discovery, and pedestrian routing in Lebanon.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "DHMC 101",
-            "buildingCode": "DHMC",
-            "buildingName": "Dartmouth Hitchcock Medical Center",
-            "room": "101",
-            "nextCourseCode": "RUB 102",
-            "nextBuildingCode": "RUB",
-            "nextBuildingName": "Rubin Research Building",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Dartmouth Hitchcock Medical Center",
-            "Rubin Research Building",
-            "Borwell Research Building"
-          ]
-        }
-      }
-    },
-    {
-      "id": "brown-hub",
-      "role": "university-hub",
-      "hosts": ["brown.gapwise.ca"],
-      "canonicalHost": "brown.gapwise.ca",
-      "universityId": "brown",
-      "presentation": {
-        "accentColor": "#4E3629",
-        "heroEyebrow": "Gapwise for Brown University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Brown University campuses.",
-        "ogTitle": "Gapwise for Brown University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Brown University."
-      }
-    },
-    {
-      "id": "brown-brown-providence",
-      "role": "campus-edition",
-      "hosts": ["brown-providence.gapwise.ca"],
-      "canonicalHost": "brown-providence.gapwise.ca",
-      "universityId": "brown",
-      "campusId": "brown-providence",
-      "name": "Brown University College Hill Campus",
-      "shortName": "Brown College Hill",
-      "presentation": {
-        "accentColor": "#4E3629",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Brown University College Hill Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Brown College Hill.",
-        "visualLabel": "Brown College Hill",
-        "marketing": {
-          "campusName": "College Hill campus",
-          "headline": "Make every gap at Brown College Hill count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Brown University College Hill Campus.",
-          "seoTitle": "Gapwise for Brown University College Hill Campus",
-          "seoDescription": "Brown College Hill timetable planning, campus building discovery, and pedestrian routing in Providence.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "UH 101",
-            "buildingCode": "UH",
-            "buildingName": "University Hall",
-            "room": "101",
-            "nextCourseCode": "ROCK 102",
-            "nextBuildingCode": "ROCK",
-            "nextBuildingName": "Rockefeller Library",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["University Hall", "Rockefeller Library", "Sciences Library"]
-        }
-      }
-    },
-    {
-      "id": "brown-brown-jewelry-district",
-      "role": "campus-edition",
-      "hosts": ["brown-jewelry-district.gapwise.ca"],
-      "canonicalHost": "brown-jewelry-district.gapwise.ca",
-      "universityId": "brown",
-      "campusId": "brown-jewelry-district",
-      "name": "Brown University Jewelry District Campus",
-      "shortName": "Jewelry District",
-      "presentation": {
-        "accentColor": "#4E3629",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Brown University Jewelry District Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Jewelry District.",
-        "visualLabel": "Jewelry District",
-        "marketing": {
-          "campusName": "Jewelry District campus",
-          "headline": "Make every gap at Jewelry District count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Brown University Jewelry District Campus.",
-          "seoTitle": "Gapwise for Brown University Jewelry District Campus",
-          "seoDescription": "Jewelry District timetable planning, campus building discovery, and pedestrian routing in Providence.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "AMS 101",
-            "buildingCode": "AMS",
-            "buildingName": "Warren Alpert Medical School",
-            "room": "101",
-            "nextCourseCode": "SPH 102",
-            "nextBuildingCode": "SPH",
-            "nextBuildingName": "School of Public Health",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Warren Alpert Medical School",
-            "School of Public Health",
-            "Laboratories for Molecular Medicine"
-          ]
-        }
-      }
-    },
-    {
-      "id": "columbia-hub",
-      "role": "university-hub",
-      "hosts": ["columbia.gapwise.ca"],
-      "canonicalHost": "columbia.gapwise.ca",
-      "universityId": "columbia",
-      "presentation": {
-        "accentColor": "#1D4F91",
-        "heroEyebrow": "Gapwise for Columbia University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Columbia University campuses.",
-        "ogTitle": "Gapwise for Columbia University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Columbia University."
-      }
-    },
-    {
-      "id": "columbia-columbia-morningside",
-      "role": "campus-edition",
-      "hosts": ["columbia-morningside.gapwise.ca"],
-      "canonicalHost": "columbia-morningside.gapwise.ca",
-      "universityId": "columbia",
-      "campusId": "columbia-morningside",
-      "name": "Columbia University Morningside Campus",
-      "shortName": "Morningside",
-      "presentation": {
-        "accentColor": "#1D4F91",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Columbia University Morningside Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Morningside.",
-        "visualLabel": "Morningside",
-        "marketing": {
-          "campusName": "Morningside Heights campus",
-          "headline": "Make every gap at Morningside count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Columbia University Morningside Campus.",
-          "seoTitle": "Gapwise for Columbia University Morningside Campus",
-          "seoDescription": "Morningside timetable planning, campus building discovery, and pedestrian routing in New York.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "LOW 101",
-            "buildingCode": "LOW",
-            "buildingName": "Low Memorial Library",
-            "room": "101",
-            "nextCourseCode": "BUTL 102",
-            "nextBuildingCode": "BUTL",
-            "nextBuildingName": "Butler Library",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Low Memorial Library", "Butler Library", "Pupin Physics Laboratories"]
-        }
-      }
-    },
-    {
-      "id": "columbia-columbia-manhattanville",
-      "role": "campus-edition",
-      "hosts": ["columbia-manhattanville.gapwise.ca"],
-      "canonicalHost": "columbia-manhattanville.gapwise.ca",
-      "universityId": "columbia",
-      "campusId": "columbia-manhattanville",
-      "name": "Columbia University Manhattanville Campus",
-      "shortName": "Manhattanville",
-      "presentation": {
-        "accentColor": "#1D4F91",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Columbia University Manhattanville Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Manhattanville.",
-        "visualLabel": "Manhattanville",
-        "marketing": {
-          "campusName": "Manhattanville campus",
-          "headline": "Make every gap at Manhattanville count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Columbia University Manhattanville Campus.",
-          "seoTitle": "Gapwise for Columbia University Manhattanville Campus",
-          "seoDescription": "Manhattanville timetable planning, campus building discovery, and pedestrian routing in New York.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "JLG 101",
-            "buildingCode": "JLG",
-            "buildingName": "Jerome L. Greene Science Center",
-            "room": "101",
-            "nextCourseCode": "LCA 102",
-            "nextBuildingCode": "LCA",
-            "nextBuildingName": "Lenfest Center for the Arts",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Jerome L. Greene Science Center",
-            "Lenfest Center for the Arts",
-            "Henry R. Kravis Hall"
-          ]
-        }
-      }
-    },
-    {
-      "id": "columbia-columbia-cuimc",
-      "role": "campus-edition",
-      "hosts": ["columbia-cuimc.gapwise.ca"],
-      "canonicalHost": "columbia-cuimc.gapwise.ca",
-      "universityId": "columbia",
-      "campusId": "columbia-cuimc",
-      "name": "Columbia University Irving Medical Center Campus",
-      "shortName": "Columbia CUIMC",
-      "presentation": {
-        "accentColor": "#1D4F91",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Columbia University Irving Medical Center Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Columbia CUIMC.",
-        "visualLabel": "Columbia CUIMC",
-        "marketing": {
-          "campusName": "Irving Medical Center campus",
-          "headline": "Make every gap at Columbia CUIMC count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Columbia University Irving Medical Center Campus.",
-          "seoTitle": "Gapwise for Columbia University Irving Medical Center Campus",
-          "seoDescription": "Columbia CUIMC timetable planning, campus building discovery, and pedestrian routing in New York.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "VEC 101",
-            "buildingCode": "VEC",
-            "buildingName": "Vagelos Education Center",
-            "room": "101",
-            "nextCourseCode": "HHSC 102",
-            "nextBuildingCode": "HHSC",
-            "nextBuildingName": "Hammer Health Sciences Building",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Vagelos Education Center",
-            "Hammer Health Sciences Building",
-            "William Black Medical Research Building"
-          ]
-        }
-      }
-    },
-    {
-      "id": "princeton-hub",
-      "role": "university-hub",
-      "hosts": ["princeton.gapwise.ca"],
-      "canonicalHost": "princeton.gapwise.ca",
-      "universityId": "princeton",
-      "presentation": {
-        "accentColor": "#E77500",
-        "heroEyebrow": "Gapwise for Princeton University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Princeton University campuses.",
-        "ogTitle": "Gapwise for Princeton University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Princeton University."
-      }
-    },
-    {
-      "id": "princeton-princeton-main",
-      "role": "campus-edition",
-      "hosts": ["princeton-main.gapwise.ca"],
-      "canonicalHost": "princeton-main.gapwise.ca",
-      "universityId": "princeton",
-      "campusId": "princeton-main",
-      "name": "Princeton University Main Campus",
-      "shortName": "Princeton Main",
-      "presentation": {
-        "accentColor": "#E77500",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Princeton University Main Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Princeton Main.",
-        "visualLabel": "Princeton Main",
-        "marketing": {
-          "campusName": "Main campus",
-          "headline": "Make every gap at Princeton Main count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Princeton University Main Campus.",
-          "seoTitle": "Gapwise for Princeton University Main Campus",
-          "seoDescription": "Princeton Main timetable planning, campus building discovery, and pedestrian routing in Princeton.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "NAS 101",
-            "buildingCode": "NAS",
-            "buildingName": "Nassau Hall",
-            "room": "101",
-            "nextCourseCode": "FIR 102",
-            "nextBuildingCode": "FIR",
-            "nextBuildingName": "Firestone Library",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Nassau Hall", "Firestone Library", "Frist Campus Center"]
-        }
-      }
-    },
-    {
-      "id": "princeton-princeton-forrestal",
-      "role": "campus-edition",
-      "hosts": ["princeton-forrestal.gapwise.ca"],
-      "canonicalHost": "princeton-forrestal.gapwise.ca",
-      "universityId": "princeton",
-      "campusId": "princeton-forrestal",
-      "name": "Princeton University Forrestal Campus",
-      "shortName": "Forrestal",
-      "presentation": {
-        "accentColor": "#E77500",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Princeton University Forrestal Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Forrestal.",
-        "visualLabel": "Forrestal",
-        "marketing": {
-          "campusName": "Forrestal campus",
-          "headline": "Make every gap at Forrestal count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Princeton University Forrestal Campus.",
-          "seoTitle": "Gapwise for Princeton University Forrestal Campus",
-          "seoDescription": "Forrestal timetable planning, campus building discovery, and pedestrian routing in Plainsboro.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "LSB 101",
-            "buildingCode": "LSB",
-            "buildingName": "Lyman Spitzer Building",
-            "room": "101",
-            "nextCourseCode": "PPPL 102",
-            "nextBuildingCode": "PPPL",
-            "nextBuildingName": "Princeton Plasma Physics Lab",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Lyman Spitzer Building",
-            "Princeton Plasma Physics Lab",
-            "Complex Materials Science Lab"
-          ]
-        }
-      }
-    },
-    {
-      "id": "princeton-princeton-meadows",
-      "role": "campus-edition",
-      "hosts": ["princeton-meadows.gapwise.ca"],
-      "canonicalHost": "princeton-meadows.gapwise.ca",
-      "universityId": "princeton",
-      "campusId": "princeton-meadows",
-      "name": "Princeton University Meadows Campus",
-      "shortName": "Meadows",
-      "presentation": {
-        "accentColor": "#E77500",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Princeton University Meadows Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Meadows.",
-        "visualLabel": "Meadows",
-        "marketing": {
-          "campusName": "Meadows campus",
-          "headline": "Make every gap at Meadows count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Princeton University Meadows Campus.",
-          "seoTitle": "Gapwise for Princeton University Meadows Campus",
-          "seoDescription": "Meadows timetable planning, campus building discovery, and pedestrian routing in West Windsor.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "MCB 101",
-            "buildingCode": "MCB",
-            "buildingName": "Meadows Community Building",
-            "room": "101",
-            "nextCourseCode": "RFC 102",
-            "nextBuildingCode": "RFC",
-            "nextBuildingName": "Racquet and Fitness Center",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Meadows Community Building",
-            "Racquet and Fitness Center",
-            "Meadows Graduate Pavilion"
-          ]
-        }
-      }
-    },
-    {
-      "id": "yale-hub",
-      "role": "university-hub",
-      "hosts": ["yale.gapwise.ca"],
-      "canonicalHost": "yale.gapwise.ca",
-      "universityId": "yale",
-      "presentation": {
-        "accentColor": "#00356B",
-        "heroEyebrow": "Gapwise for Yale University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Yale University campuses.",
-        "ogTitle": "Gapwise for Yale University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Yale University."
-      }
-    },
-    {
-      "id": "yale-yale-new-haven",
-      "role": "campus-edition",
-      "hosts": ["yale-new-haven.gapwise.ca"],
-      "canonicalHost": "yale-new-haven.gapwise.ca",
-      "universityId": "yale",
-      "campusId": "yale-new-haven",
-      "name": "Yale University Central Campus",
-      "shortName": "Yale Central",
-      "presentation": {
-        "accentColor": "#00356B",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Yale University Central Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Yale Central.",
-        "visualLabel": "Yale Central",
-        "marketing": {
-          "campusName": "Central campus",
-          "headline": "Make every gap at Yale Central count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Yale University Central Campus.",
-          "seoTitle": "Gapwise for Yale University Central Campus",
-          "seoDescription": "Yale Central timetable planning, campus building discovery, and pedestrian routing in New Haven.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "SML 101",
-            "buildingCode": "SML",
-            "buildingName": "Sterling Memorial Library",
-            "room": "101",
-            "nextCourseCode": "CH 102",
-            "nextBuildingCode": "CH",
-            "nextBuildingName": "Connecticut Hall (Old Campus)",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Sterling Memorial Library",
-            "Connecticut Hall (Old Campus)",
-            "Kline Tower (Science Hill)"
-          ]
-        }
-      }
-    },
-    {
-      "id": "yale-yale-medical",
-      "role": "campus-edition",
-      "hosts": ["yale-medical.gapwise.ca"],
-      "canonicalHost": "yale-medical.gapwise.ca",
-      "universityId": "yale",
-      "campusId": "yale-medical",
-      "name": "Yale School of Medicine Campus",
-      "shortName": "Yale Medical",
-      "presentation": {
-        "accentColor": "#00356B",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Yale School of Medicine Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Yale Medical.",
-        "visualLabel": "Yale Medical",
-        "marketing": {
-          "campusName": "Medical campus",
-          "headline": "Make every gap at Yale Medical count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Yale School of Medicine Campus.",
-          "seoTitle": "Gapwise for Yale School of Medicine Campus",
-          "seoDescription": "Yale Medical timetable planning, campus building discovery, and pedestrian routing in New Haven.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "SHM 101",
-            "buildingCode": "SHM",
-            "buildingName": "Sterling Hall of Medicine",
-            "room": "101",
-            "nextCourseCode": "BCMM 102",
-            "nextBuildingCode": "BCMM",
-            "nextBuildingName": "Boyer Center for Molecular Medicine",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Sterling Hall of Medicine",
-            "Boyer Center for Molecular Medicine",
-            "Anlyan Center for Medical Research"
-          ]
-        }
-      }
-    },
-    {
-      "id": "yale-yale-west",
-      "role": "campus-edition",
-      "hosts": ["yale-west.gapwise.ca"],
-      "canonicalHost": "yale-west.gapwise.ca",
-      "universityId": "yale",
-      "campusId": "yale-west",
-      "name": "Yale University West Campus",
-      "shortName": "Yale West",
-      "presentation": {
-        "accentColor": "#00356B",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Yale University West Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Yale West.",
-        "visualLabel": "Yale West",
-        "marketing": {
-          "campusName": "West campus",
-          "headline": "Make every gap at Yale West count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Yale University West Campus.",
-          "seoTitle": "Gapwise for Yale University West Campus",
-          "seoDescription": "Yale West timetable planning, campus building discovery, and pedestrian routing in West Haven.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "WCCC 101",
-            "buildingCode": "WCCC",
-            "buildingName": "West Campus Conference Center",
-            "room": "101",
-            "nextCourseCode": "ESI 102",
-            "nextBuildingCode": "ESI",
-            "nextBuildingName": "Energy Sciences Institute",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "West Campus Conference Center",
-            "Energy Sciences Institute",
-            "Advanced Technology Center"
-          ]
-        }
-      }
-    },
-    {
-      "id": "harvard-hub",
-      "role": "university-hub",
+      "id": "harvard",
+      "role": "single-campus-edition",
       "hosts": ["harvard.gapwise.ca"],
       "canonicalHost": "harvard.gapwise.ca",
+      "name": "Harvard University",
+      "shortName": "Harvard",
       "universityId": "harvard",
-      "presentation": {
-        "accentColor": "#A51C30",
-        "heroEyebrow": "Gapwise for Harvard University",
-        "heroDescription": "Timetable planning, campus search, building discovery, and pedestrian routing across all Harvard University campuses.",
-        "ogTitle": "Gapwise for Harvard University",
-        "ogDescription": "Multi-campus timetable and navigation platform for Harvard University."
-      }
+      "campusId": "harvard-cambridge"
     },
     {
-      "id": "harvard-harvard-cambridge",
-      "role": "campus-edition",
-      "hosts": ["harvard-cambridge.gapwise.ca"],
-      "canonicalHost": "harvard-cambridge.gapwise.ca",
-      "universityId": "harvard",
-      "campusId": "harvard-cambridge",
-      "name": "Harvard University Cambridge Campus",
-      "shortName": "Harvard Cambridge",
-      "presentation": {
-        "accentColor": "#A51C30",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Harvard University Cambridge Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Harvard Cambridge.",
-        "visualLabel": "Harvard Cambridge",
-        "marketing": {
-          "campusName": "Cambridge campus",
-          "headline": "Make every gap at Harvard Cambridge count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Harvard University Cambridge Campus.",
-          "seoTitle": "Gapwise for Harvard University Cambridge Campus",
-          "seoDescription": "Harvard Cambridge timetable planning, campus building discovery, and pedestrian routing in Cambridge.",
-          "stats": {
-            "buildings": 6,
-            "entrances": 6,
-            "pathSegments": 34
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "WID 101",
-            "buildingCode": "WID",
-            "buildingName": "Widener Memorial Library",
-            "room": "101",
-            "nextCourseCode": "SC 102",
-            "nextBuildingCode": "SC",
-            "nextBuildingName": "Science Center",
-            "nextRoom": "201"
-          },
-          "searchExamples": ["Widener Memorial Library", "Science Center", "Sever Hall"]
-        }
-      }
+      "id": "yale",
+      "role": "single-campus-edition",
+      "hosts": ["yale.gapwise.ca"],
+      "canonicalHost": "yale.gapwise.ca",
+      "name": "Yale University",
+      "shortName": "Yale",
+      "universityId": "yale",
+      "campusId": "yale-new-haven"
     },
     {
-      "id": "harvard-harvard-allston",
-      "role": "campus-edition",
-      "hosts": ["harvard-allston.gapwise.ca"],
-      "canonicalHost": "harvard-allston.gapwise.ca",
-      "universityId": "harvard",
-      "campusId": "harvard-allston",
-      "name": "Harvard University Allston Campus",
-      "shortName": "Harvard Allston",
-      "presentation": {
-        "accentColor": "#A51C30",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Harvard University Allston Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Harvard Allston.",
-        "visualLabel": "Harvard Allston",
-        "marketing": {
-          "campusName": "Allston campus",
-          "headline": "Make every gap at Harvard Allston count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Harvard University Allston Campus.",
-          "seoTitle": "Gapwise for Harvard University Allston Campus",
-          "seoDescription": "Harvard Allston timetable planning, campus building discovery, and pedestrian routing in Boston.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "SEC 101",
-            "buildingCode": "SEC",
-            "buildingName": "Science and Engineering Complex (SEAS)",
-            "room": "101",
-            "nextCourseCode": "MORG 102",
-            "nextBuildingCode": "MORG",
-            "nextBuildingName": "Morgan Hall (HBS)",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Science and Engineering Complex (SEAS)",
-            "Morgan Hall (HBS)",
-            "Baker Library (HBS)"
-          ]
-        }
-      }
+      "id": "princeton",
+      "role": "single-campus-edition",
+      "hosts": ["princeton.gapwise.ca"],
+      "canonicalHost": "princeton.gapwise.ca",
+      "name": "Princeton University",
+      "shortName": "Princeton",
+      "universityId": "princeton",
+      "campusId": "princeton-main"
     },
     {
-      "id": "harvard-harvard-longwood",
-      "role": "campus-edition",
-      "hosts": ["harvard-longwood.gapwise.ca"],
-      "canonicalHost": "harvard-longwood.gapwise.ca",
-      "universityId": "harvard",
-      "campusId": "harvard-longwood",
-      "name": "Harvard Longwood Medical Area Campus",
-      "shortName": "Harvard Longwood",
-      "presentation": {
-        "accentColor": "#A51C30",
-        "heroDescription": "Plan classes, buildings, routes, and gaps across Harvard Longwood Medical Area Campus.",
-        "cardDescription": "Supported timetable planning, building discovery, and pedestrian routing at Harvard Longwood.",
-        "visualLabel": "Harvard Longwood",
-        "marketing": {
-          "campusName": "Longwood Medical campus",
-          "headline": "Make every gap at Harvard Longwood count.",
-          "description": "Plan classes, buildings, routes, and time between classes across Harvard Longwood Medical Area Campus.",
-          "seoTitle": "Gapwise for Harvard Longwood Medical Area Campus",
-          "seoDescription": "Harvard Longwood timetable planning, campus building discovery, and pedestrian routing in Boston.",
-          "stats": {
-            "buildings": 5,
-            "entrances": 5,
-            "pathSegments": 30
-          },
-          "example": {
-            "day": "Monday",
-            "courseCode": "GORD 101",
-            "buildingCode": "GORD",
-            "buildingName": "Gordon Hall (Harvard Medical School)",
-            "room": "101",
-            "nextCourseCode": "KRES 102",
-            "nextBuildingCode": "KRES",
-            "nextBuildingName": "Kresge Building (Chan Public Health)",
-            "nextRoom": "201"
-          },
-          "searchExamples": [
-            "Gordon Hall (Harvard Medical School)",
-            "Kresge Building (Chan Public Health)",
-            "Countway Library of Medicine"
-          ]
-        }
-      }
+      "id": "columbia",
+      "role": "single-campus-edition",
+      "hosts": ["columbia.gapwise.ca"],
+      "canonicalHost": "columbia.gapwise.ca",
+      "name": "Columbia University",
+      "shortName": "Columbia",
+      "universityId": "columbia",
+      "campusId": "columbia-morningside"
+    },
+    {
+      "id": "brown",
+      "role": "single-campus-edition",
+      "hosts": ["brown.gapwise.ca"],
+      "canonicalHost": "brown.gapwise.ca",
+      "name": "Brown University",
+      "shortName": "Brown",
+      "universityId": "brown",
+      "campusId": "brown-providence"
+    },
+    {
+      "id": "dartmouth",
+      "role": "single-campus-edition",
+      "hosts": ["dartmouth.gapwise.ca"],
+      "canonicalHost": "dartmouth.gapwise.ca",
+      "name": "Dartmouth College",
+      "shortName": "Dartmouth",
+      "universityId": "dartmouth",
+      "campusId": "dartmouth-hanover"
+    },
+    {
+      "id": "cornell",
+      "role": "single-campus-edition",
+      "hosts": ["cornell.gapwise.ca"],
+      "canonicalHost": "cornell.gapwise.ca",
+      "name": "Cornell University",
+      "shortName": "Cornell",
+      "universityId": "cornell",
+      "campusId": "cornell-ithaca"
+    },
+    {
+      "id": "upenn",
+      "role": "single-campus-edition",
+      "hosts": ["upenn.gapwise.ca"],
+      "canonicalHost": "upenn.gapwise.ca",
+      "name": "University of Pennsylvania",
+      "shortName": "Penn",
+      "universityId": "upenn",
+      "campusId": "upenn-philadelphia"
+    },
+    {
+      "id": "stanford",
+      "role": "single-campus-edition",
+      "hosts": ["stanford.gapwise.ca"],
+      "canonicalHost": "stanford.gapwise.ca",
+      "name": "Stanford University",
+      "shortName": "Stanford",
+      "universityId": "stanford",
+      "campusId": "stanford-main"
+    },
+    {
+      "id": "mit",
+      "role": "single-campus-edition",
+      "hosts": ["mit.gapwise.ca"],
+      "canonicalHost": "mit.gapwise.ca",
+      "name": "Massachusetts Institute of Technology",
+      "shortName": "MIT",
+      "universityId": "mit",
+      "campusId": "mit-cambridge"
+    },
+    {
+      "id": "cmu",
+      "role": "single-campus-edition",
+      "hosts": ["cmu.gapwise.ca"],
+      "canonicalHost": "cmu.gapwise.ca",
+      "name": "Carnegie Mellon University",
+      "shortName": "CMU",
+      "universityId": "cmu",
+      "campusId": "cmu-pittsburgh"
+    },
+    {
+      "id": "nyu",
+      "role": "single-campus-edition",
+      "hosts": ["nyu.gapwise.ca"],
+      "canonicalHost": "nyu.gapwise.ca",
+      "name": "New York University",
+      "shortName": "NYU",
+      "universityId": "nyu",
+      "campusId": "nyu-washington-square"
+    },
+    {
+      "id": "ucberkeley",
+      "role": "single-campus-edition",
+      "hosts": ["ucberkeley.gapwise.ca"],
+      "canonicalHost": "ucberkeley.gapwise.ca",
+      "name": "University of California, Berkeley",
+      "shortName": "UC Berkeley",
+      "universityId": "ucberkeley",
+      "campusId": "ucberkeley-main"
     }
   ],
   "universities": [
@@ -2946,11 +550,7 @@
       "shortName": "Carleton",
       "accentColor": "#E31B23",
       "campusScope": "Carleton, Dominion-Chalmers",
-      "hosts": [
-        "carleton.gapwise.ca",
-        "cu-ottawa.gapwise.ca",
-        "carleton-dominion-chalmers.gapwise.ca"
-      ],
+      "hosts": ["carleton.gapwise.ca"],
       "campuses": ["carleton", "carleton-dominion-chalmers"],
       "defaultCampus": "carleton",
       "timetableAdapter": "carleton-ics",
@@ -2961,7 +561,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["carleton", "carleton-dominion-chalmers"],
+      "routableCampuses": ["carleton"],
       "dataPaths": ["universities/carleton/campus.json"],
       "marketing": {
         "campusName": "Ottawa campus",
@@ -2997,7 +597,7 @@
       "shortName": "TMU",
       "accentColor": "#0284c7",
       "campusScope": "TMU, Brampton",
-      "hosts": ["tmu.gapwise.ca", "tmu-downtown.gapwise.ca", "tmu-brampton.gapwise.ca"],
+      "hosts": ["tmu.gapwise.ca"],
       "campuses": ["tmu", "tmu-brampton"],
       "defaultCampus": "tmu",
       "timetableAdapter": "tmu-schedule",
@@ -3008,7 +608,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["tmu", "tmu-brampton"],
+      "routableCampuses": ["tmu"],
       "dataPaths": ["universities/tmu/campus.json"],
       "marketing": {
         "campusName": "Downtown Toronto campus",
@@ -3044,7 +644,7 @@
       "shortName": "Queen's",
       "accentColor": "#f59e0b",
       "campusScope": "Queen's, West Campus",
-      "hosts": ["queens.gapwise.ca", "queens-main.gapwise.ca", "queens-west.gapwise.ca"],
+      "hosts": ["queens.gapwise.ca"],
       "campuses": ["queens", "queens-west"],
       "defaultCampus": "queens",
       "timetableAdapter": "queens-schedule",
@@ -3055,7 +655,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["queens", "queens-west"],
+      "routableCampuses": ["queens"],
       "dataPaths": ["universities/queens/campus.json"],
       "marketing": {
         "campusName": "Kingston campus",
@@ -3091,12 +691,7 @@
       "shortName": "Laurier",
       "accentColor": "#8b5cf6",
       "campusScope": "Laurier, Brantford, Milton",
-      "hosts": [
-        "laurier.gapwise.ca",
-        "laurier-waterloo.gapwise.ca",
-        "laurier-brantford.gapwise.ca",
-        "laurier-milton.gapwise.ca"
-      ],
+      "hosts": ["laurier.gapwise.ca"],
       "campuses": ["waterloo", "laurier-brantford", "laurier-milton"],
       "defaultCampus": "waterloo",
       "timetableAdapter": "laurier-schedule",
@@ -3107,7 +702,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["waterloo", "laurier-brantford", "laurier-milton"],
+      "routableCampuses": ["waterloo"],
       "dataPaths": ["universities/laurier/campus.json"],
       "marketing": {
         "campusName": "Waterloo campus",
@@ -3154,7 +749,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["keele", "glendon", "markham"],
+      "routableCampuses": ["keele"],
       "dataPaths": ["universities/york/campus.json"],
       "marketing": {
         "campusName": "Keele, Glendon, and Markham",
@@ -3190,11 +785,7 @@
       "shortName": "McMaster",
       "accentColor": "#7A003C",
       "campusScope": "McMaster, Burlington",
-      "hosts": [
-        "mcmaster.gapwise.ca",
-        "mcmaster-main.gapwise.ca",
-        "mcmaster-burlington.gapwise.ca"
-      ],
+      "hosts": ["mcmaster.gapwise.ca"],
       "campuses": ["mcmaster", "mcmaster-burlington"],
       "defaultCampus": "mcmaster",
       "timetableAdapter": "mcmaster-schedule",
@@ -3205,7 +796,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["mcmaster", "mcmaster-burlington"],
+      "routableCampuses": ["mcmaster"],
       "dataPaths": ["universities/mcmaster/campus.json"],
       "marketing": {
         "campusName": "Hamilton campus",
@@ -3241,12 +832,7 @@
       "shortName": "Western",
       "accentColor": "#4F2683",
       "campusScope": "Western, Huron, King's",
-      "hosts": [
-        "western.gapwise.ca",
-        "western-main.gapwise.ca",
-        "western-huron.gapwise.ca",
-        "western-kings.gapwise.ca"
-      ],
+      "hosts": ["western.gapwise.ca"],
       "campuses": ["western", "western-huron", "western-kings"],
       "defaultCampus": "western",
       "timetableAdapter": "western-schedule",
@@ -3257,7 +843,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["western", "western-huron", "western-kings"],
+      "routableCampuses": ["western"],
       "dataPaths": ["universities/western/campus.json"],
       "marketing": {
         "campusName": "London campus",
@@ -3293,12 +879,7 @@
       "shortName": "Guelph",
       "accentColor": "#C20430",
       "campusScope": "Guelph, Ridgetown, Guelph-Humber",
-      "hosts": [
-        "guelph.gapwise.ca",
-        "guelph-main.gapwise.ca",
-        "guelph-ridgetown.gapwise.ca",
-        "guelph-humber.gapwise.ca"
-      ],
+      "hosts": ["guelph.gapwise.ca"],
       "campuses": ["guelph", "guelph-ridgetown", "guelph-humber"],
       "defaultCampus": "guelph",
       "timetableAdapter": "guelph-schedule",
@@ -3309,7 +890,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["guelph", "guelph-ridgetown", "guelph-humber"],
+      "routableCampuses": ["guelph"],
       "dataPaths": ["universities/guelph/campus.json"],
       "marketing": {
         "campusName": "Guelph campus",
@@ -3345,11 +926,7 @@
       "shortName": "uOttawa",
       "accentColor": "#8F001A",
       "campusScope": "uOttawa, Alta Vista",
-      "hosts": [
-        "uottawa.gapwise.ca",
-        "uottawa-downtown.gapwise.ca",
-        "uottawa-alta-vista.gapwise.ca"
-      ],
+      "hosts": ["uottawa.gapwise.ca"],
       "campuses": ["uottawa", "uottawa-alta-vista"],
       "defaultCampus": "uottawa",
       "timetableAdapter": "uottawa-schedule",
@@ -3360,7 +937,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["uottawa", "uottawa-alta-vista"],
+      "routableCampuses": ["uottawa"],
       "dataPaths": ["universities/uottawa/campus.json"],
       "marketing": {
         "campusName": "Downtown Ottawa campus",
@@ -3396,7 +973,7 @@
       "shortName": "Brock",
       "accentColor": "#CC0000",
       "campusScope": "Brock, Downtown MIW",
-      "hosts": ["brock.gapwise.ca", "brock-main.gapwise.ca", "brock-miw.gapwise.ca"],
+      "hosts": ["brock.gapwise.ca"],
       "campuses": ["brock", "brock-miw"],
       "defaultCampus": "brock",
       "timetableAdapter": "brock-schedule",
@@ -3407,7 +984,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["brock", "brock-miw"],
+      "routableCampuses": ["brock"],
       "dataPaths": ["universities/brock/campus.json"],
       "marketing": {
         "campusName": "St. Catharines campus",
@@ -3457,7 +1034,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["ubc-vancouver", "ubc-okanagan"],
+      "routableCampuses": ["ubc-vancouver"],
       "dataPaths": ["universities/ubc/campus.json"],
       "marketing": {
         "campusName": "Vancouver and Okanagan",
@@ -3493,13 +1070,7 @@
       "shortName": "Waterloo",
       "accentColor": "#D6A800",
       "campusScope": "Waterloo, Cambridge, Kitchener, Stratford",
-      "hosts": [
-        "waterloo.gapwise.ca",
-        "waterloo-main.gapwise.ca",
-        "waterloo-cambridge.gapwise.ca",
-        "waterloo-kitchener.gapwise.ca",
-        "waterloo-stratford.gapwise.ca"
-      ],
+      "hosts": ["waterloo.gapwise.ca"],
       "campuses": [
         "waterloo-main",
         "waterloo-cambridge",
@@ -3518,12 +1089,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [
-        "waterloo-main",
-        "waterloo-cambridge",
-        "waterloo-kitchener",
-        "waterloo-stratford"
-      ],
+      "routableCampuses": ["waterloo-main"],
       "dataPaths": ["universities/waterloo/campus.json"],
       "marketing": {
         "campusName": "Main campus",
@@ -3559,7 +1125,7 @@
       "shortName": "McGill",
       "accentColor": "#ED1B2F",
       "campusScope": "McGill, Macdonald",
-      "hosts": ["mcgill.gapwise.ca", "mcgill-downtown.gapwise.ca", "mcgill-macdonald.gapwise.ca"],
+      "hosts": ["mcgill.gapwise.ca"],
       "campuses": ["mcgill-downtown", "mcgill-macdonald"],
       "defaultCampus": "mcgill-downtown",
       "timetableAdapter": "mcgill-my-courses-ics",
@@ -3573,7 +1139,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["mcgill-downtown", "mcgill-macdonald"],
+      "routableCampuses": ["mcgill-downtown"],
       "dataPaths": ["universities/mcgill/campus.json"],
       "marketing": {
         "campusName": "Downtown Montreal campus",
@@ -3609,7 +1175,7 @@
       "shortName": "CMU",
       "accentColor": "#C41230",
       "campusScope": "CMU Pittsburgh, Silicon Valley",
-      "hosts": ["cmu.gapwise.ca", "cmu-pittsburgh.gapwise.ca", "cmu-silicon-valley.gapwise.ca"],
+      "hosts": ["cmu.gapwise.ca"],
       "campuses": ["cmu-pittsburgh", "cmu-silicon-valley"],
       "defaultCampus": "cmu-pittsburgh",
       "aliases": ["Carnegie Mellon", "CMU", "Pittsburgh"],
@@ -3638,7 +1204,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["cmu-pittsburgh", "cmu-silicon-valley"],
+      "routableCampuses": ["cmu-pittsburgh"],
       "dataPaths": ["universities/cmu/campus.json"]
     },
     {
@@ -3647,11 +1213,7 @@
       "shortName": "UC Berkeley",
       "accentColor": "#003262",
       "campusScope": "Berkeley Main, Richmond",
-      "hosts": [
-        "ucberkeley.gapwise.ca",
-        "ucberkeley-main.gapwise.ca",
-        "ucberkeley-richmond.gapwise.ca"
-      ],
+      "hosts": ["ucberkeley.gapwise.ca"],
       "campuses": ["ucberkeley-main", "ucberkeley-richmond"],
       "defaultCampus": "ucberkeley-main",
       "aliases": ["Berkeley", "Cal", "UCB"],
@@ -3680,7 +1242,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["ucberkeley-main", "ucberkeley-richmond"],
+      "routableCampuses": ["ucberkeley-main"],
       "dataPaths": ["universities/ucberkeley/campus.json"]
     },
     {
@@ -3689,7 +1251,7 @@
       "shortName": "NYU",
       "accentColor": "#57068C",
       "campusScope": "Washington Square, Brooklyn (Tandon)",
-      "hosts": ["nyu.gapwise.ca", "nyu-washington-square.gapwise.ca", "nyu-brooklyn.gapwise.ca"],
+      "hosts": ["nyu.gapwise.ca"],
       "campuses": ["nyu-washington-square", "nyu-brooklyn"],
       "defaultCampus": "nyu-washington-square",
       "aliases": ["NYU", "Washington Square", "Greenwich Village"],
@@ -3718,7 +1280,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["nyu-washington-square", "nyu-brooklyn"],
+      "routableCampuses": ["nyu-washington-square"],
       "dataPaths": ["universities/nyu/campus.json"]
     },
     {
@@ -3727,7 +1289,7 @@
       "shortName": "MIT",
       "accentColor": "#A31F34",
       "campusScope": "MIT Cambridge, Lincoln Lab",
-      "hosts": ["mit.gapwise.ca", "mit-cambridge.gapwise.ca", "mit-lincoln-lab.gapwise.ca"],
+      "hosts": ["mit.gapwise.ca"],
       "campuses": ["mit-cambridge", "mit-lincoln-lab"],
       "defaultCampus": "mit-cambridge",
       "aliases": ["MIT", "Mass Tech", "Cambridge"],
@@ -3756,7 +1318,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["mit-cambridge", "mit-lincoln-lab"],
+      "routableCampuses": ["mit-cambridge"],
       "dataPaths": ["universities/mit/campus.json"]
     },
     {
@@ -3765,11 +1327,7 @@
       "shortName": "Stanford",
       "accentColor": "#8C1515",
       "campusScope": "Stanford Main, Redwood City",
-      "hosts": [
-        "stanford.gapwise.ca",
-        "stanford-main.gapwise.ca",
-        "stanford-redwood-city.gapwise.ca"
-      ],
+      "hosts": ["stanford.gapwise.ca"],
       "campuses": ["stanford-main", "stanford-redwood-city"],
       "defaultCampus": "stanford-main",
       "aliases": ["Stanford", "The Farm", "Palo Alto"],
@@ -3798,7 +1356,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["stanford-main", "stanford-redwood-city"],
+      "routableCampuses": ["stanford-main"],
       "dataPaths": ["universities/stanford/campus.json"]
     },
     {
@@ -3807,12 +1365,7 @@
       "shortName": "Penn",
       "accentColor": "#011F5B",
       "campusScope": "Penn Philadelphia, Pennovation Works, New Bolton Center",
-      "hosts": [
-        "upenn.gapwise.ca",
-        "upenn-philadelphia.gapwise.ca",
-        "upenn-pennovation.gapwise.ca",
-        "upenn-new-bolton.gapwise.ca"
-      ],
+      "hosts": ["upenn.gapwise.ca"],
       "campuses": ["upenn-philadelphia", "upenn-pennovation", "upenn-new-bolton"],
       "defaultCampus": "upenn-philadelphia",
       "aliases": ["UPenn", "Penn", "University City"],
@@ -3841,7 +1394,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["upenn-philadelphia", "upenn-pennovation", "upenn-new-bolton"],
+      "routableCampuses": ["upenn-philadelphia"],
       "dataPaths": ["universities/upenn/campus.json"]
     },
     {
@@ -3850,12 +1403,7 @@
       "shortName": "Cornell",
       "accentColor": "#B31B1B",
       "campusScope": "Cornell Ithaca, Cornell Tech, Weill Cornell",
-      "hosts": [
-        "cornell.gapwise.ca",
-        "cornell-ithaca.gapwise.ca",
-        "cornell-tech.gapwise.ca",
-        "cornell-weill.gapwise.ca"
-      ],
+      "hosts": ["cornell.gapwise.ca"],
       "campuses": ["cornell-ithaca", "cornell-tech", "cornell-weill"],
       "defaultCampus": "cornell-ithaca",
       "aliases": ["Cornell", "Ithaca", "Big Red"],
@@ -3884,7 +1432,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["cornell-ithaca", "cornell-tech", "cornell-weill"],
+      "routableCampuses": ["cornell-ithaca"],
       "dataPaths": ["universities/cornell/campus.json"]
     },
     {
@@ -3893,11 +1441,7 @@
       "shortName": "Dartmouth",
       "accentColor": "#00693E",
       "campusScope": "Dartmouth Hanover, Dartmouth Lebanon",
-      "hosts": [
-        "dartmouth.gapwise.ca",
-        "dartmouth-hanover.gapwise.ca",
-        "dartmouth-lebanon.gapwise.ca"
-      ],
+      "hosts": ["dartmouth.gapwise.ca"],
       "campuses": ["dartmouth-hanover", "dartmouth-lebanon"],
       "defaultCampus": "dartmouth-hanover",
       "aliases": ["Dartmouth", "Hanover", "Big Green"],
@@ -3926,7 +1470,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["dartmouth-hanover", "dartmouth-lebanon"],
+      "routableCampuses": ["dartmouth-hanover"],
       "dataPaths": ["universities/dartmouth/campus.json"]
     },
     {
@@ -3935,11 +1479,7 @@
       "shortName": "Brown",
       "accentColor": "#4E3629",
       "campusScope": "Brown College Hill, Jewelry District",
-      "hosts": [
-        "brown.gapwise.ca",
-        "brown-providence.gapwise.ca",
-        "brown-jewelry-district.gapwise.ca"
-      ],
+      "hosts": ["brown.gapwise.ca"],
       "campuses": ["brown-providence", "brown-jewelry-district"],
       "defaultCampus": "brown-providence",
       "aliases": ["Brown", "College Hill", "Providence"],
@@ -3968,7 +1508,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["brown-providence", "brown-jewelry-district"],
+      "routableCampuses": ["brown-providence"],
       "dataPaths": ["universities/brown/campus.json"]
     },
     {
@@ -3977,12 +1517,7 @@
       "shortName": "Columbia",
       "accentColor": "#1D4F91",
       "campusScope": "Morningside, Manhattanville, Columbia CUIMC",
-      "hosts": [
-        "columbia.gapwise.ca",
-        "columbia-morningside.gapwise.ca",
-        "columbia-manhattanville.gapwise.ca",
-        "columbia-cuimc.gapwise.ca"
-      ],
+      "hosts": ["columbia.gapwise.ca"],
       "campuses": ["columbia-morningside", "columbia-manhattanville", "columbia-cuimc"],
       "defaultCampus": "columbia-morningside",
       "aliases": ["Columbia", "Morningside", "Morningside Heights"],
@@ -4011,7 +1546,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["columbia-morningside", "columbia-manhattanville", "columbia-cuimc"],
+      "routableCampuses": ["columbia-morningside"],
       "dataPaths": ["universities/columbia/campus.json"]
     },
     {
@@ -4020,12 +1555,7 @@
       "shortName": "Princeton",
       "accentColor": "#E77500",
       "campusScope": "Princeton Main, Forrestal, Meadows",
-      "hosts": [
-        "princeton.gapwise.ca",
-        "princeton-main.gapwise.ca",
-        "princeton-forrestal.gapwise.ca",
-        "princeton-meadows.gapwise.ca"
-      ],
+      "hosts": ["princeton.gapwise.ca"],
       "campuses": ["princeton-main", "princeton-forrestal", "princeton-meadows"],
       "defaultCampus": "princeton-main",
       "aliases": ["Princeton", "Tigers", "Princeton NJ"],
@@ -4054,7 +1584,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["princeton-main", "princeton-forrestal", "princeton-meadows"],
+      "routableCampuses": ["princeton-main"],
       "dataPaths": ["universities/princeton/campus.json"]
     },
     {
@@ -4063,12 +1593,7 @@
       "shortName": "Yale",
       "accentColor": "#00356B",
       "campusScope": "Yale Central, Yale Medical, Yale West",
-      "hosts": [
-        "yale.gapwise.ca",
-        "yale-new-haven.gapwise.ca",
-        "yale-medical.gapwise.ca",
-        "yale-west.gapwise.ca"
-      ],
+      "hosts": ["yale.gapwise.ca"],
       "campuses": ["yale-new-haven", "yale-medical", "yale-west"],
       "defaultCampus": "yale-new-haven",
       "aliases": ["Yale", "New Haven", "Bulldogs"],
@@ -4097,7 +1622,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["yale-new-haven", "yale-medical", "yale-west"],
+      "routableCampuses": ["yale-new-haven"],
       "dataPaths": ["universities/yale/campus.json"]
     },
     {
@@ -4106,12 +1631,7 @@
       "shortName": "Harvard",
       "accentColor": "#A51C30",
       "campusScope": "Harvard Cambridge, Harvard Allston, Harvard Longwood",
-      "hosts": [
-        "harvard.gapwise.ca",
-        "harvard-cambridge.gapwise.ca",
-        "harvard-allston.gapwise.ca",
-        "harvard-longwood.gapwise.ca"
-      ],
+      "hosts": ["harvard.gapwise.ca"],
       "campuses": ["harvard-cambridge", "harvard-allston", "harvard-longwood"],
       "defaultCampus": "harvard-cambridge",
       "aliases": ["Harvard", "Harvard Yard", "Cambridge"],
@@ -4140,7 +1660,7 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": ["harvard-cambridge", "harvard-allston", "harvard-longwood"],
+      "routableCampuses": ["harvard-cambridge"],
       "dataPaths": ["universities/harvard/campus.json"]
     }
   ],
@@ -4211,7 +1731,7 @@
       "city": "Ottawa",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["cu-ottawa.gapwise.ca"],
+      "hosts": ["carleton.gapwise.ca"],
       "aliases": ["CU", "Ravens"],
       "status": "supported",
       "capabilities": {
@@ -4230,7 +1750,7 @@
       "city": "Toronto",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["tmu-downtown.gapwise.ca"],
+      "hosts": ["tmu.gapwise.ca"],
       "aliases": ["Toronto Metropolitan", "Ryerson", "RU"],
       "status": "supported",
       "capabilities": {
@@ -4249,7 +1769,7 @@
       "city": "Kingston",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["queens-main.gapwise.ca"],
+      "hosts": ["queens.gapwise.ca"],
       "aliases": ["Queens", "QU", "Gaels"],
       "status": "supported",
       "capabilities": {
@@ -4268,7 +1788,7 @@
       "city": "Waterloo",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["laurier-waterloo.gapwise.ca"],
+      "hosts": ["laurier.gapwise.ca"],
       "aliases": ["Laurier", "WLU", "Golden Hawks"],
       "status": "supported",
       "capabilities": {
@@ -4313,7 +1833,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Glendon campus",
@@ -4356,7 +1876,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Markham campus",
@@ -4396,7 +1916,7 @@
       "city": "Hamilton",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["mcmaster-main.gapwise.ca"],
+      "hosts": ["mcmaster.gapwise.ca"],
       "aliases": ["Mac", "Marauders"],
       "status": "supported",
       "capabilities": {
@@ -4415,7 +1935,7 @@
       "city": "London",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["western-main.gapwise.ca"],
+      "hosts": ["western.gapwise.ca"],
       "aliases": ["UWO", "Mustangs"],
       "status": "supported",
       "capabilities": {
@@ -4434,7 +1954,7 @@
       "city": "Guelph",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["guelph-main.gapwise.ca"],
+      "hosts": ["guelph.gapwise.ca"],
       "aliases": ["U of G", "UofG", "Gryphons"],
       "status": "supported",
       "capabilities": {
@@ -4453,7 +1973,7 @@
       "city": "Ottawa",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["uottawa-downtown.gapwise.ca"],
+      "hosts": ["uottawa.gapwise.ca"],
       "aliases": ["University of Ottawa", "Ottawa U", "Gee-Gees"],
       "status": "supported",
       "capabilities": {
@@ -4472,7 +1992,7 @@
       "city": "St. Catharines",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["brock-main.gapwise.ca"],
+      "hosts": ["brock.gapwise.ca"],
       "aliases": ["Badgers", "Niagara"],
       "status": "supported",
       "capabilities": {
@@ -4517,7 +2037,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Okanagan campus",
@@ -4557,7 +2077,7 @@
       "city": "Waterloo",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["waterloo-main.gapwise.ca"],
+      "hosts": ["waterloo.gapwise.ca"],
       "aliases": ["UWaterloo", "UW", "Warriors"],
       "status": "supported",
       "capabilities": {
@@ -4576,7 +2096,7 @@
       "city": "Montreal",
       "region": "Quebec",
       "country": "Canada",
-      "hosts": ["mcgill-downtown.gapwise.ca"],
+      "hosts": ["mcgill.gapwise.ca"],
       "aliases": ["McGill Downtown", "Montréal", "Montreal"],
       "status": "supported",
       "capabilities": {
@@ -4595,7 +2115,7 @@
       "city": "Pittsburgh",
       "region": "Pennsylvania",
       "country": "United States",
-      "hosts": ["cmu-pittsburgh.gapwise.ca"],
+      "hosts": ["cmu.gapwise.ca"],
       "aliases": [
         "Carnegie Mellon University Pittsburgh Campus",
         "CMU Pittsburgh",
@@ -4608,30 +2128,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Pittsburgh campus",
-        "headline": "Make every gap at CMU Pittsburgh count.",
-        "description": "Plan classes, buildings, routes, and time between classes across Carnegie Mellon University Pittsburgh Campus.",
-        "seoTitle": "Gapwise for Carnegie Mellon University Pittsburgh Campus",
-        "seoDescription": "CMU Pittsburgh timetable planning, campus building discovery, and pedestrian routing in Pittsburgh.",
-        "stats": {
-          "buildings": 7,
-          "entrances": 7,
-          "pathSegments": 38
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "GHC 101",
-          "buildingCode": "GHC",
-          "buildingName": "Gates and Hillman Centers",
-          "room": "101",
-          "nextCourseCode": "WEH 102",
-          "nextBuildingCode": "WEH",
-          "nextBuildingName": "Wean Hall",
-          "nextRoom": "201"
-        },
-        "searchExamples": ["Gates and Hillman Centers", "Wean Hall", "Doherty Hall"]
       }
     },
     {
@@ -4643,7 +2139,7 @@
       "city": "Berkeley",
       "region": "California",
       "country": "United States",
-      "hosts": ["ucberkeley-main.gapwise.ca"],
+      "hosts": ["ucberkeley.gapwise.ca"],
       "aliases": [
         "University of California, Berkeley Campus",
         "Berkeley Main",
@@ -4656,30 +2152,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Berkeley campus",
-        "headline": "Make every gap at Berkeley Main count.",
-        "description": "Plan classes, buildings, routes, and time between classes across University of California, Berkeley Campus.",
-        "seoTitle": "Gapwise for University of California, Berkeley Campus",
-        "seoDescription": "Berkeley Main timetable planning, campus building discovery, and pedestrian routing in Berkeley.",
-        "stats": {
-          "buildings": 7,
-          "entrances": 7,
-          "pathSegments": 38
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "SODA 101",
-          "buildingCode": "SODA",
-          "buildingName": "Soda Hall",
-          "room": "101",
-          "nextCourseCode": "CORY 102",
-          "nextBuildingCode": "CORY",
-          "nextBuildingName": "Cory Hall",
-          "nextRoom": "201"
-        },
-        "searchExamples": ["Soda Hall", "Cory Hall", "Wheeler Hall"]
       }
     },
     {
@@ -4691,7 +2163,7 @@
       "city": "New York",
       "region": "New York",
       "country": "United States",
-      "hosts": ["nyu-washington-square.gapwise.ca"],
+      "hosts": ["nyu.gapwise.ca"],
       "aliases": [
         "New York University Washington Square Campus",
         "Washington Square",
@@ -4704,34 +2176,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Washington Square campus",
-        "headline": "Make every gap at Washington Square count.",
-        "description": "Plan classes, buildings, routes, and time between classes across New York University Washington Square Campus.",
-        "seoTitle": "Gapwise for New York University Washington Square Campus",
-        "seoDescription": "Washington Square timetable planning, campus building discovery, and pedestrian routing in New York.",
-        "stats": {
-          "buildings": 6,
-          "entrances": 6,
-          "pathSegments": 34
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "SILV 101",
-          "buildingCode": "SILV",
-          "buildingName": "Silver Center for Arts and Science",
-          "room": "101",
-          "nextCourseCode": "BOBST 102",
-          "nextBuildingCode": "BOBST",
-          "nextBuildingName": "Elmer Holmes Bobst Library",
-          "nextRoom": "201"
-        },
-        "searchExamples": [
-          "Silver Center for Arts and Science",
-          "Elmer Holmes Bobst Library",
-          "Kimmel Center for University Life"
-        ]
       }
     },
     {
@@ -4743,7 +2187,7 @@
       "city": "Cambridge",
       "region": "Massachusetts",
       "country": "United States",
-      "hosts": ["mit-cambridge.gapwise.ca"],
+      "hosts": ["mit.gapwise.ca"],
       "aliases": [
         "Massachusetts Institute of Technology Cambridge Campus",
         "MIT Cambridge",
@@ -4756,34 +2200,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Cambridge campus",
-        "headline": "Make every gap at MIT Cambridge count.",
-        "description": "Plan classes, buildings, routes, and time between classes across Massachusetts Institute of Technology Cambridge Campus.",
-        "seoTitle": "Gapwise for Massachusetts Institute of Technology Cambridge Campus",
-        "seoDescription": "MIT Cambridge timetable planning, campus building discovery, and pedestrian routing in Cambridge.",
-        "stats": {
-          "buildings": 6,
-          "entrances": 6,
-          "pathSegments": 34
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "BLD10 101",
-          "buildingCode": "BLD10",
-          "buildingName": "Maclaurin Building & Great Dome",
-          "room": "101",
-          "nextCourseCode": "BLD32 102",
-          "nextBuildingCode": "BLD32",
-          "nextBuildingName": "Ray and Maria Stata Center",
-          "nextRoom": "201"
-        },
-        "searchExamples": [
-          "Maclaurin Building & Great Dome",
-          "Ray and Maria Stata Center",
-          "Rogers Building"
-        ]
       }
     },
     {
@@ -4795,7 +2211,7 @@
       "city": "Stanford",
       "region": "California",
       "country": "United States",
-      "hosts": ["stanford-main.gapwise.ca"],
+      "hosts": ["stanford.gapwise.ca"],
       "aliases": ["Stanford University Main Campus", "Stanford Main", "Main campus", "Stanford"],
       "status": "supported",
       "capabilities": {
@@ -4803,34 +2219,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Main campus",
-        "headline": "Make every gap at Stanford Main count.",
-        "description": "Plan classes, buildings, routes, and time between classes across Stanford University Main Campus.",
-        "seoTitle": "Gapwise for Stanford University Main Campus",
-        "seoDescription": "Stanford Main timetable planning, campus building discovery, and pedestrian routing in Stanford.",
-        "stats": {
-          "buildings": 6,
-          "entrances": 6,
-          "pathSegments": 34
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "MEMCHU 101",
-          "buildingCode": "MEMCHU",
-          "buildingName": "Memorial Church & Main Quad",
-          "room": "101",
-          "nextCourseCode": "HUANG 102",
-          "nextBuildingCode": "HUANG",
-          "nextBuildingName": "Huang Engineering Center",
-          "nextRoom": "201"
-        },
-        "searchExamples": [
-          "Memorial Church & Main Quad",
-          "Huang Engineering Center",
-          "Gates Computer Science Building"
-        ]
       }
     },
     {
@@ -4842,7 +2230,7 @@
       "city": "Philadelphia",
       "region": "Pennsylvania",
       "country": "United States",
-      "hosts": ["upenn-philadelphia.gapwise.ca"],
+      "hosts": ["upenn.gapwise.ca"],
       "aliases": [
         "University of Pennsylvania Philadelphia Campus",
         "Penn Philadelphia",
@@ -4855,30 +2243,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Philadelphia campus",
-        "headline": "Make every gap at Penn Philadelphia count.",
-        "description": "Plan classes, buildings, routes, and time between classes across University of Pennsylvania Philadelphia Campus.",
-        "seoTitle": "Gapwise for University of Pennsylvania Philadelphia Campus",
-        "seoDescription": "Penn Philadelphia timetable planning, campus building discovery, and pedestrian routing in Philadelphia.",
-        "stats": {
-          "buildings": 6,
-          "entrances": 6,
-          "pathSegments": 34
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "COLH 101",
-          "buildingCode": "COLH",
-          "buildingName": "College Hall",
-          "room": "101",
-          "nextCourseCode": "VPL 102",
-          "nextBuildingCode": "VPL",
-          "nextBuildingName": "Van Pelt-Dietrich Library",
-          "nextRoom": "201"
-        },
-        "searchExamples": ["College Hall", "Van Pelt-Dietrich Library", "Levine Hall (SEAS)"]
       }
     },
     {
@@ -4890,7 +2254,7 @@
       "city": "Ithaca",
       "region": "New York",
       "country": "United States",
-      "hosts": ["cornell-ithaca.gapwise.ca"],
+      "hosts": ["cornell.gapwise.ca"],
       "aliases": ["Cornell University Ithaca Campus", "Cornell Ithaca", "Ithaca campus", "Ithaca"],
       "status": "supported",
       "capabilities": {
@@ -4898,30 +2262,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Ithaca campus",
-        "headline": "Make every gap at Cornell Ithaca count.",
-        "description": "Plan classes, buildings, routes, and time between classes across Cornell University Ithaca Campus.",
-        "seoTitle": "Gapwise for Cornell University Ithaca Campus",
-        "seoDescription": "Cornell Ithaca timetable planning, campus building discovery, and pedestrian routing in Ithaca.",
-        "stats": {
-          "buildings": 6,
-          "entrances": 6,
-          "pathSegments": 34
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "URIS 101",
-          "buildingCode": "URIS",
-          "buildingName": "Uris Library & McGraw Tower",
-          "room": "101",
-          "nextCourseCode": "OLIN 102",
-          "nextBuildingCode": "OLIN",
-          "nextBuildingName": "Olin Library",
-          "nextRoom": "201"
-        },
-        "searchExamples": ["Uris Library & McGraw Tower", "Olin Library", "Gates Hall (Computing)"]
       }
     },
     {
@@ -4933,7 +2273,7 @@
       "city": "Hanover",
       "region": "New Hampshire",
       "country": "United States",
-      "hosts": ["dartmouth-hanover.gapwise.ca"],
+      "hosts": ["dartmouth.gapwise.ca"],
       "aliases": [
         "Dartmouth College Hanover Campus",
         "Dartmouth Hanover",
@@ -4946,34 +2286,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Hanover campus",
-        "headline": "Make every gap at Dartmouth Hanover count.",
-        "description": "Plan classes, buildings, routes, and time between classes across Dartmouth College Hanover Campus.",
-        "seoTitle": "Gapwise for Dartmouth College Hanover Campus",
-        "seoDescription": "Dartmouth Hanover timetable planning, campus building discovery, and pedestrian routing in Hanover.",
-        "stats": {
-          "buildings": 6,
-          "entrances": 6,
-          "pathSegments": 34
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "BAK 101",
-          "buildingCode": "BAK",
-          "buildingName": "Baker-Berry Library",
-          "room": "101",
-          "nextCourseCode": "DH 102",
-          "nextBuildingCode": "DH",
-          "nextBuildingName": "Dartmouth Hall",
-          "nextRoom": "201"
-        },
-        "searchExamples": [
-          "Baker-Berry Library",
-          "Dartmouth Hall",
-          "Cummings Hall (Thayer Engineering)"
-        ]
       }
     },
     {
@@ -4985,7 +2297,7 @@
       "city": "Providence",
       "region": "Rhode Island",
       "country": "United States",
-      "hosts": ["brown-providence.gapwise.ca"],
+      "hosts": ["brown.gapwise.ca"],
       "aliases": [
         "Brown University College Hill Campus",
         "Brown College Hill",
@@ -4998,30 +2310,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "College Hill campus",
-        "headline": "Make every gap at Brown College Hill count.",
-        "description": "Plan classes, buildings, routes, and time between classes across Brown University College Hill Campus.",
-        "seoTitle": "Gapwise for Brown University College Hill Campus",
-        "seoDescription": "Brown College Hill timetable planning, campus building discovery, and pedestrian routing in Providence.",
-        "stats": {
-          "buildings": 6,
-          "entrances": 6,
-          "pathSegments": 34
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "UH 101",
-          "buildingCode": "UH",
-          "buildingName": "University Hall",
-          "room": "101",
-          "nextCourseCode": "ROCK 102",
-          "nextBuildingCode": "ROCK",
-          "nextBuildingName": "Rockefeller Library",
-          "nextRoom": "201"
-        },
-        "searchExamples": ["University Hall", "Rockefeller Library", "Sciences Library"]
       }
     },
     {
@@ -5033,7 +2321,7 @@
       "city": "New York",
       "region": "New York",
       "country": "United States",
-      "hosts": ["columbia-morningside.gapwise.ca"],
+      "hosts": ["columbia.gapwise.ca"],
       "aliases": [
         "Columbia University Morningside Campus",
         "Morningside",
@@ -5046,30 +2334,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Morningside Heights campus",
-        "headline": "Make every gap at Morningside count.",
-        "description": "Plan classes, buildings, routes, and time between classes across Columbia University Morningside Campus.",
-        "seoTitle": "Gapwise for Columbia University Morningside Campus",
-        "seoDescription": "Morningside timetable planning, campus building discovery, and pedestrian routing in New York.",
-        "stats": {
-          "buildings": 6,
-          "entrances": 6,
-          "pathSegments": 34
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "LOW 101",
-          "buildingCode": "LOW",
-          "buildingName": "Low Memorial Library",
-          "room": "101",
-          "nextCourseCode": "BUTL 102",
-          "nextBuildingCode": "BUTL",
-          "nextBuildingName": "Butler Library",
-          "nextRoom": "201"
-        },
-        "searchExamples": ["Low Memorial Library", "Butler Library", "Pupin Physics Laboratories"]
       }
     },
     {
@@ -5081,7 +2345,7 @@
       "city": "Princeton",
       "region": "New Jersey",
       "country": "United States",
-      "hosts": ["princeton-main.gapwise.ca"],
+      "hosts": ["princeton.gapwise.ca"],
       "aliases": ["Princeton University Main Campus", "Princeton Main", "Main campus", "Princeton"],
       "status": "supported",
       "capabilities": {
@@ -5089,30 +2353,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Main campus",
-        "headline": "Make every gap at Princeton Main count.",
-        "description": "Plan classes, buildings, routes, and time between classes across Princeton University Main Campus.",
-        "seoTitle": "Gapwise for Princeton University Main Campus",
-        "seoDescription": "Princeton Main timetable planning, campus building discovery, and pedestrian routing in Princeton.",
-        "stats": {
-          "buildings": 6,
-          "entrances": 6,
-          "pathSegments": 34
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "NAS 101",
-          "buildingCode": "NAS",
-          "buildingName": "Nassau Hall",
-          "room": "101",
-          "nextCourseCode": "FIR 102",
-          "nextBuildingCode": "FIR",
-          "nextBuildingName": "Firestone Library",
-          "nextRoom": "201"
-        },
-        "searchExamples": ["Nassau Hall", "Firestone Library", "Frist Campus Center"]
       }
     },
     {
@@ -5124,7 +2364,7 @@
       "city": "New Haven",
       "region": "Connecticut",
       "country": "United States",
-      "hosts": ["yale-new-haven.gapwise.ca"],
+      "hosts": ["yale.gapwise.ca"],
       "aliases": ["Yale University Central Campus", "Yale Central", "Central campus", "New Haven"],
       "status": "supported",
       "capabilities": {
@@ -5132,34 +2372,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Central campus",
-        "headline": "Make every gap at Yale Central count.",
-        "description": "Plan classes, buildings, routes, and time between classes across Yale University Central Campus.",
-        "seoTitle": "Gapwise for Yale University Central Campus",
-        "seoDescription": "Yale Central timetable planning, campus building discovery, and pedestrian routing in New Haven.",
-        "stats": {
-          "buildings": 6,
-          "entrances": 6,
-          "pathSegments": 34
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "SML 101",
-          "buildingCode": "SML",
-          "buildingName": "Sterling Memorial Library",
-          "room": "101",
-          "nextCourseCode": "CH 102",
-          "nextBuildingCode": "CH",
-          "nextBuildingName": "Connecticut Hall (Old Campus)",
-          "nextRoom": "201"
-        },
-        "searchExamples": [
-          "Sterling Memorial Library",
-          "Connecticut Hall (Old Campus)",
-          "Kline Tower (Science Hill)"
-        ]
       }
     },
     {
@@ -5171,7 +2383,7 @@
       "city": "Cambridge",
       "region": "Massachusetts",
       "country": "United States",
-      "hosts": ["harvard-cambridge.gapwise.ca"],
+      "hosts": ["harvard.gapwise.ca"],
       "aliases": [
         "Harvard University Cambridge Campus",
         "Harvard Cambridge",
@@ -5184,30 +2396,6 @@
         "buildingData": "supported",
         "search": "supported",
         "routing": "supported"
-      },
-      "marketing": {
-        "campusName": "Cambridge campus",
-        "headline": "Make every gap at Harvard Cambridge count.",
-        "description": "Plan classes, buildings, routes, and time between classes across Harvard University Cambridge Campus.",
-        "seoTitle": "Gapwise for Harvard University Cambridge Campus",
-        "seoDescription": "Harvard Cambridge timetable planning, campus building discovery, and pedestrian routing in Cambridge.",
-        "stats": {
-          "buildings": 6,
-          "entrances": 6,
-          "pathSegments": 34
-        },
-        "example": {
-          "day": "Monday",
-          "courseCode": "WID 101",
-          "buildingCode": "WID",
-          "buildingName": "Widener Memorial Library",
-          "room": "101",
-          "nextCourseCode": "SC 102",
-          "nextBuildingCode": "SC",
-          "nextBuildingName": "Science Center",
-          "nextRoom": "201"
-        },
-        "searchExamples": ["Widener Memorial Library", "Science Center", "Sever Hall"]
       }
     },
     {
@@ -5219,7 +2407,7 @@
       "city": "Ottawa",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["carleton-dominion-chalmers.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Carleton Dominion-Chalmers Centre",
         "Dominion-Chalmers",
@@ -5231,7 +2419,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Dominion-Chalmers Centre",
@@ -5271,7 +2459,7 @@
       "city": "Brampton",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["tmu-brampton.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Toronto Metropolitan University Brampton Campus",
         "Brampton",
@@ -5283,7 +2471,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Brampton campus",
@@ -5323,14 +2511,14 @@
       "city": "Kingston",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["queens-west.gapwise.ca"],
+      "hosts": [],
       "aliases": ["Queen's University West Campus", "West Campus", "West campus", "Kingston"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "West campus",
@@ -5366,7 +2554,7 @@
       "city": "Brantford",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["laurier-brantford.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Wilfrid Laurier University Brantford Campus",
         "Brantford",
@@ -5378,7 +2566,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Brantford campus",
@@ -5414,14 +2602,14 @@
       "city": "Milton",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["laurier-milton.gapwise.ca"],
+      "hosts": [],
       "aliases": ["Wilfrid Laurier University Milton Campus", "Milton", "Milton campus", "Milton"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Milton campus",
@@ -5461,7 +2649,7 @@
       "city": "Burlington",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["mcmaster-burlington.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "McMaster University Ron Joyce Centre",
         "Burlington",
@@ -5473,7 +2661,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Ron Joyce Centre",
@@ -5509,14 +2697,14 @@
       "city": "London",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["western-huron.gapwise.ca"],
+      "hosts": [],
       "aliases": ["Huron University College Campus", "Huron", "Huron campus", "London"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Huron campus",
@@ -5552,14 +2740,14 @@
       "city": "London",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["western-kings.gapwise.ca"],
+      "hosts": [],
       "aliases": ["King's University College Campus", "King's", "King's campus", "London"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "King's campus",
@@ -5595,7 +2783,7 @@
       "city": "Ridgetown",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["guelph-ridgetown.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "University of Guelph Ridgetown Campus",
         "Ridgetown",
@@ -5607,7 +2795,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Ridgetown campus",
@@ -5643,7 +2831,7 @@
       "city": "Toronto",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["guelph-humber.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "University of Guelph-Humber Campus",
         "Guelph-Humber",
@@ -5655,7 +2843,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Guelph-Humber campus",
@@ -5695,7 +2883,7 @@
       "city": "Ottawa",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["uottawa-alta-vista.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "University of Ottawa Alta Vista Campus",
         "Alta Vista",
@@ -5707,7 +2895,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Alta Vista campus",
@@ -5747,7 +2935,7 @@
       "city": "St. Catharines",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["brock-miw.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Marilyn I. Walker School of Fine and Performing Arts Campus",
         "Downtown MIW",
@@ -5759,7 +2947,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Downtown Arts campus",
@@ -5799,7 +2987,7 @@
       "city": "Cambridge",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["waterloo-cambridge.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "University of Waterloo Cambridge Campus",
         "Cambridge",
@@ -5811,7 +2999,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "School of Architecture Cambridge campus",
@@ -5851,7 +3039,7 @@
       "city": "Kitchener",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["waterloo-kitchener.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "University of Waterloo Kitchener Campus",
         "Kitchener",
@@ -5863,7 +3051,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Health Sciences Kitchener campus",
@@ -5903,7 +3091,7 @@
       "city": "Stratford",
       "region": "Ontario",
       "country": "Canada",
-      "hosts": ["waterloo-stratford.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "University of Waterloo Stratford School",
         "Stratford",
@@ -5915,7 +3103,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Stratford campus",
@@ -5955,7 +3143,7 @@
       "city": "Sainte-Anne-de-Bellevue",
       "region": "Quebec",
       "country": "Canada",
-      "hosts": ["mcgill-macdonald.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "McGill University Macdonald Campus",
         "Macdonald",
@@ -5967,7 +3155,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Macdonald campus",
@@ -6003,7 +3191,7 @@
       "city": "Mountain View",
       "region": "California",
       "country": "United States",
-      "hosts": ["cmu-silicon-valley.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Carnegie Mellon University Silicon Valley Campus",
         "Silicon Valley",
@@ -6015,7 +3203,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Silicon Valley campus",
@@ -6055,7 +3243,7 @@
       "city": "Richmond",
       "region": "California",
       "country": "United States",
-      "hosts": ["ucberkeley-richmond.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "UC Berkeley Richmond Field Station",
         "Richmond",
@@ -6067,7 +3255,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Richmond Field Station campus",
@@ -6107,7 +3295,7 @@
       "city": "Brooklyn",
       "region": "New York",
       "country": "United States",
-      "hosts": ["nyu-brooklyn.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "New York University Brooklyn Campus",
         "Brooklyn (Tandon)",
@@ -6119,7 +3307,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Brooklyn campus",
@@ -6155,7 +3343,7 @@
       "city": "Lexington",
       "region": "Massachusetts",
       "country": "United States",
-      "hosts": ["mit-lincoln-lab.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "MIT Lincoln Laboratory Campus",
         "Lincoln Lab",
@@ -6167,7 +3355,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Lincoln Laboratory campus",
@@ -6207,7 +3395,7 @@
       "city": "Redwood City",
       "region": "California",
       "country": "United States",
-      "hosts": ["stanford-redwood-city.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Stanford Redwood City Campus",
         "Redwood City",
@@ -6219,7 +3407,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Redwood City campus",
@@ -6255,7 +3443,7 @@
       "city": "Philadelphia",
       "region": "Pennsylvania",
       "country": "United States",
-      "hosts": ["upenn-pennovation.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Pennovation Works Campus",
         "Pennovation Works",
@@ -6267,7 +3455,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Pennovation Works campus",
@@ -6307,7 +3495,7 @@
       "city": "Kennett Square",
       "region": "Pennsylvania",
       "country": "United States",
-      "hosts": ["upenn-new-bolton.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "University of Pennsylvania New Bolton Center",
         "New Bolton Center",
@@ -6319,7 +3507,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "New Bolton Center campus",
@@ -6355,14 +3543,14 @@
       "city": "New York",
       "region": "New York",
       "country": "United States",
-      "hosts": ["cornell-tech.gapwise.ca"],
+      "hosts": [],
       "aliases": ["Cornell Tech Campus", "Cornell Tech", "Cornell Tech campus", "New York"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Cornell Tech campus",
@@ -6402,7 +3590,7 @@
       "city": "New York",
       "region": "New York",
       "country": "United States",
-      "hosts": ["cornell-weill.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Weill Cornell Medicine Campus",
         "Weill Cornell",
@@ -6414,7 +3602,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Weill Cornell Medicine campus",
@@ -6450,7 +3638,7 @@
       "city": "Lebanon",
       "region": "New Hampshire",
       "country": "United States",
-      "hosts": ["dartmouth-lebanon.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Dartmouth Health Lebanon Campus",
         "Dartmouth Lebanon",
@@ -6462,7 +3650,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Lebanon Health Sciences campus",
@@ -6502,7 +3690,7 @@
       "city": "Providence",
       "region": "Rhode Island",
       "country": "United States",
-      "hosts": ["brown-jewelry-district.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Brown University Jewelry District Campus",
         "Jewelry District",
@@ -6514,7 +3702,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Jewelry District campus",
@@ -6554,7 +3742,7 @@
       "city": "New York",
       "region": "New York",
       "country": "United States",
-      "hosts": ["columbia-manhattanville.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Columbia University Manhattanville Campus",
         "Manhattanville",
@@ -6566,7 +3754,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Manhattanville campus",
@@ -6606,7 +3794,7 @@
       "city": "New York",
       "region": "New York",
       "country": "United States",
-      "hosts": ["columbia-cuimc.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Columbia University Irving Medical Center Campus",
         "Columbia CUIMC",
@@ -6618,7 +3806,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Irving Medical Center campus",
@@ -6658,7 +3846,7 @@
       "city": "Plainsboro",
       "region": "New Jersey",
       "country": "United States",
-      "hosts": ["princeton-forrestal.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Princeton University Forrestal Campus",
         "Forrestal",
@@ -6670,7 +3858,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Forrestal campus",
@@ -6710,7 +3898,7 @@
       "city": "West Windsor",
       "region": "New Jersey",
       "country": "United States",
-      "hosts": ["princeton-meadows.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Princeton University Meadows Campus",
         "Meadows",
@@ -6722,7 +3910,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Meadows campus",
@@ -6762,14 +3950,14 @@
       "city": "New Haven",
       "region": "Connecticut",
       "country": "United States",
-      "hosts": ["yale-medical.gapwise.ca"],
+      "hosts": [],
       "aliases": ["Yale School of Medicine Campus", "Yale Medical", "Medical campus", "New Haven"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Medical campus",
@@ -6809,14 +3997,14 @@
       "city": "West Haven",
       "region": "Connecticut",
       "country": "United States",
-      "hosts": ["yale-west.gapwise.ca"],
+      "hosts": [],
       "aliases": ["Yale University West Campus", "Yale West", "West campus", "West Haven"],
       "status": "supported",
       "capabilities": {
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "West campus",
@@ -6856,7 +4044,7 @@
       "city": "Boston",
       "region": "Massachusetts",
       "country": "United States",
-      "hosts": ["harvard-allston.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Harvard University Allston Campus",
         "Harvard Allston",
@@ -6868,7 +4056,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Allston campus",
@@ -6908,7 +4096,7 @@
       "city": "Boston",
       "region": "Massachusetts",
       "country": "United States",
-      "hosts": ["harvard-longwood.gapwise.ca"],
+      "hosts": [],
       "aliases": [
         "Harvard Longwood Medical Area Campus",
         "Harvard Longwood",
@@ -6920,7 +4108,7 @@
         "timetableImport": "supported",
         "buildingData": "supported",
         "search": "supported",
-        "routing": "supported"
+        "routing": "planned"
       },
       "marketing": {
         "campusName": "Longwood Medical campus",

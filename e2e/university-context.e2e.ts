@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { campusEditionUrl, watchForAppFailures } from "./helpers";
+import { editionUrl, watchForAppFailures } from "./helpers";
 
 test("Carleton uses the canonical product screens and campus dataset", async ({
   page,
@@ -9,7 +9,7 @@ test("Carleton uses the canonical product screens and campus dataset", async ({
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto(campusEditionUrl(baseURL, "cu-ottawa", "carleton"));
+  await page.goto(editionUrl(baseURL, "carleton"));
   await expect(page.locator(".university-home-kicker")).toContainText(
     "Gapwise for Carleton University",
   );
@@ -59,7 +59,7 @@ test("Carleton calendar import feeds timetable, gaps, and Day Route on a tablet"
   if (!baseURL) throw new Error("Playwright baseURL is required");
   await page.setViewportSize({ width: 820, height: 1180 });
   const failures = watchForAppFailures(page, baseURL);
-  await page.goto(campusEditionUrl(baseURL, "cu-ottawa", "carleton"));
+  await page.goto(editionUrl(baseURL, "carleton"));
   const calendar = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
@@ -132,7 +132,7 @@ test("Direct URL refresh preserves university context in local development", asy
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto(campusEditionUrl(baseURL, "cu-ottawa", "carleton"));
+  await page.goto(editionUrl(baseURL, "carleton"));
   await expect(page.locator(".university-home-kicker")).toContainText(
     "Gapwise for Carleton University",
   );
@@ -156,7 +156,7 @@ test("TMU, Queen's, and Laurier use canonical product screens and campus context
   const failures = watchForAppFailures(page, baseURL);
 
   // TMU
-  await page.goto(campusEditionUrl(baseURL, "tmu-downtown", "tmu"));
+  await page.goto(editionUrl(baseURL, "tmu"));
   await expect(page.locator(".university-home-kicker")).toContainText(
     "Gapwise for Toronto Metropolitan University",
   );
@@ -171,7 +171,7 @@ test("TMU, Queen's, and Laurier use canonical product screens and campus context
   await expect(page.getByText("CPS 109").first()).toBeVisible();
 
   // Queen's
-  await page.goto(campusEditionUrl(baseURL, "queens-main", "queens"));
+  await page.goto(editionUrl(baseURL, "queens"));
   await expect(page.locator(".university-home-kicker")).toContainText(
     "Gapwise for Queen's University",
   );
@@ -184,7 +184,7 @@ test("TMU, Queen's, and Laurier use canonical product screens and campus context
   await expect(page.getByText("CISC 121").first()).toBeVisible();
 
   // Laurier
-  await page.goto(campusEditionUrl(baseURL, "laurier-waterloo", "waterloo"));
+  await page.goto(editionUrl(baseURL, "laurier"));
   await expect(page.locator(".university-home-kicker")).toContainText(
     "Gapwise for Wilfrid Laurier University",
   );

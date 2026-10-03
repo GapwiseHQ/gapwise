@@ -110,8 +110,8 @@ describe("university registry", () => {
       universityId: "uoft",
       campusId: "utm",
     });
-    expect(siteForHostname("mcgill.gapwise.ca")?.role).toBe("university-hub");
-    expect(siteForHostname("harvard.gapwise.ca")?.role).toBe("university-hub");
+    expect(siteForHostname("mcgill.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(siteForHostname("harvard.gapwise.ca")?.role).toBe("single-campus-edition");
     expect(universityForHostname("harvard.gapwise.ca")?.status).toBe("supported");
     expect(campusForHostname("uoft.gapwise.ca")).toBeNull();
     expect(campusForHostname("utm.gapwise.ca")).toBe("utm");

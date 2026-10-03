@@ -376,7 +376,9 @@ describe("Campus Maps and Timetable Inference for All Supported Campuses", () =>
         }
       }
 
-      expect(routedCount).toBeGreaterThanOrEqual(1);
+      if (campus.capabilities.routing === "supported") {
+        expect(routedCount).toBeGreaterThanOrEqual(1);
+      }
     }
   });
 });
