@@ -26,28 +26,28 @@ for (const uni of manifest.universities) {
     continue;
   }
 
-  // Branding & Assets
-  const isUofT = uni.id === "uoft";
-  const logoPath = isUofT
-    ? resolve("public/logo-mark.svg")
-    : resolve(`public/universities/${uni.id}/logo-mark.svg`);
-  if (!existsSync(logoPath)) {
-    errors.push(`${uni.id}: Missing logo mark at ${logoPath}`);
-  }
+  // Branding assets are required only for editions with source-backed campus data.
+  if (uni.dataPaths.length > 0) {
+    const isUofT = uni.id === "uoft";
+    const logoPath = isUofT
+      ? resolve("public/logo-mark.svg")
+      : resolve(`public/universities/${uni.id}/logo-mark.svg`);
+    if (!existsSync(logoPath)) errors.push(`${uni.id}: Missing logo mark at ${logoPath}`);
 
-  const manifestPath = isUofT
-    ? resolve("public/site.webmanifest")
-    : resolve(`public/universities/${uni.id}/site.webmanifest`);
-  if (!existsSync(manifestPath)) {
-    errors.push(`${uni.id}: Missing webmanifest at ${manifestPath}`);
-  } else {
-    try {
-      const manifestJson = JSON.parse(readFileSync(manifestPath, "utf8"));
-      if (!manifestJson.name || !manifestJson.short_name) {
-        errors.push(`${uni.id}: webmanifest missing name or short_name`);
+    const manifestPath = isUofT
+      ? resolve("public/site.webmanifest")
+      : resolve(`public/universities/${uni.id}/site.webmanifest`);
+    if (!existsSync(manifestPath)) {
+      errors.push(`${uni.id}: Missing webmanifest at ${manifestPath}`);
+    } else {
+      try {
+        const manifestJson = JSON.parse(readFileSync(manifestPath, "utf8"));
+        if (!manifestJson.name || !manifestJson.short_name) {
+          errors.push(`${uni.id}: webmanifest missing name or short_name`);
+        }
+      } catch {
+        errors.push(`${uni.id}: webmanifest is not valid JSON`);
       }
-    } catch {
-      errors.push(`${uni.id}: webmanifest is not valid JSON`);
     }
   }
 

@@ -1,0 +1,2 @@
+export const MAX_TIMETABLE_FILE_BYTES = 2 * 1024 * 1024;
+export const MAX_TIMETABLE_EVENTS = 2_000;

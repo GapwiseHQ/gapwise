@@ -42,7 +42,7 @@ removeStaticSeoMetadata();
 
 function syncUniversityBranding() {
   const university = activeUniversity();
-  if (!university || university.id === "uoft" || university.status === "planned") return;
+  if (!university || university.id === "uoft" || university.dataPaths.length === 0) return;
   const prefix = `/universities/${university.id}`;
   const svg = document.getElementById("app-icon-svg") as HTMLLinkElement | null;
   if (svg) svg.href = `${prefix}/logo-mark.svg`;

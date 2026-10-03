@@ -156,10 +156,10 @@ const EXPECTED_DAYS = new Set([
 describe("Timetable Multi-University Golden Validation Suite (AND-211)", () => {
   test("all production universities are registered and have corresponding adapters", () => {
     const universities = supportedUniversities();
-    expect(universities).toHaveLength(14);
+    expect(universities).toHaveLength(27);
 
     const adapterKeys = Object.keys(timetableAdapters);
-    expect(adapterKeys.length).toBeGreaterThanOrEqual(11);
+    expect(adapterKeys.length).toBeGreaterThanOrEqual(27);
 
     for (const key of Object.keys(GOLDEN_FIXTURES)) {
       expect(timetableAdapters[key]).toBeDefined();

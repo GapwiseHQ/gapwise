@@ -75,14 +75,15 @@ export function parseUbcWorkdayText(
 
     const sectionCell = cells[3] || cells[0] || "";
     const sectionMatch = sectionCell.match(
-      /\b([A-Z]{2,6})_V\s+(\d{3}[A-Z]?)-([A-Z0-9]+)\s+-\s+(.+)$/i,
+      /\b([A-Z]{2,6})_([VO])\s+(\d{3}[A-Z]?)-([A-Z0-9]+)\s+-\s+(.+)$/i,
     );
     if (!sectionMatch) continue;
-    const courseCode = adapter.parseCourseCode(`${sectionMatch[1]} ${sectionMatch[2]}`);
+    const campusCode = sectionMatch[2]!.toUpperCase();
+    const courseCode = adapter.parseCourseCode(`${sectionMatch[1]} ${sectionMatch[3]}`);
     if (!courseCode) continue;
 
-    const nativeSection = sectionMatch[3]!.toUpperCase();
-    const courseName = sectionMatch[4]!.trim();
+    const nativeSection = sectionMatch[4]!.toUpperCase();
+    const courseName = sectionMatch[5]!.trim();
     const componentLabel = cells[4]?.toUpperCase() || "OTHER";
     const nativeComponentType = COMPONENT_BY_LABEL[componentLabel] ?? componentLabel;
     const deliveryMode = cells[5] ?? "";
@@ -111,8 +112,12 @@ export function parseUbcWorkdayText(
       } else if (!/in person/i.test(deliveryMode)) {
         kind = "online";
       }
-      const location = resolveLocation(workdayLocation(rawLocation), kind, campus);
-      if (kind === "physical" && !location.buildingId) {
+      const normalizedLocation = workdayLocation(rawLocation);
+      const location =
+        campusCode === "V"
+          ? resolveLocation(normalizedLocation, kind, campus)
+          : { kind, nativeText: normalizedLocation, buildingId: null, room: null };
+      if (campusCode === "V" && kind === "physical" && !location.buildingId) {
         warnings.push(`Could not match ${rawLocation} to a UBC Vancouver building.`);
       }
 
@@ -130,7 +135,10 @@ export function parseUbcWorkdayText(
         startDate: pattern[1]!,
         endDate: pattern[2]!,
         location,
-        source: { kind: "student-entry", recordedAt: new Date().toISOString() },
+        source: {
+          kind: campusCode === "O" ? "ubc-workday-okanagan" : "ubc-workday-vancouver",
+          recordedAt: new Date().toISOString(),
+        },
       });
       parsedPatterns += 1;
     }

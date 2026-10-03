@@ -7,7 +7,7 @@ export const ubc: InstitutionAdapter = {
     const normalized = value
       .trim()
       .toUpperCase()
-      .replace(/^([A-Z]{2,6})_V\s*/, "$1 ")
+      .replace(/^([A-Z]{2,6})_[VO]\s*/, "$1 ")
       .replace(/^([A-Z]{2,6})(\d{3}[A-Z]?)$/, "$1 $2")
       .replace(/\s+/g, " ");
     return /^[A-Z]{2,6} \d{3}[A-Z]?$/.test(normalized) ? normalized : null;

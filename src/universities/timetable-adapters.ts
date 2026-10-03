@@ -1,7 +1,101 @@
 import type { Meeting, ParsedTimetable } from "@/lib/timetable-types";
 
+function calendarAdapter(config: {
+  universityId: string;
+  universityName: string;
+  defaultCampusId: string;
+  timeZone: string;
+}) {
+  return async (text: string) => {
+    const { parseStandardCalendar } = await import("./common/calendar-adapter");
+    return parseStandardCalendar(text, config);
+  };
+}
+
+const northAmericanCalendarAdapters = {
+  "cmu-calendar": calendarAdapter({
+    universityId: "cmu",
+    universityName: "Carnegie Mellon University",
+    defaultCampusId: "cmu-pittsburgh",
+    timeZone: "America/New_York",
+  }),
+  "ucberkeley-calendar": calendarAdapter({
+    universityId: "ucberkeley",
+    universityName: "UC Berkeley",
+    defaultCampusId: "ucberkeley-main",
+    timeZone: "America/Los_Angeles",
+  }),
+  "nyu-calendar": calendarAdapter({
+    universityId: "nyu",
+    universityName: "New York University",
+    defaultCampusId: "nyu-washington-square",
+    timeZone: "America/New_York",
+  }),
+  "mit-calendar": calendarAdapter({
+    universityId: "mit",
+    universityName: "MIT",
+    defaultCampusId: "mit-cambridge",
+    timeZone: "America/New_York",
+  }),
+  "stanford-calendar": calendarAdapter({
+    universityId: "stanford",
+    universityName: "Stanford University",
+    defaultCampusId: "stanford-main",
+    timeZone: "America/Los_Angeles",
+  }),
+  "upenn-calendar": calendarAdapter({
+    universityId: "upenn",
+    universityName: "the University of Pennsylvania",
+    defaultCampusId: "upenn-philadelphia",
+    timeZone: "America/New_York",
+  }),
+  "cornell-calendar": calendarAdapter({
+    universityId: "cornell",
+    universityName: "Cornell University",
+    defaultCampusId: "cornell-ithaca",
+    timeZone: "America/New_York",
+  }),
+  "dartmouth-calendar": calendarAdapter({
+    universityId: "dartmouth",
+    universityName: "Dartmouth College",
+    defaultCampusId: "dartmouth-hanover",
+    timeZone: "America/New_York",
+  }),
+  "brown-calendar": calendarAdapter({
+    universityId: "brown",
+    universityName: "Brown University",
+    defaultCampusId: "brown-providence",
+    timeZone: "America/New_York",
+  }),
+  "columbia-calendar": calendarAdapter({
+    universityId: "columbia",
+    universityName: "Columbia University",
+    defaultCampusId: "columbia-morningside",
+    timeZone: "America/New_York",
+  }),
+  "princeton-calendar": calendarAdapter({
+    universityId: "princeton",
+    universityName: "Princeton University",
+    defaultCampusId: "princeton-main",
+    timeZone: "America/New_York",
+  }),
+  "yale-calendar": calendarAdapter({
+    universityId: "yale",
+    universityName: "Yale University",
+    defaultCampusId: "yale-new-haven",
+    timeZone: "America/New_York",
+  }),
+  "harvard-calendar": calendarAdapter({
+    universityId: "harvard",
+    universityName: "Harvard University",
+    defaultCampusId: "harvard-cambridge",
+    timeZone: "America/New_York",
+  }),
+} satisfies Record<string, (text: string) => Promise<ParsedTimetable>>;
+
 /** University integration registry. Shared product surfaces consume ParsedTimetable only. */
 export const timetableAdapters: Record<string, (text: string) => Promise<ParsedTimetable>> = {
+  ...northAmericanCalendarAdapters,
   "acorn-ics": async (text) => {
     const { parseIcs } = await import("@/lib/ics-parser");
     const { enrichCourseTitles } = await import("@/lib/course-title-catalog");
@@ -63,7 +157,99 @@ export const timetableAdapters: Record<string, (text: string) => Promise<ParsedT
   // GAPWISE_ADAPTER_REGISTRY: the CLI inserts new timetable adapters here.
 };
 
+const calendarDemoDetails: Record<
+  keyof typeof northAmericanCalendarAdapters,
+  { universityId: string; campus: string; courses: [string, string] }
+> = {
+  "cmu-calendar": { universityId: "cmu", campus: "CMU-PITTSBURGH", courses: ["15-122", "21-127"] },
+  "ucberkeley-calendar": {
+    universityId: "ucberkeley",
+    campus: "UCBERKELEY-MAIN",
+    courses: ["COMPSCI 61A", "MATH 1A"],
+  },
+  "nyu-calendar": {
+    universityId: "nyu",
+    campus: "NYU-WASHINGTON-SQUARE",
+    courses: ["CSCI-UA 101", "MATH-UA 121"],
+  },
+  "mit-calendar": { universityId: "mit", campus: "MIT-CAMBRIDGE", courses: ["6.100A", "18.01"] },
+  "stanford-calendar": {
+    universityId: "stanford",
+    campus: "STANFORD-MAIN",
+    courses: ["CS 106A", "MATH 51"],
+  },
+  "upenn-calendar": {
+    universityId: "upenn",
+    campus: "UPENN-PHILADELPHIA",
+    courses: ["CIS 1200", "MATH 1400"],
+  },
+  "cornell-calendar": {
+    universityId: "cornell",
+    campus: "CORNELL-ITHACA",
+    courses: ["CS 1110", "MATH 1110"],
+  },
+  "dartmouth-calendar": {
+    universityId: "dartmouth",
+    campus: "DARTMOUTH-HANOVER",
+    courses: ["COSC 1", "MATH 8"],
+  },
+  "brown-calendar": {
+    universityId: "brown",
+    campus: "BROWN-PROVIDENCE",
+    courses: ["CSCI 0111", "MATH 0100"],
+  },
+  "columbia-calendar": {
+    universityId: "columbia",
+    campus: "COLUMBIA-MORNINGSIDE",
+    courses: ["COMS W1004", "MATH UN1101"],
+  },
+  "princeton-calendar": {
+    universityId: "princeton",
+    campus: "PRINCETON-MAIN",
+    courses: ["COS 126", "MAT 201"],
+  },
+  "yale-calendar": {
+    universityId: "yale",
+    campus: "YALE-NEW-HAVEN",
+    courses: ["CPSC 201", "MATH 120"],
+  },
+  "harvard-calendar": {
+    universityId: "harvard",
+    campus: "HARVARD-CAMBRIDGE",
+    courses: ["CS 50", "MATH 21A"],
+  },
+};
+
+function calendarDemo(adapterId: keyof typeof calendarDemoDetails): Meeting[] {
+  const detail = calendarDemoDetails[adapterId];
+  return detail.courses.map((courseCode, index) => ({
+    id: `${detail.universityId}-demo-${index + 1}`,
+    universityId: detail.universityId,
+    courseCode,
+    activityType: "LEC",
+    sectionCode: "001",
+    courseName: courseCode,
+    startTime: 9 * 60 + index * 150,
+    endTime: 10 * 60 + index * 150,
+    weekday: "Monday",
+    buildingCode: null,
+    room: null,
+    term: "Fall",
+    campus: detail.campus,
+    locationUnknown: true,
+    locationType: "tba",
+    dateRange: { startDate: "2026-09-07", endDate: "2026-12-07" },
+    recurrenceIntervalWeeks: 1,
+  }));
+}
+
 export const demoTimetableLoaders: Record<string, (campusId?: string) => Promise<Meeting[]>> = {
+  ...Object.fromEntries(
+    Object.keys(calendarDemoDetails).map((adapterId) => [
+      adapterId,
+      async () => calendarDemo(adapterId as keyof typeof calendarDemoDetails),
+    ]),
+  ),
   "acorn-ics": async (campusId?: string) => {
     const campus = campusId?.toLowerCase();
     if (campus === "utsg") {

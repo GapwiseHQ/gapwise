@@ -107,11 +107,12 @@ function pointToFootprintDistanceMeters(
 }
 
 export function runComprehensiveCampusAudit(): FullAuditReport {
+  const auditedUniversityIds = new Set(supportedCampuses().map((campus) => campus.universityId));
   const report: FullAuditReport = {
     schemaVersion: "1.0",
     generatedAt: new Date().toISOString(),
     summary: {
-      totalUniversities: supportedUniversities().length,
+      totalUniversities: auditedUniversityIds.size,
       totalCampuses: supportedCampuses().length,
       routableCampuses: 0,
       totalBuildings: 0,

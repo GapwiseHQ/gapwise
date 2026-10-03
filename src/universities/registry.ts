@@ -212,9 +212,12 @@ export function validateUniversityManifest(
       errors.push(`${entry.id}: university SEO metadata is required`);
     if (entry.marketing?.searchExamples.length !== 3)
       errors.push(`${entry.id}: exactly three university search examples are required`);
-    if (entry.status !== "planned") {
+    const entryCampuses = CAMPUSES.filter((campus) => campus.universityId === entry.id);
+    if (entryCampuses.some((campus) => campus.capabilities.timetableImport !== "planned")) {
       if (!entry.timetableAdapter.trim() || entry.timetableAdapter === "planned")
-        errors.push(`${entry.id}: supported editions require a timetable adapter`);
+        errors.push(`${entry.id}: timetable-capable editions require a timetable adapter`);
+    }
+    if (entryCampuses.some((campus) => campus.capabilities.buildingData !== "planned")) {
       if (!entry.dataPaths.length) errors.push(`${entry.id}: data paths are required`);
       if (
         !entry.marketing.stats ||

@@ -125,10 +125,29 @@
   font-style: normal;
 }
 
+.university-directory-group {
+  margin-top: 2rem;
+}
+
+.university-directory-group > h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.university-directory-group > h2 span {
+  color: var(--color-muted-foreground);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+}
+
 .university-directory-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 1rem;
+  margin-top: 0.65rem;
   border-top: 1px solid var(--color-border);
   border-left: 1px solid var(--color-border);
 }

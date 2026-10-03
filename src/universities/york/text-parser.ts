@@ -246,11 +246,16 @@ export function parseYorkText(
         const component = compMatch ? compMatch[1]!.toUpperCase() : "LEC";
 
         const locCandidate = extractLocation(afterTime, campus) ?? extractLocation(line, campus);
+        const nativeLocation = afterTime || "TBA";
         const location: Meeting["location"] = locCandidate ?? {
-          nativeText: afterTime || "TBA",
+          nativeText: nativeLocation,
           buildingId: null,
           room: null,
-          kind: "tba",
+          kind: /\b(?:TBA|TBD|to be announced)\b/i.test(nativeLocation)
+            ? "tba"
+            : /\b(?:online|remote|virtual|zoom|web)\b/i.test(nativeLocation)
+              ? "online"
+              : "physical",
         };
 
         meetings.push({

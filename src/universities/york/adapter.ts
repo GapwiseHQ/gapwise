@@ -4,6 +4,7 @@ import { york } from "./config";
 import { parseIcs } from "./ics-parser";
 import { parseYorkText } from "./text-parser";
 import type { CampusSnapshot, Day, Meeting as YorkMeeting } from "../common/model";
+import { inferImportedCampus } from "../common/campus-inference";
 
 export const yorkCampus = campusJson as unknown as CampusSnapshot;
 
@@ -24,6 +25,14 @@ function minutes(value: string): number {
 
 export function normalizeYorkMeeting(source: YorkMeeting): Meeting[] {
   const building = yorkCampus.buildings.find((item) => item.id === source.location.buildingId);
+  const campus = source.location.buildingId
+    ? "KEELE"
+    : inferImportedCampus({
+        universityId: "york",
+        courseCode: source.courseCode,
+        sourceLocation: source.location.nativeText,
+        defaultCampusId: "keele",
+      });
   const component = source.nativeComponentType.toUpperCase();
   const activityType =
     component === "LEC" ||
@@ -54,7 +63,7 @@ export function normalizeYorkMeeting(source: YorkMeeting): Meeting[] {
     buildingCode: building?.nativeCodes[0] ?? null,
     room: source.location.room,
     term,
-    campus: "KEELE",
+    campus,
     locationUnknown: source.location.kind !== "physical",
     locationType: source.location.kind,
     sourceLocation: source.location.nativeText,

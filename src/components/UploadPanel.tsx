@@ -171,7 +171,13 @@ export function UploadPanel({
                 type="button"
                 disabled={!pastedText.trim()}
                 onClick={() => {
-                  submitFile(new File([pastedText], "schedule.txt", { type: "text/plain" }), true);
+                  const calendar = /BEGIN:VCALENDAR/i.test(pastedText);
+                  submitFile(
+                    new File([pastedText], calendar ? "schedule.ics" : "schedule.txt", {
+                      type: calendar ? "text/calendar" : "text/plain",
+                    }),
+                    true,
+                  );
                   setPasting(false);
                 }}
                 className="button-primary inline-flex min-h-10 flex-1 items-center justify-center px-4 text-xs font-semibold disabled:opacity-50"

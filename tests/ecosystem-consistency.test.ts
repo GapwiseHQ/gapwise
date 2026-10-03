@@ -28,12 +28,16 @@ const EXPECTED_UNIVERSITY_IDS = [
 ] as const;
 
 describe("Gapwise Ecosystem Consistency", () => {
-  test("planned hosts are real editions without entering supported feature coverage", () => {
-    const plannedHosts = manifest.sites
+  test("timetable-only hosts are live without claiming map coverage", () => {
+    const timetableOnlyHosts = manifest.sites
       .filter((site) => {
         const university = manifest.universities.find((item) => item.id === site.universityId);
         const campus = manifest.campuses.find((item) => item.id === site.campusId);
-        return (campus?.status ?? university?.status) === "planned";
+        return (
+          campus?.capabilities.timetableImport === "supported" &&
+          campus.capabilities.buildingData === "planned" &&
+          university?.status === "partial"
+        );
       })
       .flatMap((site) => site.hosts);
     for (const host of [
@@ -54,7 +58,7 @@ describe("Gapwise Ecosystem Consistency", () => {
       "nyu.gapwise.ca",
       "ucberkeley.gapwise.ca",
     ]) {
-      expect(plannedHosts).toContain(host);
+      expect(timetableOnlyHosts).toContain(host);
       expect(siteForHostname(host)?.role).not.toBe("reserved");
       expect(universityForHostname(host)).not.toBeNull();
     }
@@ -81,7 +85,7 @@ describe("Gapwise Ecosystem Consistency", () => {
 
   test("every university has campus catalog and campus data", () => {
     for (const uni of manifest.universities.filter((item) => item.status !== "planned")) {
-      if (uni.id === "uoft") continue;
+      if (uni.id === "uoft" || uni.dataPaths.length === 0) continue;
       const campusFile = resolve(`src/data/campuses/${uni.id}/campus.json`);
       const catalogFile = resolve(`src/data/campuses/${uni.id}/catalog.json`);
       expect(existsSync(campusFile)).toBe(true);
@@ -104,6 +108,7 @@ describe("Gapwise Ecosystem Consistency", () => {
 
   test("every university has complete web assets (logo, manifest, og-card, icons)", () => {
     for (const uni of manifest.universities.filter((item) => item.status !== "planned")) {
+      if (uni.dataPaths.length === 0) continue;
       const dir = resolve(`public/universities/${uni.id}`);
       expect(existsSync(resolve(dir, "logo-mark.svg"))).toBe(true);
       expect(existsSync(resolve(dir, "site.webmanifest"))).toBe(true);
@@ -137,9 +142,9 @@ describe("Gapwise Ecosystem Consistency", () => {
     const globalHome = readFileSync("src/components/GlobalMarketingHome.tsx", "utf8");
     const universityHome = readFileSync("src/components/UniversityMarketingHome.tsx", "utf8");
 
-    expect(supportedUniversities().map((university) => university.id)).toEqual([
-      ...EXPECTED_UNIVERSITY_IDS,
-    ]);
+    expect(supportedUniversities().map((university) => university.id)).toEqual(
+      manifest.universities.map((university) => university.id),
+    );
     expect(landing).toContain("<GlobalMarketingHome");
     expect(landing).toContain("<UniversityMarketingHome");
     expect(globalHome).toContain("supportedUniversities()");

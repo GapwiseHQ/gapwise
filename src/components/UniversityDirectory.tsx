@@ -8,8 +8,22 @@ import {
 import "./university-directory.css";
 
 const ENTRIES = universityDirectoryEntries();
-const UNIVERSITY_COUNT = ENTRIES.filter((entry) => entry.kind === "university").length;
-const CAMPUS_COUNT = ENTRIES.filter((entry) => entry.kind === "campus").length;
+const UNIVERSITIES = ENTRIES.filter((entry) => entry.kind === "university");
+const UNIVERSITY_COUNT = UNIVERSITIES.length;
+
+function directUniversityMatch(entry: (typeof ENTRIES)[number], query: string) {
+  return normalizeUniversitySearch(
+    [
+      entry.id,
+      entry.name,
+      entry.shortName,
+      entry.scope,
+      entry.location,
+      entry.host,
+      ...entry.university.aliases,
+    ].join(" "),
+  ).includes(query);
+}
 
 function statusLabel(status: AvailabilityStatus) {
   return status === "supported" ? "Supported" : status === "partial" ? "Partial" : "Planned";
@@ -18,10 +32,19 @@ function statusLabel(status: AvailabilityStatus) {
 export function UniversityDirectory() {
   const [query, setQuery] = useState("");
   const normalized = normalizeUniversitySearch(query);
-  const results = useMemo(
-    () => (normalized ? ENTRIES.filter((entry) => entry.searchText.includes(normalized)) : ENTRIES),
-    [normalized],
-  );
+  const results = useMemo(() => {
+    if (!normalized) return UNIVERSITIES;
+    return UNIVERSITIES.flatMap((universityEntry) => {
+      if (directUniversityMatch(universityEntry, normalized)) return [universityEntry];
+      return ENTRIES.filter(
+        (entry) =>
+          entry.kind === "campus" &&
+          entry.university.id === universityEntry.id &&
+          entry.searchText.includes(normalized),
+      );
+    });
+  }, [normalized]);
+  const countries = ["Canada", "United States"] as const;
 
   return (
     <div className="university-directory-page">
@@ -51,8 +74,8 @@ export function UniversityDirectory() {
           <h1 id="university-directory-title">Explore Gapwise universities.</h1>
           <div>
             <span>{UNIVERSITY_COUNT} universities</span>
-            <span>{CAMPUS_COUNT} distinct child campuses</span>
-            <span>Supported, partial, and planned</span>
+            <span>Timetable import at every university</span>
+            <span>Maps clearly marked by coverage</span>
           </div>
         </section>
 
@@ -62,50 +85,61 @@ export function UniversityDirectory() {
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search by university, abbreviation, campus, city, alias, or hostname"
+            placeholder="Search university, campus, or city"
           />
           <em>
             {results.length} result{results.length === 1 ? "" : "s"}
           </em>
         </label>
 
-        <section
-          className="university-directory-grid"
-          aria-live="polite"
-          aria-label="Gapwise university directory"
-        >
-          {results.map((entry) => (
-            <a
-              key={`${entry.kind}-${entry.id}`}
-              href={entry.href}
-              style={{ "--directory-accent": entry.university.accentColor } as CSSProperties}
-            >
-              <div className="university-directory-card-top">
-                <span>{entry.kind === "campus" ? "Campus edition" : entry.university.country}</span>
-                <em data-status={entry.status}>{statusLabel(entry.status)}</em>
-              </div>
-              <strong>{entry.name}</strong>
-              <p>
-                <MapPinned aria-hidden="true" />
-                {entry.location} · {entry.scope}
-              </p>
-              <small>{entry.host}</small>
-              <ArrowRight className="university-directory-arrow" aria-hidden="true" />
-            </a>
-          ))}
+        <div aria-live="polite" aria-label="Gapwise university directory">
+          {countries.map((country) => {
+            const entries = results.filter((entry) => entry.university.country === country);
+            if (!entries.length) return null;
+            return (
+              <section className="university-directory-group" key={country}>
+                <h2>
+                  {country} <span>{entries.length}</span>
+                </h2>
+                <div className="university-directory-grid">
+                  {entries.map((entry) => (
+                    <a
+                      key={`${entry.kind}-${entry.id}`}
+                      href={entry.href}
+                      style={
+                        { "--directory-accent": entry.university.accentColor } as CSSProperties
+                      }
+                    >
+                      <div className="university-directory-card-top">
+                        <span>{entry.kind === "campus" ? "Campus match" : entry.shortName}</span>
+                        <em data-status={entry.status}>{statusLabel(entry.status)}</em>
+                      </div>
+                      <strong>{entry.name}</strong>
+                      <p>
+                        <MapPinned aria-hidden="true" />
+                        {entry.location} · {entry.scope}
+                      </p>
+                      <small>{entry.host}</small>
+                      <ArrowRight className="university-directory-arrow" aria-hidden="true" />
+                    </a>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
           {results.length === 0 ? (
             <div className="university-directory-empty">
-              No university or campus matches “{query}”. Try an abbreviation, city, or hostname.
+              No university or campus matches “{query}”. Try an abbreviation or city.
             </div>
           ) : null}
-        </section>
+        </div>
 
         <section className="university-directory-note">
-          <h2>Planned means the edition is real, not that unsupported data exists.</h2>
+          <h2>Timetables work independently from campus maps.</h2>
           <p>
-            Every planned edition has institution-specific context and accurate canonical metadata.
-            Timetable import, building data, campus search, and routing stay visibly planned until
-            each capability is backed by verified implementation and data.
+            Every university listed here can import its supported schedule or calendar format.
+            Building data, campus search, and routing stay clearly labeled until each campus has
+            source-backed coverage.
           </p>
         </section>
       </main>
