@@ -1,6 +1,6 @@
 import type { CampusSnapshot } from "@/data/campuses/contract";
 import { carletonCampus } from "@/universities/carleton/adapter";
-import { universityByCampus, universityById } from "@/universities/registry";
+import { campusById, universityByCampus, universityById } from "@/universities/registry";
 import { routeBetweenBuildings } from "./campus-outdoor-graph";
 import type { TransitionPlanner } from "./transition";
 import type { RoutePreferences, TransitionRoute } from "./types";
@@ -116,6 +116,8 @@ export const OUTDOOR_CAMPUS_LOADERS: Record<string, CampusSnapshotLoader> = {
     ),
   york: () =>
     import("@/data/campuses/york/campus.json").then((m) => m.default as unknown as CampusSnapshot),
+  keele: () =>
+    import("@/data/campuses/york/campus.json").then((m) => m.default as unknown as CampusSnapshot),
   mcmaster: () =>
     import("@/data/campuses/mcmaster/campus.json").then(
       (m) => m.default as unknown as CampusSnapshot,
@@ -136,11 +138,17 @@ export const OUTDOOR_CAMPUS_LOADERS: Record<string, CampusSnapshotLoader> = {
     import("@/data/campuses/brock/campus.json").then((m) => m.default as unknown as CampusSnapshot),
   "ubc-vancouver": () =>
     import("@/data/campuses/ubc/campus.json").then((m) => m.default as unknown as CampusSnapshot),
+  ubc: () =>
+    import("@/data/campuses/ubc/campus.json").then((m) => m.default as unknown as CampusSnapshot),
   "waterloo-main": () =>
     import("@/data/campuses/waterloo/campus.json").then(
       (m) => m.default as unknown as CampusSnapshot,
     ),
   "mcgill-downtown": () =>
+    import("@/data/campuses/mcgill/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  mcgill: () =>
     import("@/data/campuses/mcgill/campus.json").then(
       (m) => m.default as unknown as CampusSnapshot,
     ),
@@ -155,7 +163,11 @@ export async function getOutdoorCampusTransitionPlanner(
   const university = universityById(normalized) ?? universityByCampus(normalized);
   const lookupKey = OUTDOOR_CAMPUS_LOADERS[normalized]
     ? normalized
-    : (university?.defaultCampus ?? normalized);
+    : university?.defaultCampus && OUTDOOR_CAMPUS_LOADERS[university.defaultCampus]
+      ? university.defaultCampus
+      : university?.id && OUTDOOR_CAMPUS_LOADERS[university.id]
+        ? university.id
+        : normalized;
 
   if (plannerCache.has(lookupKey)) {
     return plannerCache.get(lookupKey)!;
