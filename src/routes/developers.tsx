@@ -21,13 +21,13 @@ export const Route = createFileRoute("/developers")({
       {
         name: "description",
         content:
-          "Build with Gapwise open campus data, public APIs, SDKs, deterministic routing and gap planning across Canadian universities, and permissioned AI integration.",
+          "Build with Gapwise open campus data, public APIs, SDKs, deterministic routing and gap planning for supported universities, and permissioned AI integration.",
       },
       { property: "og:title", content: "Gapwise Developers" },
       {
         property: "og:description",
         content:
-          "The developer gateway for Gapwise API, SDKs, open campus data, docs, and AI/MCP across Canadian universities.",
+          "The developer gateway for Gapwise API, SDKs, open campus data, docs, and AI/MCP across Gapwise university editions.",
       },
     ],
   }),

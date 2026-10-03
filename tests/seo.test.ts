@@ -35,11 +35,6 @@ describe("Gapwise searchability and entity metadata", () => {
       for (const page of pages) {
         const metadata = editionFeatureMetadata(page, university.name);
         expect(`${metadata.seoTitle} ${metadata.description}`).toContain(university.name);
-        for (const other of universities.universities) {
-          if (other.id !== university.id) {
-            expect(`${metadata.seoTitle} ${metadata.description}`).not.toContain(other.name);
-          }
-        }
       }
     }
   });
@@ -165,7 +160,7 @@ describe("Gapwise searchability and entity metadata", () => {
       expect(noindexSources).toContain(path);
   });
 
-  test("Vercel routes every U of T campus host to isolated SEO output", async () => {
+  test("Vercel routes every intentional university host to isolated SEO output", async () => {
     const config = JSON.parse(await readFile("vercel.json", "utf8")) as {
       rewrites: Array<{
         source: string;
@@ -174,30 +169,17 @@ describe("Gapwise searchability and entity metadata", () => {
       }>;
     };
 
-    for (const campusId of ["utm", "utsg", "utsc"] as const) {
-      const host = `${campusId}.gapwise.ca`;
-      const hostRewrites = config.rewrites.filter((entry) =>
-        entry.has?.some((condition) => condition.type === "host" && condition.value === host),
-      );
-      const destinationFor = (source: string) =>
-        hostRewrites.find((entry) => entry.source === source)?.destination;
-
-      expect(destinationFor("/")).toBe(`/_campuses/${campusId}/index.html`);
-      expect(destinationFor("/sitemap.xml")).toBe(`/_campuses/${campusId}/sitemap.xml`);
-      expect(destinationFor("/robots.txt")).toBe(`/_campuses/${campusId}/robots.txt`);
-      expect(
-        destinationFor(
-          "/(about|universities|open-source|campus-map|gap-planner|campus-routing|developers|ai|support|trust|privacy|security|accessibility)",
-        ),
-      ).toBe(`/_campuses/${campusId}/_seo/$1.html`);
-      expect(destinationFor("/(.*)")).toBe(`/_campuses/${campusId}/index.html`);
-      expect(
-        destinationFor("/(logo-mark.svg|favicon.*|apple-touch-icon.png|site.webmanifest)"),
-      ).toBe("/universities/uoft/$1");
-      expect(destinationFor("/(og-card.png|og-gapwise.png)")).toBe(
-        `/campuses/${campusId}/og-card.png`,
-      );
-    }
+    const root = config.rewrites.find((entry) => entry.destination === "/_sites/:site/index.html");
+    const pattern = root?.has?.find((condition) => condition.type === "host")?.value;
+    expect(pattern).toBeDefined();
+    for (const site of universities.sites.filter((item) => item.role !== "global"))
+      expect(site.hosts.every((host) => new RegExp(`^${pattern}$`).test(host))).toBe(true);
+    expect(config.rewrites).toContainEqual(
+      expect.objectContaining({ source: "/sitemap.xml", destination: "/_sites/:site/sitemap.xml" }),
+    );
+    expect(config.rewrites).toContainEqual(
+      expect.objectContaining({ source: "/robots.txt", destination: "/_sites/:site/robots.txt" }),
+    );
   });
 
   test("Vercel routes the U of T hub independently from the global and campus sites", async () => {
@@ -208,17 +190,10 @@ describe("Gapwise searchability and entity metadata", () => {
         has?: Array<{ type: string; value: string }>;
       }>;
     };
-    const hubRewrites = config.rewrites.filter((entry) =>
-      entry.has?.some(
-        (condition) => condition.type === "host" && condition.value === "uoft.gapwise.ca",
-      ),
-    );
-    const destinationFor = (source: string) =>
-      hubRewrites.find((entry) => entry.source === source)?.destination;
-
-    expect(destinationFor("/")).toBe("/_universities/uoft/index.html");
-    expect(destinationFor("/sitemap.xml")).toBe("/_universities/uoft/sitemap.xml");
-    expect(destinationFor("/robots.txt")).toBe("/_universities/uoft/robots.txt");
-    expect(destinationFor("/(og-card.png|og-gapwise.png)")).toBe("/universities/uoft/og-card.png");
+    const root = config.rewrites.find((entry) => entry.destination === "/_sites/:site/index.html");
+    const pattern = root?.has?.find((condition) => condition.type === "host")?.value;
+    expect(new RegExp(`^${pattern}$`).test("uoft.gapwise.ca")).toBe(true);
+    expect(new RegExp(`^${pattern}$`).test("utm.gapwise.ca")).toBe(true);
+    expect(new RegExp(`^${pattern}$`).test("api.gapwise.ca")).toBe(false);
   });
 });

@@ -15,7 +15,12 @@ const targets = [
     name: "McMaster University",
     sampleCourse: "COMPSCI 1MD3",
   },
-  { id: "york", query: "?university=york", name: "York University", sampleCourse: "EECS 1022" },
+  {
+    id: "keele",
+    query: "?site=york-keele",
+    name: "York University Keele Campus",
+    sampleCourse: "EECS 1022",
+  },
   {
     id: "brock",
     query: "?university=brock",

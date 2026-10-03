@@ -21,6 +21,11 @@ if (manifestErrors.length > 0) {
 for (const uni of manifest.universities) {
   console.log(`Checking ${uni.name} (${uni.id})...`);
 
+  if (uni.status === "planned") {
+    console.log("  Planned edition: validating public registry metadata only.");
+    continue;
+  }
+
   // Branding & Assets
   const isUofT = uni.id === "uoft";
   const logoPath = isUofT

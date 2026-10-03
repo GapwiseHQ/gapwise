@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
-import { editionUrl, watchForAppFailures } from "./helpers";
+import { campusEditionUrl, watchForAppFailures } from "./helpers";
 
 const workdayFixture = readFileSync(
   new URL("../tests/fixtures/ubc-workday-sanitized.tsv", import.meta.url),
@@ -15,10 +15,8 @@ test("UBC Workday paste import preserves the Vancouver campus through timetable 
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto(editionUrl(baseURL, "ubc"));
-  await expect(
-    page.getByText("Gapwise for University of British Columbia", { exact: true }),
-  ).toBeVisible();
+  await page.goto(campusEditionUrl(baseURL, "ubcv", "ubc-vancouver"));
+  await expect(page.locator(".university-home-kicker")).toContainText("Gapwise for UBC Vancouver");
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("UBC");
 
   await page.getByRole("button", { name: "Paste Workday View My Courses rows" }).click();
@@ -28,6 +26,8 @@ test("UBC Workday paste import preserves the Vancouver campus through timetable 
   await page.getByRole("button", { name: "Import pasted schedule" }).click();
 
   await expect(page).toHaveURL(/\/today$/);
+  const dismissInstructions = page.getByRole("button", { name: "Dismiss instructions" });
+  if (await dismissInstructions.isVisible()) await dismissInstructions.click();
   await page
     .getByRole("group", { name: "View mode" })
     .getByRole("button", { name: "Weekly timetable" })
@@ -59,7 +59,7 @@ test("UBC Workday paste import preserves the Vancouver campus through timetable 
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("UBC");
   await expect(page.getByRole("searchbox", { name: "Search UBC buildings" })).toBeVisible();
 
-  await page.goto(editionUrl(baseURL, "ubc", "/route"));
+  await page.goto(campusEditionUrl(baseURL, "ubcv", "ubc-vancouver", "/route"));
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("UBC");
   await expect(page.getByRole("searchbox", { name: "Search UBC buildings" })).toBeVisible();
   failures.assertClean();
@@ -70,10 +70,8 @@ test("UBC has its own demo timetable and usable mobile campus map", async ({ pag
   if (!baseURL) throw new Error("Playwright baseURL is required");
   const failures = watchForAppFailures(page, baseURL);
 
-  await page.goto(editionUrl(baseURL, "ubc"));
-  await expect(
-    page.getByText("Gapwise for University of British Columbia", { exact: true }),
-  ).toBeVisible();
+  await page.goto(campusEditionUrl(baseURL, "ubcv", "ubc-vancouver"));
+  await expect(page.locator(".university-home-kicker")).toContainText("Gapwise for UBC Vancouver");
   await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable/);
   await page.getByRole("group", { name: "Weekday" }).getByRole("button", { name: /Mon/ }).click();

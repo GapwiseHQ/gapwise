@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "sites": [
     {
       "id": "gapwise-global",
@@ -49,7 +49,11 @@
           "description": "Bring your ACORN timetable into a UTM-specific workspace for classes, between-class time, building discovery, and routes across the Mississauga campus.",
           "seoTitle": "Gapwise for University of Toronto Mississauga",
           "seoDescription": "UTM timetable planning, Mississauga campus building search, gap planning, and pedestrian routing.",
-          "stats": { "buildings": 30, "entrances": 44, "pathSegments": 2546 },
+          "stats": {
+            "buildings": 30,
+            "entrances": 44,
+            "pathSegments": 2546
+          },
           "example": {
             "day": "Tuesday",
             "courseCode": "CSC108H5",
@@ -86,7 +90,11 @@
           "description": "Connect your ACORN timetable to a St. George-specific view of classes, useful gaps, building search, and routes across the downtown campus.",
           "seoTitle": "Gapwise for University of Toronto St. George",
           "seoDescription": "UTSG timetable planning, St. George campus building search, gap planning, and pedestrian routing.",
-          "stats": { "buildings": 166, "entrances": 131, "pathSegments": 9805 },
+          "stats": {
+            "buildings": 166,
+            "entrances": 131,
+            "pathSegments": 9805
+          },
           "example": {
             "day": "Monday",
             "courseCode": "CSC108H1",
@@ -123,7 +131,11 @@
           "description": "Bring your ACORN timetable into a Scarborough-specific workspace for classes, open time, building discovery, and campus walking routes.",
           "seoTitle": "Gapwise for University of Toronto Scarborough",
           "seoDescription": "UTSC timetable planning, Scarborough campus building search, gap planning, and pedestrian routing.",
-          "stats": { "buildings": 54, "entrances": 29, "pathSegments": 2184 },
+          "stats": {
+            "buildings": 54,
+            "entrances": 29,
+            "pathSegments": 2184
+          },
           "example": {
             "day": "Monday",
             "courseCode": "CSCA08H3",
@@ -173,48 +185,109 @@
     },
     {
       "id": "ubc-hub",
-      "role": "single-campus-edition",
+      "role": "university-hub",
       "hosts": ["ubc.gapwise.ca"],
       "canonicalHost": "ubc.gapwise.ca",
-      "universityId": "ubc",
-      "campusId": "ubc-vancouver"
+      "universityId": "ubc"
     },
     {
       "id": "ubc-vancouver",
-      "role": "reserved",
+      "role": "campus-edition",
       "hosts": ["ubcv.gapwise.ca"],
       "canonicalHost": "ubcv.gapwise.ca",
       "universityId": "ubc",
       "campusId": "ubc-vancouver",
       "name": "UBC Vancouver",
-      "shortName": "UBCV"
+      "shortName": "UBCV",
+      "presentation": {
+        "marketing": {
+          "campusName": "Vancouver / Point Grey campus",
+          "headline": "Plan the distance between UBC Vancouver classes.",
+          "description": "Turn Workday course rows into a Point Grey campus plan with building discovery, gap-aware timing, and pedestrian routing. UBC Okanagan is not yet supported.",
+          "seoTitle": "Gapwise for UBC Vancouver",
+          "seoDescription": "UBC Vancouver timetable planning, Point Grey campus building search, gap planning, and pedestrian routing.",
+          "stats": {
+            "buildings": 236,
+            "entrances": 905,
+            "pathSegments": 11182
+          },
+          "example": {
+            "day": "Wednesday",
+            "courseCode": "CPSC 110",
+            "buildingCode": "ICCS",
+            "buildingName": "Computer Science Building",
+            "room": "X836",
+            "nextCourseCode": "ENGL 110",
+            "nextBuildingCode": "BUCH",
+            "nextBuildingName": "Buchanan Building",
+            "nextRoom": "A101"
+          },
+          "searchExamples": [
+            "Irving K. Barber Library",
+            "Buchanan Building",
+            "Life Sciences Centre"
+          ]
+        },
+        "accentColor": "#002145",
+        "visualLabel": "Vancouver / Point Grey",
+        "cardDescription": "Supported timetable planning, building search, and routing at UBC Vancouver."
+      }
     },
     {
       "id": "ubc-okanagan",
-      "role": "reserved",
+      "role": "campus-edition",
       "hosts": ["ubco.gapwise.ca"],
       "canonicalHost": "ubco.gapwise.ca",
       "universityId": "ubc",
       "name": "UBC Okanagan",
-      "shortName": "UBCO"
+      "shortName": "UBCO",
+      "campusId": "ubc-okanagan"
     },
     {
       "id": "york-hub",
-      "role": "single-campus-edition",
+      "role": "university-hub",
       "hosts": ["york.gapwise.ca"],
       "canonicalHost": "york.gapwise.ca",
-      "universityId": "york",
-      "campusId": "keele"
+      "universityId": "york"
     },
     {
       "id": "york-keele",
-      "role": "reserved",
+      "role": "campus-edition",
       "hosts": ["keele.gapwise.ca"],
       "canonicalHost": "keele.gapwise.ca",
       "universityId": "york",
       "campusId": "keele",
       "name": "York University Keele Campus",
-      "shortName": "Keele"
+      "shortName": "Keele",
+      "presentation": {
+        "marketing": {
+          "campusName": "Keele campus",
+          "headline": "Keep your Keele campus day connected.",
+          "description": "Pair your York schedule with Keele campus building discovery, gap planning, and routes between Lassonde, Curtis Lecture Halls, and beyond.",
+          "seoTitle": "Gapwise for York University",
+          "seoDescription": "York University timetable planning, Keele campus search, gap planning, and pedestrian routing.",
+          "stats": {
+            "buildings": 37,
+            "entrances": 98,
+            "pathSegments": 4417
+          },
+          "example": {
+            "day": "Wednesday",
+            "courseCode": "EECS 1022",
+            "buildingCode": "LAS",
+            "buildingName": "Lassonde Building",
+            "room": "1005",
+            "nextCourseCode": "MATH 1013",
+            "nextBuildingCode": "CLH",
+            "nextBuildingName": "Curtis Lecture Halls",
+            "nextRoom": "A"
+          },
+          "searchExamples": ["Vari Hall", "Scott Library", "Bergeron Centre"]
+        },
+        "accentColor": "#E31837",
+        "visualLabel": "Keele",
+        "cardDescription": "Supported timetable planning, building search, and routing at York Keele."
+      }
     },
     {
       "id": "mcmaster-edition",
@@ -274,125 +347,153 @@
     },
     {
       "id": "york-glendon",
-      "role": "reserved",
+      "role": "campus-edition",
       "hosts": ["glendon.gapwise.ca"],
       "canonicalHost": "glendon.gapwise.ca",
       "universityId": "york",
       "name": "York University Glendon Campus",
-      "shortName": "Glendon"
+      "shortName": "Glendon",
+      "campusId": "glendon"
     },
     {
       "id": "york-markham",
-      "role": "reserved",
+      "role": "campus-edition",
       "hosts": ["markham.gapwise.ca"],
       "canonicalHost": "markham.gapwise.ca",
       "universityId": "york",
       "name": "York University Markham Campus",
-      "shortName": "Markham"
+      "shortName": "Markham",
+      "campusId": "markham"
     },
     {
       "id": "harvard",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["harvard.gapwise.ca"],
       "canonicalHost": "harvard.gapwise.ca",
       "name": "Harvard University",
-      "shortName": "Harvard"
+      "shortName": "Harvard",
+      "universityId": "harvard",
+      "campusId": "harvard-cambridge"
     },
     {
       "id": "yale",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["yale.gapwise.ca"],
       "canonicalHost": "yale.gapwise.ca",
       "name": "Yale University",
-      "shortName": "Yale"
+      "shortName": "Yale",
+      "universityId": "yale",
+      "campusId": "yale-new-haven"
     },
     {
       "id": "princeton",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["princeton.gapwise.ca"],
       "canonicalHost": "princeton.gapwise.ca",
       "name": "Princeton University",
-      "shortName": "Princeton"
+      "shortName": "Princeton",
+      "universityId": "princeton",
+      "campusId": "princeton-main"
     },
     {
       "id": "columbia",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["columbia.gapwise.ca"],
       "canonicalHost": "columbia.gapwise.ca",
       "name": "Columbia University",
-      "shortName": "Columbia"
+      "shortName": "Columbia",
+      "universityId": "columbia",
+      "campusId": "columbia-morningside"
     },
     {
       "id": "brown",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["brown.gapwise.ca"],
       "canonicalHost": "brown.gapwise.ca",
       "name": "Brown University",
-      "shortName": "Brown"
+      "shortName": "Brown",
+      "universityId": "brown",
+      "campusId": "brown-providence"
     },
     {
       "id": "dartmouth",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["dartmouth.gapwise.ca"],
       "canonicalHost": "dartmouth.gapwise.ca",
       "name": "Dartmouth College",
-      "shortName": "Dartmouth"
+      "shortName": "Dartmouth",
+      "universityId": "dartmouth",
+      "campusId": "dartmouth-hanover"
     },
     {
       "id": "cornell",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["cornell.gapwise.ca"],
       "canonicalHost": "cornell.gapwise.ca",
       "name": "Cornell University",
-      "shortName": "Cornell"
+      "shortName": "Cornell",
+      "universityId": "cornell",
+      "campusId": "cornell-ithaca"
     },
     {
       "id": "upenn",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["upenn.gapwise.ca"],
       "canonicalHost": "upenn.gapwise.ca",
       "name": "University of Pennsylvania",
-      "shortName": "Penn"
+      "shortName": "Penn",
+      "universityId": "upenn",
+      "campusId": "upenn-philadelphia"
     },
     {
       "id": "stanford",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["stanford.gapwise.ca"],
       "canonicalHost": "stanford.gapwise.ca",
       "name": "Stanford University",
-      "shortName": "Stanford"
+      "shortName": "Stanford",
+      "universityId": "stanford",
+      "campusId": "stanford-main"
     },
     {
       "id": "mit",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["mit.gapwise.ca"],
       "canonicalHost": "mit.gapwise.ca",
       "name": "Massachusetts Institute of Technology",
-      "shortName": "MIT"
+      "shortName": "MIT",
+      "universityId": "mit",
+      "campusId": "mit-cambridge"
     },
     {
       "id": "cmu",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["cmu.gapwise.ca"],
       "canonicalHost": "cmu.gapwise.ca",
       "name": "Carnegie Mellon University",
-      "shortName": "CMU"
+      "shortName": "CMU",
+      "universityId": "cmu",
+      "campusId": "cmu-pittsburgh"
     },
     {
       "id": "nyu",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["nyu.gapwise.ca"],
       "canonicalHost": "nyu.gapwise.ca",
       "name": "New York University",
-      "shortName": "NYU"
+      "shortName": "NYU",
+      "universityId": "nyu",
+      "campusId": "nyu-washington-square"
     },
     {
       "id": "ucberkeley",
-      "role": "reserved",
+      "role": "single-campus-edition",
       "hosts": ["ucberkeley.gapwise.ca"],
       "canonicalHost": "ucberkeley.gapwise.ca",
       "name": "University of California, Berkeley",
-      "shortName": "UC Berkeley"
+      "shortName": "UC Berkeley",
+      "universityId": "ucberkeley",
+      "campusId": "ucberkeley-main"
     }
   ],
   "universities": [
@@ -409,7 +510,10 @@
       "calendarSource": "ACORN",
       "calendarInstructions": "Download the calendar export (.ics) from ACORN's Timetable & Exams, then choose it here.",
       "calendarHelpUrl": "/acorn-import",
-      "enabledFeatures": { "routing": true, "liveLocation": true },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": true
+      },
       "routableCampuses": ["utm", "utsg", "utsc"],
       "dataPaths": ["data/utm", "data/utsg", "data/utsc"],
       "marketing": {
@@ -418,7 +522,11 @@
         "description": "Bring your ACORN timetable into a campus-aware workspace built for U of T. Choose the campus edition that matches your classes, then plan gaps, find buildings, and route between them.",
         "seoTitle": "Gapwise for the University of Toronto",
         "seoDescription": "Timetable planning, campus search, and pedestrian routing for University of Toronto students at UTM, UTSG, and UTSC.",
-        "stats": { "buildings": 250, "entrances": 204, "pathSegments": 14535 },
+        "stats": {
+          "buildings": 250,
+          "entrances": 204,
+          "pathSegments": 14535
+        },
         "example": {
           "day": "Tuesday",
           "courseCode": "CSC108H5",
@@ -432,7 +540,9 @@
         },
         "searchExamples": ["Maanjiwe nendamowinan", "Bahen Centre", "Sam Ibrahim Building"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["U of T", "UofT", "Toronto"]
     },
     {
       "id": "carleton",
@@ -447,7 +557,10 @@
       "calendarSource": "Carleton Central",
       "calendarInstructions": "Paste your schedule text from Carleton Central, upload an exported calendar (.ics) file, or try the sample timetable.",
       "calendarHelpUrl": "https://central.carleton.ca/prod/bwysched.p_select_term?wsea_code=EXT",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["carleton"],
       "dataPaths": ["universities/carleton/campus.json"],
       "marketing": {
@@ -456,7 +569,11 @@
         "description": "Turn a Carleton Central schedule into a day plan grounded in the Ottawa campus—from Tory Building lectures to the next walk across campus.",
         "seoTitle": "Gapwise for Carleton University",
         "seoDescription": "Carleton University timetable planning, building search, gap planning, and campus routing in one student-first workspace.",
-        "stats": { "buildings": 48, "entrances": 15, "pathSegments": 2009 },
+        "stats": {
+          "buildings": 48,
+          "entrances": 15,
+          "pathSegments": 2009
+        },
         "example": {
           "day": "Wednesday",
           "courseCode": "COMP 1405",
@@ -470,7 +587,9 @@
         },
         "searchExamples": ["MacOdrum Library", "Tory Building", "Dunton Tower"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["Carleton", "CU", "Ravens"]
     },
     {
       "id": "tmu",
@@ -485,7 +604,10 @@
       "calendarSource": "MyServiceHub & Google Calendar",
       "calendarInstructions": "Paste your schedule text from MyServiceHub (RAMSS) or upload your exported Google Calendar (.ics) file.",
       "calendarHelpUrl": "https://www.torontomu.ca/servicehub/",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["tmu"],
       "dataPaths": ["universities/tmu/campus.json"],
       "marketing": {
@@ -494,7 +616,11 @@
         "description": "Connect your TMU schedule to the buildings and walking routes around the downtown campus, from ENG labs to the SLC and your next class.",
         "seoTitle": "Gapwise for Toronto Metropolitan University",
         "seoDescription": "TMU timetable planning, downtown campus search, gap planning, and pedestrian routing with university-specific schedule support.",
-        "stats": { "buildings": 30, "entrances": 47, "pathSegments": 2134 },
+        "stats": {
+          "buildings": 30,
+          "entrances": 47,
+          "pathSegments": 2134
+        },
         "example": {
           "day": "Tuesday",
           "courseCode": "CPS 109",
@@ -508,7 +634,9 @@
         },
         "searchExamples": ["Student Learning Centre", "Kerr Hall", "Ted Rogers School"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["Toronto Metropolitan", "TMU", "Ryerson"]
     },
     {
       "id": "queens",
@@ -523,7 +651,10 @@
       "calendarSource": "SOLUS Student Center",
       "calendarInstructions": "Upload your calendar (.ics) from SOLUS Class Schedule Subscription, or paste your schedule text.",
       "calendarHelpUrl": "https://my.queensu.ca",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["queens"],
       "dataPaths": ["universities/queens/campus.json"],
       "marketing": {
@@ -532,7 +663,11 @@
         "description": "See your SOLUS schedule alongside Kingston campus buildings, useful gaps, and routes between places like Walter Light Hall and Jeffery Hall.",
         "seoTitle": "Gapwise for Queen's University",
         "seoDescription": "Queen's University timetable planning, Kingston campus building search, gap planning, and pedestrian routing.",
-        "stats": { "buildings": 38, "entrances": 61, "pathSegments": 2494 },
+        "stats": {
+          "buildings": 38,
+          "entrances": 61,
+          "pathSegments": 2494
+        },
         "example": {
           "day": "Tuesday",
           "courseCode": "CISC 121",
@@ -546,7 +681,9 @@
         },
         "searchExamples": ["Stauffer Library", "Goodes Hall", "Dunning Hall"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["Queens", "Queen’s", "QU"]
     },
     {
       "id": "laurier",
@@ -561,7 +698,10 @@
       "calendarSource": "LORIS & MyLS",
       "calendarInstructions": "Paste your schedule text from LORIS (Student Detail Schedule) or upload your exported calendar (.ics) file.",
       "calendarHelpUrl": "https://web.wlu.ca/student-portal/",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["waterloo"],
       "dataPaths": ["universities/laurier/campus.json"],
       "marketing": {
@@ -570,7 +710,11 @@
         "description": "Bring LORIS or MyLS schedule context into a Laurier-specific view of the Waterloo campus, its buildings, gaps, and pedestrian routes.",
         "seoTitle": "Gapwise for Wilfrid Laurier University",
         "seoDescription": "Laurier timetable planning, Waterloo campus building search, gap planning, and pedestrian routing.",
-        "stats": { "buildings": 28, "entrances": 31, "pathSegments": 2003 },
+        "stats": {
+          "buildings": 28,
+          "entrances": 31,
+          "pathSegments": 2003
+        },
         "example": {
           "day": "Tuesday",
           "courseCode": "CP 104",
@@ -584,31 +728,40 @@
         },
         "searchExamples": ["Lazaridis Hall", "Laurier Library", "Science Building"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["Laurier", "WLU", "Wilfrid Laurier"]
     },
     {
       "id": "york",
       "name": "York University",
       "shortName": "York",
       "accentColor": "#E31837",
-      "campusScope": "Keele campus",
-      "hosts": ["york.gapwise.ca"],
-      "campuses": ["keele"],
+      "campusScope": "Keele, Glendon, and Markham",
+      "hosts": ["york.gapwise.ca", "keele.gapwise.ca", "glendon.gapwise.ca", "markham.gapwise.ca"],
+      "campuses": ["keele", "glendon", "markham"],
       "defaultCampus": "keele",
       "timetableAdapter": "york-schedule",
       "calendarSource": "Visual Schedule Builder & REM",
       "calendarInstructions": "Paste your schedule text from the York Registration and Enrolment Module (REM) / Visual Schedule Builder (VSB), or upload an exported calendar (.ics) file.",
       "calendarHelpUrl": "https://registrar.yorku.ca/enrol/guide",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["keele"],
       "dataPaths": ["universities/york/campus.json"],
       "marketing": {
-        "campusName": "Keele campus",
-        "headline": "Keep your Keele campus day connected.",
-        "description": "Pair your York schedule with Keele campus building discovery, gap planning, and routes between Lassonde, Curtis Lecture Halls, and beyond.",
+        "campusName": "Keele, Glendon, and Markham",
+        "headline": "Three campuses. One clearer York day.",
+        "description": "Choose the York campus edition that matches your day. Keele is supported today; Glendon and Markham have complete planned pages while campus data, timetable import, and routing are prepared and verified.",
         "seoTitle": "Gapwise for York University",
-        "seoDescription": "York University timetable planning, Keele campus search, gap planning, and pedestrian routing.",
-        "stats": { "buildings": 37, "entrances": 98, "pathSegments": 4417 },
+        "seoDescription": "Explore Gapwise editions for York University at Keele, Glendon, and Markham, with clear supported and planned capability status.",
+        "stats": {
+          "buildings": 37,
+          "entrances": 98,
+          "pathSegments": 4417
+        },
         "example": {
           "day": "Wednesday",
           "courseCode": "EECS 1022",
@@ -622,7 +775,9 @@
         },
         "searchExamples": ["Vari Hall", "Scott Library", "Bergeron Centre"]
       },
-      "status": "supported"
+      "status": "partial",
+      "country": "Canada",
+      "aliases": ["York", "YorkU", "YU"]
     },
     {
       "id": "mcmaster",
@@ -637,7 +792,10 @@
       "calendarSource": "Mosaic & Outlook Calendar",
       "calendarInstructions": "Upload your calendar (.ics) from Mosaic Timetable to Outlook, or paste your schedule text from Mosaic Class Schedule.",
       "calendarHelpUrl": "https://mosaic.mcmaster.ca",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["mcmaster"],
       "dataPaths": ["universities/mcmaster/campus.json"],
       "marketing": {
@@ -646,7 +804,11 @@
         "description": "See Mosaic classes in campus context, plan the time between them, and find a route from Burke Science Building to your next room.",
         "seoTitle": "Gapwise for McMaster University",
         "seoDescription": "McMaster timetable planning, Hamilton campus building search, gap planning, and pedestrian routing.",
-        "stats": { "buildings": 42, "entrances": 89, "pathSegments": 2942 },
+        "stats": {
+          "buildings": 42,
+          "entrances": 89,
+          "pathSegments": 2942
+        },
         "example": {
           "day": "Tuesday",
           "courseCode": "COMPSCI 1MD3",
@@ -660,7 +822,9 @@
         },
         "searchExamples": ["Student Centre", "Burke Science Building", "MDCL"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["McMaster", "Mac"]
     },
     {
       "id": "western",
@@ -675,7 +839,10 @@
       "calendarSource": "Draft My Schedule & Student Center",
       "calendarInstructions": "Paste your schedule text from Student Center / Draft My Schedule, or upload an exported calendar (.ics) file.",
       "calendarHelpUrl": "https://student.uwo.ca",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["western"],
       "dataPaths": ["universities/western/campus.json"],
       "marketing": {
@@ -684,7 +851,11 @@
         "description": "Connect Draft My Schedule or Student Center classes with a Western-specific view of buildings, open time, and campus walking routes.",
         "seoTitle": "Gapwise for Western University",
         "seoDescription": "Western University timetable planning, London campus building search, gap planning, and pedestrian routing.",
-        "stats": { "buildings": 27, "entrances": 45, "pathSegments": 2952 },
+        "stats": {
+          "buildings": 27,
+          "entrances": 45,
+          "pathSegments": 2952
+        },
         "example": {
           "day": "Tuesday",
           "courseCode": "COMPSCI 1026A",
@@ -698,7 +869,9 @@
         },
         "searchExamples": ["University Community Centre", "Middlesex College", "Talbot College"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["Western", "UWO"]
     },
     {
       "id": "guelph",
@@ -713,7 +886,10 @@
       "calendarSource": "WebAdvisor & Student Planning",
       "calendarInstructions": "Paste your schedule text from WebAdvisor / Student Planning, or upload an exported calendar (.ics) file.",
       "calendarHelpUrl": "https://webadvisor.uoguelph.ca",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["guelph"],
       "dataPaths": ["universities/guelph/campus.json"],
       "marketing": {
@@ -722,7 +898,11 @@
         "description": "Turn WebAdvisor or Student Planning classes into a campus-aware schedule with building search, useful gaps, and routes to the next room.",
         "seoTitle": "Gapwise for the University of Guelph",
         "seoDescription": "University of Guelph timetable planning, campus building search, gap planning, and pedestrian routing.",
-        "stats": { "buildings": 20, "entrances": 26, "pathSegments": 3161 },
+        "stats": {
+          "buildings": 20,
+          "entrances": 26,
+          "pathSegments": 3161
+        },
         "example": {
           "day": "Tuesday",
           "courseCode": "CIS 1300",
@@ -736,7 +916,9 @@
         },
         "searchExamples": ["McLaughlin Library", "University Centre", "Rozanski Hall"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["Guelph", "U of G", "UofG"]
     },
     {
       "id": "uottawa",
@@ -751,7 +933,10 @@
       "calendarSource": "uoZone & Enrolment",
       "calendarInstructions": "Paste your schedule text from uoZone Class Schedule, or upload an exported calendar (.ics) file.",
       "calendarHelpUrl": "https://uozone.uottawa.ca",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["uottawa"],
       "dataPaths": ["universities/uottawa/campus.json"],
       "marketing": {
@@ -760,7 +945,11 @@
         "description": "Connect your uoZone schedule with downtown campus buildings, the gaps between classes, and walking routes from SITE to Desmarais and beyond.",
         "seoTitle": "Gapwise for the University of Ottawa",
         "seoDescription": "uOttawa timetable planning, downtown campus building search, gap planning, and pedestrian routing.",
-        "stats": { "buildings": 25, "entrances": 21, "pathSegments": 3475 },
+        "stats": {
+          "buildings": 25,
+          "entrances": 21,
+          "pathSegments": 3475
+        },
         "example": {
           "day": "Tuesday",
           "courseCode": "CSI 2110",
@@ -774,7 +963,9 @@
         },
         "searchExamples": ["Morisset Library", "Tabaret Hall", "SITE Building"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["uOttawa", "Ottawa U"]
     },
     {
       "id": "brock",
@@ -789,7 +980,10 @@
       "calendarSource": "my.brocku.ca & Course Planning",
       "calendarInstructions": "Paste your schedule text from my.brocku.ca Student Schedule, or upload an exported calendar (.ics) file.",
       "calendarHelpUrl": "https://my.brocku.ca",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["brock"],
       "dataPaths": ["universities/brock/campus.json"],
       "marketing": {
@@ -798,7 +992,11 @@
         "description": "Bring your Brock course schedule into one view for classes, buildings, between-class time, and walking routes across the St. Catharines campus.",
         "seoTitle": "Gapwise for Brock University",
         "seoDescription": "Brock University timetable planning, St. Catharines campus building search, gap planning, and pedestrian routing.",
-        "stats": { "buildings": 16, "entrances": 42, "pathSegments": 2755 },
+        "stats": {
+          "buildings": 16,
+          "entrances": 42,
+          "pathSegments": 2755
+        },
         "example": {
           "day": "Tuesday",
           "courseCode": "COSC 1P02",
@@ -812,16 +1010,18 @@
         },
         "searchExamples": ["Arthur Schmon Tower", "Thistle Complex", "Goodman School"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["Brock", "Badgers"]
     },
     {
       "id": "ubc",
       "name": "University of British Columbia",
       "shortName": "UBC",
       "accentColor": "#002145",
-      "campusScope": "Vancouver / Point Grey campus",
-      "hosts": ["ubc.gapwise.ca"],
-      "campuses": ["ubc-vancouver"],
+      "campusScope": "Vancouver and Okanagan",
+      "hosts": ["ubc.gapwise.ca", "ubcv.gapwise.ca", "ubco.gapwise.ca"],
+      "campuses": ["ubc-vancouver", "ubc-okanagan"],
       "defaultCampus": "ubc-vancouver",
       "timetableAdapter": "ubc-workday",
       "calendarSource": "Workday View My Courses",
@@ -830,16 +1030,23 @@
       "preferredImportMethod": "paste",
       "acceptedFileTypes": ".txt,.tsv,text/plain,text/tab-separated-values",
       "fileTypeLabel": ".txt or .tsv",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["ubc-vancouver"],
       "dataPaths": ["universities/ubc/campus.json"],
       "marketing": {
-        "campusName": "Vancouver / Point Grey campus",
-        "headline": "Plan the distance between UBC Vancouver classes.",
-        "description": "Turn Workday course rows into a Point Grey campus plan with building discovery, gap-aware timing, and pedestrian routing. UBC Okanagan is not yet supported.",
-        "seoTitle": "Gapwise for UBC Vancouver",
-        "seoDescription": "UBC Vancouver timetable planning, Point Grey campus building search, gap planning, and pedestrian routing.",
-        "stats": { "buildings": 236, "entrances": 905, "pathSegments": 11182 },
+        "campusName": "Vancouver and Okanagan",
+        "headline": "Two campuses. One clearer UBC day.",
+        "description": "Choose the UBC campus edition that matches your day. Vancouver / Point Grey is supported today; Okanagan has a complete planned page while campus-specific data and timetable support are verified.",
+        "seoTitle": "Gapwise for the University of British Columbia",
+        "seoDescription": "Explore Gapwise editions for UBC Vancouver and UBC Okanagan, with clear supported and planned capability status.",
+        "stats": {
+          "buildings": 236,
+          "entrances": 905,
+          "pathSegments": 11182
+        },
         "example": {
           "day": "Wednesday",
           "courseCode": "CPSC 110",
@@ -853,7 +1060,9 @@
         },
         "searchExamples": ["Irving K. Barber Library", "Buchanan Building", "Life Sciences Centre"]
       },
-      "status": "supported"
+      "status": "partial",
+      "country": "Canada",
+      "aliases": ["UBC", "British Columbia"]
     },
     {
       "id": "waterloo",
@@ -871,7 +1080,10 @@
       "preferredImportMethod": "paste",
       "acceptedFileTypes": ".txt,.tsv,text/plain,text/tab-separated-values",
       "fileTypeLabel": ".txt or .tsv",
-      "enabledFeatures": { "routing": true, "liveLocation": false },
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
       "routableCampuses": ["waterloo-main"],
       "dataPaths": ["universities/waterloo/campus.json"],
       "marketing": {
@@ -880,7 +1092,11 @@
         "description": "Paste your Quest schedule and see classes, buildings, useful gaps, and walking routes across main campus in one connected view.",
         "seoTitle": "Gapwise for the University of Waterloo",
         "seoDescription": "University of Waterloo timetable planning, main-campus building search, gap planning, and pedestrian routing.",
-        "stats": { "buildings": 68, "entrances": 210, "pathSegments": 13954 },
+        "stats": {
+          "buildings": 68,
+          "entrances": 210,
+          "pathSegments": 13954
+        },
         "example": {
           "day": "Wednesday",
           "courseCode": "MATH 135",
@@ -894,7 +1110,9 @@
         },
         "searchExamples": ["Davis Centre", "Quantum-Nano Centre", "Arts Lecture Hall"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["Waterloo", "UWaterloo", "UW"]
     },
     {
       "id": "mcgill",
@@ -924,7 +1142,11 @@
         "description": "Import a myCourses calendar and plan classes, gaps, building discovery, and pedestrian routes across McGill's downtown campus.",
         "seoTitle": "Gapwise for McGill University",
         "seoDescription": "McGill timetable planning, downtown Montreal campus building search, gap planning, and pedestrian routing.",
-        "stats": { "buildings": 49, "entrances": 70, "pathSegments": 6432 },
+        "stats": {
+          "buildings": 49,
+          "entrances": 70,
+          "pathSegments": 6432
+        },
         "example": {
           "day": "Wednesday",
           "courseCode": "COMP 202",
@@ -938,7 +1160,1046 @@
         },
         "searchExamples": ["McCall MacBain Arts Building", "Burnside Hall", "Leacock Building"]
       },
-      "status": "supported"
+      "status": "supported",
+      "country": "Canada",
+      "aliases": ["McGill", "McGill University"]
+    },
+    {
+      "id": "cmu",
+      "name": "Carnegie Mellon University",
+      "shortName": "CMU",
+      "accentColor": "#C41230",
+      "campusScope": "Pittsburgh flagship campus",
+      "hosts": ["cmu.gapwise.ca"],
+      "campuses": ["cmu-pittsburgh"],
+      "defaultCampus": "cmu-pittsburgh",
+      "aliases": ["Carnegie Mellon", "CMU", "Pittsburgh"],
+      "marketing": {
+        "campusName": "Pittsburgh flagship campus",
+        "headline": "Plan the space between classes at Carnegie Mellon.",
+        "description": "Gapwise's planned Carnegie Mellon edition is grounded in the flagship Pittsburgh campus. The personalized page and directory listing are live now; timetable import, verified building data, campus search, and routing are not yet available.",
+        "seoTitle": "Gapwise for Carnegie Mellon University",
+        "seoDescription": "Explore the planned Gapwise edition for Carnegie Mellon University's Pittsburgh campus, with transparent capability status and no unsupported routing or timetable claims.",
+        "searchExamples": ["Carnegie Mellon", "CMU", "Pittsburgh"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "ucberkeley",
+      "name": "University of California, Berkeley",
+      "shortName": "UC Berkeley",
+      "accentColor": "#003262",
+      "campusScope": "Berkeley campus",
+      "hosts": ["ucberkeley.gapwise.ca"],
+      "campuses": ["ucberkeley-main"],
+      "defaultCampus": "ucberkeley-main",
+      "aliases": ["Berkeley", "Cal", "UCB"],
+      "marketing": {
+        "campusName": "Berkeley campus",
+        "headline": "A calmer way to see the day at Berkeley.",
+        "description": "Explore the planned Gapwise edition for UC Berkeley's campus in the East Bay. Campus-specific timetable import, building records, search, and pedestrian routing remain planned until the underlying data is verified.",
+        "seoTitle": "Gapwise for UC Berkeley",
+        "seoDescription": "Explore the planned Gapwise UC Berkeley edition with transparent status for timetable import, campus building data, search, and routing.",
+        "searchExamples": ["UC Berkeley", "Cal", "Berkeley"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "nyu",
+      "name": "New York University",
+      "shortName": "NYU",
+      "accentColor": "#57068C",
+      "campusScope": "Washington Square campus",
+      "hosts": ["nyu.gapwise.ca"],
+      "campuses": ["nyu-washington-square"],
+      "defaultCampus": "nyu-washington-square",
+      "aliases": ["NYU", "Washington Square", "Greenwich Village"],
+      "marketing": {
+        "campusName": "Washington Square campus",
+        "headline": "Keep an NYU day connected across the city.",
+        "description": "Explore the planned Gapwise edition centered on NYU's Washington Square campus in Greenwich Village. Verified campus search, routing, and timetable import are planned rather than assumed.",
+        "seoTitle": "Gapwise for New York University",
+        "seoDescription": "Explore the planned Gapwise NYU Washington Square edition, with honest capability status for timetable import, building data, search, and routing.",
+        "searchExamples": ["NYU", "Washington Square", "New York City"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "mit",
+      "name": "Massachusetts Institute of Technology",
+      "shortName": "MIT",
+      "accentColor": "#A31F34",
+      "campusScope": "Cambridge campus",
+      "hosts": ["mit.gapwise.ca"],
+      "campuses": ["mit-cambridge"],
+      "defaultCampus": "mit-cambridge",
+      "aliases": ["MIT", "Mass Tech", "Cambridge"],
+      "marketing": {
+        "campusName": "Cambridge campus",
+        "headline": "Make the next move across MIT part of the plan.",
+        "description": "Explore the planned Gapwise edition for MIT's Cambridge campus along the Charles River. Timetable import, verified building search, and campus routing remain planned until campus-specific support is ready.",
+        "seoTitle": "Gapwise for MIT",
+        "seoDescription": "Explore the planned Gapwise MIT Cambridge edition, with transparent status for timetable import, campus building data, search, and routing.",
+        "searchExamples": ["MIT", "Massachusetts Institute of Technology", "Cambridge"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "stanford",
+      "name": "Stanford University",
+      "shortName": "Stanford",
+      "accentColor": "#8C1515",
+      "campusScope": "Stanford campus",
+      "hosts": ["stanford.gapwise.ca"],
+      "campuses": ["stanford-main"],
+      "defaultCampus": "stanford-main",
+      "aliases": ["Stanford", "The Farm", "Palo Alto"],
+      "marketing": {
+        "campusName": "Stanford campus",
+        "headline": "See a sprawling Stanford day as one connected plan.",
+        "description": "Explore the planned Gapwise edition for Stanford's main campus on the San Francisco Peninsula. Verified building data, schedule import, search, and routing are planned and will not be simulated.",
+        "seoTitle": "Gapwise for Stanford University",
+        "seoDescription": "Explore the planned Gapwise Stanford edition with clear status for timetable import, building data, campus search, and routing.",
+        "searchExamples": ["Stanford", "The Farm", "Stanford California"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "upenn",
+      "name": "University of Pennsylvania",
+      "shortName": "Penn",
+      "accentColor": "#011F5B",
+      "campusScope": "Philadelphia campus",
+      "hosts": ["upenn.gapwise.ca"],
+      "campuses": ["upenn-philadelphia"],
+      "defaultCampus": "upenn-philadelphia",
+      "aliases": ["UPenn", "Penn", "University City"],
+      "marketing": {
+        "campusName": "Philadelphia campus",
+        "headline": "Connect the time between classes at Penn.",
+        "description": "Explore the planned Gapwise edition for Penn's Philadelphia campus in University City. Timetable import and source-backed campus intelligence remain planned until verified support exists.",
+        "seoTitle": "Gapwise for the University of Pennsylvania",
+        "seoDescription": "Explore the planned Gapwise Penn edition in Philadelphia, with transparent capability status for timetable import, building data, search, and routing.",
+        "searchExamples": ["Penn", "UPenn", "Philadelphia"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "cornell",
+      "name": "Cornell University",
+      "shortName": "Cornell",
+      "accentColor": "#B31B1B",
+      "campusScope": "Ithaca campus",
+      "hosts": ["cornell.gapwise.ca"],
+      "campuses": ["cornell-ithaca"],
+      "defaultCampus": "cornell-ithaca",
+      "aliases": ["Cornell", "Ithaca", "Big Red"],
+      "marketing": {
+        "campusName": "Ithaca campus",
+        "headline": "Plan the hills, walks, and gaps in a Cornell day.",
+        "description": "Explore the planned Gapwise edition for Cornell's main campus in Ithaca. Campus building data, timetable import, search, and routes remain planned pending source-backed validation.",
+        "seoTitle": "Gapwise for Cornell University",
+        "seoDescription": "Explore the planned Gapwise Cornell Ithaca edition, with transparent status for timetable import, campus data, search, and routing.",
+        "searchExamples": ["Cornell", "Ithaca", "Big Red"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "dartmouth",
+      "name": "Dartmouth College",
+      "shortName": "Dartmouth",
+      "accentColor": "#00693E",
+      "campusScope": "Hanover campus",
+      "hosts": ["dartmouth.gapwise.ca"],
+      "campuses": ["dartmouth-hanover"],
+      "defaultCampus": "dartmouth-hanover",
+      "aliases": ["Dartmouth", "Hanover", "Big Green"],
+      "marketing": {
+        "campusName": "Hanover campus",
+        "headline": "Keep a walkable Dartmouth day in view.",
+        "description": "Explore the planned Gapwise edition for Dartmouth's Hanover campus. The edition page is real today, while timetable import and verified campus intelligence remain planned.",
+        "seoTitle": "Gapwise for Dartmouth College",
+        "seoDescription": "Explore the planned Gapwise Dartmouth edition in Hanover, with honest capability status for timetable import, building data, search, and routing.",
+        "searchExamples": ["Dartmouth", "Hanover", "Big Green"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "brown",
+      "name": "Brown University",
+      "shortName": "Brown",
+      "accentColor": "#4E3629",
+      "campusScope": "College Hill campus",
+      "hosts": ["brown.gapwise.ca"],
+      "campuses": ["brown-providence"],
+      "defaultCampus": "brown-providence",
+      "aliases": ["Brown", "College Hill", "Providence"],
+      "marketing": {
+        "campusName": "College Hill campus",
+        "headline": "See the shape of a Brown day before the next walk.",
+        "description": "Explore the planned Gapwise edition for Brown's College Hill campus in Providence. Timetable import, campus building records, search, and routing remain planned until validated.",
+        "seoTitle": "Gapwise for Brown University",
+        "seoDescription": "Explore the planned Gapwise Brown edition in Providence, with transparent status for timetable import, building data, search, and routing.",
+        "searchExamples": ["Brown", "College Hill", "Providence"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "columbia",
+      "name": "Columbia University",
+      "shortName": "Columbia",
+      "accentColor": "#1D4F91",
+      "campusScope": "Morningside Heights campus",
+      "hosts": ["columbia.gapwise.ca"],
+      "campuses": ["columbia-morningside"],
+      "defaultCampus": "columbia-morningside",
+      "aliases": ["Columbia", "Morningside", "Morningside Heights"],
+      "marketing": {
+        "campusName": "Morningside Heights campus",
+        "headline": "Keep a Columbia day connected in Upper Manhattan.",
+        "description": "Explore the planned Gapwise edition centered on Columbia's Morningside Heights campus. Timetable import and verified building, search, and routing support remain planned.",
+        "seoTitle": "Gapwise for Columbia University",
+        "seoDescription": "Explore the planned Gapwise Columbia Morningside edition, with clear capability status for timetable import, campus data, search, and routing.",
+        "searchExamples": ["Columbia", "Morningside Heights", "New York City"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "princeton",
+      "name": "Princeton University",
+      "shortName": "Princeton",
+      "accentColor": "#E77500",
+      "campusScope": "Princeton campus",
+      "hosts": ["princeton.gapwise.ca"],
+      "campuses": ["princeton-main"],
+      "defaultCampus": "princeton-main",
+      "aliases": ["Princeton", "Tigers", "Princeton NJ"],
+      "marketing": {
+        "campusName": "Princeton campus",
+        "headline": "Make the walk between Princeton classes visible.",
+        "description": "Explore the planned Gapwise edition for Princeton's New Jersey campus. Timetable import and verified building, search, and routing data remain explicitly planned.",
+        "seoTitle": "Gapwise for Princeton University",
+        "seoDescription": "Explore the planned Gapwise Princeton edition, with transparent capability status and no unsupported campus-data claims.",
+        "searchExamples": ["Princeton", "Princeton University", "Princeton New Jersey"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "yale",
+      "name": "Yale University",
+      "shortName": "Yale",
+      "accentColor": "#00356B",
+      "campusScope": "New Haven campus",
+      "hosts": ["yale.gapwise.ca"],
+      "campuses": ["yale-new-haven"],
+      "defaultCampus": "yale-new-haven",
+      "aliases": ["Yale", "New Haven", "Bulldogs"],
+      "marketing": {
+        "campusName": "New Haven campus",
+        "headline": "Bring a Yale day into one thoughtful plan.",
+        "description": "Explore the planned Gapwise edition for Yale's campus in New Haven. Timetable import, verified campus search, building data, and routing remain planned until supported by real sources.",
+        "seoTitle": "Gapwise for Yale University",
+        "seoDescription": "Explore the planned Gapwise Yale edition in New Haven, with clear status for timetable import, building data, search, and routing.",
+        "searchExamples": ["Yale", "New Haven", "Yale University"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    },
+    {
+      "id": "harvard",
+      "name": "Harvard University",
+      "shortName": "Harvard",
+      "accentColor": "#A51C30",
+      "campusScope": "Cambridge campus",
+      "hosts": ["harvard.gapwise.ca"],
+      "campuses": ["harvard-cambridge"],
+      "defaultCampus": "harvard-cambridge",
+      "aliases": ["Harvard", "Harvard Yard", "Cambridge"],
+      "marketing": {
+        "campusName": "Cambridge campus",
+        "headline": "See the time between Harvard classes more clearly.",
+        "description": "Explore the planned Gapwise edition centered on Harvard's Cambridge campus. The page is available now; timetable import and source-backed building, search, and routing support remain planned.",
+        "seoTitle": "Gapwise for Harvard University",
+        "seoDescription": "Explore the planned Gapwise Harvard Cambridge edition, with transparent capability status for timetable import, building data, search, and routing.",
+        "searchExamples": ["Harvard", "Harvard Yard", "Cambridge"]
+      },
+      "country": "United States",
+      "status": "planned",
+      "timetableAdapter": "planned",
+      "calendarSource": "Timetable import",
+      "calendarInstructions": "Timetable import is planned and is not available for this edition yet.",
+      "calendarHelpUrl": "https://gapwise.ca/universities",
+      "enabledFeatures": {
+        "routing": false,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": []
+    }
+  ],
+  "campuses": [
+    {
+      "id": "utm",
+      "universityId": "uoft",
+      "name": "University of Toronto Mississauga",
+      "shortName": "UTM",
+      "campusName": "Mississauga campus",
+      "city": "Mississauga",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["utm.gapwise.ca"],
+      "aliases": ["Mississauga", "U of T Mississauga", "Erindale"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "utsg",
+      "universityId": "uoft",
+      "name": "University of Toronto St. George",
+      "shortName": "UTSG",
+      "campusName": "St. George campus",
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["utsg.gapwise.ca"],
+      "aliases": ["St George", "Downtown Toronto", "U of T St. George"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "utsc",
+      "universityId": "uoft",
+      "name": "University of Toronto Scarborough",
+      "shortName": "UTSC",
+      "campusName": "Scarborough campus",
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["utsc.gapwise.ca"],
+      "aliases": ["Scarborough", "U of T Scarborough"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "carleton",
+      "universityId": "carleton",
+      "name": "Carleton University Ottawa Campus",
+      "shortName": "Carleton",
+      "campusName": "Ottawa campus",
+      "city": "Ottawa",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["carleton.gapwise.ca"],
+      "aliases": ["CU", "Ravens"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "tmu",
+      "universityId": "tmu",
+      "name": "Toronto Metropolitan University Downtown Campus",
+      "shortName": "TMU",
+      "campusName": "Downtown Toronto campus",
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["tmu.gapwise.ca"],
+      "aliases": ["Toronto Metropolitan", "Ryerson", "RU"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "queens",
+      "universityId": "queens",
+      "name": "Queen's University Kingston Campus",
+      "shortName": "Queen's",
+      "campusName": "Kingston campus",
+      "city": "Kingston",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["queens.gapwise.ca"],
+      "aliases": ["Queens", "QU", "Gaels"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "waterloo",
+      "universityId": "laurier",
+      "name": "Wilfrid Laurier University Waterloo Campus",
+      "shortName": "Laurier",
+      "campusName": "Waterloo campus",
+      "city": "Waterloo",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["laurier.gapwise.ca"],
+      "aliases": ["Laurier", "WLU", "Golden Hawks"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "keele",
+      "universityId": "york",
+      "name": "York University Keele Campus",
+      "shortName": "Keele",
+      "campusName": "Keele campus",
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["keele.gapwise.ca"],
+      "aliases": ["York Keele", "North York"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "glendon",
+      "universityId": "york",
+      "name": "York University Glendon Campus",
+      "shortName": "Glendon",
+      "campusName": "Glendon campus",
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["glendon.gapwise.ca"],
+      "aliases": ["Glendon College", "York Glendon", "Bayview"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      },
+      "marketing": {
+        "campusName": "Glendon campus in midtown Toronto",
+        "headline": "A Glendon edition shaped around a bilingual campus day.",
+        "description": "Explore the planned Gapwise edition for York's intimate Glendon campus in midtown Toronto. The page is available now; timetable import, verified building search, and routing will arrive only after campus-specific validation.",
+        "seoTitle": "Gapwise for York University Glendon Campus",
+        "seoDescription": "Explore the planned Gapwise Glendon campus edition in Toronto, with honest capability status for timetable import, campus search, building data, and routing.",
+        "searchExamples": ["Glendon College", "York Glendon", "Toronto"]
+      }
+    },
+    {
+      "id": "markham",
+      "universityId": "york",
+      "name": "York University Markham Campus",
+      "shortName": "Markham",
+      "campusName": "Markham campus",
+      "city": "Markham",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["markham.gapwise.ca"],
+      "aliases": ["York Markham", "Markham Centre"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      },
+      "marketing": {
+        "campusName": "Markham campus",
+        "headline": "Plan a connected day at York's newest core campus.",
+        "description": "Explore the planned Gapwise edition for York's Markham campus, where technology, entrepreneurship, and community partnerships shape the student experience. Campus data and timetable features remain planned until verified.",
+        "seoTitle": "Gapwise for York University Markham Campus",
+        "seoDescription": "Explore the planned Gapwise Markham campus edition, with clear status for timetable import, building search, campus data, and routing.",
+        "searchExamples": ["York Markham", "Markham Campus", "Markham"]
+      }
+    },
+    {
+      "id": "mcmaster",
+      "universityId": "mcmaster",
+      "name": "McMaster University Hamilton Campus",
+      "shortName": "McMaster",
+      "campusName": "Hamilton campus",
+      "city": "Hamilton",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["mcmaster.gapwise.ca"],
+      "aliases": ["Mac", "Marauders"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "western",
+      "universityId": "western",
+      "name": "Western University London Campus",
+      "shortName": "Western",
+      "campusName": "London campus",
+      "city": "London",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["western.gapwise.ca"],
+      "aliases": ["UWO", "Mustangs"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "guelph",
+      "universityId": "guelph",
+      "name": "University of Guelph Main Campus",
+      "shortName": "Guelph",
+      "campusName": "Guelph campus",
+      "city": "Guelph",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["guelph.gapwise.ca"],
+      "aliases": ["U of G", "UofG", "Gryphons"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "uottawa",
+      "universityId": "uottawa",
+      "name": "University of Ottawa Downtown Campus",
+      "shortName": "uOttawa",
+      "campusName": "Downtown Ottawa campus",
+      "city": "Ottawa",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["uottawa.gapwise.ca"],
+      "aliases": ["University of Ottawa", "Ottawa U", "Gee-Gees"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "brock",
+      "universityId": "brock",
+      "name": "Brock University St. Catharines Campus",
+      "shortName": "Brock",
+      "campusName": "St. Catharines campus",
+      "city": "St. Catharines",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["brock.gapwise.ca"],
+      "aliases": ["Badgers", "Niagara"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "ubc-vancouver",
+      "universityId": "ubc",
+      "name": "UBC Vancouver",
+      "shortName": "UBCV",
+      "campusName": "Vancouver / Point Grey campus",
+      "city": "Vancouver",
+      "region": "British Columbia",
+      "country": "Canada",
+      "hosts": ["ubcv.gapwise.ca"],
+      "aliases": ["UBC Vancouver", "Point Grey", "Vancouver campus"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "ubc-okanagan",
+      "universityId": "ubc",
+      "name": "UBC Okanagan",
+      "shortName": "UBCO",
+      "campusName": "Okanagan campus",
+      "city": "Kelowna",
+      "region": "British Columbia",
+      "country": "Canada",
+      "hosts": ["ubco.gapwise.ca"],
+      "aliases": ["UBC Okanagan", "Okanagan", "Kelowna"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      },
+      "marketing": {
+        "campusName": "Okanagan campus in Kelowna",
+        "headline": "A clearer campus day for UBC Okanagan.",
+        "description": "Explore the planned Gapwise edition for UBC's Okanagan campus in Kelowna. The edition is personalized and searchable now, while timetable import, verified campus data, and routing remain explicitly planned.",
+        "seoTitle": "Gapwise for UBC Okanagan",
+        "seoDescription": "Explore the planned Gapwise UBC Okanagan edition in Kelowna, with transparent capability status for timetable import, building data, search, and routing.",
+        "searchExamples": ["UBC Okanagan", "UBCO", "Kelowna"]
+      }
+    },
+    {
+      "id": "waterloo-main",
+      "universityId": "waterloo",
+      "name": "University of Waterloo Main Campus",
+      "shortName": "Waterloo",
+      "campusName": "Main campus",
+      "city": "Waterloo",
+      "region": "Ontario",
+      "country": "Canada",
+      "hosts": ["waterloo.gapwise.ca"],
+      "aliases": ["UWaterloo", "UW", "Warriors"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "mcgill-downtown",
+      "universityId": "mcgill",
+      "name": "McGill University Downtown Campus",
+      "shortName": "McGill",
+      "campusName": "Downtown campus",
+      "city": "Montreal",
+      "region": "Quebec",
+      "country": "Canada",
+      "hosts": ["mcgill.gapwise.ca"],
+      "aliases": ["McGill Downtown", "Montréal", "Montreal"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "supported",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      }
+    },
+    {
+      "id": "cmu-pittsburgh",
+      "universityId": "cmu",
+      "name": "Carnegie Mellon University Pittsburgh Campus",
+      "shortName": "CMU Pittsburgh",
+      "campusName": "Pittsburgh flagship campus",
+      "city": "Pittsburgh",
+      "region": "Pennsylvania",
+      "country": "United States",
+      "hosts": ["cmu.gapwise.ca"],
+      "aliases": ["Carnegie Mellon", "CMU", "Pittsburgh"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "ucberkeley-main",
+      "universityId": "ucberkeley",
+      "name": "University of California, Berkeley Campus",
+      "shortName": "UC Berkeley",
+      "campusName": "Berkeley campus",
+      "city": "Berkeley",
+      "region": "California",
+      "country": "United States",
+      "hosts": ["ucberkeley.gapwise.ca"],
+      "aliases": ["Berkeley", "Cal", "UCB"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "nyu-washington-square",
+      "universityId": "nyu",
+      "name": "New York University Washington Square Campus",
+      "shortName": "NYU",
+      "campusName": "Washington Square campus",
+      "city": "New York City",
+      "region": "New York",
+      "country": "United States",
+      "hosts": ["nyu.gapwise.ca"],
+      "aliases": ["NYU", "Washington Square", "Greenwich Village", "New York"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "mit-cambridge",
+      "universityId": "mit",
+      "name": "Massachusetts Institute of Technology Cambridge Campus",
+      "shortName": "MIT",
+      "campusName": "Cambridge campus",
+      "city": "Cambridge",
+      "region": "Massachusetts",
+      "country": "United States",
+      "hosts": ["mit.gapwise.ca"],
+      "aliases": ["MIT", "Mass Tech", "Cambridge"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "stanford-main",
+      "universityId": "stanford",
+      "name": "Stanford University Main Campus",
+      "shortName": "Stanford",
+      "campusName": "Stanford campus",
+      "city": "Stanford",
+      "region": "California",
+      "country": "United States",
+      "hosts": ["stanford.gapwise.ca"],
+      "aliases": ["Stanford", "Palo Alto", "The Farm"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "upenn-philadelphia",
+      "universityId": "upenn",
+      "name": "University of Pennsylvania Philadelphia Campus",
+      "shortName": "Penn",
+      "campusName": "Philadelphia campus",
+      "city": "Philadelphia",
+      "region": "Pennsylvania",
+      "country": "United States",
+      "hosts": ["upenn.gapwise.ca"],
+      "aliases": ["UPenn", "Penn", "University City"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "cornell-ithaca",
+      "universityId": "cornell",
+      "name": "Cornell University Ithaca Campus",
+      "shortName": "Cornell",
+      "campusName": "Ithaca campus",
+      "city": "Ithaca",
+      "region": "New York",
+      "country": "United States",
+      "hosts": ["cornell.gapwise.ca"],
+      "aliases": ["Cornell", "Ithaca", "Big Red"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "dartmouth-hanover",
+      "universityId": "dartmouth",
+      "name": "Dartmouth College Hanover Campus",
+      "shortName": "Dartmouth",
+      "campusName": "Hanover campus",
+      "city": "Hanover",
+      "region": "New Hampshire",
+      "country": "United States",
+      "hosts": ["dartmouth.gapwise.ca"],
+      "aliases": ["Dartmouth", "Hanover", "Big Green"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "brown-providence",
+      "universityId": "brown",
+      "name": "Brown University Providence Campus",
+      "shortName": "Brown",
+      "campusName": "College Hill campus",
+      "city": "Providence",
+      "region": "Rhode Island",
+      "country": "United States",
+      "hosts": ["brown.gapwise.ca"],
+      "aliases": ["Brown", "College Hill", "Providence"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "columbia-morningside",
+      "universityId": "columbia",
+      "name": "Columbia University Morningside Campus",
+      "shortName": "Columbia",
+      "campusName": "Morningside Heights campus",
+      "city": "New York City",
+      "region": "New York",
+      "country": "United States",
+      "hosts": ["columbia.gapwise.ca"],
+      "aliases": ["Columbia", "Morningside", "Morningside Heights", "New York"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "princeton-main",
+      "universityId": "princeton",
+      "name": "Princeton University Main Campus",
+      "shortName": "Princeton",
+      "campusName": "Princeton campus",
+      "city": "Princeton",
+      "region": "New Jersey",
+      "country": "United States",
+      "hosts": ["princeton.gapwise.ca"],
+      "aliases": ["Princeton", "Tigers", "Princeton NJ"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "yale-new-haven",
+      "universityId": "yale",
+      "name": "Yale University New Haven Campus",
+      "shortName": "Yale",
+      "campusName": "New Haven campus",
+      "city": "New Haven",
+      "region": "Connecticut",
+      "country": "United States",
+      "hosts": ["yale.gapwise.ca"],
+      "aliases": ["Yale", "New Haven", "Bulldogs"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "harvard-cambridge",
+      "universityId": "harvard",
+      "name": "Harvard University Cambridge Campus",
+      "shortName": "Harvard",
+      "campusName": "Cambridge campus",
+      "city": "Cambridge",
+      "region": "Massachusetts",
+      "country": "United States",
+      "hosts": ["harvard.gapwise.ca"],
+      "aliases": ["Harvard", "Harvard Yard", "Cambridge"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
     }
   ]
 }

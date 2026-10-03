@@ -28,9 +28,13 @@ const EXPECTED_UNIVERSITY_IDS = [
 ] as const;
 
 describe("Gapwise Ecosystem Consistency", () => {
-  test("reserved hosts are modeled without entering supported university coverage", () => {
-    const reservedHosts = manifest.sites
-      .filter((site) => site.role === "reserved")
+  test("planned hosts are real editions without entering supported feature coverage", () => {
+    const plannedHosts = manifest.sites
+      .filter((site) => {
+        const university = manifest.universities.find((item) => item.id === site.universityId);
+        const campus = manifest.campuses.find((item) => item.id === site.campusId);
+        return (campus?.status ?? university?.status) === "planned";
+      })
       .flatMap((site) => site.hosts);
     for (const host of [
       "ubco.gapwise.ca",
@@ -50,22 +54,21 @@ describe("Gapwise Ecosystem Consistency", () => {
       "nyu.gapwise.ca",
       "ucberkeley.gapwise.ca",
     ]) {
-      expect(reservedHosts).toContain(host);
-      expect(manifest.universities.some((university) => university.hosts.includes(host))).toBe(
-        false,
-      );
+      expect(plannedHosts).toContain(host);
+      expect(siteForHostname(host)?.role).not.toBe("reserved");
+      expect(universityForHostname(host)).not.toBeNull();
     }
   });
-  test("canonical registry contains exactly the supported universities", () => {
-    expect(manifest.universities).toHaveLength(EXPECTED_UNIVERSITY_IDS.length);
-    const ids = manifest.universities.map((u) => u.id);
+  test("canonical registry distinguishes current and planned universities", () => {
+    expect(manifest.universities).toHaveLength(27);
+    const ids = supportedUniversities().map((u) => u.id);
     for (const expectedId of EXPECTED_UNIVERSITY_IDS) {
       expect(ids).toContain(expectedId);
     }
   });
 
   test("every university resolves via hostname and ID", () => {
-    for (const uni of manifest.universities) {
+    for (const uni of manifest.universities.filter((item) => item.status !== "planned")) {
       expect(universityById(uni.id)).not.toBeNull();
       for (const host of uni.hosts) {
         expect(siteForHostname(host)?.role).not.toBe("reserved");
@@ -77,7 +80,7 @@ describe("Gapwise Ecosystem Consistency", () => {
   });
 
   test("every university has campus catalog and campus data", () => {
-    for (const uni of manifest.universities) {
+    for (const uni of manifest.universities.filter((item) => item.status !== "planned")) {
       if (uni.id === "uoft") continue;
       const campusFile = resolve(`src/data/campuses/${uni.id}/campus.json`);
       const catalogFile = resolve(`src/data/campuses/${uni.id}/catalog.json`);
@@ -91,7 +94,7 @@ describe("Gapwise Ecosystem Consistency", () => {
   });
 
   test("every university has an adapter and demo loader registered", () => {
-    for (const uni of manifest.universities) {
+    for (const uni of manifest.universities.filter((item) => item.status !== "planned")) {
       const adapterKey = uni.timetableAdapter;
       expect(adapterKey).toBeDefined();
       expect(typeof timetableAdapters[adapterKey]).toBe("function");
@@ -100,7 +103,7 @@ describe("Gapwise Ecosystem Consistency", () => {
   });
 
   test("every university has complete web assets (logo, manifest, og-card, icons)", () => {
-    for (const uni of manifest.universities) {
+    for (const uni of manifest.universities.filter((item) => item.status !== "planned")) {
       const dir = resolve(`public/universities/${uni.id}`);
       expect(existsSync(resolve(dir, "logo-mark.svg"))).toBe(true);
       expect(existsSync(resolve(dir, "site.webmanifest"))).toBe(true);
@@ -113,7 +116,7 @@ describe("Gapwise Ecosystem Consistency", () => {
     }
   });
 
-  test("vercel.json includes rewrites for every non-uoft university hostname", () => {
+  test("vercel.json resolves every intentional university hostname generically", () => {
     const vercelConfig = JSON.parse(readFileSync("vercel.json", "utf8"));
     const rewrites = vercelConfig.rewrites as Array<{
       source: string;
@@ -121,14 +124,12 @@ describe("Gapwise Ecosystem Consistency", () => {
       destination: string;
     }>;
 
-    for (const expectedId of EXPECTED_UNIVERSITY_IDS) {
-      if (expectedId === "uoft") continue;
-      const expectedHost = `${expectedId}.gapwise.ca`;
-      const matchingRewrites = rewrites.filter((r) =>
-        r.has?.some((h) => h.type === "host" && h.value === expectedHost),
-      );
-      expect(matchingRewrites.length).toBeGreaterThanOrEqual(6);
-    }
+    const hostPattern = rewrites
+      .find((entry) => entry.destination === "/_sites/:site/index.html")
+      ?.has?.find((condition) => condition.type === "host")?.value;
+    expect(hostPattern).toBeDefined();
+    for (const site of manifest.sites.filter((item) => item.role !== "global"))
+      expect(site.hosts.every((host) => new RegExp(`^${hostPattern}$`).test(host))).toBe(true);
   });
 
   test("marketing landing derives discovery and editions from every supported university", () => {

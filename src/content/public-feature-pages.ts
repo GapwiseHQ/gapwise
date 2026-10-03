@@ -1,10 +1,14 @@
 import universities from "../../universities.json" with { type: "json" };
 
-const supportedUniversityCount = universities.universities.length;
-const supportedCampusCount = universities.universities.reduce(
-  (count, university) => count + university.campuses.length,
-  0,
+const supportedUniversities = universities.universities.filter(
+  (university) => university.status !== "planned",
 );
+const supportedUniversityCount = supportedUniversities.length;
+const supportedCampusCount = universities.campuses.filter(
+  (campus) => campus.status === "supported",
+).length;
+const universityCount = universities.universities.length;
+const campusEditionCount = universities.campuses.length;
 
 export type PublicFeatureSection = {
   title: string;
@@ -29,7 +33,7 @@ export const PUBLIC_FEATURE_PAGES = {
     title: "A campus planner built around the time between classes.",
     seoTitle: "About Gapwise — Multi-University Student Planning",
     description:
-      "See how Gapwise connects university timetables, gap planning, and source-backed campus context in one focused student-built product across Canada.",
+      "See how Gapwise connects university timetables, gap planning, and source-backed campus context in one focused student-built product across North America.",
     lead: "Gapwise is built for the part of university life a timetable leaves blank: what to do next, how much time you actually have, and where you need to go.",
     sections: [
       {
@@ -48,25 +52,25 @@ export const PUBLIC_FEATURE_PAGES = {
       },
       {
         title: "Made for multiple universities",
-        body: "Timetable identity and source-backed building maps are supported for all fourteen universities. Pedestrian routing, verified entrances, and campus places vary by campus and are shown only where supported.",
+        body: "Timetable identity and source-backed building maps are supported for fourteen universities. Planned editions across Canada and the United States show capabilities honestly without implying data or routing that does not exist.",
       },
     ],
   },
   universities: {
     path: "/universities",
     eyebrow: "University editions",
-    title: "One Gapwise, built around each supported campus.",
-    seoTitle: "Supported Canadian Universities — Gapwise",
-    description: `Explore all ${supportedUniversityCount} Canadian university editions and ${supportedCampusCount} campus models supported by Gapwise for timetable planning, campus search, and navigation.`,
-    lead: "Each edition combines a university-specific timetable workflow with its own source-backed campus model while sharing one privacy-first Gapwise application.",
+    title: "Campus editions across North America.",
+    seoTitle: "Gapwise University & Campus Directory",
+    description: `Explore ${universityCount} Gapwise university editions and ${campusEditionCount} campus records across Canada and the United States, with supported, partial, and planned capabilities clearly identified.`,
+    lead: "Search every Gapwise university and campus by official name, abbreviation, location, alias, or hostname.",
     sections: [
       {
-        title: `${supportedUniversityCount} university editions`,
-        body: `Gapwise currently supports ${universities.universities.map((university) => university.name).join(", ")}.`,
+        title: `${universityCount} university editions`,
+        body: `${supportedUniversityCount} universities have current product support, while planned editions remain useful, personalized, and explicit about unavailable capabilities.`,
       },
       {
-        title: `${supportedCampusCount} campus models`,
-        body: "U of T has distinct Mississauga, St. George, and Scarborough models. Every other supported edition selects its own campus data, search index, timetable adapter, and pedestrian graph.",
+        title: `${campusEditionCount} campus records`,
+        body: `The registry separates universities from campuses. ${supportedCampusCount} campuses currently have verified Gapwise support; the rest retain planned capability states until implementation is complete.`,
       },
       {
         title: "Honest campus evidence",
@@ -126,7 +130,7 @@ export const PUBLIC_FEATURE_PAGES = {
     title: "Explore campus with a map built around your day.",
     seoTitle: "University Campus Map — Gapwise",
     description:
-      "Explore source-backed campus building maps across supported Canadian universities, with pedestrian routes and schedule context where supported.",
+      "Explore source-backed campus building maps across supported North American university editions, with pedestrian routes and schedule context where supported.",
     lead: "The Gapwise campus explorer connects campus buildings and schedule context. Entrance, place, and pedestrian-route coverage varies by campus.",
     sections: [
       {

@@ -2,25 +2,38 @@ import { Link } from "@tanstack/react-router";
 import {
   ArrowRight,
   CalendarDays,
+  Check,
   Clock3,
+  Database,
   MapPinned,
   Navigation,
   Search,
-  Upload,
 } from "lucide-react";
 import type { CSSProperties } from "react";
 import { UploadPanel } from "@/components/UploadPanel";
 import {
-  SITES,
   activeSite,
   activeUniversity,
+  campusForSite,
+  campusRecordsForUniversity,
   displayNameForSite,
   marketingForSite,
+  type CapabilityStatus,
+  type Campus,
+  type University,
+  type UniversityMarketing,
 } from "@/universities/registry";
 import type { MarketingLandingProps } from "./MarketingLanding";
 import "./university-marketing-home.css";
 
 type UniversityMarketingHomeProps = MarketingLandingProps;
+
+const CAPABILITY_LABELS = {
+  timetableImport: "Timetable import",
+  buildingData: "Building data",
+  search: "Campus search",
+  routing: "Pedestrian routing",
+} as const;
 
 function CoverageStats({
   buildings,
@@ -32,7 +45,7 @@ function CoverageStats({
   pathSegments: number;
 }) {
   return (
-    <dl className="university-home-stats" aria-label="Gapwise campus data coverage">
+    <dl className="university-home-stats" aria-label="Current Gapwise campus data coverage">
       <div>
         <dt>Mapped buildings</dt>
         <dd>{buildings.toLocaleString("en-CA")}</dd>
@@ -50,13 +63,13 @@ function CoverageStats({
 }
 
 function ProductPreview({
-  marketing,
+  example,
   shortName,
 }: {
-  marketing: NonNullable<ReturnType<typeof marketingForSite>>;
+  example: UniversityMarketing["example"];
   shortName: string;
 }) {
-  const example = marketing.example;
+  if (!example) return null;
   return (
     <div className="university-product-window" aria-label={`Example Gapwise day at ${shortName}`}>
       <div className="university-product-bar">
@@ -125,28 +138,121 @@ function ProductPreview({
   );
 }
 
-function CampusChooser() {
-  const campuses = SITES.filter(
-    (site) => site.role === "campus-edition" && site.universityId === "uoft",
-  );
+function PlannedPreview({ campus, university }: { campus: Campus | null; university: University }) {
+  const location = campus ? `${campus.city}, ${campus.region}` : university.country;
   return (
-    <div className="university-campus-chooser" aria-label="Choose a University of Toronto campus">
+    <div
+      className="university-planned-window"
+      aria-label={`${university.shortName} Gapwise edition status`}
+    >
+      <div className="university-planned-window-top">
+        <span>Gapwise edition</span>
+        <strong>Planned</strong>
+      </div>
+      <div className="university-planned-location">
+        <MapPinned aria-hidden="true" />
+        <div>
+          <span>Campus context</span>
+          <strong>{campus?.campusName ?? university.campusScope}</strong>
+          <small>{location}</small>
+        </div>
+      </div>
+      <div className="university-planned-lines" aria-hidden="true">
+        <i />
+        <i />
+        <i />
+      </div>
+      <p>
+        Campus capabilities activate only after the underlying timetable and map data are verified.
+      </p>
+    </div>
+  );
+}
+
+function statusLabel(status: CapabilityStatus) {
+  return status === "supported" ? "Available" : status === "partial" ? "Partial" : "Planned";
+}
+
+function aggregateCapabilities(campuses: Campus[]) {
+  return Object.fromEntries(
+    Object.keys(CAPABILITY_LABELS).map((key) => {
+      const values = campuses.map(
+        (campus) => campus.capabilities[key as keyof Campus["capabilities"]],
+      );
+      const status: CapabilityStatus = values.every((value) => value === "supported")
+        ? "supported"
+        : values.every((value) => value === "planned")
+          ? "planned"
+          : "partial";
+      return [key, status];
+    }),
+  ) as Campus["capabilities"];
+}
+
+function CapabilityGrid({ campuses, campus }: { campuses: Campus[]; campus: Campus | null }) {
+  const capabilities = campus?.capabilities ?? aggregateCapabilities(campuses);
+  return (
+    <section className="university-capabilities" aria-labelledby="university-capabilities-title">
+      <div>
+        <p className="university-home-section-label">Capability status</p>
+        <h2 id="university-capabilities-title">Clear about what works today.</h2>
+        <p>
+          “Planned” means the public edition exists, but Gapwise does not yet claim verified product
+          support for that capability.
+        </p>
+      </div>
+      <dl>
+        {Object.entries(CAPABILITY_LABELS).map(([key, label]) => {
+          const status = capabilities[key as keyof Campus["capabilities"]];
+          return (
+            <div key={key} data-status={status}>
+              <dt>
+                {key === "timetableImport" ? (
+                  <CalendarDays aria-hidden="true" />
+                ) : key === "buildingData" ? (
+                  <Database aria-hidden="true" />
+                ) : key === "search" ? (
+                  <Search aria-hidden="true" />
+                ) : (
+                  <Navigation aria-hidden="true" />
+                )}
+                {label}
+              </dt>
+              <dd>
+                <span>{status === "supported" ? <Check aria-hidden="true" /> : null}</span>
+                {statusLabel(status)}
+              </dd>
+            </div>
+          );
+        })}
+      </dl>
+    </section>
+  );
+}
+
+function CampusChooser({ university }: { university: University }) {
+  const campuses = campusRecordsForUniversity(university);
+  return (
+    <div className="university-campus-chooser" aria-label={`Choose a ${university.name} campus`}>
       <div className="university-campus-chooser-header">
         <span>Choose your campus</span>
-        <strong>Three distinct Gapwise editions</strong>
+        <strong>{campuses.length} distinct Gapwise editions</strong>
       </div>
       {campuses.map((campus, index) => (
         <a
           key={campus.id}
-          href={`https://${campus.canonicalHost}`}
+          href={`https://${campus.hosts[0]}`}
           aria-label={campus.name}
-          style={{ "--campus-card-accent": campus.presentation?.accentColor } as CSSProperties}
+          style={{ "--campus-card-accent": university.accentColor } as CSSProperties}
         >
-          <span className="university-campus-index">0{index + 1}</span>
+          <span className="university-campus-index">{String(index + 1).padStart(2, "0")}</span>
           <span>
             <strong>{campus.shortName}</strong>
-            <small>{campus.presentation?.visualLabel} campus</small>
+            <small>
+              {campus.campusName} · {campus.city}
+            </small>
           </span>
+          <em data-status={campus.status}>{statusLabel(campus.status)}</em>
           <ArrowRight aria-hidden="true" />
         </a>
       ))}
@@ -160,10 +266,13 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
   const marketing = marketingForSite(site, university);
   if (!university || !site || !marketing) return null;
 
+  const campus = campusForSite(site);
+  const campuses = campusRecordsForUniversity(university);
   const displayName = displayNameForSite(site, university);
-  const shortName = site.shortName ?? university.shortName;
+  const shortName = site.shortName ?? campus?.shortName ?? university.shortName;
   const accent = site.presentation?.accentColor ?? university.accentColor;
   const isHub = site.role === "university-hub";
+  const isPlanned = !isHub && (campus?.status === "planned" || university.status === "planned");
   const heroEyebrow = site.presentation?.heroEyebrow ?? `Gapwise for ${displayName}`;
   const heroDescription = site.presentation?.heroDescription ?? marketing.description;
 
@@ -172,6 +281,7 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
       className="university-home"
       data-university={university.id}
       data-campus={site.campusId ?? "all"}
+      data-status={campus?.status ?? university.status}
       style={{ "--university-home-accent": accent } as CSSProperties}
     >
       <section className="university-home-hero" aria-labelledby="university-home-title">
@@ -179,7 +289,14 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
         <div className="university-home-intro">
           <p className="university-home-kicker">
             <span aria-hidden="true" />
-            {heroEyebrow}
+            <span>{heroEyebrow}</span>
+            <em>
+              {isPlanned
+                ? "Planned edition"
+                : university.status === "partial"
+                  ? "Partial coverage"
+                  : "Supported"}
+            </em>
           </p>
           <h1 id="university-home-title">{marketing.headline}</h1>
           <p className="university-home-lede">{heroDescription}</p>
@@ -187,6 +304,10 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
             {isHub ? (
               <a className="university-home-primary" href="#campus-editions">
                 Choose your campus <ArrowRight aria-hidden="true" />
+              </a>
+            ) : isPlanned ? (
+              <a className="university-home-primary" href="#capabilities">
+                View edition status <ArrowRight aria-hidden="true" />
               </a>
             ) : (
               <button
@@ -201,37 +322,51 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
             )}
             <a
               className="university-home-secondary"
-              href={isHub ? "#campus-editions" : "#import-schedule"}
+              href={
+                isHub
+                  ? "#campus-editions"
+                  : isPlanned
+                    ? "https://gapwise.ca/universities"
+                    : "#import-schedule"
+              }
             >
-              {isHub ? "Compare editions" : "Import your schedule"}
+              {isHub
+                ? "Compare editions"
+                : isPlanned
+                  ? "Explore all universities"
+                  : "Import your schedule"}
             </a>
           </div>
-          <nav
-            className="university-home-feature-links"
-            aria-label={`${displayName} Gapwise features`}
-          >
-            <Link to="/timetable">
-              <CalendarDays aria-hidden="true" />
-              Timetable
-            </Link>
-            <Link to="/gaps">
-              <Clock3 aria-hidden="true" />
-              Gap plan
-            </Link>
-            <Link to="/route">
-              <MapPinned aria-hidden="true" />
-              Map & routing
-            </Link>
-          </nav>
+          {!isPlanned && !isHub ? (
+            <nav
+              className="university-home-feature-links"
+              aria-label={`${displayName} Gapwise features`}
+            >
+              <Link to="/timetable">
+                <CalendarDays aria-hidden="true" />
+                Timetable
+              </Link>
+              <Link to="/gaps">
+                <Clock3 aria-hidden="true" />
+                Gap plan
+              </Link>
+              <Link to="/route">
+                <MapPinned aria-hidden="true" />
+                Map & routing
+              </Link>
+            </nav>
+          ) : null}
         </div>
         <div className="university-home-visual">
           {isHub ? (
-            <CampusChooser />
-          ) : (
-            <ProductPreview marketing={marketing} shortName={shortName} />
-          )}
+            <CampusChooser university={university} />
+          ) : isPlanned ? (
+            <PlannedPreview campus={campus} university={university} />
+          ) : marketing.example ? (
+            <ProductPreview example={marketing.example} shortName={shortName} />
+          ) : null}
         </div>
-        <CoverageStats {...marketing.stats} />
+        {marketing.stats && !isPlanned ? <CoverageStats {...marketing.stats} /> : null}
       </section>
 
       {isHub ? (
@@ -243,10 +378,31 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
           <p className="university-home-section-label">Campus editions</p>
           <h2 id="campus-editions-title">Built around the campus you actually attend.</h2>
           <p>
-            UTM, UTSG, and UTSC use distinct campus identities, examples, maps, building registries,
-            and routing data.
+            Each campus has its own identity and capability state. Supported data stays separate
+            from planned coverage.
           </p>
-          <CampusChooser />
+          <CampusChooser university={university} />
+        </section>
+      ) : isPlanned ? (
+        <section className="university-home-section university-home-planned-copy">
+          <p className="university-home-section-label">A real edition, carefully staged</p>
+          <h2>Personalized now. Product support only when verified.</h2>
+          <p>
+            This edition is discoverable by institution, abbreviation, campus, city, aliases, and
+            hostname. It does not expose demo schedules, building results, or route estimates that
+            Gapwise cannot substantiate.
+          </p>
+          <div
+            className="university-planned-searches"
+            aria-label={`${shortName} directory search examples`}
+          >
+            {marketing.searchExamples.map((example) => (
+              <span key={example}>
+                <Search aria-hidden="true" />
+                {example}
+              </span>
+            ))}
+          </div>
         </section>
       ) : (
         <>
@@ -282,7 +438,6 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
               </ul>
             </div>
           </section>
-
           <section
             className="university-home-quick-links"
             aria-label={`${shortName} product links`}
@@ -309,7 +464,6 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
               <small>Find buildings and plan the next walk.</small>
             </Link>
           </section>
-
           <section
             id="import-schedule"
             className="university-home-section university-home-import"
@@ -347,6 +501,9 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
         </>
       )}
 
+      <div id="capabilities">
+        <CapabilityGrid campuses={campuses} campus={campus} />
+      </div>
       <footer className="university-home-footer">
         <span>Gapwise · {displayName}</span>
         <span>Independent student software · Not an official university service</span>

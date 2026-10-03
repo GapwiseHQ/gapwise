@@ -10,7 +10,9 @@ test("Carleton uses the canonical product screens and campus dataset", async ({
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto(editionUrl(baseURL, "carleton"));
-  await expect(page.getByText("Gapwise for Carleton University", { exact: true })).toBeVisible();
+  await expect(page.locator(".university-home-kicker")).toContainText(
+    "Gapwise for Carleton University",
+  );
   await expect(page.getByRole("button", { name: /Import Carleton/ })).toBeVisible();
   await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable/);
@@ -131,12 +133,16 @@ test("Direct URL refresh preserves university context in local development", asy
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto(editionUrl(baseURL, "carleton"));
-  await expect(page.getByText("Gapwise for Carleton University", { exact: true })).toBeVisible();
+  await expect(page.locator(".university-home-kicker")).toContainText(
+    "Gapwise for Carleton University",
+  );
   await expect(page.getByRole("button", { name: /Import Carleton/ })).toBeVisible();
 
   // Refresh page
   await page.reload();
-  await expect(page.getByText("Gapwise for Carleton University", { exact: true })).toBeVisible();
+  await expect(page.locator(".university-home-kicker")).toContainText(
+    "Gapwise for Carleton University",
+  );
   await expect(page.getByRole("button", { name: /Import Carleton/ })).toBeVisible();
   failures.assertClean();
 });
@@ -151,9 +157,9 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
 
   // TMU
   await page.goto(editionUrl(baseURL, "tmu"));
-  await expect(
-    page.getByText("Gapwise for Toronto Metropolitan University", { exact: true }),
-  ).toBeVisible();
+  await expect(page.locator(".university-home-kicker")).toContainText(
+    "Gapwise for Toronto Metropolitan University",
+  );
   await expect(
     page.getByRole("button", { name: /Import (MyServiceHub|pasted schedule)/ }),
   ).toBeVisible();
@@ -166,7 +172,9 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
 
   // Queen's
   await page.goto(editionUrl(baseURL, "queens"));
-  await expect(page.getByText("Gapwise for Queen's University", { exact: true })).toBeVisible();
+  await expect(page.locator(".university-home-kicker")).toContainText(
+    "Gapwise for Queen's University",
+  );
   await expect(page.getByRole("button", { name: /Import (SOLUS|pasted schedule)/ })).toBeVisible();
   await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable/);
@@ -177,9 +185,9 @@ test("TMU, Queen's, and Laurier use canonical product screens and single-campus 
 
   // Laurier
   await page.goto(editionUrl(baseURL, "laurier"));
-  await expect(
-    page.getByText("Gapwise for Wilfrid Laurier University", { exact: true }),
-  ).toBeVisible();
+  await expect(page.locator(".university-home-kicker")).toContainText(
+    "Gapwise for Wilfrid Laurier University",
+  );
   await expect(page.getByRole("button", { name: /Import (LORIS|pasted schedule)/ })).toBeVisible();
   await page.getByRole("button", { name: /Try the .* demo/ }).click();
   await expect(page).toHaveURL(/\/timetable/);

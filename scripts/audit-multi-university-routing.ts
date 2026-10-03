@@ -1,10 +1,9 @@
 import { writeFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import manifest from "../universities.json" with { type: "json" };
 import {
   supportedUniversities,
-  allCampuses,
+  supportedCampuses,
   resolveUniversityAndCampus,
 } from "../src/universities/registry.js";
 import {
@@ -112,8 +111,8 @@ export function runComprehensiveCampusAudit(): FullAuditReport {
     schemaVersion: "1.0",
     generatedAt: new Date().toISOString(),
     summary: {
-      totalUniversities: manifest.universities.length,
-      totalCampuses: allCampuses().length,
+      totalUniversities: supportedUniversities().length,
+      totalCampuses: supportedCampuses().length,
       routableCampuses: 0,
       totalBuildings: 0,
       totalEntrances: 0,
@@ -126,7 +125,9 @@ export function runComprehensiveCampusAudit(): FullAuditReport {
   };
 
   for (const uni of supportedUniversities()) {
-    for (const campusId of uni.campuses) {
+    for (const campusId of uni.campuses.filter((id) =>
+      supportedCampuses().some((campus) => campus.id === id),
+    )) {
       const isRoutable = uni.routableCampuses.includes(campusId);
       if (isRoutable) report.summary.routableCampuses++;
 

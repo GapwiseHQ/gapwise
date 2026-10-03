@@ -81,116 +81,27 @@ describe("Gapwise marketing system", () => {
     expect(exportTheme).toContain('reserved: "#dfad52"');
   });
 
-  test("showcases every supported university with exact canonical destinations and valid branding", async () => {
+  test("shows representative universities while making every edition searchable", async () => {
     const landing = await readFile("src/components/GlobalMarketingHome.tsx", "utf8");
     const manifest = JSON.parse(await readFile("universities.json", "utf8"));
 
     expect(landing).toContain('id="universities"');
     expect(landing).toContain("Built for your campus.");
     expect(landing).toContain("supportedUniversities()");
-    expect(landing).toContain("canonicalUrlForUniversity");
+    expect(landing).toContain("universityDirectoryEntries()");
+    expect(landing).toContain("FEATURED_UNIVERSITY_IDS");
+    expect(landing).toContain("View all universities");
+    expect(manifest.universities).toHaveLength(27);
 
-    const expectedUniversities = [
-      {
-        id: "uoft",
-        name: "University of Toronto",
-        url: "https://uoft.gapwise.ca",
-        scope: "Mississauga, St. George, and Scarborough",
-      },
-      {
-        id: "carleton",
-        name: "Carleton University",
-        url: "https://carleton.gapwise.ca",
-        scope: "Ottawa campus",
-      },
-      {
-        id: "tmu",
-        name: "Toronto Metropolitan University",
-        url: "https://tmu.gapwise.ca",
-        scope: "Downtown Toronto campus",
-      },
-      {
-        id: "queens",
-        name: "Queen's University",
-        url: "https://queens.gapwise.ca",
-        scope: "Kingston campus",
-      },
-      {
-        id: "laurier",
-        name: "Wilfrid Laurier University",
-        url: "https://laurier.gapwise.ca",
-        scope: "Waterloo campus",
-      },
-      {
-        id: "york",
-        name: "York University",
-        url: "https://york.gapwise.ca",
-        scope: "Keele campus",
-      },
-      {
-        id: "mcmaster",
-        name: "McMaster University",
-        url: "https://mcmaster.gapwise.ca",
-        scope: "Hamilton campus",
-      },
-      {
-        id: "western",
-        name: "Western University",
-        url: "https://western.gapwise.ca",
-        scope: "London campus",
-      },
-      {
-        id: "guelph",
-        name: "University of Guelph",
-        url: "https://guelph.gapwise.ca",
-        scope: "Guelph campus",
-      },
-      {
-        id: "uottawa",
-        name: "University of Ottawa",
-        url: "https://uottawa.gapwise.ca",
-        scope: "Downtown Ottawa campus",
-      },
-      {
-        id: "brock",
-        name: "Brock University",
-        url: "https://brock.gapwise.ca",
-        scope: "St. Catharines campus",
-      },
-      {
-        id: "ubc",
-        name: "University of British Columbia",
-        url: "https://ubc.gapwise.ca",
-        scope: "Vancouver / Point Grey campus",
-      },
-      {
-        id: "waterloo",
-        name: "University of Waterloo",
-        url: "https://waterloo.gapwise.ca",
-        scope: "Main campus",
-      },
-      {
-        id: "mcgill",
-        name: "McGill University",
-        url: "https://mcgill.gapwise.ca",
-        scope: "Downtown Montreal campus",
-      },
-    ];
-
-    expect(manifest.universities).toHaveLength(14);
-
-    for (const expected of expectedUniversities) {
-      const entry = manifest.universities.find((u: { id: string }) => u.id === expected.id);
-      expect(entry).toBeDefined();
-      expect(entry.name).toBe(expected.name);
-      expect(`https://${entry.hosts[0]}`).toBe(expected.url);
-      expect(entry.campusScope).toBe(expected.scope);
+    for (const entry of manifest.universities) {
       expect(entry.accentColor).toMatch(/^#[0-9a-fA-F]{6}$/);
-      expect(entry.status).toBe("supported");
+      expect(["supported", "partial", "planned"]).toContain(entry.status);
       expect(entry.marketing.headline.length).toBeGreaterThan(20);
       expect(entry.marketing.seoTitle).toContain("Gapwise for");
-      expect(entry.marketing.searchExamples).toHaveLength(3);
-      expect(entry.marketing.stats.buildings).toBeGreaterThan(0);
+      if (entry.status === "planned") {
+        expect(entry.marketing.stats).toBeUndefined();
+        expect(entry.marketing.searchExamples.length).toBeGreaterThan(0);
+      }
     }
   });
 

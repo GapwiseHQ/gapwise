@@ -22,7 +22,7 @@ test("global homepage presents the multi-university Gapwise ecosystem", async ({
   failures.assertClean();
 });
 
-test("reserved hosts publish an honest planned state and canonicalize globally", async ({
+test("planned hosts publish personalized, indexable editions with honest capability status", async ({
   page,
   baseURL,
 }) => {
@@ -32,15 +32,27 @@ test("reserved hosts publish an honest planned state and canonicalize globally",
 
   await page.goto(editionUrl(baseURL, "harvard"));
   await expect(
-    page.getByRole("heading", { name: "Harvard University edition coming soon" }),
+    page.getByRole("heading", { name: "See the time between Harvard classes more clearly." }),
   ).toBeVisible();
-  await expect(page).toHaveTitle("Gapwise — University Timetable & Campus Navigation");
+  await expect(page).toHaveTitle("Gapwise for Harvard University");
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     "href",
-    "https://gapwise.ca/",
+    "https://harvard.gapwise.ca/",
   );
-  await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", "noindex, nofollow");
-  await expect(page.getByText(/preparing campus data and timetable adapters/)).toBeVisible();
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+    "content",
+    "index, follow, max-image-preview:large",
+  );
+  await expect(
+    page.getByText(/Personalized now\. Product support only when verified/),
+  ).toBeVisible();
+  await expect(page.locator(".university-capabilities dd")).toHaveCount(4);
+  await expect(page.locator(".university-capabilities dd")).toHaveText([
+    "Planned",
+    "Planned",
+    "Planned",
+    "Planned",
+  ]);
   await expect(page.getByText(/Mapped buildings|Routing segments/)).toHaveCount(0);
   failures.assertClean();
 });
@@ -74,12 +86,19 @@ test("global university chooser finds registry aliases and direct campus edition
 
   await search.fill("ubc");
   await expect(page.getByRole("link", { name: /University of British Columbia/ })).toContainText(
-    "Vancouver / Point Grey campus",
+    "Vancouver and Okanagan",
   );
-  await expect(page.getByText(/Okanagan/)).toHaveCount(0);
+  await expect(page.getByRole("link", { name: /UBC Vancouver/ }).first()).toHaveAttribute(
+    "href",
+    "https://ubcv.gapwise.ca",
+  );
+  await expect(page.getByRole("link", { name: /UBC Okanagan/ }).first()).toHaveAttribute(
+    "href",
+    "https://ubco.gapwise.ca",
+  );
 
   await search.fill("not a supported campus");
-  await expect(page.getByText(/No supported university or campus matches/)).toBeVisible();
+  await expect(page.getByText(/No university or campus matches/)).toBeVisible();
   failures.assertClean();
 });
 
@@ -125,9 +144,9 @@ test("University of Toronto hub links to three distinct campus editions", async 
   const failures = watchForAppFailures(page, baseURL);
 
   await page.goto("/?site=uoft-hub");
-  await expect(
-    page.getByText("Gapwise for the University of Toronto", { exact: true }),
-  ).toBeVisible();
+  await expect(page.locator(".university-home-kicker")).toContainText(
+    "Gapwise for the University of Toronto",
+  );
   await expect(page.getByRole("button", { name: /Search campus and classes/ })).toHaveCount(0);
   for (const [name, host] of [
     ["University of Toronto Mississauga", "https://utm.gapwise.ca"],
@@ -156,7 +175,7 @@ test("U of T campus editions retain campus-scoped import experiences", async ({
     ["utsc", "University of Toronto Scarborough"],
   ] as const) {
     await page.goto(`/?campus=${campus}`);
-    await expect(page.getByText(`Gapwise for ${name}`, { exact: true })).toBeVisible();
+    await expect(page.locator(".university-home-kicker")).toContainText(`Gapwise for ${name}`);
     await expect(page.getByRole("button", { name: "Import ACORN" })).toBeVisible();
   }
   failures.assertClean();
@@ -253,13 +272,13 @@ const supportedEditions = [
   ["tmu", "Move through downtown campus with your day in view."],
   ["queens", "Plan Queen's days from first lecture to last walk."],
   ["laurier", "Make the walk between Laurier classes part of the plan."],
-  ["york", "Keep your Keele campus day connected."],
+  ["york", "Three campuses. One clearer York day."],
   ["mcmaster", "Your McMaster schedule, mapped to campus."],
   ["western", "Plan the space between classes at Western."],
   ["guelph", "Build a calmer day across the Guelph campus."],
   ["uottawa", "See your uOttawa day before you cross campus."],
   ["brock", "Turn your Brock schedule into a campus plan."],
-  ["ubc", "Plan the distance between UBC Vancouver classes."],
+  ["ubc", "Two campuses. One clearer UBC day."],
   ["waterloo", "Keep your Waterloo schedule and campus route together."],
   ["mcgill", "Connect your McGill timetable to downtown campus."],
 ] as const;
@@ -285,6 +304,82 @@ test("every supported university edition renders isolated registry-driven identi
       if (otherId !== id)
         await expect(page.getByRole("heading", { name: otherHeadline })).toHaveCount(0);
     }
+  }
+  failures.assertClean();
+});
+
+test("directory searches Canada and the U.S. without horizontal overflow", async ({
+  page,
+  baseURL,
+}) => {
+  test.skip(test.info().project.name !== "chromium");
+  if (!baseURL) throw new Error("Playwright baseURL is required");
+  await page.setViewportSize({ width: 390, height: 844 });
+  const failures = watchForAppFailures(page, baseURL);
+  await page.goto("/universities?site=global");
+  await expect(page.getByRole("heading", { name: "Explore Gapwise universities." })).toBeVisible();
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    "href",
+    "https://gapwise.ca/universities",
+  );
+  const search = page.getByPlaceholder(/Search by university/);
+  await search.fill("Pittsburgh");
+  await expect(page.getByRole("link", { name: /Carnegie Mellon University/ })).toBeVisible();
+  await search.fill("ubco.gapwise.ca");
+  await expect(page.getByRole("link", { name: /UBC Okanagan/ })).toBeVisible();
+  const widths = await page.evaluate(() => ({
+    document: document.documentElement.scrollWidth,
+    viewport: window.innerWidth,
+  }));
+  expect(widths.document).toBeLessThanOrEqual(widths.viewport);
+  failures.assertClean();
+});
+
+test("every registry edition resolves with isolated identity, canonical metadata, and capability state", async ({
+  page,
+  baseURL,
+}) => {
+  test.skip(test.info().project.name !== "chromium");
+  test.setTimeout(180_000);
+  if (!baseURL) throw new Error("Playwright baseURL is required");
+  await page.setViewportSize({ width: 390, height: 844 });
+  const failures = watchForAppFailures(page, baseURL);
+
+  for (const site of manifest.sites.filter((candidate) => candidate.role !== "global")) {
+    const university = manifest.universities.find(
+      (candidate) => candidate.id === site.universityId,
+    );
+    const campus = manifest.campuses.find((candidate) => candidate.id === site.campusId);
+    expect(university, `${site.id} must resolve its university`).toBeDefined();
+    const marketing = site.presentation?.marketing ?? campus?.marketing ?? university?.marketing;
+    const status = campus?.status ?? university?.status;
+    expect(marketing, `${site.id} must resolve marketing content`).toBeDefined();
+
+    await page.goto(`/?site=${site.id}`);
+    await expect(page.getByRole("heading", { name: marketing!.headline })).toBeVisible();
+    await expect(page).toHaveTitle(marketing!.seoTitle);
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+      "href",
+      `https://${site.canonicalHost}/`,
+    );
+    await expect(page.locator(".university-home")).toHaveAttribute("data-status", status!);
+    await expect(page.locator(".university-capabilities dd")).toHaveCount(4);
+    if (status === "planned") {
+      await expect(page.locator(".university-capabilities dd")).toHaveText([
+        "Planned",
+        "Planned",
+        "Planned",
+        "Planned",
+      ]);
+      await expect(page.locator("#ics-file")).toHaveCount(0);
+    }
+    const layout = await page.evaluate(() => ({
+      documentWidth: document.documentElement.scrollWidth,
+      viewportWidth: window.innerWidth,
+    }));
+    expect(layout.documentWidth, `${site.canonicalHost} must not overflow`).toBeLessThanOrEqual(
+      layout.viewportWidth,
+    );
   }
   failures.assertClean();
 });
