@@ -1,6 +1,6 @@
 {
   "name": "Gapwise — Brock University",
-  "short_name": "Gapwise",
+  "short_name": "Gapwise · Brock",
   "icons": [
     {
       "src": "/universities/brock/icon-192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#0d1117",
+  "theme_color": "#CC0000",
   "background_color": "#0d1117",
   "display": "standalone",
   "start_url": "/"

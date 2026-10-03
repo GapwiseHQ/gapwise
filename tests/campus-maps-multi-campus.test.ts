@@ -33,8 +33,8 @@ import manifest from "../universities.json" with { type: "json" };
 describe("Campus Maps and Timetable Inference for All Supported Campuses", () => {
   const supportedCampuses = manifest.campuses.filter((c) => c.status === "supported");
 
-  test("all 16 supported campuses have accurate bounds, footprints, and configurations", async () => {
-    expect(supportedCampuses).toHaveLength(16);
+  test("all supported campuses have accurate bounds, footprints, and configurations", async () => {
+    expect(supportedCampuses).toHaveLength(manifest.campuses.length);
 
     for (const campus of supportedCampuses) {
       await ensureCampusCatalog(campus.id);
@@ -58,6 +58,8 @@ describe("Campus Maps and Timetable Inference for All Supported Campuses", () =>
       expect(east).toBeLessThan(180);
       expect(south).toBeGreaterThan(-90);
       expect(north).toBeLessThan(90);
+      expect(east - west).toBeLessThan(0.1);
+      expect(north - south).toBeLessThan(0.1);
 
       const center = campusCenter(campus.id);
       expect(center[0]).toBeGreaterThan(west);
@@ -310,7 +312,7 @@ describe("Campus Maps and Timetable Inference for All Supported Campuses", () =>
     expect(crossCampusRoute.message).toContain("same campus");
   });
 
-  test("all 16 supported campuses load realistic university-specific demo schedules with campus inference, valid buildings, and routed transitions", async () => {
+  test("all supported campuses load realistic university-specific demo schedules with campus inference, valid buildings, and routed transitions", async () => {
     for (const campus of supportedCampuses) {
       const university = universityById(campus.universityId);
       expect(university).not.toBeNull();
@@ -347,7 +349,7 @@ describe("Campus Maps and Timetable Inference for All Supported Campuses", () =>
       const planner =
         campus.id === "utm"
           ? createScheduleTransitionPlanner(UTM_ROUTING_GRAPH, meetingsViaCampus)
-          : await getOutdoorCampusTransitionPlanner(routingKey);
+          : await getOutdoorCampusTransitionPlanner(routingKey, campus.id);
       expect(planner).not.toBeNull();
 
       const days = [...new Set(meetingsViaCampus.map((m) => m.weekday))];

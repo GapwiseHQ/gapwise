@@ -1,6 +1,6 @@
 {
   "name": "Gapwise — University of British Columbia",
-  "short_name": "Gapwise",
+  "short_name": "Gapwise · UBC",
   "icons": [
     {
       "src": "/universities/ubc/icon-192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#0d1117",
+  "theme_color": "#002145",
   "background_color": "#0d1117",
   "display": "standalone",
   "start_url": "/"

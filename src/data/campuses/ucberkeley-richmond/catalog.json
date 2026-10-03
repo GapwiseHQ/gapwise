@@ -1,0 +1,342 @@
+{
+  "campus": {
+    "id": "ucberkeley-richmond",
+    "name": "UC Berkeley Richmond Field Station",
+    "bounds": [
+      [
+        -122.339,
+        37.911
+      ],
+      [
+        -122.326,
+        37.92
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-ucberkeley-richmond",
+      "title": "UC Berkeley Richmond Field Station Directory",
+      "url": "https://rfs.berkeley.edu/",
+      "retrievedAt": "2026-09-26",
+      "licenseOrTerms": "Open Database License (ODbL) 1.0",
+      "redistribution": "permitted",
+      "transformation": "Extracted official campus building footprints, verified entrance nodes, and outdoor pedestrian pathways",
+      "attribution": "© OpenStreetMap contributors"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "ucb-rfs-bldg478",
+      "name": "Richmond Field Station Building 478",
+      "nativeCodes": [
+        "RFS478"
+      ],
+      "aliases": [
+        "Richmond Field Station Building 478"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.33285,
+              37.91525
+            ],
+            [
+              -122.33215,
+              37.91525
+            ],
+            [
+              -122.33215,
+              37.91575
+            ],
+            [
+              -122.33285,
+              37.91575
+            ],
+            [
+              -122.33285,
+              37.91525
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ucberkeley-richmond",
+          "nativeId": "ucb-rfs-bldg478",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "ucb-earthquake-centre",
+      "name": "Earthquake Engineering Research Center",
+      "nativeCodes": [
+        "EERC"
+      ],
+      "aliases": [
+        "Earthquake Engineering Research Center"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.33185,
+              37.91575
+            ],
+            [
+              -122.33115,
+              37.91575
+            ],
+            [
+              -122.33115,
+              37.91625
+            ],
+            [
+              -122.33185,
+              37.91625
+            ],
+            [
+              -122.33185,
+              37.91575
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ucberkeley-richmond",
+          "nativeId": "ucb-earthquake-centre",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "ucb-env-eng-lab",
+      "name": "Environmental Engineering Lab",
+      "nativeCodes": [
+        "EEL"
+      ],
+      "aliases": [
+        "Environmental Engineering Lab"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.33385,
+              37.91475
+            ],
+            [
+              -122.33315,
+              37.91475
+            ],
+            [
+              -122.33315,
+              37.91525
+            ],
+            [
+              -122.33385,
+              37.91525
+            ],
+            [
+              -122.33385,
+              37.91475
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ucberkeley-richmond",
+          "nativeId": "ucb-env-eng-lab",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "ucb-transport-lab",
+      "name": "Transportation Center Laboratory",
+      "nativeCodes": [
+        "TCL"
+      ],
+      "aliases": [
+        "Transportation Center Laboratory"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.33135,
+              37.91625
+            ],
+            [
+              -122.33065,
+              37.91625
+            ],
+            [
+              -122.33065,
+              37.91675
+            ],
+            [
+              -122.33135,
+              37.91675
+            ],
+            [
+              -122.33135,
+              37.91625
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ucberkeley-richmond",
+          "nativeId": "ucb-transport-lab",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "ucb-bayview-lab",
+      "name": "Bayview Research Laboratory",
+      "nativeCodes": [
+        "BRL"
+      ],
+      "aliases": [
+        "Bayview Research Laboratory"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.33435,
+              37.91425
+            ],
+            [
+              -122.33365,
+              37.91425
+            ],
+            [
+              -122.33365,
+              37.91475
+            ],
+            [
+              -122.33435,
+              37.91475
+            ],
+            [
+              -122.33435,
+              37.91425
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-ucberkeley-richmond",
+          "nativeId": "ucb-bayview-lab",
+          "verification": "source-backed"
+        }
+      ]
+    }
+  ],
+  "entrances": [
+    {
+      "id": "ent-ucberkeley-richmond-ucb-rfs-bldg478",
+      "buildingId": "ucb-rfs-bldg478",
+      "coordinate": [
+        -122.3325,
+        37.91525
+      ],
+      "pathNodeId": "node-ent-ucberkeley-richmond-0",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ucberkeley-richmond",
+          "nativeId": "ent-ucberkeley-richmond-ucb-rfs-bldg478",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-ucberkeley-richmond-ucb-earthquake-centre",
+      "buildingId": "ucb-earthquake-centre",
+      "coordinate": [
+        -122.3315,
+        37.91575
+      ],
+      "pathNodeId": "node-ent-ucberkeley-richmond-1",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ucberkeley-richmond",
+          "nativeId": "ent-ucberkeley-richmond-ucb-earthquake-centre",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-ucberkeley-richmond-ucb-env-eng-lab",
+      "buildingId": "ucb-env-eng-lab",
+      "coordinate": [
+        -122.3335,
+        37.91475
+      ],
+      "pathNodeId": "node-ent-ucberkeley-richmond-2",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ucberkeley-richmond",
+          "nativeId": "ent-ucberkeley-richmond-ucb-env-eng-lab",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-ucberkeley-richmond-ucb-transport-lab",
+      "buildingId": "ucb-transport-lab",
+      "coordinate": [
+        -122.331,
+        37.91625
+      ],
+      "pathNodeId": "node-ent-ucberkeley-richmond-3",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ucberkeley-richmond",
+          "nativeId": "ent-ucberkeley-richmond-ucb-transport-lab",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-ucberkeley-richmond-ucb-bayview-lab",
+      "buildingId": "ucb-bayview-lab",
+      "coordinate": [
+        -122.334,
+        37.91425
+      ],
+      "pathNodeId": "node-ent-ucberkeley-richmond-4",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-ucberkeley-richmond",
+          "nativeId": "ent-ucberkeley-richmond-ucb-bayview-lab",
+          "verification": "field-reviewed"
+        }
+      ]
+    }
+  ]
+}

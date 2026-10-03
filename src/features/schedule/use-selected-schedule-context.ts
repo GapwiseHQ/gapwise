@@ -54,7 +54,7 @@ export function useSelectedScheduleContext(meetings: Meeting[] | null) {
     let current = true;
     void import("@/features/routing/campus-transition").then(
       ({ getOutdoorCampusTransitionPlanner }) => {
-        getOutdoorCampusTransitionPlanner(routingCampusKey).then((planner) => {
+        getOutdoorCampusTransitionPlanner(routingCampusKey, currentCampus).then((planner) => {
           if (current) setOutdoorPlanner(() => planner);
         });
       },

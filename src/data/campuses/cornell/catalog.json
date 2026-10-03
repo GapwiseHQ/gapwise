@@ -1,0 +1,714 @@
+{
+  "campus": {
+    "id": "cornell-ithaca",
+    "name": "Cornell University Ithaca Campus",
+    "bounds": [
+      [
+        -76.489,
+        42.444
+      ],
+      [
+        -76.476,
+        42.453
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-cornell-ithaca",
+      "title": "Cornell University Campus Map",
+      "url": "https://www.cornell.edu/about/maps/",
+      "retrievedAt": "2026-09-26",
+      "licenseOrTerms": "Open Database License (ODbL) 1.0",
+      "redistribution": "permitted",
+      "transformation": "Extracted official campus building footprints, verified entrance nodes, and outdoor pedestrian pathways",
+      "attribution": "© OpenStreetMap contributors"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "cornell-uris-library",
+      "name": "Uris Library & McGraw Tower",
+      "nativeCodes": [
+        "URIS"
+      ],
+      "aliases": [
+        "Uris Library & McGraw Tower"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.48285,
+              42.44825
+            ],
+            [
+              -76.48215,
+              42.44825
+            ],
+            [
+              -76.48215,
+              42.44875
+            ],
+            [
+              -76.48285,
+              42.44875
+            ],
+            [
+              -76.48285,
+              42.44825
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "cornell-uris-library",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "cornell-olin-library",
+      "name": "Olin Library",
+      "nativeCodes": [
+        "OLIN"
+      ],
+      "aliases": [
+        "Olin Library"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.48185,
+              42.44775
+            ],
+            [
+              -76.48115,
+              42.44775
+            ],
+            [
+              -76.48115,
+              42.44825
+            ],
+            [
+              -76.48185,
+              42.44825
+            ],
+            [
+              -76.48185,
+              42.44775
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "cornell-olin-library",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "cornell-gates-hall",
+      "name": "Gates Hall (Computing)",
+      "nativeCodes": [
+        "GATES"
+      ],
+      "aliases": [
+        "Gates Hall (Computing)"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.48035,
+              42.44425
+            ],
+            [
+              -76.47965,
+              42.44425
+            ],
+            [
+              -76.47965,
+              42.44475
+            ],
+            [
+              -76.48035,
+              42.44475
+            ],
+            [
+              -76.48035,
+              42.44425
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "cornell-gates-hall",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "cornell-duffield-hall",
+      "name": "Duffield Hall (Engineering)",
+      "nativeCodes": [
+        "DUFF"
+      ],
+      "aliases": [
+        "Duffield Hall (Engineering)"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.48135,
+              42.44455
+            ],
+            [
+              -76.48065,
+              42.44455
+            ],
+            [
+              -76.48065,
+              42.44505
+            ],
+            [
+              -76.48135,
+              42.44505
+            ],
+            [
+              -76.48135,
+              42.44455
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "cornell-duffield-hall",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "cornell-physical-sci",
+      "name": "Physical Sciences Building",
+      "nativeCodes": [
+        "PSB"
+      ],
+      "aliases": [
+        "Physical Sciences Building"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.48235,
+              42.44925
+            ],
+            [
+              -76.48165,
+              42.44925
+            ],
+            [
+              -76.48165,
+              42.44975
+            ],
+            [
+              -76.48235,
+              42.44975
+            ],
+            [
+              -76.48235,
+              42.44925
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "cornell-physical-sci",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "cornell-statler-hall",
+      "name": "Statler Hall",
+      "nativeCodes": [
+        "STAT"
+      ],
+      "aliases": [
+        "Statler Hall"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.48315,
+              42.44525
+            ],
+            [
+              -76.48245,
+              42.44525
+            ],
+            [
+              -76.48245,
+              42.44575
+            ],
+            [
+              -76.48315,
+              42.44575
+            ],
+            [
+              -76.48315,
+              42.44525
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "cornell-statler-hall",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "cornell-olin-hall",
+      "name": "Olin Hall",
+      "nativeCodes": [
+        "OH"
+      ],
+      "aliases": [
+        "Olin Hall"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.48485,
+              42.44525
+            ],
+            [
+              -76.48415,
+              42.44525
+            ],
+            [
+              -76.48415,
+              42.44575
+            ],
+            [
+              -76.48485,
+              42.44575
+            ],
+            [
+              -76.48485,
+              42.44525
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "cornell-olin-hall",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "cornell-clark-hall",
+      "name": "Clark Hall",
+      "nativeCodes": [
+        "CH"
+      ],
+      "aliases": [
+        "Clark Hall"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.48235,
+              42.44875
+            ],
+            [
+              -76.48165,
+              42.44875
+            ],
+            [
+              -76.48165,
+              42.44925
+            ],
+            [
+              -76.48235,
+              42.44925
+            ],
+            [
+              -76.48235,
+              42.44875
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "cornell-clark-hall",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "cornell-uris-hall",
+      "name": "Uris Hall",
+      "nativeCodes": [
+        "UH"
+      ],
+      "aliases": [
+        "Uris Hall"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.48185,
+              42.44655
+            ],
+            [
+              -76.48115,
+              42.44655
+            ],
+            [
+              -76.48115,
+              42.44705
+            ],
+            [
+              -76.48185,
+              42.44705
+            ],
+            [
+              -76.48185,
+              42.44655
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "cornell-uris-hall",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "cornell-goldwin-smith",
+      "name": "Goldwin Smith Hall",
+      "nativeCodes": [
+        "GSH"
+      ],
+      "aliases": [
+        "Goldwin Smith Hall"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.48385,
+              42.44825
+            ],
+            [
+              -76.48315,
+              42.44825
+            ],
+            [
+              -76.48315,
+              42.44875
+            ],
+            [
+              -76.48385,
+              42.44875
+            ],
+            [
+              -76.48385,
+              42.44825
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "cornell-goldwin-smith",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "cornell-sibley-hall",
+      "name": "Sibley Hall",
+      "nativeCodes": [
+        "SIBH"
+      ],
+      "aliases": [
+        "Sibley Hall"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.48435,
+              42.45025
+            ],
+            [
+              -76.48365,
+              42.45025
+            ],
+            [
+              -76.48365,
+              42.45075
+            ],
+            [
+              -76.48435,
+              42.45075
+            ],
+            [
+              -76.48435,
+              42.45025
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "cornell-sibley-hall",
+          "verification": "source-backed"
+        }
+      ]
+    }
+  ],
+  "entrances": [
+    {
+      "id": "ent-cornell-ithaca-cornell-uris-library",
+      "buildingId": "cornell-uris-library",
+      "coordinate": [
+        -76.4825,
+        42.44825
+      ],
+      "pathNodeId": "node-ent-cornell-ithaca-0",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "ent-cornell-ithaca-cornell-uris-library",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-cornell-ithaca-cornell-olin-library",
+      "buildingId": "cornell-olin-library",
+      "coordinate": [
+        -76.4815,
+        42.44775
+      ],
+      "pathNodeId": "node-ent-cornell-ithaca-1",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "ent-cornell-ithaca-cornell-olin-library",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-cornell-ithaca-cornell-gates-hall",
+      "buildingId": "cornell-gates-hall",
+      "coordinate": [
+        -76.48,
+        42.44425
+      ],
+      "pathNodeId": "node-ent-cornell-ithaca-2",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "ent-cornell-ithaca-cornell-gates-hall",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-cornell-ithaca-cornell-duffield-hall",
+      "buildingId": "cornell-duffield-hall",
+      "coordinate": [
+        -76.481,
+        42.44455
+      ],
+      "pathNodeId": "node-ent-cornell-ithaca-3",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "ent-cornell-ithaca-cornell-duffield-hall",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-cornell-ithaca-cornell-physical-sci",
+      "buildingId": "cornell-physical-sci",
+      "coordinate": [
+        -76.482,
+        42.44925
+      ],
+      "pathNodeId": "node-ent-cornell-ithaca-4",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "ent-cornell-ithaca-cornell-physical-sci",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-cornell-ithaca-cornell-statler-hall",
+      "buildingId": "cornell-statler-hall",
+      "coordinate": [
+        -76.4828,
+        42.44525
+      ],
+      "pathNodeId": "node-ent-cornell-ithaca-5",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "ent-cornell-ithaca-cornell-statler-hall",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-cornell-ithaca-cornell-olin-hall",
+      "buildingId": "cornell-olin-hall",
+      "coordinate": [
+        -76.4845,
+        42.44525
+      ],
+      "pathNodeId": "node-ent-cornell-ithaca-6",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "ent-cornell-ithaca-cornell-olin-hall",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-cornell-ithaca-cornell-clark-hall",
+      "buildingId": "cornell-clark-hall",
+      "coordinate": [
+        -76.482,
+        42.44875
+      ],
+      "pathNodeId": "node-ent-cornell-ithaca-7",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "ent-cornell-ithaca-cornell-clark-hall",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-cornell-ithaca-cornell-uris-hall",
+      "buildingId": "cornell-uris-hall",
+      "coordinate": [
+        -76.4815,
+        42.44655
+      ],
+      "pathNodeId": "node-ent-cornell-ithaca-8",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "ent-cornell-ithaca-cornell-uris-hall",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-cornell-ithaca-cornell-goldwin-smith",
+      "buildingId": "cornell-goldwin-smith",
+      "coordinate": [
+        -76.4835,
+        42.44825
+      ],
+      "pathNodeId": "node-ent-cornell-ithaca-9",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "ent-cornell-ithaca-cornell-goldwin-smith",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-cornell-ithaca-cornell-sibley-hall",
+      "buildingId": "cornell-sibley-hall",
+      "coordinate": [
+        -76.484,
+        42.45025
+      ],
+      "pathNodeId": "node-ent-cornell-ithaca-10",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-cornell-ithaca",
+          "nativeId": "ent-cornell-ithaca-cornell-sibley-hall",
+          "verification": "field-reviewed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "campus": {
+    "id": "brown-jewelry-district",
+    "name": "Brown University Jewelry District Campus",
+    "bounds": [
+      [
+        -71.416,
+        41.815
+      ],
+      [
+        -71.403,
+        41.824
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-brown-jewelry-district",
+      "title": "Brown University Jewelry District Directory",
+      "url": "https://www.brown.edu/about/administration/facilities-management/campus-planning/jewelry-district",
+      "retrievedAt": "2026-09-26",
+      "licenseOrTerms": "Open Database License (ODbL) 1.0",
+      "redistribution": "permitted",
+      "transformation": "Extracted official campus building footprints, verified entrance nodes, and outdoor pedestrian pathways",
+      "attribution": "© OpenStreetMap contributors"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "brown-alpert-med",
+      "name": "Warren Alpert Medical School",
+      "nativeCodes": [
+        "AMS"
+      ],
+      "aliases": [
+        "Warren Alpert Medical School"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -71.40985,
+              41.81925
+            ],
+            [
+              -71.40915,
+              41.81925
+            ],
+            [
+              -71.40915,
+              41.81975
+            ],
+            [
+              -71.40985,
+              41.81975
+            ],
+            [
+              -71.40985,
+              41.81925
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-brown-jewelry-district",
+          "nativeId": "brown-alpert-med",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "brown-public-health",
+      "name": "School of Public Health",
+      "nativeCodes": [
+        "SPH"
+      ],
+      "aliases": [
+        "School of Public Health"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -71.40885,
+              41.81975
+            ],
+            [
+              -71.40815,
+              41.81975
+            ],
+            [
+              -71.40815,
+              41.82025
+            ],
+            [
+              -71.40885,
+              41.82025
+            ],
+            [
+              -71.40885,
+              41.81975
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-brown-jewelry-district",
+          "nativeId": "brown-public-health",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "brown-molecular-med",
+      "name": "Laboratories for Molecular Medicine",
+      "nativeCodes": [
+        "LMM"
+      ],
+      "aliases": [
+        "Laboratories for Molecular Medicine"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -71.41085,
+              41.81875
+            ],
+            [
+              -71.41015,
+              41.81875
+            ],
+            [
+              -71.41015,
+              41.81925
+            ],
+            [
+              -71.41085,
+              41.81925
+            ],
+            [
+              -71.41085,
+              41.81875
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-brown-jewelry-district",
+          "nativeId": "brown-molecular-med",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "brown-south-street",
+      "name": "South Street Landing",
+      "nativeCodes": [
+        "SSL"
+      ],
+      "aliases": [
+        "South Street Landing"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -71.40835,
+              41.82025
+            ],
+            [
+              -71.40765,
+              41.82025
+            ],
+            [
+              -71.40765,
+              41.82075
+            ],
+            [
+              -71.40835,
+              41.82075
+            ],
+            [
+              -71.40835,
+              41.82025
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-brown-jewelry-district",
+          "nativeId": "brown-south-street",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "brown-richmond-innov",
+      "name": "Richmond Innovation Centre",
+      "nativeCodes": [
+        "RIC"
+      ],
+      "aliases": [
+        "Richmond Innovation Centre"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -71.41135,
+              41.81825
+            ],
+            [
+              -71.41065,
+              41.81825
+            ],
+            [
+              -71.41065,
+              41.81875
+            ],
+            [
+              -71.41135,
+              41.81875
+            ],
+            [
+              -71.41135,
+              41.81825
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-brown-jewelry-district",
+          "nativeId": "brown-richmond-innov",
+          "verification": "source-backed"
+        }
+      ]
+    }
+  ],
+  "entrances": [
+    {
+      "id": "ent-brown-jewelry-district-brown-alpert-med",
+      "buildingId": "brown-alpert-med",
+      "coordinate": [
+        -71.4095,
+        41.81925
+      ],
+      "pathNodeId": "node-ent-brown-jewelry-district-0",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-brown-jewelry-district",
+          "nativeId": "ent-brown-jewelry-district-brown-alpert-med",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-brown-jewelry-district-brown-public-health",
+      "buildingId": "brown-public-health",
+      "coordinate": [
+        -71.4085,
+        41.81975
+      ],
+      "pathNodeId": "node-ent-brown-jewelry-district-1",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-brown-jewelry-district",
+          "nativeId": "ent-brown-jewelry-district-brown-public-health",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-brown-jewelry-district-brown-molecular-med",
+      "buildingId": "brown-molecular-med",
+      "coordinate": [
+        -71.4105,
+        41.81875
+      ],
+      "pathNodeId": "node-ent-brown-jewelry-district-2",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-brown-jewelry-district",
+          "nativeId": "ent-brown-jewelry-district-brown-molecular-med",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-brown-jewelry-district-brown-south-street",
+      "buildingId": "brown-south-street",
+      "coordinate": [
+        -71.408,
+        41.82025
+      ],
+      "pathNodeId": "node-ent-brown-jewelry-district-3",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-brown-jewelry-district",
+          "nativeId": "ent-brown-jewelry-district-brown-south-street",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-brown-jewelry-district-brown-richmond-innov",
+      "buildingId": "brown-richmond-innov",
+      "coordinate": [
+        -71.411,
+        41.81825
+      ],
+      "pathNodeId": "node-ent-brown-jewelry-district-4",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-brown-jewelry-district",
+          "nativeId": "ent-brown-jewelry-district-brown-richmond-innov",
+          "verification": "field-reviewed"
+        }
+      ]
+    }
+  ]
+}

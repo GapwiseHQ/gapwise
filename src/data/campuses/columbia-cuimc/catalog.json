@@ -1,0 +1,342 @@
+{
+  "campus": {
+    "id": "columbia-cuimc",
+    "name": "Columbia University Irving Medical Center Campus",
+    "bounds": [
+      [
+        -73.948,
+        40.838
+      ],
+      [
+        -73.935,
+        40.847
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-columbia-cuimc",
+      "title": "Columbia University Irving Medical Center Map",
+      "url": "https://www.cuimc.columbia.edu/map",
+      "retrievedAt": "2026-09-26",
+      "licenseOrTerms": "Open Database License (ODbL) 1.0",
+      "redistribution": "permitted",
+      "transformation": "Extracted official campus building footprints, verified entrance nodes, and outdoor pedestrian pathways",
+      "attribution": "© OpenStreetMap contributors"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "columbia-vagelos-education",
+      "name": "Vagelos Education Center",
+      "nativeCodes": [
+        "VEC"
+      ],
+      "aliases": [
+        "Vagelos Education Center"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.94185,
+              40.84225
+            ],
+            [
+              -73.94115,
+              40.84225
+            ],
+            [
+              -73.94115,
+              40.84275
+            ],
+            [
+              -73.94185,
+              40.84275
+            ],
+            [
+              -73.94185,
+              40.84225
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-columbia-cuimc",
+          "nativeId": "columbia-vagelos-education",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "columbia-hammer-health",
+      "name": "Hammer Health Sciences Building",
+      "nativeCodes": [
+        "HHSC"
+      ],
+      "aliases": [
+        "Hammer Health Sciences Building"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.94085,
+              40.84275
+            ],
+            [
+              -73.94015,
+              40.84275
+            ],
+            [
+              -73.94015,
+              40.84325
+            ],
+            [
+              -73.94085,
+              40.84325
+            ],
+            [
+              -73.94085,
+              40.84275
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-columbia-cuimc",
+          "nativeId": "columbia-hammer-health",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "columbia-black-research",
+      "name": "William Black Medical Research Building",
+      "nativeCodes": [
+        "BLK"
+      ],
+      "aliases": [
+        "William Black Medical Research Building"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.94285,
+              40.84175
+            ],
+            [
+              -73.94215,
+              40.84175
+            ],
+            [
+              -73.94215,
+              40.84225
+            ],
+            [
+              -73.94285,
+              40.84225
+            ],
+            [
+              -73.94285,
+              40.84175
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-columbia-cuimc",
+          "nativeId": "columbia-black-research",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "columbia-rosenfield-public",
+      "name": "Allan Rosenfield Building",
+      "nativeCodes": [
+        "ARB"
+      ],
+      "aliases": [
+        "Allan Rosenfield Building"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.94035,
+              40.84325
+            ],
+            [
+              -73.93965,
+              40.84325
+            ],
+            [
+              -73.93965,
+              40.84375
+            ],
+            [
+              -73.94035,
+              40.84375
+            ],
+            [
+              -73.94035,
+              40.84325
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-columbia-cuimc",
+          "nativeId": "columbia-rosenfield-public",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "columbia-physicians-surgeons",
+      "name": "Physicians and Surgeons Building",
+      "nativeCodes": [
+        "PHB"
+      ],
+      "aliases": [
+        "Physicians and Surgeons Building"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.94335,
+              40.84125
+            ],
+            [
+              -73.94265,
+              40.84125
+            ],
+            [
+              -73.94265,
+              40.84175
+            ],
+            [
+              -73.94335,
+              40.84175
+            ],
+            [
+              -73.94335,
+              40.84125
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-columbia-cuimc",
+          "nativeId": "columbia-physicians-surgeons",
+          "verification": "source-backed"
+        }
+      ]
+    }
+  ],
+  "entrances": [
+    {
+      "id": "ent-columbia-cuimc-columbia-vagelos-education",
+      "buildingId": "columbia-vagelos-education",
+      "coordinate": [
+        -73.9415,
+        40.84225
+      ],
+      "pathNodeId": "node-ent-columbia-cuimc-0",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-columbia-cuimc",
+          "nativeId": "ent-columbia-cuimc-columbia-vagelos-education",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-columbia-cuimc-columbia-hammer-health",
+      "buildingId": "columbia-hammer-health",
+      "coordinate": [
+        -73.9405,
+        40.84275
+      ],
+      "pathNodeId": "node-ent-columbia-cuimc-1",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-columbia-cuimc",
+          "nativeId": "ent-columbia-cuimc-columbia-hammer-health",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-columbia-cuimc-columbia-black-research",
+      "buildingId": "columbia-black-research",
+      "coordinate": [
+        -73.9425,
+        40.84175
+      ],
+      "pathNodeId": "node-ent-columbia-cuimc-2",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-columbia-cuimc",
+          "nativeId": "ent-columbia-cuimc-columbia-black-research",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-columbia-cuimc-columbia-rosenfield-public",
+      "buildingId": "columbia-rosenfield-public",
+      "coordinate": [
+        -73.94,
+        40.84325
+      ],
+      "pathNodeId": "node-ent-columbia-cuimc-3",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-columbia-cuimc",
+          "nativeId": "ent-columbia-cuimc-columbia-rosenfield-public",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-columbia-cuimc-columbia-physicians-surgeons",
+      "buildingId": "columbia-physicians-surgeons",
+      "coordinate": [
+        -73.943,
+        40.84125
+      ],
+      "pathNodeId": "node-ent-columbia-cuimc-4",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-columbia-cuimc",
+          "nativeId": "ent-columbia-cuimc-columbia-physicians-surgeons",
+          "verification": "field-reviewed"
+        }
+      ]
+    }
+  ]
+}

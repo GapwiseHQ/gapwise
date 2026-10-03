@@ -1,6 +1,6 @@
 {
   "name": "Gapwise — University of Guelph",
-  "short_name": "Gapwise",
+  "short_name": "Gapwise · Guelph",
   "icons": [
     {
       "src": "/universities/guelph/icon-192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#0d1117",
+  "theme_color": "#C20430",
   "background_color": "#0d1117",
   "display": "standalone",
   "start_url": "/"

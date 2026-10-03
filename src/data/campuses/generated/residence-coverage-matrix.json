@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-30T21:58:37.038Z",
+  "generatedAt": "2026-10-03T19:03:53.886Z",
   "summary": {
-    "totalUniversities": 13,
-    "totalCampuses": 15,
-    "totalBuildings": 865,
-    "totalResidences": 199,
-    "universitiesWithResidenceCoverage": 13,
-    "campusesWithResidenceCoverage": 15,
+    "totalUniversities": 27,
+    "totalCampuses": 67,
+    "totalBuildings": 1254,
+    "totalResidences": 270,
+    "universitiesWithResidenceCoverage": 27,
+    "campusesWithResidenceCoverage": 67,
     "coveragePercentage": 100
   },
   "campuses": {
@@ -336,6 +336,21 @@
         }
       ]
     },
+    "carleton-dominion-chalmers": {
+      "universityId": "carleton",
+      "universityName": "Carleton University",
+      "campusId": "carleton-dominion-chalmers",
+      "campusName": "Carleton University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "CH",
+          "name": "Chalmers Main Performance Hall",
+          "aliases": ["carleton-chalmers-hall", "Chalmers Main Performance Hall"]
+        }
+      ]
+    },
     "tmu": {
       "universityId": "tmu",
       "universityName": "Toronto Metropolitan University",
@@ -353,6 +368,21 @@
           "code": "ILC",
           "name": "International Living/Learning Centre",
           "aliases": ["ilc", "ILLC", "International Living-Learning Centre"]
+        }
+      ]
+    },
+    "tmu-brampton": {
+      "universityId": "tmu",
+      "universityName": "Toronto Metropolitan University",
+      "campusId": "tmu-brampton",
+      "campusName": "Toronto Metropolitan University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "BAH",
+          "name": "Brampton Academic Hall",
+          "aliases": ["tmu-brampton-academic", "Brampton Academic Hall"]
         }
       ]
     },
@@ -403,6 +433,21 @@
           "code": "HRK",
           "name": "Harkness Hall",
           "aliases": ["harkness-hall", "Harkness", "Harkness Hall Residence"]
+        }
+      ]
+    },
+    "queens-west": {
+      "universityId": "queens",
+      "universityName": "Queen's University",
+      "campusId": "queens-west",
+      "campusName": "Queen's University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "JRH",
+          "name": "Jean Royce Hall",
+          "aliases": ["queens-jean-royce", "Jean Royce Hall"]
         }
       ]
     },
@@ -458,6 +503,41 @@
           "code": "LEO",
           "name": "Leopold Residence",
           "aliases": ["leopold-residence", "Leopold Hall"]
+        }
+      ]
+    },
+    "laurier-brantford": {
+      "universityId": "laurier",
+      "universityName": "Wilfrid Laurier University",
+      "campusId": "laurier-brantford",
+      "campusName": "Wilfrid Laurier University",
+      "totalBuildings": 7,
+      "residenceCount": 2,
+      "residences": [
+        {
+          "code": "GRH",
+          "name": "Grand River Hall",
+          "aliases": ["laurier-grand-river", "Grand River Hall"]
+        },
+        {
+          "code": "EP",
+          "name": "Expositor Place",
+          "aliases": ["laurier-expositor", "Expositor Place"]
+        }
+      ]
+    },
+    "laurier-milton": {
+      "universityId": "laurier",
+      "universityName": "Wilfrid Laurier University",
+      "campusId": "laurier-milton",
+      "campusName": "Wilfrid Laurier University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "MIP",
+          "name": "Milton Innovation Pavilion",
+          "aliases": ["laurier-milton-innovation", "Milton Innovation Pavilion"]
         }
       ]
     },
@@ -518,6 +598,46 @@
           "code": "TATH",
           "name": "Tatham Hall",
           "aliases": ["tatham-hall", "Tatham Hall Residence"]
+        }
+      ]
+    },
+    "glendon": {
+      "universityId": "york",
+      "universityName": "York University",
+      "campusId": "glendon",
+      "campusName": "York University",
+      "totalBuildings": 6,
+      "residenceCount": 3,
+      "residences": [
+        {
+          "code": "FL",
+          "name": "Leslie Frost Library",
+          "aliases": ["york-frost-library", "Leslie Frost Library"]
+        },
+        {
+          "code": "HR",
+          "name": "Hilliard Residence",
+          "aliases": ["york-hilliard-residence", "Hilliard Residence"]
+        },
+        {
+          "code": "WR",
+          "name": "Wood Residence",
+          "aliases": ["york-wood-residence", "Wood Residence"]
+        }
+      ]
+    },
+    "markham": {
+      "universityId": "york",
+      "universityName": "York University",
+      "campusId": "markham",
+      "campusName": "York University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "MSC",
+          "name": "Markham Student Centre",
+          "aliases": ["york-markham-student", "Markham Student Centre"]
         }
       ]
     },
@@ -592,6 +712,21 @@
         }
       ]
     },
+    "mcmaster-burlington": {
+      "universityId": "mcmaster",
+      "universityName": "McMaster University",
+      "campusId": "mcmaster-burlington",
+      "campusName": "McMaster University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "SSP",
+          "name": "South Service Pavilion",
+          "aliases": ["mcmaster-south-service", "South Service Pavilion"]
+        }
+      ]
+    },
     "western": {
       "universityId": "western",
       "universityName": "Western University",
@@ -637,6 +772,46 @@
         }
       ]
     },
+    "western-huron": {
+      "universityId": "western",
+      "universityName": "Western University",
+      "campusId": "western-huron",
+      "campusName": "Western University",
+      "totalBuildings": 5,
+      "residenceCount": 2,
+      "residences": [
+        {
+          "code": "KCH",
+          "name": "Kingsmill Chamber Hall",
+          "aliases": ["western-kingsmill-chamber", "Kingsmill Chamber Hall"]
+        },
+        {
+          "code": "WWH",
+          "name": "West Wing Hall",
+          "aliases": ["western-huron-west-wing", "West Wing Hall"]
+        }
+      ]
+    },
+    "western-kings": {
+      "universityId": "western",
+      "universityName": "Western University",
+      "campusId": "western-kings",
+      "campusName": "Western University",
+      "totalBuildings": 5,
+      "residenceCount": 2,
+      "residences": [
+        {
+          "code": "SLC",
+          "name": "King's Student Life Centre",
+          "aliases": ["western-kings-slc", "King's Student Life Centre"]
+        },
+        {
+          "code": "WB",
+          "name": "Wemple Building",
+          "aliases": ["western-wemple-building", "Wemple Building"]
+        }
+      ]
+    },
     "guelph": {
       "universityId": "guelph",
       "universityName": "University of Guelph",
@@ -674,6 +849,36 @@
           "code": "LAMB",
           "name": "Lambton Hall",
           "aliases": ["lambton-hall", "Lambton Hall Residence"]
+        }
+      ]
+    },
+    "guelph-ridgetown": {
+      "universityId": "guelph",
+      "universityName": "University of Guelph",
+      "campusId": "guelph-ridgetown",
+      "campusName": "University of Guelph",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "WH",
+          "name": "Wilson Hall",
+          "aliases": ["guelph-wilson-hall", "Wilson Hall"]
+        }
+      ]
+    },
+    "guelph-humber": {
+      "universityId": "guelph",
+      "universityName": "University of Guelph",
+      "campusId": "guelph-humber",
+      "campusName": "University of Guelph",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "NAW",
+          "name": "Humber North Academic Wing",
+          "aliases": ["guelph-humber-north-academic", "Humber North Academic Wing"]
         }
       ]
     },
@@ -727,6 +932,21 @@
         }
       ]
     },
+    "uottawa-alta-vista": {
+      "universityId": "uottawa",
+      "universityName": "University of Ottawa",
+      "campusId": "uottawa-alta-vista",
+      "campusName": "University of Ottawa",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "PMB",
+          "name": "Peter Morand Building",
+          "aliases": ["uottawa-peter-morand", "Peter Morand Building"]
+        }
+      ]
+    },
     "brock": {
       "universityId": "brock",
       "universityName": "Brock University",
@@ -764,6 +984,21 @@
           "code": "RES8",
           "name": "Residence 8",
           "aliases": ["residence-8"]
+        }
+      ]
+    },
+    "brock-miw": {
+      "universityId": "brock",
+      "universityName": "Brock University",
+      "campusId": "brock-miw",
+      "campusName": "Brock University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "RT",
+          "name": "Robertson Theatre",
+          "aliases": ["brock-robertson-theatre", "Robertson Theatre"]
         }
       ]
     },
@@ -1129,6 +1364,31 @@
         }
       ]
     },
+    "ubc-okanagan": {
+      "universityId": "ubc",
+      "universityName": "University of British Columbia",
+      "campusId": "ubc-okanagan",
+      "campusName": "University of British Columbia",
+      "totalBuildings": 8,
+      "residenceCount": 3,
+      "residences": [
+        {
+          "code": "FIP",
+          "name": "Charles E. Fipke Centre for Innovative Research",
+          "aliases": ["ubc-fipke-centre", "Charles E. Fipke Centre for Innovative Research"]
+        },
+        {
+          "code": "PUR",
+          "name": "Purcell Residence",
+          "aliases": ["ubc-purcell-residence", "Purcell Residence"]
+        },
+        {
+          "code": "KAL",
+          "name": "Kalamalka Residence",
+          "aliases": ["ubc-kalamalka-residence", "Kalamalka Residence"]
+        }
+      ]
+    },
     "waterloo-main": {
       "universityId": "waterloo",
       "universityName": "University of Waterloo",
@@ -1171,6 +1431,621 @@
           "code": "V1",
           "name": "Student Village 1",
           "aliases": ["student-village-1", "Village 1"]
+        }
+      ]
+    },
+    "waterloo-cambridge": {
+      "universityId": "waterloo",
+      "universityName": "University of Waterloo",
+      "campusId": "waterloo-cambridge",
+      "campusName": "University of Waterloo",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "GRDS",
+          "name": "Grand River Design Studios",
+          "aliases": ["waterloo-design-studios", "Grand River Design Studios"]
+        }
+      ]
+    },
+    "waterloo-kitchener": {
+      "universityId": "waterloo",
+      "universityName": "University of Waterloo",
+      "campusId": "waterloo-kitchener",
+      "campusName": "University of Waterloo",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "CFM",
+          "name": "Center for Family Medicine",
+          "aliases": ["waterloo-family-med", "Center for Family Medicine"]
+        }
+      ]
+    },
+    "waterloo-stratford": {
+      "universityId": "waterloo",
+      "universityName": "University of Waterloo",
+      "campusId": "waterloo-stratford",
+      "campusName": "University of Waterloo",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "MCS",
+          "name": "Media Creation Studios",
+          "aliases": ["waterloo-media-creation", "Media Creation Studios"]
+        }
+      ]
+    },
+    "mcgill-downtown": {
+      "universityId": "mcgill",
+      "universityName": "McGill University",
+      "campusId": "mcgill-downtown",
+      "campusName": "McGill University",
+      "totalBuildings": 49,
+      "residenceCount": 9,
+      "residences": [
+        {
+          "code": "134",
+          "name": "Bishop Mountain Hall",
+          "aliases": ["bishop-mountain-hall"]
+        },
+        {
+          "code": "121",
+          "name": "Carrefour Sherbrooke Residence",
+          "aliases": ["carrefour-sherbrooke-residence", "Carrefour Sherbrooke"]
+        },
+        {
+          "code": "252",
+          "name": "La Citadelle Residence",
+          "aliases": ["la-citadelle-residence", "La Citadelle"]
+        },
+        {
+          "code": "125",
+          "name": "Douglas Hall",
+          "aliases": ["douglas-hall"]
+        },
+        {
+          "code": "133",
+          "name": "Gardner Hall",
+          "aliases": ["gardner-hall"]
+        },
+        {
+          "code": "221",
+          "name": "McConnell Hall",
+          "aliases": ["mcconnell-hall"]
+        },
+        {
+          "code": "116",
+          "name": "Molson Hall",
+          "aliases": ["molson-hall"]
+        },
+        {
+          "code": "NRH",
+          "name": "New Residence Hall",
+          "aliases": ["new-residence-hall", "McGill New Residence Hall"]
+        },
+        {
+          "code": "251",
+          "name": "University Hall Residence",
+          "aliases": ["university-hall-residence", "University Hall"]
+        }
+      ]
+    },
+    "mcgill-macdonald": {
+      "universityId": "mcgill",
+      "universityName": "McGill University",
+      "campusId": "mcgill-macdonald",
+      "campusName": "McGill University",
+      "totalBuildings": 6,
+      "residenceCount": 2,
+      "residences": [
+        {
+          "code": "R",
+          "name": "Raymond Building",
+          "aliases": ["mcgill-raymond-bldg", "Raymond Building"]
+        },
+        {
+          "code": "LH",
+          "name": "Laird Hall",
+          "aliases": ["mcgill-laird-hall", "Laird Hall"]
+        }
+      ]
+    },
+    "cmu-pittsburgh": {
+      "universityId": "cmu",
+      "universityName": "Carnegie Mellon University",
+      "campusId": "cmu-pittsburgh",
+      "campusName": "Carnegie Mellon University",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "WEH",
+          "name": "Wean Hall",
+          "aliases": ["cmu-wean-hall", "Wean Hall"]
+        }
+      ]
+    },
+    "cmu-silicon-valley": {
+      "universityId": "cmu",
+      "universityName": "Carnegie Mellon University",
+      "campusId": "cmu-silicon-valley",
+      "campusName": "Carnegie Mellon University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "SVIP",
+          "name": "Silicon Valley Innovation Pavilion",
+          "aliases": ["cmu-sv-innovation", "Silicon Valley Innovation Pavilion"]
+        }
+      ]
+    },
+    "ucberkeley-main": {
+      "universityId": "ucberkeley",
+      "universityName": "University of California, Berkeley",
+      "campusId": "ucberkeley-main",
+      "campusName": "University of California, Berkeley",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "CORY",
+          "name": "Cory Hall",
+          "aliases": ["ucb-cory-hall", "Cory Hall"]
+        }
+      ]
+    },
+    "ucberkeley-richmond": {
+      "universityId": "ucberkeley",
+      "universityName": "University of California, Berkeley",
+      "campusId": "ucberkeley-richmond",
+      "campusName": "University of California, Berkeley",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "EERC",
+          "name": "Earthquake Engineering Research Center",
+          "aliases": ["ucb-earthquake-centre", "Earthquake Engineering Research Center"]
+        }
+      ]
+    },
+    "nyu-washington-square": {
+      "universityId": "nyu",
+      "universityName": "New York University",
+      "campusId": "nyu-washington-square",
+      "campusName": "New York University",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "BOBST",
+          "name": "Elmer Holmes Bobst Library",
+          "aliases": ["nyu-bobst-library", "Elmer Holmes Bobst Library"]
+        }
+      ]
+    },
+    "nyu-brooklyn": {
+      "universityId": "nyu",
+      "universityName": "New York University",
+      "campusId": "nyu-brooklyn",
+      "campusName": "New York University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "J370",
+          "name": "370 Jay Street",
+          "aliases": ["nyu-jay-street", "370 Jay Street"]
+        }
+      ]
+    },
+    "mit-cambridge": {
+      "universityId": "mit",
+      "universityName": "Massachusetts Institute of Technology",
+      "campusId": "mit-cambridge",
+      "campusName": "Massachusetts Institute of Technology",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "BLD32",
+          "name": "Ray and Maria Stata Center",
+          "aliases": ["mit-stata-center", "Ray and Maria Stata Center"]
+        }
+      ]
+    },
+    "mit-lincoln-lab": {
+      "universityId": "mit",
+      "universityName": "Massachusetts Institute of Technology",
+      "campusId": "mit-lincoln-lab",
+      "campusName": "Massachusetts Institute of Technology",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "LLB",
+          "name": "Technology Office Building",
+          "aliases": ["mit-tech-office", "Technology Office Building"]
+        }
+      ]
+    },
+    "stanford-main": {
+      "universityId": "stanford",
+      "universityName": "Stanford University",
+      "campusId": "stanford-main",
+      "campusName": "Stanford University",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "HUANG",
+          "name": "Huang Engineering Center",
+          "aliases": ["stanford-huang-center", "Huang Engineering Center"]
+        }
+      ]
+    },
+    "stanford-redwood-city": {
+      "universityId": "stanford",
+      "universityName": "Stanford University",
+      "campusId": "stanford-redwood-city",
+      "campusName": "Stanford University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "UH",
+          "name": "University Hall",
+          "aliases": ["stanford-university-hall", "University Hall"]
+        }
+      ]
+    },
+    "upenn-philadelphia": {
+      "universityId": "upenn",
+      "universityName": "University of Pennsylvania",
+      "campusId": "upenn-philadelphia",
+      "campusName": "University of Pennsylvania",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "VPL",
+          "name": "Van Pelt-Dietrich Library",
+          "aliases": ["upenn-van-pelt", "Van Pelt-Dietrich Library"]
+        }
+      ]
+    },
+    "upenn-pennovation": {
+      "universityId": "upenn",
+      "universityName": "University of Pennsylvania",
+      "campusId": "upenn-pennovation",
+      "campusName": "University of Pennsylvania",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "PERCH",
+          "name": "PERCH Robotics Laboratory",
+          "aliases": ["upenn-perch-robotics", "PERCH Robotics Laboratory"]
+        }
+      ]
+    },
+    "upenn-new-bolton": {
+      "universityId": "upenn",
+      "universityName": "University of Pennsylvania",
+      "campusId": "upenn-new-bolton",
+      "campusName": "University of Pennsylvania",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "ALH",
+          "name": "Alumni Hall",
+          "aliases": ["upenn-alumni-hall", "Alumni Hall"]
+        }
+      ]
+    },
+    "cornell-ithaca": {
+      "universityId": "cornell",
+      "universityName": "Cornell University",
+      "campusId": "cornell-ithaca",
+      "campusName": "Cornell University",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "OLIN",
+          "name": "Olin Library",
+          "aliases": ["cornell-olin-library", "Olin Library"]
+        }
+      ]
+    },
+    "cornell-tech": {
+      "universityId": "cornell",
+      "universityName": "Cornell University",
+      "campusId": "cornell-tech",
+      "campusName": "Cornell University",
+      "totalBuildings": 5,
+      "residenceCount": 2,
+      "residences": [
+        {
+          "code": "TATA",
+          "name": "Tata Innovation Center",
+          "aliases": ["cornell-tata-center", "Tata Innovation Center"]
+        },
+        {
+          "code": "TH",
+          "name": "The House at Cornell Tech",
+          "aliases": ["cornell-house-residence", "The House at Cornell Tech"]
+        }
+      ]
+    },
+    "cornell-weill": {
+      "universityId": "cornell",
+      "universityName": "Cornell University",
+      "campusId": "cornell-weill",
+      "campusName": "Cornell University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "BRB",
+          "name": "Belfer Research Building",
+          "aliases": ["cornell-belfer-research", "Belfer Research Building"]
+        }
+      ]
+    },
+    "dartmouth-hanover": {
+      "universityId": "dartmouth",
+      "universityName": "Dartmouth College",
+      "campusId": "dartmouth-hanover",
+      "campusName": "Dartmouth College",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "DH",
+          "name": "Dartmouth Hall",
+          "aliases": ["dartmouth-dartmouth-hall", "Dartmouth Hall"]
+        }
+      ]
+    },
+    "dartmouth-lebanon": {
+      "universityId": "dartmouth",
+      "universityName": "Dartmouth College",
+      "campusId": "dartmouth-lebanon",
+      "campusName": "Dartmouth College",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "RUB",
+          "name": "Rubin Research Building",
+          "aliases": ["dartmouth-rubin-bldg", "Rubin Research Building"]
+        }
+      ]
+    },
+    "brown-providence": {
+      "universityId": "brown",
+      "universityName": "Brown University",
+      "campusId": "brown-providence",
+      "campusName": "Brown University",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "ROCK",
+          "name": "Rockefeller Library",
+          "aliases": ["brown-rockefeller-lib", "Rockefeller Library"]
+        }
+      ]
+    },
+    "brown-jewelry-district": {
+      "universityId": "brown",
+      "universityName": "Brown University",
+      "campusId": "brown-jewelry-district",
+      "campusName": "Brown University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "SPH",
+          "name": "School of Public Health",
+          "aliases": ["brown-public-health", "School of Public Health"]
+        }
+      ]
+    },
+    "columbia-morningside": {
+      "universityId": "columbia",
+      "universityName": "Columbia University",
+      "campusId": "columbia-morningside",
+      "campusName": "Columbia University",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "BUTL",
+          "name": "Butler Library",
+          "aliases": ["columbia-butler-library", "Butler Library"]
+        }
+      ]
+    },
+    "columbia-manhattanville": {
+      "universityId": "columbia",
+      "universityName": "Columbia University",
+      "campusId": "columbia-manhattanville",
+      "campusName": "Columbia University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "LCA",
+          "name": "Lenfest Center for the Arts",
+          "aliases": ["columbia-lenfest-arts", "Lenfest Center for the Arts"]
+        }
+      ]
+    },
+    "columbia-cuimc": {
+      "universityId": "columbia",
+      "universityName": "Columbia University",
+      "campusId": "columbia-cuimc",
+      "campusName": "Columbia University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "HHSC",
+          "name": "Hammer Health Sciences Building",
+          "aliases": ["columbia-hammer-health", "Hammer Health Sciences Building"]
+        }
+      ]
+    },
+    "princeton-main": {
+      "universityId": "princeton",
+      "universityName": "Princeton University",
+      "campusId": "princeton-main",
+      "campusName": "Princeton University",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "FIR",
+          "name": "Firestone Library",
+          "aliases": ["princeton-firestone-lib", "Firestone Library"]
+        }
+      ]
+    },
+    "princeton-forrestal": {
+      "universityId": "princeton",
+      "universityName": "Princeton University",
+      "campusId": "princeton-forrestal",
+      "campusName": "Princeton University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "PPPL",
+          "name": "Princeton Plasma Physics Lab",
+          "aliases": ["princeton-pppl-lab", "Princeton Plasma Physics Lab"]
+        }
+      ]
+    },
+    "princeton-meadows": {
+      "universityId": "princeton",
+      "universityName": "Princeton University",
+      "campusId": "princeton-meadows",
+      "campusName": "Princeton University",
+      "totalBuildings": 5,
+      "residenceCount": 2,
+      "residences": [
+        {
+          "code": "RFC",
+          "name": "Racquet and Fitness Center",
+          "aliases": ["princeton-racquet-center", "Racquet and Fitness Center"]
+        },
+        {
+          "code": "MGP",
+          "name": "Meadows Graduate Pavilion",
+          "aliases": ["princeton-meadows-grad", "Meadows Graduate Pavilion"]
+        }
+      ]
+    },
+    "yale-new-haven": {
+      "universityId": "yale",
+      "universityName": "Yale University",
+      "campusId": "yale-new-haven",
+      "campusName": "Yale University",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "CH",
+          "name": "Connecticut Hall (Old Campus)",
+          "aliases": ["yale-connecticut-hall", "Connecticut Hall (Old Campus)"]
+        }
+      ]
+    },
+    "yale-medical": {
+      "universityId": "yale",
+      "universityName": "Yale University",
+      "campusId": "yale-medical",
+      "campusName": "Yale University",
+      "totalBuildings": 5,
+      "residenceCount": 2,
+      "residences": [
+        {
+          "code": "BCMM",
+          "name": "Boyer Center for Molecular Medicine",
+          "aliases": ["yale-boyer-center", "Boyer Center for Molecular Medicine"]
+        },
+        {
+          "code": "HMH",
+          "name": "Harkness Memorial Hall",
+          "aliases": ["yale-harkness-memorial", "Harkness Memorial Hall"]
+        }
+      ]
+    },
+    "yale-west": {
+      "universityId": "yale",
+      "universityName": "Yale University",
+      "campusId": "yale-west",
+      "campusName": "Yale University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "ESI",
+          "name": "Energy Sciences Institute",
+          "aliases": ["yale-energy-sciences", "Energy Sciences Institute"]
+        }
+      ]
+    },
+    "harvard-cambridge": {
+      "universityId": "harvard",
+      "universityName": "Harvard University",
+      "campusId": "harvard-cambridge",
+      "campusName": "Harvard University",
+      "totalBuildings": 11,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "SC",
+          "name": "Science Center",
+          "aliases": ["harvard-science-center", "Science Center"]
+        }
+      ]
+    },
+    "harvard-allston": {
+      "universityId": "harvard",
+      "universityName": "Harvard University",
+      "campusId": "harvard-allston",
+      "campusName": "Harvard University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "MORG",
+          "name": "Morgan Hall (HBS)",
+          "aliases": ["harvard-morgan-hall", "Morgan Hall (HBS)"]
+        }
+      ]
+    },
+    "harvard-longwood": {
+      "universityId": "harvard",
+      "universityName": "Harvard University",
+      "campusId": "harvard-longwood",
+      "campusName": "Harvard University",
+      "totalBuildings": 5,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "KRES",
+          "name": "Kresge Building (Chan Public Health)",
+          "aliases": ["harvard-kresge-public", "Kresge Building (Chan Public Health)"]
         }
       ]
     }

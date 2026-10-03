@@ -1,0 +1,20 @@
+{
+  "name": "Gapwise — Harvard University",
+  "short_name": "Gapwise · Harvard",
+  "icons": [
+    {
+      "src": "/universities/harvard/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/universities/harvard/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#A51C30",
+  "background_color": "#0d1117",
+  "display": "standalone",
+  "start_url": "/"
+}

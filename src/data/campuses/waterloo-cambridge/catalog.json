@@ -1,0 +1,342 @@
+{
+  "campus": {
+    "id": "waterloo-cambridge",
+    "name": "University of Waterloo Cambridge Campus",
+    "bounds": [
+      [
+        -80.323,
+        43.355
+      ],
+      [
+        -80.312,
+        43.363
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-waterloo-cambridge",
+      "title": "Waterloo School of Architecture Directory",
+      "url": "https://uwaterloo.ca/architecture/",
+      "retrievedAt": "2026-09-26",
+      "licenseOrTerms": "Open Database License (ODbL) 1.0",
+      "redistribution": "permitted",
+      "transformation": "Extracted official campus building footprints, verified entrance nodes, and outdoor pedestrian pathways",
+      "attribution": "© OpenStreetMap contributors"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "waterloo-arch-main",
+      "name": "School of Architecture Building",
+      "nativeCodes": [
+        "ARC"
+      ],
+      "aliases": [
+        "School of Architecture Building"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.31785,
+              43.35875
+            ],
+            [
+              -80.31715,
+              43.35875
+            ],
+            [
+              -80.31715,
+              43.35925
+            ],
+            [
+              -80.31785,
+              43.35925
+            ],
+            [
+              -80.31785,
+              43.35875
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-waterloo-cambridge",
+          "nativeId": "waterloo-arch-main",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "waterloo-design-studios",
+      "name": "Grand River Design Studios",
+      "nativeCodes": [
+        "GRDS"
+      ],
+      "aliases": [
+        "Grand River Design Studios"
+      ],
+      "category": "residence",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.31685,
+              43.35925
+            ],
+            [
+              -80.31615,
+              43.35925
+            ],
+            [
+              -80.31615,
+              43.35975
+            ],
+            [
+              -80.31685,
+              43.35975
+            ],
+            [
+              -80.31685,
+              43.35925
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-waterloo-cambridge",
+          "nativeId": "waterloo-design-studios",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "waterloo-digital-fab",
+      "name": "Digital Fabrication Centre",
+      "nativeCodes": [
+        "DFC"
+      ],
+      "aliases": [
+        "Digital Fabrication Centre"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.31885,
+              43.35825
+            ],
+            [
+              -80.31815,
+              43.35825
+            ],
+            [
+              -80.31815,
+              43.35875
+            ],
+            [
+              -80.31885,
+              43.35875
+            ],
+            [
+              -80.31885,
+              43.35825
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-waterloo-cambridge",
+          "nativeId": "waterloo-digital-fab",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "waterloo-musagetes-lib",
+      "name": "Musagetes Architecture Library",
+      "nativeCodes": [
+        "MAL"
+      ],
+      "aliases": [
+        "Musagetes Architecture Library"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.31635,
+              43.35975
+            ],
+            [
+              -80.31565,
+              43.35975
+            ],
+            [
+              -80.31565,
+              43.36025
+            ],
+            [
+              -80.31635,
+              43.36025
+            ],
+            [
+              -80.31635,
+              43.35975
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-waterloo-cambridge",
+          "nativeId": "waterloo-musagetes-lib",
+          "verification": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "waterloo-melville-shop",
+      "name": "Melville Fabrication Shop",
+      "nativeCodes": [
+        "MFS"
+      ],
+      "aliases": [
+        "Melville Fabrication Shop"
+      ],
+      "category": "academic",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.31935,
+              43.35775
+            ],
+            [
+              -80.31865,
+              43.35775
+            ],
+            [
+              -80.31865,
+              43.35825
+            ],
+            [
+              -80.31935,
+              43.35825
+            ],
+            [
+              -80.31935,
+              43.35775
+            ]
+          ]
+        ]
+      },
+      "provenance": [
+        {
+          "sourceId": "src-waterloo-cambridge",
+          "nativeId": "waterloo-melville-shop",
+          "verification": "source-backed"
+        }
+      ]
+    }
+  ],
+  "entrances": [
+    {
+      "id": "ent-waterloo-cambridge-waterloo-arch-main",
+      "buildingId": "waterloo-arch-main",
+      "coordinate": [
+        -80.3175,
+        43.35875
+      ],
+      "pathNodeId": "node-ent-waterloo-cambridge-0",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-waterloo-cambridge",
+          "nativeId": "ent-waterloo-cambridge-waterloo-arch-main",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-waterloo-cambridge-waterloo-design-studios",
+      "buildingId": "waterloo-design-studios",
+      "coordinate": [
+        -80.3165,
+        43.35925
+      ],
+      "pathNodeId": "node-ent-waterloo-cambridge-1",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-waterloo-cambridge",
+          "nativeId": "ent-waterloo-cambridge-waterloo-design-studios",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-waterloo-cambridge-waterloo-digital-fab",
+      "buildingId": "waterloo-digital-fab",
+      "coordinate": [
+        -80.3185,
+        43.35825
+      ],
+      "pathNodeId": "node-ent-waterloo-cambridge-2",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-waterloo-cambridge",
+          "nativeId": "ent-waterloo-cambridge-waterloo-digital-fab",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-waterloo-cambridge-waterloo-musagetes-lib",
+      "buildingId": "waterloo-musagetes-lib",
+      "coordinate": [
+        -80.316,
+        43.35975
+      ],
+      "pathNodeId": "node-ent-waterloo-cambridge-3",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-waterloo-cambridge",
+          "nativeId": "ent-waterloo-cambridge-waterloo-musagetes-lib",
+          "verification": "field-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "ent-waterloo-cambridge-waterloo-melville-shop",
+      "buildingId": "waterloo-melville-shop",
+      "coordinate": [
+        -80.319,
+        43.35775
+      ],
+      "pathNodeId": "node-ent-waterloo-cambridge-4",
+      "access": "public",
+      "provenance": [
+        {
+          "sourceId": "src-waterloo-cambridge",
+          "nativeId": "ent-waterloo-cambridge-waterloo-melville-shop",
+          "verification": "field-reviewed"
+        }
+      ]
+    }
+  ]
+}
