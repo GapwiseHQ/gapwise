@@ -324,7 +324,7 @@ test("directory searches Canada and the U.S. without horizontal overflow", async
     "href",
     "https://gapwise.ca/universities",
   );
-  const search = page.getByPlaceholder(/Search by university/);
+  const search = page.getByPlaceholder("Search university, campus, or city");
   await search.fill("Pittsburgh");
   await expect(page.getByRole("link", { name: /Carnegie Mellon University/ })).toBeVisible();
   await search.fill("ubco.gapwise.ca");
