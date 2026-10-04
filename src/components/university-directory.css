@@ -180,13 +180,43 @@
   justify-content: space-between;
   gap: 1rem;
 }
-.university-directory-card-top > span {
+.university-directory-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+.university-directory-short {
   color: color-mix(in oklab, var(--directory-accent) 42%, var(--color-foreground));
   font-family: var(--font-mono);
   font-size: 0.57rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+}
+.university-directory-kind {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.12rem 0.42rem;
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+  background: color-mix(in oklab, var(--color-muted) 35%, transparent);
+}
+.university-directory-kind.is-campus {
+  color: color-mix(in oklab, var(--directory-accent) 55%, var(--color-foreground));
+  border-color: color-mix(in oklab, var(--directory-accent) 28%, var(--color-border));
+  background: color-mix(in oklab, var(--directory-accent) 6%, transparent);
+}
+.university-directory-kind svg {
+  width: 0.65rem;
+  height: 0.65rem;
 }
 .university-directory-card-top em {
   border: 1px solid var(--color-border);

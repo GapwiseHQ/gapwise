@@ -60,15 +60,19 @@
 }
 
 .university-home-visual {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-self: center;
-  padding-bottom: 1.5rem;
+  width: 100%;
 }
 
 .university-campus-photo {
   position: relative;
-  min-height: clamp(19rem, 36vw, 27rem);
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  min-height: clamp(21rem, 40vw, 32rem);
   overflow: hidden;
+  border-radius: 0.75rem;
   border: 1px solid color-mix(in oklab, var(--university-home-accent) 24%, var(--color-border));
   background: var(--color-muted);
   box-shadow: 0 2.8rem 6rem -4rem rgb(0 0 0 / 0.86);
@@ -91,9 +95,8 @@
 .university-campus-photo img {
   width: 100%;
   height: 100%;
-  min-height: inherit;
   object-fit: cover;
-  filter: saturate(0.82) contrast(1.04) brightness(0.84);
+  filter: saturate(0.85) contrast(1.04) brightness(0.88);
 }
 
 .university-campus-photo figcaption {
@@ -134,23 +137,6 @@
 .university-campus-photo figcaption svg {
   width: 0.65rem;
   height: 0.65rem;
-}
-
-.university-home-visual-panel {
-  position: relative;
-  z-index: 2;
-  width: calc(100% - clamp(1rem, 4vw, 3.5rem));
-  margin: clamp(-5.5rem, -7vw, -3.75rem) auto 0;
-}
-
-.university-home-visual-panel .university-product-body {
-  min-height: 19rem;
-}
-
-.university-home-visual-panel .university-planned-window {
-  min-height: 19rem;
-  box-shadow: 0 2.8rem 6rem -4rem rgb(0 0 0 / 0.82);
-  backdrop-filter: blur(18px);
 }
 
 .university-home-kicker {
@@ -195,95 +181,7 @@
   color: color-mix(in oklab, #15956f 72%, var(--color-foreground));
 }
 
-.university-planned-window {
-  min-height: 24rem;
-  border: 1px solid var(--university-home-line);
-  background:
-    linear-gradient(
-      135deg,
-      color-mix(in oklab, var(--university-home-accent) 7%, transparent),
-      transparent 62%
-    ),
-    color-mix(in oklab, var(--color-muted) 18%, transparent);
-  padding: clamp(1.35rem, 3vw, 2rem);
-}
 
-.university-planned-window-top,
-.university-planned-location {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.university-planned-window-top {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--university-home-line);
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.university-planned-window-top strong {
-  color: color-mix(in oklab, var(--university-home-accent) 42%, var(--color-foreground));
-}
-
-.university-planned-location {
-  justify-content: flex-start;
-  margin-top: 2.2rem;
-}
-
-.university-planned-location > svg {
-  width: 2rem;
-  height: 2rem;
-  color: var(--university-home-accent);
-}
-
-.university-planned-location div {
-  display: grid;
-  gap: 0.3rem;
-}
-
-.university-planned-location span,
-.university-planned-location small {
-  color: var(--color-muted-foreground);
-  font-size: 0.65rem;
-}
-
-.university-planned-location strong {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-}
-
-.university-planned-lines {
-  display: grid;
-  gap: 0.55rem;
-  margin-top: 2.4rem;
-}
-
-.university-planned-lines i {
-  display: block;
-  height: 0.55rem;
-  background: color-mix(in oklab, var(--university-home-accent) 13%, var(--color-muted));
-}
-
-.university-planned-lines i:nth-child(1) {
-  width: 82%;
-}
-.university-planned-lines i:nth-child(2) {
-  width: 61%;
-}
-.university-planned-lines i:nth-child(3) {
-  width: 72%;
-}
-
-.university-planned-window > p {
-  margin-top: 2rem;
-  color: var(--color-muted-foreground);
-  font-size: 0.74rem;
-  line-height: 1.65;
-}
 
 .university-home-planned-copy {
   max-width: none;
@@ -495,205 +393,11 @@
   height: 0.82rem;
 }
 
-.university-product-window,
 .university-campus-chooser {
   overflow: hidden;
   border: 1px solid color-mix(in oklab, var(--university-home-accent) 20%, var(--color-border));
   background: color-mix(in oklab, var(--color-background) 92%, var(--university-home-accent));
   box-shadow: 0 2.8rem 6rem -4rem rgb(0 0 0 / 0.72);
-}
-
-.university-product-bar {
-  display: grid;
-  min-height: 2.65rem;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 0.8rem;
-  border-bottom: 1px solid var(--university-home-line);
-  padding: 0 0.85rem;
-  color: var(--color-muted-foreground);
-  font-family: var(--font-mono);
-  font-size: 0.55rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.university-product-dots {
-  display: flex;
-  gap: 0.3rem;
-}
-.university-product-dots i {
-  width: 0.4rem;
-  height: 0.4rem;
-  border-radius: 50%;
-  background: var(--color-muted);
-}
-.university-product-status {
-  justify-self: end;
-  color: color-mix(in oklab, var(--university-home-accent) 65%, var(--color-foreground));
-}
-.university-product-body {
-  display: grid;
-  min-height: 25rem;
-  grid-template-columns: minmax(0, 1fr) 12.5rem;
-}
-.university-product-schedule {
-  min-width: 0;
-  padding: 1.25rem;
-}
-.university-product-heading {
-  display: grid;
-  gap: 0.25rem;
-  margin-bottom: 1rem;
-}
-.university-product-heading span,
-.university-route-heading {
-  color: var(--color-muted-foreground);
-  font-family: var(--font-mono);
-  font-size: 0.56rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.university-product-heading strong {
-  font-size: 0.87rem;
-  font-weight: 650;
-}
-.university-product-schedule article {
-  display: grid;
-  grid-template-columns: 3rem minmax(0, 1fr);
-  gap: 0.65rem;
-  align-items: center;
-  min-height: 5.4rem;
-  border: 1px solid var(--university-home-line);
-  padding: 0.75rem;
-}
-.university-product-schedule time {
-  color: var(--color-muted-foreground);
-  font-family: var(--font-mono);
-  font-size: 0.57rem;
-}
-.university-product-schedule article div {
-  min-width: 0;
-}
-.university-product-schedule article strong,
-.university-product-schedule article span {
-  display: block;
-}
-.university-product-schedule article strong {
-  font-size: 0.76rem;
-  font-weight: 680;
-}
-.university-product-schedule article span {
-  overflow: hidden;
-  margin-top: 0.25rem;
-  color: var(--color-muted-foreground);
-  font-size: 0.61rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.university-product-gap {
-  display: flex;
-  min-height: 3.35rem;
-  align-items: center;
-  gap: 0.55rem;
-  margin: 0.55rem 0;
-  border-left: 2px solid var(--university-home-accent);
-  background: color-mix(in oklab, var(--university-home-accent) 7%, transparent);
-  padding: 0.6rem 0.75rem;
-  color: var(--color-muted-foreground);
-  font-size: 0.62rem;
-}
-.university-product-gap svg {
-  width: 0.85rem;
-  height: 0.85rem;
-  flex: none;
-  color: var(--university-home-accent);
-}
-.university-product-route {
-  border-left: 1px solid var(--university-home-line);
-  background: color-mix(in oklab, var(--color-muted) 18%, transparent);
-  padding: 1.05rem;
-}
-.university-route-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.university-route-heading svg {
-  width: 0.85rem;
-  color: var(--university-home-accent);
-}
-.university-route-map {
-  position: relative;
-  height: 13rem;
-  margin-top: 0.9rem;
-  overflow: hidden;
-  border: 1px solid var(--university-home-line);
-  background-image:
-    linear-gradient(var(--university-home-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--university-home-line) 1px, transparent 1px);
-  background-size: 1.5rem 1.5rem;
-}
-.university-route-building {
-  position: absolute;
-  display: grid;
-  place-items: center;
-  width: 4.5rem;
-  height: 2.6rem;
-  border: 1px solid var(--university-home-line);
-  background: var(--color-muted);
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  font-weight: 650;
-}
-.university-route-building.is-origin {
-  top: 1.3rem;
-  left: 0.7rem;
-  transform: rotate(-5deg);
-}
-.university-route-building.is-destination {
-  right: 0.7rem;
-  bottom: 1.25rem;
-  transform: rotate(5deg);
-}
-.university-route-path {
-  position: absolute;
-  top: 4.5rem;
-  left: 3.4rem;
-  width: 5.7rem;
-  height: 4rem;
-  border-right: 2px solid var(--university-home-accent);
-  border-bottom: 2px solid var(--university-home-accent);
-  border-radius: 0 0 2.2rem;
-  transform: rotate(14deg);
-}
-.university-route-dot {
-  position: absolute;
-  width: 0.52rem;
-  height: 0.52rem;
-  border: 2px solid var(--color-background);
-  border-radius: 50%;
-  background: var(--university-home-accent);
-}
-.university-route-dot.is-origin {
-  top: 3.7rem;
-  left: 3.3rem;
-}
-.university-route-dot.is-destination {
-  right: 3.15rem;
-  bottom: 3.7rem;
-}
-.university-product-route > p {
-  display: grid;
-  gap: 0.18rem;
-  margin-top: 0.85rem;
-}
-.university-product-route > p strong {
-  font-size: 0.72rem;
-}
-.university-product-route > p span {
-  color: var(--color-muted-foreground);
-  font-size: 0.6rem;
 }
 
 .university-home-stats {
@@ -1000,16 +704,13 @@
     font-size: clamp(2.65rem, 14vw, 4rem);
   }
   .university-campus-photo {
-    min-height: 20rem;
+    min-height: 18rem;
+    aspect-ratio: 16 / 10;
   }
   .university-campus-photo figcaption {
     align-items: flex-start;
     flex-direction: column;
     gap: 0.35rem;
-  }
-  .university-home-visual-panel {
-    width: calc(100% - 1rem);
-    margin-top: -3.5rem;
   }
   .university-home-actions {
     display: grid;
@@ -1017,21 +718,6 @@
   .university-home-primary,
   .university-home-secondary {
     width: 100%;
-  }
-  .university-product-bar {
-    grid-template-columns: 1fr auto;
-  }
-  .university-product-status {
-    display: none;
-  }
-  .university-product-body {
-    grid-template-columns: 1fr;
-  }
-  .university-product-route {
-    display: none;
-  }
-  .university-product-schedule {
-    padding: 0.9rem;
   }
   .university-home-stats {
     grid-template-columns: 1fr;

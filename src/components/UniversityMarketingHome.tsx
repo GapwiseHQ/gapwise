@@ -88,143 +88,6 @@ function CoverageStats({
   );
 }
 
-function ProductPreview({
-  example,
-  shortName,
-}: {
-  example: UniversityMarketing["example"];
-  shortName: string;
-}) {
-  if (!example) return null;
-  return (
-    <div className="university-product-window" aria-label={`Example Gapwise day at ${shortName}`}>
-      <div className="university-product-bar">
-        <span className="university-product-dots" aria-hidden="true">
-          <i />
-          <i />
-          <i />
-        </span>
-        <span>
-          {example.day} · {shortName} example
-        </span>
-        <span className="university-product-status">Schedule ready</span>
-      </div>
-      <div className="university-product-body">
-        <div className="university-product-schedule">
-          <div className="university-product-heading">
-            <span>Your day</span>
-            <strong>Classes and the gap between them</strong>
-          </div>
-          <article>
-            <time>09:00</time>
-            <div>
-              <strong>{example.courseCode}</strong>
-              <span>
-                {example.buildingName} · {example.buildingCode} {example.room}
-              </span>
-            </div>
-          </article>
-          <div className="university-product-gap">
-            <Clock3 aria-hidden="true" />
-            <span>Gapwise checks the open time after walking</span>
-          </div>
-          <article>
-            <time>12:00</time>
-            <div>
-              <strong>{example.nextCourseCode}</strong>
-              <span>
-                {example.nextBuildingName} · {example.nextBuildingCode} {example.nextRoom}
-              </span>
-            </div>
-          </article>
-        </div>
-        <aside className="university-product-route">
-          <div className="university-route-heading">
-            <span>Campus route</span>
-            <Navigation aria-hidden="true" />
-          </div>
-          <div className="university-route-map" aria-hidden="true">
-            <span className="university-route-building is-origin">{example.buildingCode}</span>
-            <span className="university-route-path" />
-            <span className="university-route-building is-destination">
-              {example.nextBuildingCode}
-            </span>
-            <i className="university-route-dot is-origin" />
-            <i className="university-route-dot is-destination" />
-          </div>
-          <p>
-            <strong>
-              {example.buildingCode} → {example.nextBuildingCode}
-            </strong>
-            <span>Campus pedestrian routing</span>
-          </p>
-        </aside>
-      </div>
-    </div>
-  );
-}
-
-function PlannedPreview({ campus, university }: { campus: Campus | null; university: University }) {
-  const location = campus ? `${campus.city}, ${campus.region}` : university.country;
-  return (
-    <div
-      className="university-planned-window"
-      aria-label={`${university.shortName} Gapwise edition status`}
-    >
-      <div className="university-planned-window-top">
-        <span>Gapwise edition</span>
-        <strong>Planned</strong>
-      </div>
-      <div className="university-planned-location">
-        <MapPinned aria-hidden="true" />
-        <div>
-          <span>Campus context</span>
-          <strong>{campus?.campusName ?? university.campusScope}</strong>
-          <small>{location}</small>
-        </div>
-      </div>
-      <div className="university-planned-lines" aria-hidden="true">
-        <i />
-        <i />
-        <i />
-      </div>
-      <p>
-        Campus capabilities activate only after the underlying timetable and map data are verified.
-      </p>
-    </div>
-  );
-}
-
-function TimetablePreview({ university }: { university: University }) {
-  return (
-    <div
-      className="university-planned-window"
-      aria-label={`${university.shortName} import support`}
-    >
-      <div className="university-planned-window-top">
-        <span>Gapwise timetable</span>
-        <strong>Import ready</strong>
-      </div>
-      <div className="university-planned-location">
-        <CalendarDays aria-hidden="true" />
-        <div>
-          <span>Supported source</span>
-          <strong>{university.calendarSource}</strong>
-          <small>{university.fileTypeLabel ?? ".ics calendar"}</small>
-        </div>
-      </div>
-      <div className="university-planned-lines" aria-hidden="true">
-        <i />
-        <i />
-        <i />
-      </div>
-      <p>
-        Your schedule is parsed privately in this browser. Campus maps and routing stay separate.
-      </p>
-    </div>
-  );
-}
-
 function statusLabel(status: CapabilityStatus) {
   return status === "supported" ? "Available" : status === "partial" ? "Partial" : "Planned";
 }
@@ -329,10 +192,6 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
   const accent = site.presentation?.accentColor ?? university.accentColor;
   const isHub = site.role === "university-hub";
   const isPlanned = !isHub && (campus?.status === "planned" || university.status === "planned");
-  const timetableOnly =
-    !isHub &&
-    campus?.capabilities.timetableImport === "supported" &&
-    campus.capabilities.buildingData === "planned";
   const hasBuildingData = campus?.capabilities.buildingData !== "planned";
   const heroEyebrow = site.presentation?.heroEyebrow ?? `Gapwise for ${displayName}`;
   const heroDescription = site.presentation?.heroDescription ?? marketing.description;
@@ -423,17 +282,6 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
         </div>
         <div className="university-home-visual">
           <CampusPhotography visual={visual} label={campus?.campusName ?? university.campusScope} />
-          <div className="university-home-visual-panel">
-            {isHub ? (
-              <CampusChooser university={university} />
-            ) : isPlanned ? (
-              <PlannedPreview campus={campus} university={university} />
-            ) : timetableOnly ? (
-              <TimetablePreview university={university} />
-            ) : marketing.example ? (
-              <ProductPreview example={marketing.example} shortName={shortName} />
-            ) : null}
-          </div>
         </div>
         {marketing.stats && !isPlanned ? <CoverageStats {...marketing.stats} /> : null}
       </section>

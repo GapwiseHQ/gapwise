@@ -33,6 +33,7 @@ import {
   validateUniversityManifest,
 } from "@/universities/registry";
 import { validateCampusVisuals, visualForSite } from "@/universities/campus-visuals";
+import { searchUniversityDestinations } from "@/universities/search";
 
 const carletonIcs = [
   "BEGIN:VCALENDAR",
@@ -261,6 +262,68 @@ describe("university registry", () => {
     expect(entries.some((entry) => entry.id === "harvard" && entry.status === "supported")).toBe(
       true,
     );
+  });
+
+  test("ranked university search prioritizes exact matches, excludes unrelated institutions, and deduplicates destinations", () => {
+    // 1. Searching "harvard" returns Harvard University first and excludes unrelated institutions like Carleton, Waterloo, York
+    const harvardResults = searchUniversityDestinations("harvard");
+    expect(harvardResults.length).toBeGreaterThan(0);
+    expect(harvardResults[0]!.id).toBe("harvard");
+    expect(harvardResults[0]!.kind).toBe("university");
+    expect(harvardResults[0]!.name).toBe("Harvard University");
+    expect(harvardResults[0]!.href).toBe("https://harvard.gapwise.ca");
+    // Ensure no unrelated universities are returned
+    expect(harvardResults.every((r) => r.university.id === "harvard")).toBe(true);
+
+    // 2. Deduplication: no duplicate hrefs returned
+    const hrefs = harvardResults.map((r) => r.href);
+    expect(new Set(hrefs).size).toBe(hrefs.length);
+
+    // 3. Prefix matching: "harv" returns Harvard
+    const harvResults = searchUniversityDestinations("harv");
+    expect(harvResults[0]!.id).toBe("harvard");
+
+    // 4. Exact shortName / alias matching: "waterloo" ranks University of Waterloo #1
+    const waterlooResults = searchUniversityDestinations("waterloo");
+    expect(waterlooResults[0]!.id).toBe("waterloo");
+    expect(waterlooResults[0]!.university.id).toBe("waterloo");
+
+    // 5. Short code matching: "cmu" returns Carnegie Mellon
+    const cmuResults = searchUniversityDestinations("cmu");
+    expect(cmuResults[0]!.id).toBe("cmu");
+    expect(cmuResults[0]!.shortName).toBe("CMU");
+
+    // 6. Alias matching: "Ryerson" matches TMU
+    const ryersonResults = searchUniversityDestinations("Ryerson");
+    expect(ryersonResults[0]!.university.id).toBe("tmu");
+
+    // 7. Typo / bounded fuzzy matching: "harvad" matches Harvard without noise
+    const fuzzyHarvard = searchUniversityDestinations("harvad");
+    expect(fuzzyHarvard.some((r) => r.university.id === "harvard")).toBe(true);
+    expect(fuzzyHarvard.every((r) => r.university.id === "harvard")).toBe(true);
+
+    // 8. Distinguishes university vs campus results visually and structurally
+    const campusResults = searchUniversityDestinations("Allston");
+    expect(
+      campusResults.some((r) => r.kind === "campus" && r.campusName === "Allston campus"),
+    ).toBe(true);
+  });
+
+  test("simplifies university/campus hero visual to match the clean photo-only Harvard style", () => {
+    const componentSource = readFileSync("src/components/UniversityMarketingHome.tsx", "utf8");
+    const cssSource = readFileSync("src/components/university-marketing-home.css", "utf8");
+
+    // Hero visual must contain only CampusPhotography and no overlay preview components
+    expect(componentSource).toContain("<CampusPhotography visual={visual}");
+    expect(componentSource).not.toContain("<ProductPreview");
+    expect(componentSource).not.toContain("<PlannedPreview");
+    expect(componentSource).not.toContain("<TimetablePreview");
+    expect(componentSource).not.toContain("university-home-visual-panel");
+
+    // CSS should not contain the retired visual panel classes
+    expect(cssSource).not.toContain(".university-home-visual-panel");
+    expect(cssSource).not.toContain(".university-planned-window");
+    expect(cssSource).not.toContain(".university-product-window");
   });
 });
 

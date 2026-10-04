@@ -13,6 +13,7 @@ import {
 } from "@/data/campuses";
 import { UTM_BUILDINGS, type BuildingConfiguration } from "@/data/utm/building-registry";
 import type { Meeting } from "@/lib/timetable-types";
+import { searchUniversityDestinations } from "@/universities/search";
 
 export type SearchCategory = "buildings" | "courses" | "actions" | "universities";
 
@@ -346,37 +347,26 @@ export function searchGapwise(query: string, context: SearchIndexContext = {}): 
   }
 
   // 4. Other Universities
-  for (const uni of UNIVERSITIES) {
-    if (uni.id === currentUni?.id) continue; // Don't show current university in switch list
+  const uniMatches = searchUniversityDestinations(q, {
+    currentUniversityId: currentUni?.id,
+    allowCurrentUniversity: false,
+    limit: 10,
+  });
 
-    let bestScore = scoreMatch(q, uni.name);
-    const shortScore = scoreMatch(q, uni.shortName, true);
-    if (shortScore !== null && (bestScore === null || shortScore < bestScore)) {
-      bestScore = shortScore;
-    }
-
-    const aliases = [...(UNIVERSITY_ALIASES[uni.id] ?? []), ...uni.aliases, ...uni.hosts];
-    for (const alias of aliases) {
-      const as = scoreMatch(q, alias);
-      if (as !== null && (bestScore === null || as < bestScore)) {
-        bestScore = as;
-      }
-    }
-
-    if (bestScore !== null) {
-      results.push({
-        id: `uni-${uni.id}`,
-        category: "universities",
-        title: `Switch to ${uni.name}`,
-        subtitle: `${uni.shortName} · ${uni.campusScope}`,
-        badge: uni.shortName,
-        score: bestScore + 20,
-        data: {
-          universityId: uni.id,
-          url: urlForUniversity(uni),
-        },
-      });
-    }
+  for (const match of uniMatches) {
+    results.push({
+      id: `uni-${match.id}`,
+      category: "universities",
+      title: `Switch to ${match.name}`,
+      subtitle: `${match.shortName} · ${match.scope}`,
+      badge: match.shortName,
+      score: match.score + 20,
+      data: {
+        universityId: match.university.id,
+        campusId: match.campus?.id,
+        url: match.href,
+      },
+    });
   }
 
   // Sort by score ascending (lowest score is highest match quality)

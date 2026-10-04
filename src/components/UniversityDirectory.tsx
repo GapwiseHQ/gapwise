@@ -1,29 +1,10 @@
 import { ArrowRight, MapPinned, Search } from "lucide-react";
 import { useMemo, useState, type CSSProperties } from "react";
-import {
-  normalizeUniversitySearch,
-  universityDirectoryEntries,
-  type AvailabilityStatus,
-} from "@/universities/registry";
+import { UNIVERSITIES, type AvailabilityStatus } from "@/universities/registry";
+import { searchUniversityDestinations } from "@/universities/search";
 import "./university-directory.css";
 
-const ENTRIES = universityDirectoryEntries();
-const UNIVERSITIES = ENTRIES.filter((entry) => entry.kind === "university");
 const UNIVERSITY_COUNT = UNIVERSITIES.length;
-
-function directUniversityMatch(entry: (typeof ENTRIES)[number], query: string) {
-  return normalizeUniversitySearch(
-    [
-      entry.id,
-      entry.name,
-      entry.shortName,
-      entry.scope,
-      entry.location,
-      entry.host,
-      ...entry.university.aliases,
-    ].join(" "),
-  ).includes(query);
-}
 
 function statusLabel(status: AvailabilityStatus) {
   return status === "supported" ? "Supported" : status === "partial" ? "Partial" : "Planned";
@@ -31,19 +12,7 @@ function statusLabel(status: AvailabilityStatus) {
 
 export function UniversityDirectory() {
   const [query, setQuery] = useState("");
-  const normalized = normalizeUniversitySearch(query);
-  const results = useMemo(() => {
-    if (!normalized) return UNIVERSITIES;
-    return UNIVERSITIES.flatMap((universityEntry) => {
-      if (directUniversityMatch(universityEntry, normalized)) return [universityEntry];
-      return ENTRIES.filter(
-        (entry) =>
-          entry.kind === "campus" &&
-          entry.university.id === universityEntry.id &&
-          entry.searchText.includes(normalized),
-      );
-    });
-  }, [normalized]);
+  const results = useMemo(() => searchUniversityDestinations(query), [query]);
   const countries = ["Canada", "United States"] as const;
 
   return (
@@ -111,13 +80,31 @@ export function UniversityDirectory() {
                       }
                     >
                       <div className="university-directory-card-top">
-                        <span>{entry.kind === "campus" ? "Campus match" : entry.shortName}</span>
+                        <div className="university-directory-badges">
+                          <span className="university-directory-short">{entry.shortName}</span>
+                          <span
+                            className={`university-directory-kind ${
+                              entry.kind === "campus" ? "is-campus" : "is-institution"
+                            }`}
+                          >
+                            {entry.kind === "campus" ? (
+                              <>
+                                <MapPinned aria-hidden="true" />
+                                Campus
+                              </>
+                            ) : (
+                              "Institution"
+                            )}
+                          </span>
+                        </div>
                         <em data-status={entry.status}>{statusLabel(entry.status)}</em>
                       </div>
                       <strong>{entry.name}</strong>
                       <p>
                         <MapPinned aria-hidden="true" />
-                        {entry.location} · {entry.scope}
+                        {entry.kind === "campus" && entry.parentUniversityName
+                          ? `${entry.parentUniversityName} · ${entry.location}`
+                          : `${entry.location} · ${entry.scope}`}
                       </p>
                       <small>{entry.host}</small>
                       <ArrowRight className="university-directory-arrow" aria-hidden="true" />
