@@ -424,6 +424,7 @@ export function GlobalMarketingHome() {
               href={destination.href}
               className="global-home-university-card"
               style={{ "--university-accent": destination.university.accentColor } as CSSProperties}
+              aria-label={`${destination.shortName}${destination.kind === "campus" ? " · Campus edition" : ""} ${destination.name}`}
             >
               <div>
                 <div className="global-home-university-top">
