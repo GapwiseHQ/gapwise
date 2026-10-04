@@ -157,7 +157,16 @@ describe("Gapwise marketing system", () => {
     }
 
     // Key universities have verified photos in campus-visuals
-    for (const id of ["queens", "tmu", "harvard", "uoft", "york", "mcmaster", "carleton", "sorbonne"]) {
+    for (const id of [
+      "queens",
+      "tmu",
+      "harvard",
+      "uoft",
+      "york",
+      "mcmaster",
+      "carleton",
+      "sorbonne",
+    ]) {
       expect(visuals).toContain(`${id}:`);
     }
   });

@@ -678,7 +678,8 @@ export function ensureCampusCatalog(campusId: string | null | undefined): Promis
     "harvard-allston": () => import("./harvard-allston/catalog.json?raw"),
     "harvard-longwood": () => import("./harvard-longwood/catalog.json?raw"),
     sorbonne: () => import("./sorbonne/catalog.json?raw"),
-    "sorbonne-pierre-et-marie-curie": () => import("./sorbonne-pierre-et-marie-curie/catalog.json?raw"),
+    "sorbonne-pierre-et-marie-curie": () =>
+      import("./sorbonne-pierre-et-marie-curie/catalog.json?raw"),
     "sorbonne-sorbonne": () => import("./sorbonne-sorbonne/catalog.json?raw"),
     "sorbonne-pitie-salpetriere": () => import("./sorbonne-pitie-salpetriere/catalog.json?raw"),
     "sorbonne-saint-antoine": () => import("./sorbonne-saint-antoine/catalog.json?raw"),

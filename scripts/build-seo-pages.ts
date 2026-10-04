@@ -278,10 +278,7 @@ function schema(page: Page, context?: Context) {
           ...(context.buildingSupported ? ["Source-backed campus search"] : []),
           ...(context.routable ? ["Source-backed campus routing"] : []),
         ]
-      : [
-          "University editions worldwide",
-          "Published capability status for every campus",
-        ];
+      : ["University editions worldwide", "Published capability status for every campus"];
   return {
     "@context": "https://schema.org",
     "@graph": [

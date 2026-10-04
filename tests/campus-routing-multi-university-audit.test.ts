@@ -1,7 +1,11 @@
 import { describe, expect, it } from "bun:test";
 import { runComprehensiveCampusAudit } from "../scripts/audit-multi-university-routing.js";
 import { routeBetweenPublicBuildings } from "../src/server/public-campus/service.js";
-import { allCampuses, supportedUniversities, supportedCampuses } from "../src/universities/registry.js";
+import {
+  allCampuses,
+  supportedUniversities,
+  supportedCampuses,
+} from "../src/universities/registry.js";
 
 describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
   const auditReport = runComprehensiveCampusAudit();
