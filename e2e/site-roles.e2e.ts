@@ -345,7 +345,9 @@ test("directory searches Canada and the U.S. without horizontal overflow", async
   );
   const search = page.getByPlaceholder("Search university, campus, or city");
   await search.fill("Pittsburgh");
-  await expect(page.getByRole("link", { name: /Carnegie Mellon University/ }).first()).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: /Carnegie Mellon University/ }).first(),
+  ).toBeVisible();
   await search.fill("sorbonne");
   await expect(page.getByRole("link", { name: /Sorbonne Université/ }).first()).toBeVisible();
   await search.fill("ubco.gapwise.ca");
