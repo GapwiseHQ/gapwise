@@ -220,134 +220,19 @@ const calendarDemoDetails: Record<
   },
 };
 
+/**
+ * Browser-safe demo for a specific campus.
+ *
+ * Curated, university-specific timetables use real course codes and real building codes
+ * from the campus dataset. Never import server-only modules here: this runs when a student
+ * clicks "Try the demo" in the browser.
+ */
 async function campusSpecificDemo(universityId: string, campusId: string): Promise<Meeting[]> {
-  const { getCampusSnapshot } = await import("@/server/public-campus/campus-snapshots");
-  const snapshot = getCampusSnapshot(campusId);
-  const b1 = snapshot?.buildings[0];
-  const b2 = snapshot?.buildings[1] ?? snapshot?.buildings[0];
-  const code1 = (b1?.nativeCodes[0] ?? b1?.id ?? "B1").toUpperCase();
-  const code2 = (b2?.nativeCodes[0] ?? b2?.id ?? "B2").toUpperCase();
-  const name1 = b1?.name ?? "Building One";
-  const name2 = b2?.name ?? "Building Two";
-  const dateRange = { startDate: "2026-09-08", endDate: "2026-12-08" };
-  const campus = campusId.toUpperCase();
-
-  return [
-    {
-      id: `demo-${campusId}-1`,
-      universityId,
-      courseCode: `${code1} 101`,
-      courseName: name1,
-      activityType: "LEC",
-      sectionCode: "001",
-      startTime: 9 * 60 + 30,
-      endTime: 10 * 60 + 20,
-      weekday: "Monday",
-      buildingCode: code1,
-      room: "101",
-      campus,
-      term: "Fall",
-      locationType: "physical",
-      locationUnknown: false,
-      dateRange,
-      recurrenceIntervalWeeks: 1,
-    },
-    {
-      id: `demo-${campusId}-2`,
-      universityId,
-      courseCode: `${code2} 102`,
-      courseName: name2,
-      activityType: "LEC",
-      sectionCode: "001",
-      startTime: 11 * 60 + 0,
-      endTime: 12 * 60 + 20,
-      weekday: "Monday",
-      buildingCode: code2,
-      room: "201",
-      campus,
-      term: "Fall",
-      locationType: "physical",
-      locationUnknown: false,
-      dateRange,
-      recurrenceIntervalWeeks: 1,
-    },
-    {
-      id: `demo-${campusId}-3`,
-      universityId,
-      courseCode: `${code1} 101`,
-      courseName: name1,
-      activityType: "LEC",
-      sectionCode: "001",
-      startTime: 9 * 60 + 30,
-      endTime: 10 * 60 + 20,
-      weekday: "Wednesday",
-      buildingCode: code1,
-      room: "101",
-      campus,
-      term: "Fall",
-      locationType: "physical",
-      locationUnknown: false,
-      dateRange,
-      recurrenceIntervalWeeks: 1,
-    },
-    {
-      id: `demo-${campusId}-4`,
-      universityId,
-      courseCode: `${code2} 102`,
-      courseName: name2,
-      activityType: "LEC",
-      sectionCode: "001",
-      startTime: 11 * 60 + 0,
-      endTime: 12 * 60 + 20,
-      weekday: "Wednesday",
-      buildingCode: code2,
-      room: "201",
-      campus,
-      term: "Fall",
-      locationType: "physical",
-      locationUnknown: false,
-      dateRange,
-      recurrenceIntervalWeeks: 1,
-    },
-    {
-      id: `demo-${campusId}-5`,
-      universityId,
-      courseCode: `${code1} 101`,
-      courseName: name1,
-      activityType: "TUT",
-      sectionCode: "101",
-      startTime: 10 * 60 + 0,
-      endTime: 11 * 60 + 20,
-      weekday: "Friday",
-      buildingCode: code1,
-      room: "101",
-      campus,
-      term: "Fall",
-      locationType: "physical",
-      locationUnknown: false,
-      dateRange,
-      recurrenceIntervalWeeks: 1,
-    },
-    {
-      id: `demo-${campusId}-6`,
-      universityId,
-      courseCode: `${code2} 102`,
-      courseName: name2,
-      activityType: "PRA",
-      sectionCode: "201",
-      startTime: 12 * 60 + 0,
-      endTime: 13 * 60 + 20,
-      weekday: "Friday",
-      buildingCode: code2,
-      room: "201",
-      campus,
-      term: "Fall",
-      locationType: "physical",
-      locationUnknown: false,
-      dateRange,
-      recurrenceIntervalWeeks: 1,
-    },
-  ];
+  const normalized = campusId.toLowerCase();
+  const { curatedDemoMeetings } = await import("./common/curated-demos");
+  const curated = curatedDemoMeetings(normalized);
+  if (curated) return curated;
+  throw new Error(`No curated ${universityId} demo is registered for campus ${normalized}`);
 }
 
 export const demoTimetableLoaders: Record<string, (campusId?: string) => Promise<Meeting[]>> = {

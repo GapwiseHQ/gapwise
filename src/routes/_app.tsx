@@ -229,6 +229,13 @@ function AppLayout() {
     preferences.mainCampus ??
     activeCampus()) as GapwiseCampusId | null;
 
+  useEffect(() => {
+    // Observable app context for diagnostics and end-to-end demo verification.
+    const root = document.documentElement;
+    root.dataset["gapwiseUniversity"] = university?.id ?? "";
+    root.dataset["gapwiseCampus"] = effectiveCampus ?? "";
+  }, [university?.id, effectiveCampus]);
+
   const {
     restoration,
     setRestoration,
