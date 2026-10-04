@@ -16,7 +16,8 @@ import { removeBareHash } from "./lib/url";
 import { announceAppUpdate } from "./features/pwa/update-events";
 
 import { ensureCampusCatalog } from "./data/campuses";
-import { activeCampus, activeUniversity, campusById } from "./universities/registry";
+import { activeCampus, activeSite, activeUniversity, campusById } from "./universities/registry";
+import { applyUniversityTheme } from "./universities/theme";
 
 function removeStaticSeoMetadata() {
   const comments = [...document.head.childNodes].filter(
@@ -58,6 +59,7 @@ function syncUniversityBranding() {
 syncUniversityBranding();
 
 const university = activeUniversity();
+applyUniversityTheme(document.documentElement, activeSite(), university);
 
 const container = document.getElementById("root");
 if (!container) throw new Error("Application root element is missing.");

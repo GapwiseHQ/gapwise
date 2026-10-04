@@ -5,6 +5,7 @@ import {
   Check,
   Clock3,
   Database,
+  ExternalLink,
   MapPinned,
   Navigation,
   Search,
@@ -23,6 +24,7 @@ import {
   type University,
   type UniversityMarketing,
 } from "@/universities/registry";
+import { type CampusVisual, visualForSite } from "@/universities/campus-visuals";
 import type { MarketingLandingProps } from "./MarketingLanding";
 import "./university-marketing-home.css";
 
@@ -34,6 +36,30 @@ const CAPABILITY_LABELS = {
   search: "Campus search",
   routing: "Pedestrian routing",
 } as const;
+
+function CampusPhotography({ visual, label }: { visual: CampusVisual; label: string }) {
+  return (
+    <figure className="university-campus-photo">
+      <img
+        src={visual.src}
+        alt={visual.alt}
+        width="1600"
+        height="1000"
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
+        style={{ objectPosition: visual.position }}
+      />
+      <figcaption>
+        <span>{label}</span>
+        <a href={visual.sourceUrl} target="_blank" rel="noreferrer">
+          Photo: {visual.credit} · {visual.license}
+          <ExternalLink aria-hidden="true" />
+        </a>
+      </figcaption>
+    </figure>
+  );
+}
 
 function CoverageStats({
   buildings,
@@ -310,6 +336,7 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
   const hasBuildingData = campus?.capabilities.buildingData !== "planned";
   const heroEyebrow = site.presentation?.heroEyebrow ?? `Gapwise for ${displayName}`;
   const heroDescription = site.presentation?.heroDescription ?? marketing.description;
+  const visual = visualForSite(site, campus, university);
 
   return (
     <div
@@ -395,15 +422,18 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
           ) : null}
         </div>
         <div className="university-home-visual">
-          {isHub ? (
-            <CampusChooser university={university} />
-          ) : isPlanned ? (
-            <PlannedPreview campus={campus} university={university} />
-          ) : timetableOnly ? (
-            <TimetablePreview university={university} />
-          ) : marketing.example ? (
-            <ProductPreview example={marketing.example} shortName={shortName} />
-          ) : null}
+          <CampusPhotography visual={visual} label={campus?.campusName ?? university.campusScope} />
+          <div className="university-home-visual-panel">
+            {isHub ? (
+              <CampusChooser university={university} />
+            ) : isPlanned ? (
+              <PlannedPreview campus={campus} university={university} />
+            ) : timetableOnly ? (
+              <TimetablePreview university={university} />
+            ) : marketing.example ? (
+              <ProductPreview example={marketing.example} shortName={shortName} />
+            ) : null}
+          </div>
         </div>
         {marketing.stats && !isPlanned ? <CoverageStats {...marketing.stats} /> : null}
       </section>
@@ -542,6 +572,7 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
               ) : null}
               <UploadPanel
                 variant="hero"
+                university={university}
                 onFile={props.onFile}
                 onDemo={props.onDemo}
                 loading={props.loading}

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import {
   campusBuildingEntrances,
   campusBuildingConfigurations,
@@ -19,6 +19,9 @@ import { parseIcs as parseUoftIcs } from "@/lib/ics-parser";
 import { parseCarletonIcs, carletonCampus } from "@/universities/carleton/adapter";
 import { timetableAdapters, loadDemoTimetable } from "@/universities/timetable-adapters";
 import {
+  CAMPUSES,
+  SITES,
+  UNIVERSITIES,
   campusForHostname,
   siteForHostname,
   universityById,
@@ -27,6 +30,7 @@ import {
   normalizeUniversitySearch,
   validateUniversityManifest,
 } from "@/universities/registry";
+import { validateCampusVisuals, visualForSite } from "@/universities/campus-visuals";
 
 const carletonIcs = [
   "BEGIN:VCALENDAR",
@@ -178,6 +182,20 @@ describe("university registry", () => {
         { ...uoft, id: "Invalid ID", hosts: ["gapwise.ca", "gapwise.ca"], defaultCampus: "other" },
       ]).length,
     ).toBeGreaterThanOrEqual(3);
+  });
+
+  test("every university edition resolves owned, attributed campus photography", () => {
+    expect(validateCampusVisuals(UNIVERSITIES, SITES)).toEqual([]);
+    for (const site of SITES.filter((entry) => entry.universityId)) {
+      const university = UNIVERSITIES.find((entry) => entry.id === site.universityId)!;
+      const campus = CAMPUSES.find((entry) => entry.id === site.campusId) ?? null;
+      const visual = visualForSite(site, campus, university);
+      expect(existsSync(`public${visual.src}`)).toBe(true);
+      expect(visual.alt.length).toBeGreaterThan(20);
+      expect(visual.credit.length).toBeGreaterThan(1);
+      expect(visual.license.length).toBeGreaterThan(2);
+      expect(visual.sourceUrl).toStartWith("https://commons.wikimedia.org/wiki/File:");
+    }
   });
 
   test("directory search covers names, aliases, campuses, cities, and host slugs", () => {
