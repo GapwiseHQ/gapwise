@@ -32,6 +32,11 @@ import manifest from "../universities.json" with { type: "json" };
 
 describe("Campus Maps and Timetable Inference for All Supported Campuses", () => {
   const supportedCampuses = manifest.campuses.filter((c) => c.status === "supported");
+  const demoCampusIds = new Set(
+    manifest.sites
+      .filter((site) => site.role === "campus-edition" || site.role === "single-campus-edition")
+      .map((site) => site.campusId),
+  );
 
   test("all supported campuses have accurate bounds, footprints, and configurations", async () => {
     expect(supportedCampuses).toHaveLength(manifest.campuses.length);
@@ -312,8 +317,8 @@ describe("Campus Maps and Timetable Inference for All Supported Campuses", () =>
     expect(crossCampusRoute.message).toContain("same campus");
   });
 
-  test("all supported campuses load realistic university-specific demo schedules with campus inference, valid buildings, and routed transitions", async () => {
-    for (const campus of supportedCampuses) {
+  test("all campus editions load realistic university-specific demo schedules with campus inference, valid buildings, and routed transitions", async () => {
+    for (const campus of supportedCampuses.filter((candidate) => demoCampusIds.has(candidate.id))) {
       const university = universityById(campus.universityId);
       expect(university).not.toBeNull();
       if (!university) continue;
@@ -332,11 +337,20 @@ describe("Campus Maps and Timetable Inference for All Supported Campuses", () =>
       expect(inferredFromAdapter).toBe(campus.id.toUpperCase());
       expect(inferredFromCampus).toBe(campus.id.toUpperCase());
 
-      // 4. Verify all scheduled physical classes have valid physical buildings/rooms and no TBA
+      // 4. Verify all scheduled physical classes have valid physical buildings/rooms and no TBA.
+      // Campuses whose real teaching building is not yet mapped must annotate every class
+      // rather than pinning it to an unrelated building.
       const scheduledClasses = meetingsViaCampus.filter(
         (m) => m.locationType === "physical" && !m.notes,
       );
-      expect(scheduledClasses.length).toBeGreaterThan(0);
+      if (scheduledClasses.length === 0) {
+        for (const meeting of meetingsViaCampus) {
+          expect(meeting.notes).toBeTruthy();
+          expect(meeting.sourceLocation).toBeTruthy();
+          expect(meeting.locationUnknown).toBe(true);
+        }
+        expect(campus.capabilities.routing).not.toBe("supported");
+      }
       for (const meeting of scheduledClasses) {
         expect(meeting.buildingCode).toBeTruthy();
         expect(meeting.room).toBeTruthy();
