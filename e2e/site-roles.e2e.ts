@@ -184,6 +184,37 @@ test("U of T campus editions retain campus-scoped import experiences", async ({
   failures.assertClean();
 });
 
+test("campus map selectors use distinct registry campus names", async ({ page, baseURL }) => {
+  test.skip(test.info().project.name !== "chromium");
+  test.setTimeout(90_000);
+  if (!baseURL) throw new Error("Playwright baseURL is required");
+  const failures = watchForAppFailures(page, baseURL);
+
+  for (const [host, labels] of [
+    ["harvard", ["Harvard Cambridge", "Harvard Allston", "Harvard Longwood"]],
+    ["mit", ["MIT Cambridge", "Lincoln Lab"]],
+    ["keele", ["Keele", "Glendon", "Markham"]],
+    ["carleton", ["Carleton", "Dominion-Chalmers"]],
+    ["queens", ["Queen's", "West Campus"]],
+    ["ubc", ["UBCV", "UBC Okanagan"]],
+    ["uoft", ["UTM", "UTSG", "UTSC"]],
+  ] as const) {
+    await page.goto(editionUrl(baseURL, host, "/route"));
+    const selector = page.getByLabel("Campus map").first();
+    await expect(selector.getByRole("button")).toHaveText(labels);
+    await selector.getByRole("button", { name: labels[1], exact: true }).click();
+    await expect(selector.getByRole("button", { name: labels[1], exact: true })).toHaveAttribute(
+      "aria-pressed",
+      "true",
+    );
+    await expect(
+      page.getByPlaceholder(`Search ${labels[1]} building codes or names…`),
+    ).toBeVisible();
+  }
+
+  failures.assertClean();
+});
+
 for (const width of [320, 360, 375, 390, 393, 430]) {
   test(`mobile public header and global hero fit at ${width}px`, async ({ page, baseURL }) => {
     test.skip(test.info().project.name !== "chromium");

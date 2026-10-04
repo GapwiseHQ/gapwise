@@ -2,6 +2,7 @@ import {
   UNIVERSITIES,
   activeCampus as activeHostCampus,
   activeUniversity,
+  campusesForUniversity,
   urlForUniversity,
   type University,
 } from "@/universities/registry";
@@ -45,9 +46,8 @@ function searchCampus(context: SearchIndexContext): GapwiseCampusId | null {
   const hostCampus = activeHostCampus();
   if (hostCampus) return hostCampus;
   const university = activeUniversity();
-  return university?.campuses.length === 1
-    ? ((university.campuses[0] as GapwiseCampusId | undefined) ?? null)
-    : null;
+  const campuses = university ? campusesForUniversity(university) : [];
+  return campuses.length === 1 ? ((campuses[0] as GapwiseCampusId | undefined) ?? null) : null;
 }
 
 // University aliases & common search terms

@@ -59,6 +59,100 @@
   position: relative;
 }
 
+.university-home-visual {
+  display: grid;
+  align-self: center;
+  padding-bottom: 1.5rem;
+}
+
+.university-campus-photo {
+  position: relative;
+  min-height: clamp(19rem, 36vw, 27rem);
+  overflow: hidden;
+  border: 1px solid color-mix(in oklab, var(--university-home-accent) 24%, var(--color-border));
+  background: var(--color-muted);
+  box-shadow: 0 2.8rem 6rem -4rem rgb(0 0 0 / 0.86);
+}
+
+.university-campus-photo::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgb(5 8 14 / 0.9), transparent 48%),
+    linear-gradient(
+      135deg,
+      color-mix(in oklab, var(--university-home-accent) 19%, transparent),
+      transparent 52%
+    );
+  content: "";
+  pointer-events: none;
+}
+
+.university-campus-photo img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(1.04) brightness(0.84);
+}
+
+.university-campus-photo figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  bottom: 0.85rem;
+  left: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  color: rgb(255 255 255 / 0.72);
+  font-family: var(--font-mono);
+  font-size: 0.53rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.university-campus-photo figcaption > span {
+  max-width: 24rem;
+  color: white;
+  font-size: 0.62rem;
+  font-weight: 650;
+}
+
+.university-campus-photo figcaption a {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.university-campus-photo figcaption a:hover {
+  color: white;
+}
+
+.university-campus-photo figcaption svg {
+  width: 0.65rem;
+  height: 0.65rem;
+}
+
+.university-home-visual-panel {
+  position: relative;
+  z-index: 2;
+  width: calc(100% - clamp(1rem, 4vw, 3.5rem));
+  margin: clamp(-5.5rem, -7vw, -3.75rem) auto 0;
+}
+
+.university-home-visual-panel .university-product-body {
+  min-height: 19rem;
+}
+
+.university-home-visual-panel .university-planned-window {
+  min-height: 19rem;
+  box-shadow: 0 2.8rem 6rem -4rem rgb(0 0 0 / 0.82);
+  backdrop-filter: blur(18px);
+}
+
 .university-home-kicker {
   display: inline-flex;
   max-width: 100%;
@@ -659,7 +753,7 @@
   --campus-card-accent: var(--university-home-accent);
   display: grid;
   min-height: 5rem;
-  grid-template-columns: 2.5rem minmax(0, 1fr) auto;
+  grid-template-columns: 2.5rem minmax(0, 1fr) auto auto;
   align-items: center;
   gap: 0.8rem;
   border: 1px solid var(--university-home-line);
@@ -904,6 +998,18 @@
   }
   .university-home h1 {
     font-size: clamp(2.65rem, 14vw, 4rem);
+  }
+  .university-campus-photo {
+    min-height: 20rem;
+  }
+  .university-campus-photo figcaption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .university-home-visual-panel {
+    width: calc(100% - 1rem);
+    margin-top: -3.5rem;
   }
   .university-home-actions {
     display: grid;

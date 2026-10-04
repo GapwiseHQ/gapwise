@@ -151,7 +151,13 @@ export function validateUniversityManifest(
     campusIds.add(campus.id);
     if (!entries.some((entry) => entry.id === campus.universityId))
       errors.push(`${campus.id}: unknown universityId`);
-    if (!campus.name.trim() || !campus.city.trim() || !campus.country.trim())
+    if (
+      !campus.name.trim() ||
+      !campus.shortName.trim() ||
+      !campus.campusName.trim() ||
+      !campus.city.trim() ||
+      !campus.country.trim()
+    )
       errors.push(`${campus.id}: campus identity and location are required`);
     if (!validStatus.has(campus.status)) errors.push(`${campus.id}: invalid campus status`);
     for (const capability of Object.values(campus.capabilities)) {
@@ -197,6 +203,8 @@ export function validateUniversityManifest(
     if (!validStatus.has(entry.status)) errors.push(`${entry.id}: invalid university status`);
     if (!entry.campuses.length || !entry.campuses.includes(entry.defaultCampus))
       errors.push(`${entry.id}: default campus must be listed`);
+    if (new Set(entry.campuses).size !== entry.campuses.length)
+      errors.push(`${entry.id}: campus IDs must be unique`);
     for (const campusId of entry.campuses) {
       if (!CAMPUSES.some((campus) => campus.id === campusId && campus.universityId === entry.id))
         errors.push(`${entry.id}: unknown campus ${campusId}`);
@@ -213,6 +221,9 @@ export function validateUniversityManifest(
     if (entry.marketing?.searchExamples.length !== 3)
       errors.push(`${entry.id}: exactly three university search examples are required`);
     const entryCampuses = CAMPUSES.filter((campus) => campus.universityId === entry.id);
+    const campusLabels = entryCampuses.map((campus) => campus.shortName.trim().toLowerCase());
+    if (new Set(campusLabels).size !== campusLabels.length)
+      errors.push(`${entry.id}: campus short names must be distinct`);
     if (entryCampuses.some((campus) => campus.capabilities.timetableImport !== "planned")) {
       if (!entry.timetableAdapter.trim() || entry.timetableAdapter === "planned")
         errors.push(`${entry.id}: timetable-capable editions require a timetable adapter`);
@@ -256,7 +267,7 @@ export function campusForSite(site: SiteDefinition | null): Campus | null {
 }
 
 export function campusRecordsForUniversity(university: University): Campus[] {
-  return university.campuses
+  return campusesForUniversity(university)
     .map((campusId) => campusById(campusId))
     .filter((campus): campus is Campus => Boolean(campus));
 }
@@ -313,8 +324,20 @@ export function activeSite(): SiteDefinition | null {
         ? globalSite()
         : (SITES.find((site) => site.id === requestedSite) ?? null);
     const requestedCampus = params.get("campus");
-    if (requestedCampus)
-      return SITES.find((site) => site.campusId === requestedCampus.toLowerCase()) ?? null;
+    if (requestedCampus) {
+      const campusId = requestedCampus.toLowerCase();
+      const campusSite = SITES.find((site) => site.campusId === campusId);
+      if (campusSite) return campusSite;
+      const campus = campusById(campusId);
+      if (campus) {
+        const universitySite = SITES.find(
+          (site) =>
+            site.universityId === campus.universityId &&
+            (site.role === "university-hub" || site.role === "single-campus-edition"),
+        );
+        if (universitySite) return universitySite;
+      }
+    }
     const requestedUniversity = params.get("university");
     if (requestedUniversity)
       return (
@@ -365,7 +388,7 @@ export function activeCampus(): string | null {
 }
 
 export function campusesForUniversity(university: University): string[] {
-  return university.campuses;
+  return [...new Set(university.campuses)];
 }
 
 export function universityByCampus(campusId: string): University | null {

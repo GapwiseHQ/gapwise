@@ -1,6 +1,7 @@
 import { describe, expect, test } from "bun:test";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import {
+  CAMPUS_SHORT_LABELS,
   campusBuildingEntrances,
   campusBuildingConfigurations,
   campusFootprintCollection,
@@ -19,7 +20,11 @@ import { parseIcs as parseUoftIcs } from "@/lib/ics-parser";
 import { parseCarletonIcs, carletonCampus } from "@/universities/carleton/adapter";
 import { timetableAdapters, loadDemoTimetable } from "@/universities/timetable-adapters";
 import {
+  CAMPUSES,
+  SITES,
+  UNIVERSITIES,
   campusForHostname,
+  campusesForUniversity,
   siteForHostname,
   universityById,
   universityForHostname,
@@ -27,6 +32,7 @@ import {
   normalizeUniversitySearch,
   validateUniversityManifest,
 } from "@/universities/registry";
+import { validateCampusVisuals, visualForSite } from "@/universities/campus-visuals";
 
 const carletonIcs = [
   "BEGIN:VCALENDAR",
@@ -178,6 +184,66 @@ describe("university registry", () => {
         { ...uoft, id: "Invalid ID", hosts: ["gapwise.ca", "gapwise.ca"], defaultCampus: "other" },
       ]).length,
     ).toBeGreaterThanOrEqual(3);
+  });
+
+  test("uses distinct campus metadata for every campus selector label", () => {
+    for (const university of UNIVERSITIES) {
+      const campusIds = campusesForUniversity(university);
+      const labels = campusIds.map((campusId) => CAMPUS_SHORT_LABELS[campusId]);
+
+      expect(campusIds).toEqual([...new Set(university.campuses)]);
+      expect(labels.every(Boolean)).toBe(true);
+      expect(new Set(labels.map((label) => label!.toLowerCase())).size).toBe(labels.length);
+      for (const campusId of campusIds) {
+        expect(CAMPUS_SHORT_LABELS[campusId]).toBe(
+          CAMPUSES.find((campus) => campus.id === campusId)?.shortName,
+        );
+      }
+    }
+
+    expect(["utm", "utsg", "utsc"].map((id) => CAMPUS_SHORT_LABELS[id])).toEqual([
+      "UTM",
+      "UTSG",
+      "UTSC",
+    ]);
+    expect(
+      ["harvard-cambridge", "harvard-allston", "harvard-longwood"].map(
+        (id) => CAMPUS_SHORT_LABELS[id],
+      ),
+    ).toEqual(["Harvard Cambridge", "Harvard Allston", "Harvard Longwood"]);
+    expect(["mit-cambridge", "mit-lincoln-lab"].map((id) => CAMPUS_SHORT_LABELS[id])).toEqual([
+      "MIT Cambridge",
+      "Lincoln Lab",
+    ]);
+    expect(["keele", "glendon", "markham"].map((id) => CAMPUS_SHORT_LABELS[id])).toEqual([
+      "Keele",
+      "Glendon",
+      "Markham",
+    ]);
+  });
+
+  test("deduplicates campus IDs before selectors decide whether to render tabs", () => {
+    const harvard = universityById("harvard")!;
+    expect(
+      campusesForUniversity({
+        ...harvard,
+        campuses: ["harvard-cambridge", "harvard-cambridge"],
+      }),
+    ).toEqual(["harvard-cambridge"]);
+  });
+
+  test("every university edition resolves owned, attributed campus photography", () => {
+    expect(validateCampusVisuals(UNIVERSITIES, SITES)).toEqual([]);
+    for (const site of SITES.filter((entry) => entry.universityId)) {
+      const university = UNIVERSITIES.find((entry) => entry.id === site.universityId)!;
+      const campus = CAMPUSES.find((entry) => entry.id === site.campusId) ?? null;
+      const visual = visualForSite(site, campus, university);
+      expect(existsSync(`public${visual.src}`)).toBe(true);
+      expect(visual.alt.length).toBeGreaterThan(20);
+      expect(visual.credit.length).toBeGreaterThan(1);
+      expect(visual.license.length).toBeGreaterThan(2);
+      expect(visual.sourceUrl).toStartWith("https://commons.wikimedia.org/wiki/File:");
+    }
   });
 
   test("directory search covers names, aliases, campuses, cities, and host slugs", () => {

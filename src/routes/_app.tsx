@@ -49,7 +49,12 @@ import {
 } from "@/features/sync/preferences";
 import { useIntroDismissed, useTheme } from "@/hooks/use-preferences";
 import { trackFeatureView, trackTimetableImport } from "@/lib/telemetry";
-import { activeCampus, activeSite, activeUniversity } from "@/universities/registry";
+import {
+  activeCampus,
+  activeSite,
+  activeUniversity,
+  campusesForUniversity,
+} from "@/universities/registry";
 import type { Meeting } from "@/lib/timetable-types";
 import { isEncryptedPrivateCloudAuthoritative } from "@/features/security/private-cloud-mode";
 import { useEncryptedAutosave } from "@/features/sync/use-encrypted-autosave";
@@ -145,6 +150,7 @@ function ProductEmptyState({
 
 function AppLayout() {
   const university = activeUniversity();
+  const universityCampusIds = university ? campusesForUniversity(university) : [];
   const site = activeSite();
   const { theme, toggleTheme } = useTheme();
   const { dismissed, dismiss } = useIntroDismissed();
@@ -753,9 +759,11 @@ function AppLayout() {
                 Find your way around campus
               </h1>
               <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
-                {university?.campuses.length === 1
-                  ? `Search source-backed ${university.name} campus buildings and explore pedestrian routes. You can explore without uploading a timetable.`
-                  : `Choose ${university?.campuses.map((campus) => CAMPUS_SHORT_LABELS[campus] ?? campus).join(", ")}, then search a source-backed campus building. You can explore without uploading a timetable.`}
+                {!university
+                  ? "Choose a university edition to explore its source-backed campus buildings."
+                  : universityCampusIds.length === 1
+                    ? `Search source-backed ${university.name} campus buildings and explore pedestrian routes. You can explore without uploading a timetable.`
+                    : `Choose ${universityCampusIds.map((campus) => CAMPUS_SHORT_LABELS[campus] ?? campus).join(", ")}, then search a source-backed campus building. You can explore without uploading a timetable.`}
               </p>
             </section>
             <Suspense

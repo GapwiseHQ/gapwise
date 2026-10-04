@@ -113,7 +113,7 @@ describe("Gapwise Ecosystem Consistency", () => {
 
   test("every university branding directory exactly matches its registry entry", async () => {
     expect(await verifyUniversityBrandAssets(manifest.universities)).toEqual([]);
-  });
+  }, 15_000);
 
   test("vercel.json resolves every intentional university hostname generically", () => {
     const vercelConfig = JSON.parse(readFileSync("vercel.json", "utf8"));

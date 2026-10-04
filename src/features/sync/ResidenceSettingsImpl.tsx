@@ -20,7 +20,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { sanitizeUserPreferences, type UserPreferences } from "./preferences";
-import { activeUniversity } from "@/universities/registry";
+import { activeUniversity, campusesForUniversity } from "@/universities/registry";
 
 type ArrivalOption = {
   label: string;
@@ -128,7 +128,7 @@ export function ResidenceSettings({
   }
 
   const university = activeUniversity();
-  const campusIds = (university?.campuses ?? []) as GapwiseCampusId[];
+  const campusIds = (university ? campusesForUniversity(university) : []) as GapwiseCampusId[];
   const isSingleCampus = campusIds.length <= 1;
 
   const points =
