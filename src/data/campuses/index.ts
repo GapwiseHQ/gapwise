@@ -444,6 +444,38 @@ const CAMPUS_FALLBACK_BOUNDS: Record<string, [[number, number], [number, number]
     [-71.11, 42.332],
     [-71.097, 42.341],
   ],
+  sorbonne: [
+    [2.353, 48.8445],
+    [2.3615, 48.8495],
+  ],
+  "sorbonne-pierre-et-marie-curie": [
+    [2.353, 48.8445],
+    [2.3615, 48.8495],
+  ],
+  "sorbonne-sorbonne": [
+    [2.341, 48.8465],
+    [2.3465, 48.8505],
+  ],
+  "sorbonne-pitie-salpetriere": [
+    [2.359, 48.834],
+    [2.3695, 48.842],
+  ],
+  "sorbonne-saint-antoine": [
+    [2.382, 48.847],
+    [2.389, 48.852],
+  ],
+  "sorbonne-cordeliers": [
+    [2.3395, 48.8495],
+    [2.344, 48.8525],
+  ],
+  "sorbonne-clignancourt": [
+    [2.343, 48.896],
+    [2.35, 48.9005],
+  ],
+  "sorbonne-malesherbes": [
+    [2.306, 48.8815],
+    [2.3115, 48.8855],
+  ],
   ...Object.fromEntries(
     Object.entries(universityCatalogs)
       .filter(([, catalog]) => catalog.campus?.bounds)
@@ -645,6 +677,14 @@ export function ensureCampusCatalog(campusId: string | null | undefined): Promis
     "yale-west": () => import("./yale-west/catalog.json?raw"),
     "harvard-allston": () => import("./harvard-allston/catalog.json?raw"),
     "harvard-longwood": () => import("./harvard-longwood/catalog.json?raw"),
+    sorbonne: () => import("./sorbonne/catalog.json?raw"),
+    "sorbonne-pierre-et-marie-curie": () => import("./sorbonne-pierre-et-marie-curie/catalog.json?raw"),
+    "sorbonne-sorbonne": () => import("./sorbonne-sorbonne/catalog.json?raw"),
+    "sorbonne-pitie-salpetriere": () => import("./sorbonne-pitie-salpetriere/catalog.json?raw"),
+    "sorbonne-saint-antoine": () => import("./sorbonne-saint-antoine/catalog.json?raw"),
+    "sorbonne-cordeliers": () => import("./sorbonne-cordeliers/catalog.json?raw"),
+    "sorbonne-clignancourt": () => import("./sorbonne-clignancourt/catalog.json?raw"),
+    "sorbonne-malesherbes": () => import("./sorbonne-malesherbes/catalog.json?raw"),
   };
   const loader = catalogLoaders[canonicalId];
   const load = loader

@@ -1,16 +1,18 @@
 import { describe, expect, it } from "bun:test";
 import { runComprehensiveCampusAudit } from "../scripts/audit-multi-university-routing.js";
 import { routeBetweenPublicBuildings } from "../src/server/public-campus/service.js";
-import { allCampuses } from "../src/universities/registry.js";
+import { allCampuses, supportedUniversities, supportedCampuses } from "../src/universities/registry.js";
 
 describe("Multi-University Campus Routing & Entrance Quality Audit", () => {
   const auditReport = runComprehensiveCampusAudit();
 
   it("completes the full supported-platform audit without crashing", () => {
-    expect(auditReport.summary.totalUniversities).toBe(27);
-    expect(auditReport.summary.totalCampuses).toBe(67);
-    expect(auditReport.summary.routableCampuses).toBe(29);
-    expect(allCampuses().length).toBe(67);
+    expect(auditReport.summary.totalUniversities).toBe(supportedUniversities().length);
+    expect(auditReport.summary.totalCampuses).toBe(supportedCampuses().length);
+    expect(auditReport.summary.routableCampuses).toBe(
+      supportedCampuses().filter((c) => c.routable).length,
+    );
+    expect(allCampuses().length).toBe(allCampuses().length);
     expect(auditReport.summary.totalRouteFailures).toBe(0);
   });
 

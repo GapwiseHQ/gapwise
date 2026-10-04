@@ -30,7 +30,7 @@ export type University = {
   shortName: string;
   accentColor: string;
   campusScope: string;
-  country: "Canada" | "United States";
+  country: "Canada" | "United States" | "France";
   hosts: string[];
   campuses: string[];
   defaultCampus: string;
@@ -57,7 +57,7 @@ export type Campus = {
   campusName: string;
   city: string;
   region: string;
-  country: "Canada" | "United States";
+  country: "Canada" | "United States" | "France";
   hosts: string[];
   aliases: string[];
   status: AvailabilityStatus;

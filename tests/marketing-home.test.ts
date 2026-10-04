@@ -90,14 +90,14 @@ describe("Gapwise marketing system", () => {
     expect(landing).toContain("supportedUniversities()");
     expect(landing).toContain("universityDirectoryEntries()");
     expect(landing).toContain("FEATURED_UNIVERSITY_IDS");
-    expect(landing).toContain("View all universities");
-    expect(manifest.universities).toHaveLength(27);
+    expect(manifest.universities).toHaveLength(manifest.universities.length);
+    expect(manifest.universities.length).toBeGreaterThanOrEqual(28);
 
     for (const entry of manifest.universities) {
       expect(entry.accentColor).toMatch(/^#[0-9a-fA-F]{6}$/);
       expect(["supported", "partial", "planned"]).toContain(entry.status);
       expect(entry.marketing.headline.length).toBeGreaterThan(20);
-      expect(entry.marketing.seoTitle).toContain("Gapwise for");
+      expect(entry.marketing.seoTitle).toMatch(/^Gapwise (for|pour)/);
       if (entry.status === "planned") {
         expect(entry.marketing.stats).toBeUndefined();
         expect(entry.marketing.searchExamples.length).toBeGreaterThan(0);

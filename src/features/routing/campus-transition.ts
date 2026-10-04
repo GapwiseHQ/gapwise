@@ -412,6 +412,14 @@ export const OUTDOOR_CAMPUS_LOADERS: Record<string, CampusSnapshotLoader> = {
     import("@/data/campuses/harvard-cambridge/campus.json").then(
       (m) => m.default as unknown as CampusSnapshot,
     ),
+  "sorbonne-pierre-et-marie-curie": () =>
+    import("@/data/campuses/sorbonne-pierre-et-marie-curie/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  sorbonne: () =>
+    import("@/data/campuses/sorbonne-pierre-et-marie-curie/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
 };
 
 const plannerCache = new Map<string, TransitionPlanner>();

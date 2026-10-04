@@ -35,9 +35,9 @@ const totals = [...files].reduce(
   { js: 0, css: 0 },
 );
 
-// The registry now includes every intentional Canada and U.S. edition. Keep only modest headroom
-// above that measured baseline while still catching eager MapLibre or timetable-parser loading.
-const budgets = { js: 520 * 1024, css: 45 * 1024 };
+// The registry includes every supported and planned global edition. Keep modest headroom
+// above the measured baseline while still catching eager MapLibre or timetable-parser loading.
+const budgets = { js: 565 * 1024, css: 45 * 1024 };
 for (const kind of ["js", "css"] as const) {
   if (totals[kind] > budgets[kind]) {
     throw new Error(

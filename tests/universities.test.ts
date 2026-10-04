@@ -120,6 +120,9 @@ describe("university registry", () => {
     expect(siteForHostname("mcgill.gapwise.ca")?.role).toBe("single-campus-edition");
     expect(siteForHostname("harvard.gapwise.ca")?.role).toBe("single-campus-edition");
     expect(universityForHostname("harvard.gapwise.ca")?.status).toBe("supported");
+    expect(siteForHostname("sorbonne.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("sorbonne.gapwise.ca")?.id).toBe("sorbonne");
+    expect(universityForHostname("sorbonne.gapwise.ca")?.status).toBe("supported");
     expect(campusForHostname("uoft.gapwise.ca")).toBeNull();
     expect(campusForHostname("utm.gapwise.ca")).toBe("utm");
     expect(campusForHostname("ubc.gapwise.ca")).toBeNull();
@@ -307,6 +310,23 @@ describe("university registry", () => {
     expect(
       campusResults.some((r) => r.kind === "campus" && r.campusName === "Allston campus"),
     ).toBe(true);
+
+    // 9. Sorbonne Université search ranking, aliases, and campus models
+    const sorbonneResults = searchUniversityDestinations("sorbonne");
+    expect(sorbonneResults.length).toBeGreaterThan(0);
+    expect(sorbonneResults[0]!.id).toBe("sorbonne");
+    expect(sorbonneResults[0]!.name).toBe("Sorbonne Université");
+    expect(sorbonneResults[0]!.href).toBe("https://sorbonne.gapwise.ca");
+    expect(sorbonneResults.every((r) => r.university.id === "sorbonne")).toBe(true);
+
+    const sorbonneUniResults = searchUniversityDestinations("Sorbonne Université");
+    expect(sorbonneUniResults[0]!.university.id).toBe("sorbonne");
+
+    const jussieuResults = searchUniversityDestinations("Jussieu");
+    expect(jussieuResults.some((r) => r.university.id === "sorbonne")).toBe(true);
+
+    const cordeliersResults = searchUniversityDestinations("Cordeliers");
+    expect(cordeliersResults.some((r) => r.id === "sorbonne-cordeliers")).toBe(true);
   });
 
   test("simplifies university/campus hero visual to match the clean photo-only Harvard style", () => {
@@ -585,7 +605,7 @@ describe("canonical meeting and campus data contracts", () => {
   test("getOutdoorCampusTransitionPlanner dynamically loads and plans transitions for EVERY supported outdoor university", async () => {
     const { supportedUniversities } = await import("@/universities/registry");
     const outdoorUnis = supportedUniversities().filter(
-      (u) => u.id !== "uoft" && u.enabledFeatures.routing,
+      (u) => u.id !== "uoft" && u.enabledFeatures.routing && u.timetableAdapter !== "planned",
     );
 
     expect(outdoorUnis.map((university) => university.id).sort()).toEqual([

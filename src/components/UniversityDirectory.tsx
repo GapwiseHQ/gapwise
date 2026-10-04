@@ -13,7 +13,7 @@ function statusLabel(status: AvailabilityStatus) {
 export function UniversityDirectory() {
   const [query, setQuery] = useState("");
   const results = useMemo(() => searchUniversityDestinations(query), [query]);
-  const countries = ["Canada", "United States"] as const;
+  const countries = ["Canada", "United States", "France"] as const;
 
   return (
     <div className="university-directory-page">
@@ -39,7 +39,7 @@ export function UniversityDirectory() {
           className="university-directory-intro"
           aria-labelledby="university-directory-title"
         >
-          <p>Campus editions across North America</p>
+          <p>Campus editions worldwide</p>
           <h1 id="university-directory-title">Explore Gapwise universities.</h1>
           <div>
             <span>{UNIVERSITY_COUNT} universities</span>

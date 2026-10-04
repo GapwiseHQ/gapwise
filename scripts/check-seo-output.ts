@@ -14,7 +14,7 @@ const escapeHtml = (value: string) =>
 
 const globalHtml = await readFile("dist/_seo/index.html", "utf8");
 expectIncludes(globalHtml, '<link rel="canonical" href="https://gapwise.ca/"', "global homepage");
-expectIncludes(globalHtml, "across North America", "global homepage");
+expectIncludes(globalHtml, "worldwide", "global homepage");
 expectIncludes(globalHtml, 'property="og:title"', "global homepage");
 expectIncludes(globalHtml, 'name="twitter:title"', "global homepage");
 expectIncludes(globalHtml, "application/ld+json", "global homepage");

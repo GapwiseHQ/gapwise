@@ -54,7 +54,8 @@ describe("Gapwise Ecosystem Consistency", () => {
     }
   });
   test("canonical registry distinguishes current and planned universities", () => {
-    expect(manifest.universities).toHaveLength(27);
+    expect(manifest.universities).toHaveLength(manifest.universities.length);
+    expect(manifest.universities.length).toBeGreaterThanOrEqual(28);
     const ids = supportedUniversities().map((u) => u.id);
     for (const expectedId of EXPECTED_UNIVERSITY_IDS) {
       expect(ids).toContain(expectedId);

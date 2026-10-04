@@ -18,7 +18,7 @@ export const Route = createFileRoute("/_app/")({
       ? "Gapwise — University Timetable & Campus Navigation"
       : (marketing?.seoTitle ?? "Gapwise — University Timetable & Campus Navigation");
     const description = isGlobal
-      ? "Gapwise is a free and open-source timetable, campus navigation, and student planning platform for students across North America."
+      ? "Gapwise is a free and open-source timetable, campus navigation, and student planning platform."
       : (marketing?.seoDescription ??
         "Gapwise connects university timetables, campus search, and pedestrian routing.");
     const canonical = canonicalUrlForSite(site);

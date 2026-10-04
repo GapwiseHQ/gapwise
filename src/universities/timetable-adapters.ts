@@ -96,6 +96,11 @@ const northAmericanCalendarAdapters = {
 /** University integration registry. Shared product surfaces consume ParsedTimetable only. */
 export const timetableAdapters: Record<string, (text: string) => Promise<ParsedTimetable>> = {
   ...northAmericanCalendarAdapters,
+  planned: async () => {
+    throw new Error(
+      "Timetable import for this university is currently unavailable because schedules require individual authenticated logins.",
+    );
+  },
   "acorn-ics": async (text) => {
     const { parseIcs } = await import("@/lib/ics-parser");
     const { enrichCourseTitles } = await import("@/lib/course-title-catalog");
@@ -382,6 +387,13 @@ export const demoTimetableLoaders: Record<string, (campusId?: string) => Promise
       import("./mcgill/adapter"),
     ]);
     return DEMO_MCGILL_MEETINGS.flatMap(normalizeMcGillMeeting);
+  },
+  planned: async (campusId?: string) => {
+    const campus = campusId?.toLowerCase() || "sorbonne-pierre-et-marie-curie";
+    const { curatedDemoMeetings } = await import("./common/curated-demos");
+    const curated = curatedDemoMeetings(campus);
+    if (curated) return curated;
+    return (await import("@/lib/demo-timetable")).DEMO_MEETINGS;
   },
   // GAPWISE_DEMO_LOADER_REGISTRY: the CLI inserts new demo loaders here.
 };

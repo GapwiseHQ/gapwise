@@ -395,7 +395,7 @@ export function GlobalMarketingHome() {
             <h2 id="global-universities-title">Built for your campus.</h2>
             <p className="global-home-count">
               {SUPPORTED_UNIVERSITIES.length} timetable-ready universities · campus coverage across
-              Canada and the U.S.
+              Canada, the U.S., and Europe.
             </p>
           </div>
           <a href="/universities" className="global-home-view-all">
@@ -452,8 +452,8 @@ export function GlobalMarketingHome() {
                 </div>
                 <strong>{destination.name}</strong>
                 <small>
-                  {destination.kind === "campus" && destination.parentUniversityName
-                    ? `${destination.parentUniversityName} · ${destination.location}`
+                  {destination.kind === "campus"
+                    ? `${destination.university.name} · ${destination.location}`
                     : `${destination.location} · ${destination.scope}`}
                 </small>
               </div>
