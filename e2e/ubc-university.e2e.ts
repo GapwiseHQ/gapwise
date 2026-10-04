@@ -46,10 +46,10 @@ test("UBC Workday paste import preserves the Vancouver campus through timetable 
     .getByRole("group", { name: "Route weekday" })
     .getByRole("button", { name: "Monday" })
     .click();
-  await expect(page.getByRole("searchbox", { name: "Search UBC buildings" })).toBeVisible();
+  await expect(page.getByRole("searchbox", { name: "Search UBCV buildings" })).toBeVisible();
   await expect(page.locator(".map-time-marker")).toHaveCount(2);
 
-  const search = page.getByRole("searchbox", { name: "Search UBC buildings" });
+  const search = page.getByRole("searchbox", { name: "Search UBCV buildings" });
   await search.fill("ICCS");
   await expect(page.getByTestId("building-search-result").first()).toContainText(
     "Computer Science",
@@ -57,11 +57,11 @@ test("UBC Workday paste import preserves the Vancouver campus through timetable 
 
   await page.reload();
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("UBC");
-  await expect(page.getByRole("searchbox", { name: "Search UBC buildings" })).toBeVisible();
+  await expect(page.getByRole("searchbox", { name: "Search UBCV buildings" })).toBeVisible();
 
   await page.goto(campusEditionUrl(baseURL, "ubcv", "ubc-vancouver", "/route"));
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("UBC");
-  await expect(page.getByRole("searchbox", { name: "Search UBC buildings" })).toBeVisible();
+  await expect(page.getByRole("searchbox", { name: "Search UBCV buildings" })).toBeVisible();
   failures.assertClean();
 });
 
@@ -79,7 +79,7 @@ test("UBC has its own demo timetable and usable mobile campus map", async ({ pag
   await expect(page.getByText("ENGL 110").first()).toBeVisible();
 
   await page.getByRole("navigation", { name: "Main" }).getByRole("link", { name: "Map" }).click();
-  await expect(page.getByRole("searchbox", { name: "Search UBC buildings" })).toBeVisible();
+  await expect(page.getByRole("searchbox", { name: "Search UBCV buildings" })).toBeVisible();
   await expect(page.getByRole("button", { name: "Options" })).toBeVisible();
   failures.assertClean();
 });
