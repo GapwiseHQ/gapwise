@@ -28,18 +28,17 @@ test("Waterloo Quest import preserves the canonical campus through timetable and
   await page.getByRole("button", { name: "Import pasted schedule" }).click();
 
   await expect(page).toHaveURL(/\/today$/);
-  await page
-    .getByRole("group", { name: "View mode" })
-    .getByRole("button", { name: "Weekly timetable" })
-    .click();
+  const desktopNavigation = page.getByRole("complementary", { name: "Desktop navigation" });
+  await expect(async () => {
+    await desktopNavigation.getByRole("button", { name: "Weekly timetable" }).click();
+    await expect(page.getByText("MATH 135").first()).toBeVisible({ timeout: 2_000 });
+  }).toPass({ timeout: 15_000 });
   await expect(page.getByText("MATH 135").first()).toBeVisible();
   await expect(page.getByText("CS 135").first()).toBeVisible();
   await expect(page.locator(".brand-scope-pill").first()).toHaveText("Waterloo");
 
-  await page
-    .getByRole("group", { name: "View mode" })
-    .getByRole("button", { name: "Day route" })
-    .click();
+  await desktopNavigation.getByRole("button", { name: "Day route" }).click();
+  await expect(page).toHaveURL(/\/route$/);
   await page
     .getByRole("group", { name: "Route weekday" })
     .getByRole("button", { name: "Monday" })
