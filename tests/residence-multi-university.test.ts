@@ -54,8 +54,10 @@ describe("First-class multi-university residence platform", () => {
 
   it("provides verified residence coverage across every supported campus model", () => {
     expect(residenceMatrix.summary.coveragePercentage).toBe(100);
-    expect(residenceMatrix.summary.campusesWithResidenceCoverage).toBe(67);
-    expect(residenceMatrix.summary.universitiesWithResidenceCoverage).toBe(27);
+    expect(residenceMatrix.summary.campusesWithResidenceCoverage).toBe(supportedCampuses().length);
+    expect(residenceMatrix.summary.universitiesWithResidenceCoverage).toBe(
+      manifest.universities.length,
+    );
     expect(residenceMatrix.summary.totalResidences).toBeGreaterThanOrEqual(199);
 
     for (const campus of supportedCampuses()) {

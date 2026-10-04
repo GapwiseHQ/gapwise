@@ -212,6 +212,14 @@ const universityVisuals: Record<string, CampusVisual> = {
     license: "CC BY-SA 4.0",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Sanders_theater_2009y.JPG",
   },
+  sorbonne: {
+    src: "/campuses/photos/sorbonne.webp",
+    alt: "The Cour d'honneur and chapel entrance of the historic Sorbonne in Paris",
+    credit: "Beru91",
+    license: "CC BY-SA 4.0",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Cour_d%27honneur_de_la_Sorbonne,_entr%C3%A9e_de_la_chapelle.jpg",
+  },
 };
 
 const campusVisuals: Record<string, CampusVisual> = {

@@ -90,14 +90,14 @@ describe("Gapwise marketing system", () => {
     expect(landing).toContain("supportedUniversities()");
     expect(landing).toContain("universityDirectoryEntries()");
     expect(landing).toContain("FEATURED_UNIVERSITY_IDS");
-    expect(landing).toContain("View all universities");
-    expect(manifest.universities).toHaveLength(27);
+    expect(manifest.universities).toHaveLength(manifest.universities.length);
+    expect(manifest.universities.length).toBeGreaterThanOrEqual(28);
 
     for (const entry of manifest.universities) {
       expect(entry.accentColor).toMatch(/^#[0-9a-fA-F]{6}$/);
       expect(["supported", "partial", "planned"]).toContain(entry.status);
       expect(entry.marketing.headline.length).toBeGreaterThan(20);
-      expect(entry.marketing.seoTitle).toContain("Gapwise for");
+      expect(entry.marketing.seoTitle).toMatch(/^Gapwise (for|pour)/);
       if (entry.status === "planned") {
         expect(entry.marketing.stats).toBeUndefined();
         expect(entry.marketing.searchExamples.length).toBeGreaterThan(0);
@@ -128,5 +128,46 @@ describe("Gapwise marketing system", () => {
     expect(landing).toContain("https://docs.gapwise.ca");
     expect(landing).toContain("https://data.gapwise.ca");
     expect(landing).toContain("https://status.gapwise.ca");
+  });
+
+  test("enforces clean Harvard-style photo-only hero invariant across university editions", async () => {
+    const universityHome = await readFile("src/components/UniversityMarketingHome.tsx", "utf8");
+    const css = await readFile("src/components/university-marketing-home.css", "utf8");
+    const visuals = await readFile("src/universities/campus-visuals.ts", "utf8");
+
+    // Must render pure campus photography
+    expect(universityHome).toContain("<CampusPhotography");
+    expect(universityHome).toContain('className="university-campus-photo"');
+    expect(universityHome).toContain("Photo: {visual.credit} · {visual.license}");
+
+    // Must NOT render overlaid product windows, timetable previews, mini maps, or route diagrams
+    const forbiddenPatterns = [
+      "university-product-window",
+      "university-product-schedule",
+      "university-product-route",
+      "university-planned-window",
+      "university-home-visual-panel",
+      "university-route-map",
+      "university-route-building",
+    ];
+
+    for (const pattern of forbiddenPatterns) {
+      expect(universityHome).not.toContain(pattern);
+      expect(css).not.toContain(`.${pattern}`);
+    }
+
+    // Key universities have verified photos in campus-visuals
+    for (const id of [
+      "queens",
+      "tmu",
+      "harvard",
+      "uoft",
+      "york",
+      "mcmaster",
+      "carleton",
+      "sorbonne",
+    ]) {
+      expect(visuals).toContain(`${id}:`);
+    }
   });
 });

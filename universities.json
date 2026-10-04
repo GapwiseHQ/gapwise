@@ -494,6 +494,48 @@
       "shortName": "UC Berkeley",
       "universityId": "ucberkeley",
       "campusId": "ucberkeley-main"
+    },
+    {
+      "id": "sorbonne",
+      "role": "single-campus-edition",
+      "hosts": ["sorbonne.gapwise.ca"],
+      "canonicalHost": "sorbonne.gapwise.ca",
+      "name": "Sorbonne Université",
+      "shortName": "Sorbonne",
+      "universityId": "sorbonne",
+      "campusId": "sorbonne-pierre-et-marie-curie",
+      "presentation": {
+        "accentColor": "#212C68",
+        "heroEyebrow": "Sorbonne Université",
+        "heroDescription": "Explore Sorbonne Université across its historic Paris campuses, with source-backed building footprints, campus discovery, and pedestrian navigation.",
+        "cardDescription": "Sorbonne Université Paris campus discovery, building search, and walking routes.",
+        "timetableLabel": "ENT Sésame",
+        "visualLabel": "Sorbonne",
+        "marketing": {
+          "campusName": "Campus Pierre et Marie Curie",
+          "headline": "Traversez les campus de Sorbonne Université avec clarté.",
+          "description": "Retrouvez les bâtiments, cours et cheminements piétons à travers le Campus Pierre et Marie Curie (Jussieu), la Sorbonne historique, la Pitié-Salpêtrière, Saint-Antoine, les Cordeliers, Clignancourt et Malesherbes.",
+          "seoTitle": "Gapwise pour Sorbonne Université",
+          "seoDescription": "Planification de campus, recherche de bâtiments et navigation piétonne pour les étudiants de Sorbonne Université à Paris.",
+          "stats": {
+            "buildings": 384,
+            "entrances": 103,
+            "pathSegments": 2421
+          },
+          "example": {
+            "day": "Mardi",
+            "courseCode": "LU2IN018",
+            "buildingCode": "ZAM",
+            "buildingName": "Tour Zamansky",
+            "room": "102",
+            "nextCourseCode": "LU2MA001",
+            "nextBuildingCode": "B2425",
+            "nextBuildingName": "Barre 24-25",
+            "nextRoom": "205"
+          },
+          "searchExamples": ["Tour Zamansky", "Atrium", "Barre 24-25"]
+        }
+      }
     }
   ],
   "universities": [
@@ -1662,6 +1704,71 @@
       },
       "routableCampuses": ["harvard-cambridge"],
       "dataPaths": ["universities/harvard/campus.json"]
+    },
+    {
+      "id": "sorbonne",
+      "name": "Sorbonne Université",
+      "shortName": "Sorbonne",
+      "accentColor": "#212C68",
+      "campusScope": "Pierre et Marie Curie, Sorbonne, Pitié-Salpêtrière, Saint-Antoine, Cordeliers, Clignancourt, Malesherbes",
+      "hosts": ["sorbonne.gapwise.ca"],
+      "campuses": [
+        "sorbonne-pierre-et-marie-curie",
+        "sorbonne-sorbonne",
+        "sorbonne-pitie-salpetriere",
+        "sorbonne-saint-antoine",
+        "sorbonne-cordeliers",
+        "sorbonne-clignancourt",
+        "sorbonne-malesherbes"
+      ],
+      "defaultCampus": "sorbonne-pierre-et-marie-curie",
+      "aliases": [
+        "Sorbonne",
+        "Sorbonne University",
+        "Sorbonne Université",
+        "UPMC",
+        "Paris 6",
+        "Paris VI",
+        "Paris 4",
+        "Paris IV",
+        "Jussieu"
+      ],
+      "marketing": {
+        "campusName": "Campus Pierre et Marie Curie",
+        "headline": "Traversez les campus de Sorbonne Université avec clarté.",
+        "description": "Retrouvez les bâtiments, cours et cheminements piétons à travers le Campus Pierre et Marie Curie (Jussieu), la Sorbonne historique, la Pitié-Salpêtrière, Saint-Antoine, les Cordeliers, Clignancourt et Malesherbes.",
+        "seoTitle": "Gapwise pour Sorbonne Université",
+        "seoDescription": "Planification de campus, recherche de bâtiments et navigation piétonne pour les étudiants de Sorbonne Université à Paris.",
+        "searchExamples": ["Tour Zamansky", "Atrium", "Barre 24-25"],
+        "stats": {
+          "buildings": 384,
+          "entrances": 103,
+          "pathSegments": 2421
+        },
+        "example": {
+          "day": "Mardi",
+          "courseCode": "LU2IN018",
+          "buildingCode": "ZAM",
+          "buildingName": "Tour Zamansky",
+          "room": "102",
+          "nextCourseCode": "LU2MA001",
+          "nextBuildingCode": "B2425",
+          "nextBuildingName": "Barre 24-25",
+          "nextRoom": "205"
+        }
+      },
+      "country": "France",
+      "status": "supported",
+      "timetableAdapter": "planned",
+      "calendarSource": "ENT Sorbonne Université",
+      "calendarInstructions": "L'import d'emploi du temps pour Sorbonne Université est actuellement planifié car les plannings nécessitent une authentification individuelle ENT (Sésame) par faculté.",
+      "calendarHelpUrl": "https://www.sorbonne-universite.fr",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": ["sorbonne-pierre-et-marie-curie"],
+      "dataPaths": ["universities/sorbonne/campus.json"]
     }
   ],
   "campuses": [
@@ -4137,6 +4244,338 @@
           "Kresge Building (Chan Public Health)",
           "Countway Library of Medicine"
         ]
+      }
+    },
+    {
+      "id": "sorbonne-pierre-et-marie-curie",
+      "universityId": "sorbonne",
+      "name": "Sorbonne Université Campus Pierre et Marie Curie",
+      "shortName": "Pierre et Marie Curie",
+      "campusName": "Campus Pierre et Marie Curie",
+      "city": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "hosts": ["sorbonne.gapwise.ca"],
+      "aliases": [
+        "Campus Pierre et Marie Curie",
+        "Jussieu",
+        "UPMC",
+        "Sciences et Ingénierie",
+        "Paris 5e"
+      ],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
+      },
+      "marketing": {
+        "campusName": "Campus Pierre et Marie Curie",
+        "headline": "Trouvez vos salles et cours à Jussieu.",
+        "description": "Explorez le campus des sciences et ingénierie de Sorbonne Université à Jussieu, avec ses tours, barres et accès piétons.",
+        "seoTitle": "Gapwise pour Sorbonne Université Campus Pierre et Marie Curie",
+        "seoDescription": "Planification de campus, recherche de bâtiments et itinéraires piétons à Jussieu.",
+        "stats": {
+          "buildings": 384,
+          "entrances": 103,
+          "pathSegments": 2421
+        },
+        "example": {
+          "day": "Mardi",
+          "courseCode": "LU2IN018",
+          "buildingCode": "ZAM",
+          "buildingName": "Tour Zamansky",
+          "room": "102",
+          "nextCourseCode": "LU2MA001",
+          "nextBuildingCode": "B2425",
+          "nextBuildingName": "Barre 24-25",
+          "nextRoom": "205"
+        },
+        "searchExamples": ["Tour Zamansky", "Atrium", "Barre 24-25"]
+      }
+    },
+    {
+      "id": "sorbonne-sorbonne",
+      "universityId": "sorbonne",
+      "name": "Sorbonne Université Campus Sorbonne",
+      "shortName": "Sorbonne historique",
+      "campusName": "Campus Sorbonne",
+      "city": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "hosts": [],
+      "aliases": [
+        "Campus Sorbonne",
+        "La Sorbonne",
+        "Quartier Latin",
+        "Faculté des Lettres",
+        "Paris 5e"
+      ],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "planned"
+      },
+      "marketing": {
+        "campusName": "Campus Sorbonne",
+        "headline": "La Sorbonne historique au cœur du Quartier latin.",
+        "description": "Repérez les amphithéâtres, la chapelle et les salles de cours de la Faculté des Lettres.",
+        "seoTitle": "Gapwise pour Sorbonne Université Campus Sorbonne",
+        "seoDescription": "Recherche de bâtiments et repérage de campus pour la Sorbonne historique.",
+        "stats": {
+          "buildings": 199,
+          "entrances": 0,
+          "pathSegments": 0
+        },
+        "example": {
+          "day": "Mercredi",
+          "courseCode": "LF1LI001",
+          "buildingCode": "RIC",
+          "buildingName": "Bâtiment Richelieu",
+          "room": "Amphi Richelieu",
+          "nextCourseCode": "LF1HI002",
+          "nextBuildingCode": "GUI",
+          "nextBuildingName": "Bâtiment Guizot",
+          "nextRoom": "Amphi Guizot"
+        },
+        "searchExamples": [
+          "Chapelle de la Sorbonne",
+          "Cour d'honneur",
+          "Bibliothèque de la Sorbonne"
+        ]
+      }
+    },
+    {
+      "id": "sorbonne-pitie-salpetriere",
+      "universityId": "sorbonne",
+      "name": "Sorbonne Université Campus Pitié-Salpêtrière",
+      "shortName": "Pitié-Salpêtrière",
+      "campusName": "Campus Pitié-Salpêtrière",
+      "city": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "hosts": [],
+      "aliases": [
+        "Campus Pitié-Salpêtrière",
+        "Faculté de Médecine",
+        "Hôpital Pitié-Salpêtrière",
+        "Paris 13e"
+      ],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "planned"
+      },
+      "marketing": {
+        "campusName": "Campus Pitié-Salpêtrière",
+        "headline": "Le campus de santé et médecine de la Pitié-Salpêtrière.",
+        "description": "Explorez les bâtiments d'enseignement et de recherche médicale du 13e arrondissement.",
+        "seoTitle": "Gapwise pour Sorbonne Université Campus Pitié-Salpêtrière",
+        "seoDescription": "Recherche de bâtiments et repérage de campus pour la Faculté de Santé Pitié-Salpêtrière.",
+        "stats": {
+          "buildings": 353,
+          "entrances": 0,
+          "pathSegments": 0
+        },
+        "example": {
+          "day": "Jeudi",
+          "courseCode": "MED101",
+          "buildingCode": "B105",
+          "buildingName": "Bâtiment 105",
+          "room": "101",
+          "nextCourseCode": "MED102",
+          "nextBuildingCode": "B105",
+          "nextBuildingName": "Bâtiment 105",
+          "nextRoom": "Amphi C"
+        },
+        "searchExamples": ["Bâtiment 105", "Amphithéâtre Lemoine", "Faculté de Santé"]
+      }
+    },
+    {
+      "id": "sorbonne-saint-antoine",
+      "universityId": "sorbonne",
+      "name": "Sorbonne Université Campus Saint-Antoine",
+      "shortName": "Saint-Antoine",
+      "campusName": "Campus Saint-Antoine",
+      "city": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "hosts": [],
+      "aliases": [
+        "Campus Saint-Antoine",
+        "Faculté de Médecine Saint-Antoine",
+        "Chaligny",
+        "Paris 12e"
+      ],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "planned"
+      },
+      "marketing": {
+        "campusName": "Campus Saint-Antoine",
+        "headline": "Site Saint-Antoine de la Faculté de Santé.",
+        "description": "Trouvez vos cours et salles de travaux dirigés rue de Chaligny.",
+        "seoTitle": "Gapwise pour Sorbonne Université Campus Saint-Antoine",
+        "seoDescription": "Recherche de bâtiments et repérage de campus pour le site Saint-Antoine.",
+        "stats": {
+          "buildings": 337,
+          "entrances": 0,
+          "pathSegments": 0
+        },
+        "example": {
+          "day": "Vendredi",
+          "courseCode": "SAN201",
+          "buildingCode": "STA",
+          "buildingName": "Site Saint-Antoine",
+          "room": "201",
+          "nextCourseCode": "SAN202",
+          "nextBuildingCode": "STA",
+          "nextBuildingName": "Site Saint-Antoine",
+          "nextRoom": "202"
+        },
+        "searchExamples": ["Rue de Chaligny", "Site Saint-Antoine", "Bibliothèque Saint-Antoine"]
+      }
+    },
+    {
+      "id": "sorbonne-cordeliers",
+      "universityId": "sorbonne",
+      "name": "Sorbonne Université Campus des Cordeliers",
+      "shortName": "Cordeliers",
+      "campusName": "Campus des Cordeliers",
+      "city": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "hosts": [],
+      "aliases": [
+        "Campus des Cordeliers",
+        "Couvent des Cordeliers",
+        "École de Médecine",
+        "Paris 6e"
+      ],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "planned"
+      },
+      "marketing": {
+        "campusName": "Campus des Cordeliers",
+        "headline": "Le cloître historique et centre de recherche des Cordeliers.",
+        "description": "Repérez les amphithéâtres et laboratoires rue de l'École-de-Médecine.",
+        "seoTitle": "Gapwise pour Sorbonne Université Campus des Cordeliers",
+        "seoDescription": "Recherche de bâtiments et repérage de campus pour le Campus des Cordeliers.",
+        "stats": {
+          "buildings": 148,
+          "entrances": 0,
+          "pathSegments": 0
+        },
+        "example": {
+          "day": "Lundi",
+          "courseCode": "RES301",
+          "buildingCode": "COR",
+          "buildingName": "Cloître des Cordeliers",
+          "room": "Amphi Farabeuf",
+          "nextCourseCode": "RES302",
+          "nextBuildingCode": "COR",
+          "nextBuildingName": "Cloître des Cordeliers",
+          "nextRoom": "Salle Bilski"
+        },
+        "searchExamples": ["Cloître des Cordeliers", "Amphithéâtre Farabeuf", "Centre de Recherche"]
+      }
+    },
+    {
+      "id": "sorbonne-clignancourt",
+      "universityId": "sorbonne",
+      "name": "Sorbonne Université Campus Clignancourt",
+      "shortName": "Clignancourt",
+      "campusName": "Campus Clignancourt",
+      "city": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "hosts": [],
+      "aliases": ["Campus Clignancourt", "Centre Clignancourt", "Faculté des Lettres", "Paris 18e"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "planned"
+      },
+      "marketing": {
+        "campusName": "Campus Clignancourt",
+        "headline": "Centre Clignancourt de la Faculté des Lettres.",
+        "description": "Localisez vos cours de licence, bibliothèques et espaces étudiants dans le 18e arrondissement.",
+        "seoTitle": "Gapwise pour Sorbonne Université Campus Clignancourt",
+        "seoDescription": "Recherche de bâtiments et repérage de campus pour le Campus Clignancourt.",
+        "stats": {
+          "buildings": 206,
+          "entrances": 0,
+          "pathSegments": 0
+        },
+        "example": {
+          "day": "Mardi",
+          "courseCode": "LET101",
+          "buildingCode": "CLI",
+          "buildingName": "Centre Clignancourt",
+          "room": "Amphi B",
+          "nextCourseCode": "LET102",
+          "nextBuildingCode": "CLI",
+          "nextBuildingName": "Centre Clignancourt",
+          "nextRoom": "Salle 302"
+        },
+        "searchExamples": ["Centre Clignancourt", "Amphithéâtre B", "Bibliothèque Clignancourt"]
+      }
+    },
+    {
+      "id": "sorbonne-malesherbes",
+      "universityId": "sorbonne",
+      "name": "Sorbonne Université Campus Malesherbes",
+      "shortName": "Malesherbes",
+      "campusName": "Campus Malesherbes",
+      "city": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "hosts": [],
+      "aliases": ["Campus Malesherbes", "Centre Malesherbes", "Boulevard Malesherbes", "Paris 17e"],
+      "status": "supported",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "planned"
+      },
+      "marketing": {
+        "campusName": "Campus Malesherbes",
+        "headline": "Centre Malesherbes de la Faculté des Lettres.",
+        "description": "Explorez les départements de langues et cultures étrangères boulevard Malesherbes.",
+        "seoTitle": "Gapwise pour Sorbonne Université Campus Malesherbes",
+        "seoDescription": "Recherche de bâtiments et repérage de campus pour le Campus Malesherbes.",
+        "stats": {
+          "buildings": 305,
+          "entrances": 0,
+          "pathSegments": 0
+        },
+        "example": {
+          "day": "Jeudi",
+          "courseCode": "ANG101",
+          "buildingCode": "MAL",
+          "buildingName": "Centre Malesherbes",
+          "room": "Amphi 1",
+          "nextCourseCode": "ANG102",
+          "nextBuildingCode": "MAL",
+          "nextBuildingName": "Centre Malesherbes",
+          "nextRoom": "Salle 112"
+        },
+        "searchExamples": ["Centre Malesherbes", "Amphithéâtre 1", "Bibliothèque Malesherbes"]
       }
     }
   ]

@@ -985,6 +985,62 @@
   gap: 0.4rem;
 }
 
+.global-home-university-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.global-home-kind-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  border: 1px solid var(--global-home-line);
+  border-radius: 999px;
+  padding: 0.12rem 0.42rem;
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+  background: color-mix(in oklab, var(--color-muted) 35%, transparent);
+}
+
+.global-home-kind-badge.is-campus {
+  color: color-mix(in oklab, var(--university-accent) 55%, var(--color-foreground));
+  border-color: color-mix(in oklab, var(--university-accent) 28%, var(--color-border));
+  background: color-mix(in oklab, var(--university-accent) 6%, transparent);
+}
+
+.global-home-kind-badge svg {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+.global-home-status-badge {
+  margin-left: auto;
+  border: 1px solid var(--global-home-line);
+  border-radius: 999px;
+  padding: 0.12rem 0.42rem;
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+}
+
+.global-home-status-badge[data-status="supported"] {
+  color: color-mix(in oklab, #15956f 75%, var(--color-foreground));
+  border-color: color-mix(in oklab, #15956f 25%, var(--color-border));
+}
+
+.global-home-status-badge[data-status="partial"] {
+  color: color-mix(in oklab, #eab308 85%, var(--color-foreground));
+  border-color: color-mix(in oklab, #eab308 30%, var(--color-border));
+}
+
 .global-home-university-short {
   width: fit-content;
   color: color-mix(in oklab, var(--university-accent) 35%, var(--color-foreground));

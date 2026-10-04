@@ -33,7 +33,7 @@ export const PUBLIC_FEATURE_PAGES = {
     title: "A campus planner built around the time between classes.",
     seoTitle: "About Gapwise — Multi-University Student Planning",
     description:
-      "See how Gapwise connects university timetables, gap planning, and source-backed campus context in one focused student-built product across North America.",
+      "See how Gapwise connects university timetables, gap planning, and source-backed campus context in one focused student-built product.",
     lead: "Gapwise is built for the part of university life a timetable leaves blank: what to do next, how much time you actually have, and where you need to go.",
     sections: [
       {
@@ -52,16 +52,16 @@ export const PUBLIC_FEATURE_PAGES = {
       },
       {
         title: "Made for multiple universities",
-        body: "Timetable identity and source-backed building maps are supported for fourteen universities. Planned editions across Canada and the United States show capabilities honestly without implying data or routing that does not exist.",
+        body: "Timetable identity and source-backed building maps are supported across multiple universities. Planned editions show capabilities honestly without implying data or routing that does not exist.",
       },
     ],
   },
   universities: {
     path: "/universities",
     eyebrow: "University editions",
-    title: "Campus editions across North America.",
+    title: "Campus editions worldwide.",
     seoTitle: "Gapwise University & Campus Directory",
-    description: `Explore ${universityCount} Gapwise university editions and ${campusEditionCount} campus records across Canada and the United States, with supported, partial, and planned capabilities clearly identified.`,
+    description: `Explore ${universityCount} Gapwise university editions and ${campusEditionCount} campus records, with supported, partial, and planned capabilities clearly identified.`,
     lead: "Search every Gapwise university and campus by official name, abbreviation, location, alias, or hostname.",
     sections: [
       {
@@ -130,7 +130,7 @@ export const PUBLIC_FEATURE_PAGES = {
     title: "Explore campus with a map built around your day.",
     seoTitle: "University Campus Map — Gapwise",
     description:
-      "Explore source-backed campus building maps across supported North American university editions, with pedestrian routes and schedule context where supported.",
+      "Explore source-backed campus building maps across supported university editions, with pedestrian routes and schedule context where supported.",
     lead: "The Gapwise campus explorer connects campus buildings and schedule context. Entrance, place, and pedestrian-route coverage varies by campus.",
     sections: [
       {

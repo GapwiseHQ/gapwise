@@ -16,43 +16,19 @@ import {
 import { useMemo, useState, type CSSProperties } from "react";
 import {
   CAMPUSES,
-  normalizeUniversitySearch,
   supportedUniversities,
   universityDirectoryEntries,
-  type University,
 } from "@/universities/registry";
+import { searchUniversityDestinations, type UniversitySearchResult } from "@/universities/search";
 import "./global-marketing-home.css";
 
 const FEATURED_UNIVERSITY_IDS = ["uoft", "waterloo", "mcgill", "ubc", "mcmaster", "queens"];
 
-type UniversityDestination = {
-  id: string;
-  university: University;
-  shortName: string;
-  name: string;
-  scope: string;
-  href: string;
-  host: string;
-  searchText: string;
-  campusResult: boolean;
-};
-
 const SUPPORTED_UNIVERSITIES = supportedUniversities();
 const IMPLEMENTED_CAMPUS_COUNT = CAMPUSES.filter((campus) => campus.status === "supported").length;
 
-const ALL_DESTINATIONS: UniversityDestination[] = universityDirectoryEntries().map((entry) => ({
-  id: entry.id,
-  university: entry.university,
-  shortName: entry.shortName,
-  name: entry.name,
-  scope: `${entry.scope} · ${entry.status === "planned" ? "Planned" : entry.status === "partial" ? "Partial" : "Supported"}`,
-  href: entry.href,
-  host: entry.host,
-  searchText: entry.searchText,
-  campusResult: entry.kind === "campus",
-}));
-
-const UNIVERSITY_DESTINATIONS = ALL_DESTINATIONS.filter((destination) => !destination.campusResult);
+const ALL_DESTINATIONS = universityDirectoryEntries();
+const UNIVERSITY_DESTINATIONS = ALL_DESTINATIONS.filter((entry) => entry.kind === "university");
 
 const exampleWeek = [
   { day: "MON", course: "CSC108H5", room: "MN 1210", time: "09:00", offset: "12%" },
@@ -215,19 +191,18 @@ function ProductPreview() {
 
 export function GlobalMarketingHome() {
   const [query, setQuery] = useState("");
-  const normalizedQuery = normalizeUniversitySearch(query);
 
   const visibleDestinations = useMemo(() => {
-    if (normalizedQuery) {
-      return ALL_DESTINATIONS.filter((destination) =>
-        destination.searchText.includes(normalizedQuery),
-      );
+    if (query.trim()) {
+      return searchUniversityDestinations(query);
     }
     const featured = FEATURED_UNIVERSITY_IDS.map((id) =>
       UNIVERSITY_DESTINATIONS.find((destination) => destination.id === id),
-    ).filter((destination): destination is UniversityDestination => Boolean(destination));
+    ).filter((destination): destination is (typeof UNIVERSITY_DESTINATIONS)[number] =>
+      Boolean(destination),
+    );
     return featured.length ? featured : UNIVERSITY_DESTINATIONS.slice(0, 6);
-  }, [normalizedQuery]);
+  }, [query]);
 
   return (
     <div className="global-home">
@@ -420,7 +395,7 @@ export function GlobalMarketingHome() {
             <h2 id="global-universities-title">Built for your campus.</h2>
             <p className="global-home-count">
               {SUPPORTED_UNIVERSITIES.length} timetable-ready universities · campus coverage across
-              Canada and the U.S.
+              Canada, the U.S., and Europe.
             </p>
           </div>
           <a href="/universities" className="global-home-view-all">
@@ -445,18 +420,43 @@ export function GlobalMarketingHome() {
         <div className="global-home-university-grid" aria-live="polite">
           {visibleDestinations.map((destination) => (
             <a
-              key={destination.id}
+              key={`${destination.kind}-${destination.id}`}
               href={destination.href}
               className="global-home-university-card"
               style={{ "--university-accent": destination.university.accentColor } as CSSProperties}
+              aria-label={`${destination.shortName}${destination.kind === "campus" ? " · Campus edition" : ""} ${destination.name}`}
             >
               <div>
-                <span className="global-home-university-short">
-                  {destination.shortName}
-                  {destination.campusResult ? " · Campus edition" : ""}
-                </span>
+                <div className="global-home-university-top">
+                  <span className="global-home-university-short">{destination.shortName}</span>
+                  <span
+                    className={`global-home-kind-badge ${
+                      destination.kind === "campus" ? "is-campus" : "is-institution"
+                    }`}
+                  >
+                    {destination.kind === "campus" ? (
+                      <>
+                        <MapPin aria-hidden="true" />
+                        Campus
+                      </>
+                    ) : (
+                      "Institution"
+                    )}
+                  </span>
+                  <em className="global-home-status-badge" data-status={destination.status}>
+                    {destination.status === "supported"
+                      ? "Supported"
+                      : destination.status === "partial"
+                        ? "Partial"
+                        : "Planned"}
+                  </em>
+                </div>
                 <strong>{destination.name}</strong>
-                <small>{destination.scope}</small>
+                <small>
+                  {destination.kind === "campus"
+                    ? `${destination.university.name} · ${destination.location}`
+                    : `${destination.location} · ${destination.scope}`}
+                </small>
               </div>
               <ChevronRight aria-hidden="true" />
               <span className="global-home-university-host">{destination.host}</span>

@@ -127,7 +127,7 @@ const pages: Page[] = [
     path: "/",
     title: "Gapwise — University Timetable & Campus Navigation",
     description:
-      "Explore Gapwise university and campus editions across North America, with honest support status for timetables, campus data, search, and routing.",
+      "Explore Gapwise university and campus editions worldwide, with honest support status for timetables, campus data, search, and routing.",
     heading: "Make the time between classes count.",
     detail: `Explore ${manifest.universities.length} university editions and ${manifest.campuses.length} campus records, including ${supportedUniversities.length} currently supported universities and ${supportedCampuses.length} supported campuses.`,
     sections: [
@@ -278,10 +278,7 @@ function schema(page: Page, context?: Context) {
           ...(context.buildingSupported ? ["Source-backed campus search"] : []),
           ...(context.routable ? ["Source-backed campus routing"] : []),
         ]
-      : [
-          "University editions across Canada and the United States",
-          "Published capability status for every campus",
-        ];
+      : ["University editions worldwide", "Published capability status for every campus"];
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -291,7 +288,7 @@ function schema(page: Page, context?: Context) {
         name: "Gapwise",
         url: `${SITE_ORIGIN}/`,
         description:
-          "Gapwise is a university timetable, campus navigation, and student-planning platform with editions across North America.",
+          "Gapwise is a university timetable, campus navigation, and student-planning platform with editions worldwide.",
         logo: { "@type": "ImageObject", url: `${SITE_ORIGIN}/icon-512.png` },
         sameAs: ["https://github.com/GapwiseHQ"],
       },
@@ -316,7 +313,7 @@ function schema(page: Page, context?: Context) {
           "@type": "Audience",
           audienceType: context
             ? `University students at ${context.name}`
-            : "University students across North America",
+            : "University students worldwide",
         },
         featureList: features,
       },

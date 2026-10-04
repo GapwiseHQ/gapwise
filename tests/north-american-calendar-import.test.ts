@@ -63,12 +63,15 @@ describe("North American calendar import", () => {
     },
   );
 
-  test("every university in the directory now has a registered production adapter", () => {
+  test("every university in the directory now has a registered production adapter or honest planned status", () => {
     const universities = supportedUniversities();
-    expect(universities).toHaveLength(27);
+    expect(universities.length).toBeGreaterThanOrEqual(28);
     for (const university of universities) {
-      expect(university.timetableAdapter).not.toBe("planned");
-      expect(timetableAdapters[university.timetableAdapter]).toBeDefined();
+      if (university.timetableAdapter === "planned") {
+        expect(university.id).toBe("sorbonne");
+      } else {
+        expect(timetableAdapters[university.timetableAdapter]).toBeDefined();
+      }
     }
   });
 

@@ -17,7 +17,7 @@ test("global homepage presents the multi-university Gapwise ecosystem", async ({
     page.getByRole("heading", { name: "Make every gap on campus count." }),
   ).toBeVisible();
   await expect(page.locator(".global-home-facts")).toContainText(
-    "27universities with timetable import",
+    `${manifest.universities.length}universities with timetable import`,
   );
   await expect(page.getByRole("link", { name: /Choose your university/ })).toBeVisible();
   await expect(page.getByText("For University of Toronto", { exact: true })).toHaveCount(0);
@@ -345,9 +345,13 @@ test("directory searches Canada and the U.S. without horizontal overflow", async
   );
   const search = page.getByPlaceholder("Search university, campus, or city");
   await search.fill("Pittsburgh");
-  await expect(page.getByRole("link", { name: /Carnegie Mellon University/ })).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: /Carnegie Mellon University/ }).first(),
+  ).toBeVisible();
+  await search.fill("sorbonne");
+  await expect(page.getByRole("link", { name: /Sorbonne Université/ }).first()).toBeVisible();
   await search.fill("ubco.gapwise.ca");
-  await expect(page.getByRole("link", { name: /UBC Okanagan/ })).toBeVisible();
+  await expect(page.getByRole("link", { name: /UBC Okanagan/ }).first()).toBeVisible();
   const widths = await page.evaluate(() => ({
     document: document.documentElement.scrollWidth,
     viewport: window.innerWidth,
