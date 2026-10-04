@@ -129,4 +129,36 @@ describe("Gapwise marketing system", () => {
     expect(landing).toContain("https://data.gapwise.ca");
     expect(landing).toContain("https://status.gapwise.ca");
   });
+
+  test("enforces clean Harvard-style photo-only hero invariant across university editions", async () => {
+    const universityHome = await readFile("src/components/UniversityMarketingHome.tsx", "utf8");
+    const css = await readFile("src/components/university-marketing-home.css", "utf8");
+    const visuals = await readFile("src/universities/campus-visuals.ts", "utf8");
+
+    // Must render pure campus photography
+    expect(universityHome).toContain("<CampusPhotography");
+    expect(universityHome).toContain('className="university-campus-photo"');
+    expect(universityHome).toContain("Photo: {visual.credit} · {visual.license}");
+
+    // Must NOT render overlaid product windows, timetable previews, mini maps, or route diagrams
+    const forbiddenPatterns = [
+      "university-product-window",
+      "university-product-schedule",
+      "university-product-route",
+      "university-planned-window",
+      "university-home-visual-panel",
+      "university-route-map",
+      "university-route-building",
+    ];
+
+    for (const pattern of forbiddenPatterns) {
+      expect(universityHome).not.toContain(pattern);
+      expect(css).not.toContain(`.${pattern}`);
+    }
+
+    // Key universities have verified photos in campus-visuals
+    for (const id of ["queens", "tmu", "harvard", "uoft", "york", "mcmaster", "carleton", "sorbonne"]) {
+      expect(visuals).toContain(`${id}:`);
+    }
+  });
 });
