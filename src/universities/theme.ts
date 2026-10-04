@@ -15,15 +15,19 @@ export function applyUniversityTheme(
   const accent = accentForSite(site, university);
   if (!accent || site?.role === "global") return;
 
-  const primary = `color-mix(in oklab, ${accent} 76%, black)`;
+  const interactive = `light-dark(color-mix(in oklab, ${accent} 64%, black), color-mix(in oklab, ${accent} 72%, white))`;
+  const interactiveForeground = "light-dark(white, #0d1117)";
   const properties = {
-    "--accent": accent,
-    "--primary": primary,
-    "--ring": accent,
-    "--hero-accent": accent,
-    "--sidebar-primary": primary,
-    "--sidebar-ring": accent,
-    "--landing-chrome-accent": accent,
+    "--accent": interactive,
+    "--accent-foreground": interactiveForeground,
+    "--primary": interactive,
+    "--primary-foreground": interactiveForeground,
+    "--ring": interactive,
+    "--hero-accent": interactive,
+    "--sidebar-primary": interactive,
+    "--sidebar-primary-foreground": interactiveForeground,
+    "--sidebar-ring": interactive,
+    "--landing-chrome-accent": interactive,
   };
 
   for (const [property, value] of Object.entries(properties)) {

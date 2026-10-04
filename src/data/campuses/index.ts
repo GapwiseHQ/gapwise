@@ -452,30 +452,11 @@ const CAMPUS_FALLBACK_BOUNDS: Record<string, [[number, number], [number, number]
 };
 
 export const CAMPUS_LABELS: Record<string, string> = {
-  utm: "University of Toronto Mississauga",
-  utsg: "University of Toronto St. George",
-  utsc: "University of Toronto Scarborough",
-  ...Object.fromEntries(
-    manifest.universities.flatMap((university) =>
-      university.id === "uoft"
-        ? []
-        : university.campuses.map((campus) => [campus, university.name]),
-    ),
-  ),
   ...Object.fromEntries(manifest.campuses.map((campus) => [campus.id, campus.name])),
 };
 
 export const CAMPUS_SHORT_LABELS: Record<string, string> = {
-  utm: "UTM",
-  utsg: "UTSG",
-  utsc: "UTSC",
-  ...Object.fromEntries(
-    manifest.universities.flatMap((university) =>
-      university.id === "uoft"
-        ? []
-        : university.campuses.map((campus) => [campus, university.shortName]),
-    ),
-  ),
+  ...Object.fromEntries(manifest.campuses.map((campus) => [campus.id, campus.shortName])),
 };
 
 const SUPPORTED_CAMPUS_IDS = new Set<string>(

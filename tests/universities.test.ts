@@ -1,6 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import { existsSync, readFileSync } from "node:fs";
 import {
+  CAMPUS_SHORT_LABELS,
   campusBuildingEntrances,
   campusBuildingConfigurations,
   campusFootprintCollection,
@@ -23,6 +24,7 @@ import {
   SITES,
   UNIVERSITIES,
   campusForHostname,
+  campusesForUniversity,
   siteForHostname,
   universityById,
   universityForHostname,
@@ -182,6 +184,52 @@ describe("university registry", () => {
         { ...uoft, id: "Invalid ID", hosts: ["gapwise.ca", "gapwise.ca"], defaultCampus: "other" },
       ]).length,
     ).toBeGreaterThanOrEqual(3);
+  });
+
+  test("uses distinct campus metadata for every campus selector label", () => {
+    for (const university of UNIVERSITIES) {
+      const campusIds = campusesForUniversity(university);
+      const labels = campusIds.map((campusId) => CAMPUS_SHORT_LABELS[campusId]);
+
+      expect(campusIds).toEqual([...new Set(university.campuses)]);
+      expect(labels.every(Boolean)).toBe(true);
+      expect(new Set(labels.map((label) => label!.toLowerCase())).size).toBe(labels.length);
+      for (const campusId of campusIds) {
+        expect(CAMPUS_SHORT_LABELS[campusId]).toBe(
+          CAMPUSES.find((campus) => campus.id === campusId)?.shortName,
+        );
+      }
+    }
+
+    expect(["utm", "utsg", "utsc"].map((id) => CAMPUS_SHORT_LABELS[id])).toEqual([
+      "UTM",
+      "UTSG",
+      "UTSC",
+    ]);
+    expect(
+      ["harvard-cambridge", "harvard-allston", "harvard-longwood"].map(
+        (id) => CAMPUS_SHORT_LABELS[id],
+      ),
+    ).toEqual(["Harvard Cambridge", "Harvard Allston", "Harvard Longwood"]);
+    expect(["mit-cambridge", "mit-lincoln-lab"].map((id) => CAMPUS_SHORT_LABELS[id])).toEqual([
+      "MIT Cambridge",
+      "Lincoln Lab",
+    ]);
+    expect(["keele", "glendon", "markham"].map((id) => CAMPUS_SHORT_LABELS[id])).toEqual([
+      "Keele",
+      "Glendon",
+      "Markham",
+    ]);
+  });
+
+  test("deduplicates campus IDs before selectors decide whether to render tabs", () => {
+    const harvard = universityById("harvard")!;
+    expect(
+      campusesForUniversity({
+        ...harvard,
+        campuses: ["harvard-cambridge", "harvard-cambridge"],
+      }),
+    ).toEqual(["harvard-cambridge"]);
   });
 
   test("every university edition resolves owned, attributed campus photography", () => {

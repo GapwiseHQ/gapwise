@@ -22,6 +22,7 @@ import {
 import {
   activeCampus,
   activeUniversity,
+  campusesForUniversity,
   universityByCampus,
   universityById,
 } from "@/universities/registry";
@@ -68,7 +69,10 @@ export function CampusExplorer({
       (meetingUniId ? (universityById(meetingUniId) ?? null) : null),
     [initialCampusCandidate, meetingUniId],
   );
-  const campusIds = useMemo(() => (university?.campuses ?? []) as GapwiseCampusId[], [university]);
+  const campusIds = useMemo(
+    () => (university ? campusesForUniversity(university) : []) as GapwiseCampusId[],
+    [university],
+  );
   const defaultCampus = university?.defaultCampus as GapwiseCampusId | undefined;
   const urlCampus = campusIds.includes(selectedCampusId as GapwiseCampusId)
     ? (selectedCampusId as GapwiseCampusId)
