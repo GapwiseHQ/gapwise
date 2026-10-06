@@ -19,6 +19,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { CampusSelector } from "@/components/CampusSelector";
 import { sanitizeUserPreferences, type UserPreferences } from "./preferences";
 import { activeUniversity, campusesForUniversity } from "@/universities/registry";
 
@@ -171,26 +172,14 @@ export function ResidenceSettings({
         {!isSingleCampus ? (
           <fieldset>
             <legend className="text-sm font-medium">Main campus</legend>
-            <div
-              className="mt-2 grid gap-2"
-              style={{ gridTemplateColumns: `repeat(${campusIds.length || 1}, minmax(0, 1fr))` }}
-            >
-              {campusIds.map((campus) => (
-                <button
-                  key={campus}
-                  type="button"
-                  aria-pressed={preferences.mainCampus === campus}
-                  onClick={() => selectMainCampus(campus)}
-                  className={`min-h-10 rounded-lg border px-3 font-mono text-xs font-bold tracking-[0.08em] transition-colors ${
-                    preferences.mainCampus === campus
-                      ? "border-accent/60 bg-accent/10 text-foreground"
-                      : "border-border bg-card/80 text-muted-foreground hover:bg-muted/60"
-                  }`}
-                >
-                  {CAMPUS_SHORT_LABELS[campus] ?? campus}
-                </button>
-              ))}
-            </div>
+            <CampusSelector
+              campusIds={campusIds}
+              activeCampusId={preferences.mainCampus as GapwiseCampusId}
+              onSelectCampus={(campus) => selectMainCampus(campus)}
+              variant="adaptive-bar"
+              className="mt-2"
+              ariaLabel="Main campus"
+            />
           </fieldset>
         ) : null}
 

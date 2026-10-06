@@ -1,6 +1,7 @@
 import { Search, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { CampusMap, type CampusMapProps, type MapFocusPadding } from "./CampusMap";
+import { CampusSelector } from "./CampusSelector";
 import {
   getBuildingExplorerDetails,
   searchCampusBuildings,
@@ -268,25 +269,16 @@ export function CampusExplorer({
           Gapwise could not infer a campus from this schedule. Select the campus you want to
           explore; unknown locations will stay unknown.
         </p>
-        <div
-          className="mt-5 grid w-full max-w-sm gap-2"
-          style={{ gridTemplateColumns: `repeat(${campusIds.length || 1}, minmax(0, 1fr))` }}
-          aria-label="Campus map"
-        >
-          {campusIds.map((campus) => (
-            <button
-              key={campus}
-              type="button"
-              onClick={() => {
-                setCampusOverride(campus);
-                onSelectCampus(campus);
-              }}
-              className="button-secondary min-h-11 px-3 font-mono text-xs font-bold tracking-[0.08em]"
-            >
-              {CAMPUS_SHORT_LABELS[campus] ?? campus}
-            </button>
-          ))}
-        </div>
+        <CampusSelector
+          campusIds={campusIds}
+          activeCampusId={activeCampusId}
+          onSelectCampus={(campus) => {
+            setCampusOverride(campus);
+            onSelectCampus(campus);
+          }}
+          variant="cards-grid"
+          className="mt-5"
+        />
       </section>
     );
   }
@@ -400,32 +392,18 @@ export function CampusExplorer({
         className="campus-explorer-search absolute left-3 top-3 z-20 w-[min(22rem,calc(100%-5.75rem))]"
       >
         {campusIds.length > 1 ? (
-          <div
-            className="mb-2 grid gap-1 rounded-xl border border-border bg-popover/96 p-1 shadow-lg backdrop-blur"
-            style={{ gridTemplateColumns: `repeat(${campusIds.length}, minmax(0, 1fr))` }}
-            aria-label="Campus map"
-          >
-            {campusIds.map((campus) => (
-              <button
-                key={campus}
-                type="button"
-                onClick={() => {
-                  setCampusOverride(campus);
-                  setMapDetailMeetingId(null);
-                  setQuery("");
-                  onSelectCampus(campus);
-                }}
-                aria-pressed={activeCampusId === campus}
-                className={`min-h-9 rounded-lg px-2 font-mono text-[0.7rem] font-bold tracking-[0.08em] transition-colors ${
-                  activeCampusId === campus
-                    ? "bg-accent text-accent-foreground"
-                    : "text-muted-foreground hover:bg-secondary hover:text-foreground"
-                }`}
-              >
-                {CAMPUS_SHORT_LABELS[campus] ?? campus}
-              </button>
-            ))}
-          </div>
+          <CampusSelector
+            campusIds={campusIds}
+            activeCampusId={activeCampusId}
+            onSelectCampus={(campus) => {
+              setCampusOverride(campus);
+              setMapDetailMeetingId(null);
+              setQuery("");
+              onSelectCampus(campus);
+            }}
+            variant="adaptive-bar"
+            className="mb-2"
+          />
         ) : null}
         <label htmlFor="campus-building-search" className="sr-only">
           Search {CAMPUS_SHORT_LABELS[activeCampusId]} buildings
