@@ -17,6 +17,7 @@
   width: min(100%, 78rem);
   margin-inline: auto;
   color: var(--color-foreground);
+  overflow-x: clip;
 }
 
 .global-home a,
@@ -59,17 +60,21 @@
 
 .global-home-kicker {
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
   border: 1px solid var(--global-home-line);
   background: color-mix(in oklab, var(--color-muted) 45%, transparent);
-  padding: 0.4rem 0.65rem;
+  padding: 0.38rem 0.62rem;
+  border-radius: 0.5rem;
   font-family: var(--font-mono);
   font-size: 0.64rem;
   font-weight: 600;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--global-home-subtle-text);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .global-home-kicker span {
@@ -88,6 +93,8 @@
   font-weight: 540;
   letter-spacing: -0.07em;
   line-height: 0.91;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .global-home-hero h1 span {
@@ -1352,7 +1359,20 @@
   }
 
   .global-home-hero {
-    padding-top: clamp(2.75rem, 10vw, 4rem);
+    padding-top: clamp(2rem, 8vw, 3.5rem);
+  }
+
+  .global-home-kicker {
+    font-size: 0.58rem;
+    letter-spacing: 0.07em;
+    padding: 0.32rem 0.5rem;
+  }
+
+  .global-home-hero h1 {
+    font-size: clamp(2rem, 9.5vw, 3.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    max-width: 100%;
   }
 
   .global-home-hero-actions {
@@ -1464,7 +1484,12 @@
 
 @media (max-width: 390px) {
   .global-home-hero h1 {
-    font-size: clamp(2.8rem, 15vw, 4rem);
+    font-size: clamp(1.8rem, 8.8vw, 2.35rem);
+  }
+
+  .global-home-kicker {
+    font-size: 0.52rem;
+    letter-spacing: 0.05em;
   }
 
   .global-home-window-day-header {

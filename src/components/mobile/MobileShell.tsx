@@ -1,6 +1,7 @@
 import { CalendarClock, CalendarRange, LayoutGrid, MapPinned, Menu, Search } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
+import { activeUniversity } from "@/universities/registry";
 import "./mobile-integrated.css";
 
 export type MobileTab = "today" | "timetable" | "route" | "gaps";
@@ -52,21 +53,27 @@ export function MobileShell({
 }) {
   const [routeTargetId, setRouteTargetId] = useState<string | null>(null);
   const routeTargetContext = useMemo(() => ({ routeTargetId, setRouteTargetId }), [routeTargetId]);
+  const university = activeUniversity();
 
   return (
     <MobileRouteTargetContext.Provider value={routeTargetContext}>
       <div className="app-shell mobile-integrated-app flex min-h-[100dvh] flex-col bg-background text-foreground">
         <header className="mobile-topbar sticky top-0 z-30 border-b border-border">
-          <div className="mx-auto flex min-h-[3.5rem] w-full max-w-[46rem] items-center justify-between gap-3 px-4 pt-[env(safe-area-inset-top)]">
-            <div className="flex min-w-0 items-center gap-2.5">
-              <span className="brand-mark-shell h-7 w-7">
+          <div className="mx-auto flex min-h-[3.5rem] w-full max-w-[46rem] items-center justify-between gap-2 px-3 sm:px-4 pt-[env(safe-area-inset-top)]">
+            <div className="flex min-w-0 items-center gap-2">
+              <span className="brand-mark-shell h-7 w-7 shrink-0">
                 <img src="/logo-mark.svg" alt="" aria-hidden="true" />
               </span>
-              <p className="truncate font-display text-[0.95rem] font-semibold tracking-[-0.035em]">
-                Gapwise
+              <p className="flex items-center gap-1.5 truncate font-display text-[0.95rem] font-semibold tracking-[-0.035em]">
+                <span>Gapwise</span>
+                {university?.shortName ? (
+                  <span className="brand-scope-pill inline-flex max-w-[5.5rem] truncate text-[0.6rem] font-mono font-bold tracking-[0.02em] px-1.5 py-0.5 rounded border border-border/80 bg-secondary/80 text-muted-foreground">
+                    {university.shortName}
+                  </span>
+                ) : null}
               </p>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex shrink-0 items-center gap-2">
               <button
                 type="button"
                 onClick={onOpenSearch}
@@ -75,7 +82,7 @@ export function MobileShell({
               >
                 <Search className="h-4 w-4" aria-hidden="true" />
               </button>
-              <p className="truncate text-xs font-semibold text-muted-foreground">
+              <p className="hidden xs:inline-block max-w-[6rem] truncate text-xs font-semibold text-muted-foreground sm:max-w-none">
                 {PAGE_LABEL[tab]}
               </p>
             </div>

@@ -127,12 +127,13 @@
 
 .mobile-kicker {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.45rem;
   color: var(--color-muted-foreground);
   font-size: 0.66rem;
   font-weight: 700;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.09em;
   line-height: 1.2;
   text-transform: uppercase;
 }
