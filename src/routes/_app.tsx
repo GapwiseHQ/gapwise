@@ -639,7 +639,7 @@ function AppLayout() {
               <p className="flex items-center gap-1.5 sm:gap-2 truncate font-display text-sm sm:text-base font-semibold tracking-[-0.035em]">
                 <span>Gapwise</span>
                 {university?.shortName ? (
-                  <span className="brand-scope-pill inline-flex max-w-[6.5rem] sm:max-w-none truncate text-[0.65rem] sm:text-xs">
+                  <span className="brand-scope-pill hidden min-[480px]:inline-flex max-w-[6.5rem] sm:max-w-none truncate text-[0.65rem] sm:text-xs">
                     {university.shortName}
                   </span>
                 ) : null}

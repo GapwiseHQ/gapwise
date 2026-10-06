@@ -54,16 +54,9 @@ export function CampusSelector({
 
   // Cards grid variant: used in fallback screens or full selection states
   if (variant === "cards-grid") {
-    const gridCols =
-      campusIds.length === 1
-        ? "grid-cols-1"
-        : campusIds.length === 2
-          ? "grid-cols-1 sm:grid-cols-2"
-          : "grid-cols-1 sm:grid-cols-2";
-
     return (
       <div
-        className={`grid w-full max-w-xl gap-2.5 ${gridCols} ${className}`}
+        className={`flex flex-wrap items-center justify-center gap-2 max-w-xl ${className}`}
         role="group"
         aria-label={ariaLabel}
       >
@@ -78,26 +71,14 @@ export function CampusSelector({
               type="button"
               onClick={() => onSelectCampus(campus)}
               aria-pressed={isSelected}
-              className={`group flex min-h-13 items-center justify-between rounded-xl border p-3 text-left transition-all ${
+              title={fullLabel !== shortLabel ? fullLabel : undefined}
+              className={`button-secondary min-h-11 px-3.5 py-2 font-mono text-xs font-bold tracking-[0.06em] transition-colors ${
                 isSelected
-                  ? "border-accent bg-accent/10 shadow-xs"
-                  : "border-border/80 bg-card/60 hover:border-accent/50 hover:bg-muted/40"
+                  ? "bg-accent text-accent-foreground border-accent shadow-xs"
+                  : ""
               }`}
             >
-              <div className="flex min-w-0 flex-1 flex-col gap-0.5 pr-2">
-                <span className="truncate font-mono text-xs font-bold tracking-[0.04em] text-foreground group-hover:text-accent">
-                  {shortLabel}
-                </span>
-                <span className="truncate text-[11px] text-muted-foreground">{fullLabel}</span>
-              </div>
-              <ArrowRight
-                className={`h-4 w-4 shrink-0 transition-transform ${
-                  isSelected
-                    ? "text-accent translate-x-0.5"
-                    : "text-muted-foreground group-hover:translate-x-0.5 group-hover:text-accent"
-                }`}
-                aria-hidden="true"
-              />
+              {shortLabel}
             </button>
           );
         })}
@@ -110,11 +91,11 @@ export function CampusSelector({
   return (
     <div
       className={`relative flex items-center gap-1 rounded-xl border border-border bg-popover/96 p-1 shadow-lg backdrop-blur ${className}`}
-      role="group"
-      aria-label={ariaLabel}
     >
       <div
         ref={trackRef}
+        role="group"
+        aria-label={ariaLabel}
         className="flex min-w-0 flex-1 items-center gap-1 overflow-x-auto no-scrollbar scroll-smooth px-0.5 py-0.5"
       >
         {campusIds.map((campus) => {
