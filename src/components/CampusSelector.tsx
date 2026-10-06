@@ -56,7 +56,7 @@ export function CampusSelector({
   if (variant === "cards-grid") {
     return (
       <div
-        className={`flex flex-wrap items-center justify-center gap-2 max-w-xl ${className}`}
+        className={`flex flex-wrap items-center justify-center gap-2 w-fit max-w-xl ${className}`}
         role="group"
         aria-label={ariaLabel}
       >
@@ -88,7 +88,7 @@ export function CampusSelector({
 
   return (
     <div
-      className={`relative flex items-center gap-1 rounded-xl border border-border bg-popover/96 p-1 shadow-lg backdrop-blur ${className}`}
+      className={`relative flex w-fit max-w-full items-center gap-1 rounded-xl border border-border bg-popover/96 p-1 shadow-lg backdrop-blur ${className}`}
     >
       <div
         ref={trackRef}
