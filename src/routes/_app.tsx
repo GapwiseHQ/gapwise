@@ -626,26 +626,28 @@ function AppLayout() {
         className="app-nav desktop-app-header sticky top-0 z-30 border-b"
         data-scrolled={isScrolled ? "true" : "false"}
       >
-        <div className="mx-auto flex min-h-14 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6">
+        <div className="mx-auto flex min-h-14 max-w-7xl items-center justify-between gap-2 sm:gap-3 px-3 sm:px-6">
           <Link
             to="/"
             aria-label="Gapwise home"
-            className="brand-lockup group flex min-w-0 items-center gap-3"
+            className="brand-lockup group flex min-w-0 items-center gap-2 sm:gap-3"
           >
-            <span className="brand-mark-shell">
+            <span className="brand-mark-shell shrink-0">
               <img src="/logo-mark.svg" alt="" aria-hidden="true" />
             </span>
             <div className="min-w-0">
-              <p className="flex items-center gap-2 truncate font-display text-base font-semibold tracking-[-0.035em]">
-                Gapwise{" "}
-                <span className="brand-scope-pill hidden min-[480px]:inline-flex">
-                  {university?.shortName}
-                </span>
+              <p className="flex items-center gap-1.5 sm:gap-2 truncate font-display text-sm sm:text-base font-semibold tracking-[-0.035em]">
+                <span>Gapwise</span>
+                {university?.shortName ? (
+                  <span className="brand-scope-pill inline-flex max-w-[6.5rem] sm:max-w-none truncate text-[0.65rem] sm:text-xs">
+                    {university.shortName}
+                  </span>
+                ) : null}
               </p>
             </div>
           </Link>
 
-          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
+          <div className="flex shrink-0 items-center gap-1 sm:gap-2">
             {isEcosystemHome ? (
               <>
                 <a
@@ -673,7 +675,7 @@ function AppLayout() {
                 <button
                   type="button"
                   onClick={() => setSearchOpen(true)}
-                  className="button-secondary inline-flex h-9 items-center gap-2 rounded-lg border border-border/80 bg-muted/30 px-2.5 text-xs text-muted-foreground transition hover:border-border hover:bg-muted/60 hover:text-foreground"
+                  className="button-secondary inline-flex h-9 items-center gap-2 rounded-lg border border-border/80 bg-muted/30 px-2 sm:px-2.5 text-xs text-muted-foreground transition hover:border-border hover:bg-muted/60 hover:text-foreground"
                   aria-label="Search campus and classes (⌘K)"
                 >
                   <Search className="h-3.5 w-3.5" aria-hidden="true" />

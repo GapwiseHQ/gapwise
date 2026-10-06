@@ -1926,7 +1926,11 @@
   }
 
   .hero-title {
-    font-size: clamp(3rem, 15vw, 4.2rem);
+    font-size: clamp(2rem, 10vw, 3.5rem);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    line-height: 1.02;
+    letter-spacing: -0.045em;
   }
 
   .surface,
