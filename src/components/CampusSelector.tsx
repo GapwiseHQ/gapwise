@@ -73,9 +73,7 @@ export function CampusSelector({
               aria-pressed={isSelected}
               title={fullLabel !== shortLabel ? fullLabel : undefined}
               className={`button-secondary min-h-11 px-3.5 py-2 font-mono text-xs font-bold tracking-[0.06em] transition-colors ${
-                isSelected
-                  ? "bg-accent text-accent-foreground border-accent shadow-xs"
-                  : ""
+                isSelected ? "bg-accent text-accent-foreground border-accent shadow-xs" : ""
               }`}
             >
               {shortLabel}
