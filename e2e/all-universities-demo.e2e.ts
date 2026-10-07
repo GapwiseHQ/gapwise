@@ -13,7 +13,9 @@ import { editionUrl, watchForAppFailures } from "./helpers";
 type Site = (typeof manifest.sites)[number];
 
 const demoEditions = manifest.sites.filter(
-  (site) => site.role === "campus-edition" || site.role === "single-campus-edition",
+  (site) =>
+    (site.role === "campus-edition" || site.role === "single-campus-edition") &&
+    manifest.universities.find((u) => u.id === site.universityId)?.status !== "planned",
 ) as Array<Site & { universityId: string; campusId: string }>;
 const hubs = manifest.sites.filter((site) => site.role === "university-hub");
 
