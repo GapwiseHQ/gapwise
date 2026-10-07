@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-10-04T17:54:54.400Z",
+  "generatedAt": "2026-10-07T03:51:41.576Z",
   "summary": {
-    "totalUniversities": 28,
-    "totalCampuses": 74,
-    "totalBuildings": 13104,
-    "totalResidences": 2702,
-    "universitiesWithResidenceCoverage": 28,
-    "campusesWithResidenceCoverage": 74,
+    "totalUniversities": 38,
+    "totalCampuses": 90,
+    "totalBuildings": 33767,
+    "totalResidences": 3787,
+    "universitiesWithResidenceCoverage": 38,
+    "campusesWithResidenceCoverage": 90,
     "coveragePercentage": 100
   },
   "campuses": {
@@ -14331,6 +14331,5600 @@
           "code": "BTI289",
           "name": "Bâtiment Apartments 234815017",
           "aliases": ["sorbonne-b-timent-apartments-234815017", "Bâtiment Apartments 234815017"]
+        }
+      ]
+    },
+    "oxford": {
+      "universityId": "oxford",
+      "universityName": "University of Oxford",
+      "campusId": "oxford",
+      "campusName": "University of Oxford",
+      "totalBuildings": 1852,
+      "residenceCount": 41,
+      "residences": [
+        {
+          "code": "12PARA",
+          "name": "12 Paradise Street",
+          "aliases": ["oxford-12-paradise-street", "12 Paradise Street"]
+        },
+        {
+          "code": "NASHBU",
+          "name": "Nash Building",
+          "aliases": ["oxford-nash-building", "Nash Building", "Ruskin Lane Building"]
+        },
+        {
+          "code": "STAIR3",
+          "name": "Staircase 24",
+          "aliases": ["oxford-staircase-24", "Staircase 24"]
+        },
+        {
+          "code": "LONGWA",
+          "name": "Longwall Annexe",
+          "aliases": ["oxford-longwall-annexe", "Longwall Annexe"]
+        },
+        {
+          "code": "TOWERO",
+          "name": "Tower One",
+          "aliases": ["oxford-tower-one", "Tower One"]
+        },
+        {
+          "code": "TOWERS",
+          "name": "Tower Six",
+          "aliases": ["oxford-tower-six", "Tower Six"]
+        },
+        {
+          "code": "TOWERF",
+          "name": "Tower Four",
+          "aliases": ["oxford-tower-four", "Tower Four"]
+        },
+        {
+          "code": "EPASCI",
+          "name": "EPA Science Centre",
+          "aliases": ["oxford-epa-science-centre", "EPA Science Centre"]
+        },
+        {
+          "code": "BARBAR",
+          "name": "Barbara Craig House",
+          "aliases": ["oxford-barbara-craig-house", "Barbara Craig House"]
+        },
+        {
+          "code": "25WELL",
+          "name": "25 Wellington Square",
+          "aliases": ["oxford-25-wellington-square", "25 Wellington Square"]
+        },
+        {
+          "code": "FRANKS",
+          "name": "Franks Building",
+          "aliases": ["oxford-franks-building", "Franks Building"]
+        },
+        {
+          "code": "BUIL65",
+          "name": "Building 207184011",
+          "aliases": ["oxford-building-207184011", "Building 207184011"]
+        },
+        {
+          "code": "BUIL78",
+          "name": "Building 256577458",
+          "aliases": ["oxford-building-256577458", "Building 256577458"]
+        },
+        {
+          "code": "BUIL79",
+          "name": "Building 256577459",
+          "aliases": ["oxford-building-256577459", "Building 256577459"]
+        },
+        {
+          "code": "BUIL80",
+          "name": "Building 256577460",
+          "aliases": ["oxford-building-256577460", "Building 256577460"]
+        },
+        {
+          "code": "SAVILE",
+          "name": "Savile House",
+          "aliases": ["oxford-savile-house", "Savile House"]
+        },
+        {
+          "code": "GOODHA",
+          "name": "Goodhart Building 1",
+          "aliases": ["oxford-goodhart-building-1", "Goodhart Building 1"]
+        },
+        {
+          "code": "GOODH1",
+          "name": "Goodhart Building 2",
+          "aliases": ["oxford-goodhart-building-2", "Goodhart Building 2"]
+        },
+        {
+          "code": "GOODH2",
+          "name": "Goodhart Building 3",
+          "aliases": ["oxford-goodhart-building-3", "Goodhart Building 3"]
+        },
+        {
+          "code": "5STJOH",
+          "name": "5 St John Street",
+          "aliases": ["oxford-5-st-john-street", "5 St John Street"]
+        },
+        {
+          "code": "BUI203",
+          "name": "Building 332204454",
+          "aliases": ["oxford-building-332204454", "Building 332204454"]
+        },
+        {
+          "code": "TOWERT",
+          "name": "Tower Two",
+          "aliases": ["oxford-tower-two", "Tower Two"]
+        },
+        {
+          "code": "TOWER2",
+          "name": "Tower Three",
+          "aliases": ["oxford-tower-three", "Tower Three"]
+        },
+        {
+          "code": "STORYM",
+          "name": "Story Museum",
+          "aliases": ["oxford-story-museum", "Story Museum"]
+        },
+        {
+          "code": "AX",
+          "name": "A",
+          "aliases": ["oxford-a", "A"]
+        },
+        {
+          "code": "B2",
+          "name": "B2",
+          "aliases": ["oxford-b2", "B2"]
+        },
+        {
+          "code": "C1",
+          "name": "C1",
+          "aliases": ["oxford-c1", "C1"]
+        },
+        {
+          "code": "D3",
+          "name": "D3",
+          "aliases": ["oxford-d3", "D3"]
+        },
+        {
+          "code": "D2",
+          "name": "D2",
+          "aliases": ["oxford-d2", "D2"]
+        },
+        {
+          "code": "D1",
+          "name": "D1",
+          "aliases": ["oxford-d1", "D1"]
+        },
+        {
+          "code": "C2",
+          "name": "C2",
+          "aliases": ["oxford-c2", "C2"]
+        },
+        {
+          "code": "1ROSE1",
+          "name": "1 Rose Lane",
+          "aliases": ["oxford-1-rose-lane-1160949198", "1 Rose Lane"]
+        },
+        {
+          "code": "2ROSEL",
+          "name": "2 Rose Lane",
+          "aliases": ["oxford-2-rose-lane", "2 Rose Lane"]
+        },
+        {
+          "code": "FREWI3",
+          "name": "Frewin Garden Building",
+          "aliases": ["oxford-frewin-garden-building", "Frewin Garden Building"]
+        },
+        {
+          "code": "WESTFI",
+          "name": "Westfield House",
+          "aliases": ["oxford-westfield-house", "Westfield House"]
+        },
+        {
+          "code": "DAMAZE",
+          "name": "Damazer House",
+          "aliases": ["oxford-damazer-house", "Damazer House"]
+        },
+        {
+          "code": "BUI402",
+          "name": "Building 1322581063",
+          "aliases": ["oxford-building-1322581063", "Building 1322581063"]
+        },
+        {
+          "code": "JAMESF",
+          "name": "James Fairfax Yard",
+          "aliases": ["oxford-james-fairfax-yard", "James Fairfax Yard", "JFY"]
+        },
+        {
+          "code": "57BEAU",
+          "name": "5-7 Beaumont Street",
+          "aliases": ["oxford-5-7-beaumont-street", "5-7 Beaumont Street"]
+        },
+        {
+          "code": "SHIPST",
+          "name": "Ship Street Centre",
+          "aliases": ["oxford-ship-street-centre", "Ship Street Centre"]
+        },
+        {
+          "code": "STALD3",
+          "name": "St Aldate's House",
+          "aliases": ["oxford-st-aldate-s-house", "St Aldate's House"]
+        }
+      ]
+    },
+    "cambridge": {
+      "universityId": "cambridge",
+      "universityName": "University of Cambridge",
+      "campusId": "cambridge",
+      "campusName": "University of Cambridge",
+      "totalBuildings": 2254,
+      "residenceCount": 50,
+      "residences": [
+        {
+          "code": "BISHOP",
+          "name": "Bishop Bateman Court (Trinity Hall)",
+          "aliases": [
+            "cambridge-bishop-bateman-court-trinity-hall",
+            "Bishop Bateman Court (Trinity Hall)"
+          ]
+        },
+        {
+          "code": "BUIL11",
+          "name": "Building 93900091",
+          "aliases": ["cambridge-building-93900091", "Building 93900091"]
+        },
+        {
+          "code": "EMMA019",
+          "name": "Master's Lodge",
+          "aliases": ["cambridge-master-s-lodge-95408670", "Master's Lodge"]
+        },
+        {
+          "code": "EPWORT",
+          "name": "Epworth Court",
+          "aliases": ["cambridge-epworth-court", "Epworth Court"]
+        },
+        {
+          "code": "BUIL15",
+          "name": "Building 100419294",
+          "aliases": ["cambridge-building-100419294", "Building 100419294"]
+        },
+        {
+          "code": "LITTL1",
+          "name": "Little Trinity",
+          "aliases": ["cambridge-little-trinity", "Little Trinity"]
+        },
+        {
+          "code": "6870CA",
+          "name": "68-70 Castle Street",
+          "aliases": ["cambridge-68-70-castle-street", "68-70 Castle Street"]
+        },
+        {
+          "code": "BUIL32",
+          "name": "Building 130065912",
+          "aliases": ["cambridge-building-130065912", "Building 130065912"]
+        },
+        {
+          "code": "E038",
+          "name": "King's/Domestics Hostel",
+          "aliases": ["cambridge-king-s-domestics-hostel", "King's/Domestics Hostel"]
+        },
+        {
+          "code": "12LITT",
+          "name": "12 Little St Mary's Lane",
+          "aliases": ["cambridge-12-little-st-mary-s-lane", "12 Little St Mary's Lane"]
+        },
+        {
+          "code": "98KING",
+          "name": "98 King Street",
+          "aliases": ["cambridge-98-king-street", "98 King Street"]
+        },
+        {
+          "code": "BUI108",
+          "name": "Building 137027727",
+          "aliases": ["cambridge-building-137027727", "Building 137027727"]
+        },
+        {
+          "code": "BUI112",
+          "name": "Building 137027743",
+          "aliases": ["cambridge-building-137027743", "Building 137027743"]
+        },
+        {
+          "code": "BUI114",
+          "name": "Building CAI/HARVEY020",
+          "aliases": ["cambridge-building-cai-harvey020", "Building CAI/HARVEY020"]
+        },
+        {
+          "code": "BUI178",
+          "name": "Building DAR/RAVERAT020.2",
+          "aliases": ["cambridge-building-dar-raverat020-2", "Building DAR/RAVERAT020.2"]
+        },
+        {
+          "code": "51NEWN",
+          "name": "51 Newnham Road",
+          "aliases": ["cambridge-51-newnham-road", "51 Newnham Road"]
+        },
+        {
+          "code": "BUI183",
+          "name": "Building DAR/RAVERAT020.1",
+          "aliases": ["cambridge-building-dar-raverat020-1", "Building DAR/RAVERAT020.1"]
+        },
+        {
+          "code": "BUI184",
+          "name": "Building DAR/RAVERAT020.3",
+          "aliases": ["cambridge-building-dar-raverat020-3", "Building DAR/RAVERAT020.3"]
+        },
+        {
+          "code": "BUI226",
+          "name": "Building 157556301",
+          "aliases": ["cambridge-building-157556301", "Building 157556301"]
+        },
+        {
+          "code": "NEWCOU",
+          "name": "New Court Cloisters",
+          "aliases": ["cambridge-new-court-cloisters", "New Court Cloisters"]
+        },
+        {
+          "code": "NORTHC",
+          "name": "North Court",
+          "aliases": ["cambridge-north-court-161131041", "North Court"]
+        },
+        {
+          "code": "EMMA017",
+          "name": "New Court",
+          "aliases": ["cambridge-new-court-161131046", "New Court"]
+        },
+        {
+          "code": "EMMA029",
+          "name": "Park Terrace",
+          "aliases": ["cambridge-park-terrace", "Park Terrace"]
+        },
+        {
+          "code": "EMMA040",
+          "name": "Old Court",
+          "aliases": ["cambridge-old-court", "Old Court"]
+        },
+        {
+          "code": "BUI323",
+          "name": "Building 171285875",
+          "aliases": ["cambridge-building-171285875", "Building 171285875"]
+        },
+        {
+          "code": "PARKTE",
+          "name": "Park Terrace",
+          "aliases": ["cambridge-park-terrace-172008805", "Park Terrace"]
+        },
+        {
+          "code": "20JOHN",
+          "name": "20 John Street",
+          "aliases": ["cambridge-20-john-street", "20 John Street"]
+        },
+        {
+          "code": "EDWARD",
+          "name": "Edward's Court",
+          "aliases": ["cambridge-edward-s-court", "Edward's Court"]
+        },
+        {
+          "code": "1A1B1C",
+          "name": "1a,1b,1c Portland Place",
+          "aliases": ["cambridge-1a-1b-1c-portland-place", "1a,1b,1c Portland Place"]
+        },
+        {
+          "code": "BUI499",
+          "name": "Building 304214827",
+          "aliases": ["cambridge-building-304214827", "Building 304214827"]
+        },
+        {
+          "code": "BUI503",
+          "name": "Building 378294931",
+          "aliases": ["cambridge-building-378294931", "Building 378294931"]
+        },
+        {
+          "code": "WYNGGA",
+          "name": "WYNG Gardens (Trinity Hall)",
+          "aliases": ["cambridge-wyng-gardens-trinity-hall", "WYNG Gardens (Trinity Hall)"]
+        },
+        {
+          "code": "83CAST",
+          "name": "83 Castle Street",
+          "aliases": ["cambridge-83-castle-street", "83 Castle Street"]
+        },
+        {
+          "code": "BUI597",
+          "name": "Building 1059594631",
+          "aliases": ["cambridge-building-1059594631", "Building 1059594631"]
+        },
+        {
+          "code": "BUI598",
+          "name": "Building 1059594632",
+          "aliases": ["cambridge-building-1059594632", "Building 1059594632"]
+        },
+        {
+          "code": "14LITT",
+          "name": "14 Little St Mary's Lane",
+          "aliases": ["cambridge-14-little-st-mary-s-lane", "14 Little St Mary's Lane"]
+        },
+        {
+          "code": "11LITT",
+          "name": "11 Little St Mary's Lane",
+          "aliases": ["cambridge-11-little-st-mary-s-lane", "11 Little St Mary's Lane"]
+        },
+        {
+          "code": "10LITT",
+          "name": "10 Little St Mary's Lane",
+          "aliases": ["cambridge-10-little-st-mary-s-lane", "10 Little St Mary's Lane"]
+        },
+        {
+          "code": "9LITTL",
+          "name": "9 Little St Mary's Lane",
+          "aliases": ["cambridge-9-little-st-mary-s-lane", "9 Little St Mary's Lane"]
+        },
+        {
+          "code": "8LITTL",
+          "name": "8 Little St Mary's Lane",
+          "aliases": ["cambridge-8-little-st-mary-s-lane", "8 Little St Mary's Lane"]
+        },
+        {
+          "code": "7LITTL",
+          "name": "7 Little St Mary's Lane",
+          "aliases": ["cambridge-7-little-st-mary-s-lane", "7 Little St Mary's Lane"]
+        },
+        {
+          "code": "6LITTL",
+          "name": "6 Little St Mary's Lane",
+          "aliases": ["cambridge-6-little-st-mary-s-lane", "6 Little St Mary's Lane"]
+        },
+        {
+          "code": "5LITTL",
+          "name": "5 Little St Mary's Lane",
+          "aliases": ["cambridge-5-little-st-mary-s-lane", "5 Little St Mary's Lane"]
+        },
+        {
+          "code": "4LITTL",
+          "name": "4 Little St Mary's Lane",
+          "aliases": ["cambridge-4-little-st-mary-s-lane", "4 Little St Mary's Lane"]
+        },
+        {
+          "code": "3LITTL",
+          "name": "3 Little St Mary's Lane",
+          "aliases": ["cambridge-3-little-st-mary-s-lane", "3 Little St Mary's Lane"]
+        },
+        {
+          "code": "2LITTL",
+          "name": "2 Little St Mary's Lane",
+          "aliases": ["cambridge-2-little-st-mary-s-lane", "2 Little St Mary's Lane"]
+        },
+        {
+          "code": "1LITTL",
+          "name": "1 Little St Mary's Lane",
+          "aliases": ["cambridge-1-little-st-mary-s-lane", "1 Little St Mary's Lane"]
+        },
+        {
+          "code": "OLDSOU",
+          "name": "Old South Court (West)",
+          "aliases": ["cambridge-old-south-court-west", "Old South Court (West)"]
+        },
+        {
+          "code": "OLDSO1",
+          "name": "Old South Court (East)",
+          "aliases": ["cambridge-old-south-court-east", "Old South Court (East)"]
+        },
+        {
+          "code": "YOUNGS",
+          "name": "Young's Court",
+          "aliases": ["cambridge-young-s-court", "Young's Court"]
+        }
+      ]
+    },
+    "imperial-south-kensington": {
+      "universityId": "imperial",
+      "universityName": "Imperial College London",
+      "campusId": "imperial-south-kensington",
+      "campusName": "Imperial College South Kensington Campus",
+      "totalBuildings": 2001,
+      "residenceCount": 378,
+      "residences": [
+        {
+          "code": "43ONSL",
+          "name": "43 Onslow Square",
+          "aliases": ["imperial-43-onslow-square", "43 Onslow Square"]
+        },
+        {
+          "code": "55ONSL",
+          "name": "55 Onslow Square",
+          "aliases": ["imperial-55-onslow-square", "55 Onslow Square"]
+        },
+        {
+          "code": "67ONSL",
+          "name": "67 Onslow Square",
+          "aliases": ["imperial-67-onslow-square", "67 Onslow Square"]
+        },
+        {
+          "code": "61ONSL",
+          "name": "61 Onslow Square",
+          "aliases": ["imperial-61-onslow-square", "61 Onslow Square"]
+        },
+        {
+          "code": "73ONSL",
+          "name": "73 Onslow Square",
+          "aliases": ["imperial-73-onslow-square", "73 Onslow Square"]
+        },
+        {
+          "code": "41ONSL",
+          "name": "41 Onslow Square",
+          "aliases": ["imperial-41-onslow-square", "41 Onslow Square"]
+        },
+        {
+          "code": "53ONSL",
+          "name": "53 Onslow Square",
+          "aliases": ["imperial-53-onslow-square", "53 Onslow Square"]
+        },
+        {
+          "code": "47ONSL",
+          "name": "47 Onslow Square",
+          "aliases": ["imperial-47-onslow-square", "47 Onslow Square"]
+        },
+        {
+          "code": "65ONSL",
+          "name": "65 Onslow Square",
+          "aliases": ["imperial-65-onslow-square", "65 Onslow Square"]
+        },
+        {
+          "code": "59ONSL",
+          "name": "59 Onslow Square",
+          "aliases": ["imperial-59-onslow-square", "59 Onslow Square"]
+        },
+        {
+          "code": "71ONSL",
+          "name": "71 Onslow Square",
+          "aliases": ["imperial-71-onslow-square", "71 Onslow Square"]
+        },
+        {
+          "code": "51ONSL",
+          "name": "51 Onslow Square",
+          "aliases": ["imperial-51-onslow-square", "51 Onslow Square"]
+        },
+        {
+          "code": "57ONSL",
+          "name": "57 Onslow Square",
+          "aliases": ["imperial-57-onslow-square", "57 Onslow Square"]
+        },
+        {
+          "code": "69ONSL",
+          "name": "69 Onslow Square",
+          "aliases": ["imperial-69-onslow-square", "69 Onslow Square"]
+        },
+        {
+          "code": "63ONSL",
+          "name": "63 Onslow Square",
+          "aliases": ["imperial-63-onslow-square", "63 Onslow Square"]
+        },
+        {
+          "code": "75ONSL",
+          "name": "75 Onslow Square",
+          "aliases": ["imperial-75-onslow-square", "75 Onslow Square"]
+        },
+        {
+          "code": "49ONSL",
+          "name": "49 Onslow Square",
+          "aliases": ["imperial-49-onslow-square", "49 Onslow Square"]
+        },
+        {
+          "code": "19MONT",
+          "name": "19 Montpelier Mews",
+          "aliases": ["imperial-19-montpelier-mews", "19 Montpelier Mews"]
+        },
+        {
+          "code": "QUEENA",
+          "name": "Queen Alexandra’s House",
+          "aliases": ["imperial-queen-alexandra-s-house", "Queen Alexandra’s House"]
+        },
+        {
+          "code": "194QUE",
+          "name": "194 Queen's Gate",
+          "aliases": ["imperial-194-queen-s-gate", "194 Queen's Gate"]
+        },
+        {
+          "code": "195QUE",
+          "name": "195 Queen's Gate",
+          "aliases": ["imperial-195-queen-s-gate", "195 Queen's Gate"]
+        },
+        {
+          "code": "196QUE",
+          "name": "196 Queen's Gate",
+          "aliases": ["imperial-196-queen-s-gate", "196 Queen's Gate"]
+        },
+        {
+          "code": "23KENS",
+          "name": "23 Kensington Gore",
+          "aliases": ["imperial-23-kensington-gore", "23 Kensington Gore"]
+        },
+        {
+          "code": "192QUE",
+          "name": "192 Queen's Gate",
+          "aliases": ["imperial-192-queen-s-gate", "192 Queen's Gate"]
+        },
+        {
+          "code": "193QUE",
+          "name": "193 Queen's Gate",
+          "aliases": ["imperial-193-queen-s-gate", "193 Queen's Gate"]
+        },
+        {
+          "code": "117QUE",
+          "name": "117 Queen's Gate",
+          "aliases": ["imperial-117-queen-s-gate", "117 Queen's Gate"]
+        },
+        {
+          "code": "BEITHA",
+          "name": "Beit Hall",
+          "aliases": ["imperial-beit-hall", "Beit Hall"]
+        },
+        {
+          "code": "AUSTRA",
+          "name": "Australian High Commissioner's Residence",
+          "aliases": [
+            "imperial-australian-high-commissioner-s-residence",
+            "Australian High Commissioner's Residence"
+          ]
+        },
+        {
+          "code": "44PRIN",
+          "name": "44 Princes Gate",
+          "aliases": ["imperial-44-princes-gate", "44 Princes Gate"]
+        },
+        {
+          "code": "49PRIN",
+          "name": "49 Princes Gate",
+          "aliases": ["imperial-49-princes-gate", "49 Princes Gate"]
+        },
+        {
+          "code": "54PRIN",
+          "name": "54 Princes Gate",
+          "aliases": ["imperial-54-princes-gate", "54 Princes Gate"]
+        },
+        {
+          "code": "57PRIN",
+          "name": "57 Princes Gate",
+          "aliases": ["imperial-57-princes-gate", "57 Princes Gate"]
+        },
+        {
+          "code": "47PRIN",
+          "name": "47 Princes Gate",
+          "aliases": ["imperial-47-princes-gate", "47 Princes Gate"]
+        },
+        {
+          "code": "11QUEE",
+          "name": "11 Queen's Gate Terrace",
+          "aliases": ["imperial-11-queen-s-gate-terrace", "11 Queen's Gate Terrace"]
+        },
+        {
+          "code": "27QUEE",
+          "name": "27 Queen's Gate Terrace",
+          "aliases": ["imperial-27-queen-s-gate-terrace", "27 Queen's Gate Terrace"]
+        },
+        {
+          "code": "15QUEE",
+          "name": "15 Queen's Gate Terrace",
+          "aliases": ["imperial-15-queen-s-gate-terrace", "15 Queen's Gate Terrace"]
+        },
+        {
+          "code": "31QUEE",
+          "name": "31 Queen's Gate Terrace",
+          "aliases": ["imperial-31-queen-s-gate-terrace", "31 Queen's Gate Terrace"]
+        },
+        {
+          "code": "23QUEE",
+          "name": "23 Queen's Gate Terrace",
+          "aliases": ["imperial-23-queen-s-gate-terrace", "23 Queen's Gate Terrace"]
+        },
+        {
+          "code": "33QUEE",
+          "name": "33 Queen's Gate Terrace",
+          "aliases": ["imperial-33-queen-s-gate-terrace", "33 Queen's Gate Terrace"]
+        },
+        {
+          "code": "25QUEE",
+          "name": "25 Queen's Gate Terrace",
+          "aliases": ["imperial-25-queen-s-gate-terrace", "25 Queen's Gate Terrace"]
+        },
+        {
+          "code": "17QUEE",
+          "name": "17 Queen's Gate Terrace",
+          "aliases": ["imperial-17-queen-s-gate-terrace", "17 Queen's Gate Terrace"]
+        },
+        {
+          "code": "19QUEE",
+          "name": "19 Queen's Gate Terrace",
+          "aliases": ["imperial-19-queen-s-gate-terrace", "19 Queen's Gate Terrace"]
+        },
+        {
+          "code": "21QUEE",
+          "name": "21 Queen's Gate Terrace",
+          "aliases": ["imperial-21-queen-s-gate-terrace", "21 Queen's Gate Terrace"]
+        },
+        {
+          "code": "SELKIR",
+          "name": "Selkirk Hall",
+          "aliases": ["imperial-selkirk-hall", "Selkirk Hall"]
+        },
+        {
+          "code": "TIZARD",
+          "name": "Tizard Hall",
+          "aliases": ["imperial-tizard-hall", "Tizard Hall"]
+        },
+        {
+          "code": "FALMOU",
+          "name": "Falmouth Hall",
+          "aliases": ["imperial-falmouth-hall", "Falmouth Hall"]
+        },
+        {
+          "code": "HOLYT2",
+          "name": "Holy Trinity Church House",
+          "aliases": ["imperial-holy-trinity-church-house", "Holy Trinity Church House"]
+        },
+        {
+          "code": "4RELTO",
+          "name": "4 Relton Mews",
+          "aliases": ["imperial-4-relton-mews", "4 Relton Mews"]
+        },
+        {
+          "code": "11RELT",
+          "name": "11 Relton Mews",
+          "aliases": ["imperial-11-relton-mews", "11 Relton Mews"]
+        },
+        {
+          "code": "10RELT",
+          "name": "10 Relton Mews",
+          "aliases": ["imperial-10-relton-mews", "10 Relton Mews"]
+        },
+        {
+          "code": "2RELTO",
+          "name": "2 Relton Mews",
+          "aliases": ["imperial-2-relton-mews", "2 Relton Mews"]
+        },
+        {
+          "code": "3RELTO",
+          "name": "3 Relton Mews",
+          "aliases": ["imperial-3-relton-mews", "3 Relton Mews"]
+        },
+        {
+          "code": "1213RE",
+          "name": "12-13 Relton Mews",
+          "aliases": ["imperial-12-13-relton-mews", "12-13 Relton Mews"]
+        },
+        {
+          "code": "1214CH",
+          "name": "12-14 Cheval Place",
+          "aliases": ["imperial-12-14-cheval-place", "12-14 Cheval Place"]
+        },
+        {
+          "code": "84KENS",
+          "name": "84 Kensington Gore",
+          "aliases": ["imperial-84-kensington-gore", "84 Kensington Gore"]
+        },
+        {
+          "code": "34MON1",
+          "name": "3-4 Montpelier Terrace",
+          "aliases": ["imperial-3-4-montpelier-terrace", "3-4 Montpelier Terrace"]
+        },
+        {
+          "code": "27MONT",
+          "name": "27 Montpelier Square",
+          "aliases": ["imperial-27-montpelier-square", "27 Montpelier Square"]
+        },
+        {
+          "code": "28MON1",
+          "name": "28 Montpelier Square",
+          "aliases": ["imperial-28-montpelier-square", "28 Montpelier Square"]
+        },
+        {
+          "code": "29MONT",
+          "name": "29 Montpelier Square",
+          "aliases": ["imperial-29-montpelier-square", "29 Montpelier Square"]
+        },
+        {
+          "code": "30MON1",
+          "name": "30 Montpelier Square",
+          "aliases": ["imperial-30-montpelier-square", "30 Montpelier Square"]
+        },
+        {
+          "code": "31MONT",
+          "name": "31 Montpelier Square",
+          "aliases": ["imperial-31-montpelier-square", "31 Montpelier Square"]
+        },
+        {
+          "code": "32MON1",
+          "name": "32 Montpelier Square",
+          "aliases": ["imperial-32-montpelier-square", "32 Montpelier Square"]
+        },
+        {
+          "code": "33MONT",
+          "name": "33 Montpelier Square",
+          "aliases": ["imperial-33-montpelier-square", "33 Montpelier Square"]
+        },
+        {
+          "code": "34MON2",
+          "name": "34 Montpelier Square",
+          "aliases": ["imperial-34-montpelier-square", "34 Montpelier Square"]
+        },
+        {
+          "code": "35MONT",
+          "name": "35 Montpelier Square",
+          "aliases": ["imperial-35-montpelier-square", "35 Montpelier Square"]
+        },
+        {
+          "code": "36MON1",
+          "name": "36 Montpelier Square",
+          "aliases": ["imperial-36-montpelier-square", "36 Montpelier Square"]
+        },
+        {
+          "code": "37MONT",
+          "name": "37 Montpelier Square",
+          "aliases": ["imperial-37-montpelier-square", "37 Montpelier Square"]
+        },
+        {
+          "code": "38MON1",
+          "name": "38 Montpelier Square",
+          "aliases": ["imperial-38-montpelier-square", "38 Montpelier Square"]
+        },
+        {
+          "code": "39MONT",
+          "name": "39 Montpelier Square",
+          "aliases": ["imperial-39-montpelier-square", "39 Montpelier Square"]
+        },
+        {
+          "code": "40MON1",
+          "name": "40 Montpelier Square",
+          "aliases": ["imperial-40-montpelier-square", "40 Montpelier Square"]
+        },
+        {
+          "code": "41MONT",
+          "name": "41 Montpelier Square",
+          "aliases": ["imperial-41-montpelier-square", "41 Montpelier Square"]
+        },
+        {
+          "code": "42MON1",
+          "name": "42 Montpelier Square",
+          "aliases": ["imperial-42-montpelier-square", "42 Montpelier Square"]
+        },
+        {
+          "code": "43MONT",
+          "name": "43 Montpelier Square",
+          "aliases": ["imperial-43-montpelier-square", "43 Montpelier Square"]
+        },
+        {
+          "code": "37TREV",
+          "name": "37 Trevor Place",
+          "aliases": ["imperial-37-trevor-place", "37 Trevor Place"]
+        },
+        {
+          "code": "BUIL35",
+          "name": "Building 567159922",
+          "aliases": ["imperial-building-567159922", "Building 567159922"]
+        },
+        {
+          "code": "45MONT",
+          "name": "45 Montpelier Square",
+          "aliases": ["imperial-45-montpelier-square", "45 Montpelier Square"]
+        },
+        {
+          "code": "1112MO",
+          "name": "11-12 Montpelier Mews",
+          "aliases": ["imperial-11-12-montpelier-mews", "11-12 Montpelier Mews"]
+        },
+        {
+          "code": "16MONT",
+          "name": "16 Montpelier Mews",
+          "aliases": ["imperial-16-montpelier-mews", "16 Montpelier Mews"]
+        },
+        {
+          "code": "7RELTO",
+          "name": "7 Relton Mews",
+          "aliases": ["imperial-7-relton-mews", "7 Relton Mews"]
+        },
+        {
+          "code": "8RELTO",
+          "name": "8 Relton Mews",
+          "aliases": ["imperial-8-relton-mews", "8 Relton Mews"]
+        },
+        {
+          "code": "10CHEV",
+          "name": "10 Cheval Place",
+          "aliases": ["imperial-10-cheval-place", "10 Cheval Place"]
+        },
+        {
+          "code": "8CHEVA",
+          "name": "8 Cheval Place",
+          "aliases": ["imperial-8-cheval-place", "8 Cheval Place"]
+        },
+        {
+          "code": "6CHEVA",
+          "name": "6 Cheval Place",
+          "aliases": ["imperial-6-cheval-place", "6 Cheval Place"]
+        },
+        {
+          "code": "4CHEVA",
+          "name": "4 Cheval Place",
+          "aliases": ["imperial-4-cheval-place", "4 Cheval Place"]
+        },
+        {
+          "code": "14RELT",
+          "name": "14 Relton Mews",
+          "aliases": ["imperial-14-relton-mews", "14 Relton Mews"]
+        },
+        {
+          "code": "2324MO",
+          "name": "23-24 Montpelier Walk",
+          "aliases": ["imperial-23-24-montpelier-walk", "23-24 Montpelier Walk"]
+        },
+        {
+          "code": "2MONT3",
+          "name": "2 Montpelier Place",
+          "aliases": ["imperial-2-montpelier-place", "2 Montpelier Place"]
+        },
+        {
+          "code": "5MONT2",
+          "name": "5 Montpelier Place",
+          "aliases": ["imperial-5-montpelier-place", "5 Montpelier Place"]
+        },
+        {
+          "code": "6MONT2",
+          "name": "6 Montpelier Place",
+          "aliases": ["imperial-6-montpelier-place", "6 Montpelier Place"]
+        },
+        {
+          "code": "44MON1",
+          "name": "44 Montpelier Square",
+          "aliases": ["imperial-44-montpelier-square", "44 Montpelier Square"]
+        },
+        {
+          "code": "BUIL39",
+          "name": "Building 638331504",
+          "aliases": ["imperial-building-638331504", "Building 638331504"]
+        },
+        {
+          "code": "23KENT",
+          "name": "2-3 Kent Yard",
+          "aliases": ["imperial-2-3-kent-yard", "2-3 Kent Yard"]
+        },
+        {
+          "code": "1RUTLA",
+          "name": "1 Rutland Gate",
+          "aliases": ["imperial-1-rutland-gate", "1 Rutland Gate"]
+        },
+        {
+          "code": "3RUTLA",
+          "name": "3 Rutland Gate",
+          "aliases": ["imperial-3-rutland-gate", "3 Rutland Gate"]
+        },
+        {
+          "code": "5RUTL1",
+          "name": "5 Rutland Gate",
+          "aliases": ["imperial-5-rutland-gate", "5 Rutland Gate"]
+        },
+        {
+          "code": "3GATEM",
+          "name": "3 Gate Mews",
+          "aliases": ["imperial-3-gate-mews", "3 Gate Mews"]
+        },
+        {
+          "code": "2GATEM",
+          "name": "2 Gate Mews",
+          "aliases": ["imperial-2-gate-mews", "2 Gate Mews"]
+        },
+        {
+          "code": "1GATEM",
+          "name": "1 Gate Mews",
+          "aliases": ["imperial-1-gate-mews", "1 Gate Mews"]
+        },
+        {
+          "code": "7RUTLA",
+          "name": "7 Rutland Gate",
+          "aliases": ["imperial-7-rutland-gate", "7 Rutland Gate"]
+        },
+        {
+          "code": "9RUTLA",
+          "name": "9 Rutland Gate",
+          "aliases": ["imperial-9-rutland-gate", "9 Rutland Gate"]
+        },
+        {
+          "code": "11RUTL",
+          "name": "11 Rutland Gate",
+          "aliases": ["imperial-11-rutland-gate", "11 Rutland Gate"]
+        },
+        {
+          "code": "1112RU",
+          "name": "11-12 Rutland Mews East",
+          "aliases": ["imperial-11-12-rutland-mews-east", "11-12 Rutland Mews East"]
+        },
+        {
+          "code": "45RUTL",
+          "name": "45 Rutland Gate",
+          "aliases": ["imperial-45-rutland-gate", "45 Rutland Gate"]
+        },
+        {
+          "code": "46RUTL",
+          "name": "46 Rutland Gate",
+          "aliases": ["imperial-46-rutland-gate", "46 Rutland Gate"]
+        },
+        {
+          "code": "47RUTL",
+          "name": "47 Rutland Gate",
+          "aliases": ["imperial-47-rutland-gate", "47 Rutland Gate"]
+        },
+        {
+          "code": "THECLO",
+          "name": "The Clock House",
+          "aliases": ["imperial-the-clock-house", "The Clock House"]
+        },
+        {
+          "code": "12RUT2",
+          "name": "1-2 Rutland Mews West",
+          "aliases": ["imperial-1-2-rutland-mews-west", "1-2 Rutland Mews West"]
+        },
+        {
+          "code": "48RUTL",
+          "name": "48 Rutland Gate",
+          "aliases": ["imperial-48-rutland-gate", "48 Rutland Gate"]
+        },
+        {
+          "code": "49RUTL",
+          "name": "49 Rutland Gate",
+          "aliases": ["imperial-49-rutland-gate", "49 Rutland Gate"]
+        },
+        {
+          "code": "50RUTL",
+          "name": "50 Rutland Gate",
+          "aliases": ["imperial-50-rutland-gate", "50 Rutland Gate"]
+        },
+        {
+          "code": "51RUTL",
+          "name": "51 Rutland Gate",
+          "aliases": ["imperial-51-rutland-gate", "51 Rutland Gate"]
+        },
+        {
+          "code": "52RUTL",
+          "name": "52 Rutland Gate",
+          "aliases": ["imperial-52-rutland-gate", "52 Rutland Gate"]
+        },
+        {
+          "code": "53RUTL",
+          "name": "53 Rutland Gate",
+          "aliases": ["imperial-53-rutland-gate", "53 Rutland Gate"]
+        },
+        {
+          "code": "54RUTL",
+          "name": "54 Rutland Gate",
+          "aliases": ["imperial-54-rutland-gate", "54 Rutland Gate"]
+        },
+        {
+          "code": "55RUTL",
+          "name": "55 Rutland Gate",
+          "aliases": ["imperial-55-rutland-gate", "55 Rutland Gate"]
+        },
+        {
+          "code": "56RUTL",
+          "name": "56 Rutland Gate",
+          "aliases": ["imperial-56-rutland-gate", "56 Rutland Gate"]
+        },
+        {
+          "code": "57RUT1",
+          "name": "57 Rutland Gate",
+          "aliases": ["imperial-57-rutland-gate-638460204", "57 Rutland Gate"]
+        },
+        {
+          "code": "58RUTL",
+          "name": "58 Rutland Gate",
+          "aliases": ["imperial-58-rutland-gate", "58 Rutland Gate"]
+        },
+        {
+          "code": "59RUTL",
+          "name": "59 Rutland Gate",
+          "aliases": ["imperial-59-rutland-gate", "59 Rutland Gate"]
+        },
+        {
+          "code": "60RUTL",
+          "name": "60 Rutland Gate",
+          "aliases": ["imperial-60-rutland-gate", "60 Rutland Gate"]
+        },
+        {
+          "code": "61RUTL",
+          "name": "61 Rutland Gate",
+          "aliases": ["imperial-61-rutland-gate", "61 Rutland Gate"]
+        },
+        {
+          "code": "62RUTL",
+          "name": "62 Rutland Gate",
+          "aliases": ["imperial-62-rutland-gate", "62 Rutland Gate"]
+        },
+        {
+          "code": "64RUTL",
+          "name": "64 Rutland Gate",
+          "aliases": ["imperial-64-rutland-gate", "64 Rutland Gate"]
+        },
+        {
+          "code": "65RUTL",
+          "name": "65 Rutland Gate",
+          "aliases": ["imperial-65-rutland-gate", "65 Rutland Gate"]
+        },
+        {
+          "code": "2ENNIS",
+          "name": "2 Ennismore Mews",
+          "aliases": ["imperial-2-ennismore-mews", "2 Ennismore Mews"]
+        },
+        {
+          "code": "4ENNIS",
+          "name": "4 Ennismore Mews",
+          "aliases": ["imperial-4-ennismore-mews", "4 Ennismore Mews"]
+        },
+        {
+          "code": "6ENNIS",
+          "name": "6 Ennismore Mews",
+          "aliases": ["imperial-6-ennismore-mews", "6 Ennismore Mews"]
+        },
+        {
+          "code": "8ENNIS",
+          "name": "8 Ennismore Mews",
+          "aliases": ["imperial-8-ennismore-mews", "8 Ennismore Mews"]
+        },
+        {
+          "code": "10ENNI",
+          "name": "10 Ennismore Mews",
+          "aliases": ["imperial-10-ennismore-mews", "10 Ennismore Mews"]
+        },
+        {
+          "code": "12ENNI",
+          "name": "12 Ennismore Mews",
+          "aliases": ["imperial-12-ennismore-mews", "12 Ennismore Mews"]
+        },
+        {
+          "code": "14ENNI",
+          "name": "14 Ennismore Mews",
+          "aliases": ["imperial-14-ennismore-mews", "14 Ennismore Mews"]
+        },
+        {
+          "code": "16ENNI",
+          "name": "16 Ennismore Mews",
+          "aliases": ["imperial-16-ennismore-mews", "16 Ennismore Mews"]
+        },
+        {
+          "code": "18ENNI",
+          "name": "18 Ennismore Mews",
+          "aliases": ["imperial-18-ennismore-mews", "18 Ennismore Mews"]
+        },
+        {
+          "code": "20ENNI",
+          "name": "20 Ennismore Mews",
+          "aliases": ["imperial-20-ennismore-mews", "20 Ennismore Mews"]
+        },
+        {
+          "code": "20AENN",
+          "name": "20a Ennismore Mews",
+          "aliases": ["imperial-20a-ennismore-mews", "20a Ennismore Mews"]
+        },
+        {
+          "code": "22ENNI",
+          "name": "22 Ennismore Mews",
+          "aliases": ["imperial-22-ennismore-mews", "22 Ennismore Mews"]
+        },
+        {
+          "code": "24ENNI",
+          "name": "24 Ennismore Mews",
+          "aliases": ["imperial-24-ennismore-mews", "24 Ennismore Mews"]
+        },
+        {
+          "code": "26ENN1",
+          "name": "26 Ennismore Mews",
+          "aliases": ["imperial-26-ennismore-mews", "26 Ennismore Mews"]
+        },
+        {
+          "code": "28ENNI",
+          "name": "28 Ennismore Mews",
+          "aliases": ["imperial-28-ennismore-mews", "28 Ennismore Mews"]
+        },
+        {
+          "code": "30ENN1",
+          "name": "30 Ennismore Mews",
+          "aliases": ["imperial-30-ennismore-mews", "30 Ennismore Mews"]
+        },
+        {
+          "code": "26RUT1",
+          "name": "26 Rutland Gate",
+          "aliases": ["imperial-26-rutland-gate", "26 Rutland Gate"]
+        },
+        {
+          "code": "1RUTL1",
+          "name": "1 Rutland Gate Mews",
+          "aliases": ["imperial-1-rutland-gate-mews", "1 Rutland Gate Mews"]
+        },
+        {
+          "code": "2RUTLA",
+          "name": "2 Rutland Gate Mews",
+          "aliases": ["imperial-2-rutland-gate-mews", "2 Rutland Gate Mews"]
+        },
+        {
+          "code": "3RUTL1",
+          "name": "3 Rutland Gate Mews",
+          "aliases": ["imperial-3-rutland-gate-mews", "3 Rutland Gate Mews"]
+        },
+        {
+          "code": "31ENN1",
+          "name": "31 Ennismore Mews",
+          "aliases": ["imperial-31-ennismore-mews", "31 Ennismore Mews"]
+        },
+        {
+          "code": "1ENNI1",
+          "name": "1 Ennismore Gardens",
+          "aliases": ["imperial-1-ennismore-gardens", "1 Ennismore Gardens"]
+        },
+        {
+          "code": "2ENNI1",
+          "name": "2 Ennismore Gardens",
+          "aliases": ["imperial-2-ennismore-gardens", "2 Ennismore Gardens"]
+        },
+        {
+          "code": "3ENNI1",
+          "name": "3 Ennismore Gardens",
+          "aliases": ["imperial-3-ennismore-gardens", "3 Ennismore Gardens"]
+        },
+        {
+          "code": "4ENNI1",
+          "name": "4 Ennismore Gardens",
+          "aliases": ["imperial-4-ennismore-gardens", "4 Ennismore Gardens"]
+        },
+        {
+          "code": "5ENNI1",
+          "name": "5 Ennismore Gardens",
+          "aliases": ["imperial-5-ennismore-gardens", "5 Ennismore Gardens"]
+        },
+        {
+          "code": "6ENNI1",
+          "name": "6 Ennismore Gardens",
+          "aliases": ["imperial-6-ennismore-gardens", "6 Ennismore Gardens"]
+        },
+        {
+          "code": "7ENNI1",
+          "name": "7 Ennismore Gardens",
+          "aliases": ["imperial-7-ennismore-gardens", "7 Ennismore Gardens"]
+        },
+        {
+          "code": "8ENNI1",
+          "name": "8 Ennismore Gardens",
+          "aliases": ["imperial-8-ennismore-gardens", "8 Ennismore Gardens"]
+        },
+        {
+          "code": "9ENNI2",
+          "name": "9 Ennismore Gardens",
+          "aliases": ["imperial-9-ennismore-gardens", "9 Ennismore Gardens"]
+        },
+        {
+          "code": "10ENN1",
+          "name": "10 Ennismore Gardens",
+          "aliases": ["imperial-10-ennismore-gardens", "10 Ennismore Gardens"]
+        },
+        {
+          "code": "11ENN1",
+          "name": "11 Ennismore Gardens",
+          "aliases": ["imperial-11-ennismore-gardens", "11 Ennismore Gardens"]
+        },
+        {
+          "code": "12ENN1",
+          "name": "12 Ennismore Gardens",
+          "aliases": ["imperial-12-ennismore-gardens", "12 Ennismore Gardens"]
+        },
+        {
+          "code": "13ENN1",
+          "name": "13 Ennismore Gardens",
+          "aliases": ["imperial-13-ennismore-gardens", "13 Ennismore Gardens"]
+        },
+        {
+          "code": "14ENN1",
+          "name": "14 Ennismore Gardens",
+          "aliases": ["imperial-14-ennismore-gardens", "14 Ennismore Gardens"]
+        },
+        {
+          "code": "15ENN1",
+          "name": "15 Ennismore Gardens",
+          "aliases": ["imperial-15-ennismore-gardens", "15 Ennismore Gardens"]
+        },
+        {
+          "code": "16ENN1",
+          "name": "16 Ennismore Gardens",
+          "aliases": ["imperial-16-ennismore-gardens", "16 Ennismore Gardens"]
+        },
+        {
+          "code": "17ENN1",
+          "name": "17 Ennismore Gardens",
+          "aliases": ["imperial-17-ennismore-gardens", "17 Ennismore Gardens"]
+        },
+        {
+          "code": "18ENN1",
+          "name": "18 Ennismore Gardens",
+          "aliases": ["imperial-18-ennismore-gardens", "18 Ennismore Gardens"]
+        },
+        {
+          "code": "19ENN1",
+          "name": "19 Ennismore Gardens",
+          "aliases": ["imperial-19-ennismore-gardens", "19 Ennismore Gardens"]
+        },
+        {
+          "code": "20ENN1",
+          "name": "20 Ennismore Gardens",
+          "aliases": ["imperial-20-ennismore-gardens", "20 Ennismore Gardens"]
+        },
+        {
+          "code": "21ENN1",
+          "name": "21 Ennismore Gardens",
+          "aliases": ["imperial-21-ennismore-gardens", "21 Ennismore Gardens"]
+        },
+        {
+          "code": "22ENN1",
+          "name": "22 Ennismore Gardens",
+          "aliases": ["imperial-22-ennismore-gardens", "22 Ennismore Gardens"]
+        },
+        {
+          "code": "23ENN1",
+          "name": "23 Ennismore Gardens",
+          "aliases": ["imperial-23-ennismore-gardens", "23 Ennismore Gardens"]
+        },
+        {
+          "code": "24ENN1",
+          "name": "24 Ennismore Gardens",
+          "aliases": ["imperial-24-ennismore-gardens", "24 Ennismore Gardens"]
+        },
+        {
+          "code": "25ENN1",
+          "name": "25 Ennismore Gardens",
+          "aliases": ["imperial-25-ennismore-gardens", "25 Ennismore Gardens"]
+        },
+        {
+          "code": "34ENN1",
+          "name": "34 Ennismore Gardens",
+          "aliases": ["imperial-34-ennismore-gardens", "34 Ennismore Gardens"]
+        },
+        {
+          "code": "33ENN1",
+          "name": "33 Ennismore Gardens",
+          "aliases": ["imperial-33-ennismore-gardens", "33 Ennismore Gardens"]
+        },
+        {
+          "code": "32ENNI",
+          "name": "32 Ennismore Gardens",
+          "aliases": ["imperial-32-ennismore-gardens", "32 Ennismore Gardens"]
+        },
+        {
+          "code": "30ENN2",
+          "name": "30 Ennismore Gardens",
+          "aliases": ["imperial-30-ennismore-gardens", "30 Ennismore Gardens"]
+        },
+        {
+          "code": "29ENN2",
+          "name": "29 Ennismore Gardens",
+          "aliases": ["imperial-29-ennismore-gardens", "29 Ennismore Gardens"]
+        },
+        {
+          "code": "28ENN2",
+          "name": "28 Ennismore Gardens",
+          "aliases": ["imperial-28-ennismore-gardens", "28 Ennismore Gardens"]
+        },
+        {
+          "code": "27ENN2",
+          "name": "27 Ennismore Gardens",
+          "aliases": ["imperial-27-ennismore-gardens", "27 Ennismore Gardens"]
+        },
+        {
+          "code": "1MONCO",
+          "name": "1 Moncorvo Close",
+          "aliases": ["imperial-1-moncorvo-close", "1 Moncorvo Close"]
+        },
+        {
+          "code": "2MONCO",
+          "name": "2 Moncorvo Close",
+          "aliases": ["imperial-2-moncorvo-close", "2 Moncorvo Close"]
+        },
+        {
+          "code": "3MONCO",
+          "name": "3 Moncorvo Close",
+          "aliases": ["imperial-3-moncorvo-close", "3 Moncorvo Close"]
+        },
+        {
+          "code": "4MONCO",
+          "name": "4 Moncorvo Close",
+          "aliases": ["imperial-4-moncorvo-close", "4 Moncorvo Close"]
+        },
+        {
+          "code": "5MONCO",
+          "name": "5 Moncorvo Close",
+          "aliases": ["imperial-5-moncorvo-close", "5 Moncorvo Close"]
+        },
+        {
+          "code": "10MONC",
+          "name": "10 Moncorvo Close",
+          "aliases": ["imperial-10-moncorvo-close", "10 Moncorvo Close"]
+        },
+        {
+          "code": "9MONCO",
+          "name": "9 Moncorvo Close",
+          "aliases": ["imperial-9-moncorvo-close", "9 Moncorvo Close"]
+        },
+        {
+          "code": "8MONCO",
+          "name": "8 Moncorvo Close",
+          "aliases": ["imperial-8-moncorvo-close", "8 Moncorvo Close"]
+        },
+        {
+          "code": "7MONCO",
+          "name": "7 Moncorvo Close",
+          "aliases": ["imperial-7-moncorvo-close", "7 Moncorvo Close"]
+        },
+        {
+          "code": "6MONCO",
+          "name": "6 Moncorvo Close",
+          "aliases": ["imperial-6-moncorvo-close", "6 Moncorvo Close"]
+        },
+        {
+          "code": "27PRIN",
+          "name": "27 Princes Gate",
+          "aliases": ["imperial-27-princes-gate", "27 Princes Gate"]
+        },
+        {
+          "code": "25PRIN",
+          "name": "25 Princes Gate",
+          "aliases": ["imperial-25-princes-gate", "25 Princes Gate"]
+        },
+        {
+          "code": "24PRIN",
+          "name": "24 Princes Gate",
+          "aliases": ["imperial-24-princes-gate", "24 Princes Gate"]
+        },
+        {
+          "code": "22PRIN",
+          "name": "22 Princes Gate",
+          "aliases": ["imperial-22-princes-gate", "22 Princes Gate"]
+        },
+        {
+          "code": "21PRIN",
+          "name": "21 Princes Gate",
+          "aliases": ["imperial-21-princes-gate", "21 Princes Gate"]
+        },
+        {
+          "code": "18PRIN",
+          "name": "18 Princes Gate",
+          "aliases": ["imperial-18-princes-gate", "18 Princes Gate"]
+        },
+        {
+          "code": "WILKIN",
+          "name": "Wilkinson Hall",
+          "aliases": ["imperial-wilkinson-hall", "Wilkinson Hall"]
+        },
+        {
+          "code": "GABORH",
+          "name": "Gabor Hall",
+          "aliases": ["imperial-gabor-hall", "Gabor Hall"]
+        },
+        {
+          "code": "LINSTE",
+          "name": "Linstead Hall",
+          "aliases": ["imperial-linstead-hall", "Linstead Hall"]
+        },
+        {
+          "code": "KEOGHH",
+          "name": "Keogh Hall",
+          "aliases": ["imperial-keogh-hall", "Keogh Hall"]
+        },
+        {
+          "code": "46PRI1",
+          "name": "46 Princes Gardens",
+          "aliases": ["imperial-46-princes-gardens", "46 Princes Gardens"]
+        },
+        {
+          "code": "47PRI1",
+          "name": "47 Princes Gardens",
+          "aliases": ["imperial-47-princes-gardens", "47 Princes Gardens"]
+        },
+        {
+          "code": "48PRIN",
+          "name": "48 Princes Gardens",
+          "aliases": ["imperial-48-princes-gardens", "48 Princes Gardens"]
+        },
+        {
+          "code": "10AJAY",
+          "name": "10a Jay Mews",
+          "aliases": ["imperial-10a-jay-mews", "10a Jay Mews"]
+        },
+        {
+          "code": "10BJAY",
+          "name": "10b Jay Mews",
+          "aliases": ["imperial-10b-jay-mews", "10b Jay Mews"]
+        },
+        {
+          "code": "22QUEE",
+          "name": "22 Queen's Gate",
+          "aliases": ["imperial-22-queen-s-gate", "22 Queen's Gate"]
+        },
+        {
+          "code": "25QUE1",
+          "name": "25 Queen's Gate",
+          "aliases": ["imperial-25-queen-s-gate", "25 Queen's Gate"]
+        },
+        {
+          "code": "26QUEE",
+          "name": "26 Queen's Gate",
+          "aliases": ["imperial-26-queen-s-gate", "26 Queen's Gate"]
+        },
+        {
+          "code": "93QUEE",
+          "name": "93 Queen's Gate",
+          "aliases": ["imperial-93-queen-s-gate", "93 Queen's Gate"]
+        },
+        {
+          "code": "95QUEE",
+          "name": "95 Queen's Gate",
+          "aliases": ["imperial-95-queen-s-gate", "95 Queen's Gate"]
+        },
+        {
+          "code": "94QUEE",
+          "name": "94 Queen's Gate",
+          "aliases": ["imperial-94-queen-s-gate", "94 Queen's Gate"]
+        },
+        {
+          "code": "35AHYD",
+          "name": "35a Hyde Park Gate",
+          "aliases": ["imperial-35a-hyde-park-gate", "35a Hyde Park Gate"]
+        },
+        {
+          "code": "14HYDE",
+          "name": "1-4 Hyde Park Gate Mews",
+          "aliases": ["imperial-1-4-hyde-park-gate-mews", "1-4 Hyde Park Gate Mews"]
+        },
+        {
+          "code": "30HYDE",
+          "name": "30 Hyde Park Gate",
+          "aliases": ["imperial-30-hyde-park-gate", "30 Hyde Park Gate"]
+        },
+        {
+          "code": "22HYDE",
+          "name": "22 Hyde Park Gate",
+          "aliases": ["imperial-22-hyde-park-gate", "22 Hyde Park Gate"]
+        },
+        {
+          "code": "21HYDE",
+          "name": "21 Hyde Park Gate",
+          "aliases": ["imperial-21-hyde-park-gate", "21 Hyde Park Gate"]
+        },
+        {
+          "code": "20HYDE",
+          "name": "20 Hyde Park Gate",
+          "aliases": ["imperial-20-hyde-park-gate", "20 Hyde Park Gate"]
+        },
+        {
+          "code": "19HYDE",
+          "name": "19 Hyde Park Gate",
+          "aliases": ["imperial-19-hyde-park-gate", "19 Hyde Park Gate"]
+        },
+        {
+          "code": "18HYDE",
+          "name": "18 Hyde Park Gate",
+          "aliases": ["imperial-18-hyde-park-gate", "18 Hyde Park Gate"]
+        },
+        {
+          "code": "6HYDEP",
+          "name": "6 Hyde Park Gate",
+          "aliases": ["imperial-6-hyde-park-gate", "6 Hyde Park Gate"]
+        },
+        {
+          "code": "5HYDEP",
+          "name": "5 Hyde Park Gate",
+          "aliases": ["imperial-5-hyde-park-gate", "5 Hyde Park Gate"]
+        },
+        {
+          "code": "3QUEEN",
+          "name": "3 Queen's Gate",
+          "aliases": ["imperial-3-queen-s-gate", "3 Queen's Gate"]
+        },
+        {
+          "code": "4QUEEN",
+          "name": "4 Queen's Gate",
+          "aliases": ["imperial-4-queen-s-gate", "4 Queen's Gate"]
+        },
+        {
+          "code": "5QUEEN",
+          "name": "5 Queen's Gate",
+          "aliases": ["imperial-5-queen-s-gate", "5 Queen's Gate"]
+        },
+        {
+          "code": "6QUEEN",
+          "name": "6 Queen's Gate",
+          "aliases": ["imperial-6-queen-s-gate", "6 Queen's Gate"]
+        },
+        {
+          "code": "7QUEEN",
+          "name": "7 Queen's Gate",
+          "aliases": ["imperial-7-queen-s-gate", "7 Queen's Gate"]
+        },
+        {
+          "code": "8QUEEN",
+          "name": "8 Queen's Gate",
+          "aliases": ["imperial-8-queen-s-gate", "8 Queen's Gate"]
+        },
+        {
+          "code": "9QUEE1",
+          "name": "9 Queen's Gate",
+          "aliases": ["imperial-9-queen-s-gate", "9 Queen's Gate"]
+        },
+        {
+          "code": "10QUEE",
+          "name": "10 Queen's Gate",
+          "aliases": ["imperial-10-queen-s-gate", "10 Queen's Gate"]
+        },
+        {
+          "code": "11QUE1",
+          "name": "11 Queen's Gate",
+          "aliases": ["imperial-11-queen-s-gate", "11 Queen's Gate"]
+        },
+        {
+          "code": "12QUE1",
+          "name": "12 Queen's Gate",
+          "aliases": ["imperial-12-queen-s-gate", "12 Queen's Gate"]
+        },
+        {
+          "code": "1316QU",
+          "name": "13-16 Queen's Gate",
+          "aliases": ["imperial-13-16-queen-s-gate", "13-16 Queen's Gate"]
+        },
+        {
+          "code": "17QUE1",
+          "name": "17 Queen's Gate",
+          "aliases": ["imperial-17-queen-s-gate", "17 Queen's Gate"]
+        },
+        {
+          "code": "18QUEE",
+          "name": "18 Queen's Gate",
+          "aliases": ["imperial-18-queen-s-gate", "18 Queen's Gate"]
+        },
+        {
+          "code": "19QUE1",
+          "name": "19 Queen's Gate",
+          "aliases": ["imperial-19-queen-s-gate", "19 Queen's Gate"]
+        },
+        {
+          "code": "29QUE1",
+          "name": "29 Queen's Gate Mews",
+          "aliases": ["imperial-29-queen-s-gate-mews", "29 Queen's Gate Mews"]
+        },
+        {
+          "code": "32QUEE",
+          "name": "32 Queen's Gate Mews",
+          "aliases": ["imperial-32-queen-s-gate-mews", "32 Queen's Gate Mews"]
+        },
+        {
+          "code": "37AQUE",
+          "name": "37a Queen's Gate Mews",
+          "aliases": ["imperial-37a-queen-s-gate-mews", "37a Queen's Gate Mews"]
+        },
+        {
+          "code": "2QUEEN",
+          "name": "2 Queen's Gate Terrace",
+          "aliases": ["imperial-2-queen-s-gate-terrace", "2 Queen's Gate Terrace"]
+        },
+        {
+          "code": "4QUEE1",
+          "name": "4 Queen's Gate Terrace",
+          "aliases": ["imperial-4-queen-s-gate-terrace", "4 Queen's Gate Terrace"]
+        },
+        {
+          "code": "8QUEE2",
+          "name": "8 Queen's Gate Terrace",
+          "aliases": ["imperial-8-queen-s-gate-terrace", "8 Queen's Gate Terrace"]
+        },
+        {
+          "code": "10QUE2",
+          "name": "10 Queen's Gate Terrace",
+          "aliases": ["imperial-10-queen-s-gate-terrace", "10 Queen's Gate Terrace"]
+        },
+        {
+          "code": "12QUE3",
+          "name": "12 Queen's Gate Mews",
+          "aliases": ["imperial-12-queen-s-gate-mews-809617869", "12 Queen's Gate Mews"]
+        },
+        {
+          "code": "14QUE1",
+          "name": "14 Queen's Gate Terrace",
+          "aliases": ["imperial-14-queen-s-gate-terrace", "14 Queen's Gate Terrace"]
+        },
+        {
+          "code": "16QUE1",
+          "name": "16 Queen's Gate Terrace",
+          "aliases": ["imperial-16-queen-s-gate-terrace", "16 Queen's Gate Terrace"]
+        },
+        {
+          "code": "18QUE2",
+          "name": "18 Queen's Gate Terrace",
+          "aliases": ["imperial-18-queen-s-gate-terrace", "18 Queen's Gate Terrace"]
+        },
+        {
+          "code": "20QUE2",
+          "name": "20 Queen's Gate Terrace",
+          "aliases": ["imperial-20-queen-s-gate-terrace", "20 Queen's Gate Terrace"]
+        },
+        {
+          "code": "22QUE2",
+          "name": "22 Queen's Gate Terrace",
+          "aliases": ["imperial-22-queen-s-gate-terrace", "22 Queen's Gate Terrace"]
+        },
+        {
+          "code": "24QUE2",
+          "name": "24 Queen's Gate Terrace",
+          "aliases": ["imperial-24-queen-s-gate-terrace", "24 Queen's Gate Terrace"]
+        },
+        {
+          "code": "2628QU",
+          "name": "26-28 Queen's Gate Terrace",
+          "aliases": ["imperial-26-28-queen-s-gate-terrace", "26-28 Queen's Gate Terrace"]
+        },
+        {
+          "code": "30QUEE",
+          "name": "30 Queen's Gate Terrace",
+          "aliases": ["imperial-30-queen-s-gate-terrace", "30 Queen's Gate Terrace"]
+        },
+        {
+          "code": "32QUE1",
+          "name": "32 Queen's Gate Terrace",
+          "aliases": ["imperial-32-queen-s-gate-terrace", "32 Queen's Gate Terrace"]
+        },
+        {
+          "code": "34QUEE",
+          "name": "34 Queen's Gate Terrace",
+          "aliases": ["imperial-34-queen-s-gate-terrace", "34 Queen's Gate Terrace"]
+        },
+        {
+          "code": "36QUE1",
+          "name": "36 Queen's Gate Terrace",
+          "aliases": ["imperial-36-queen-s-gate-terrace", "36 Queen's Gate Terrace"]
+        },
+        {
+          "code": "38QUE1",
+          "name": "38 Queen's Gate Terrace",
+          "aliases": ["imperial-38-queen-s-gate-terrace", "38 Queen's Gate Terrace"]
+        },
+        {
+          "code": "40QUE1",
+          "name": "40 Queen's Gate Terrace",
+          "aliases": ["imperial-40-queen-s-gate-terrace", "40 Queen's Gate Terrace"]
+        },
+        {
+          "code": "42QUE1",
+          "name": "42 Queen's Gate Terrace",
+          "aliases": ["imperial-42-queen-s-gate-terrace", "42 Queen's Gate Terrace"]
+        },
+        {
+          "code": "46QUE1",
+          "name": "46 Queen's Gate Terrace",
+          "aliases": ["imperial-46-queen-s-gate-terrace", "46 Queen's Gate Terrace"]
+        },
+        {
+          "code": "48QUE1",
+          "name": "48 Queen's Gate Terrace",
+          "aliases": ["imperial-48-queen-s-gate-terrace", "48 Queen's Gate Terrace"]
+        },
+        {
+          "code": "50QUE1",
+          "name": "50 Queen's Gate Terrace",
+          "aliases": ["imperial-50-queen-s-gate-terrace", "50 Queen's Gate Terrace"]
+        },
+        {
+          "code": "52QUE1",
+          "name": "52 Queen's Gate Terrace",
+          "aliases": ["imperial-52-queen-s-gate-terrace", "52 Queen's Gate Terrace"]
+        },
+        {
+          "code": "54QUE1",
+          "name": "54 Queen's Gate Terrace",
+          "aliases": ["imperial-54-queen-s-gate-terrace", "54 Queen's Gate Terrace"]
+        },
+        {
+          "code": "1KENSI",
+          "name": "1 Kensington Gate",
+          "aliases": ["imperial-1-kensington-gate", "1 Kensington Gate"]
+        },
+        {
+          "code": "8PALAC",
+          "name": "8 Palace Gate",
+          "aliases": ["imperial-8-palace-gate", "8 Palace Gate"]
+        },
+        {
+          "code": "6PALAC",
+          "name": "6 Palace Gate",
+          "aliases": ["imperial-6-palace-gate", "6 Palace Gate"]
+        },
+        {
+          "code": "21ELVA",
+          "name": "21 Elvaston Place",
+          "aliases": ["imperial-21-elvaston-place", "21 Elvaston Place"]
+        },
+        {
+          "code": "BUIL77",
+          "name": "Building 810154044",
+          "aliases": ["imperial-building-810154044", "Building 810154044"]
+        },
+        {
+          "code": "1GORES",
+          "name": "1 Gore Street",
+          "aliases": ["imperial-1-gore-street", "1 Gore Street"]
+        },
+        {
+          "code": "METROG",
+          "name": "Metrogate House",
+          "aliases": ["imperial-metrogate-house", "Metrogate House"]
+        },
+        {
+          "code": "23ELV1",
+          "name": "23 Elvaston Place",
+          "aliases": ["imperial-23-elvaston-place", "23 Elvaston Place"]
+        },
+        {
+          "code": "25ELV1",
+          "name": "25 Elvaston Place",
+          "aliases": ["imperial-25-elvaston-place", "25 Elvaston Place"]
+        },
+        {
+          "code": "26ELV1",
+          "name": "26 Elvaston Place",
+          "aliases": ["imperial-26-elvaston-place", "26 Elvaston Place"]
+        },
+        {
+          "code": "28ELVA",
+          "name": "28 Elvaston Place",
+          "aliases": ["imperial-28-elvaston-place", "28 Elvaston Place"]
+        },
+        {
+          "code": "29ELVA",
+          "name": "29 Elvaston Place",
+          "aliases": ["imperial-29-elvaston-place", "29 Elvaston Place"]
+        },
+        {
+          "code": "30ELVA",
+          "name": "30 Elvaston Place",
+          "aliases": ["imperial-30-elvaston-place", "30 Elvaston Place"]
+        },
+        {
+          "code": "31ELV1",
+          "name": "31 Elvaston Place",
+          "aliases": ["imperial-31-elvaston-place", "31 Elvaston Place"]
+        },
+        {
+          "code": "3QUEE1",
+          "name": "3 Queen's Gate Place",
+          "aliases": ["imperial-3-queen-s-gate-place", "3 Queen's Gate Place"]
+        },
+        {
+          "code": "4QUEE2",
+          "name": "4 Queen's Gate Place",
+          "aliases": ["imperial-4-queen-s-gate-place", "4 Queen's Gate Place"]
+        },
+        {
+          "code": "2QUEE1",
+          "name": "2 Queen's Gate Place",
+          "aliases": ["imperial-2-queen-s-gate-place", "2 Queen's Gate Place"]
+        },
+        {
+          "code": "1QUEE1",
+          "name": "1 Queen's Gate Place",
+          "aliases": ["imperial-1-queen-s-gate-place", "1 Queen's Gate Place"]
+        },
+        {
+          "code": "53QUE1",
+          "name": "53 Queen's Gate",
+          "aliases": ["imperial-53-queen-s-gate", "53 Queen's Gate"]
+        },
+        {
+          "code": "35QUE1",
+          "name": "35 Queen's Gate Place Mews",
+          "aliases": ["imperial-35-queen-s-gate-place-mews", "35 Queen's Gate Place Mews"]
+        },
+        {
+          "code": "23QUE3",
+          "name": "23 Queen's Gate Place Mews",
+          "aliases": ["imperial-23-queen-s-gate-place-mews", "23 Queen's Gate Place Mews"]
+        },
+        {
+          "code": "4QUEE3",
+          "name": "4 Queen's Gate Place Mews",
+          "aliases": ["imperial-4-queen-s-gate-place-mews", "4 Queen's Gate Place Mews"]
+        },
+        {
+          "code": "39AQUE",
+          "name": "39a Queen's Gate Gardens",
+          "aliases": ["imperial-39a-queen-s-gate-gardens", "39a Queen's Gate Gardens"]
+        },
+        {
+          "code": "53QUE2",
+          "name": "53 Queen's Gate Gardens",
+          "aliases": ["imperial-53-queen-s-gate-gardens", "53 Queen's Gate Gardens"]
+        },
+        {
+          "code": "52QUE2",
+          "name": "52 Queen's Gate Gardens",
+          "aliases": ["imperial-52-queen-s-gate-gardens", "52 Queen's Gate Gardens"]
+        },
+        {
+          "code": "5051QU",
+          "name": "50-51 Queen's Gate Gardens",
+          "aliases": ["imperial-50-51-queen-s-gate-gardens", "50-51 Queen's Gate Gardens"]
+        },
+        {
+          "code": "108110",
+          "name": "108-110 Gloucester Road",
+          "aliases": ["imperial-108-110-gloucester-road", "108-110 Gloucester Road"]
+        },
+        {
+          "code": "106GLO",
+          "name": "106 Gloucester Road",
+          "aliases": ["imperial-106-gloucester-road", "106 Gloucester Road"]
+        },
+        {
+          "code": "104GLO",
+          "name": "104 Gloucester Road",
+          "aliases": ["imperial-104-gloucester-road", "104 Gloucester Road"]
+        },
+        {
+          "code": "102GLO",
+          "name": "102 Gloucester Road",
+          "aliases": ["imperial-102-gloucester-road", "102 Gloucester Road"]
+        },
+        {
+          "code": "100GLO",
+          "name": "100 Gloucester Road",
+          "aliases": ["imperial-100-gloucester-road", "100 Gloucester Road"]
+        },
+        {
+          "code": "96GLOU",
+          "name": "96 Gloucester Road",
+          "aliases": ["imperial-96-gloucester-road", "96 Gloucester Road"]
+        },
+        {
+          "code": "94CORN",
+          "name": "94 Cornwall Gardens",
+          "aliases": ["imperial-94-cornwall-gardens", "94 Cornwall Gardens"]
+        },
+        {
+          "code": "93CORN",
+          "name": "93 Cornwall Gardens",
+          "aliases": ["imperial-93-cornwall-gardens", "93 Cornwall Gardens"]
+        },
+        {
+          "code": "92CORN",
+          "name": "92 Cornwall Gardens",
+          "aliases": ["imperial-92-cornwall-gardens", "92 Cornwall Gardens"]
+        },
+        {
+          "code": "91CORN",
+          "name": "91 Cornwall Gardens",
+          "aliases": ["imperial-91-cornwall-gardens", "91 Cornwall Gardens"]
+        },
+        {
+          "code": "90CORN",
+          "name": "90 Cornwall Gardens",
+          "aliases": ["imperial-90-cornwall-gardens", "90 Cornwall Gardens"]
+        },
+        {
+          "code": "89CORN",
+          "name": "89 Cornwall Gardens",
+          "aliases": ["imperial-89-cornwall-gardens", "89 Cornwall Gardens"]
+        },
+        {
+          "code": "13CORN",
+          "name": "1-3 Cornwall Gardens",
+          "aliases": ["imperial-1-3-cornwall-gardens", "1-3 Cornwall Gardens"]
+        },
+        {
+          "code": "4CORN1",
+          "name": "4 Cornwall Gardens",
+          "aliases": ["imperial-4-cornwall-gardens", "4 Cornwall Gardens"]
+        },
+        {
+          "code": "5CORNW",
+          "name": "5 Cornwall Gardens",
+          "aliases": ["imperial-5-cornwall-gardens", "5 Cornwall Gardens"]
+        },
+        {
+          "code": "1719AL",
+          "name": "17-19 Albert Mews",
+          "aliases": ["imperial-17-19-albert-mews", "17-19 Albert Mews"]
+        },
+        {
+          "code": "2022AL",
+          "name": "20-22 Albert Mews",
+          "aliases": ["imperial-20-22-albert-mews", "20-22 Albert Mews"]
+        },
+        {
+          "code": "39DEVE",
+          "name": "39 De Vere Gardens",
+          "aliases": ["imperial-39-de-vere-gardens", "39 De Vere Gardens"]
+        },
+        {
+          "code": "39ADEV",
+          "name": "39a De Vere Gardens",
+          "aliases": ["imperial-39a-de-vere-gardens", "39a De Vere Gardens"]
+        },
+        {
+          "code": "726CAN",
+          "name": "7-26 Canning Place Mews",
+          "aliases": ["imperial-7-26-canning-place-mews", "7-26 Canning Place Mews"]
+        },
+        {
+          "code": "17DEVE",
+          "name": "17 De Vere Gardens",
+          "aliases": ["imperial-17-de-vere-gardens", "17 De Vere Gardens"]
+        },
+        {
+          "code": "21DEVE",
+          "name": "21 De Vere Gardens",
+          "aliases": ["imperial-21-de-vere-gardens", "21 De Vere Gardens"]
+        },
+        {
+          "code": "25DEVE",
+          "name": "25 De Vere Gardens",
+          "aliases": ["imperial-25-de-vere-gardens", "25 De Vere Gardens"]
+        },
+        {
+          "code": "29DEVE",
+          "name": "29 De Vere Gardens",
+          "aliases": ["imperial-29-de-vere-gardens", "29 De Vere Gardens"]
+        },
+        {
+          "code": "31DEVE",
+          "name": "31 De Vere Gardens",
+          "aliases": ["imperial-31-de-vere-gardens", "31 De Vere Gardens"]
+        },
+        {
+          "code": "33DEVE",
+          "name": "33 De Vere Gardens",
+          "aliases": ["imperial-33-de-vere-gardens", "33 De Vere Gardens"]
+        },
+        {
+          "code": "37DEVE",
+          "name": "37 De Vere Gardens",
+          "aliases": ["imperial-37-de-vere-gardens", "37 De Vere Gardens"]
+        },
+        {
+          "code": "BUI114",
+          "name": "Building 843398709",
+          "aliases": ["imperial-building-843398709", "Building 843398709"]
+        },
+        {
+          "code": "19STAN",
+          "name": "19 Stanhope Mews West",
+          "aliases": ["imperial-19-stanhope-mews-west", "19 Stanhope Mews West"]
+        },
+        {
+          "code": "83CROM",
+          "name": "83 Cromwell Road",
+          "aliases": ["imperial-83-cromwell-road", "83 Cromwell Road"]
+        },
+        {
+          "code": "81CROM",
+          "name": "81 Cromwell Road",
+          "aliases": ["imperial-81-cromwell-road", "81 Cromwell Road"]
+        },
+        {
+          "code": "53STAN",
+          "name": "53 Stanhope Gardens",
+          "aliases": ["imperial-53-stanhope-gardens", "53 Stanhope Gardens"]
+        },
+        {
+          "code": "124QUE",
+          "name": "124 Queen's Gate",
+          "aliases": ["imperial-124-queen-s-gate", "124 Queen's Gate"]
+        },
+        {
+          "code": "123QUE",
+          "name": "123 Queen's Gate",
+          "aliases": ["imperial-123-queen-s-gate", "123 Queen's Gate"]
+        },
+        {
+          "code": "20QUE4",
+          "name": "20 Queensberry Mews West",
+          "aliases": ["imperial-20-queensberry-mews-west", "20 Queensberry Mews West"]
+        },
+        {
+          "code": "22QUE4",
+          "name": "22 Queensberry Mews West",
+          "aliases": ["imperial-22-queensberry-mews-west", "22 Queensberry Mews West"]
+        },
+        {
+          "code": "1QUEE2",
+          "name": "1 Queensberry Mews West",
+          "aliases": ["imperial-1-queensberry-mews-west", "1 Queensberry Mews West"]
+        },
+        {
+          "code": "2QUEE3",
+          "name": "2 Queensberry Mews West",
+          "aliases": ["imperial-2-queensberry-mews-west", "2 Queensberry Mews West"]
+        },
+        {
+          "code": "134QUE",
+          "name": "134 Queen's Gate",
+          "aliases": ["imperial-134-queen-s-gate", "134 Queen's Gate"]
+        },
+        {
+          "code": "47CROM",
+          "name": "47 Cromwell Road",
+          "aliases": ["imperial-47-cromwell-road", "47 Cromwell Road"]
+        },
+        {
+          "code": "12QUE5",
+          "name": "12 Queensberry Place",
+          "aliases": ["imperial-12-queensberry-place", "12 Queensberry Place"]
+        },
+        {
+          "code": "18QUE4",
+          "name": "18 Queensberry Place",
+          "aliases": ["imperial-18-queensberry-place", "18 Queensberry Place"]
+        },
+        {
+          "code": "116QUE",
+          "name": "116 Queen's Gate",
+          "aliases": ["imperial-116-queen-s-gate", "116 Queen's Gate"]
+        },
+        {
+          "code": "115QUE",
+          "name": "115 Queen's Gate",
+          "aliases": ["imperial-115-queen-s-gate", "115 Queen's Gate"]
+        },
+        {
+          "code": "115BQU",
+          "name": "115b Queen's Gate",
+          "aliases": ["imperial-115b-queen-s-gate", "115b Queen's Gate"]
+        },
+        {
+          "code": "23REEC",
+          "name": "2-3 Reece Mews",
+          "aliases": ["imperial-2-3-reece-mews", "2-3 Reece Mews"]
+        },
+        {
+          "code": "14REEC",
+          "name": "14 Reece Mews",
+          "aliases": ["imperial-14-reece-mews", "14 Reece Mews"]
+        },
+        {
+          "code": "15REEC",
+          "name": "15 Reece Mews",
+          "aliases": ["imperial-15-reece-mews", "15 Reece Mews"]
+        },
+        {
+          "code": "SORBON",
+          "name": "Sorbonne House",
+          "aliases": ["imperial-sorbonne-house", "Sorbonne House"]
+        },
+        {
+          "code": "37CROM",
+          "name": "37 Cromwell Road",
+          "aliases": ["imperial-37-cromwell-road", "37 Cromwell Road"]
+        },
+        {
+          "code": "1QUEE3",
+          "name": "1 Queensberry Place",
+          "aliases": ["imperial-1-queensberry-place", "1 Queensberry Place"]
+        },
+        {
+          "code": "3QUEE2",
+          "name": "3 Queensberry Place",
+          "aliases": ["imperial-3-queensberry-place", "3 Queensberry Place"]
+        },
+        {
+          "code": "5QUEE1",
+          "name": "5 Queensberry Place",
+          "aliases": ["imperial-5-queensberry-place", "5 Queensberry Place"]
+        },
+        {
+          "code": "60PRIN",
+          "name": "60 Princes Gate Mews",
+          "aliases": ["imperial-60-princes-gate-mews", "60 Princes Gate Mews"]
+        },
+        {
+          "code": "BUI149",
+          "name": "Building 851734290",
+          "aliases": ["imperial-building-851734290", "Building 851734290"]
+        },
+        {
+          "code": "32BROM",
+          "name": "32 Brompton Square",
+          "aliases": ["imperial-32-brompton-square", "32 Brompton Square"]
+        },
+        {
+          "code": "31BROM",
+          "name": "31 Brompton Square",
+          "aliases": ["imperial-31-brompton-square", "31 Brompton Square"]
+        },
+        {
+          "code": "30BROM",
+          "name": "30 Brompton Square",
+          "aliases": ["imperial-30-brompton-square", "30 Brompton Square"]
+        },
+        {
+          "code": "29BROM",
+          "name": "29 Brompton Square",
+          "aliases": ["imperial-29-brompton-square", "29 Brompton Square"]
+        },
+        {
+          "code": "28BROM",
+          "name": "28 Brompton Square",
+          "aliases": ["imperial-28-brompton-square", "28 Brompton Square"]
+        },
+        {
+          "code": "33BROM",
+          "name": "33 Brompton Square",
+          "aliases": ["imperial-33-brompton-square", "33 Brompton Square"]
+        },
+        {
+          "code": "34BROM",
+          "name": "34 Brompton Square",
+          "aliases": ["imperial-34-brompton-square", "34 Brompton Square"]
+        },
+        {
+          "code": "35BROM",
+          "name": "35 Brompton Square",
+          "aliases": ["imperial-35-brompton-square", "35 Brompton Square"]
+        },
+        {
+          "code": "27BROM",
+          "name": "27 Brompton Square",
+          "aliases": ["imperial-27-brompton-square", "27 Brompton Square"]
+        },
+        {
+          "code": "26BROM",
+          "name": "26 Brompton Square",
+          "aliases": ["imperial-26-brompton-square", "26 Brompton Square"]
+        },
+        {
+          "code": "19BROM",
+          "name": "19 Brompton Square",
+          "aliases": ["imperial-19-brompton-square", "19 Brompton Square"]
+        },
+        {
+          "code": "18BROM",
+          "name": "18 Brompton Square",
+          "aliases": ["imperial-18-brompton-square", "18 Brompton Square"]
+        },
+        {
+          "code": "17BROM",
+          "name": "17 Brompton Square",
+          "aliases": ["imperial-17-brompton-square", "17 Brompton Square"]
+        },
+        {
+          "code": "38BROM",
+          "name": "38 Brompton Square",
+          "aliases": ["imperial-38-brompton-square", "38 Brompton Square"]
+        },
+        {
+          "code": "50BROM",
+          "name": "50 Brompton Square",
+          "aliases": ["imperial-50-brompton-square", "50 Brompton Square"]
+        },
+        {
+          "code": "56BROM",
+          "name": "56 Brompton Square",
+          "aliases": ["imperial-56-brompton-square", "56 Brompton Square"]
+        },
+        {
+          "code": "41CHEV",
+          "name": "41 Cheval Place",
+          "aliases": ["imperial-41-cheval-place", "41 Cheval Place"]
+        },
+        {
+          "code": "2931CH",
+          "name": "29-31 Cheval Place",
+          "aliases": ["imperial-29-31-cheval-place", "29-31 Cheval Place"]
+        },
+        {
+          "code": "2125CH",
+          "name": "21-25 Cheval Place",
+          "aliases": ["imperial-21-25-cheval-place", "21-25 Cheval Place"]
+        },
+        {
+          "code": "13CHEV",
+          "name": "1-3 Cheval Place",
+          "aliases": ["imperial-1-3-cheval-place", "1-3 Cheval Place"]
+        },
+        {
+          "code": "4YEOMA",
+          "name": "4 Yeoman's Row",
+          "aliases": ["imperial-4-yeoman-s-row", "4 Yeoman's Row"]
+        },
+        {
+          "code": "4050YE",
+          "name": "40-50 Yeoman's Row",
+          "aliases": ["imperial-40-50-yeoman-s-row", "40-50 Yeoman's Row"]
+        },
+        {
+          "code": "49EGE1",
+          "name": "49 Egerton Gardens",
+          "aliases": ["imperial-49-egerton-gardens", "49 Egerton Gardens"]
+        },
+        {
+          "code": "47EGE1",
+          "name": "47 Egerton Gardens",
+          "aliases": ["imperial-47-egerton-gardens", "47 Egerton Gardens"]
+        },
+        {
+          "code": "45EGE1",
+          "name": "45 Egerton Gardens",
+          "aliases": ["imperial-45-egerton-gardens", "45 Egerton Gardens"]
+        },
+        {
+          "code": "43EGER",
+          "name": "43 Egerton Gardens",
+          "aliases": ["imperial-43-egerton-gardens", "43 Egerton Gardens"]
+        },
+        {
+          "code": "35EGE1",
+          "name": "35 Egerton Gardens",
+          "aliases": ["imperial-35-egerton-gardens", "35 Egerton Gardens"]
+        },
+        {
+          "code": "31EGE1",
+          "name": "31 Egerton Gardens",
+          "aliases": ["imperial-31-egerton-gardens", "31 Egerton Gardens"]
+        },
+        {
+          "code": "19EGER",
+          "name": "19 Egerton Gardens",
+          "aliases": ["imperial-19-egerton-gardens", "19 Egerton Gardens"]
+        },
+        {
+          "code": "17EGER",
+          "name": "17 Egerton Gardens",
+          "aliases": ["imperial-17-egerton-gardens", "17 Egerton Gardens"]
+        },
+        {
+          "code": "BUI196",
+          "name": "Building 864021236",
+          "aliases": ["imperial-building-864021236", "Building 864021236"]
+        },
+        {
+          "code": "20THU1",
+          "name": "20 Thurloe Place",
+          "aliases": ["imperial-20-thurloe-place", "20 Thurloe Place"]
+        },
+        {
+          "code": "20THU2",
+          "name": "20 Thurloe Place",
+          "aliases": ["imperial-20-thurloe-place-867775190", "20 Thurloe Place"]
+        },
+        {
+          "code": "266BRO",
+          "name": "266 Brompton Road",
+          "aliases": ["imperial-266-brompton-road", "266 Brompton Road"]
+        },
+        {
+          "code": "13SUMN",
+          "name": "13 Sumner Place",
+          "aliases": ["imperial-13-sumner-place", "13 Sumner Place"]
+        },
+        {
+          "code": "23SUMN",
+          "name": "23 Sumner Place",
+          "aliases": ["imperial-23-sumner-place", "23 Sumner Place"]
+        },
+        {
+          "code": "ALBER2",
+          "name": "Albert Court",
+          "aliases": ["imperial-albert-court", "Albert Court"]
+        },
+        {
+          "code": "5859BR",
+          "name": "58-59 Brompton Square",
+          "aliases": ["imperial-58-59-brompton-square", "58-59 Brompton Square"]
+        }
+      ]
+    },
+    "imperial-white-city": {
+      "universityId": "imperial",
+      "universityName": "Imperial College London",
+      "campusId": "imperial-white-city",
+      "campusName": "Imperial College White City Campus",
+      "totalBuildings": 416,
+      "residenceCount": 67,
+      "residences": [
+        {
+          "code": "BUILD1",
+          "name": "Building 226873433",
+          "aliases": ["imperial-building-226873433", "Building 226873433"]
+        },
+        {
+          "code": "2PAVIL",
+          "name": "2 Pavilion Parade Wood Lane",
+          "aliases": ["imperial-2-pavilion-parade-wood-lane", "2 Pavilion Parade Wood Lane"]
+        },
+        {
+          "code": "GRADPA",
+          "name": "Gradpad, Wood Lane Studios",
+          "aliases": ["imperial-gradpad-wood-lane-studios", "Gradpad, Wood Lane Studios"]
+        },
+        {
+          "code": "8STQUI",
+          "name": "8 St. Quintin Gardens",
+          "aliases": ["imperial-8-st-quintin-gardens", "8 St. Quintin Gardens"]
+        },
+        {
+          "code": "7STQUI",
+          "name": "7 St. Quintin Gardens",
+          "aliases": ["imperial-7-st-quintin-gardens", "7 St. Quintin Gardens"]
+        },
+        {
+          "code": "6STQUI",
+          "name": "6 St. Quintin Gardens",
+          "aliases": ["imperial-6-st-quintin-gardens", "6 St. Quintin Gardens"]
+        },
+        {
+          "code": "5STQUI",
+          "name": "5 St. Quintin Gardens",
+          "aliases": ["imperial-5-st-quintin-gardens", "5 St. Quintin Gardens"]
+        },
+        {
+          "code": "4STQUI",
+          "name": "4 St. Quintin Gardens",
+          "aliases": ["imperial-4-st-quintin-gardens", "4 St. Quintin Gardens"]
+        },
+        {
+          "code": "3STQUI",
+          "name": "3 St. Quintin Gardens",
+          "aliases": ["imperial-3-st-quintin-gardens", "3 St. Quintin Gardens"]
+        },
+        {
+          "code": "2STQUI",
+          "name": "2 St. Quintin Gardens",
+          "aliases": ["imperial-2-st-quintin-gardens", "2 St. Quintin Gardens"]
+        },
+        {
+          "code": "1STQUI",
+          "name": "1 St. Quintin Gardens",
+          "aliases": ["imperial-1-st-quintin-gardens", "1 St. Quintin Gardens"]
+        },
+        {
+          "code": "80STQU",
+          "name": "80 St Quintin Avenue",
+          "aliases": ["imperial-80-st-quintin-avenue", "80 St Quintin Avenue"]
+        },
+        {
+          "code": "78STQU",
+          "name": "78 St Quintin Avenue",
+          "aliases": ["imperial-78-st-quintin-avenue", "78 St Quintin Avenue"]
+        },
+        {
+          "code": "7274ST",
+          "name": "72-74 St Quintin Avenue",
+          "aliases": ["imperial-72-74-st-quintin-avenue", "72-74 St Quintin Avenue"]
+        },
+        {
+          "code": "104HIG",
+          "name": "104 Highlever Road",
+          "aliases": ["imperial-104-highlever-road", "104 Highlever Road"]
+        },
+        {
+          "code": "47STQU",
+          "name": "47 St Quintin Avenue",
+          "aliases": ["imperial-47-st-quintin-avenue", "47 St Quintin Avenue"]
+        },
+        {
+          "code": "51STQU",
+          "name": "51 St Quintin Avenue",
+          "aliases": ["imperial-51-st-quintin-avenue", "51 St Quintin Avenue"]
+        },
+        {
+          "code": "53STQU",
+          "name": "53 St Quintin Avenue",
+          "aliases": ["imperial-53-st-quintin-avenue", "53 St Quintin Avenue"]
+        },
+        {
+          "code": "55STQU",
+          "name": "55 St Quintin Avenue",
+          "aliases": ["imperial-55-st-quintin-avenue", "55 St Quintin Avenue"]
+        },
+        {
+          "code": "57STQU",
+          "name": "57 St Quintin Avenue",
+          "aliases": ["imperial-57-st-quintin-avenue", "57 St Quintin Avenue"]
+        },
+        {
+          "code": "59STQU",
+          "name": "59 St Quintin Avenue",
+          "aliases": ["imperial-59-st-quintin-avenue", "59 St Quintin Avenue"]
+        },
+        {
+          "code": "61STQU",
+          "name": "61 St Quintin Avenue",
+          "aliases": ["imperial-61-st-quintin-avenue", "61 St Quintin Avenue"]
+        },
+        {
+          "code": "63STQU",
+          "name": "63 St Quintin Avenue",
+          "aliases": ["imperial-63-st-quintin-avenue", "63 St Quintin Avenue"]
+        },
+        {
+          "code": "65STQU",
+          "name": "65 St Quintin Avenue",
+          "aliases": ["imperial-65-st-quintin-avenue", "65 St Quintin Avenue"]
+        },
+        {
+          "code": "57STQ1",
+          "name": "57 St Quintin Avenue",
+          "aliases": ["imperial-57-st-quintin-avenue-782587828", "57 St Quintin Avenue"]
+        },
+        {
+          "code": "71STQU",
+          "name": "71 St Quintin Avenue",
+          "aliases": ["imperial-71-st-quintin-avenue", "71 St Quintin Avenue"]
+        },
+        {
+          "code": "73STQU",
+          "name": "73 St Quintin Avenue",
+          "aliases": ["imperial-73-st-quintin-avenue", "73 St Quintin Avenue"]
+        },
+        {
+          "code": "83STQU",
+          "name": "83 St Quintin Avenue",
+          "aliases": ["imperial-83-st-quintin-avenue", "83 St Quintin Avenue"]
+        },
+        {
+          "code": "123HIG",
+          "name": "123 Highlever Road",
+          "aliases": ["imperial-123-highlever-road", "123 Highlever Road"]
+        },
+        {
+          "code": "127HIG",
+          "name": "127 Highlever Road",
+          "aliases": ["imperial-127-highlever-road", "127 Highlever Road"]
+        },
+        {
+          "code": "125HIG",
+          "name": "125 Highlever Road",
+          "aliases": ["imperial-125-highlever-road", "125 Highlever Road"]
+        },
+        {
+          "code": "121HIG",
+          "name": "121 Highlever Road",
+          "aliases": ["imperial-121-highlever-road", "121 Highlever Road"]
+        },
+        {
+          "code": "119HIG",
+          "name": "119 Highlever Road",
+          "aliases": ["imperial-119-highlever-road", "119 Highlever Road"]
+        },
+        {
+          "code": "115117",
+          "name": "115-117 Highlever Road",
+          "aliases": ["imperial-115-117-highlever-road", "115-117 Highlever Road"]
+        },
+        {
+          "code": "113HIG",
+          "name": "113 Highlever Road",
+          "aliases": ["imperial-113-highlever-road", "113 Highlever Road"]
+        },
+        {
+          "code": "111HIG",
+          "name": "111 Highlever Road",
+          "aliases": ["imperial-111-highlever-road", "111 Highlever Road"]
+        },
+        {
+          "code": "109HIG",
+          "name": "109 Highlever Road",
+          "aliases": ["imperial-109-highlever-road", "109 Highlever Road"]
+        },
+        {
+          "code": "107HIG",
+          "name": "107 Highlever Road",
+          "aliases": ["imperial-107-highlever-road", "107 Highlever Road"]
+        },
+        {
+          "code": "105HIG",
+          "name": "105 Highlever Road",
+          "aliases": ["imperial-105-highlever-road", "105 Highlever Road"]
+        },
+        {
+          "code": "2LATIM",
+          "name": "2 Latimer Place",
+          "aliases": ["imperial-2-latimer-place", "2 Latimer Place"]
+        },
+        {
+          "code": "1LATIM",
+          "name": "1 Latimer Place",
+          "aliases": ["imperial-1-latimer-place", "1 Latimer Place"]
+        },
+        {
+          "code": "276LAT",
+          "name": "276 Latimer Road",
+          "aliases": ["imperial-276-latimer-road", "276 Latimer Road"]
+        },
+        {
+          "code": "278LAT",
+          "name": "278 Latimer Road",
+          "aliases": ["imperial-278-latimer-road", "278 Latimer Road"]
+        },
+        {
+          "code": "280LAT",
+          "name": "280 Latimer Road",
+          "aliases": ["imperial-280-latimer-road", "280 Latimer Road"]
+        },
+        {
+          "code": "282LAT",
+          "name": "282 Latimer Road",
+          "aliases": ["imperial-282-latimer-road", "282 Latimer Road"]
+        },
+        {
+          "code": "284LAT",
+          "name": "284 Latimer Road",
+          "aliases": ["imperial-284-latimer-road", "284 Latimer Road"]
+        },
+        {
+          "code": "286LAT",
+          "name": "286 Latimer Road",
+          "aliases": ["imperial-286-latimer-road", "286 Latimer Road"]
+        },
+        {
+          "code": "17NORT",
+          "name": "17 North Pole Road",
+          "aliases": ["imperial-17-north-pole-road", "17 North Pole Road"]
+        },
+        {
+          "code": "21NORT",
+          "name": "21 North Pole Road",
+          "aliases": ["imperial-21-north-pole-road", "21 North Pole Road"]
+        },
+        {
+          "code": "9CALDE",
+          "name": "9 Calderon Place",
+          "aliases": ["imperial-9-calderon-place", "9 Calderon Place"]
+        },
+        {
+          "code": "10CALD",
+          "name": "10 Calderon Place",
+          "aliases": ["imperial-10-calderon-place", "10 Calderon Place"]
+        },
+        {
+          "code": "1425PI",
+          "name": "14-25 Pioneer Way",
+          "aliases": ["imperial-14-25-pioneer-way", "14-25 Pioneer Way"]
+        },
+        {
+          "code": "2637PI",
+          "name": "26-37 Pioneer Way",
+          "aliases": ["imperial-26-37-pioneer-way", "26-37 Pioneer Way"]
+        },
+        {
+          "code": "3849PI",
+          "name": "38-49 Pioneer Way",
+          "aliases": ["imperial-38-49-pioneer-way", "38-49 Pioneer Way"]
+        },
+        {
+          "code": "5061PI",
+          "name": "50-61 Pioneer Way",
+          "aliases": ["imperial-50-61-pioneer-way", "50-61 Pioneer Way"]
+        },
+        {
+          "code": "233SCR",
+          "name": "233 Scrubs Lane",
+          "aliases": ["imperial-233-scrubs-lane", "233 Scrubs Lane"]
+        },
+        {
+          "code": "235SCR",
+          "name": "235 Scrubs Lane",
+          "aliases": ["imperial-235-scrubs-lane", "235 Scrubs Lane"]
+        },
+        {
+          "code": "9EYNHA",
+          "name": "9 Eynham Road",
+          "aliases": ["imperial-9-eynham-road", "9 Eynham Road"]
+        },
+        {
+          "code": "2EYNHA",
+          "name": "2 Eynham Road",
+          "aliases": ["imperial-2-eynham-road", "2 Eynham Road"]
+        },
+        {
+          "code": "4EYNHA",
+          "name": "4 Eynham Road",
+          "aliases": ["imperial-4-eynham-road", "4 Eynham Road"]
+        },
+        {
+          "code": "6EYNHA",
+          "name": "6 Eynham Road",
+          "aliases": ["imperial-6-eynham-road", "6 Eynham Road"]
+        },
+        {
+          "code": "BUI182",
+          "name": "Building 923897192",
+          "aliases": ["imperial-building-923897192", "Building 923897192"]
+        },
+        {
+          "code": "713AUS",
+          "name": "7-13 Australia Road",
+          "aliases": ["imperial-7-13-australia-road", "7-13 Australia Road"]
+        },
+        {
+          "code": "BUI183",
+          "name": "Building 923897202",
+          "aliases": ["imperial-building-923897202", "Building 923897202"]
+        },
+        {
+          "code": "BUI185",
+          "name": "Building 930501336",
+          "aliases": ["imperial-building-930501336", "Building 930501336"]
+        },
+        {
+          "code": "BUI186",
+          "name": "Building 930501337",
+          "aliases": ["imperial-building-930501337", "Building 930501337"]
+        },
+        {
+          "code": "161165",
+          "name": "161-165 Wood Lane",
+          "aliases": ["imperial-161-165-wood-lane", "161-165 Wood Lane"]
+        }
+      ]
+    },
+    "ethz-zentrum": {
+      "universityId": "ethz",
+      "universityName": "ETH Zürich",
+      "campusId": "ethz-zentrum",
+      "campusName": "ETH Zürich Zentrum Campus",
+      "totalBuildings": 1262,
+      "residenceCount": 10,
+      "residences": [
+        {
+          "code": "18LEON",
+          "name": "18 Leonhardstrasse",
+          "aliases": ["ethz-18-leonhardstrasse", "18 Leonhardstrasse"]
+        },
+        {
+          "code": "21ZHRI",
+          "name": "21 Zähringerstrasse",
+          "aliases": ["ethz-21-z-hringerstrasse", "21 Zähringerstrasse"]
+        },
+        {
+          "code": "15LEON",
+          "name": "15 Leonhardshalde",
+          "aliases": ["ethz-15-leonhardshalde", "15 Leonhardshalde"]
+        },
+        {
+          "code": "MAXIMI",
+          "name": "Maximilianeum",
+          "aliases": ["ethz-maximilianeum", "Maximilianeum"]
+        },
+        {
+          "code": "17LEON",
+          "name": "17 Leonhardshalde",
+          "aliases": ["ethz-17-leonhardshalde", "17 Leonhardshalde"]
+        },
+        {
+          "code": "19LEON",
+          "name": "19 Leonhardshalde",
+          "aliases": ["ethz-19-leonhardshalde", "19 Leonhardshalde"]
+        },
+        {
+          "code": "16LEON",
+          "name": "16 Leonhardstrasse",
+          "aliases": ["ethz-16-leonhardstrasse", "16 Leonhardstrasse"]
+        },
+        {
+          "code": "BUIL83",
+          "name": "Building 277957957",
+          "aliases": ["ethz-building-277957957", "Building 277957957"]
+        },
+        {
+          "code": "40VOLT",
+          "name": "40 Voltastrasse",
+          "aliases": ["ethz-40-voltastrasse", "40 Voltastrasse"]
+        },
+        {
+          "code": "18MOUS",
+          "name": "18 Moussonstrasse",
+          "aliases": ["ethz-18-moussonstrasse", "18 Moussonstrasse"]
+        }
+      ]
+    },
+    "ethz-hoenggerberg": {
+      "universityId": "ethz",
+      "universityName": "ETH Zürich",
+      "campusId": "ethz-hoenggerberg",
+      "campusName": "ETH Zürich Hönggerberg Campus",
+      "totalBuildings": 255,
+      "residenceCount": 9,
+      "residences": [
+        {
+          "code": "60VOGT",
+          "name": "60 Vogtsrain",
+          "aliases": ["ethz-60-vogtsrain", "60 Vogtsrain"]
+        },
+        {
+          "code": "65GSTE",
+          "name": "65 Gsteigstrasse",
+          "aliases": ["ethz-65-gsteigstrasse", "65 Gsteigstrasse"]
+        },
+        {
+          "code": "3PAULF",
+          "name": "3 Paul-Feyerabend-Hof",
+          "aliases": ["ethz-3-paul-feyerabend-hof", "3 Paul-Feyerabend-Hof"]
+        },
+        {
+          "code": "5PAULF",
+          "name": "5 Paul-Feyerabend-Hof",
+          "aliases": ["ethz-5-paul-feyerabend-hof", "5 Paul-Feyerabend-Hof"]
+        },
+        {
+          "code": "1PAULF",
+          "name": "1 Paul-Feyerabend-Hof",
+          "aliases": ["ethz-1-paul-feyerabend-hof", "1 Paul-Feyerabend-Hof"]
+        },
+        {
+          "code": "17PETE",
+          "name": "17 Peter-Debye-Weg",
+          "aliases": ["ethz-17-peter-debye-weg", "17 Peter-Debye-Weg"]
+        },
+        {
+          "code": "13PETE",
+          "name": "13 Peter-Debye-Weg",
+          "aliases": ["ethz-13-peter-debye-weg", "13 Peter-Debye-Weg"]
+        },
+        {
+          "code": "13APET",
+          "name": "13a Peter-Debye-Weg",
+          "aliases": ["ethz-13a-peter-debye-weg", "13a Peter-Debye-Weg"]
+        },
+        {
+          "code": "17APET",
+          "name": "17a Peter-Debye-Weg",
+          "aliases": ["ethz-17a-peter-debye-weg", "17a Peter-Debye-Weg"]
+        }
+      ]
+    },
+    "caltech": {
+      "universityId": "caltech",
+      "universityName": "California Institute of Technology",
+      "campusId": "caltech",
+      "campusName": "California Institute of Technology",
+      "totalBuildings": 543,
+      "residenceCount": 7,
+      "residences": [
+        {
+          "code": "55",
+          "name": "Venerable House",
+          "aliases": ["caltech-venerable-house", "Venerable House"]
+        },
+        {
+          "code": "54",
+          "name": "Lloyd House",
+          "aliases": ["caltech-lloyd-house", "Lloyd House"]
+        },
+        {
+          "code": "PAGEHO",
+          "name": "Page House",
+          "aliases": ["caltech-page-house", "Page House"]
+        },
+        {
+          "code": "DABNEY",
+          "name": "Dabney House",
+          "aliases": ["caltech-dabney-house", "Dabney House"]
+        },
+        {
+          "code": "60",
+          "name": "Blacker House",
+          "aliases": ["caltech-blacker-house", "Blacker House"]
+        },
+        {
+          "code": "89",
+          "name": "Marks House",
+          "aliases": ["caltech-marks-house", "Marks House"]
+        },
+        {
+          "code": "88",
+          "name": "Braun House",
+          "aliases": ["caltech-braun-house", "Braun House"]
+        }
+      ]
+    },
+    "jhu-homewood": {
+      "universityId": "jhu",
+      "universityName": "Johns Hopkins University",
+      "campusId": "jhu-homewood",
+      "campusName": "Johns Hopkins Homewood Campus",
+      "totalBuildings": 1405,
+      "residenceCount": 12,
+      "residences": [
+        {
+          "code": "AMRII",
+          "name": "AMR II",
+          "aliases": ["jhu-amr-ii", "AMR II"]
+        },
+        {
+          "code": "AMRIII",
+          "name": "AMR III Building A",
+          "aliases": ["jhu-amr-iii-building-a", "AMR III Building A"]
+        },
+        {
+          "code": "AMRII1",
+          "name": "AMR III Building B",
+          "aliases": ["jhu-amr-iii-building-b", "AMR III Building B"]
+        },
+        {
+          "code": "3501NO",
+          "name": "3501 North Calvert Street",
+          "aliases": ["jhu-3501-north-calvert-street", "3501 North Calvert Street"]
+        },
+        {
+          "code": "BRADFO",
+          "name": "Bradford Apartments",
+          "aliases": ["jhu-bradford-apartments", "Bradford Apartments"]
+        },
+        {
+          "code": "ROGERS",
+          "name": "Rogers House",
+          "aliases": ["jhu-rogers-house", "Rogers House"]
+        },
+        {
+          "code": "MCCOYH",
+          "name": "McCoy Hall",
+          "aliases": ["jhu-mccoy-hall", "McCoy Hall"]
+        },
+        {
+          "code": "THECHA",
+          "name": "The Charles",
+          "aliases": ["jhu-the-charles", "The Charles"]
+        },
+        {
+          "code": "WOLMAN",
+          "name": "Wolman Hall",
+          "aliases": ["jhu-wolman-hall", "Wolman Hall"]
+        },
+        {
+          "code": "SCOTTB",
+          "name": "Scott-Bates Commons",
+          "aliases": ["jhu-scott-bates-commons", "Scott-Bates Commons"]
+        },
+        {
+          "code": "SCOTT1",
+          "name": "Scott-Bates Commons",
+          "aliases": ["jhu-scott-bates-commons-337103760", "Scott-Bates Commons"]
+        },
+        {
+          "code": "BUI277",
+          "name": "Building 818903420",
+          "aliases": ["jhu-building-818903420", "Building 818903420"]
+        }
+      ]
+    },
+    "jhu-east-baltimore": {
+      "universityId": "jhu",
+      "universityName": "Johns Hopkins University",
+      "campusId": "jhu-east-baltimore",
+      "campusName": "Johns Hopkins East Baltimore Medical Campus",
+      "totalBuildings": 1556,
+      "residenceCount": 1,
+      "residences": [
+        {
+          "code": "APOSTO",
+          "name": "Apostolic Towers",
+          "aliases": ["jhu-apostolic-towers", "Apostolic Towers"]
+        }
+      ]
+    },
+    "epfl": {
+      "universityId": "epfl",
+      "universityName": "EPFL",
+      "campusId": "epfl",
+      "campusName": "EPFL Campus Lausanne",
+      "totalBuildings": 709,
+      "residenceCount": 8,
+      "residences": [
+        {
+          "code": "BUIL19",
+          "name": "Building 35543412",
+          "aliases": ["epfl-building-35543412", "Building 35543412"]
+        },
+        {
+          "code": "BUIL20",
+          "name": "Building 35543414",
+          "aliases": ["epfl-building-35543414", "Building 35543414"]
+        },
+        {
+          "code": "39ROUT",
+          "name": "39 Route Cantonale",
+          "aliases": ["epfl-39-route-cantonale", "39 Route Cantonale"]
+        },
+        {
+          "code": "37ROUT",
+          "name": "37 Route Cantonale",
+          "aliases": ["epfl-37-route-cantonale", "37 Route Cantonale"]
+        },
+        {
+          "code": "LESEST",
+          "name": "Les Estudiantines",
+          "aliases": ["epfl-les-estudiantines", "Les Estudiantines"]
+        },
+        {
+          "code": "33ROUT",
+          "name": "33 Route Cantonale",
+          "aliases": ["epfl-33-route-cantonale", "33 Route Cantonale"]
+        },
+        {
+          "code": "CL",
+          "name": "CL",
+          "aliases": ["epfl-cl", "CL"]
+        },
+        {
+          "code": "TRIA",
+          "name": "TRI A",
+          "aliases": ["epfl-tri-a", "TRI A"]
+        }
+      ]
+    },
+    "ucl-bloomsbury": {
+      "universityId": "ucl",
+      "universityName": "University College London",
+      "campusId": "ucl-bloomsbury",
+      "campusName": "UCL Bloomsbury Campus",
+      "totalBuildings": 1353,
+      "residenceCount": 53,
+      "residences": [
+        {
+          "code": "1720GO",
+          "name": "17-20 Gower Mews",
+          "aliases": ["ucl-17-20-gower-mews", "17-20 Gower Mews"]
+        },
+        {
+          "code": "1316GO",
+          "name": "13-16 Gower Mews",
+          "aliases": ["ucl-13-16-gower-mews", "13-16 Gower Mews"]
+        },
+        {
+          "code": "912GOW",
+          "name": "9-12 Gower Mews",
+          "aliases": ["ucl-9-12-gower-mews", "9-12 Gower Mews"]
+        },
+        {
+          "code": "58GOWE",
+          "name": "5-8 Gower Mews",
+          "aliases": ["ucl-5-8-gower-mews", "5-8 Gower Mews"]
+        },
+        {
+          "code": "14GOWE",
+          "name": "1-4 Gower Mews",
+          "aliases": ["ucl-1-4-gower-mews", "1-4 Gower Mews"]
+        },
+        {
+          "code": "SCHAFE",
+          "name": "Schafer House",
+          "aliases": ["ucl-schafer-house", "Schafer House"]
+        },
+        {
+          "code": "BUIL54",
+          "name": "Building 100302983",
+          "aliases": ["ucl-building-100302983", "Building 100302983"]
+        },
+        {
+          "code": "PRANKE",
+          "name": "Prankerd House",
+          "aliases": ["ucl-prankerd-house", "Prankerd House"]
+        },
+        {
+          "code": "139CLE",
+          "name": "139 Cleveland Street",
+          "aliases": ["ucl-139-cleveland-street", "139 Cleveland Street"]
+        },
+        {
+          "code": "143CLE",
+          "name": "143 Cleveland Street",
+          "aliases": ["ucl-143-cleveland-street", "143 Cleveland Street"]
+        },
+        {
+          "code": "147147",
+          "name": "147, 147A Cleveland Street",
+          "aliases": ["ucl-147-147a-cleveland-street", "147, 147A Cleveland Street"]
+        },
+        {
+          "code": "149149",
+          "name": "149, 149A Cleveland Street",
+          "aliases": ["ucl-149-149a-cleveland-street", "149, 149A Cleveland Street"]
+        },
+        {
+          "code": "9294DR",
+          "name": "92-94 Drummond Street",
+          "aliases": ["ucl-92-94-drummond-street", "92-94 Drummond Street"]
+        },
+        {
+          "code": "6068CO",
+          "name": "60-68 Cobourg Street",
+          "aliases": ["ucl-60-68-cobourg-street", "60-68 Cobourg Street"]
+        },
+        {
+          "code": "525456",
+          "name": "52,54,56,58 Cobourg Street",
+          "aliases": ["ucl-52-54-56-58-cobourg-street", "52,54,56,58 Cobourg Street"]
+        },
+        {
+          "code": "424446",
+          "name": "42,44,46,48 Cobourg Street",
+          "aliases": ["ucl-42-44-46-48-cobourg-street", "42,44,46,48 Cobourg Street"]
+        },
+        {
+          "code": "40COBO",
+          "name": "40 Cobourg Street",
+          "aliases": ["ucl-40-cobourg-street", "40 Cobourg Street"]
+        },
+        {
+          "code": "4CHARL",
+          "name": "4 Charlotte Mews",
+          "aliases": ["ucl-4-charlotte-mews", "4 Charlotte Mews"]
+        },
+        {
+          "code": "2128ST",
+          "name": "21-28 Starcross Street",
+          "aliases": ["ucl-21-28-starcross-street", "21-28 Starcross Street"]
+        },
+        {
+          "code": "BUI193",
+          "name": "Building 421703749",
+          "aliases": ["ucl-building-421703749", "Building 421703749"]
+        },
+        {
+          "code": "BUI195",
+          "name": "Building 421703753",
+          "aliases": ["ucl-building-421703753", "Building 421703753"]
+        },
+        {
+          "code": "1520ST",
+          "name": "15-20 Starcross Street",
+          "aliases": ["ucl-15-20-starcross-street", "15-20 Starcross Street"]
+        },
+        {
+          "code": "BUI198",
+          "name": "Building 421703765",
+          "aliases": ["ucl-building-421703765", "Building 421703765"]
+        },
+        {
+          "code": "20WILL",
+          "name": "20 William Road",
+          "aliases": ["ucl-20-william-road", "20 William Road"]
+        },
+        {
+          "code": "BUI236",
+          "name": "Building 434583681",
+          "aliases": ["ucl-building-434583681", "Building 434583681"]
+        },
+        {
+          "code": "BUI243",
+          "name": "Building 435002353",
+          "aliases": ["ucl-building-435002353", "Building 435002353"]
+        },
+        {
+          "code": "BUI244",
+          "name": "Building 435002355",
+          "aliases": ["ucl-building-435002355", "Building 435002355"]
+        },
+        {
+          "code": "BUI245",
+          "name": "Building 435002356",
+          "aliases": ["ucl-building-435002356", "Building 435002356"]
+        },
+        {
+          "code": "BUI246",
+          "name": "Building 435002357",
+          "aliases": ["ucl-building-435002357", "Building 435002357"]
+        },
+        {
+          "code": "BUI247",
+          "name": "Building 435002358",
+          "aliases": ["ucl-building-435002358", "Building 435002358"]
+        },
+        {
+          "code": "BUI248",
+          "name": "Building 435002359",
+          "aliases": ["ucl-building-435002359", "Building 435002359"]
+        },
+        {
+          "code": "BUI249",
+          "name": "Building 435002361",
+          "aliases": ["ucl-building-435002361", "Building 435002361"]
+        },
+        {
+          "code": "84CLEV",
+          "name": "84 Cleveland Street",
+          "aliases": ["ucl-84-cleveland-street", "84 Cleveland Street"]
+        },
+        {
+          "code": "152NEW",
+          "name": "152 New Cavendish Street",
+          "aliases": ["ucl-152-new-cavendish-street", "152 New Cavendish Street"]
+        },
+        {
+          "code": "25CHAL",
+          "name": "25 Chalton Street",
+          "aliases": ["ucl-25-chalton-street", "25 Chalton Street"]
+        },
+        {
+          "code": "4549CL",
+          "name": "45-49 Cleveland Street",
+          "aliases": ["ucl-45-49-cleveland-street", "45-49 Cleveland Street"]
+        },
+        {
+          "code": "51CLEV",
+          "name": "51 Cleveland Street",
+          "aliases": ["ucl-51-cleveland-street", "51 Cleveland Street"]
+        },
+        {
+          "code": "53CLEV",
+          "name": "53 Cleveland Street",
+          "aliases": ["ucl-53-cleveland-street", "53 Cleveland Street"]
+        },
+        {
+          "code": "55CLEV",
+          "name": "55 Cleveland Street",
+          "aliases": ["ucl-55-cleveland-street", "55 Cleveland Street"]
+        },
+        {
+          "code": "5759CL",
+          "name": "57-59 Cleveland Street",
+          "aliases": ["ucl-57-59-cleveland-street", "57-59 Cleveland Street"]
+        },
+        {
+          "code": "63CLEV",
+          "name": "63 Cleveland Street",
+          "aliases": ["ucl-63-cleveland-street", "63 Cleveland Street"]
+        },
+        {
+          "code": "BUI287",
+          "name": "Building 770065024",
+          "aliases": ["ucl-building-770065024", "Building 770065024", "Saint Joseph's Flats"]
+        },
+        {
+          "code": "BUI288",
+          "name": "Building 770065025",
+          "aliases": ["ucl-building-770065025", "Building 770065025", "Saint Mary's Flats"]
+        },
+        {
+          "code": "HUGHES",
+          "name": "Hughes Parry Tower",
+          "aliases": ["ucl-hughes-parry-tower", "Hughes Parry Tower"]
+        },
+        {
+          "code": "911END",
+          "name": "9-11 Endsleigh Gardens",
+          "aliases": ["ucl-9-11-endsleigh-gardens", "9-11 Endsleigh Gardens"]
+        },
+        {
+          "code": "BUI383",
+          "name": "Building 1420614114",
+          "aliases": ["ucl-building-1420614114", "Building 1420614114"]
+        },
+        {
+          "code": "UCLIAN",
+          "name": "UCL Ian Baker Hall",
+          "aliases": ["ucl-ucl-ian-baker-hall", "UCL Ian Baker Hall"]
+        },
+        {
+          "code": "UCLRAM",
+          "name": "UCL Ramsay Hall",
+          "aliases": ["ucl-ucl-ramsay-hall", "UCL Ramsay Hall"]
+        },
+        {
+          "code": "IQBLOO",
+          "name": "IQ Bloomsbury (Bentley House)",
+          "aliases": ["ucl-iq-bloomsbury-bentley-house", "IQ Bloomsbury (Bentley House)"]
+        },
+        {
+          "code": "BUI393",
+          "name": "Building 9167474",
+          "aliases": ["ucl-building-9167474", "Building 9167474"]
+        },
+        {
+          "code": "COLLE1",
+          "name": "College Hall",
+          "aliases": ["ucl-college-hall", "College Hall"]
+        },
+        {
+          "code": "BUI395",
+          "name": "Building 18858628",
+          "aliases": ["ucl-building-18858628", "Building 18858628"]
+        },
+        {
+          "code": "ASTORC",
+          "name": "Astor College",
+          "aliases": ["ucl-astor-college", "Astor College"]
+        }
+      ]
+    },
+    "ucl-east": {
+      "universityId": "ucl",
+      "universityName": "University College London",
+      "campusId": "ucl-east",
+      "campusName": "UCL East Campus",
+      "totalBuildings": 162,
+      "residenceCount": 14,
+      "residences": [
+        {
+          "code": "BUILD8",
+          "name": "Building 179008579",
+          "aliases": ["ucl-building-179008579", "Building 179008579"]
+        },
+        {
+          "code": "1424GI",
+          "name": "14-24 Gibbins Road",
+          "aliases": ["ucl-14-24-gibbins-road", "14-24 Gibbins Road"]
+        },
+        {
+          "code": "100106",
+          "name": "100-106 Doran Walk",
+          "aliases": ["ucl-100-106-doran-walk", "100-106 Doran Walk"]
+        },
+        {
+          "code": "ODELIA",
+          "name": "Odelia Court",
+          "aliases": ["ucl-odelia-court", "Odelia Court"]
+        },
+        {
+          "code": "AZURAC",
+          "name": "Azura Court",
+          "aliases": ["ucl-azura-court", "Azura Court"]
+        },
+        {
+          "code": "BUIL13",
+          "name": "Building 235266718",
+          "aliases": ["ucl-building-235266718", "Building 235266718"]
+        },
+        {
+          "code": "ONEPOO",
+          "name": "One Pool Street",
+          "aliases": ["ucl-one-pool-street", "One Pool Street"]
+        },
+        {
+          "code": "108114",
+          "name": "108-114 Doran Walk",
+          "aliases": ["ucl-108-114-doran-walk", "108-114 Doran Walk"]
+        },
+        {
+          "code": "2636GI",
+          "name": "26-36 Gibbins Road",
+          "aliases": ["ucl-26-36-gibbins-road", "26-36 Gibbins Road"]
+        },
+        {
+          "code": "212GIB",
+          "name": "2-12 Gibbins Road",
+          "aliases": ["ucl-2-12-gibbins-road", "2-12 Gibbins Road"]
+        },
+        {
+          "code": "3744OT",
+          "name": "37-44 Otter Close",
+          "aliases": ["ucl-37-44-otter-close", "37-44 Otter Close"]
+        },
+        {
+          "code": "4552OT",
+          "name": "45-52 Otter Close",
+          "aliases": ["ucl-45-52-otter-close", "45-52 Otter Close"]
+        },
+        {
+          "code": "6168OT",
+          "name": "61-68 Otter Close",
+          "aliases": ["ucl-61-68-otter-close", "61-68 Otter Close"]
+        },
+        {
+          "code": "5360OT",
+          "name": "53-60 Otter Close",
+          "aliases": ["ucl-53-60-otter-close", "53-60 Otter Close"]
+        }
+      ]
+    },
+    "utokyo-hongo": {
+      "universityId": "utokyo",
+      "universityName": "University of Tokyo",
+      "campusId": "utokyo-hongo",
+      "campusName": "University of Tokyo Hongo Campus",
+      "totalBuildings": 3835,
+      "residenceCount": 263,
+      "residences": [
+        {
+          "code": "2X2",
+          "name": "看護師宿舎2号棟",
+          "aliases": ["utokyo-2-137625392", "看護師宿舎2号棟", "Nurse's Living Quarter 2"]
+        },
+        {
+          "code": "BUIL31",
+          "name": "Building 137625412",
+          "aliases": ["utokyo-building-137625412", "Building 137625412"]
+        },
+        {
+          "code": "3X2",
+          "name": "看護師宿舎3号棟",
+          "aliases": ["utokyo-3-137625414", "看護師宿舎3号棟"]
+        },
+        {
+          "code": "BUIL32",
+          "name": "Building 137625415",
+          "aliases": ["utokyo-building-137625415", "Building 137625415"]
+        },
+        {
+          "code": "BUIL34",
+          "name": "Building 137625429",
+          "aliases": ["utokyo-building-137625429", "Building 137625429"]
+        },
+        {
+          "code": "SANJOT",
+          "name": "Sanjo Tatsuokamon Annex",
+          "aliases": ["utokyo-sanjo-tatsuokamon-annex", "Sanjo Tatsuokamon Annex"]
+        },
+        {
+          "code": "BUIL39",
+          "name": "Building 137625441",
+          "aliases": ["utokyo-building-137625441", "Building 137625441"]
+        },
+        {
+          "code": "BUIL40",
+          "name": "Building 137625442",
+          "aliases": ["utokyo-building-137625442", "Building 137625442"]
+        },
+        {
+          "code": "BUIL45",
+          "name": "Building 137625451",
+          "aliases": ["utokyo-building-137625451", "Building 137625451"]
+        },
+        {
+          "code": "BUIL47",
+          "name": "Building 137625459",
+          "aliases": ["utokyo-building-137625459", "Building 137625459"]
+        },
+        {
+          "code": "BUIL48",
+          "name": "Building 137625461",
+          "aliases": ["utokyo-building-137625461", "Building 137625461"]
+        },
+        {
+          "code": "BUIL67",
+          "name": "Building 161968142",
+          "aliases": ["utokyo-building-161968142", "Building 161968142"]
+        },
+        {
+          "code": "BUIL69",
+          "name": "Building 161968147",
+          "aliases": ["utokyo-building-161968147", "Building 161968147"]
+        },
+        {
+          "code": "BLDG25",
+          "name": "竜岡ビル",
+          "aliases": ["utokyo--161968202", "竜岡ビル"]
+        },
+        {
+          "code": "BLDG28",
+          "name": "ノア湯島",
+          "aliases": ["utokyo--161968211", "ノア湯島"]
+        },
+        {
+          "code": "BLDG33",
+          "name": "杏林ビル",
+          "aliases": ["utokyo--161968222", "杏林ビル"]
+        },
+        {
+          "code": "BLDG34",
+          "name": "トーカン湯島キャステール",
+          "aliases": ["utokyo--161968226", "トーカン湯島キャステール", "Tokan Yushima Castel"]
+        },
+        {
+          "code": "BUIL95",
+          "name": "Building 161968230",
+          "aliases": ["utokyo-building-161968230", "Building 161968230"]
+        },
+        {
+          "code": "BLDG37",
+          "name": "コーポ根津清水",
+          "aliases": ["utokyo--164586080", "コーポ根津清水"]
+        },
+        {
+          "code": "BUIL98",
+          "name": "Building 164586082",
+          "aliases": ["utokyo-building-164586082", "Building 164586082"]
+        },
+        {
+          "code": "BUI115",
+          "name": "Building 164586104",
+          "aliases": ["utokyo-building-164586104", "Building 164586104"]
+        },
+        {
+          "code": "BUI118",
+          "name": "Building 164586108",
+          "aliases": ["utokyo-building-164586108", "Building 164586108"]
+        },
+        {
+          "code": "BUI127",
+          "name": "Building 164586121",
+          "aliases": ["utokyo-building-164586121", "Building 164586121"]
+        },
+        {
+          "code": "BUI131",
+          "name": "Building 164586125",
+          "aliases": ["utokyo-building-164586125", "Building 164586125"]
+        },
+        {
+          "code": "TS",
+          "name": "TS弥生",
+          "aliases": ["utokyo-ts", "TS弥生"]
+        },
+        {
+          "code": "BUI154",
+          "name": "Building 164586183",
+          "aliases": ["utokyo-building-164586183", "Building 164586183"]
+        },
+        {
+          "code": "BUI164",
+          "name": "Building 164586204",
+          "aliases": ["utokyo-building-164586204", "Building 164586204"]
+        },
+        {
+          "code": "BUI198",
+          "name": "Building 164586286",
+          "aliases": ["utokyo-building-164586286", "Building 164586286"]
+        },
+        {
+          "code": "BUI207",
+          "name": "Building 164586302",
+          "aliases": ["utokyo-building-164586302", "Building 164586302"]
+        },
+        {
+          "code": "BUI208",
+          "name": "Building 164586308",
+          "aliases": ["utokyo-building-164586308", "Building 164586308"]
+        },
+        {
+          "code": "BUI222",
+          "name": "Building 164586339",
+          "aliases": ["utokyo-building-164586339", "Building 164586339"]
+        },
+        {
+          "code": "BUI223",
+          "name": "Building 164586341",
+          "aliases": ["utokyo-building-164586341", "Building 164586341"]
+        },
+        {
+          "code": "BLDG48",
+          "name": "ベルコーポ",
+          "aliases": ["utokyo--170406588", "ベルコーポ", "Bell Corpo."]
+        },
+        {
+          "code": "BUI283",
+          "name": "Building 170406624",
+          "aliases": ["utokyo-building-170406624", "Building 170406624"]
+        },
+        {
+          "code": "BLDG55",
+          "name": "ドミネンス本郷",
+          "aliases": ["utokyo--170406632", "ドミネンス本郷"]
+        },
+        {
+          "code": "MATSUY",
+          "name": "MATSUYOSHi",
+          "aliases": ["utokyo-matsuyoshi", "MATSUYOSHi"]
+        },
+        {
+          "code": "BLDG61",
+          "name": "シティハウス本郷三丁目",
+          "aliases": ["utokyo--170407140", "シティハウス本郷三丁目"]
+        },
+        {
+          "code": "BUI340",
+          "name": "Building 170407149",
+          "aliases": ["utokyo-building-170407149", "Building 170407149"]
+        },
+        {
+          "code": "BUI346",
+          "name": "Building 170407162",
+          "aliases": ["utokyo-building-170407162", "Building 170407162"]
+        },
+        {
+          "code": "BLDG74",
+          "name": "レガロ本郷三丁目",
+          "aliases": ["utokyo--170407220", "レガロ本郷三丁目"]
+        },
+        {
+          "code": "BUI392",
+          "name": "Building 170407232",
+          "aliases": ["utokyo-building-170407232", "Building 170407232"]
+        },
+        {
+          "code": "BLDG82",
+          "name": "秀和シティホームズ",
+          "aliases": ["utokyo--170407841", "秀和シティホームズ"]
+        },
+        {
+          "code": "BLDG87",
+          "name": "湯島武蔵野マンション",
+          "aliases": ["utokyo--170590455", "湯島武蔵野マンション"]
+        },
+        {
+          "code": "GRANDE",
+          "name": "GRANDE MAISON HONGOU SANCHOUME",
+          "aliases": ["utokyo-grande-maison-hongou-sanchoume", "GRANDE MAISON HONGOU SANCHOUME"]
+        },
+        {
+          "code": "BUI415",
+          "name": "Building 170603295",
+          "aliases": ["utokyo-building-170603295", "Building 170603295"]
+        },
+        {
+          "code": "BUI430",
+          "name": "Building 170603334",
+          "aliases": ["utokyo-building-170603334", "Building 170603334"]
+        },
+        {
+          "code": "BLD106",
+          "name": "アズ本郷菊坂",
+          "aliases": ["utokyo--170603363", "アズ本郷菊坂"]
+        },
+        {
+          "code": "BUI436",
+          "name": "Building 170603365",
+          "aliases": ["utokyo-building-170603365", "Building 170603365"]
+        },
+        {
+          "code": "BLD107",
+          "name": "本郷真砂アーバンハイツ",
+          "aliases": ["utokyo--170603370", "本郷真砂アーバンハイツ"]
+        },
+        {
+          "code": "BUI448",
+          "name": "Building 170603404",
+          "aliases": ["utokyo-building-170603404", "Building 170603404"]
+        },
+        {
+          "code": "CYNTHI",
+          "name": "Cynthia Hongo Todaimae",
+          "aliases": ["utokyo-cynthia-hongo-todaimae", "Cynthia Hongo Todaimae"]
+        },
+        {
+          "code": "BUI465",
+          "name": "Building 172028881",
+          "aliases": ["utokyo-building-172028881", "Building 172028881"]
+        },
+        {
+          "code": "BUI473",
+          "name": "Building 172028959",
+          "aliases": ["utokyo-building-172028959", "Building 172028959"]
+        },
+        {
+          "code": "BLD120",
+          "name": "本郷エーワン東大前",
+          "aliases": ["utokyo--174025646", "本郷エーワン東大前"]
+        },
+        {
+          "code": "BLD121",
+          "name": "ブリリアタワー上野池之端",
+          "aliases": ["utokyo--174315631", "ブリリアタワー上野池之端"]
+        },
+        {
+          "code": "BLD122",
+          "name": "ライオンズマンション池之端",
+          "aliases": ["utokyo--174315633", "ライオンズマンション池之端", "Lions Mansion Ikenohata"]
+        },
+        {
+          "code": "BLD123",
+          "name": "クレヴィア上野池之端",
+          "aliases": ["utokyo--174315635", "クレヴィア上野池之端"]
+        },
+        {
+          "code": "BUI510",
+          "name": "Building 174315641",
+          "aliases": ["utokyo-building-174315641", "Building 174315641"]
+        },
+        {
+          "code": "BUI516",
+          "name": "Building 174315649",
+          "aliases": ["utokyo-building-174315649", "Building 174315649"]
+        },
+        {
+          "code": "BUI521",
+          "name": "Building 174315654",
+          "aliases": ["utokyo-building-174315654", "Building 174315654"]
+        },
+        {
+          "code": "BUI527",
+          "name": "Building 174315664",
+          "aliases": ["utokyo-building-174315664", "Building 174315664"]
+        },
+        {
+          "code": "BUI535",
+          "name": "Building 174315682",
+          "aliases": ["utokyo-building-174315682", "Building 174315682"]
+        },
+        {
+          "code": "BUI538",
+          "name": "Building 174315688",
+          "aliases": ["utokyo-building-174315688", "Building 174315688"]
+        },
+        {
+          "code": "BUI541",
+          "name": "Building 174315695",
+          "aliases": ["utokyo-building-174315695", "Building 174315695"]
+        },
+        {
+          "code": "BUI546",
+          "name": "Building 174315705",
+          "aliases": ["utokyo-building-174315705", "Building 174315705"]
+        },
+        {
+          "code": "BUI552",
+          "name": "Building 174315722",
+          "aliases": ["utokyo-building-174315722", "Building 174315722"]
+        },
+        {
+          "code": "BUI562",
+          "name": "Building 174315756",
+          "aliases": ["utokyo-building-174315756", "Building 174315756"]
+        },
+        {
+          "code": "BUI564",
+          "name": "Building 174315763",
+          "aliases": ["utokyo-building-174315763", "Building 174315763"]
+        },
+        {
+          "code": "BUI567",
+          "name": "Building 174315774",
+          "aliases": ["utokyo-building-174315774", "Building 174315774"]
+        },
+        {
+          "code": "BUI592",
+          "name": "Building 174315836",
+          "aliases": ["utokyo-building-174315836", "Building 174315836"]
+        },
+        {
+          "code": "BUI597",
+          "name": "Building 174315847",
+          "aliases": ["utokyo-building-174315847", "Building 174315847"]
+        },
+        {
+          "code": "BUI616",
+          "name": "Building 174315884",
+          "aliases": ["utokyo-building-174315884", "Building 174315884"]
+        },
+        {
+          "code": "BUI622",
+          "name": "Building 174315890",
+          "aliases": ["utokyo-building-174315890", "Building 174315890"]
+        },
+        {
+          "code": "BUI626",
+          "name": "Building 174315895",
+          "aliases": ["utokyo-building-174315895", "Building 174315895"]
+        },
+        {
+          "code": "BUI633",
+          "name": "Building 174315903",
+          "aliases": ["utokyo-building-174315903", "Building 174315903"]
+        },
+        {
+          "code": "BLD125",
+          "name": "ヴァッソン シノバズ",
+          "aliases": ["utokyo--174315914", "ヴァッソン シノバズ"]
+        },
+        {
+          "code": "BUI644",
+          "name": "Building 174315916",
+          "aliases": ["utokyo-building-174315916", "Building 174315916"]
+        },
+        {
+          "code": "BUI649",
+          "name": "Building 174315921",
+          "aliases": ["utokyo-building-174315921", "Building 174315921"]
+        },
+        {
+          "code": "RENAIS",
+          "name": "RENAISSANCE TOWER 上野池之端",
+          "aliases": ["utokyo-renaissance-tower", "RENAISSANCE TOWER 上野池之端"]
+        },
+        {
+          "code": "BUI650",
+          "name": "Building 174315923",
+          "aliases": ["utokyo-building-174315923", "Building 174315923"]
+        },
+        {
+          "code": "BUI652",
+          "name": "Building 174315925",
+          "aliases": ["utokyo-building-174315925", "Building 174315925"]
+        },
+        {
+          "code": "BUI654",
+          "name": "Building 174315927",
+          "aliases": ["utokyo-building-174315927", "Building 174315927"]
+        },
+        {
+          "code": "BUI657",
+          "name": "Building 174315930",
+          "aliases": ["utokyo-building-174315930", "Building 174315930"]
+        },
+        {
+          "code": "BLD126",
+          "name": "セントヒルズ本郷弥生",
+          "aliases": ["utokyo--174315933", "セントヒルズ本郷弥生"]
+        },
+        {
+          "code": "BUI662",
+          "name": "Building 174315936",
+          "aliases": ["utokyo-building-174315936", "Building 174315936"]
+        },
+        {
+          "code": "BUI663",
+          "name": "Building 174315937",
+          "aliases": ["utokyo-building-174315937", "Building 174315937"]
+        },
+        {
+          "code": "PACIFI",
+          "name": "Pacific Palace Ikenohata",
+          "aliases": ["utokyo-pacific-palace-ikenohata", "Pacific Palace Ikenohata"]
+        },
+        {
+          "code": "BUI667",
+          "name": "Building 174315943",
+          "aliases": ["utokyo-building-174315943", "Building 174315943"]
+        },
+        {
+          "code": "BUI668",
+          "name": "Building 174315944",
+          "aliases": ["utokyo-building-174315944", "Building 174315944"]
+        },
+        {
+          "code": "BUI684",
+          "name": "Building 174598843",
+          "aliases": ["utokyo-building-174598843", "Building 174598843"]
+        },
+        {
+          "code": "BUI696",
+          "name": "Building 174598859",
+          "aliases": ["utokyo-building-174598859", "Building 174598859"]
+        },
+        {
+          "code": "BUI722",
+          "name": "Building 174598888",
+          "aliases": ["utokyo-building-174598888", "Building 174598888"]
+        },
+        {
+          "code": "BLD131",
+          "name": "シャローム西片",
+          "aliases": ["utokyo--174598909", "シャローム西片"]
+        },
+        {
+          "code": "BLD132",
+          "name": "ウッド フィールド",
+          "aliases": ["utokyo--174598924", "ウッド フィールド", "Wood Field"]
+        },
+        {
+          "code": "BLD133",
+          "name": "マンション西片",
+          "aliases": ["utokyo--174598955", "マンション西片"]
+        },
+        {
+          "code": "BUI794",
+          "name": "Building 174598971",
+          "aliases": ["utokyo-building-174598971", "Building 174598971"]
+        },
+        {
+          "code": "BUI857",
+          "name": "Building 174599045",
+          "aliases": ["utokyo-building-174599045", "Building 174599045"]
+        },
+        {
+          "code": "BLD140",
+          "name": "タカサキヤビル",
+          "aliases": ["utokyo--174599090", "タカサキヤビル"]
+        },
+        {
+          "code": "BU1038",
+          "name": "Building 174756145",
+          "aliases": ["utokyo-building-174756145", "Building 174756145"]
+        },
+        {
+          "code": "BLD143",
+          "name": "みやこマンション",
+          "aliases": ["utokyo--174756150", "みやこマンション"]
+        },
+        {
+          "code": "BU1040",
+          "name": "Building 174756152",
+          "aliases": ["utokyo-building-174756152", "Building 174756152"]
+        },
+        {
+          "code": "BU1041",
+          "name": "Building 174756153",
+          "aliases": ["utokyo-building-174756153", "Building 174756153"]
+        },
+        {
+          "code": "BLD144",
+          "name": "クラッセ本郷",
+          "aliases": ["utokyo--174756190", "クラッセ本郷"]
+        },
+        {
+          "code": "BU1054",
+          "name": "Building 174756273",
+          "aliases": ["utokyo-building-174756273", "Building 174756273"]
+        },
+        {
+          "code": "BLD145",
+          "name": "リビオレゾン本郷",
+          "aliases": ["utokyo--174756417", "リビオレゾン本郷"]
+        },
+        {
+          "code": "BLD148",
+          "name": "シャリエ本郷菊坂",
+          "aliases": ["utokyo--174759271", "シャリエ本郷菊坂"]
+        },
+        {
+          "code": "BU1100",
+          "name": "Building 174759299",
+          "aliases": ["utokyo-building-174759299", "Building 174759299"]
+        },
+        {
+          "code": "BU1104",
+          "name": "Building 174759305",
+          "aliases": ["utokyo-building-174759305", "Building 174759305"]
+        },
+        {
+          "code": "BU1122",
+          "name": "Building 174759330",
+          "aliases": ["utokyo-building-174759330", "Building 174759330"]
+        },
+        {
+          "code": "BU1127",
+          "name": "Building 174759335",
+          "aliases": ["utokyo-building-174759335", "Building 174759335"]
+        },
+        {
+          "code": "BU1139",
+          "name": "Building 174759350",
+          "aliases": ["utokyo-building-174759350", "Building 174759350"]
+        },
+        {
+          "code": "BLD155",
+          "name": "フォレストコート本郷菊坂",
+          "aliases": ["utokyo--174759358", "フォレストコート本郷菊坂"]
+        },
+        {
+          "code": "BLD157",
+          "name": "フォレストハイツ",
+          "aliases": ["utokyo--174878886", "フォレストハイツ"]
+        },
+        {
+          "code": "BLD158",
+          "name": "本郷ハイツ",
+          "aliases": ["utokyo--174878891", "本郷ハイツ"]
+        },
+        {
+          "code": "BLD159",
+          "name": "西片ハイテル",
+          "aliases": ["utokyo--174878893", "西片ハイテル"]
+        },
+        {
+          "code": "BU1147",
+          "name": "Building 174878894",
+          "aliases": ["utokyo-building-174878894", "Building 174878894"]
+        },
+        {
+          "code": "BU1149",
+          "name": "Building 174878896",
+          "aliases": ["utokyo-building-174878896", "Building 174878896"]
+        },
+        {
+          "code": "BU1163",
+          "name": "Building 174878912",
+          "aliases": ["utokyo-building-174878912", "Building 174878912"]
+        },
+        {
+          "code": "BLD161",
+          "name": "向学舎",
+          "aliases": ["utokyo--174878919", "向学舎"]
+        },
+        {
+          "code": "BU1169",
+          "name": "Building 174878921",
+          "aliases": ["utokyo-building-174878921", "Building 174878921"]
+        },
+        {
+          "code": "BU1176",
+          "name": "Building 174878929",
+          "aliases": ["utokyo-building-174878929", "Building 174878929"]
+        },
+        {
+          "code": "BU1185",
+          "name": "Building 174878938",
+          "aliases": ["utokyo-building-174878938", "Building 174878938"]
+        },
+        {
+          "code": "BLD162",
+          "name": "プチローサ",
+          "aliases": ["utokyo--174878998", "プチローサ"]
+        },
+        {
+          "code": "BU1242",
+          "name": "Building 174879001",
+          "aliases": ["utokyo-building-174879001", "Building 174879001"]
+        },
+        {
+          "code": "BU1249",
+          "name": "Building 174879009",
+          "aliases": ["utokyo-building-174879009", "Building 174879009"]
+        },
+        {
+          "code": "BLD164",
+          "name": "ステラ本郷",
+          "aliases": ["utokyo--174879026", "ステラ本郷", "Stella Hongo"]
+        },
+        {
+          "code": "BU1258",
+          "name": "Building 174879029",
+          "aliases": ["utokyo-building-174879029", "Building 174879029"]
+        },
+        {
+          "code": "BU1269",
+          "name": "Building 174879047",
+          "aliases": ["utokyo-building-174879047", "Building 174879047"]
+        },
+        {
+          "code": "BLD165",
+          "name": "キャンパス サイド プレイス",
+          "aliases": ["utokyo--174879067", "キャンパス サイド プレイス", "campus side place"]
+        },
+        {
+          "code": "BU1286",
+          "name": "Building 174879070",
+          "aliases": ["utokyo-building-174879070", "Building 174879070"]
+        },
+        {
+          "code": "BU1292",
+          "name": "Building 174879077",
+          "aliases": ["utokyo-building-174879077", "Building 174879077"]
+        },
+        {
+          "code": "BU1313",
+          "name": "Building 174879103",
+          "aliases": ["utokyo-building-174879103", "Building 174879103"]
+        },
+        {
+          "code": "BU1347",
+          "name": "Building 176091009",
+          "aliases": ["utokyo-building-176091009", "Building 176091009"]
+        },
+        {
+          "code": "PAZCLA",
+          "name": "Paz Classe 本郷春木町",
+          "aliases": ["utokyo-paz-classe", "Paz Classe 本郷春木町"]
+        },
+        {
+          "code": "BU1359",
+          "name": "Building 209204342",
+          "aliases": ["utokyo-building-209204342", "Building 209204342"]
+        },
+        {
+          "code": "BU1360",
+          "name": "Building 209204352",
+          "aliases": ["utokyo-building-209204352", "Building 209204352"]
+        },
+        {
+          "code": "BU1370",
+          "name": "Building 209204448",
+          "aliases": ["utokyo-building-209204448", "Building 209204448"]
+        },
+        {
+          "code": "BLD171",
+          "name": "根津ステーションビル",
+          "aliases": ["utokyo--209204477", "根津ステーションビル"]
+        },
+        {
+          "code": "BU1378",
+          "name": "Building 209320856",
+          "aliases": ["utokyo-building-209320856", "Building 209320856"]
+        },
+        {
+          "code": "AZALEA",
+          "name": "AZALEA NEZU",
+          "aliases": ["utokyo-azalea-nezu", "AZALEA NEZU"]
+        },
+        {
+          "code": "BU1381",
+          "name": "Building 209320884",
+          "aliases": ["utokyo-building-209320884", "Building 209320884"]
+        },
+        {
+          "code": "BU1382",
+          "name": "Building 209320893",
+          "aliases": ["utokyo-building-209320893", "Building 209320893"]
+        },
+        {
+          "code": "BU1384",
+          "name": "Building 209320896",
+          "aliases": ["utokyo-building-209320896", "Building 209320896"]
+        },
+        {
+          "code": "BU1386",
+          "name": "Building 209320957",
+          "aliases": ["utokyo-building-209320957", "Building 209320957"]
+        },
+        {
+          "code": "BU1387",
+          "name": "Building 209320973",
+          "aliases": ["utokyo-building-209320973", "Building 209320973"]
+        },
+        {
+          "code": "BU1392",
+          "name": "Building 209321085",
+          "aliases": ["utokyo-building-209321085", "Building 209321085"]
+        },
+        {
+          "code": "BU1396",
+          "name": "Building 209321110",
+          "aliases": ["utokyo-building-209321110", "Building 209321110"]
+        },
+        {
+          "code": "BU1407",
+          "name": "Building 209321194",
+          "aliases": ["utokyo-building-209321194", "Building 209321194"]
+        },
+        {
+          "code": "BLD172",
+          "name": "エルスタンザ文京根津",
+          "aliases": ["utokyo--209321221", "エルスタンザ文京根津"]
+        },
+        {
+          "code": "BU1416",
+          "name": "Building 209321312",
+          "aliases": ["utokyo-building-209321312", "Building 209321312"]
+        },
+        {
+          "code": "BU1428",
+          "name": "Building 209321465",
+          "aliases": ["utokyo-building-209321465", "Building 209321465"]
+        },
+        {
+          "code": "BLD174",
+          "name": "ライオンズマンション文京根津",
+          "aliases": ["utokyo--209321467", "ライオンズマンション文京根津"]
+        },
+        {
+          "code": "BU1434",
+          "name": "Building 209321495",
+          "aliases": ["utokyo-building-209321495", "Building 209321495"]
+        },
+        {
+          "code": "BU1435",
+          "name": "Building 209321497",
+          "aliases": ["utokyo-building-209321497", "Building 209321497"]
+        },
+        {
+          "code": "BU1524",
+          "name": "Building 217309488",
+          "aliases": ["utokyo-building-217309488", "Building 217309488"]
+        },
+        {
+          "code": "BU1528",
+          "name": "Building 217309492",
+          "aliases": ["utokyo-building-217309492", "Building 217309492"]
+        },
+        {
+          "code": "BU1534",
+          "name": "Building 217309498",
+          "aliases": ["utokyo-building-217309498", "Building 217309498"]
+        },
+        {
+          "code": "BU1537",
+          "name": "Building 217309501",
+          "aliases": ["utokyo-building-217309501", "Building 217309501"]
+        },
+        {
+          "code": "BU1539",
+          "name": "Building 217309503",
+          "aliases": ["utokyo-building-217309503", "Building 217309503"]
+        },
+        {
+          "code": "BU1543",
+          "name": "Building 217309507",
+          "aliases": ["utokyo-building-217309507", "Building 217309507"]
+        },
+        {
+          "code": "BU1568",
+          "name": "Building 217312201",
+          "aliases": ["utokyo-building-217312201", "Building 217312201"]
+        },
+        {
+          "code": "BU1569",
+          "name": "Building 217312203",
+          "aliases": ["utokyo-building-217312203", "Building 217312203"]
+        },
+        {
+          "code": "BU1577",
+          "name": "Building 217312914",
+          "aliases": ["utokyo-building-217312914", "Building 217312914"]
+        },
+        {
+          "code": "BU1642",
+          "name": "Building 217415768",
+          "aliases": ["utokyo-building-217415768", "Building 217415768"]
+        },
+        {
+          "code": "BU1643",
+          "name": "Building 217415769",
+          "aliases": ["utokyo-building-217415769", "Building 217415769"]
+        },
+        {
+          "code": "BLD182",
+          "name": "池之端永谷 コーポラス",
+          "aliases": ["utokyo--217420955", "池之端永谷 コーポラス"]
+        },
+        {
+          "code": "BLD184",
+          "name": "ザ・ライオンズ 上野の森",
+          "aliases": ["utokyo--217955990", "ザ・ライオンズ 上野の森"]
+        },
+        {
+          "code": "BU1732",
+          "name": "Building 217955991",
+          "aliases": ["utokyo-building-217955991", "Building 217955991"]
+        },
+        {
+          "code": "BLD185",
+          "name": "池ノ端宿舎",
+          "aliases": ["utokyo--224464102", "池ノ端宿舎"]
+        },
+        {
+          "code": "5X2",
+          "name": "看護師宿舎5号棟",
+          "aliases": ["utokyo-5-224469587", "看護師宿舎5号棟", "Nurse's Living Quarter 5"]
+        },
+        {
+          "code": "BU1769",
+          "name": "Building 224470199",
+          "aliases": ["utokyo-building-224470199", "Building 224470199"]
+        },
+        {
+          "code": "BU1787",
+          "name": "Building 224479583",
+          "aliases": ["utokyo-building-224479583", "Building 224479583"]
+        },
+        {
+          "code": "BU1788",
+          "name": "Building 224479584",
+          "aliases": ["utokyo-building-224479584", "Building 224479584"]
+        },
+        {
+          "code": "BU1824",
+          "name": "Building 227631317",
+          "aliases": ["utokyo-building-227631317", "Building 227631317"]
+        },
+        {
+          "code": "BU1833",
+          "name": "Building 233329779",
+          "aliases": ["utokyo-building-233329779", "Building 233329779"]
+        },
+        {
+          "code": "4X3",
+          "name": "看護師宿舎4号棟",
+          "aliases": ["utokyo-4-240568924", "看護師宿舎4号棟", "Nurse's Living Quarter 4"]
+        },
+        {
+          "code": "BU1998",
+          "name": "Building 241193806",
+          "aliases": ["utokyo-building-241193806", "Building 241193806"]
+        },
+        {
+          "code": "BLD211",
+          "name": "洋和レジデンス赤門",
+          "aliases": ["utokyo--241193833", "洋和レジデンス赤門"]
+        },
+        {
+          "code": "BLD214",
+          "name": "ガーデニア本郷",
+          "aliases": ["utokyo--241193859", "ガーデニア本郷"]
+        },
+        {
+          "code": "BU2225",
+          "name": "Building 241411494",
+          "aliases": ["utokyo-building-241411494", "Building 241411494"]
+        },
+        {
+          "code": "BLD217",
+          "name": "協栄レジデンス",
+          "aliases": ["utokyo--252220845", "協栄レジデンス"]
+        },
+        {
+          "code": "BU2259",
+          "name": "Building 252220889",
+          "aliases": ["utokyo-building-252220889", "Building 252220889"]
+        },
+        {
+          "code": "KX",
+          "name": "Kカルム",
+          "aliases": ["utokyo-k", "Kカルム"]
+        },
+        {
+          "code": "BU2304",
+          "name": "Building 252221002",
+          "aliases": ["utokyo-building-252221002", "Building 252221002"]
+        },
+        {
+          "code": "BU2313",
+          "name": "Building 252221019",
+          "aliases": ["utokyo-building-252221019", "Building 252221019"]
+        },
+        {
+          "code": "BU2320",
+          "name": "Building 252221032",
+          "aliases": ["utokyo-building-252221032", "Building 252221032"]
+        },
+        {
+          "code": "BU2323",
+          "name": "Building 252221036",
+          "aliases": ["utokyo-building-252221036", "Building 252221036"]
+        },
+        {
+          "code": "BU2346",
+          "name": "Building 252221083",
+          "aliases": ["utokyo-building-252221083", "Building 252221083"]
+        },
+        {
+          "code": "BLD220",
+          "name": "ハイマート大樹",
+          "aliases": ["utokyo--252221091", "ハイマート大樹"]
+        },
+        {
+          "code": "BU2363",
+          "name": "Building 252221124",
+          "aliases": ["utokyo-building-252221124", "Building 252221124"]
+        },
+        {
+          "code": "BU2400",
+          "name": "Building 252221244",
+          "aliases": ["utokyo-building-252221244", "Building 252221244"]
+        },
+        {
+          "code": "BU2422",
+          "name": "Building 252221293",
+          "aliases": ["utokyo-building-252221293", "Building 252221293"]
+        },
+        {
+          "code": "BU2430",
+          "name": "Building 252221308",
+          "aliases": ["utokyo-building-252221308", "Building 252221308"]
+        },
+        {
+          "code": "BU2465",
+          "name": "Building 252221385",
+          "aliases": ["utokyo-building-252221385", "Building 252221385"]
+        },
+        {
+          "code": "BLD226",
+          "name": "コーポ菊坂",
+          "aliases": ["utokyo--252221390", "コーポ菊坂"]
+        },
+        {
+          "code": "BU2481",
+          "name": "Building 252221425",
+          "aliases": ["utokyo-building-252221425", "Building 252221425"]
+        },
+        {
+          "code": "BU2490",
+          "name": "Building 252221438",
+          "aliases": ["utokyo-building-252221438", "Building 252221438"]
+        },
+        {
+          "code": "BU2499",
+          "name": "Building 274264189",
+          "aliases": ["utokyo-building-274264189", "Building 274264189"]
+        },
+        {
+          "code": "BU2516",
+          "name": "Building 458699289",
+          "aliases": ["utokyo-building-458699289", "Building 458699289"]
+        },
+        {
+          "code": "SIRIUS",
+          "name": "Sirius",
+          "aliases": ["utokyo-sirius", "Sirius"]
+        },
+        {
+          "code": "BU2545",
+          "name": "Building 462009709",
+          "aliases": ["utokyo-building-462009709", "Building 462009709"]
+        },
+        {
+          "code": "BLD251",
+          "name": "セントラルマンション本郷",
+          "aliases": ["utokyo--462009711", "セントラルマンション本郷"]
+        },
+        {
+          "code": "BU2582",
+          "name": "Building 462103992",
+          "aliases": ["utokyo-building-462103992", "Building 462103992"]
+        },
+        {
+          "code": "BU2591",
+          "name": "Building 465374341",
+          "aliases": ["utokyo-building-465374341", "Building 465374341"]
+        },
+        {
+          "code": "BLD263",
+          "name": "徳田秋声旧宅",
+          "aliases": ["utokyo--473839197", "徳田秋声旧宅", "Former Residence of Tokuda Shusei"]
+        },
+        {
+          "code": "BU2643",
+          "name": "Building 474293589",
+          "aliases": ["utokyo-building-474293589", "Building 474293589"]
+        },
+        {
+          "code": "BU2644",
+          "name": "Building 474293591",
+          "aliases": ["utokyo-building-474293591", "Building 474293591"]
+        },
+        {
+          "code": "BLD266",
+          "name": "イトーピア根津",
+          "aliases": ["utokyo--474293594", "イトーピア根津"]
+        },
+        {
+          "code": "BU2647",
+          "name": "Building 474293598",
+          "aliases": ["utokyo-building-474293598", "Building 474293598"]
+        },
+        {
+          "code": "BU2650",
+          "name": "Building 475265442",
+          "aliases": ["utokyo-building-475265442", "Building 475265442"]
+        },
+        {
+          "code": "BU2651",
+          "name": "Building 475577972",
+          "aliases": ["utokyo-building-475577972", "Building 475577972"]
+        },
+        {
+          "code": "BU2652",
+          "name": "Building 475577973",
+          "aliases": ["utokyo-building-475577973", "Building 475577973"]
+        },
+        {
+          "code": "BU2653",
+          "name": "Building 475577974",
+          "aliases": ["utokyo-building-475577974", "Building 475577974"]
+        },
+        {
+          "code": "BU2654",
+          "name": "Building 475577975",
+          "aliases": ["utokyo-building-475577975", "Building 475577975"]
+        },
+        {
+          "code": "BU2655",
+          "name": "Building 480120092",
+          "aliases": ["utokyo-building-480120092", "Building 480120092"]
+        },
+        {
+          "code": "BU2656",
+          "name": "Building 480120093",
+          "aliases": ["utokyo-building-480120093", "Building 480120093"]
+        },
+        {
+          "code": "BU2657",
+          "name": "Building 493458136",
+          "aliases": ["utokyo-building-493458136", "Building 493458136"]
+        },
+        {
+          "code": "BU2658",
+          "name": "Building 493458139",
+          "aliases": ["utokyo-building-493458139", "Building 493458139"]
+        },
+        {
+          "code": "BU2659",
+          "name": "Building 493458140",
+          "aliases": ["utokyo-building-493458140", "Building 493458140"]
+        },
+        {
+          "code": "BU2660",
+          "name": "Building 493458141",
+          "aliases": ["utokyo-building-493458141", "Building 493458141"]
+        },
+        {
+          "code": "BLD267",
+          "name": "撞球室",
+          "aliases": ["utokyo--502703798", "撞球室", "Billiards room"]
+        },
+        {
+          "code": "IWASAK",
+          "name": "Iwasaki Family Residence (Western-style building)",
+          "aliases": [
+            "utokyo-iwasaki-family-residence-western-style-building",
+            "Iwasaki Family Residence (Western-style building)"
+          ]
+        },
+        {
+          "code": "BU2662",
+          "name": "Building 505209373",
+          "aliases": ["utokyo-building-505209373", "Building 505209373"]
+        },
+        {
+          "code": "BU2663",
+          "name": "Building 505209381",
+          "aliases": ["utokyo-building-505209381", "Building 505209381"]
+        },
+        {
+          "code": "BU2664",
+          "name": "Building 505209382",
+          "aliases": ["utokyo-building-505209382", "Building 505209382"]
+        },
+        {
+          "code": "BLD271",
+          "name": "湯島パークマンション",
+          "aliases": ["utokyo--511506490", "湯島パークマンション"]
+        },
+        {
+          "code": "BU2708",
+          "name": "Building 511506491",
+          "aliases": ["utokyo-building-511506491", "Building 511506491"]
+        },
+        {
+          "code": "BLD275",
+          "name": "サンピエス根津",
+          "aliases": ["utokyo--516827271", "サンピエス根津"]
+        },
+        {
+          "code": "BU2799",
+          "name": "Building 555615023",
+          "aliases": ["utokyo-building-555615023", "Building 555615023"]
+        },
+        {
+          "code": "BU2898",
+          "name": "Building 560590244",
+          "aliases": ["utokyo-building-560590244", "Building 560590244"]
+        },
+        {
+          "code": "BU2899",
+          "name": "Building 562960241",
+          "aliases": ["utokyo-building-562960241", "Building 562960241"]
+        },
+        {
+          "code": "BLD280",
+          "name": "ユシマハイツ",
+          "aliases": ["utokyo--562962389", "ユシマハイツ"]
+        },
+        {
+          "code": "BU2914",
+          "name": "Building 562962397",
+          "aliases": ["utokyo-building-562962397", "Building 562962397"]
+        },
+        {
+          "code": "BU2973",
+          "name": "Building 565834777",
+          "aliases": ["utokyo-building-565834777", "Building 565834777"]
+        },
+        {
+          "code": "BLD285",
+          "name": "あぶみぞん本郷",
+          "aliases": ["utokyo--565834785", "あぶみぞん本郷"]
+        },
+        {
+          "code": "BLD287",
+          "name": "フェスタ本郷",
+          "aliases": ["utokyo--565834794", "フェスタ本郷"]
+        },
+        {
+          "code": "BLD288",
+          "name": "レジデンス中村",
+          "aliases": ["utokyo--565834797", "レジデンス中村"]
+        },
+        {
+          "code": "BU3041",
+          "name": "Building 570452823",
+          "aliases": ["utokyo-building-570452823", "Building 570452823"]
+        },
+        {
+          "code": "BU3055",
+          "name": "Building 570637394",
+          "aliases": ["utokyo-building-570637394", "Building 570637394"]
+        },
+        {
+          "code": "BU3066",
+          "name": "Building 570693362",
+          "aliases": ["utokyo-building-570693362", "Building 570693362"]
+        },
+        {
+          "code": "BU3080",
+          "name": "Building 570906055",
+          "aliases": ["utokyo-building-570906055", "Building 570906055"]
+        },
+        {
+          "code": "BLD296",
+          "name": "ザ・サンメゾン文京本郷エルド",
+          "aliases": ["utokyo--570962471", "ザ・サンメゾン文京本郷エルド"]
+        },
+        {
+          "code": "BU3130",
+          "name": "Building 586447871",
+          "aliases": ["utokyo-building-586447871", "Building 586447871"]
+        },
+        {
+          "code": "BLD306",
+          "name": "パークホームズ本郷ザレジデンス",
+          "aliases": ["utokyo--770259776", "パークホームズ本郷ザレジデンス"]
+        },
+        {
+          "code": "BU3169",
+          "name": "Building 802137958",
+          "aliases": ["utokyo-building-802137958", "Building 802137958"]
+        },
+        {
+          "code": "BU3170",
+          "name": "Building 802137959",
+          "aliases": ["utokyo-building-802137959", "Building 802137959"]
+        },
+        {
+          "code": "BU3171",
+          "name": "Building 802137960",
+          "aliases": ["utokyo-building-802137960", "Building 802137960"]
+        },
+        {
+          "code": "BU3172",
+          "name": "Building 802137961",
+          "aliases": ["utokyo-building-802137961", "Building 802137961"]
+        },
+        {
+          "code": "BU3173",
+          "name": "Building 802137962",
+          "aliases": ["utokyo-building-802137962", "Building 802137962"]
+        },
+        {
+          "code": "BU3174",
+          "name": "Building 802137963",
+          "aliases": ["utokyo-building-802137963", "Building 802137963"]
+        },
+        {
+          "code": "BU3175",
+          "name": "Building 802137964",
+          "aliases": ["utokyo-building-802137964", "Building 802137964"]
+        },
+        {
+          "code": "BU3176",
+          "name": "Building 802137965",
+          "aliases": ["utokyo-building-802137965", "Building 802137965"]
+        },
+        {
+          "code": "BU3177",
+          "name": "Building 802137966",
+          "aliases": ["utokyo-building-802137966", "Building 802137966"]
+        },
+        {
+          "code": "BU3178",
+          "name": "Building 802137967",
+          "aliases": ["utokyo-building-802137967", "Building 802137967"]
+        },
+        {
+          "code": "BU3183",
+          "name": "Building 802154622",
+          "aliases": ["utokyo-building-802154622", "Building 802154622"]
+        },
+        {
+          "code": "BU3212",
+          "name": "Building 940671537",
+          "aliases": ["utokyo-building-940671537", "Building 940671537"]
+        },
+        {
+          "code": "BLD308",
+          "name": "東京セントラル本郷",
+          "aliases": ["utokyo--940671538", "東京セントラル本郷"]
+        },
+        {
+          "code": "BU3214",
+          "name": "Building 942047734",
+          "aliases": ["utokyo-building-942047734", "Building 942047734"]
+        },
+        {
+          "code": "HARMON",
+          "name": "Harmony Pavilion",
+          "aliases": ["utokyo-harmony-pavilion", "Harmony Pavilion"]
+        },
+        {
+          "code": "BU3266",
+          "name": "Building 1379882966",
+          "aliases": ["utokyo-building-1379882966", "Building 1379882966"]
+        },
+        {
+          "code": "BLD312",
+          "name": "リアン弥生",
+          "aliases": ["utokyo--1441568828", "リアン弥生", "Rian Yayoi"]
+        },
+        {
+          "code": "BU3409",
+          "name": "Building 2635867",
+          "aliases": ["utokyo-building-2635867", "Building 2635867"]
+        },
+        {
+          "code": "1X8",
+          "name": "看護職員等宿舎1号棟",
+          "aliases": ["utokyo-1-9602165", "看護職員等宿舎1号棟"]
+        }
+      ]
+    },
+    "utokyo-komaba": {
+      "universityId": "utokyo",
+      "universityName": "University of Tokyo",
+      "campusId": "utokyo-komaba",
+      "campusName": "University of Tokyo Komaba Campus",
+      "totalBuildings": 2448,
+      "residenceCount": 69,
+      "residences": [
+        {
+          "code": "BLDG14",
+          "name": "旧前田家本邸洋館",
+          "aliases": ["utokyo--28144706", "旧前田家本邸洋館", "Former Marquis Maeda Mansion"]
+        },
+        {
+          "code": "BLDG16",
+          "name": "旧前田家本邸和館",
+          "aliases": ["utokyo--28145214", "旧前田家本邸和館", "Former Marquis Maeda Mansion"]
+        },
+        {
+          "code": "PLAZA",
+          "name": "Plaza 目黒駒場",
+          "aliases": ["utokyo-plaza", "Plaza 目黒駒場"]
+        },
+        {
+          "code": "BLDG31",
+          "name": "ヴィラ駒場",
+          "aliases": ["utokyo--133339495", "ヴィラ駒場"]
+        },
+        {
+          "code": "BLDG32",
+          "name": "駒場国際交流会館",
+          "aliases": ["utokyo--133339578", "駒場国際交流会館", "Komaba International House"]
+        },
+        {
+          "code": "BUIL88",
+          "name": "Building 133340574",
+          "aliases": ["utokyo-building-133340574", "Building 133340574"]
+        },
+        {
+          "code": "BLDG35",
+          "name": "カーサ駒場",
+          "aliases": ["utokyo--133340586", "カーサ駒場"]
+        },
+        {
+          "code": "CORTIL",
+          "name": "Cortile Komaba",
+          "aliases": ["utokyo-cortile-komaba", "Cortile Komaba"]
+        },
+        {
+          "code": "SEZZAN",
+          "name": "SEZZAN MANSION",
+          "aliases": ["utokyo-sezzan-mansion", "SEZZAN MANSION"]
+        },
+        {
+          "code": "BLDG36",
+          "name": "駒場社宅",
+          "aliases": ["utokyo--133340601", "駒場社宅"]
+        },
+        {
+          "code": "CORTI1",
+          "name": "Cortile Komaba",
+          "aliases": ["utokyo-cortile-komaba-133340603", "Cortile Komaba"]
+        },
+        {
+          "code": "BLDG38",
+          "name": "ヒロ・エステート",
+          "aliases": ["utokyo--133340619", "ヒロ・エステート"]
+        },
+        {
+          "code": "BLDG39",
+          "name": "駒場社宅",
+          "aliases": ["utokyo--133340621", "駒場社宅"]
+        },
+        {
+          "code": "ONESST",
+          "name": "One's Stage 目黒駒場",
+          "aliases": ["utokyo-one-s-stage", "One's Stage 目黒駒場"]
+        },
+        {
+          "code": "BLDG41",
+          "name": "ジェイパーク駒場",
+          "aliases": ["utokyo--133340647", "ジェイパーク駒場"]
+        },
+        {
+          "code": "BUI497",
+          "name": "Building 133734323",
+          "aliases": ["utokyo-building-133734323", "Building 133734323"]
+        },
+        {
+          "code": "BLDG44",
+          "name": "カレッジコートⅡ",
+          "aliases": ["utokyo--133734337", "カレッジコートⅡ"]
+        },
+        {
+          "code": "REGNOF",
+          "name": "REGNO FIGO",
+          "aliases": ["utokyo-regno-figo", "REGNO FIGO"]
+        },
+        {
+          "code": "BUI579",
+          "name": "Building 133734892",
+          "aliases": ["utokyo-building-133734892", "Building 133734892"]
+        },
+        {
+          "code": "BLDG46",
+          "name": "東京シティビル",
+          "aliases": ["utokyo--133734904", "東京シティビル"]
+        },
+        {
+          "code": "BUI606",
+          "name": "Building 133734930",
+          "aliases": ["utokyo-building-133734930", "Building 133734930"]
+        },
+        {
+          "code": "PART1",
+          "name": "メゾン オーバ Part 1 こまば",
+          "aliases": ["utokyo-part-1", "メゾン オーバ Part 1 こまば"]
+        },
+        {
+          "code": "BLDG49",
+          "name": "リシェ駒場東大前",
+          "aliases": ["utokyo--133755311", "リシェ駒場東大前"]
+        },
+        {
+          "code": "BLDG50",
+          "name": "メゾン・ド・ツジ",
+          "aliases": ["utokyo--133797730", "メゾン・ド・ツジ"]
+        },
+        {
+          "code": "BUI941",
+          "name": "Building 133806744",
+          "aliases": ["utokyo-building-133806744", "Building 133806744"]
+        },
+        {
+          "code": "BLDG51",
+          "name": "アーバンハウス駒場",
+          "aliases": ["utokyo--133888536", "アーバンハウス駒場"]
+        },
+        {
+          "code": "BLDG52",
+          "name": "アーバンハウス駒場",
+          "aliases": ["utokyo--133888570", "アーバンハウス駒場"]
+        },
+        {
+          "code": "BLDG53",
+          "name": "メゾンドアオキ",
+          "aliases": ["utokyo--133940559", "メゾンドアオキ"]
+        },
+        {
+          "code": "BLDG57",
+          "name": "サンクタス松濤ロワール",
+          "aliases": ["utokyo--136856691", "サンクタス松濤ロワール"]
+        },
+        {
+          "code": "BU2029",
+          "name": "Building 136877026",
+          "aliases": ["utokyo-building-136877026", "Building 136877026"]
+        },
+        {
+          "code": "BU2045",
+          "name": "Building 136877066",
+          "aliases": ["utokyo-building-136877066", "Building 136877066"]
+        },
+        {
+          "code": "BU2061",
+          "name": "Building 136877853",
+          "aliases": ["utokyo-building-136877853", "Building 136877853"]
+        },
+        {
+          "code": "BU2113",
+          "name": "Building 137089525",
+          "aliases": ["utokyo-building-137089525", "Building 137089525"]
+        },
+        {
+          "code": "BU2140",
+          "name": "Building 137090281",
+          "aliases": ["utokyo-building-137090281", "Building 137090281"]
+        },
+        {
+          "code": "BU2148",
+          "name": "Building 137090295",
+          "aliases": ["utokyo-building-137090295", "Building 137090295"]
+        },
+        {
+          "code": "BU2151",
+          "name": "Building 137090299",
+          "aliases": ["utokyo-building-137090299", "Building 137090299"]
+        },
+        {
+          "code": "BU2156",
+          "name": "Building 137090308",
+          "aliases": ["utokyo-building-137090308", "Building 137090308"]
+        },
+        {
+          "code": "BU2185",
+          "name": "Building 137203129",
+          "aliases": ["utokyo-building-137203129", "Building 137203129"]
+        },
+        {
+          "code": "BU2187",
+          "name": "Building 137203138",
+          "aliases": ["utokyo-building-137203138", "Building 137203138"]
+        },
+        {
+          "code": "BU2195",
+          "name": "Building 137203212",
+          "aliases": ["utokyo-building-137203212", "Building 137203212"]
+        },
+        {
+          "code": "BU2217",
+          "name": "Building 1150073117",
+          "aliases": ["utokyo-building-1150073117", "Building 1150073117"]
+        },
+        {
+          "code": "BU2281",
+          "name": "Building 1540696053",
+          "aliases": ["utokyo-building-1540696053", "Building 1540696053"]
+        },
+        {
+          "code": "BU2282",
+          "name": "Building 1540696054",
+          "aliases": ["utokyo-building-1540696054", "Building 1540696054"]
+        },
+        {
+          "code": "BU2284",
+          "name": "Building 1540696056",
+          "aliases": ["utokyo-building-1540696056", "Building 1540696056"]
+        },
+        {
+          "code": "BU2285",
+          "name": "Building 1540696057",
+          "aliases": ["utokyo-building-1540696057", "Building 1540696057"]
+        },
+        {
+          "code": "BU2286",
+          "name": "Building 1540696058",
+          "aliases": ["utokyo-building-1540696058", "Building 1540696058"]
+        },
+        {
+          "code": "BU2287",
+          "name": "Building 1540719787",
+          "aliases": ["utokyo-building-1540719787", "Building 1540719787"]
+        },
+        {
+          "code": "BU2288",
+          "name": "Building 1540719788",
+          "aliases": ["utokyo-building-1540719788", "Building 1540719788"]
+        },
+        {
+          "code": "BU2289",
+          "name": "Building 1540719789",
+          "aliases": ["utokyo-building-1540719789", "Building 1540719789"]
+        },
+        {
+          "code": "BU2290",
+          "name": "Building 1542813779",
+          "aliases": ["utokyo-building-1542813779", "Building 1542813779"]
+        },
+        {
+          "code": "BU2291",
+          "name": "Building 1542813788",
+          "aliases": ["utokyo-building-1542813788", "Building 1542813788"]
+        },
+        {
+          "code": "BU2292",
+          "name": "Building 1542813789",
+          "aliases": ["utokyo-building-1542813789", "Building 1542813789"]
+        },
+        {
+          "code": "BU2293",
+          "name": "Building 1542813790",
+          "aliases": ["utokyo-building-1542813790", "Building 1542813790"]
+        },
+        {
+          "code": "BU2295",
+          "name": "Building 1542813792",
+          "aliases": ["utokyo-building-1542813792", "Building 1542813792"]
+        },
+        {
+          "code": "BU2296",
+          "name": "Building 1542813793",
+          "aliases": ["utokyo-building-1542813793", "Building 1542813793"]
+        },
+        {
+          "code": "BU2297",
+          "name": "Building 1542813794",
+          "aliases": ["utokyo-building-1542813794", "Building 1542813794"]
+        },
+        {
+          "code": "BU2298",
+          "name": "Building 1542813795",
+          "aliases": ["utokyo-building-1542813795", "Building 1542813795"]
+        },
+        {
+          "code": "BU2299",
+          "name": "Building 1560807903",
+          "aliases": ["utokyo-building-1560807903", "Building 1560807903"]
+        },
+        {
+          "code": "BU2300",
+          "name": "Building 1560807904",
+          "aliases": ["utokyo-building-1560807904", "Building 1560807904"]
+        },
+        {
+          "code": "BU2301",
+          "name": "Building 1560807905",
+          "aliases": ["utokyo-building-1560807905", "Building 1560807905"]
+        },
+        {
+          "code": "BU2302",
+          "name": "Building 1560807907",
+          "aliases": ["utokyo-building-1560807907", "Building 1560807907"]
+        },
+        {
+          "code": "BU2303",
+          "name": "Building 1560807908",
+          "aliases": ["utokyo-building-1560807908", "Building 1560807908"]
+        },
+        {
+          "code": "BU2304",
+          "name": "Building 1560807909",
+          "aliases": ["utokyo-building-1560807909", "Building 1560807909"]
+        },
+        {
+          "code": "BU2305",
+          "name": "Building 1560807910",
+          "aliases": ["utokyo-building-1560807910", "Building 1560807910"]
+        },
+        {
+          "code": "BU2309",
+          "name": "Building 1560807914",
+          "aliases": ["utokyo-building-1560807914", "Building 1560807914"]
+        },
+        {
+          "code": "BU2313",
+          "name": "Building 1560807918",
+          "aliases": ["utokyo-building-1560807918", "Building 1560807918"]
+        },
+        {
+          "code": "BU2314",
+          "name": "Building 1560807919",
+          "aliases": ["utokyo-building-1560807919", "Building 1560807919"]
+        },
+        {
+          "code": "BU2316",
+          "name": "Building 1560807921",
+          "aliases": ["utokyo-building-1560807921", "Building 1560807921"]
+        },
+        {
+          "code": "BU2317",
+          "name": "Building 1560807922",
+          "aliases": ["utokyo-building-1560807922", "Building 1560807922"]
+        }
+      ]
+    },
+    "utokyo-kashiwa": {
+      "universityId": "utokyo",
+      "universityName": "University of Tokyo",
+      "campusId": "utokyo-kashiwa",
+      "campusName": "University of Tokyo Kashiwa Campus",
+      "totalBuildings": 336,
+      "residenceCount": 41,
+      "residences": [
+        {
+          "code": "BUIL92",
+          "name": "Building 1019400268",
+          "aliases": ["utokyo-building-1019400268", "Building 1019400268"]
+        },
+        {
+          "code": "BUI182",
+          "name": "Building 1562532056",
+          "aliases": ["utokyo-building-1562532056", "Building 1562532056"]
+        },
+        {
+          "code": "BUI183",
+          "name": "Building 1562532057",
+          "aliases": ["utokyo-building-1562532057", "Building 1562532057"]
+        },
+        {
+          "code": "BUI184",
+          "name": "Building 1562532058",
+          "aliases": ["utokyo-building-1562532058", "Building 1562532058"]
+        },
+        {
+          "code": "BUI185",
+          "name": "Building 1562532059",
+          "aliases": ["utokyo-building-1562532059", "Building 1562532059"]
+        },
+        {
+          "code": "BUI188",
+          "name": "Building 1562532062",
+          "aliases": ["utokyo-building-1562532062", "Building 1562532062"]
+        },
+        {
+          "code": "BUI193",
+          "name": "Building 1562532067",
+          "aliases": ["utokyo-building-1562532067", "Building 1562532067"]
+        },
+        {
+          "code": "BUI196",
+          "name": "Building 1562532070",
+          "aliases": ["utokyo-building-1562532070", "Building 1562532070"]
+        },
+        {
+          "code": "BUI198",
+          "name": "Building 1562533525",
+          "aliases": ["utokyo-building-1562533525", "Building 1562533525"]
+        },
+        {
+          "code": "BUI199",
+          "name": "Building 1562533526",
+          "aliases": ["utokyo-building-1562533526", "Building 1562533526"]
+        },
+        {
+          "code": "BUI203",
+          "name": "Building 1562533530",
+          "aliases": ["utokyo-building-1562533530", "Building 1562533530"]
+        },
+        {
+          "code": "BUI206",
+          "name": "Building 1562533533",
+          "aliases": ["utokyo-building-1562533533", "Building 1562533533"]
+        },
+        {
+          "code": "BUI207",
+          "name": "Building 1562533534",
+          "aliases": ["utokyo-building-1562533534", "Building 1562533534"]
+        },
+        {
+          "code": "BUI208",
+          "name": "Building 1562533535",
+          "aliases": ["utokyo-building-1562533535", "Building 1562533535"]
+        },
+        {
+          "code": "BUI209",
+          "name": "Building 1562533536",
+          "aliases": ["utokyo-building-1562533536", "Building 1562533536"]
+        },
+        {
+          "code": "BUI211",
+          "name": "Building 1562533538",
+          "aliases": ["utokyo-building-1562533538", "Building 1562533538"]
+        },
+        {
+          "code": "BUI212",
+          "name": "Building 1562533539",
+          "aliases": ["utokyo-building-1562533539", "Building 1562533539"]
+        },
+        {
+          "code": "BUI213",
+          "name": "Building 1562533540",
+          "aliases": ["utokyo-building-1562533540", "Building 1562533540"]
+        },
+        {
+          "code": "BUI214",
+          "name": "Building 1562533541",
+          "aliases": ["utokyo-building-1562533541", "Building 1562533541"]
+        },
+        {
+          "code": "BUI217",
+          "name": "Building 1562533544",
+          "aliases": ["utokyo-building-1562533544", "Building 1562533544"]
+        },
+        {
+          "code": "BUI218",
+          "name": "Building 1562533545",
+          "aliases": ["utokyo-building-1562533545", "Building 1562533545"]
+        },
+        {
+          "code": "BUI219",
+          "name": "Building 1562533546",
+          "aliases": ["utokyo-building-1562533546", "Building 1562533546"]
+        },
+        {
+          "code": "BUI220",
+          "name": "Building 1562533547",
+          "aliases": ["utokyo-building-1562533547", "Building 1562533547"]
+        },
+        {
+          "code": "BUI221",
+          "name": "Building 1562533548",
+          "aliases": ["utokyo-building-1562533548", "Building 1562533548"]
+        },
+        {
+          "code": "BUI223",
+          "name": "Building 1562533550",
+          "aliases": ["utokyo-building-1562533550", "Building 1562533550"]
+        },
+        {
+          "code": "BUI228",
+          "name": "Building 1562533555",
+          "aliases": ["utokyo-building-1562533555", "Building 1562533555"]
+        },
+        {
+          "code": "BUI229",
+          "name": "Building 1562533556",
+          "aliases": ["utokyo-building-1562533556", "Building 1562533556"]
+        },
+        {
+          "code": "BUI230",
+          "name": "Building 1562533557",
+          "aliases": ["utokyo-building-1562533557", "Building 1562533557"]
+        },
+        {
+          "code": "BUI231",
+          "name": "Building 1562533558",
+          "aliases": ["utokyo-building-1562533558", "Building 1562533558"]
+        },
+        {
+          "code": "BUI233",
+          "name": "Building 1562533560",
+          "aliases": ["utokyo-building-1562533560", "Building 1562533560"]
+        },
+        {
+          "code": "BUI234",
+          "name": "Building 1562533561",
+          "aliases": ["utokyo-building-1562533561", "Building 1562533561"]
+        },
+        {
+          "code": "BUI235",
+          "name": "Building 1562533562",
+          "aliases": ["utokyo-building-1562533562", "Building 1562533562"]
+        },
+        {
+          "code": "BUI236",
+          "name": "Building 1562533563",
+          "aliases": ["utokyo-building-1562533563", "Building 1562533563"]
+        },
+        {
+          "code": "BUI240",
+          "name": "Building 1562533567",
+          "aliases": ["utokyo-building-1562533567", "Building 1562533567"]
+        },
+        {
+          "code": "BUI257",
+          "name": "Building 1562535451",
+          "aliases": ["utokyo-building-1562535451", "Building 1562535451"]
+        },
+        {
+          "code": "BUI258",
+          "name": "Building 1562535452",
+          "aliases": ["utokyo-building-1562535452", "Building 1562535452"]
+        },
+        {
+          "code": "BUI268",
+          "name": "Building 1562535462",
+          "aliases": ["utokyo-building-1562535462", "Building 1562535462"]
+        },
+        {
+          "code": "BUI269",
+          "name": "Building 1562535463",
+          "aliases": ["utokyo-building-1562535463", "Building 1562535463"]
+        },
+        {
+          "code": "BUI271",
+          "name": "Building 1562535465",
+          "aliases": ["utokyo-building-1562535465", "Building 1562535465"]
+        },
+        {
+          "code": "BUI287",
+          "name": "Building 1562535481",
+          "aliases": ["utokyo-building-1562535481", "Building 1562535481"]
+        },
+        {
+          "code": "BUI291",
+          "name": "Building 1562535485",
+          "aliases": ["utokyo-building-1562535485", "Building 1562535485"]
+        }
+      ]
+    },
+    "tsinghua": {
+      "universityId": "tsinghua",
+      "universityName": "Tsinghua University",
+      "campusId": "tsinghua",
+      "campusName": "Tsinghua University Main Campus",
+      "totalBuildings": 276,
+      "residenceCount": 62,
+      "residences": [
+        {
+          "code": "20",
+          "name": "紫荆学生公寓20号楼",
+          "aliases": ["tsinghua-20", "紫荆学生公寓20号楼", "Zijing Student Dormitory No. 20"]
+        },
+        {
+          "code": "21",
+          "name": "紫荆学生公寓21号楼",
+          "aliases": ["tsinghua-21", "紫荆学生公寓21号楼", "Zijing Student Dormitory No. 21"]
+        },
+        {
+          "code": "22",
+          "name": "紫荆学生公寓22号楼",
+          "aliases": ["tsinghua-22", "紫荆学生公寓22号楼", "Zijing Student Dormitory No. 22"]
+        },
+        {
+          "code": "23",
+          "name": "紫荆学生公寓23号楼",
+          "aliases": ["tsinghua-23", "紫荆学生公寓23号楼", "Zijing Student Dormitory No. 23"]
+        },
+        {
+          "code": "3334",
+          "name": "33-34号楼",
+          "aliases": ["tsinghua-33-34", "33-34号楼", "Building 33-34"]
+        },
+        {
+          "code": "3132",
+          "name": "31-32号楼",
+          "aliases": ["tsinghua-31-32", "31-32号楼", "Building 31-32"]
+        },
+        {
+          "code": "37",
+          "name": "37号楼",
+          "aliases": ["tsinghua-37", "37号楼", "Building 37"]
+        },
+        {
+          "code": "3536",
+          "name": "35-36号楼",
+          "aliases": ["tsinghua-35-36", "35-36号楼", "Building 35-36"]
+        },
+        {
+          "code": "15",
+          "name": "15号楼",
+          "aliases": ["tsinghua-15", "15号楼", "Building 15"]
+        },
+        {
+          "code": "12",
+          "name": "12号楼",
+          "aliases": ["tsinghua-12", "12号楼", "Building 12"]
+        },
+        {
+          "code": "6X",
+          "name": "6号楼",
+          "aliases": ["tsinghua-6", "6号楼", "Building 6"]
+        },
+        {
+          "code": "7X",
+          "name": "7号楼",
+          "aliases": ["tsinghua-7", "7号楼", "Building 7"]
+        },
+        {
+          "code": "11",
+          "name": "11号楼",
+          "aliases": ["tsinghua-11", "11号楼", "Building 11"]
+        },
+        {
+          "code": "30",
+          "name": "30号楼",
+          "aliases": ["tsinghua-30", "30号楼", "Building 30"]
+        },
+        {
+          "code": "10",
+          "name": "10号楼北楼",
+          "aliases": ["tsinghua-10", "10号楼北楼", "新雅书院", "Building 10, North Section"]
+        },
+        {
+          "code": "8X",
+          "name": "8号楼",
+          "aliases": ["tsinghua-8", "8号楼", "Building 8"]
+        },
+        {
+          "code": "9X",
+          "name": "9号楼",
+          "aliases": ["tsinghua-9", "9号楼", "Building 9"]
+        },
+        {
+          "code": "101",
+          "name": "10号楼",
+          "aliases": ["tsinghua-10-83805172", "10号楼", "Building 10"]
+        },
+        {
+          "code": "5X",
+          "name": "5号楼",
+          "aliases": ["tsinghua-5", "5号楼", "Building 5"]
+        },
+        {
+          "code": "14",
+          "name": "14号楼西",
+          "aliases": ["tsinghua-14", "14号楼西", "Building 14, West Wing"]
+        },
+        {
+          "code": "141",
+          "name": "14号楼东",
+          "aliases": ["tsinghua-14-83892622", "14号楼东", "Building 14, East Wing"]
+        },
+        {
+          "code": "16",
+          "name": "16号楼",
+          "aliases": ["tsinghua-16", "16号楼", "Building 16"]
+        },
+        {
+          "code": "4X",
+          "name": "4号楼",
+          "aliases": ["tsinghua-4", "4号楼", "Building 4"]
+        },
+        {
+          "code": "3X",
+          "name": "3号楼",
+          "aliases": ["tsinghua-3", "3号楼", "Building 3"]
+        },
+        {
+          "code": "2X",
+          "name": "2号楼",
+          "aliases": ["tsinghua-2", "2号楼", "Building 2"]
+        },
+        {
+          "code": "1X",
+          "name": "1号楼",
+          "aliases": ["tsinghua-1", "1号楼", "Building 1"]
+        },
+        {
+          "code": "17",
+          "name": "17号楼",
+          "aliases": ["tsinghua-17", "17号楼", "Building 17"]
+        },
+        {
+          "code": "24",
+          "name": "24号楼",
+          "aliases": ["tsinghua-24", "24号楼", "Building 24"]
+        },
+        {
+          "code": "25",
+          "name": "25号楼",
+          "aliases": ["tsinghua-25", "25号楼", "Building 25"]
+        },
+        {
+          "code": "13",
+          "name": "13号楼",
+          "aliases": ["tsinghua-13", "13号楼", "Buidling 13"]
+        },
+        {
+          "code": "231",
+          "name": "23号楼",
+          "aliases": ["tsinghua-23-226623631", "23号楼", "Building 23"]
+        },
+        {
+          "code": "18",
+          "name": "18号楼",
+          "aliases": ["tsinghua-18", "18号楼", "Building 18"]
+        },
+        {
+          "code": "6X1",
+          "name": "东6楼",
+          "aliases": ["tsinghua-6-226669016", "东6楼"]
+        },
+        {
+          "code": "111",
+          "name": "东11楼",
+          "aliases": ["tsinghua-11-226669018", "东11楼"]
+        },
+        {
+          "code": "131",
+          "name": "东13楼",
+          "aliases": ["tsinghua-13-226669021", "东13楼"]
+        },
+        {
+          "code": "BUILD9",
+          "name": "Building 743191144",
+          "aliases": ["tsinghua-building-743191144", "Building 743191144"]
+        },
+        {
+          "code": "BUIL17",
+          "name": "Building 1003838057",
+          "aliases": ["tsinghua-building-1003838057", "Building 1003838057"]
+        },
+        {
+          "code": "BUIL18",
+          "name": "Building 1003838059",
+          "aliases": ["tsinghua-building-1003838059", "Building 1003838059"]
+        },
+        {
+          "code": "BUIL19",
+          "name": "Building 1003838060",
+          "aliases": ["tsinghua-building-1003838060", "Building 1003838060"]
+        },
+        {
+          "code": "BUIL20",
+          "name": "Building 1003838061",
+          "aliases": ["tsinghua-building-1003838061", "Building 1003838061"]
+        },
+        {
+          "code": "BUIL21",
+          "name": "Building 1003838063",
+          "aliases": ["tsinghua-building-1003838063", "Building 1003838063"]
+        },
+        {
+          "code": "BUIL22",
+          "name": "Building 1003838067",
+          "aliases": ["tsinghua-building-1003838067", "Building 1003838067"]
+        },
+        {
+          "code": "BUIL23",
+          "name": "Building 1003838068",
+          "aliases": ["tsinghua-building-1003838068", "Building 1003838068"]
+        },
+        {
+          "code": "BUIL24",
+          "name": "Building 1003838069",
+          "aliases": ["tsinghua-building-1003838069", "Building 1003838069"]
+        },
+        {
+          "code": "BUIL25",
+          "name": "Building 1003838070",
+          "aliases": ["tsinghua-building-1003838070", "Building 1003838070"]
+        },
+        {
+          "code": "BUIL26",
+          "name": "Building 1003838071",
+          "aliases": ["tsinghua-building-1003838071", "Building 1003838071"]
+        },
+        {
+          "code": "BUIL75",
+          "name": "Building 1378009801",
+          "aliases": ["tsinghua-building-1378009801", "Building 1378009801"]
+        },
+        {
+          "code": "BUIL76",
+          "name": "Building 1378009802",
+          "aliases": ["tsinghua-building-1378009802", "Building 1378009802"]
+        },
+        {
+          "code": "BUIL77",
+          "name": "Building 1378009803",
+          "aliases": ["tsinghua-building-1378009803", "Building 1378009803"]
+        },
+        {
+          "code": "BUIL78",
+          "name": "Building 1378009804",
+          "aliases": ["tsinghua-building-1378009804", "Building 1378009804"]
+        },
+        {
+          "code": "BUIL79",
+          "name": "Building 1378009805",
+          "aliases": ["tsinghua-building-1378009805", "Building 1378009805"]
+        },
+        {
+          "code": "BUIL80",
+          "name": "Building 1378009806",
+          "aliases": ["tsinghua-building-1378009806", "Building 1378009806"]
+        },
+        {
+          "code": "BUIL81",
+          "name": "Building 1378009807",
+          "aliases": ["tsinghua-building-1378009807", "Building 1378009807"]
+        },
+        {
+          "code": "BUIL82",
+          "name": "Building 1378009808",
+          "aliases": ["tsinghua-building-1378009808", "Building 1378009808"]
+        },
+        {
+          "code": "BUIL83",
+          "name": "Building 1378009809",
+          "aliases": ["tsinghua-building-1378009809", "Building 1378009809"]
+        },
+        {
+          "code": "BUIL84",
+          "name": "Building 1378009810",
+          "aliases": ["tsinghua-building-1378009810", "Building 1378009810"]
+        },
+        {
+          "code": "BUIL85",
+          "name": "Building 1378009811",
+          "aliases": ["tsinghua-building-1378009811", "Building 1378009811"]
+        },
+        {
+          "code": "BUIL86",
+          "name": "Building 1378009812",
+          "aliases": ["tsinghua-building-1378009812", "Building 1378009812"]
+        },
+        {
+          "code": "BUIL87",
+          "name": "Building 1378009826",
+          "aliases": ["tsinghua-building-1378009826", "Building 1378009826"]
+        },
+        {
+          "code": "BUIL88",
+          "name": "Building 1378009827",
+          "aliases": ["tsinghua-building-1378009827", "Building 1378009827"]
+        },
+        {
+          "code": "BUIL89",
+          "name": "Building 1378009828",
+          "aliases": ["tsinghua-building-1378009828", "Building 1378009828"]
+        },
+        {
+          "code": "BUIL90",
+          "name": "Building 1378009829",
+          "aliases": ["tsinghua-building-1378009829", "Building 1378009829"]
         }
       ]
     }

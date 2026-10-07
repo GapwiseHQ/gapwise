@@ -1869,17 +1869,22 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [],
-      "dataPaths": [],
+      "routableCampuses": ["oxford"],
+      "dataPaths": ["universities/oxford/campus.json"],
       "marketing": {
         "campusName": "Oxford campus",
         "headline": "Navigate the colleges, libraries, and departments of Oxford.",
         "description": "Explore the historic collegiate university across Oxford, with clear status for maps, search, and college navigation.",
         "seoTitle": "Gapwise for University of Oxford",
         "seoDescription": "Campus discovery, collegiate building search, and navigation for University of Oxford students.",
-        "searchExamples": ["Radcliffe Camera", "Bodleian Library", "Sheldonian Theatre"]
+        "searchExamples": ["Radcliffe Camera", "Bodleian Library", "Sheldonian Theatre"],
+        "stats": {
+          "buildings": 1852,
+          "entrances": 1260,
+          "pathSegments": 3582
+        }
       },
-      "status": "planned"
+      "status": "supported"
     },
     {
       "id": "cambridge",
@@ -1900,17 +1905,22 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [],
-      "dataPaths": [],
+      "routableCampuses": ["cambridge"],
+      "dataPaths": ["universities/cambridge/campus.json"],
       "marketing": {
         "campusName": "Cambridge campus",
         "headline": "Find your way between colleges, faculties, and the Backs.",
         "description": "Collegiate campus discovery and building navigation for University of Cambridge students and visitors.",
         "seoTitle": "Gapwise for University of Cambridge",
         "seoDescription": "Campus discovery, collegiate building search, and navigation for University of Cambridge students.",
-        "searchExamples": ["King's College Chapel", "Wren Library", "Sidgwick Site"]
+        "searchExamples": ["King's College Chapel", "Wren Library", "Sidgwick Site"],
+        "stats": {
+          "buildings": 2254,
+          "entrances": 535,
+          "pathSegments": 1052
+        }
       },
-      "status": "planned"
+      "status": "supported"
     },
     {
       "id": "imperial",
@@ -1931,17 +1941,26 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [],
-      "dataPaths": [],
+      "routableCampuses": ["imperial-south-kensington", "imperial-white-city"],
+      "dataPaths": ["universities/imperial/campus.json"],
       "marketing": {
         "campusName": "South Kensington campus",
         "headline": "Connect your day across South Kensington and White City.",
         "description": "Navigate Imperial College London campuses with building search, campus discovery, and pedestrian paths.",
         "seoTitle": "Gapwise for Imperial College London",
         "seoDescription": "Campus navigation, building search, and timetable discovery for Imperial College London students.",
-        "searchExamples": ["Queen's Tower", "Blackett Laboratory", "Sir Alexander Fleming Building"]
+        "searchExamples": [
+          "Queen's Tower",
+          "Blackett Laboratory",
+          "Sir Alexander Fleming Building"
+        ],
+        "stats": {
+          "buildings": 2001,
+          "entrances": 1176,
+          "pathSegments": 3023
+        }
       },
-      "status": "planned"
+      "status": "supported"
     },
     {
       "id": "ethz",
@@ -1962,17 +1981,22 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [],
-      "dataPaths": [],
+      "routableCampuses": ["ethz-zentrum", "ethz-hoenggerberg"],
+      "dataPaths": ["universities/ethz/campus.json"],
       "marketing": {
         "campusName": "Zentrum campus",
         "headline": "Bridge the distance between Zentrum and Hönggerberg.",
         "description": "Navigate ETH Zürich across its central and hilltop campuses with building search and clear transit-aware status.",
         "seoTitle": "Gapwise for ETH Zürich",
         "seoDescription": "Campus navigation, building discovery, and timetable planning for ETH Zürich students.",
-        "searchExamples": ["Hauptgebäude", "Polyterrasse", "HIL Building"]
+        "searchExamples": ["Hauptgebäude", "Polyterrasse", "HIL Building"],
+        "stats": {
+          "buildings": 1262,
+          "entrances": 1263,
+          "pathSegments": 7914
+        }
       },
-      "status": "planned"
+      "status": "supported"
     },
     {
       "id": "caltech",
@@ -1993,17 +2017,22 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [],
-      "dataPaths": [],
+      "routableCampuses": ["caltech"],
+      "dataPaths": ["universities/caltech/campus.json"],
       "marketing": {
         "campusName": "Pasadena campus",
         "headline": "A focused campus experience for Caltech in Pasadena.",
         "description": "Explore the Pasadena campus with building discovery, research lab navigation, and campus-aware planning.",
         "seoTitle": "Gapwise for California Institute of Technology",
         "seoDescription": "Campus discovery, building search, and timetable planning for Caltech students in Pasadena.",
-        "searchExamples": ["Beckman Institute", "Millikan Library", "Athenaeum"]
+        "searchExamples": ["Beckman Institute", "Millikan Library", "Athenaeum"],
+        "stats": {
+          "buildings": 543,
+          "entrances": 536,
+          "pathSegments": 2287
+        }
       },
-      "status": "planned"
+      "status": "supported"
     },
     {
       "id": "jhu",
@@ -2024,17 +2053,22 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [],
-      "dataPaths": [],
+      "routableCampuses": ["jhu-homewood", "jhu-east-baltimore"],
+      "dataPaths": ["universities/jhu/campus.json"],
       "marketing": {
         "campusName": "Homewood campus",
         "headline": "Coordinate classes and clinicals across Homewood and East Baltimore.",
         "description": "Navigate Johns Hopkins University across its historic quad and medical campuses with building discovery.",
         "seoTitle": "Gapwise for Johns Hopkins University",
         "seoDescription": "Campus navigation, building search, and timetable planning for Johns Hopkins University students.",
-        "searchExamples": ["Gilman Hall", "Milton S. Eisenhower Library", "Johns Hopkins Hospital"]
+        "searchExamples": ["Gilman Hall", "Milton S. Eisenhower Library", "Johns Hopkins Hospital"],
+        "stats": {
+          "buildings": 1405,
+          "entrances": 1387,
+          "pathSegments": 7234
+        }
       },
-      "status": "planned"
+      "status": "supported"
     },
     {
       "id": "epfl",
@@ -2055,17 +2089,22 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [],
-      "dataPaths": [],
+      "routableCampuses": ["epfl"],
+      "dataPaths": ["universities/epfl/campus.json"],
       "marketing": {
         "campusName": "Lausanne campus",
         "headline": "Explore EPFL along Lake Geneva with clarity.",
         "description": "Navigate EPFL campus in Lausanne with building search, lab discovery, and walking paths by the lake.",
         "seoTitle": "Gapwise for EPFL",
         "seoDescription": "Campus discovery, building search, and timetable planning for EPFL students in Lausanne.",
-        "searchExamples": ["Rolex Learning Center", "SwissTech Convention Center", "BC Building"]
+        "searchExamples": ["Rolex Learning Center", "SwissTech Convention Center", "BC Building"],
+        "stats": {
+          "buildings": 709,
+          "entrances": 535,
+          "pathSegments": 3040
+        }
       },
-      "status": "planned"
+      "status": "supported"
     },
     {
       "id": "ucl",
@@ -2086,17 +2125,22 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [],
-      "dataPaths": [],
+      "routableCampuses": ["ucl-bloomsbury", "ucl-east"],
+      "dataPaths": ["universities/ucl/campus.json"],
       "marketing": {
         "campusName": "Bloomsbury campus",
         "headline": "Traverse UCL from historic Bloomsbury to Queen Elizabeth Olympic Park.",
         "description": "Connect your day between Bloomsbury and UCL East with building search and clear campus information.",
         "seoTitle": "Gapwise for University College London",
         "seoDescription": "Campus navigation, building search, and timetable planning for UCL students across London.",
-        "searchExamples": ["Wilkins Building", "Main Library", "Marshgate"]
+        "searchExamples": ["Wilkins Building", "Main Library", "Marshgate"],
+        "stats": {
+          "buildings": 1353,
+          "entrances": 1357,
+          "pathSegments": 5862
+        }
       },
-      "status": "planned"
+      "status": "supported"
     },
     {
       "id": "utokyo",
@@ -2117,17 +2161,22 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [],
-      "dataPaths": [],
+      "routableCampuses": ["utokyo-hongo", "utokyo-komaba", "utokyo-kashiwa"],
+      "dataPaths": ["universities/utokyo/campus.json"],
       "marketing": {
         "campusName": "Hongo campus",
         "headline": "Navigate UTokyo across Hongo, Komaba, and Kashiwa.",
         "description": "Explore the University of Tokyo campuses with building discovery, landmark search, and walking routes.",
         "seoTitle": "Gapwise for University of Tokyo",
         "seoDescription": "Campus navigation, building search, and timetable planning for University of Tokyo students.",
-        "searchExamples": ["Yasuda Auditorium", "Akamon", "Komaba Communication Plaza"]
+        "searchExamples": ["Yasuda Auditorium", "Akamon", "Komaba Communication Plaza"],
+        "stats": {
+          "buildings": 3835,
+          "entrances": 2209,
+          "pathSegments": 4004
+        }
       },
-      "status": "planned"
+      "status": "supported"
     },
     {
       "id": "tsinghua",
@@ -2148,8 +2197,8 @@
         "routing": true,
         "liveLocation": false
       },
-      "routableCampuses": [],
-      "dataPaths": [],
+      "routableCampuses": ["tsinghua"],
+      "dataPaths": ["universities/tsinghua/campus.json"],
       "marketing": {
         "campusName": "Tsinghua campus",
         "headline": "Navigate the expansive Tsinghua campus in Haidian.",
@@ -2160,9 +2209,14 @@
           "Grand Auditorium",
           "Old Gate",
           "Lee Shau Kee Science and Technology Building"
-        ]
+        ],
+        "stats": {
+          "buildings": 276,
+          "entrances": 122,
+          "pathSegments": 589
+        }
       },
-      "status": "planned"
+      "status": "supported"
     }
   ],
   "campuses": [
@@ -4983,12 +5037,12 @@
       "country": "United Kingdom",
       "hosts": ["oxford.gapwise.ca"],
       "aliases": ["Oxford", "Oxford collegiate campus", "University of Oxford"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5002,12 +5056,12 @@
       "country": "United Kingdom",
       "hosts": ["cambridge.gapwise.ca"],
       "aliases": ["Cambridge", "Cambridge collegiate campus", "University of Cambridge"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5021,12 +5075,12 @@
       "country": "United Kingdom",
       "hosts": ["imperial.gapwise.ca"],
       "aliases": ["South Kensington", "South Ken", "Imperial South Kensington"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5040,12 +5094,12 @@
       "country": "United Kingdom",
       "hosts": [],
       "aliases": ["White City", "Imperial White City", "Scale Space"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5059,12 +5113,12 @@
       "country": "Switzerland",
       "hosts": ["ethz.gapwise.ca"],
       "aliases": ["Zentrum", "ETH Zentrum", "ETH Center", "Zurich Center"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5078,12 +5132,12 @@
       "country": "Switzerland",
       "hosts": [],
       "aliases": ["Hönggerberg", "Hoenggerberg", "ETH Hönggerberg", "Science City"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5097,12 +5151,12 @@
       "country": "United States",
       "hosts": ["caltech.gapwise.ca"],
       "aliases": ["Caltech", "Pasadena", "Caltech campus"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5116,12 +5170,12 @@
       "country": "United States",
       "hosts": ["jhu.gapwise.ca"],
       "aliases": ["Homewood", "JHU Homewood", "Hopkins Homewood"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5135,12 +5189,12 @@
       "country": "United States",
       "hosts": [],
       "aliases": ["East Baltimore", "JHU East Baltimore", "Hopkins Medical", "JHM"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5154,12 +5208,12 @@
       "country": "Switzerland",
       "hosts": ["epfl.gapwise.ca"],
       "aliases": ["EPFL", "Lausanne", "EPFL Lausanne"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5173,12 +5227,12 @@
       "country": "United Kingdom",
       "hosts": ["ucl.gapwise.ca"],
       "aliases": ["Bloomsbury", "UCL Bloomsbury", "Central London"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5192,12 +5246,12 @@
       "country": "United Kingdom",
       "hosts": [],
       "aliases": ["UCL East", "Stratford", "Marshgate", "Pool Street"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5211,12 +5265,12 @@
       "country": "Japan",
       "hosts": ["utokyo.gapwise.ca"],
       "aliases": ["Hongo", "UTokyo Hongo", "本郷地区"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5230,12 +5284,12 @@
       "country": "Japan",
       "hosts": [],
       "aliases": ["Komaba", "UTokyo Komaba", "駒場地区"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5249,12 +5303,12 @@
       "country": "Japan",
       "hosts": [],
       "aliases": ["Kashiwa", "UTokyo Kashiwa", "柏地区"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     },
     {
@@ -5268,12 +5322,12 @@
       "country": "China",
       "hosts": ["tsinghua.gapwise.ca"],
       "aliases": ["Tsinghua", "Tsinghua Campus", "清华园"],
-      "status": "planned",
+      "status": "supported",
       "capabilities": {
         "timetableImport": "planned",
-        "buildingData": "planned",
-        "search": "planned",
-        "routing": "planned"
+        "buildingData": "supported",
+        "search": "supported",
+        "routing": "supported"
       }
     }
   ]

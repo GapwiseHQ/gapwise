@@ -22,7 +22,7 @@
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
       "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
-      "attribution": "\u00a9 OpenStreetMap contributors"
+      "attribution": "© OpenStreetMap contributors"
     }
   ],
   "buildings": [
@@ -134,7 +134,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/39264081",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-new-haven-city-hall",
@@ -284,7 +291,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/39267857",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-hall-of-records",
@@ -330,7 +344,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/39267860",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-chapel-york-garage",
@@ -400,7 +421,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/39360523",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-272-elm-street",
@@ -454,7 +482,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/39360789",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-lock-street-garage",
@@ -504,7 +539,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/39360863",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-payne-whitney-gymnasium",
@@ -690,7 +732,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49602467",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-united-church-on-the-green",
@@ -764,7 +813,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49989124",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-center-church-on-the-green",
@@ -826,7 +882,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49989187",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-trinity-episcopal-church",
@@ -896,7 +959,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49989228",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-university-towers",
@@ -970,7 +1040,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/114134157",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-the-crown-towers",
@@ -1032,7 +1109,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/114134158",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-beinecke-rare-book-and-manuscript-library",
@@ -1070,7 +1154,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/114134159",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-82-wall-street",
@@ -1124,7 +1215,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/114626278",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-slifka-center-for-jewish-life",
@@ -1182,7 +1280,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/114626279",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-121-elm-street",
@@ -1276,7 +1381,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/114670805",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-gold-building",
@@ -1314,7 +1426,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/114670806",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-whitney-grove-square",
@@ -1444,7 +1563,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/114670808",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-rosenfeld-hall",
@@ -1586,7 +1712,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/114670911",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-william-l-harkness-hall",
@@ -1728,7 +1861,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139420880",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-sprague-memorial-hall",
@@ -1782,7 +1922,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139420882",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-berkeley-college-north",
@@ -1916,7 +2063,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139420893",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-dwight-hall-memorial-chapel",
@@ -2174,7 +2328,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139753858",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-vanderbilt-hall",
@@ -2360,7 +2521,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139753861",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-217-park-street",
@@ -2454,7 +2622,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139753866",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-street-hall",
@@ -2700,7 +2875,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139753868",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-battell-chapel",
@@ -2866,7 +3048,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139753873",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-yale-center-for-british-art",
@@ -2920,7 +3109,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139753883",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-linsly-chittenden-hall",
@@ -3102,7 +3298,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139753884",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-durfee-building",
@@ -3148,7 +3351,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139759934",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-woolsey-hall",
@@ -3206,7 +3416,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139759935",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-lawrence-hall",
@@ -3392,7 +3609,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139759938",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-phelps-hall",
@@ -3546,7 +3770,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139759941",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-bingham-hall",
@@ -3696,7 +3927,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139759942",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-mcclellan-hall",
@@ -3742,7 +3980,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139759943",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-lanman-wright-hall",
@@ -3828,7 +4073,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139759946",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-connecticut-hall",
@@ -3906,7 +4158,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139759948",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-berkeley-college-south",
@@ -4036,7 +4295,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139759952",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-farnam-hall",
@@ -4166,7 +4432,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139759953",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-425-college-street",
@@ -4220,7 +4493,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139759956",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-bank-of-america",
@@ -4286,7 +4566,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141129252",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-christ-church",
@@ -4384,7 +4671,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141129259",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-new-haven-free-public-library",
@@ -4494,7 +4788,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141163194",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-superior-court",
@@ -4564,7 +4865,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141164127",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-yale-repertory-theatre",
@@ -4666,7 +4974,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142280415",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-the-taft",
@@ -4716,7 +5031,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142280418",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-new-haven-colonial-historical-society-building",
@@ -4834,7 +5156,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/143303781",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-whitney-humanities-center",
@@ -4944,7 +5273,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/143303784",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-246-church-street",
@@ -4998,7 +5334,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/143303789",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-united-church-parish-house",
@@ -5068,7 +5411,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/143303819",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-grove-street-garage",
@@ -5114,7 +5464,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/174817323",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-46-hillhouse-avenue",
@@ -5176,7 +5533,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/195121008",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-199-whitney-avenue",
@@ -5218,7 +5582,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/209100054",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-261-bradley-street",
@@ -5284,7 +5655,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/209403381",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-christ-presbyterian-church",
@@ -5394,7 +5772,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/209403386",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-265-bradley-street",
@@ -5432,7 +5817,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/209403392",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-245-bradley-street",
@@ -5490,7 +5882,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/209403396",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-255-bradley-street",
@@ -5536,7 +5935,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/209403408",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-berzelius-tomb",
@@ -5654,7 +6060,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/209424666",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-129-whitney-avenue",
@@ -5780,7 +6193,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/209424667",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-121-whitney-avenue",
@@ -5822,7 +6242,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/209425326",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-the-william-h-taft-mansion",
@@ -5876,7 +6303,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/209425327",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-founders-hall",
@@ -5954,7 +6388,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210260688",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-horchow-hall",
@@ -6056,7 +6497,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210441924",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-51-hillhouse-avenue",
@@ -6146,7 +6594,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210441926",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-president-s-house",
@@ -6236,7 +6691,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210441984",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-steinbach-hall",
@@ -6354,7 +6816,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210442041",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-thomas-mellon-evans-hall",
@@ -6448,7 +6917,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210442110",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-55-trumbull-street",
@@ -6510,7 +6986,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634420",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-12-lincoln-street",
@@ -6572,7 +7055,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634427",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-14-lincoln-street",
@@ -6638,7 +7128,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634431",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-240-bradley-street",
@@ -6708,7 +7205,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634432",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-248-bradley-street",
@@ -6786,7 +7290,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634434",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-51-trumbull-street",
@@ -6864,7 +7375,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634437",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-65-trumbull-street",
@@ -6946,7 +7464,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634439",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-47-trumbull-street",
@@ -7028,7 +7553,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634440",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-10-lincoln-street",
@@ -7114,7 +7646,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634442",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-67-trumbull-street",
@@ -7216,7 +7755,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634445",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-262-bradley-street",
@@ -7254,7 +7800,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634447",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-254-bradley-street",
@@ -7308,7 +7861,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634459",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-266-bradley-street",
@@ -7362,7 +7922,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210634462",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-office-of-new-haven-and-state-affairs-office-of-cooperative-research",
@@ -7416,7 +7983,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210640598",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-international-center-for-yale-students-and-scholars",
@@ -7462,7 +8036,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210640602",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-54-trumbull-street",
@@ -7536,7 +8117,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/211017512",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-50-trumbull-street",
@@ -7606,7 +8194,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/211017513",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-52-trumbull-street",
@@ -7664,7 +8259,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/211017514",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-skull-and-bones-tomb",
@@ -7738,7 +8340,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212109649",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-book-and-snake-tomb",
@@ -7776,7 +8385,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212496508",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-scroll-and-key-tomb",
@@ -7814,7 +8430,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212496509",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-woodbridge-hall",
@@ -7860,7 +8483,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212496510",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-mory-s",
@@ -7938,7 +8568,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/213227596",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-yale-bookstore",
@@ -8112,7 +8749,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/213227600",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-361-elm-street",
@@ -8150,7 +8794,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/215305013",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-arnold-hall",
@@ -8216,7 +8867,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/215319808",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-294-296-elm-street",
@@ -8258,7 +8916,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/215319809",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-fbi",
@@ -8352,7 +9017,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216516201",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-frontier-communications",
@@ -8390,7 +9062,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216519509",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-one-century-tower",
@@ -8480,7 +9159,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216542582",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-258-church-street-96-grove-street",
@@ -8578,7 +9264,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216544054",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-250-church-street",
@@ -8632,7 +9325,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216544055",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-493-college-street",
@@ -8694,7 +9394,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216647441",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-master-s-house",
@@ -8784,7 +9491,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216647446",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-yale-visitor-center",
@@ -8846,7 +9560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216863205",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-elizabethan-club",
@@ -8924,7 +9645,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216863206",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-graduate-club",
@@ -9002,7 +9730,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216863207",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-elihu-society",
@@ -9084,7 +9819,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216863208",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-320-temple",
@@ -9178,7 +9920,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216863209",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-302-temple",
@@ -9276,7 +10025,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216863210",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-451-college-street",
@@ -9366,7 +10122,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216863213",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-143-elm",
@@ -9412,7 +10175,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216863214",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-stoeckel-hall",
@@ -9474,7 +10244,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216863215",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-66-wall-street",
@@ -9528,7 +10305,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216863216",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-leigh-hall",
@@ -9582,7 +10366,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216863217",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-center-church-parish-house",
@@ -9668,7 +10459,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216879433",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-wells-fargo",
@@ -9754,7 +10552,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216882328",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-trinity-lutheran-church",
@@ -9856,7 +10661,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216882329",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-the-eli",
@@ -9958,7 +10770,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216882330",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-connecticut-childrens-museum",
@@ -10072,7 +10891,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216999485",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-pinto-house",
@@ -10110,7 +10936,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216999492",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-imperial-granum-joseph-parker-buildings",
@@ -10168,7 +11001,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216999498",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-new-haven-fire-department-headquarters",
@@ -10450,7 +11290,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217000912",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-arthur-k-watson-hall",
@@ -10508,7 +11355,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217270615",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-leet-oliver-memorial-hall",
@@ -10598,7 +11452,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217270616",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-mason-laboratory",
@@ -10660,7 +11521,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217270617",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-17-hillhouse-avenue",
@@ -10778,7 +11646,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217270618",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-becton-center",
@@ -10856,7 +11731,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217270619",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-dunham-laboratory",
@@ -10946,7 +11828,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217270620",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-sheffield-sterling-strathcona-hall",
@@ -11104,7 +11993,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217270625",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-warner-house",
@@ -11190,7 +12086,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217270626",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-saint-mary-s-church",
@@ -11300,7 +12203,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217270627",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-malone-center",
@@ -11410,7 +12320,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217301902",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-james-dwight-dana-house",
@@ -11484,7 +12401,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217301903",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-yale-health-center",
@@ -11650,7 +12574,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217340232",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-rose-center",
@@ -11708,7 +12639,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217340233",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-class-of-1954-environmental-science-center",
@@ -11894,7 +12832,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217341967",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-wtnh-tv",
@@ -11972,7 +12917,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217982546",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-connecticut-financial-center",
@@ -12090,7 +13042,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218090237",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-980-chapel-street",
@@ -12144,7 +13103,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218534071",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-149-york-street",
@@ -12206,7 +13172,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218538610",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-26-high-street",
@@ -12284,7 +13257,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218538611",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-38-high-street",
@@ -12358,7 +13338,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218538612",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-301-crown-street",
@@ -12432,7 +13419,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218538613",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-cambridge-arms",
@@ -12558,7 +13552,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218538614",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-28-high-street",
@@ -12628,7 +13629,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218538617",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-36-high-street",
@@ -12670,7 +13678,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218538619",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-295-297-crown-street",
@@ -12740,7 +13755,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218538620",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-york-crown-apartments-a",
@@ -12790,7 +13812,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218538621",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-305-crown-street",
@@ -12848,7 +13877,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/218538622",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-economic-growth-center",
@@ -12902,7 +13938,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/219143263",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-30-hillhouse-avenue",
@@ -12980,7 +14023,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/219143266",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-sigma-nu",
@@ -13022,7 +14072,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224137631",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-luther-house",
@@ -13084,7 +14141,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224137632",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-the-alluvia",
@@ -13122,7 +14186,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224137637",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-sigma-phi-epsilon",
@@ -13160,7 +14231,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224137644",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-205-park-street",
@@ -13226,7 +14304,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224889709",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-211-park-street",
@@ -13348,7 +14433,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224889712",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-loria-center",
@@ -13506,7 +14598,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224889714",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-rudolph-hall",
@@ -13748,7 +14847,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224889715",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-215-park-street",
@@ -13806,7 +14912,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224889716",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-204-york-street",
@@ -13884,7 +14997,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224973083",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-elisha-blackman-building",
@@ -13962,7 +15082,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224973084",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-220-york-street",
@@ -14044,7 +15171,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224973095",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-212-york-street",
@@ -14154,7 +15288,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224973099",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-202-york-street",
@@ -14196,7 +15337,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224973103",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-rose-alumni-house",
@@ -14246,7 +15394,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224973107",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-green-hall",
@@ -14296,7 +15451,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/224973110",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-80-audubon-street",
@@ -14366,7 +15528,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225011538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-james-w-c-pennington-center",
@@ -14412,7 +15581,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225011540",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-the-community-foundation-building",
@@ -14470,7 +15646,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225011548",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-audubon-court-garage",
@@ -14520,7 +15703,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225011550",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-55-whitney-avenue",
@@ -14602,7 +15792,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225014379",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-2-lincoln-street",
@@ -14664,7 +15861,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225020997",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-64-trumbull-street",
@@ -14734,7 +15938,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225020999",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-58-trumbull-street",
@@ -14816,7 +16027,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225021000",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-9-lincoln-street",
@@ -14854,7 +16072,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225021008",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-66-trumbull-street",
@@ -14908,16 +16133,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225021017",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-432-434-temple-street",
-      "name": "432\u2013434 Temple Street",
+      "name": "432–434 Temple Street",
       "nativeCodes": [
         "44TS"
       ],
       "aliases": [
-        "432\u2013434 Temple Street"
+        "432–434 Temple Street"
       ],
       "category": "facility",
       "geometry": {
@@ -14978,7 +16210,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225322471",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-kirtland-hall",
@@ -15020,7 +16259,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225322472",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-the-church-of-jesus-christ-of-latter-day-saints",
@@ -15062,7 +16308,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225322473",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-yale-collection-of-musical-instruments",
@@ -15104,7 +16357,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225322474",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-yale-china-association",
@@ -15162,7 +16422,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225322475",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-85-trumbull-street",
@@ -15232,7 +16499,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225487553",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-undergraduate-admissions",
@@ -15342,7 +16616,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225487554",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-institution-for-social-and-policy-studies",
@@ -15440,7 +16721,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225487555",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-35-hillhouse-avenue",
@@ -15530,7 +16818,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225915742",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-department-of-economics",
@@ -15624,7 +16919,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225915743",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-33-hillhouse-avenue",
@@ -15662,7 +16964,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225915744",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-36-sachem",
@@ -15700,7 +17009,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225915746",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-110-100-whitney-avenue",
@@ -15750,7 +17066,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225915747",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-allwin-hall",
@@ -15820,7 +17143,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/225915748",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-russell-henry-chittenden-house",
@@ -15938,7 +17268,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/228323488",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-79-trumbull-street",
@@ -16076,7 +17413,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/228323489",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-department-of-anthropology",
@@ -16186,7 +17530,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/228324286",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-welch-hall",
@@ -16260,7 +17611,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/230503538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-bld-238532527",
@@ -16370,7 +17728,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/238532527",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-watson-center",
@@ -16468,7 +17833,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/238532528",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-manuscript-tomb",
@@ -16538,7 +17910,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/249314134",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-dow-hall",
@@ -16624,7 +18003,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/266453342",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-sigma-alpha-epsilon",
@@ -16662,7 +18048,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274208698",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-central-power-plant",
@@ -16764,7 +18157,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/292388134",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-alpha-delta-phi",
@@ -16854,7 +18254,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/340518157",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-100-ashmun",
@@ -16904,7 +18311,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/340518188",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-70-whitney-avenue",
@@ -16950,7 +18364,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/347339751",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-bass-library-north",
@@ -17008,7 +18429,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/347416244",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-lanman-center",
@@ -17054,7 +18482,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/349615679",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-york-crown-apartments-b",
@@ -17092,7 +18527,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/349637389",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-rosenkranz-hall",
@@ -17206,7 +18648,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/363327921",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-luce-hall",
@@ -17320,7 +18769,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/363329574",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-schwarzman-center",
@@ -17434,7 +18890,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/363426802",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-227-grove-street",
@@ -17488,7 +18951,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/363474084",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-weir-hall",
@@ -17578,7 +19048,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/363477899",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-ray-tompkins-house",
@@ -17668,7 +19145,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/363777519",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-40a-ashmun-street",
@@ -17734,7 +19218,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/363784581",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-off-broadway-theater",
@@ -17784,7 +19275,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/363790673",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-jonathan-edwards-college",
@@ -18246,7 +19744,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/363808899",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-saint-anthony-hall",
@@ -18340,7 +19845,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/363860236",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-bass-library-south",
@@ -18402,7 +19914,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/364538449",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-bass-library-underground",
@@ -18472,7 +19991,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/364538450",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-81-wall-street",
@@ -18542,7 +20068,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/375601613",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-405-temple",
@@ -18580,7 +20113,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/399683919",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-276-york-street",
@@ -18638,7 +20178,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/622912212",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-bulldog-hotdogs",
@@ -18692,7 +20239,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/861195171",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-89-trumbull-street",
@@ -18754,7 +20308,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/974887606",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-tsai-city",
@@ -18848,7 +20409,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/981830373",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-the-audubon-new-haven",
@@ -18966,7 +20534,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1080643021",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "yale-bld-1427483326",
@@ -19088,7 +20663,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1427483326",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

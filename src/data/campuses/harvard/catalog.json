@@ -22,7 +22,7 @@
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
       "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
-      "attribution": "\u00a9 OpenStreetMap contributors"
+      "attribution": "© OpenStreetMap contributors"
     }
   ],
   "buildings": [
@@ -78,7 +78,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515179",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-perkins-hall",
@@ -156,7 +163,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515182",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-conant-hall",
@@ -202,7 +216,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515188",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-114-irving-street",
@@ -240,7 +261,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515197",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-110-112-irving-street",
@@ -302,7 +330,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515206",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-26-oxford-street",
@@ -440,7 +475,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515210",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-25-follen-street",
@@ -478,7 +520,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515213",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-6-8-scott-street",
@@ -524,7 +573,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515227",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-tozzer-anthropology-building",
@@ -626,7 +682,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515230",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-44-46-follen-street",
@@ -672,7 +735,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515242",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-follen-street",
@@ -734,7 +804,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515243",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-16-francis-avenue",
@@ -780,7 +857,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515245",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-20-follen-street",
@@ -818,7 +902,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515248",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-13-kirkland-place",
@@ -872,7 +963,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515250",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-11-francis-avenue",
@@ -910,7 +1008,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515253",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-9-concord-avenue",
@@ -964,7 +1069,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515254",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-2-4-farrar-street",
@@ -1010,7 +1122,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515261",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-12-14-francis-avenue",
@@ -1048,7 +1167,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515262",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-49-irving-street",
@@ -1102,7 +1228,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515318",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-40-kirkland-street",
@@ -1156,7 +1289,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515319",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-kirkland-road",
@@ -1210,7 +1350,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515325",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-14-kirkland-road",
@@ -1248,7 +1395,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515334",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-28-30-32-34-irving-street",
@@ -1366,7 +1520,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515356",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-6-irving-terrace",
@@ -1412,7 +1573,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515370",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-longfellow-building",
@@ -1498,7 +1666,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515377",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-cambridge-fire-department-headquarters",
@@ -1560,7 +1735,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515388",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-arthur-m-sackler-gallery",
@@ -1630,7 +1812,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515392",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1663-cambridge-street",
@@ -1668,7 +1857,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515393",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-putnam-building",
@@ -1722,7 +1918,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515394",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1653-cambridge-street",
@@ -1776,7 +1979,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515396",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-77-trowbridge-street",
@@ -1830,7 +2040,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515397",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-rindge-building",
@@ -2568,7 +2785,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515411",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-54-brattle-street",
@@ -2606,7 +2830,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515416",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-story-street",
@@ -2644,7 +2875,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515428",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-23-25-27-29-ware-street",
@@ -2714,7 +2952,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515437",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-452-broadway",
@@ -2752,7 +2997,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515457",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-430-broadway",
@@ -2794,7 +3046,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515472",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-88-90-92-mount-auburn-street",
@@ -2868,7 +3127,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515483",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-43-45-47-49-ellery-street",
@@ -2914,7 +3180,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515493",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-379-harvard-street",
@@ -2964,7 +3237,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515495",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-52-54-dunster-street",
@@ -3002,7 +3282,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515496",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-41-winthrop-street",
@@ -3048,7 +3335,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515502",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-60-john-f-kennedy-street",
@@ -3102,7 +3396,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515507",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-lampoon-building",
@@ -3148,7 +3449,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515509",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-16-remington-street",
@@ -3202,7 +3510,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515511",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-advocate-building",
@@ -3240,7 +3555,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515512",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-69-dunster-street",
@@ -3294,7 +3616,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515513",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-23-25-27-trowbridge-street",
@@ -3340,7 +3669,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515515",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-11-13-remington-street",
@@ -3378,7 +3714,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515517",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-the-fly-club",
@@ -3440,7 +3783,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515519",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-374-harvard-street",
@@ -3486,7 +3836,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29515521",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-scott-street",
@@ -3532,7 +3889,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516459",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-103-irving-street",
@@ -3594,7 +3958,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516469",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-15-17-francis-avenue",
@@ -3656,7 +4027,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516478",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-francis-avenue",
@@ -3710,7 +4088,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516496",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-francis-avenue",
@@ -3772,7 +4157,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516498",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-40-irving-street",
@@ -3842,7 +4234,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-101-trowbridge-street",
@@ -3896,7 +4295,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516540",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-39-irving-street",
@@ -3934,7 +4340,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516541",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-99-trowbridge-street",
@@ -3972,7 +4385,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516545",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-37-irving-street",
@@ -4026,7 +4446,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516546",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-95-trowbridge-street",
@@ -4080,7 +4507,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516552",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-6-ashton-place",
@@ -4126,7 +4560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516554",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1691-cambridge-street",
@@ -4164,7 +4605,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516565",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1716-cambridge-street",
@@ -4226,7 +4674,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516569",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1657-cambridge-street",
@@ -4264,7 +4719,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516574",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-448-450-broadway",
@@ -4302,7 +4764,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516598",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-17-ware-street",
@@ -4364,7 +4833,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516599",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-49a-trowbridge-street",
@@ -4402,7 +4878,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516606",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-375-harvard-street",
@@ -4440,7 +4923,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516618",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-382-384-386-388-390-392-harvard-street",
@@ -4558,7 +5048,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516622",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-353-harvard-street",
@@ -4636,7 +5133,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516633",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-19-trowbridge-street",
@@ -4674,7 +5178,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516636",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-358-harvard-street",
@@ -4712,7 +5223,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29516637",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-world-religions-center",
@@ -4790,7 +5308,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29529983",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-maloch-building",
@@ -4868,7 +5393,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29529995",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-engineering-sciences-lab",
@@ -4914,7 +5446,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29529997",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-49-51-walker-street",
@@ -4952,7 +5491,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530004",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-12-chauncy-street",
@@ -4998,7 +5544,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530041",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-20-bryant-street",
@@ -5044,7 +5597,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530043",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-4-bryant-street",
@@ -5090,7 +5650,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530050",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-child-hall",
@@ -5180,7 +5747,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530091",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-18-francis-avenue",
@@ -5218,7 +5792,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530141",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-langdell-hall",
@@ -5404,7 +5985,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530149",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-6-follen-street",
@@ -5450,7 +6038,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530198",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-11-kirkland-place",
@@ -5488,7 +6083,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530206",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-9-kirkland-place",
@@ -5558,7 +6160,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530248",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-55-kirkland-street",
@@ -5596,7 +6205,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530279",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-lowell-lecture-hall",
@@ -5634,7 +6250,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530374",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-littauer-center",
@@ -5716,7 +6339,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530404",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-memorial-hall",
@@ -5966,7 +6596,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530473",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-8-irving-terrace",
@@ -6012,7 +6649,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-83-trowbridge-street",
@@ -6058,7 +6702,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530542",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1717-cambridge-street",
@@ -6112,7 +6763,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530549",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1709-cambridge-street",
@@ -6174,7 +6832,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530557",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-read",
@@ -6212,7 +6877,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530596",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-nichols",
@@ -6250,7 +6922,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530602",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-loeb-drama-center",
@@ -6320,7 +6999,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530612",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-university-hall",
@@ -6418,7 +7104,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530618",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-sever-hall",
@@ -6472,7 +7165,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530656",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-broadway-marketplace",
@@ -6550,7 +7250,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530671",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-boylston-hall",
@@ -6608,7 +7315,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530699",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-20-20a-prescott-street",
@@ -6726,16 +7440,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530710",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-wigglesworth-hall-j-k",
-      "name": "Wigglesworth Hall J\u2013K",
+      "name": "Wigglesworth Hall J–K",
       "nativeCodes": [
         "WHJK"
       ],
       "aliases": [
-        "Wigglesworth Hall J\u2013K"
+        "Wigglesworth Hall J–K"
       ],
       "category": "residence",
       "geometry": {
@@ -6764,7 +7485,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530712",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1-2-3-broadway-court",
@@ -6802,7 +7530,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530718",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-chapman-arms",
@@ -7128,16 +7863,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530743",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-wigglesworth-hall-a-d",
-      "name": "Wigglesworth Hall A\u2013D",
+      "name": "Wigglesworth Hall A–D",
       "nativeCodes": [
         "WHAD"
       ],
       "aliases": [
-        "Wigglesworth Hall A\u2013D"
+        "Wigglesworth Hall A–D"
       ],
       "category": "residence",
       "geometry": {
@@ -7194,7 +7936,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530754",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-8-trowbridge-place",
@@ -7232,7 +7981,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530764",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-8-prescott-street",
@@ -7326,7 +8082,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530772",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-432-broadway",
@@ -7364,7 +8127,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530774",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-art-studios",
@@ -7442,7 +8212,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530799",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-apthorp-house",
@@ -7520,7 +8297,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530805",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-hurlbut-hall",
@@ -7670,7 +8454,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530807",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-pennypacker-hall",
@@ -7768,7 +8559,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530809",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-ware-street",
@@ -7806,7 +8604,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530817",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-357-359-harvard-street",
@@ -7852,7 +8657,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530846",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1137-massachusetts-avenue",
@@ -8074,7 +8886,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530855",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-364-harvard-street",
@@ -8120,7 +8939,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29530866",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-30-francis-avenue",
@@ -8174,7 +9000,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29532631",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-80-82-irving-street",
@@ -8212,7 +9045,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29532749",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-4-6-kirkland-place",
@@ -8258,7 +9098,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29532781",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-45-47-irving-street",
@@ -8296,7 +9143,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29532826",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-89-91-trowbridge-street",
@@ -8382,7 +9236,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29532878",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-sumner-road",
@@ -8464,7 +9325,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29532905",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1667-cambridge-street",
@@ -8510,7 +9378,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29532921",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-broadway-garage",
@@ -8648,7 +9523,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29532980",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-18-20-ware-street",
@@ -8814,7 +9696,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533038",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-53-trowbridge-street",
@@ -8884,7 +9773,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533051",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-442-444-broadway",
@@ -8954,7 +9850,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533053",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-51-trowbridge-street",
@@ -9000,7 +9903,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533058",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-54-trowbridge-street",
@@ -9038,7 +9948,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533064",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-50-52-trowbridge-street",
@@ -9112,7 +10029,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533065",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-65-ellery-street",
@@ -9158,7 +10082,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533067",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-9-11-trowbridge-place",
@@ -9196,7 +10127,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533073",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-55-57-ellery-street",
@@ -9250,7 +10188,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533074",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-51-ellery-street",
@@ -9288,7 +10233,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533080",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-369-harvard-street",
@@ -9342,7 +10294,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533108",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-365-367-harvard-street",
@@ -9436,7 +10395,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533111",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-34-36-ellery-street",
@@ -9474,7 +10440,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533119",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-378-harvard-street",
@@ -9528,7 +10501,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29533121",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-irving-house",
@@ -9590,7 +10570,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29628699",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-bryant-street",
@@ -9644,7 +10631,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29628951",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1173-1201-massachusetts-avenue",
@@ -9750,7 +10744,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29629986",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-new-quincy",
@@ -9960,7 +10961,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29630167",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-21-irving-street",
@@ -10014,7 +11022,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29630737",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-14-kirkland-place",
@@ -10076,7 +11091,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29630802",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-hollis-hall",
@@ -10114,7 +11136,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29630925",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-3-4-5-chauncy-terrace",
@@ -10168,7 +11197,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29631069",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-60-brattle-street",
@@ -10222,7 +11258,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29631130",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-16-kirkland-road",
@@ -10268,7 +11311,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29631153",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-taubman-building",
@@ -10398,7 +11448,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29631212",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-hemenway-gym",
@@ -10452,7 +11509,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29631713",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-randolph-hall",
@@ -10522,7 +11586,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29632062",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-9-ashton-place",
@@ -10576,7 +11647,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29632160",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-15-kirkland-road",
@@ -10630,7 +11708,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29632668",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1-garden-street",
@@ -10676,7 +11761,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29633331",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-lehman-hall",
@@ -10738,7 +11830,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29633562",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-houghton-library",
@@ -10900,7 +11999,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29633581",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-375-1-2-375a-harvard-street",
@@ -10938,7 +12044,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29633790",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-william-james-hall",
@@ -10992,7 +12105,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29633886",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-36-trowbridge-street",
@@ -11030,7 +12150,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29634007",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-chauncy-street",
@@ -11140,7 +12267,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29634067",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-first-church-cambridge",
@@ -11266,7 +12400,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29634309",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-kirkland-court",
@@ -11464,7 +12605,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29634375",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-lamont-library",
@@ -11546,7 +12694,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29634503",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-gannett-house",
@@ -11596,7 +12751,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29634530",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-william-james-house",
@@ -11642,7 +12804,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29634744",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-maxwell-dworkin-building",
@@ -11724,7 +12893,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29634754",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-5-concord-avenue",
@@ -12194,7 +13370,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29635197",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-71-77-dunster-street",
@@ -12288,7 +13471,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29635261",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-975-memorial-drive",
@@ -12414,7 +13604,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29635356",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1683-cambridge-street",
@@ -12476,7 +13673,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29635623",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-5-7-irving-terrace",
@@ -12514,7 +13718,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29635725",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-saint-paul-catholic-church",
@@ -12660,7 +13871,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29635778",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-byerly-hall",
@@ -12718,7 +13936,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29636343",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-20-trowbridge-street",
@@ -12772,7 +13997,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29636382",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-ukrainian-research-institute",
@@ -12834,7 +14066,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29636534",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-29-follen-street",
@@ -12872,7 +14111,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29636586",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-adolphus-busch-hall",
@@ -13018,7 +14264,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29636942",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-divinity-hall",
@@ -13128,7 +14381,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29637441",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-appian-way",
@@ -13174,7 +14434,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29637877",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-21-trowbridge-street",
@@ -13220,7 +14487,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29637890",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-36-irving-street",
@@ -13258,7 +14532,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29638225",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-doebele-house",
@@ -13312,7 +14593,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29638259",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-15-ware-street",
@@ -13350,7 +14638,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29638313",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1-bryant-street",
@@ -13412,7 +14707,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29638390",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-20-holyoke-street",
@@ -13450,7 +14752,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29638451",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-concord-avenue",
@@ -13524,7 +14833,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29638702",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-5-story-street",
@@ -13562,7 +14878,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639100",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-smith-campus-center",
@@ -13768,7 +15091,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639218",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-11-scott-street",
@@ -13806,7 +15136,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639256",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-41-43-irving-street",
@@ -13844,7 +15181,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639381",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-swedenborg-chapel",
@@ -13890,7 +15234,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639385",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-14-sumner-road",
@@ -13952,7 +15303,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639417",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-97-trowbridge-street",
@@ -13990,7 +15348,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639418",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-85-trowbridge-street",
@@ -14028,7 +15393,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639442",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-cgis-south-building",
@@ -14102,7 +15474,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639460",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-55-trowbridge-street",
@@ -14184,7 +15563,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639515",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-434-436-438-440-broadway",
@@ -14254,7 +15640,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639518",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-9-13-ware-street",
@@ -14372,7 +15765,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639525",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-426-428-broadway",
@@ -14410,7 +15810,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639532",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-38-40-ellery-street",
@@ -14456,7 +15863,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639597",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-9-remington-street",
@@ -14510,7 +15924,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29639613",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-38-oxford",
@@ -14660,7 +16081,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684251",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-chauncy-street",
@@ -14698,7 +16126,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684264",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-45-47-walker-street",
@@ -14752,7 +16187,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684272",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1-chauncy-lane",
@@ -14798,7 +16240,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684275",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-5-bryant-street",
@@ -14868,7 +16317,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684295",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-14-chauncy-street",
@@ -14914,7 +16370,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684321",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-farlow-herbarium",
@@ -14972,7 +16435,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684374",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-21-francis-avenue",
@@ -15042,7 +16512,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684383",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-15-follen-street",
@@ -15080,7 +16557,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684389",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-pound-hall",
@@ -15226,7 +16710,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684391",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-5-follen-street",
@@ -15328,7 +16819,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684392",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-22-francis-avenue",
@@ -15382,7 +16880,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684395",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-19-francis-avenue",
@@ -15480,7 +16985,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684401",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-8-follen-street",
@@ -15558,7 +17070,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684421",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-bld-29684437",
@@ -15596,7 +17115,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684437",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-9-waterhouse-street",
@@ -15698,7 +17224,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684440",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-yenching-library",
@@ -15840,7 +17373,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684442",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-mather-court",
@@ -16042,7 +17582,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684445",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-lippman-house",
@@ -16128,7 +17675,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684466",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-austin-hall",
@@ -16262,7 +17816,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684480",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-paine-building",
@@ -16352,7 +17913,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684486",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-44-kirkland-street",
@@ -16398,7 +17966,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684496",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-fay-house",
@@ -16600,7 +18175,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684526",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-27-irving-terrace",
@@ -16654,7 +18236,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684531",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-11-sumner-road",
@@ -16716,7 +18305,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684532",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-12-sumner-road",
@@ -16754,7 +18350,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684536",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-6-sumner-road",
@@ -16800,7 +18403,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684545",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-cgis-north-knafel-building",
@@ -16874,7 +18484,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684550",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-phillips-brooks-house",
@@ -16936,7 +18553,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684554",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-holden-chapel",
@@ -16974,7 +18598,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684572",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-lionel-hall",
@@ -17012,7 +18643,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684576",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-6-hilliard-street",
@@ -17058,7 +18696,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684595",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-9-story-street",
@@ -17096,7 +18741,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684605",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-454-456-broadway",
@@ -17146,7 +18798,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684616",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-wadsworth-house",
@@ -17216,7 +18875,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684617",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-faculty-club",
@@ -17374,16 +19040,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684624",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-wigglesworth-hall-e-i",
-      "name": "Wigglesworth Hall E\u2013I",
+      "name": "Wigglesworth Hall E–I",
       "nativeCodes": [
         "WHEI"
       ],
       "aliases": [
-        "Wigglesworth Hall E\u2013I"
+        "Wigglesworth Hall E–I"
       ],
       "category": "residence",
       "geometry": {
@@ -17420,7 +19093,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684632",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-barker-center",
@@ -17594,7 +19274,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684648",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-424-broadway",
@@ -17632,7 +19319,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684650",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-5-7-linden-street",
@@ -17686,7 +19380,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684653",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-senior-house",
@@ -17728,7 +19429,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684664",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-46-trowbridge-street",
@@ -17774,7 +19482,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684669",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-53-dunster-street",
@@ -17812,7 +19527,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684672",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-2-cleveland-street",
@@ -17850,7 +19572,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684679",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-361-harvard-street",
@@ -18016,7 +19745,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684685",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-25-mount-auburn-street",
@@ -18090,7 +19826,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684691",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-malkin-athletic-center",
@@ -18132,7 +19875,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684694",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-kirkland-annex",
@@ -18234,7 +19984,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29684697",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-21-bryant-street",
@@ -18272,7 +20029,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685562",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-vanserg-building",
@@ -18326,7 +20090,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685581",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-23-francis-avenue",
@@ -18384,7 +20155,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685595",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-24-francis-avenue",
@@ -18430,7 +20208,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685597",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-99-irving-street",
@@ -18476,7 +20261,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685614",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-kirkland-place",
@@ -18530,7 +20322,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685637",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-84-86-88-90-irving-street",
@@ -18568,7 +20367,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685638",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-6-francis-avenue",
@@ -18606,7 +20412,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685648",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-48-kirkland-street",
@@ -18644,7 +20457,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685675",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-kirkland-road",
@@ -18682,7 +20502,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685695",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-center-for-green-buildings-and-cities",
@@ -18720,7 +20547,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685700",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1699-cambridge-street",
@@ -18838,7 +20672,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685726",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-19-irving-street",
@@ -18884,7 +20725,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685734",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-84-prescott-street",
@@ -19026,7 +20874,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685743",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-cambridge-public-library",
@@ -19268,7 +21123,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685756",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-53-ellery-street",
@@ -19306,7 +21168,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685796",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-54-ellery-street",
@@ -19344,7 +21213,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685800",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-371-harvard-street",
@@ -19398,7 +21274,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685806",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-345-harvard-street",
@@ -19444,7 +21327,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685813",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-27-ellery-street",
@@ -19518,7 +21408,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29685821",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-oeb-green-house",
@@ -19620,7 +21517,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725168",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-109-irving-street",
@@ -19666,7 +21570,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725215",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-biological-laboratories",
@@ -19752,7 +21663,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725228",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-105-irving-street",
@@ -19806,7 +21724,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725255",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-34-follen-street",
@@ -19868,7 +21793,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725261",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-hauser-hall",
@@ -20014,7 +21946,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725282",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-2-scott-street",
@@ -20072,7 +22011,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725290",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-12-kirkland-place",
@@ -20118,7 +22064,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725306",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-8-francis-avenue",
@@ -20156,7 +22109,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725340",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-waterhouse-street",
@@ -20194,7 +22154,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725342",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-57-59-kirkland-street",
@@ -20232,7 +22199,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725346",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-81-irving-street",
@@ -20278,7 +22252,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725367",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-70-kirkland-street",
@@ -20348,7 +22329,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725383",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-6-kirkland-road",
@@ -20386,7 +22374,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725420",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-sparks-house",
@@ -20424,7 +22419,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725422",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-42-44-irving-street",
@@ -20486,7 +22488,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725440",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-11-kirkland-road",
@@ -20540,7 +22549,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725442",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-17-sumner-road",
@@ -20610,7 +22626,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725477",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-12-ashton-place",
@@ -20664,7 +22687,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725514",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-larsen-building",
@@ -20718,7 +22748,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725567",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-wallach-house",
@@ -20764,7 +22801,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725571",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-christ-church",
@@ -20882,7 +22926,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725585",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-gutman-library",
@@ -20992,7 +23043,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725600",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-14-16-farwell-place",
@@ -21038,7 +23096,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725607",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-85-95-prescott-street",
@@ -21236,7 +23301,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725610",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-15-story-street",
@@ -21362,7 +23434,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725631",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-widener-library",
@@ -21588,7 +23667,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725638",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-dana-palmer-house",
@@ -21658,7 +23744,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725683",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-warren-house",
@@ -21728,7 +23821,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725686",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-47-trowbridge-street",
@@ -21766,7 +23866,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725687",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-45-trowbridge-street",
@@ -21804,7 +23911,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725699",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-ware-street",
@@ -21914,7 +24028,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725704",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-delphic-club",
@@ -22016,7 +24137,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725709",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-morton-prince-house",
@@ -22070,7 +24198,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725711",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-ridgely-hall",
@@ -22140,7 +24275,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725718",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-ware-hall",
@@ -22190,7 +24332,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725730",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-52-54-john-f-kennedy-street",
@@ -22244,7 +24393,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725736",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-library-commons",
@@ -22322,7 +24478,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725741",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-56-58-john-f-kennedy-street",
@@ -22416,7 +24579,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29725754",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-3-5-sumner-road",
@@ -22566,7 +24736,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29727146",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1673-cambridge-street",
@@ -22612,7 +24789,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29727173",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-7-9-trowbridge-place",
@@ -22658,7 +24842,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29727247",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-12-farwell-place",
@@ -22712,7 +24903,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29785830",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-46-48-irving-street",
@@ -22766,7 +24964,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29785947",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-37-trowbridge-street",
@@ -22812,7 +25017,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29786385",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-22-follen-street",
@@ -22858,7 +25070,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29786701",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-18-20-farwell-place",
@@ -22904,7 +25123,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29786975",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-376-harvard-street",
@@ -22950,7 +25176,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29787160",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-cambridge-prime",
@@ -23036,7 +25269,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29787338",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-42-kirkland-street",
@@ -23090,7 +25330,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29788039",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-42-trowbridge-street",
@@ -23160,7 +25407,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29788246",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-rosovsky-hall",
@@ -23314,7 +25568,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29788303",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-15-remington-street",
@@ -23484,7 +25745,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29788319",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-thayer-hall",
@@ -23606,7 +25874,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29788731",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-sheraton-commander-hotel",
@@ -23724,7 +25999,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29788775",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1-remington-street",
@@ -23874,7 +26156,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29788793",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-straus-hall",
@@ -23916,7 +26205,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29789621",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-farkas-hall",
@@ -23982,7 +26278,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29789681",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-8-hilliard-street",
@@ -24044,7 +26347,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29789753",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-memorial-church",
@@ -24142,7 +26452,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29789985",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-loeb-house",
@@ -24212,7 +26529,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29791098",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-holworthy-hall",
@@ -24262,7 +26586,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29791196",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-381-harvard-street",
@@ -24308,7 +26639,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29791233",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-9-francis-avenue",
@@ -24346,7 +26684,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29791459",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-19-ware-street",
@@ -24448,7 +26793,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29792088",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-12-bow-street",
@@ -24494,7 +26846,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29792101",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-5-7-ashton-place",
@@ -24540,7 +26899,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29792504",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1600-massachusetts-avenue",
@@ -24594,7 +26960,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29792724",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-58-trowbridge-street",
@@ -24644,7 +27017,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29793350",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-prescott-hall",
@@ -24718,7 +27098,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29793400",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-grays-hall",
@@ -24788,7 +27175,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29793818",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-107-irving-street",
@@ -24826,7 +27220,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29794031",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-12-14-remington-street",
@@ -25032,7 +27433,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29794126",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-11a-kirkland-place",
@@ -25086,7 +27494,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29794530",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-stoughton-hall",
@@ -25136,7 +27551,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29795309",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-59-ellery-street",
@@ -25174,7 +27596,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29796675",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-50-52-irving-street",
@@ -25228,7 +27657,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29796856",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1746-cambridge-street",
@@ -25362,7 +27798,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29797014",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-62-kirkland-street",
@@ -25416,7 +27859,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29797338",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-caspersen-student-center",
@@ -25626,7 +28076,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29820208",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-center-for-middle-eastern-studies",
@@ -25684,7 +28141,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29820282",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-61-kirkland-street",
@@ -25730,7 +28194,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29820373",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-12-14-16-ware-street",
@@ -25896,7 +28367,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29820480",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-office-for-the-arts-the-pheonix-club",
@@ -25950,7 +28428,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29820755",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-emerson-hall",
@@ -26000,7 +28485,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29821070",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-351-harvard-street",
@@ -26046,7 +28538,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29821359",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-epworth-united-methodist-church",
@@ -26168,7 +28667,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29821510",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-art-museums",
@@ -26286,7 +28792,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29821531",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-old-cambridge-baptist-church",
@@ -26380,7 +28893,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29822255",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-41-ellery-street",
@@ -26490,7 +29010,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29822639",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-greenough-hall",
@@ -26592,7 +29119,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29822998",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-9-bow-street",
@@ -26638,7 +29172,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29823005",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-49-trowbridge-street",
@@ -26700,7 +29241,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29823348",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1727-cambridge-street",
@@ -26774,7 +29322,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29823538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-33-35-trowbridge-street",
@@ -26812,7 +29367,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29823653",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-westengard-house",
@@ -26866,7 +29428,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29823855",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-matthews-hall",
@@ -26972,7 +29541,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29824107",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-weld-hall",
@@ -27074,7 +29650,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29824449",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-museum-of-comparative-zoology-laboratories",
@@ -27180,7 +29763,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29825463",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1218-massachusetts-avenue",
@@ -27282,7 +29872,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29825505",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-26-trowbridge-street",
@@ -27336,7 +29933,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29825670",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-the-smoke-shop",
@@ -27394,7 +29998,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29826025",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-89-irving-street",
@@ -27440,7 +30051,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29826562",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-gund-hall",
@@ -27566,7 +30184,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29826842",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-396-harvard-street",
@@ -27604,7 +30229,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29827018",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1-trowbridge-terrace",
@@ -27650,7 +30282,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29827396",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-episcopal-chaplaincy-at-harvard",
@@ -27688,7 +30327,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29828232",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-the-owl-club",
@@ -27734,7 +30380,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29828412",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-chauncy-court-apartments",
@@ -27868,7 +30521,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29828780",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-2-chauncy-street",
@@ -27958,7 +30618,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29829054",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-17-19-south-street",
@@ -28004,7 +30671,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29829513",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1276-1280-1288-1290-1294-massachusetts-avenue",
@@ -28066,7 +30740,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29829678",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-the-spee-club",
@@ -28176,7 +30857,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29829918",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-78-mount-auburn-street",
@@ -28246,7 +30934,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29932039",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-hastings-building",
@@ -28348,7 +31043,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29932256",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-robinson-hall",
@@ -28390,7 +31092,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29932593",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-46-48-dunster-street",
@@ -28460,7 +31169,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29932674",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-semitic-museum",
@@ -28530,7 +31246,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29932762",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-university-herbaria",
@@ -28616,7 +31339,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29932966",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-bld-29933069",
@@ -28678,7 +31408,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29933069",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-hall",
@@ -28752,7 +31489,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29934296",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-bld-29935534",
@@ -29026,7 +31770,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29935534",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-mckay-laboratory",
@@ -29080,7 +31831,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29935638",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-9-9r-11-follen-street",
@@ -29134,7 +31892,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29936327",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-richards-hall",
@@ -29240,7 +32005,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29937220",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-9-chauncy-street",
@@ -29278,7 +32050,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29937263",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-22-24-farwell-place",
@@ -29332,7 +32111,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29937637",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-massachusetts-hall",
@@ -29370,7 +32156,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29938509",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1580-massachusetts-avenue",
@@ -29416,7 +32209,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29938840",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-66-winthrop-street",
@@ -29510,7 +32310,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29938844",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-17-farwell-place",
@@ -29556,7 +32363,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29938908",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-4-irving-terrace",
@@ -29602,7 +32416,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29940582",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-mower-hall",
@@ -29644,7 +32465,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29940870",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-cambridge-kiosk",
@@ -29722,7 +32550,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/38415391",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-belfer-building",
@@ -29860,7 +32695,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40001273",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-david-rubenstein-building",
@@ -29950,7 +32792,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40001310",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-radcliffe-gym",
@@ -30012,7 +32861,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40037965",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-schlesinger-library",
@@ -30074,7 +32930,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40038032",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-agassiz-house",
@@ -30400,7 +33263,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40038107",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-the-harvard-crimson",
@@ -30462,7 +33332,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/118630962",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-northwest-building",
@@ -30668,7 +33545,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/161130625",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-wasserstein-hall",
@@ -30770,7 +33654,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/167022743",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-36-follen-street",
@@ -30816,7 +33707,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212292040",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-40-trowbridge-street",
@@ -30878,7 +33776,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212292059",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-29-irving-street",
@@ -30932,7 +33837,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212292358",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-19-divinity-avenue",
@@ -30970,7 +33882,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212292369",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-18-prescott-street",
@@ -31040,7 +33959,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212292475",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-16-18-sumner-road",
@@ -31094,7 +34020,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212292480",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-2-1-2-ware-street",
@@ -31132,7 +34065,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212292521",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-8-kirkland-place",
@@ -31210,7 +34150,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212292888",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-16-prescott-street",
@@ -31272,7 +34219,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212292960",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-21-follen-street",
@@ -31310,7 +34264,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212293071",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-19-follen-street",
@@ -31380,7 +34341,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212293123",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-65-67-winthrop-street",
@@ -31426,7 +34394,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257638924",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-drayton-hall",
@@ -31476,7 +34451,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257638925",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-44-46-50-john-f-kennedy-street",
@@ -31530,7 +34512,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257638926",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-arrow-street-arts",
@@ -31648,7 +34637,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257640564",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-pierce-hall",
@@ -31794,7 +34790,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/305490725",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-jefferson-physical-laboratory",
@@ -31900,7 +34903,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/305490726",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-lyman-laboratory",
@@ -31970,7 +34980,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/318900032",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-cruft-laboratory",
@@ -32060,7 +35077,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/318900033",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-laboratory-for-integrated-science-and-engineering",
@@ -32126,7 +35150,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/322772621",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-lewis-international-law-center",
@@ -32184,7 +35215,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/322819316",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-griswold-hall",
@@ -32270,7 +35308,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/322819318",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-areeda-hall",
@@ -32348,7 +35393,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/322819319",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-dane-hall",
@@ -32454,7 +35506,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/323368917",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-ames-hall",
@@ -32552,7 +35611,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/323368921",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-holmes-hall",
@@ -32630,7 +35696,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/323368922",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-shaw-hall",
@@ -32732,7 +35805,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/323368925",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-story-hall",
@@ -32834,7 +35914,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/323368926",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-clinical-wing",
@@ -32904,7 +35991,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/323561131",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-coop",
@@ -32986,7 +36080,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427501616",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1414-1416-massachusetts-avenue",
@@ -33056,7 +36157,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427501617",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-church-street",
@@ -33122,7 +36230,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427501620",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-11-13-15-17-19-21-dunster-street",
@@ -33192,7 +36307,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427501623",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-18-20-22-24-26-28-john-f-kennedy-street",
@@ -33254,7 +36376,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427501624",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-30-34-john-f-kennedy-street",
@@ -33304,7 +36433,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427501625",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-the-garage",
@@ -33398,7 +36534,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427501626",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1-john-f-kennedy-street",
@@ -33476,7 +36619,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427502598",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-14-brattle-street",
@@ -33538,7 +36688,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427502599",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-26-brattle-street",
@@ -33596,7 +36753,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427502602",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-29-31-33-35-37-39-john-f-kennedy-street",
@@ -33662,7 +36826,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427502603",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-95-97-mount-auburn-street",
@@ -33700,7 +36871,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427502604",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-66-church-street",
@@ -33746,7 +36924,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427503232",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-39-41-brattle-street",
@@ -33804,7 +36989,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427503233",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-15-17-19-21-23-25-27-29-31-33-35-35a-37-37a-237a-brattle-street",
@@ -33874,7 +37066,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427503235",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-32-36-42-church-street",
@@ -33940,7 +37139,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427503238",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-47-49-brattle-street",
@@ -33982,7 +37188,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427504025",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-59-61-63-church-street",
@@ -34032,7 +37245,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427504026",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-35-53-church-street",
@@ -34106,7 +37326,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427504027",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-extension-school",
@@ -34212,7 +37439,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427504028",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-31-33-church-street",
@@ -34266,7 +37500,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427504029",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-27-29-church-street",
@@ -34312,7 +37553,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427504030",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-21-23-church-street",
@@ -34366,7 +37614,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427504031",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-the-first-parish-in-cambridge",
@@ -34464,7 +37719,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427504032",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-125-mount-auburn-street",
@@ -34534,7 +37796,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427505297",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1-mifflin-place",
@@ -34596,7 +37865,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427505298",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-42-brattle-street",
@@ -34650,7 +37926,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427505299",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-brattle-hall",
@@ -34712,7 +37995,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427505300",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-one-brattle-square",
@@ -34870,7 +38160,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427505301",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-111-115-mount-auburn-street",
@@ -34916,7 +38213,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427505302",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-square-hotel",
@@ -34978,7 +38282,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427525587",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-crimson-galeria",
@@ -35020,7 +38331,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427525592",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-harvard-square-parking-garage",
@@ -35090,7 +38408,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427525593",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-16-18-eliot-street",
@@ -35140,7 +38465,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427525594",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-14a-eliot-street",
@@ -35198,7 +38530,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427525595",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-12-14-eliot-street",
@@ -35240,7 +38579,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427525596",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-10-eliot-street",
@@ -35290,7 +38636,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427525597",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-98-winthrop-street",
@@ -35356,7 +38709,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427525599",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-96-winthrop-street",
@@ -35398,7 +38758,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427525600",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-69-winthrop-street",
@@ -35440,7 +38807,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/480128529",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-24-holyoke-street",
@@ -35478,7 +38852,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/610233462",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-apley-court",
@@ -35540,7 +38921,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/610233463",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-cambridge-savings-bank",
@@ -35598,7 +38986,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/653506617",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-cambridge-visitor-s-information-center",
@@ -35696,7 +39091,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/653516582",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-war-memorial-recreation-center",
@@ -36034,7 +39436,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/934497069",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-field-house",
@@ -36088,7 +39497,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/934497070",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-arts-building",
@@ -36322,7 +39738,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/934497071",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-445-449-broadway",
@@ -36380,7 +39803,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/934497072",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-manter-hall",
@@ -36458,7 +39888,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/941705121",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-whitefield-hall",
@@ -36528,7 +39965,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1024238970",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-carpenter-center",
@@ -36802,7 +40246,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1052049399",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-31-holyoke-street",
@@ -36840,7 +40291,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1064085012",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-hampden-hall",
@@ -36926,7 +40384,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1064085013",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-hong-kong",
@@ -36988,7 +40453,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1064085014",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-3-7-bow-street",
@@ -37038,7 +40510,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1064085016",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-22-plympton-street",
@@ -37080,7 +40559,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1064085018",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1270-massachusetts-avenue",
@@ -37142,7 +40628,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1064085019",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1320-1324-massachusetts-avenue",
@@ -37188,7 +40681,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1064085020",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-batia-and-idan-ofer-building",
@@ -37258,7 +40758,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1073700622",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-leslie-h-wexner-building",
@@ -37396,7 +40903,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1073705327",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-first-church-of-christ-scientist",
@@ -37606,7 +41120,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1143072432",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1558-massachusetts-avenue",
@@ -37724,7 +41245,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1143072433",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-31-33-35-follen-street",
@@ -37810,7 +41338,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1143072434",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1560-1564-massachusetts-avenue",
@@ -37872,7 +41407,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1143072435",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-bay-state-apartments",
@@ -38038,7 +41580,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1143072437",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-16-chauncy-street",
@@ -38104,7 +41653,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1144365098",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-19-chauncy-street",
@@ -38190,7 +41746,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1144365099",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-21-chauncy-street",
@@ -38316,7 +41879,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1144365100",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-60-kirkland-street",
@@ -38402,7 +41972,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1144429551",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-claverly-hall",
@@ -38600,7 +42177,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1168339793",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-canaday-hall-ab",
@@ -38666,7 +42250,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1188763599",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-canaday-hall-cd",
@@ -38716,7 +42307,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1188763600",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-canaday-hall-efg",
@@ -38806,7 +42404,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1188763601",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-sherman-fairchild-biochemistry-building",
@@ -38880,7 +42485,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1189178506",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-45-1-2-mount-auburn-street",
@@ -38918,7 +42530,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1193584338",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-30-plympton-street",
@@ -38956,7 +42575,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1193584341",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-democracy-center",
@@ -39026,7 +42652,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1193584342",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-widener-gate-lodge",
@@ -39064,7 +42697,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1209115058",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-hoffman-laboratory",
@@ -39118,7 +42758,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1241978378",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-mallinckrodt-hall",
@@ -39240,7 +42887,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1241978379",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-conant-chemistry-lab",
@@ -39350,7 +43004,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1241978380",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-bauer-chemistry-laboratory",
@@ -39472,7 +43133,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1241978381",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-converse-chemistry-lab",
@@ -39550,7 +43218,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1241978383",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-mallinckrodt-hoffman-link",
@@ -39592,7 +43267,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1241978384",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-24-oxford-street",
@@ -39658,7 +43340,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1241978385",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-11-divinity-avenue",
@@ -39780,7 +43469,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1241978386",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-65r-mount-auburn-street",
@@ -39826,7 +43522,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1247802122",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1154-1156-1158-1160-massachusetts-avenue",
@@ -39884,7 +43587,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1258712378",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1168-massachusetts-avenue",
@@ -39950,7 +43660,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1258712379",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1168-1170-1172-1174-massachusetts-avenue",
@@ -40024,7 +43741,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1258712380",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-swartz-hall",
@@ -40158,7 +43882,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1258727658",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-shannon-building",
@@ -40236,7 +43967,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1258727660",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1208-1210-massachusetts-avenue",
@@ -40306,7 +44044,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1264147218",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-1206-massachusetts-avenue",
@@ -40344,7 +44089,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1264147219",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-russell-hall",
@@ -40394,7 +44146,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1267132899",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-50-john-f-kennedy-street",
@@ -40464,7 +44223,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1291151892",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-99-mount-auburn-street",
@@ -40526,7 +44292,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1311147761",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-30-brattle-street",
@@ -40596,7 +44369,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1311147762",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "harvard-25-john-f-kennedy-street",
@@ -40658,7 +44438,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1331083466",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

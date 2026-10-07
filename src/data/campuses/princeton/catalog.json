@@ -22,7 +22,7 @@
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
       "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
-      "attribution": "\u00a9 OpenStreetMap contributors"
+      "attribution": "© OpenStreetMap contributors"
     }
   ],
   "buildings": [
@@ -126,7 +126,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27341267",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-firestone-library",
@@ -400,7 +407,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27341305",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-princeton-university-chapel",
@@ -526,7 +540,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27341319",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-prospect-house",
@@ -692,7 +713,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27341367",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-frist-campus-center",
@@ -906,7 +934,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27341386",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-dillon-gymnasium",
@@ -1124,7 +1159,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27341417",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-spring-street-garage",
@@ -1198,7 +1240,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27341847",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-clio-hall",
@@ -1268,7 +1317,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27364709",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-whig-hall",
@@ -1350,7 +1406,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27364736",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-computer-science-building",
@@ -1428,7 +1491,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40717826",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-friend-center",
@@ -1490,7 +1560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40717843",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-wallace-hall",
@@ -1616,7 +1693,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40717868",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-sherrerd-hall",
@@ -1654,7 +1738,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40717871",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-mudd-library",
@@ -1692,7 +1783,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40717881",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-princeton-university-press",
@@ -1770,7 +1868,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40717892",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-hoyt-lab",
@@ -1860,7 +1965,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40717933",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-20-washington-road",
@@ -2258,7 +2370,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40718011",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-robertson-hall",
@@ -2304,7 +2423,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40718016",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-corwin-hall",
@@ -2374,7 +2500,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40718022",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-bendheim-hall",
@@ -2440,7 +2573,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40718026",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-fisher-hall",
@@ -2518,7 +2658,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40718029",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-center-for-statistics-and-machine-learning",
@@ -2572,7 +2719,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40718031",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-mccosh-hall",
@@ -2838,7 +2992,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40718042",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-dickinson-hall",
@@ -3004,7 +3165,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40718052",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-architecture-school",
@@ -3138,7 +3306,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40718191",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-laura-wooten-hall",
@@ -3208,7 +3383,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40718382",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-1879-hall",
@@ -3278,7 +3460,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40718784",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-dodge-hall",
@@ -3348,7 +3537,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719576",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-murray-theater",
@@ -3426,7 +3622,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719586",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-edwards-hall",
@@ -3528,7 +3731,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719644",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-dod-hall",
@@ -3582,7 +3792,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719645",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-woolworth-hall",
@@ -3660,7 +3877,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719646",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-little-hall",
@@ -3862,7 +4086,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719650",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-witherspoon-hall",
@@ -3952,7 +4183,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719652",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-buyers-hall",
@@ -4042,7 +4280,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719660",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-blair-hall",
@@ -4120,7 +4365,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719672",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-joline-hall",
@@ -4166,7 +4418,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719679",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-campbell-hall",
@@ -4244,7 +4503,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719683",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-alexander-hall",
@@ -4390,7 +4656,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719692",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-36-university-place",
@@ -4444,7 +4717,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719695",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-lockhart-hall",
@@ -4506,7 +4786,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719708",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-48-university-place",
@@ -4572,7 +4859,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719711",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-foulke-hall",
@@ -4762,7 +5056,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719729",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-henry-hall",
@@ -5060,7 +5361,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719730",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-laughlin-1901-hall",
@@ -5358,7 +5666,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719733",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-pyne-hall",
@@ -5504,7 +5819,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40719737",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-mccarter-theater-center",
@@ -5682,7 +6004,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/59268020",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-carl-icahn-laboratory",
@@ -5788,7 +6117,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/59268696",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-frick-chemistry-laboratory",
@@ -5926,7 +6262,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/59268697",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-prospect-avenue-garage",
@@ -5980,7 +6323,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/109776107",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-princeton-public-library",
@@ -6026,7 +6376,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/109782066",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-lewis-library",
@@ -6232,7 +6589,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/131929874",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-peyton-hall",
@@ -6314,7 +6678,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/140418355",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-mcdonnell-hall",
@@ -6404,7 +6775,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/140418360",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-fine-hall",
@@ -6774,7 +7152,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/140418364",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-6",
@@ -6816,7 +7201,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/140564417",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-3",
@@ -6858,7 +7250,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/140564419",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-2",
@@ -6900,7 +7299,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/140564424",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-4",
@@ -6942,7 +7348,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/140564425",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-1",
@@ -6984,7 +7397,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/140564431",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-8",
@@ -7026,7 +7446,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/140564434",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-5",
@@ -7068,7 +7495,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/140564435",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-7",
@@ -7110,7 +7544,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/140564441",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-tiger-inn",
@@ -7180,7 +7621,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141087518",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-colonial-club",
@@ -7250,7 +7698,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141087521",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-carl-a-fields-center",
@@ -7296,7 +7751,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141089469",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-j-wing",
@@ -7342,7 +7804,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141136930",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-c-wing",
@@ -7404,7 +7873,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141136931",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-b-wing",
@@ -7462,7 +7938,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141136932",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-a-wing",
@@ -7524,7 +8007,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141136933",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-e-wing",
@@ -7578,7 +8068,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141136934",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-f-wing",
@@ -7620,7 +8117,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141136935",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-g-wing",
@@ -7814,7 +8318,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141136936",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-d-wing",
@@ -7880,7 +8391,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141136940",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-bowen-hall",
@@ -7994,7 +8512,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141138010",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-255-nassau-street",
@@ -8048,7 +8573,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141163328",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-253-nassau-street",
@@ -8102,7 +8634,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141163332",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-verizon",
@@ -8140,7 +8679,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141163333",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-chancellor-green",
@@ -8282,7 +8828,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141230075",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-henry-house",
@@ -8336,7 +8889,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141233380",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-maclean-house",
@@ -8422,7 +8982,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141233381",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-stanhope-hall",
@@ -8476,7 +9043,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141233382",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-scheide-caldwell-house",
@@ -8530,7 +9104,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141233383",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-morrison-hall",
@@ -8600,7 +9181,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141233534",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-nassau-presbyterian-church",
@@ -8690,7 +9278,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141253165",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-hamilton-hall",
@@ -8756,7 +9351,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141297739",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-madison-hall",
@@ -8962,7 +9564,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141297740",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-holder-hall",
@@ -9104,7 +9713,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141297741",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-jones-hall",
@@ -9158,7 +9774,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141447465",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-cuyler-hall",
@@ -9288,7 +9911,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141447892",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-1903-hall",
@@ -9490,7 +10120,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141447893",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-wright-hall",
@@ -9624,7 +10261,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141448693",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-patton-hall",
@@ -9830,7 +10474,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141449317",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-walker-hall",
@@ -9956,7 +10607,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141449422",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-feinberg-hall",
@@ -10026,7 +10684,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141449484",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-eno-hall",
@@ -10112,7 +10777,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141449946",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-wu-hall",
@@ -10234,7 +10906,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141450295",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-mccosh-health-center",
@@ -10448,7 +11127,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141450393",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-lewis-thomas-laboratory",
@@ -10538,7 +11224,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141453139",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-scully-hall",
@@ -10788,7 +11481,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141453509",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-center-for-jewish-life",
@@ -10902,7 +11602,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/148099033",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-25-spring-st",
@@ -10968,7 +11675,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210086735",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-bld-210147338",
@@ -11022,7 +11736,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210147338",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-triumph-brewing-company",
@@ -11092,7 +11813,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210375361",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-33-witherspoon-street",
@@ -11138,7 +11866,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210375823",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-chambers-street-garage",
@@ -11228,7 +11963,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210376246",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-princeton-record-exchange",
@@ -11266,7 +12008,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210376718",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-princeton-united-methodist-church",
@@ -11348,7 +12097,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210377145",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-nassau-inn",
@@ -11474,7 +12230,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210390774",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-graduate-by-hilton-princeton",
@@ -11516,7 +12279,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210410224",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-nassau-christian-center",
@@ -11602,7 +12372,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/210421793",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-halo-pub",
@@ -11640,7 +12417,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/297183056",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-24-dickinson-street",
@@ -11702,7 +12486,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/297888520",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-paul-robeson-center-for-the-arts",
@@ -11836,7 +12627,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/335295706",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-st-paul-s-catholic-church",
@@ -11890,7 +12688,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/401767551",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-saint-paul-school",
@@ -11960,7 +12765,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/401767552",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-22-chambers-street",
@@ -12030,7 +12842,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427935023",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-garden-theater",
@@ -12124,7 +12943,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427935025",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-bainbridge-house",
@@ -12174,7 +13000,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427935026",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-194-nassau-street",
@@ -12240,7 +13073,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427935027",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-201-nassau-street",
@@ -12290,7 +13130,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427935028",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-199-nassau-street",
@@ -12332,7 +13179,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427935029",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-221-nassau-street",
@@ -12382,7 +13236,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427935030",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-66-william-street",
@@ -12420,7 +13281,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427935031",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-olden-house",
@@ -12498,7 +13366,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/427935032",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-andlinger-center",
@@ -12636,7 +13511,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428100743",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-maeder-hall",
@@ -12678,7 +13560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428100744",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-green-hall",
@@ -12772,7 +13661,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102445",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-aaron-burr-hall",
@@ -12810,7 +13706,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102446",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-185-nassau-street",
@@ -12916,7 +13819,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102447",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-159-nassau-street",
@@ -12954,7 +13864,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102453",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-163-nassau-street",
@@ -13000,7 +13917,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102454",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-169-nassau-street",
@@ -13038,7 +13962,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102455",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-175-nassau-street",
@@ -13076,7 +14007,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102456",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-183-nassau-street",
@@ -13130,7 +14068,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102457",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-161-nassau-court",
@@ -13168,7 +14113,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102458",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-165-nassau-court",
@@ -13214,7 +14166,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102459",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-171-nassau-court",
@@ -13252,7 +14211,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102460",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-177-nassau-court",
@@ -13290,7 +14256,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428102461",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-11-university-place",
@@ -13344,7 +14317,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428105914",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-19-university-place",
@@ -13390,7 +14370,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428105915",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-23-university-place",
@@ -13428,7 +14415,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428105916",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-27-university-place",
@@ -13466,7 +14460,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428105923",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-18-40-edwards-place",
@@ -13504,7 +14505,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428105929",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-campus-club",
@@ -13542,7 +14550,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428106567",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-tower-club",
@@ -13604,7 +14619,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428106568",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-cannon-dial-elm-club",
@@ -13658,7 +14680,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428106569",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-terrace-club",
@@ -13704,7 +14733,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/428106570",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-quadrangle-club",
@@ -13778,7 +14814,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488163165",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-ivy-club",
@@ -13880,7 +14923,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488163166",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-cap-and-gown-club",
@@ -13966,7 +15016,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488163169",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-cloister-inn",
@@ -14036,7 +15093,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488163170",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-charter-club",
@@ -14106,7 +15170,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488163171",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-38-spring-street",
@@ -14144,7 +15215,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488281771",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-j-s-foodies",
@@ -14182,16 +15260,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488281773",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-herm-s",
-      "name": "Herm\u00e8s",
+      "name": "Hermès",
       "nativeCodes": [
         "HS"
       ],
       "aliases": [
-        "Herm\u00e8s"
+        "Hermès"
       ],
       "category": "facility",
       "geometry": {
@@ -14232,7 +15317,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488281775",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-faherty",
@@ -14270,16 +15362,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488281809",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-sc-house",
-      "name": "\u9526\u91cc SC house",
+      "name": "锦里 SC house",
       "nativeCodes": [
         "SC"
       ],
       "aliases": [
-        "\u9526\u91cc SC house"
+        "锦里 SC house"
       ],
       "category": "facility",
       "geometry": {
@@ -14308,7 +15407,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488376419",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-hoagie-haven",
@@ -14350,7 +15456,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488376420",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-pizza-den",
@@ -14388,7 +15501,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488376421",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-244-nassau-street",
@@ -14434,7 +15554,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488376422",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-burgerrunn",
@@ -14476,7 +15603,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488376423",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-248-nassau-street",
@@ -14534,7 +15668,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488376424",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-the-dinky-bar-kitchen",
@@ -14572,7 +15713,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488495590",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-230-nassau-street",
@@ -14610,7 +15758,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513478",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-6-8-chestnut-street",
@@ -14648,7 +15803,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513479",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-12-chestnut-street",
@@ -14686,7 +15848,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513480",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-14-chestnut-street",
@@ -14724,7 +15893,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513481",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-16-chestnut-street",
@@ -14762,7 +15938,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513482",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-18-chestnut-street",
@@ -14800,7 +15983,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513483",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-20-chestnut-street",
@@ -14838,7 +16028,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513484",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-45-47-moran-avenue",
@@ -14884,7 +16081,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513506",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-41-43-moran-avenue",
@@ -14922,7 +16126,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513507",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-37-39-moran-avenue",
@@ -14960,7 +16171,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513508",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-35-moran-avenue",
@@ -14998,7 +16216,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513509",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-29-31-moran-avenue",
@@ -15036,7 +16261,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513510",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-25-moran-avenue",
@@ -15074,7 +16306,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513511",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-21-13-moran-avenue",
@@ -15112,7 +16351,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513512",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-17-19-moran-avenue",
@@ -15150,7 +16396,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488513513",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-the-kiosk",
@@ -15188,7 +16441,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488974377",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-princeton-violin",
@@ -15238,7 +16498,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488978582",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-7-chestnut-street",
@@ -15284,7 +16551,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488978584",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-princeton-engine-company-no-1",
@@ -15322,7 +16596,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488978585",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-15-chestnut-street",
@@ -15368,7 +16649,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488978586",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-17-chestnut-street",
@@ -15406,7 +16694,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488978587",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-19-chestnut-street",
@@ -15452,7 +16747,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488978588",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-12-pine-street",
@@ -15498,7 +16800,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488978615",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-14-pine-street",
@@ -15536,7 +16845,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488978616",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-18-20-pine-street",
@@ -15582,7 +16898,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488978617",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-22-24-pine-street",
@@ -15636,7 +16959,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488978618",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-berlitz",
@@ -15674,7 +17004,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488980875",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-9-pine-street",
@@ -15712,7 +17049,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488980876",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-21-pine-street",
@@ -15750,7 +17094,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488980877",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-12-spruce-street",
@@ -15804,7 +17155,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488980899",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-272-nassau-street",
@@ -15842,7 +17200,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/489332930",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-gulf",
@@ -15880,7 +17245,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/489340785",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-craft-cleaners",
@@ -15922,7 +17294,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/490578599",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-jay-s-cycles",
@@ -15960,7 +17339,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/490578602",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-thai-delight",
@@ -16002,7 +17388,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/490583674",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-alfalfa",
@@ -16048,7 +17441,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/490610249",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-10-vandeventer-avenue",
@@ -16086,7 +17486,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/490610251",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-23-hulfish-street",
@@ -16128,7 +17535,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/490787017",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-15-wiggins-street",
@@ -16166,7 +17580,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157267",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-12-14-park-place",
@@ -16204,7 +17625,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157268",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-16-park-place",
@@ -16242,7 +17670,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157269",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-4-6-madison-street",
@@ -16280,7 +17715,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157270",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-8-madison-street",
@@ -16318,7 +17760,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157271",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-10-madison-street",
@@ -16356,7 +17805,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157272",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-12-madison-street",
@@ -16394,7 +17850,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157273",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-14-madison-street",
@@ -16432,7 +17895,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157274",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-16-madison-street",
@@ -16470,7 +17940,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157275",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-18-madison-street",
@@ -16508,7 +17985,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157276",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-20-22-madison-street",
@@ -16546,7 +18030,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157277",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-24-madison-street",
@@ -16584,7 +18075,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157278",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-39-wiggins-street",
@@ -16622,7 +18120,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157279",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-37-wiggins-street",
@@ -16660,7 +18165,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157280",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-45-vandeventer-avenue",
@@ -16698,7 +18210,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157281",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-43-vandeventer-avenue",
@@ -16736,7 +18255,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157282",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-41-vandeventer-avenue",
@@ -16774,7 +18300,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157283",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-39-vandeventer-avenue",
@@ -16812,7 +18345,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157284",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-31-33-vandeventer-avenue",
@@ -16850,7 +18390,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157285",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-27-29-vandeventer-avenue",
@@ -16888,7 +18435,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157286",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-25-vandeventer-avenue",
@@ -16926,7 +18480,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157287",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-19-vandeventer-avenue",
@@ -16964,7 +18525,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157288",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-36-moore-street",
@@ -17002,7 +18570,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157289",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-25-27-madison-street",
@@ -17040,7 +18615,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157299",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-23-madison-street",
@@ -17078,7 +18660,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157300",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-19-madison-street",
@@ -17116,7 +18705,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157301",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-17-madison-street",
@@ -17154,7 +18750,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157302",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-15-madison-street",
@@ -17192,7 +18795,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157303",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-13-madison-street",
@@ -17230,7 +18840,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157304",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-11-madison-street",
@@ -17268,7 +18885,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157305",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-9-madison-street",
@@ -17306,7 +18930,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157306",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-7-madison-street",
@@ -17344,7 +18975,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157307",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-5-madison-street",
@@ -17382,7 +19020,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157308",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-3-3-5-madison-street",
@@ -17420,7 +19065,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157309",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-32-park-place",
@@ -17458,7 +19110,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157311",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-34-park-place",
@@ -17496,7 +19155,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157312",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-20-moore-street",
@@ -17534,7 +19200,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157313",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-22-moore-street",
@@ -17572,7 +19245,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157314",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-24-moore-street",
@@ -17610,7 +19290,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157315",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-48-park-place",
@@ -17648,7 +19335,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157316",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-44-46-park-place",
@@ -17686,7 +19380,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157317",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-36-park-place",
@@ -17724,7 +19425,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157318",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-1-3-willow-street",
@@ -17762,7 +19470,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157320",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-11-willow-street",
@@ -17800,7 +19515,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157321",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-26-moore-street",
@@ -17838,7 +19560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157322",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-28-vandeventer-avenue",
@@ -17876,7 +19605,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157324",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-30-vandeventer-avenue",
@@ -17914,7 +19650,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157325",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-32-vandeventer-avenue",
@@ -17952,7 +19695,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157326",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-34-36-vandeventer-avenue",
@@ -17990,7 +19740,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157327",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-mather-hodge-funeral-home",
@@ -18028,7 +19785,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157328",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-44-vandeventer-avenue",
@@ -18066,7 +19830,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157329",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-vandeventer-apartments",
@@ -18104,7 +19875,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157330",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-61-north-tulane-street",
@@ -18142,7 +19920,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157332",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-57-north-tulane-street",
@@ -18180,7 +19965,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157333",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-53-north-tulane-street",
@@ -18218,7 +20010,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157334",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-milk-money",
@@ -18256,7 +20055,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157335",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-47-north-tulane-street",
@@ -18294,7 +20100,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157336",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-46-spring-street",
@@ -18332,7 +20145,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157337",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-40-42-north-tulane-street",
@@ -18370,7 +20190,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157339",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-50-north-tulane-street",
@@ -18408,7 +20235,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157340",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-salon-54",
@@ -18446,7 +20280,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157341",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-47-spring-street",
@@ -18484,7 +20325,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157344",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-43-spring-street",
@@ -18522,7 +20370,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157345",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-41-spring-street",
@@ -18560,7 +20415,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157346",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-5-7-9-lincoln-court",
@@ -18598,7 +20460,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157347",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-20-22-vandeventer-avenue",
@@ -18636,7 +20505,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157349",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-16-18-vandeventer-avenue",
@@ -18674,7 +20550,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157350",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-12-vandeventer-avenue",
@@ -18712,7 +20595,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157351",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-9-vandeventer-avenue",
@@ -18750,7 +20640,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157352",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-13-15-vandeventer-avenue",
@@ -18788,7 +20685,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157353",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-7-park-place",
@@ -18826,7 +20730,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157354",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-9-park-place",
@@ -18864,7 +20775,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157355",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-11-13-park-place",
@@ -18902,7 +20820,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157356",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-15-park-place",
@@ -18940,7 +20865,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157357",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-39-park-place",
@@ -18978,7 +20910,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157359",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-41-park-place",
@@ -19016,7 +20955,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157360",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-43-park-place",
@@ -19054,7 +21000,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157361",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-45-47-park-place",
@@ -19092,7 +21045,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157362",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-49-park-place",
@@ -19130,7 +21090,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157364",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-51-53-park-place",
@@ -19168,7 +21135,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157365",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-55-park-place",
@@ -19206,7 +21180,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157366",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-12-moore-street",
@@ -19244,7 +21225,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157368",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-e-y-staats-company",
@@ -19282,7 +21270,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491157369",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-34-wiggins-street",
@@ -19320,7 +21315,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491802012",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-32-wiggins-street",
@@ -19358,7 +21360,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491802013",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-28-30-wiggins-street",
@@ -19396,7 +21405,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491802014",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-illy-coffee-at-earth-s-end-princeton",
@@ -19442,7 +21458,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491809778",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-charlotte-w-newcombe-foundation",
@@ -19480,7 +21503,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491809779",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-copper-river-salon-spa",
@@ -19526,7 +21556,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491809780",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-125-john-street",
@@ -19564,7 +21601,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981931",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-30-quarry-street",
@@ -19602,7 +21646,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981934",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-28-quarry-street",
@@ -19656,7 +21707,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981935",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-16-quarry-street",
@@ -19694,7 +21752,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981937",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-124-witherspoon-street",
@@ -19732,7 +21797,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981939",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-10-quarry-street",
@@ -19770,7 +21842,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981940",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-120-witherspoon-street",
@@ -19808,7 +21887,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981941",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-7-green-street",
@@ -19846,7 +21932,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981946",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-11-green-street",
@@ -19892,7 +21985,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981947",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-13-green-street",
@@ -19930,7 +22030,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981948",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-17-green-street",
@@ -19976,7 +22083,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981949",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-19-green-street",
@@ -20014,7 +22128,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981950",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-21-green-street",
@@ -20060,7 +22181,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981951",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-25-green-street",
@@ -20098,7 +22226,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981952",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-29-green-street",
@@ -20136,7 +22271,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981953",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-33-green-street",
@@ -20174,7 +22316,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981954",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-123-john-street",
@@ -20212,7 +22361,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981955",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-8-green-street",
@@ -20250,7 +22406,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981956",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-12-green-street",
@@ -20288,7 +22451,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981957",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-14-green-street",
@@ -20326,7 +22496,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981958",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-20-green-street",
@@ -20380,7 +22557,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981960",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-22-green-street",
@@ -20418,7 +22602,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981961",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-28-green-street",
@@ -20456,7 +22647,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981963",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-30-green-street",
@@ -20510,7 +22708,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/491981964",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-brown-hall",
@@ -20600,7 +22805,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/651632452",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-stuart-hall",
@@ -20638,7 +22850,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/652446020",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-college-road-apartments",
@@ -20752,7 +22971,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/653816872",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-31-green-street",
@@ -20790,7 +23016,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1020015209",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-le-kiosk",
@@ -20844,7 +23077,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1061987514",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-moffett-laboratory",
@@ -20914,7 +23154,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1086611651",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-guyot-hall",
@@ -21076,7 +23323,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1086611652",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-schultz-laboratory",
@@ -21174,7 +23428,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1086611653",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-julis-romo-rabinowitz-building",
@@ -21392,7 +23653,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1086964029",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-louis-a-simpson-international-building",
@@ -21602,7 +23870,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1086964030",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-bld-1328149123",
@@ -21656,7 +23931,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1328149123",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-alo-yoga",
@@ -21694,7 +23976,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1342531582",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-procter-house",
@@ -21756,7 +24045,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1386386846",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-two-dickinson-street-co-op",
@@ -21810,7 +24106,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1386386847",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-25-edwards-place",
@@ -21880,7 +24183,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415283855",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-35-university-place",
@@ -21926,7 +24236,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415283856",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-39-university-place",
@@ -21972,7 +24289,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415283857",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-41-university-place",
@@ -22018,7 +24342,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415283858",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-45-university-place",
@@ -22064,7 +24395,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415283859",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-47-university-place",
@@ -22102,7 +24440,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415283860",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-11-dickinson-street",
@@ -22156,7 +24501,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415283861",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-15-dickinson-street",
@@ -22210,7 +24562,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415283862",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-21-dickinson-street",
@@ -22256,7 +24615,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415283863",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-71-university-place",
@@ -22302,7 +24668,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415303110",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-8-dickinson-street",
@@ -22340,7 +24713,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415303111",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-10-dickinson-street",
@@ -22378,7 +24758,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415303112",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-12-dickinson-street",
@@ -22440,7 +24827,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415303113",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-14-dickinson-street",
@@ -22478,7 +24872,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1415303114",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-commons",
@@ -22540,7 +24941,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1419711044",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-briger-hall",
@@ -22702,7 +25110,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1419711045",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-eric-and-wendy-schmidt-hall",
@@ -22812,7 +25227,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1420948510",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "princeton-frist-health-center",
@@ -22914,7 +25336,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1450752263",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

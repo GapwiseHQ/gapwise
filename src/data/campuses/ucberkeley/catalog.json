@@ -22,7 +22,7 @@
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
       "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
-      "attribution": "\u00a9 OpenStreetMap contributors"
+      "attribution": "© OpenStreetMap contributors"
     }
   ],
   "buildings": [
@@ -94,7 +94,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024292",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-c-v-starr-east-asian-library",
@@ -152,7 +159,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024349",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-sutardja-dai-hall-citris",
@@ -250,7 +264,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024350",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-davis-hall",
@@ -304,7 +325,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024351",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-hearst-memorial-mining-building",
@@ -390,7 +418,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024353",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-campbell-hall",
@@ -452,7 +487,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024499",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-physics-north-physics-south",
@@ -554,7 +596,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024500",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-birge-hall",
@@ -604,7 +653,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024501",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-latimer-hall",
@@ -654,7 +710,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024502",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-tan-hall",
@@ -716,7 +779,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024503",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-pimentel-hall",
@@ -826,7 +896,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024504",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-foothill-la-loma-1",
@@ -1008,7 +1085,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024505",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-the-campanile-sather-tower",
@@ -1058,7 +1142,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024507",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bancroft-library",
@@ -1184,7 +1275,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024508",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-south-hall",
@@ -1254,7 +1352,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024509",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-california-hall",
@@ -1296,7 +1401,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024512",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-morrison-hall",
@@ -1358,7 +1470,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024670",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-hertz-hall",
@@ -1448,7 +1567,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024671",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-minor-hall",
@@ -1506,7 +1632,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024672",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-weill-hall",
@@ -1596,7 +1729,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024679",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-morgan-hall",
@@ -1670,7 +1810,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024680",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-koshland-hall",
@@ -1740,7 +1887,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024682",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-mulford-hall",
@@ -1822,7 +1976,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024684",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-genetics-and-plant-biology",
@@ -1892,7 +2053,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24024685",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-durant-hall",
@@ -1938,7 +2106,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025026",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-moffitt-undergraduate-library",
@@ -1992,7 +2167,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025027",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-sproul-hall",
@@ -2126,7 +2308,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025028",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-old-art-gallery",
@@ -2192,7 +2381,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025029",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-anthony-hall",
@@ -2262,7 +2458,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025030",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-hearst-field-annex",
@@ -2300,7 +2503,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025031",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bakar-bioenginuity-hub",
@@ -2482,7 +2692,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025033",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-lewis-hall",
@@ -2556,7 +2773,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025034",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-hildebrand-hall",
@@ -2630,7 +2854,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025035",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-giauque-hall",
@@ -2672,7 +2903,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025036",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-gilman-hall",
@@ -2730,7 +2968,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025037",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-haviland-hall",
@@ -2784,7 +3029,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025038",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-university-house",
@@ -2830,7 +3082,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025039",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-hilgard-hall",
@@ -2904,7 +3163,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025040",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-wellman-hall",
@@ -2970,7 +3236,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025041",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-giannini-hall",
@@ -3052,7 +3325,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025042",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-anthropology-and-art-practice-building",
@@ -3170,7 +3450,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025043",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bancroft-parking-structure",
@@ -3220,7 +3507,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025044",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-calvin-laboratory",
@@ -3346,7 +3640,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025046",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-hargrove-music-library",
@@ -3396,7 +3697,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025047",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-north-gate-hall",
@@ -3522,7 +3830,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025048",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-blum-hall",
@@ -3568,7 +3883,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025049",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-hearst-greek-theatre",
@@ -3790,7 +4112,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025050",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-stanley-hall",
@@ -3952,7 +4281,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025051",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bowles-hall",
@@ -4218,7 +4554,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025052",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-philosophy-hall",
@@ -4368,7 +4711,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025422",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-stephens-hall",
@@ -4530,7 +4880,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025424",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-creekside-center",
@@ -4616,16 +4973,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025425",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-c-sar-e-chavez-student-center",
-      "name": "C\u00e9sar E. Chavez Student Center",
+      "name": "César E. Chavez Student Center",
       "nativeCodes": [
         "CSECSC"
       ],
       "aliases": [
-        "C\u00e9sar E. Chavez Student Center"
+        "César E. Chavez Student Center"
       ],
       "category": "academic",
       "geometry": {
@@ -4858,7 +5222,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025426",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-alumni-house",
@@ -4944,7 +5315,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025427",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-martin-luther-king-jr-student-union",
@@ -5058,7 +5436,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025428",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-zellerbach-hall",
@@ -5152,7 +5537,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025430",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-zellerbach-playhouse",
@@ -5194,7 +5586,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025431",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-o-brien-hall",
@@ -5252,7 +5651,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025434",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-mclaughlin-hall",
@@ -5310,7 +5716,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025435",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-mccone-hall",
@@ -5384,7 +5797,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025437",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-hesse-hall",
@@ -5426,7 +5846,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025438",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-haas-pavilion",
@@ -5676,7 +6103,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025440",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-recreational-sports-facility",
@@ -5782,7 +6216,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025442",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-kleeberger-field-house",
@@ -5832,7 +6273,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025443",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-tang-center",
@@ -5894,7 +6342,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025444",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-faculty-club",
@@ -6000,7 +6455,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025448",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-women-s-faculty-club",
@@ -6070,7 +6532,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24025450",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-donner-laboratory",
@@ -6164,7 +6633,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24026114",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-foothill-hillside-4",
@@ -6286,7 +6762,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24907719",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-casa-zimbabwe",
@@ -6372,7 +6855,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/25017156",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-cloyne-court",
@@ -6562,7 +7052,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/25017162",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-grimes-engineering-center",
@@ -6640,7 +7137,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/25079275",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-senior-hall",
@@ -6682,7 +7186,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/25887540",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-70a",
@@ -6752,7 +7263,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/26677321",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-the-law-building",
@@ -7006,7 +7524,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27293995",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-simon-hall",
@@ -7092,7 +7617,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27293997",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-central-heating-plant",
@@ -7154,7 +7686,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/28134905",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-hazardous-materials-facility",
@@ -7216,7 +7755,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/28134907",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-lower-hearst-structure",
@@ -7274,7 +7820,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/28997603",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1804-1810-euclid-avenue",
@@ -7312,7 +7865,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/28997609",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1801-1803-1805-1807-euclid-avenue",
@@ -7354,7 +7914,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/28997611",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1829-euclid-avenue",
@@ -7392,7 +7959,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/28997612",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1839-1841-euclid-avenue",
@@ -7434,7 +8008,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/28997613",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2503-2505-2507-2509-hearst-avenue",
@@ -7496,7 +8077,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/28997615",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1865-1879-euclid-avenue",
@@ -7566,7 +8154,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/28997619",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2333-2347-telegraph-avenue",
@@ -7608,7 +8203,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29123466",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-student-services-building",
@@ -7730,7 +8332,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32224838",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-gerson-bakar-faculty-building",
@@ -7888,7 +8497,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32224854",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-foothill-hillside-5",
@@ -7926,7 +8542,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/35894521",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-telegraph-channing-garage",
@@ -8016,7 +8639,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/37060725",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2312-2324-telegraph-avenue",
@@ -8062,7 +8692,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/37061257",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-durant-food-court",
@@ -8128,7 +8765,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/37061262",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2369-telegraph-avenue",
@@ -8170,7 +8814,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/37061291",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2375-2379-2381-2383-2387-2391-2395-2399-telegraph-avenue",
@@ -8228,7 +8879,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/37061305",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-freeborn-hall",
@@ -8270,7 +8928,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40413745",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-putnam-hall",
@@ -8312,7 +8977,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40413752",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-cheney-hall",
@@ -8354,7 +9026,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40413757",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-deutsch-hall",
@@ -8396,7 +9075,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/41746106",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-united-states-post-office",
@@ -8438,7 +9124,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/41746134",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2517-durant-avenue",
@@ -8484,7 +9177,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/41746138",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2511-2513-durant-avenue",
@@ -8522,7 +9222,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/41746141",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2530-2538-bancroft-way",
@@ -8572,7 +9279,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/41746152",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-norton-hall",
@@ -8614,7 +9328,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/41746358",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-spens-black-hall",
@@ -8656,7 +9377,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/41746363",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2400-2430-2432-2434-2436-2438-2440-2442-2444-2446-2450-durant-avenue",
@@ -8702,7 +9430,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/41746370",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-ida-sproul-hall",
@@ -8744,7 +9479,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/41746383",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-priestley-hall",
@@ -8786,7 +9528,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/41746395",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2350-telegraph-avenue",
@@ -8828,7 +9577,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43047669",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2360-2366-2374-telegraph-avenue",
@@ -8878,7 +9634,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43047671",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2380-2382-2384-telegraph-avenue",
@@ -8920,7 +9683,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43047672",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2386-2390-telegraph-avenue",
@@ -8958,7 +9728,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43047673",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2392-2398-telegraph-avenue",
@@ -9000,7 +9777,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43047674",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-ridge-house",
@@ -9050,7 +9834,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/60117886",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-graduate-theological-union-hewlett-library",
@@ -9096,7 +9887,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/60117887",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-christian-hall",
@@ -9318,7 +10116,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/62200983",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-slottman-hall",
@@ -9496,7 +10301,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/62200987",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-o-brien-breezeway",
@@ -9546,7 +10358,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/109190447",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bancroft-dance-studio",
@@ -9624,7 +10443,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/109191196",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2251-college-building-archaeological-research-facility",
@@ -9690,7 +10516,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/109191426",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-architects-engineers",
@@ -9728,7 +10561,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/109191619",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-underhill-parking-field",
@@ -9846,7 +10686,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/109192577",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-residential-student-services-building",
@@ -9936,7 +10783,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/109192582",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-channing-bowditch-apartments",
@@ -10006,7 +10860,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/109192946",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-founder-s-building",
@@ -10044,7 +10905,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/109192949",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-ida-louise-jackson-graduate-house",
@@ -10110,7 +10978,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/109193724",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-berkeley-haas-entrepreneurship-hub",
@@ -10184,7 +11059,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/118112324",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-upper-hearst-parking-structure",
@@ -10262,7 +11144,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/118550142",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-goldman-school-of-public-policy",
@@ -10340,7 +11229,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/128463201",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-128463202",
@@ -10386,7 +11282,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/128463202",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2601-channing-way",
@@ -10440,7 +11343,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/184405431",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-the-berk",
@@ -10658,7 +11568,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/184405432",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2511-hearst-avenue",
@@ -10712,7 +11629,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/184876640",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-wolf-house",
@@ -10774,7 +11698,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185769362",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-chapel-of-the-great-commission",
@@ -10876,7 +11807,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190391828",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-anderson-hall",
@@ -10938,7 +11876,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190391829",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-all-saints-chapel",
@@ -11028,7 +11973,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190391835",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-trinity-united-methodist-church",
@@ -11122,7 +12074,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/233937591",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-saint-mark-s-episcopal-church",
@@ -11252,7 +12211,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/233937592",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2334-2336-2338-2340-bancroft-way",
@@ -11306,7 +12272,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/233937593",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bancroft-hotel",
@@ -11376,16 +12349,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/246491108",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-",
-      "name": "\u03a0\u039a\u0391",
+      "name": "ΠΚΑ",
       "nativeCodes": [
         "BLD"
       ],
       "aliases": [
-        "\u03a0\u039a\u0391"
+        "ΠΚΑ"
       ],
       "category": "residence",
       "geometry": {
@@ -11446,7 +12426,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/247336859",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-kappa-delta-rho",
@@ -11516,7 +12503,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/263156772",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-free-house",
@@ -11594,7 +12588,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/270523632",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-graduate-by-hilton-berkeley",
@@ -11656,7 +12657,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271979971",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2590-durant-avenue",
@@ -11702,7 +12710,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/278742258",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-soda-hall",
@@ -11748,7 +12763,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/280300979",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2300-durant-avenue",
@@ -11794,7 +12816,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/306070896",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-durant-house",
@@ -11832,7 +12861,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/306070898",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2318-durant-avenue",
@@ -11878,7 +12914,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/306070905",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2312-durant-avenue",
@@ -11932,7 +12975,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/306070908",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2308-2310-durant-avenue",
@@ -12026,7 +13076,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/306070913",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2232-durant-avenue",
@@ -12072,7 +13129,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/311794176",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2236-durant-avenue",
@@ -12110,7 +13174,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/311794178",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2298-durant-avenue",
@@ -12164,7 +13235,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/311794179",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-wesley-house",
@@ -12210,7 +13288,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/312023663",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-312023664",
@@ -12272,7 +13357,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/312023664",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2362-bancroft-way",
@@ -12318,16 +13410,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/312023665",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-312181848",
-      "name": "\u0394\u039a\u0395",
+      "name": "ΔΚΕ",
       "nativeCodes": [
         "BLD1"
       ],
       "aliases": [
-        "\u0394\u039a\u0395"
+        "ΔΚΕ"
       ],
       "category": "residence",
       "geometry": {
@@ -12408,16 +13507,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/312181848",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-313188630",
-      "name": "\u03a3\u039d",
+      "name": "ΣΝ",
       "nativeCodes": [
         "BLD2"
       ],
       "aliases": [
-        "\u03a3\u039d"
+        "ΣΝ"
       ],
       "category": "residence",
       "geometry": {
@@ -12498,7 +13604,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/313188630",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2728-bancroft-way",
@@ -12552,7 +13665,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/313188874",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-berkeley-hillel-reutlinger-center",
@@ -12598,7 +13718,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/313188875",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2600-bancroft-way",
@@ -12640,7 +13767,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/313189108",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-the-law-building-south",
@@ -12782,7 +13916,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/314724579",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-national-energy-research-scientific-computing-center-nersc",
@@ -12860,7 +14001,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/319200451",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2601-durant-avenue",
@@ -12914,7 +14062,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/410353241",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-theta-xi-fraternity",
@@ -12952,7 +14107,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/410353247",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2605-durant-avenue",
@@ -12990,7 +14152,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/410353248",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2300-2310-college-avenue",
@@ -13028,7 +14197,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/410353251",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-south-gate-apartments",
@@ -13066,16 +14242,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/410353252",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-410353255",
-      "name": "\u0398\u0394\u03a7",
+      "name": "ΘΔΧ",
       "nativeCodes": [
         "BLD3"
       ],
       "aliases": [
-        "\u0398\u0394\u03a7"
+        "ΘΔΧ"
       ],
       "category": "residence",
       "geometry": {
@@ -13116,7 +14299,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/410353255",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-eshleman-hall",
@@ -13246,7 +14436,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/417682513",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-chou-hall-north-academic-building",
@@ -13332,7 +14529,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431329214",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2525-durant-avenue",
@@ -13386,7 +14590,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330064",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2533-durant-avenue",
@@ -13432,7 +14643,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330065",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2539-durant-avenue",
@@ -13470,7 +14688,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330068",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-the-standard",
@@ -13572,7 +14797,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330069",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2421-2423-2425-2427-durant-avenue",
@@ -13610,7 +14842,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330554",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2319-college-avenue",
@@ -13712,7 +14951,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330557",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2411-durant-avenue",
@@ -13758,7 +15004,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330559",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2419-durant-avenue",
@@ -13828,7 +15081,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330561",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2437-2439-durant-avenue",
@@ -13882,7 +15142,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330563",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2510-durant-avenue",
@@ -13936,7 +15203,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330564",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2428-2430-bancroft-way",
@@ -13982,7 +15256,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330568",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2701-durant-avenue",
@@ -14020,7 +15301,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330570",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2468-2470-bancroft-way",
@@ -14070,7 +15358,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330571",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2415-2417-durant-avenue",
@@ -14108,7 +15403,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330573",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2460-2462-2466-bancroft-way",
@@ -14154,7 +15456,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330574",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-the-edge",
@@ -14196,7 +15505,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330575",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2530-2532-2534-durant-avenue",
@@ -14266,7 +15582,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330578",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2436-2440-bancroft-way",
@@ -14336,7 +15659,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330579",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2452-2454-2456-bancroft-way",
@@ -14406,7 +15736,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330580",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2516-2518-durant-avenue",
@@ -14476,7 +15813,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330583",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-sather-lane-shops",
@@ -14562,7 +15906,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330584",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-blue-sky-hotel",
@@ -14600,7 +15951,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330586",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2310-bowditch-street",
@@ -14662,7 +16020,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330588",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2511-channing-way",
@@ -14708,7 +16073,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/431330593",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2312-2314-ellsworth-street",
@@ -14762,7 +16134,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/432710557",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-maison-durant",
@@ -14820,7 +16199,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/432710558",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-jacobs-hall",
@@ -14890,7 +16276,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/440146220",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1825-1827-1829-1831-highland-place",
@@ -14928,7 +16321,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/470796061",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2717-hearst-avenue",
@@ -14998,7 +16398,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/470796220",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2727-hearst-avenue",
@@ -15080,7 +16487,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/470796378",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1821-1823-1825-1827-1829-1831-highland-place",
@@ -15118,16 +16532,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/470796419",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-473598395",
-      "name": "\u03a3\u03a7",
+      "name": "ΣΧ",
       "nativeCodes": [
         "BLD4"
       ],
       "aliases": [
-        "\u03a3\u03a7"
+        "ΣΧ"
       ],
       "category": "residence",
       "geometry": {
@@ -15188,16 +16609,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598395",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-473598404",
-      "name": "\u0394\u0393",
+      "name": "ΔΓ",
       "nativeCodes": [
         "BLD5"
       ],
       "aliases": [
-        "\u0394\u0393"
+        "ΔΓ"
       ],
       "category": "residence",
       "geometry": {
@@ -15282,7 +16710,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598404",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2716-2718-durant-avenue",
@@ -15392,7 +16827,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598407",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2310-piedmont-avenue",
@@ -15550,7 +16992,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598413",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-durant-residence-hall",
@@ -15588,7 +17037,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598421",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2731-haste-street",
@@ -15658,16 +17114,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598425",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-473598427",
-      "name": "\u0396\u0392\u03a4",
+      "name": "ΖΒΤ",
       "nativeCodes": [
         "BLD6"
       ],
       "aliases": [
-        "\u0396\u0392\u03a4"
+        "ΖΒΤ"
       ],
       "category": "residence",
       "geometry": {
@@ -15712,7 +17175,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598427",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-casa-joaquin-murieta",
@@ -15782,7 +17252,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598433",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2704-2706-channing-way",
@@ -15836,16 +17313,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598436",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-473598448",
-      "name": "\u03a6\u0394\u0398",
+      "name": "ΦΔΘ",
       "nativeCodes": [
         "BLD7"
       ],
       "aliases": [
-        "\u03a6\u0394\u0398"
+        "ΦΔΘ"
       ],
       "category": "facility",
       "geometry": {
@@ -15890,7 +17374,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598448",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2400-piedmont-avenue",
@@ -15952,7 +17443,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598455",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2709-channing-way",
@@ -15990,16 +17488,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598459",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-473598465",
-      "name": "\u039a\u0391\u0398",
+      "name": "ΚΑΘ",
       "nativeCodes": [
         "BLD8"
       ],
       "aliases": [
-        "\u039a\u0391\u0398"
+        "ΚΑΘ"
       ],
       "category": "residence",
       "geometry": {
@@ -16096,16 +17601,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598465",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-473598471",
-      "name": "\u03a0\u039b\u03a6",
+      "name": "ΠΛΦ",
       "nativeCodes": [
         "BLD9"
       ],
       "aliases": [
-        "\u03a0\u039b\u03a6"
+        "ΠΛΦ"
       ],
       "category": "residence",
       "geometry": {
@@ -16158,7 +17670,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598471",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2415-college-avenue",
@@ -16252,16 +17771,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598475",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-473598483",
-      "name": "\u03a7\u03a6",
+      "name": "ΧΦ",
       "nativeCodes": [
         "BLD10"
       ],
       "aliases": [
-        "\u03a7\u03a6"
+        "ΧΦ"
       ],
       "category": "residence",
       "geometry": {
@@ -16306,7 +17832,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598483",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2732-2832-channing-way",
@@ -16392,7 +17925,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598492",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2747-haste-street",
@@ -16430,7 +17970,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598499",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2717-channing-way",
@@ -16492,7 +18039,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598502",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2328-piedmont-avenue",
@@ -16570,7 +18124,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598508",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2717-haste-street",
@@ -16608,7 +18169,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598512",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2700-channing-way",
@@ -16662,7 +18230,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598515",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2724-channing-way",
@@ -16708,16 +18283,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598523",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-473598526",
-      "name": "\u03a3\u0391\u039c",
+      "name": "ΣΑΜ",
       "nativeCodes": [
         "BLD11"
       ],
       "aliases": [
-        "\u03a3\u0391\u039c"
+        "ΣΑΜ"
       ],
       "category": "residence",
       "geometry": {
@@ -16762,7 +18344,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598526",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2735-durant-avenue",
@@ -16824,7 +18413,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598532",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2727-haste-street",
@@ -16862,16 +18458,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598543",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-bld-473598545",
-      "name": "\u03a4\u039a\u0395",
+      "name": "ΤΚΕ",
       "nativeCodes": [
         "BLD12"
       ],
       "aliases": [
-        "\u03a4\u039a\u0395"
+        "ΤΚΕ"
       ],
       "category": "residence",
       "geometry": {
@@ -16940,7 +18543,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598545",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2340-piedmont-avenue",
@@ -16986,7 +18596,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598552",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2708-channing-way",
@@ -17040,7 +18657,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598555",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2728-channing-way",
@@ -17094,7 +18718,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598567",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2412-2414-piedmont-avenue",
@@ -17180,7 +18811,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598574",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2715-channing-way",
@@ -17250,7 +18888,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598577",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2710-durant-avenue",
@@ -17312,7 +18957,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598583",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2409-college-avenue",
@@ -17366,7 +19018,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473598590",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-foothill-hillside-6-8",
@@ -17600,7 +19259,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473599691",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-foothill-hillside-9",
@@ -17654,7 +19320,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473599692",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-stern-hall",
@@ -17820,7 +19493,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/473599694",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-david-blackwell-hall",
@@ -17906,7 +19586,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/482840642",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-the-berk-on-arch",
@@ -17984,7 +19671,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/487897361",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-the-metropolitan",
@@ -18082,7 +19776,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/672628675",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1785-spruce-street",
@@ -18120,7 +19821,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209175",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-the-church-of-jesus-christ-of-latter-day-saints",
@@ -18178,7 +19886,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209199",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1851-spruce-street",
@@ -18232,7 +19947,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209250",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1831-spruce-street",
@@ -18278,7 +20000,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209251",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2255-hearst-avenue",
@@ -18332,7 +20061,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209253",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2267-hearst-avenue",
@@ -18370,7 +20106,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209254",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1820-scenic-avenue",
@@ -18504,7 +20247,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209257",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1793-1795-1797-1799-spruce-street",
@@ -18542,7 +20292,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209281",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1801-spruce-street",
@@ -18636,7 +20393,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209316",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1850-scenic-avenue",
@@ -18698,7 +20462,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209317",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1816-scenic-avenue",
@@ -18752,7 +20523,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209319",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2317-hearst-avenue",
@@ -18790,7 +20568,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209320",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2323-hearst-avenue",
@@ -18844,7 +20629,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209321",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2340-le-conte-avenue",
@@ -18918,7 +20710,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209323",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2320-le-conte-avenue",
@@ -18996,7 +20795,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209324",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2326-2328-le-conte-avenue",
@@ -19034,7 +20840,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209325",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2311-hearst-avenue",
@@ -19124,7 +20937,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209326",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2369-le-conte-avenue",
@@ -19178,7 +20998,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209327",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2300-le-conte-avenue",
@@ -19256,7 +21083,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209329",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1849-arch-street",
@@ -19322,7 +21156,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209330",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1831-arch-street",
@@ -19408,7 +21249,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209331",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2357-le-conte-avenue",
@@ -19454,7 +21302,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209332",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2363-2365-le-conte-avenue",
@@ -19492,7 +21347,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209334",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2317-le-conte-avenue",
@@ -19546,7 +21408,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209337",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2321-le-conte-avenue",
@@ -19608,7 +21477,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209338",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2315-hearst-avenue",
@@ -19646,7 +21522,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209351",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1803-1805-spruce-street",
@@ -19720,7 +21603,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209365",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1800-arch-street",
@@ -19758,7 +21648,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209374",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1765-spruce-street",
@@ -19804,7 +21701,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209376",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1771-spruce-street",
@@ -19850,7 +21754,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209378",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1807-1809-1811-spruce-street",
@@ -19920,7 +21831,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209383",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1773-spruce-street",
@@ -19966,7 +21884,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209387",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1817-1819-1821-1823-spruce-street",
@@ -20004,7 +21929,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209388",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1815-spruce-street",
@@ -20106,7 +22038,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209389",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-grace-garden",
@@ -20160,7 +22099,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209393",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1890-arch-street",
@@ -20246,7 +22192,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209394",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1876-arch-street",
@@ -20332,7 +22285,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209396",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1862-arch-street",
@@ -20386,7 +22346,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209397",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2508-ridge-road",
@@ -20484,7 +22451,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209400",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2516-2520-ridge-road",
@@ -20570,7 +22544,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209401",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1769-spruce-street",
@@ -20616,7 +22597,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209414",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1767-spruce-street",
@@ -20662,7 +22650,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209416",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-1850-arch-street",
@@ -20720,7 +22715,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/826209453",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-blackberry-canyon-gate",
@@ -20758,7 +22760,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/833401028",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-the-durant",
@@ -20844,7 +22853,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1007177038",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-stadium-parking-garage",
@@ -20918,7 +22934,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1013176600",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2311-bowditch-street",
@@ -20956,7 +22979,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1039496978",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-press-coffee",
@@ -20994,7 +23024,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1098756727",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-cupola-of-the-old-chemistry-building",
@@ -21032,7 +23069,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1248812994",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-hub-bancroft",
@@ -21078,7 +23122,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1278116898",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-earl-f-cheit-hall",
@@ -21220,7 +23271,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1371942534",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-2713-haste-street",
@@ -21258,7 +23316,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1387749429",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-wheeler-hall",
@@ -21340,7 +23405,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1410826203",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-the-gateway",
@@ -21482,7 +23554,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1460048471",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "ucberkeley-undergraduate-academic-building",
@@ -21540,7 +23619,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1460053154",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

@@ -22,7 +22,7 @@
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
       "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
-      "attribution": "\u00a9 OpenStreetMap contributors"
+      "attribution": "© OpenStreetMap contributors"
     }
   ],
   "buildings": [
@@ -74,7 +74,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24303383",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-biotechnology-building",
@@ -160,7 +167,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24303385",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-teagle-hall",
@@ -226,7 +240,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24303386",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-dale-r-corson-hall",
@@ -324,7 +345,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24303387",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-mann-library",
@@ -398,7 +426,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/35067735",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-olive-tjaden-hall",
@@ -468,7 +503,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/35068418",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-rockefeller-hall",
@@ -610,7 +652,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107384398",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-hollister-hall-defrees-laboratory",
@@ -700,7 +749,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107457228",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-carpenter-hall",
@@ -786,7 +842,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107457238",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-helen-newman-hall",
@@ -828,7 +891,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107457257",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-barton-hall",
@@ -902,7 +972,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107457269",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-uris-hall",
@@ -952,7 +1029,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107457278",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-andrew-dickson-white-house",
@@ -1062,7 +1146,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107869106",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-newman-laboratory",
@@ -1132,7 +1223,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107869111",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-goldwin-smith-hall",
@@ -1258,7 +1356,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107869114",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-physical-sciences-building",
@@ -1336,7 +1441,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107869120",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-space-sciences-building",
@@ -1406,7 +1518,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107869129",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-bailey-hall",
@@ -1580,7 +1699,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107869173",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-big-red-barn",
@@ -1634,7 +1760,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/107869176",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-malott-hall",
@@ -1692,7 +1825,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/116671005",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-olin-chemistry-research-laboratory",
@@ -1746,7 +1886,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/116671008",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-kinzelberg-hall",
@@ -1820,7 +1967,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/116671009",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-savage-hall",
@@ -1866,7 +2020,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/116671010",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-kennedy-hall",
@@ -1972,7 +2133,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/116671016",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-ives-hall",
@@ -2226,7 +2394,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/116672336",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-hoy-road-garage",
@@ -2292,7 +2467,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/117133783",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-plant-science",
@@ -2430,7 +2612,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/117268263",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-olin-hall",
@@ -2528,7 +2717,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/117268288",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-morrill-hall",
@@ -2566,7 +2762,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/117968308",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-bartels-hall",
@@ -2628,7 +2831,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/139510750",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-sibley-hall",
@@ -2706,7 +2916,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/155288339",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-white-hall",
@@ -2744,7 +2961,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/155290560",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-olin-library",
@@ -2798,7 +3022,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/155290561",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-mcgraw-hall",
@@ -2868,7 +3099,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/155290562",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-rand-hall",
@@ -2922,7 +3160,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/155290563",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-martha-van-rensselaer-hall",
@@ -3084,7 +3329,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/199582422",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-the-cornell-store",
@@ -3126,7 +3378,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/199734708",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-warren-hall",
@@ -3248,7 +3507,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/200864764",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-caldwell-hall",
@@ -3322,7 +3588,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/200866259",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-computing-and-communications-center",
@@ -3408,7 +3681,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/200866270",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-lynah-rink",
@@ -3542,7 +3822,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/200983886",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-weill-hall",
@@ -3636,7 +3923,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/200983887",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-lincoln-hall",
@@ -3706,7 +4000,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/200984208",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-stimson-hall",
@@ -3776,7 +4077,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/200984984",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-north-baker-hall",
@@ -3830,7 +4138,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216632340",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-south-baker-hall",
@@ -3884,7 +4199,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216632489",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-baker-tower",
@@ -4022,7 +4344,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/216697006",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-weinhold-chilled-water-plant-1",
@@ -4076,7 +4405,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274311775",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-schoellkopf-memorial-hall",
@@ -4146,7 +4482,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/283402797",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-barnes-hall",
@@ -4276,7 +4619,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/310881322",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-mcgraw-tower",
@@ -4314,7 +4664,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/310881323",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-willard-straight-hall",
@@ -4396,7 +4753,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/310881325",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-sage-hall",
@@ -4546,7 +4910,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/310881940",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-newman-laboratory-annex",
@@ -4628,7 +4999,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/311202436",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-milstein-hall",
@@ -4714,7 +5092,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/311206871",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-statler-hall",
@@ -4784,7 +5169,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321746407",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-the-statler-hotel",
@@ -4858,7 +5250,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321746408",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-uris-library",
@@ -4964,7 +5363,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321746495",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-klarman-hall",
@@ -5050,7 +5456,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321748525",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-flora-rose-house",
@@ -5164,7 +5577,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/324135849",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-hans-bethe-house",
@@ -5314,7 +5734,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/324135852",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-pi-kappa-alpha",
@@ -5520,7 +5947,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/330925770",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-236-tower-road",
@@ -5558,7 +5992,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/339194112",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-academic-surge-facility-a",
@@ -5600,7 +6041,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/346053269",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-academic-surge-facility-b",
@@ -5642,7 +6090,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/346053270",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-the-foundry",
@@ -5680,7 +6135,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/380680092",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-noyes-community-recreation-center",
@@ -5730,7 +6192,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/380680327",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-mennen-hall",
@@ -5776,7 +6245,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/380681253",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-founders-hall",
@@ -5882,7 +6358,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/380682092",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-cornell-health",
@@ -5956,7 +6439,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/380682378",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-myron-taylor-hall",
@@ -6046,7 +6536,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/400067752",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-anabel-taylor-hall",
@@ -6184,7 +6681,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/400067755",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-martin-y-and-margaret-lee-tang-hall",
@@ -6238,7 +6742,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/400067762",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-duffield-hall",
@@ -6684,7 +7195,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/403918010",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-bill-and-melinda-gates-hall",
@@ -6746,7 +7264,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/403918012",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-grumman-squash-courts",
@@ -6808,7 +7333,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/403918014",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-phillips-hall",
@@ -7026,7 +7558,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/403918016",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-upson-hall",
@@ -7172,7 +7711,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/403918018",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-balch-hall",
@@ -7470,7 +8016,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/403931090",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-center-for-intercultural-dialogue",
@@ -7540,7 +8093,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/403931093",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-martin-h-tang-welcome-center",
@@ -7618,7 +8178,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/403931139",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-risley-hall",
@@ -7976,7 +8543,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/403931140",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-telluride-house",
@@ -8046,7 +8620,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/433995662",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-greenhouse",
@@ -8084,7 +8665,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/488113624",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-carl-becker-house",
@@ -8218,7 +8806,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/540527775",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-boldt-hall",
@@ -8332,7 +8927,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/540528807",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-726-university-avenue",
@@ -8370,7 +8972,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/547054945",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-sigma-pi-fraternity",
@@ -8416,7 +9025,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/547054975",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-watermargin-cooperative",
@@ -8454,7 +9070,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/547054976",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-emerson-hall",
@@ -8532,7 +9155,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/560102952",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-delta-tau-delta",
@@ -8570,7 +9200,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/563044147",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-psi-upsilon-fraternity",
@@ -8688,7 +9325,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/589108467",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-sigma-phi-society",
@@ -8754,7 +9398,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/590590127",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-chi-psi-fraternity",
@@ -8824,7 +9475,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/604421096",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-cornell-center-for-jewish-living",
@@ -8902,7 +9560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648333223",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-kappa-alpha-theta-sorority",
@@ -8948,7 +9613,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648333224",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-lyon-hall",
@@ -9090,7 +9762,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648333227",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-sigma-alpha-mu-fraternity",
@@ -9136,7 +9815,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/757378287",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-delta-upsilon-fraternity",
@@ -9334,7 +10020,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/757394074",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-delta-kappa-epsilon-fraternity",
@@ -9380,7 +10073,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/757394075",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-theta-delta-chi-fraternity",
@@ -9450,7 +10150,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/757395988",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-112-edgemoor-lane",
@@ -9488,7 +10195,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/758192830",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-225-fall-creek-drive",
@@ -9554,7 +10268,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267718",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-220-fall-creek-drive",
@@ -9624,7 +10345,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267733",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-302-fall-creek-drive",
@@ -9678,7 +10406,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267738",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-316-fall-creek-drive",
@@ -9760,7 +10495,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267742",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-216-fall-creek-drive",
@@ -9822,7 +10564,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267747",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-310-fall-creek-drive",
@@ -9876,7 +10625,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267765",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-212-fall-creek-drive",
@@ -9930,7 +10686,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267783",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-123-roberts-place",
@@ -10020,7 +10783,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267784",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-207-fall-creek-drive",
@@ -10074,7 +10844,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267801",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-218-fall-creek-drive",
@@ -10144,7 +10921,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267811",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-127-roberts-place",
@@ -10198,7 +10982,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267836",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-326-fall-creek-drive",
@@ -10276,7 +11067,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267841",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-delta-chi",
@@ -10338,7 +11136,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267846",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-202-fall-creek-drive",
@@ -10392,7 +11197,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/825267852",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-king-shaw-hall",
@@ -10462,7 +11274,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/978233642",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-kiln-shed",
@@ -10500,7 +11319,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1112354938",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-109-mcgraw-place",
@@ -10554,7 +11380,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1113540103",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-bld-1115781244",
@@ -10600,7 +11433,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1115781244",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-toboggan-lodge",
@@ -10654,7 +11494,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1121469175",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-seeley-g-mudd-hall",
@@ -10692,7 +11539,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1133976822",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-roberts-hall",
@@ -10734,7 +11588,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1133976823",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-ilr-research-building",
@@ -10780,7 +11641,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1133976829",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-dolgen-hall",
@@ -10826,7 +11694,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1133976830",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-human-ecology-building",
@@ -10936,7 +11811,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1133976833",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-kimball-hall",
@@ -11010,7 +11892,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1133979976",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-bard-hall",
@@ -11064,7 +11953,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1133979977",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-schoellkopf-crescent",
@@ -11158,7 +12054,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1133979978",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-schoellkopf-house",
@@ -11196,7 +12099,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1133979979",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-friends-hall",
@@ -11242,7 +12152,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1133979980",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-schoellkopf-pressbox",
@@ -11280,7 +12197,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1133979981",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cornell-computing-and-information-science-building",
@@ -11334,7 +12258,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1446345610",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

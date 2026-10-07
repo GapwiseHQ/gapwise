@@ -521,18 +521,20 @@ export function routeBetweenPublicBuildings(input: {
     };
   }
 
-  const fromBuildingSnapshot = snapshot.buildings.find(
-    (b) =>
-      b.id === fromIdentity.code ||
-      b.nativeCodes.some((code) => code.toUpperCase() === fromIdentity.code.toUpperCase()) ||
-      b.name.toLowerCase() === fromIdentity.name.toLowerCase(),
-  );
-  const toBuildingSnapshot = snapshot.buildings.find(
-    (b) =>
-      b.id === toIdentity.code ||
-      b.nativeCodes.some((code) => code.toUpperCase() === toIdentity.code.toUpperCase()) ||
-      b.name.toLowerCase() === toIdentity.name.toLowerCase(),
-  );
+  const fromBuildingSnapshot =
+    snapshot.buildings.find(
+      (b) =>
+        (b.nativeCodes[0] ?? b.id).toUpperCase() === fromIdentity.code ||
+        b.id === fromIdentity.code ||
+        b.nativeCodes.some((code) => code.toUpperCase() === fromIdentity.code),
+    ) ?? snapshot.buildings.find((b) => b.name.toLowerCase() === fromIdentity.name.toLowerCase());
+  const toBuildingSnapshot =
+    snapshot.buildings.find(
+      (b) =>
+        (b.nativeCodes[0] ?? b.id).toUpperCase() === toIdentity.code ||
+        b.id === toIdentity.code ||
+        b.nativeCodes.some((code) => code.toUpperCase() === toIdentity.code),
+    ) ?? snapshot.buildings.find((b) => b.name.toLowerCase() === toIdentity.name.toLowerCase());
 
   if (!fromBuildingSnapshot || !toBuildingSnapshot) {
     return {

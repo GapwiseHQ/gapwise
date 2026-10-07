@@ -125,7 +125,7 @@ describe("university registry", () => {
     expect(universityForHostname("sorbonne.gapwise.ca")?.status).toBe("supported");
     expect(siteForHostname("oxford.gapwise.ca")?.role).toBe("single-campus-edition");
     expect(universityForHostname("oxford.gapwise.ca")?.id).toBe("oxford");
-    expect(universityForHostname("oxford.gapwise.ca")?.status).toBe("planned");
+    expect(universityForHostname("oxford.gapwise.ca")?.status).toBe("supported");
     expect(siteForHostname("cambridge.gapwise.ca")?.role).toBe("single-campus-edition");
     expect(universityForHostname("cambridge.gapwise.ca")?.id).toBe("cambridge");
     expect(siteForHostname("imperial.gapwise.ca")?.role).toBe("single-campus-edition");
