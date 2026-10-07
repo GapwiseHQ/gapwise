@@ -41,23 +41,6 @@ function removeStaticSeoMetadata() {
 // remove that static block so TanStack Router owns one canonical set for the active host.
 removeStaticSeoMetadata();
 
-function syncUniversityBranding() {
-  const university = activeUniversity();
-  if (!university || university.id === "uoft" || university.dataPaths.length === 0) return;
-  const prefix = `/universities/${university.id}`;
-  const svg = document.getElementById("app-icon-svg") as HTMLLinkElement | null;
-  if (svg) svg.href = `${prefix}/logo-mark.svg`;
-  const i192 = document.getElementById("app-icon-192") as HTMLLinkElement | null;
-  if (i192) i192.href = `${prefix}/favicon-192x192.png`;
-  const i32 = document.getElementById("app-icon-32") as HTMLLinkElement | null;
-  if (i32) i32.href = `${prefix}/favicon-32x32.png`;
-  const i16 = document.getElementById("app-icon-16") as HTMLLinkElement | null;
-  if (i16) i16.href = `${prefix}/favicon-16x16.png`;
-  const apple = document.getElementById("app-apple-touch-icon") as HTMLLinkElement | null;
-  if (apple) apple.href = `${prefix}/apple-touch-icon.png`;
-}
-syncUniversityBranding();
-
 const university = activeUniversity();
 applyUniversityTheme(document.documentElement, activeSite(), university);
 

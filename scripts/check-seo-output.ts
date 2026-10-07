@@ -34,7 +34,7 @@ for (const site of manifest.sites.filter((item) => item.role !== "global")) {
   const status = campus?.status ?? university.status;
   const marketing = site.presentation?.marketing ?? campus?.marketing ?? university.marketing;
   const html = await readFile(`dist/_sites/${key}/index.html`, "utf8");
-  const title = escapeHtml(marketing.seoTitle);
+  const title = escapeHtml(`Gapwise — ${site.name ?? campus?.name ?? university.name}`);
   const description = escapeHtml(marketing.seoDescription);
   const socialImage = `https://${site.canonicalHost}/universities/${university.id}/og-card.png`;
   expectIncludes(html, `<title>${title}</title>`, `${site.id} title`);
@@ -48,7 +48,11 @@ for (const site of manifest.sites.filter((item) => item.role !== "global")) {
   expectIncludes(html, `property="og:image" content="${socialImage}"`, `${site.id} image`);
   expectIncludes(html, `name="twitter:title" content="${title}"`, `${site.id} X title`);
   expectIncludes(html, `name="twitter:image" content="${socialImage}"`, `${site.id} X image`);
-  expectIncludes(html, `href="/universities/${university.id}/logo-mark.svg"`, `${site.id} logo`);
+  expectIncludes(
+    html,
+    'href="/gapwise-favicon-v2.svg"',
+    `${site.id} canonical favicon`,
+  );
   expectIncludes(html, `href="https://${site.canonicalHost}/"`, `${site.id} canonical`);
   expectIncludes(html, `content="https://${site.canonicalHost}/"`, `${site.id} open graph URL`);
   expectIncludes(html, escapeHtml(marketing.headline), `${site.id} fallback`);
@@ -66,9 +70,8 @@ for (const site of manifest.sites.filter((item) => item.role !== "global")) {
     if (!hasBranding && html.includes(`/universities/${university.id}/favicon`))
       throw new Error(`${site.id} references nonexistent planned branding assets.`);
   }
-  const hasBranding = existsSync(resolve(`public/universities/${university.id}/favicon-32x32.png`));
-  if (!hasBranding && html.includes(`/universities/${university.id}/favicon`))
-    throw new Error(`${site.id} references nonexistent university branding assets.`);
+  if (html.includes(`/universities/${university.id}/favicon`))
+    throw new Error(`${site.id} references deprecated university-specific favicon assets.`);
   if (
     campus?.capabilities.timetableImport === "supported" &&
     campus.capabilities.buildingData === "planned" &&

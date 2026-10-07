@@ -2,7 +2,7 @@ import {
   UNIVERSITIES,
   activeCampus as activeHostCampus,
   activeUniversity,
-  campusesForUniversity,
+  selectableCampusesForUniversity,
   urlForUniversity,
   type University,
 } from "@/universities/registry";
@@ -47,7 +47,7 @@ function searchCampus(context: SearchIndexContext): GapwiseCampusId | null {
   const hostCampus = activeHostCampus();
   if (hostCampus) return hostCampus;
   const university = activeUniversity();
-  const campuses = university ? campusesForUniversity(university) : [];
+  const campuses = university ? selectableCampusesForUniversity(university) : [];
   return campuses.length === 1 ? ((campuses[0] as GapwiseCampusId | undefined) ?? null) : null;
 }
 

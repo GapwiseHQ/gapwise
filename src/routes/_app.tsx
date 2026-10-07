@@ -53,7 +53,7 @@ import {
   activeCampus,
   activeSite,
   activeUniversity,
-  campusesForUniversity,
+  selectableCampusesForUniversity,
 } from "@/universities/registry";
 import type { Meeting } from "@/lib/timetable-types";
 import { isEncryptedPrivateCloudAuthoritative } from "@/features/security/private-cloud-mode";
@@ -150,7 +150,7 @@ function ProductEmptyState({
 
 function AppLayout() {
   const university = activeUniversity();
-  const universityCampusIds = university ? campusesForUniversity(university) : [];
+  const universityCampusIds = university ? selectableCampusesForUniversity(university) : [];
   const site = activeSite();
   const { theme, toggleTheme } = useTheme();
   const { dismissed, dismiss } = useIntroDismissed();
@@ -193,7 +193,7 @@ function AppLayout() {
     : null;
   const arrivalAccessPoint =
     preferences.mainCampus === "utm" ? getCampusAccessPoint(preferences.campusAccessPointId) : null;
-  const isSingleCampus = (university?.campuses.length ?? 0) <= 1;
+  const isSingleCampus = universityCampusIds.length <= 1;
   const fileAccept =
     university?.id !== "uoft" ? ".ics,.txt,.tsv,text/calendar,text/plain" : ".ics,text/calendar";
   const arrivalDetail = arrivalResidence?.code ?? arrivalAccessPoint?.label;
