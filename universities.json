@@ -536,6 +536,86 @@
           "searchExamples": ["Tour Zamansky", "Atrium", "Barre 24-25"]
         }
       }
+    },
+    {
+      "id": "oxford-edition",
+      "role": "single-campus-edition",
+      "hosts": ["oxford.gapwise.ca"],
+      "canonicalHost": "oxford.gapwise.ca",
+      "universityId": "oxford",
+      "campusId": "oxford"
+    },
+    {
+      "id": "cambridge-edition",
+      "role": "single-campus-edition",
+      "hosts": ["cambridge.gapwise.ca"],
+      "canonicalHost": "cambridge.gapwise.ca",
+      "universityId": "cambridge",
+      "campusId": "cambridge"
+    },
+    {
+      "id": "imperial-edition",
+      "role": "single-campus-edition",
+      "hosts": ["imperial.gapwise.ca"],
+      "canonicalHost": "imperial.gapwise.ca",
+      "universityId": "imperial",
+      "campusId": "imperial-south-kensington"
+    },
+    {
+      "id": "ethz-edition",
+      "role": "single-campus-edition",
+      "hosts": ["ethz.gapwise.ca"],
+      "canonicalHost": "ethz.gapwise.ca",
+      "universityId": "ethz",
+      "campusId": "ethz-zentrum"
+    },
+    {
+      "id": "caltech-edition",
+      "role": "single-campus-edition",
+      "hosts": ["caltech.gapwise.ca"],
+      "canonicalHost": "caltech.gapwise.ca",
+      "universityId": "caltech",
+      "campusId": "caltech"
+    },
+    {
+      "id": "jhu-edition",
+      "role": "single-campus-edition",
+      "hosts": ["jhu.gapwise.ca"],
+      "canonicalHost": "jhu.gapwise.ca",
+      "universityId": "jhu",
+      "campusId": "jhu-homewood"
+    },
+    {
+      "id": "epfl-edition",
+      "role": "single-campus-edition",
+      "hosts": ["epfl.gapwise.ca"],
+      "canonicalHost": "epfl.gapwise.ca",
+      "universityId": "epfl",
+      "campusId": "epfl"
+    },
+    {
+      "id": "ucl-edition",
+      "role": "single-campus-edition",
+      "hosts": ["ucl.gapwise.ca"],
+      "canonicalHost": "ucl.gapwise.ca",
+      "universityId": "ucl",
+      "campusId": "ucl-bloomsbury"
+    },
+    {
+      "id": "utokyo-edition",
+      "role": "single-campus-edition",
+      "hosts": ["utokyo.gapwise.ca"],
+      "canonicalHost": "utokyo.gapwise.ca",
+      "universityId": "utokyo",
+      "campusId": "utokyo-hongo"
+    },
+    {
+      "id": "tsinghua-edition",
+      "role": "single-campus-edition",
+      "hosts": ["tsinghua.gapwise.ca"],
+      "canonicalHost": "tsinghua.gapwise.ca",
+      "universityId": "tsinghua",
+      "campusId": "tsinghua"
     }
   ],
   "universities": [
@@ -1769,6 +1849,320 @@
       },
       "routableCampuses": ["sorbonne-pierre-et-marie-curie"],
       "dataPaths": ["universities/sorbonne/campus.json"]
+    },
+    {
+      "id": "oxford",
+      "name": "University of Oxford",
+      "shortName": "Oxford",
+      "accentColor": "#002147",
+      "campusScope": "Oxford Collegiate & Central",
+      "country": "United Kingdom",
+      "hosts": ["oxford.gapwise.ca"],
+      "campuses": ["oxford"],
+      "defaultCampus": "oxford",
+      "aliases": ["Oxford", "University of Oxford", "Oxford University"],
+      "timetableAdapter": "planned",
+      "calendarSource": "Oxford Student Systems",
+      "calendarInstructions": "Timetable planning and calendar sync for Oxford colleges and departments remain planned.",
+      "calendarHelpUrl": "https://www.ox.ac.uk",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": [],
+      "marketing": {
+        "campusName": "Oxford campus",
+        "headline": "Navigate the colleges, libraries, and departments of Oxford.",
+        "description": "Explore the historic collegiate university across Oxford, with clear status for maps, search, and college navigation.",
+        "seoTitle": "Gapwise for University of Oxford",
+        "seoDescription": "Campus discovery, collegiate building search, and navigation for University of Oxford students.",
+        "searchExamples": ["Radcliffe Camera", "Bodleian Library", "Sheldonian Theatre"]
+      },
+      "status": "planned"
+    },
+    {
+      "id": "cambridge",
+      "name": "University of Cambridge",
+      "shortName": "Cambridge",
+      "accentColor": "#A3C1AD",
+      "campusScope": "Cambridge Collegiate & Central",
+      "country": "United Kingdom",
+      "hosts": ["cambridge.gapwise.ca"],
+      "campuses": ["cambridge"],
+      "defaultCampus": "cambridge",
+      "aliases": ["Cambridge", "University of Cambridge", "Cambridge University"],
+      "timetableAdapter": "planned",
+      "calendarSource": "Cambridge CamSIS",
+      "calendarInstructions": "Timetable planning and schedule import for Cambridge colleges and faculties remain planned.",
+      "calendarHelpUrl": "https://www.cam.ac.uk",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": [],
+      "marketing": {
+        "campusName": "Cambridge campus",
+        "headline": "Find your way between colleges, faculties, and the Backs.",
+        "description": "Collegiate campus discovery and building navigation for University of Cambridge students and visitors.",
+        "seoTitle": "Gapwise for University of Cambridge",
+        "seoDescription": "Campus discovery, collegiate building search, and navigation for University of Cambridge students.",
+        "searchExamples": ["King's College Chapel", "Wren Library", "Sidgwick Site"]
+      },
+      "status": "planned"
+    },
+    {
+      "id": "imperial",
+      "name": "Imperial College London",
+      "shortName": "Imperial",
+      "accentColor": "#003E74",
+      "campusScope": "South Kensington, White City",
+      "country": "United Kingdom",
+      "hosts": ["imperial.gapwise.ca"],
+      "campuses": ["imperial-south-kensington", "imperial-white-city"],
+      "defaultCampus": "imperial-south-kensington",
+      "aliases": ["Imperial", "Imperial College", "Imperial College London"],
+      "timetableAdapter": "planned",
+      "calendarSource": "Imperial Celcat Timetables",
+      "calendarInstructions": "Timetable import and calendar sync for Imperial College London remain planned.",
+      "calendarHelpUrl": "https://www.imperial.ac.uk",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": [],
+      "marketing": {
+        "campusName": "South Kensington campus",
+        "headline": "Connect your day across South Kensington and White City.",
+        "description": "Navigate Imperial College London campuses with building search, campus discovery, and pedestrian paths.",
+        "seoTitle": "Gapwise for Imperial College London",
+        "seoDescription": "Campus navigation, building search, and timetable discovery for Imperial College London students.",
+        "searchExamples": ["Queen's Tower", "Blackett Laboratory", "Sir Alexander Fleming Building"]
+      },
+      "status": "planned"
+    },
+    {
+      "id": "ethz",
+      "name": "ETH Zürich",
+      "shortName": "ETH Zürich",
+      "accentColor": "#1F407A",
+      "campusScope": "Zentrum, Hönggerberg",
+      "country": "Switzerland",
+      "hosts": ["ethz.gapwise.ca"],
+      "campuses": ["ethz-zentrum", "ethz-hoenggerberg"],
+      "defaultCampus": "ethz-zentrum",
+      "aliases": ["ETH", "ETH Zurich", "ETH Zürich", "Eidgenössische Technische Hochschule Zürich"],
+      "timetableAdapter": "planned",
+      "calendarSource": "ETH myStudies",
+      "calendarInstructions": "Timetable import and schedule export from myStudies remain planned.",
+      "calendarHelpUrl": "https://ethz.ch",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": [],
+      "marketing": {
+        "campusName": "Zentrum campus",
+        "headline": "Bridge the distance between Zentrum and Hönggerberg.",
+        "description": "Navigate ETH Zürich across its central and hilltop campuses with building search and clear transit-aware status.",
+        "seoTitle": "Gapwise for ETH Zürich",
+        "seoDescription": "Campus navigation, building discovery, and timetable planning for ETH Zürich students.",
+        "searchExamples": ["Hauptgebäude", "Polyterrasse", "HIL Building"]
+      },
+      "status": "planned"
+    },
+    {
+      "id": "caltech",
+      "name": "California Institute of Technology",
+      "shortName": "Caltech",
+      "accentColor": "#FF6C0C",
+      "campusScope": "Caltech Campus Pasadena",
+      "country": "United States",
+      "hosts": ["caltech.gapwise.ca"],
+      "campuses": ["caltech"],
+      "defaultCampus": "caltech",
+      "aliases": ["Caltech", "California Institute of Technology"],
+      "timetableAdapter": "planned",
+      "calendarSource": "Caltech REGIS",
+      "calendarInstructions": "Timetable import and schedule integration with Caltech REGIS remain planned.",
+      "calendarHelpUrl": "https://www.caltech.edu",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": [],
+      "marketing": {
+        "campusName": "Pasadena campus",
+        "headline": "A focused campus experience for Caltech in Pasadena.",
+        "description": "Explore the Pasadena campus with building discovery, research lab navigation, and campus-aware planning.",
+        "seoTitle": "Gapwise for California Institute of Technology",
+        "seoDescription": "Campus discovery, building search, and timetable planning for Caltech students in Pasadena.",
+        "searchExamples": ["Beckman Institute", "Millikan Library", "Athenaeum"]
+      },
+      "status": "planned"
+    },
+    {
+      "id": "jhu",
+      "name": "Johns Hopkins University",
+      "shortName": "Johns Hopkins",
+      "accentColor": "#002D72",
+      "campusScope": "Homewood, East Baltimore",
+      "country": "United States",
+      "hosts": ["jhu.gapwise.ca"],
+      "campuses": ["jhu-homewood", "jhu-east-baltimore"],
+      "defaultCampus": "jhu-homewood",
+      "aliases": ["JHU", "Johns Hopkins", "Johns Hopkins University", "Hopkins"],
+      "timetableAdapter": "planned",
+      "calendarSource": "Johns Hopkins SIS",
+      "calendarInstructions": "Timetable sync and schedule export from Hopkins SIS remain planned.",
+      "calendarHelpUrl": "https://www.jhu.edu",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": [],
+      "marketing": {
+        "campusName": "Homewood campus",
+        "headline": "Coordinate classes and clinicals across Homewood and East Baltimore.",
+        "description": "Navigate Johns Hopkins University across its historic quad and medical campuses with building discovery.",
+        "seoTitle": "Gapwise for Johns Hopkins University",
+        "seoDescription": "Campus navigation, building search, and timetable planning for Johns Hopkins University students.",
+        "searchExamples": ["Gilman Hall", "Milton S. Eisenhower Library", "Johns Hopkins Hospital"]
+      },
+      "status": "planned"
+    },
+    {
+      "id": "epfl",
+      "name": "EPFL",
+      "shortName": "EPFL",
+      "accentColor": "#E30613",
+      "campusScope": "EPFL Lausanne",
+      "country": "Switzerland",
+      "hosts": ["epfl.gapwise.ca"],
+      "campuses": ["epfl"],
+      "defaultCampus": "epfl",
+      "aliases": ["EPFL", "École polytechnique fédérale de Lausanne"],
+      "timetableAdapter": "planned",
+      "calendarSource": "EPFL IS-Academia",
+      "calendarInstructions": "Timetable import and calendar sync from IS-Academia remain planned.",
+      "calendarHelpUrl": "https://www.epfl.ch",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": [],
+      "marketing": {
+        "campusName": "Lausanne campus",
+        "headline": "Explore EPFL along Lake Geneva with clarity.",
+        "description": "Navigate EPFL campus in Lausanne with building search, lab discovery, and walking paths by the lake.",
+        "seoTitle": "Gapwise for EPFL",
+        "seoDescription": "Campus discovery, building search, and timetable planning for EPFL students in Lausanne.",
+        "searchExamples": ["Rolex Learning Center", "SwissTech Convention Center", "BC Building"]
+      },
+      "status": "planned"
+    },
+    {
+      "id": "ucl",
+      "name": "University College London",
+      "shortName": "UCL",
+      "accentColor": "#500778",
+      "campusScope": "Bloomsbury, UCL East",
+      "country": "United Kingdom",
+      "hosts": ["ucl.gapwise.ca"],
+      "campuses": ["ucl-bloomsbury", "ucl-east"],
+      "defaultCampus": "ucl-bloomsbury",
+      "aliases": ["UCL", "University College London"],
+      "timetableAdapter": "planned",
+      "calendarSource": "UCL Common Timetable",
+      "calendarInstructions": "Timetable export and calendar sync from the UCL Common Timetable remain planned.",
+      "calendarHelpUrl": "https://www.ucl.ac.uk",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": [],
+      "marketing": {
+        "campusName": "Bloomsbury campus",
+        "headline": "Traverse UCL from historic Bloomsbury to Queen Elizabeth Olympic Park.",
+        "description": "Connect your day between Bloomsbury and UCL East with building search and clear campus information.",
+        "seoTitle": "Gapwise for University College London",
+        "seoDescription": "Campus navigation, building search, and timetable planning for UCL students across London.",
+        "searchExamples": ["Wilkins Building", "Main Library", "Marshgate"]
+      },
+      "status": "planned"
+    },
+    {
+      "id": "utokyo",
+      "name": "University of Tokyo",
+      "shortName": "UTokyo",
+      "accentColor": "#1D4289",
+      "campusScope": "Hongo, Komaba, Kashiwa",
+      "country": "Japan",
+      "hosts": ["utokyo.gapwise.ca"],
+      "campuses": ["utokyo-hongo", "utokyo-komaba", "utokyo-kashiwa"],
+      "defaultCampus": "utokyo-hongo",
+      "aliases": ["UTokyo", "University of Tokyo", "Todai", "東京大学"],
+      "timetableAdapter": "planned",
+      "calendarSource": "UTokyo UTAS",
+      "calendarInstructions": "Timetable sync and schedule export from UTAS remain planned.",
+      "calendarHelpUrl": "https://www.u-tokyo.ac.jp",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": [],
+      "marketing": {
+        "campusName": "Hongo campus",
+        "headline": "Navigate UTokyo across Hongo, Komaba, and Kashiwa.",
+        "description": "Explore the University of Tokyo campuses with building discovery, landmark search, and walking routes.",
+        "seoTitle": "Gapwise for University of Tokyo",
+        "seoDescription": "Campus navigation, building search, and timetable planning for University of Tokyo students.",
+        "searchExamples": ["Yasuda Auditorium", "Akamon", "Komaba Communication Plaza"]
+      },
+      "status": "planned"
+    },
+    {
+      "id": "tsinghua",
+      "name": "Tsinghua University",
+      "shortName": "Tsinghua",
+      "accentColor": "#660874",
+      "campusScope": "Tsinghua Main Campus",
+      "country": "China",
+      "hosts": ["tsinghua.gapwise.ca"],
+      "campuses": ["tsinghua"],
+      "defaultCampus": "tsinghua",
+      "aliases": ["Tsinghua", "Tsinghua University", "THU", "清华大学"],
+      "timetableAdapter": "planned",
+      "calendarSource": "Tsinghua Academic Affairs System",
+      "calendarInstructions": "Timetable import and schedule export from the Tsinghua Info system remain planned.",
+      "calendarHelpUrl": "https://www.tsinghua.edu.cn",
+      "enabledFeatures": {
+        "routing": true,
+        "liveLocation": false
+      },
+      "routableCampuses": [],
+      "dataPaths": [],
+      "marketing": {
+        "campusName": "Tsinghua campus",
+        "headline": "Navigate the expansive Tsinghua campus in Haidian.",
+        "description": "Explore historic landmarks, teaching buildings, and research facilities across Tsinghua University.",
+        "seoTitle": "Gapwise for Tsinghua University",
+        "seoDescription": "Campus navigation, building discovery, and timetable planning for Tsinghua University students in Beijing.",
+        "searchExamples": [
+          "Grand Auditorium",
+          "Old Gate",
+          "Lee Shau Kee Science and Technology Building"
+        ]
+      },
+      "status": "planned"
     }
   ],
   "campuses": [
@@ -4576,6 +4970,310 @@
           "nextRoom": "Salle 112"
         },
         "searchExamples": ["Centre Malesherbes", "Amphithéâtre 1", "Bibliothèque Malesherbes"]
+      }
+    },
+    {
+      "id": "oxford",
+      "universityId": "oxford",
+      "name": "University of Oxford",
+      "shortName": "Oxford",
+      "campusName": "Oxford campus",
+      "city": "Oxford",
+      "region": "England",
+      "country": "United Kingdom",
+      "hosts": ["oxford.gapwise.ca"],
+      "aliases": ["Oxford", "Oxford collegiate campus", "University of Oxford"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "cambridge",
+      "universityId": "cambridge",
+      "name": "University of Cambridge",
+      "shortName": "Cambridge",
+      "campusName": "Cambridge campus",
+      "city": "Cambridge",
+      "region": "England",
+      "country": "United Kingdom",
+      "hosts": ["cambridge.gapwise.ca"],
+      "aliases": ["Cambridge", "Cambridge collegiate campus", "University of Cambridge"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "imperial-south-kensington",
+      "universityId": "imperial",
+      "name": "Imperial College South Kensington Campus",
+      "shortName": "South Kensington",
+      "campusName": "South Kensington campus",
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "hosts": ["imperial.gapwise.ca"],
+      "aliases": ["South Kensington", "South Ken", "Imperial South Kensington"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "imperial-white-city",
+      "universityId": "imperial",
+      "name": "Imperial College White City Campus",
+      "shortName": "White City",
+      "campusName": "White City campus",
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "hosts": [],
+      "aliases": ["White City", "Imperial White City", "Scale Space"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "ethz-zentrum",
+      "universityId": "ethz",
+      "name": "ETH Zürich Zentrum Campus",
+      "shortName": "Zentrum",
+      "campusName": "Zentrum campus",
+      "city": "Zürich",
+      "region": "Zürich",
+      "country": "Switzerland",
+      "hosts": ["ethz.gapwise.ca"],
+      "aliases": ["Zentrum", "ETH Zentrum", "ETH Center", "Zurich Center"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "ethz-hoenggerberg",
+      "universityId": "ethz",
+      "name": "ETH Zürich Hönggerberg Campus",
+      "shortName": "Hönggerberg",
+      "campusName": "Hönggerberg campus",
+      "city": "Zürich",
+      "region": "Zürich",
+      "country": "Switzerland",
+      "hosts": [],
+      "aliases": ["Hönggerberg", "Hoenggerberg", "ETH Hönggerberg", "Science City"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "caltech",
+      "universityId": "caltech",
+      "name": "California Institute of Technology",
+      "shortName": "Caltech",
+      "campusName": "Pasadena campus",
+      "city": "Pasadena",
+      "region": "California",
+      "country": "United States",
+      "hosts": ["caltech.gapwise.ca"],
+      "aliases": ["Caltech", "Pasadena", "Caltech campus"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "jhu-homewood",
+      "universityId": "jhu",
+      "name": "Johns Hopkins Homewood Campus",
+      "shortName": "Homewood",
+      "campusName": "Homewood campus",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "United States",
+      "hosts": ["jhu.gapwise.ca"],
+      "aliases": ["Homewood", "JHU Homewood", "Hopkins Homewood"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "jhu-east-baltimore",
+      "universityId": "jhu",
+      "name": "Johns Hopkins East Baltimore Medical Campus",
+      "shortName": "East Baltimore",
+      "campusName": "East Baltimore campus",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "United States",
+      "hosts": [],
+      "aliases": ["East Baltimore", "JHU East Baltimore", "Hopkins Medical", "JHM"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "epfl",
+      "universityId": "epfl",
+      "name": "EPFL Campus Lausanne",
+      "shortName": "Lausanne",
+      "campusName": "Lausanne campus",
+      "city": "Lausanne",
+      "region": "Vaud",
+      "country": "Switzerland",
+      "hosts": ["epfl.gapwise.ca"],
+      "aliases": ["EPFL", "Lausanne", "EPFL Lausanne"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "ucl-bloomsbury",
+      "universityId": "ucl",
+      "name": "UCL Bloomsbury Campus",
+      "shortName": "Bloomsbury",
+      "campusName": "Bloomsbury campus",
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "hosts": ["ucl.gapwise.ca"],
+      "aliases": ["Bloomsbury", "UCL Bloomsbury", "Central London"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "ucl-east",
+      "universityId": "ucl",
+      "name": "UCL East Campus",
+      "shortName": "UCL East",
+      "campusName": "UCL East campus",
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "hosts": [],
+      "aliases": ["UCL East", "Stratford", "Marshgate", "Pool Street"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "utokyo-hongo",
+      "universityId": "utokyo",
+      "name": "University of Tokyo Hongo Campus",
+      "shortName": "Hongo",
+      "campusName": "Hongo campus",
+      "city": "Tokyo",
+      "region": "Tokyo",
+      "country": "Japan",
+      "hosts": ["utokyo.gapwise.ca"],
+      "aliases": ["Hongo", "UTokyo Hongo", "本郷地区"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "utokyo-komaba",
+      "universityId": "utokyo",
+      "name": "University of Tokyo Komaba Campus",
+      "shortName": "Komaba",
+      "campusName": "Komaba campus",
+      "city": "Tokyo",
+      "region": "Tokyo",
+      "country": "Japan",
+      "hosts": [],
+      "aliases": ["Komaba", "UTokyo Komaba", "駒場地区"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "utokyo-kashiwa",
+      "universityId": "utokyo",
+      "name": "University of Tokyo Kashiwa Campus",
+      "shortName": "Kashiwa",
+      "campusName": "Kashiwa campus",
+      "city": "Kashiwa",
+      "region": "Chiba",
+      "country": "Japan",
+      "hosts": [],
+      "aliases": ["Kashiwa", "UTokyo Kashiwa", "柏地区"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
+      }
+    },
+    {
+      "id": "tsinghua",
+      "universityId": "tsinghua",
+      "name": "Tsinghua University Main Campus",
+      "shortName": "Tsinghua",
+      "campusName": "Tsinghua campus",
+      "city": "Beijing",
+      "region": "Beijing",
+      "country": "China",
+      "hosts": ["tsinghua.gapwise.ca"],
+      "aliases": ["Tsinghua", "Tsinghua Campus", "清华园"],
+      "status": "planned",
+      "capabilities": {
+        "timetableImport": "planned",
+        "buildingData": "planned",
+        "search": "planned",
+        "routing": "planned"
       }
     }
   ]

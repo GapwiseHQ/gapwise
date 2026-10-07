@@ -138,7 +138,9 @@ describe("Gapwise Ecosystem Consistency", () => {
     const universityHome = readFileSync("src/components/UniversityMarketingHome.tsx", "utf8");
 
     expect(supportedUniversities().map((university) => university.id)).toEqual(
-      manifest.universities.map((university) => university.id),
+      manifest.universities
+        .filter((university) => university.status !== "planned")
+        .map((university) => university.id),
     );
     expect(landing).toContain("<GlobalMarketingHome");
     expect(landing).toContain("<UniversityMarketingHome");

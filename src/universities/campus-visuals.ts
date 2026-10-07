@@ -220,6 +220,83 @@ const universityVisuals: Record<string, CampusVisual> = {
     sourceUrl:
       "https://commons.wikimedia.org/wiki/File:Cour_d%27honneur_de_la_Sorbonne,_entr%C3%A9e_de_la_chapelle.jpg",
   },
+  oxford: {
+    src: "/campuses/photos/oxford.webp",
+    alt: "Radcliffe Camera and Bodleian Library on the University of Oxford campus",
+    credit: "Diliff",
+    license: "CC BY 2.5",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Radcliffe_Camera,_Oxford_-_Oct_2006.jpg",
+    position: "center 30%",
+  },
+  cambridge: {
+    src: "/campuses/photos/cambridge.webp",
+    alt: "King's College Chapel from the Backs at the University of Cambridge",
+    credit: "Dmitry Tonkonog",
+    license: "CC BY-SA 3.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:20130808_Kings_College_Chapel_01.jpg",
+  },
+  imperial: {
+    src: "/campuses/photos/imperial.webp",
+    alt: "The Queen's Tower illuminated at dusk on the Imperial College London South Kensington campus",
+    credit: "tHo_M@s",
+    license: "CC BY-SA 3.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Queens_tower_dusk.jpg",
+    position: "center 30%",
+  },
+  ethz: {
+    src: "/campuses/photos/ethz.webp",
+    alt: "Main Building (Hauptgebäude) of ETH Zürich viewed from the Polyterrasse",
+    credit: "Roland zh",
+    license: "CC BY-SA 3.0",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:ETH_Z%C3%BCrich_Hauptgeb%C3%A4ude,_Ansicht_von_der_Polyterrasse_2011-08-06_ShiftN.jpg",
+  },
+  caltech: {
+    src: "/campuses/photos/caltech.webp",
+    alt: "Beckman Institute and reflecting pool on the California Institute of Technology campus in Pasadena",
+    credit: "Dicklyon",
+    license: "CC BY-SA 4.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Beckman_Institute_with_reflecting_pool.jpg",
+    position: "center 35%",
+  },
+  jhu: {
+    src: "/campuses/photos/jhu.webp",
+    alt: "Gilman Hall at the head of the quadrangle on Johns Hopkins University Homewood campus",
+    credit: "Daderot",
+    license: "Public domain",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Gilman_Hall,_Johns_Hopkins_University,_Baltimore,_MD.jpg",
+  },
+  epfl: {
+    src: "/campuses/photos/epfl.webp",
+    alt: "The Rolex Learning Center on the EPFL campus in Lausanne, Switzerland",
+    credit: "Fridolin freudenfett",
+    license: "CC BY-SA 4.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:EPFL_Rolex_Learning_Center.jpg",
+  },
+  ucl: {
+    src: "/campuses/photos/ucl.webp",
+    alt: "The historic Wilkins Building Portico on the University College London Bloomsbury campus",
+    credit: "Raya Sharbain",
+    license: "CC BY-SA 4.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Portico_of_University_College_London.jpg",
+  },
+  utokyo: {
+    src: "/campuses/photos/utokyo.webp",
+    alt: "Yasuda Auditorium on the University of Tokyo Hongo campus",
+    credit: "XIIIfromTOKYO",
+    license: "CC BY-SA 3.0",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:University_of_Tokyo_-_Yasuda_auditorium_panorama.jpg",
+  },
+  tsinghua: {
+    src: "/campuses/photos/tsinghua.webp",
+    alt: "The Grand Auditorium on the Tsinghua University historic campus in Beijing",
+    credit: "Dquai",
+    license: "CC BY-SA 4.0",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:View_of_Grand_Auditorium_of_Tsinghua_University.jpg",
+  },
 };
 
 const campusVisuals: Record<string, CampusVisual> = {

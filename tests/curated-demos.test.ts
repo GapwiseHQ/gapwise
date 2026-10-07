@@ -7,7 +7,9 @@ import { SITES, campusById, universityById } from "@/universities/registry";
 import { loadDemoTimetable } from "@/universities/timetable-adapters";
 
 const demoEditions = SITES.filter(
-  (site) => site.role === "campus-edition" || site.role === "single-campus-edition",
+  (site) =>
+    (site.role === "campus-edition" || site.role === "single-campus-edition") &&
+    universityById(site.universityId ?? "")?.status !== "planned",
 );
 
 describe("university demo timetables", () => {

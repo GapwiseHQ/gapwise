@@ -1,4 +1,6 @@
+import { existsSync } from "node:fs";
 import { access, readFile } from "node:fs/promises";
+import { resolve } from "node:path";
 import manifest from "../universities.json" with { type: "json" };
 
 function expectIncludes(value: string, expected: string, label: string) {
@@ -58,10 +60,14 @@ for (const site of manifest.sites.filter((item) => item.role !== "global")) {
     if ((siteMap.match(/<url>/g) ?? []).length !== 1)
       throw new Error(`${site.id} planned sitemap must contain only its useful homepage.`);
     expectIncludes(html, "not yet available", `${site.id} planned disclosure`);
-    if (university.status === "planned" && html.includes(`/universities/${university.id}/favicon`))
+    const hasBranding = existsSync(
+      resolve(`public/universities/${university.id}/favicon-32x32.png`),
+    );
+    if (!hasBranding && html.includes(`/universities/${university.id}/favicon`))
       throw new Error(`${site.id} references nonexistent planned branding assets.`);
   }
-  if (!university.dataPaths.length && html.includes(`/universities/${university.id}/favicon`))
+  const hasBranding = existsSync(resolve(`public/universities/${university.id}/favicon-32x32.png`));
+  if (!hasBranding && html.includes(`/universities/${university.id}/favicon`))
     throw new Error(`${site.id} references nonexistent university branding assets.`);
   if (
     campus?.capabilities.timetableImport === "supported" &&
