@@ -22,18 +22,13 @@ export const Route = createFileRoute("/_app/")({
       : (marketing?.seoDescription ??
         "Gapwise connects university timetables, campus search, and pedestrian routing.");
     const canonical = canonicalUrlForSite(site);
-    const usesGlobalArtwork =
-      campus?.status === "planned" ||
-      university?.status === "planned" ||
-      university?.dataPaths.length === 0;
     const hasDedicatedCampusCard =
       site?.campusId && ["utm", "utsg", "utsc"].includes(site.campusId);
-    const image =
-      isGlobal || usesGlobalArtwork
-        ? `${canonical}og-gapwise.png`
-        : site?.role === "campus-edition" && hasDedicatedCampusCard
-          ? `${canonical}campuses/${site.campusId}/og-card.png`
-          : `${canonical}universities/${university?.id}/og-card.png`;
+    const image = isGlobal
+      ? `${canonical}og-gapwise.png`
+      : site?.role === "campus-edition" && hasDedicatedCampusCard
+        ? `${canonical}campuses/${site.campusId}/og-card.png`
+        : `${canonical}universities/${university?.id}/og-card.png`;
     return {
       meta: [
         { title },

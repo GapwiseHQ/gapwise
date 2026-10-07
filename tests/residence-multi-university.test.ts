@@ -19,7 +19,7 @@ import {
 import { listPublicBuildings } from "../src/server/public-campus/service.js";
 import residenceMatrix from "../src/data/campuses/generated/residence-coverage-matrix.json" with { type: "json" };
 import type { UserPreferences } from "../src/features/sync/preferences.js";
-import { supportedCampuses } from "../src/universities/registry.js";
+import { supportedCampuses, supportedUniversities } from "../src/universities/registry.js";
 
 const DEFAULT_PREFS: UserPreferences = {
   theme: "system",
@@ -56,7 +56,7 @@ describe("First-class multi-university residence platform", () => {
     expect(residenceMatrix.summary.coveragePercentage).toBe(100);
     expect(residenceMatrix.summary.campusesWithResidenceCoverage).toBe(supportedCampuses().length);
     expect(residenceMatrix.summary.universitiesWithResidenceCoverage).toBe(
-      manifest.universities.length,
+      supportedUniversities().length,
     );
     expect(residenceMatrix.summary.totalResidences).toBeGreaterThanOrEqual(199);
 

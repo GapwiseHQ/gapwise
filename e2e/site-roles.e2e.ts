@@ -17,7 +17,7 @@ test("global homepage presents the multi-university Gapwise ecosystem", async ({
     page.getByRole("heading", { name: "Make every gap on campus count." }),
   ).toBeVisible();
   await expect(page.locator(".global-home-facts")).toContainText(
-    `${manifest.universities.length}universities with timetable import`,
+    `${manifest.universities.filter((u) => u.status !== "planned").length}universities with timetable import`,
   );
   await expect(page.getByRole("link", { name: /Choose your university/ })).toBeVisible();
   await expect(page.getByText("For University of Toronto", { exact: true })).toHaveCount(0);
@@ -300,9 +300,9 @@ test("narrow UTM header preserves the full brand and contains its controls", asy
   failures.assertClean();
 });
 
-const supportedEditions = manifest.universities.map(
-  (university) => [university.id, university.marketing.headline] as const,
-);
+const supportedEditions = manifest.universities
+  .filter((university) => university.status !== "planned")
+  .map((university) => [university.id, university.marketing.headline] as const);
 
 test("every supported university edition renders isolated registry-driven identity and metadata", async ({
   page,

@@ -17,6 +17,7 @@ import {
   activeUniversity,
   campusForSite,
   campusRecordsForUniversity,
+  canonicalUrlForCampus,
   displayNameForSite,
   marketingForSite,
   type CapabilityStatus,
@@ -160,7 +161,7 @@ function CampusChooser({ university }: { university: University }) {
       {campuses.map((campus, index) => (
         <a
           key={campus.id}
-          href={`https://${campus.hosts[0]}`}
+          href={canonicalUrlForCampus(campus)}
           aria-label={campus.name}
           style={{ "--campus-card-accent": university.accentColor } as CSSProperties}
         >
@@ -309,6 +310,11 @@ export function UniversityMarketingHome(props: UniversityMarketingHomeProps) {
             hostname. It does not expose demo schedules, building results, or route estimates that
             Gapwise cannot substantiate.
           </p>
+          {campuses.length > 1 ? (
+            <div className="mt-8">
+              <CampusChooser university={university} />
+            </div>
+          ) : null}
           <div
             className="university-planned-searches"
             aria-label={`${shortName} directory search examples`}

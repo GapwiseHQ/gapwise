@@ -123,6 +123,27 @@ describe("university registry", () => {
     expect(siteForHostname("sorbonne.gapwise.ca")?.role).toBe("single-campus-edition");
     expect(universityForHostname("sorbonne.gapwise.ca")?.id).toBe("sorbonne");
     expect(universityForHostname("sorbonne.gapwise.ca")?.status).toBe("supported");
+    expect(siteForHostname("oxford.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("oxford.gapwise.ca")?.id).toBe("oxford");
+    expect(universityForHostname("oxford.gapwise.ca")?.status).toBe("planned");
+    expect(siteForHostname("cambridge.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("cambridge.gapwise.ca")?.id).toBe("cambridge");
+    expect(siteForHostname("imperial.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("imperial.gapwise.ca")?.id).toBe("imperial");
+    expect(siteForHostname("ethz.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("ethz.gapwise.ca")?.id).toBe("ethz");
+    expect(siteForHostname("caltech.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("caltech.gapwise.ca")?.id).toBe("caltech");
+    expect(siteForHostname("jhu.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("jhu.gapwise.ca")?.id).toBe("jhu");
+    expect(siteForHostname("epfl.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("epfl.gapwise.ca")?.id).toBe("epfl");
+    expect(siteForHostname("ucl.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("ucl.gapwise.ca")?.id).toBe("ucl");
+    expect(siteForHostname("utokyo.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("utokyo.gapwise.ca")?.id).toBe("utokyo");
+    expect(siteForHostname("tsinghua.gapwise.ca")?.role).toBe("single-campus-edition");
+    expect(universityForHostname("tsinghua.gapwise.ca")?.id).toBe("tsinghua");
     expect(campusForHostname("uoft.gapwise.ca")).toBeNull();
     expect(campusForHostname("utm.gapwise.ca")).toBe("utm");
     expect(campusForHostname("ubc.gapwise.ca")).toBeNull();
@@ -168,8 +189,19 @@ describe("university registry", () => {
       "princeton",
       "yale",
       "harvard",
+      "sorbonne",
+      "oxford",
+      "cambridge",
+      "imperial",
+      "ethz",
+      "caltech",
+      "jhu",
+      "epfl",
+      "ucl",
+      "utokyo",
+      "tsinghua",
     ];
-    expect(new Set(slugs).size).toBe(35);
+    expect(new Set(slugs).size).toBe(46);
     for (const slug of slugs) {
       const site = siteForHostname(`${slug}.gapwise.ca`);
       expect(site).not.toBeNull();

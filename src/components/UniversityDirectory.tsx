@@ -13,7 +13,15 @@ function statusLabel(status: AvailabilityStatus) {
 export function UniversityDirectory() {
   const [query, setQuery] = useState("");
   const results = useMemo(() => searchUniversityDestinations(query), [query]);
-  const countries = ["Canada", "United States", "France"] as const;
+  const countries = [
+    "Canada",
+    "United States",
+    "United Kingdom",
+    "Switzerland",
+    "France",
+    "Japan",
+    "China",
+  ] as const;
 
   return (
     <div className="university-directory-page">

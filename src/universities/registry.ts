@@ -30,7 +30,8 @@ export type University = {
   shortName: string;
   accentColor: string;
   campusScope: string;
-  country: "Canada" | "United States" | "France";
+  country:
+    "Canada" | "United States" | "France" | "United Kingdom" | "Switzerland" | "Japan" | "China";
   hosts: string[];
   campuses: string[];
   defaultCampus: string;
@@ -57,7 +58,8 @@ export type Campus = {
   campusName: string;
   city: string;
   region: string;
-  country: "Canada" | "United States" | "France";
+  country:
+    "Canada" | "United States" | "France" | "United Kingdom" | "Switzerland" | "Japan" | "China";
   hosts: string[];
   aliases: string[];
   status: AvailabilityStatus;
@@ -335,7 +337,7 @@ export function activeSite(): SiteDefinition | null {
             site.universityId === campus.universityId &&
             (site.role === "university-hub" || site.role === "single-campus-edition"),
         );
-        if (universitySite) return universitySite;
+        if (universitySite) return { ...universitySite, campusId: campus.id };
       }
     }
     const requestedUniversity = params.get("university");
@@ -351,7 +353,17 @@ export function activeSite(): SiteDefinition | null {
       ? siteForHostname(host)
       : globalSite();
   }
-  return siteForHostname(host);
+  const site = siteForHostname(host);
+  if (!site) return null;
+  const params = new URLSearchParams(window.location.search);
+  const requestedCampus = params.get("campus");
+  if (requestedCampus && site.universityId) {
+    const campus = campusById(requestedCampus.toLowerCase());
+    if (campus && campus.universityId === site.universityId) {
+      return { ...site, campusId: campus.id };
+    }
+  }
+  return site;
 }
 
 export function universityForHostname(
