@@ -22,7 +22,7 @@
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
       "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
-      "attribution": "\u00a9 OpenStreetMap contributors"
+      "attribution": "© OpenStreetMap contributors"
     }
   ],
   "buildings": [
@@ -74,7 +74,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48465833",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-west-stands",
@@ -112,7 +119,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48465834",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-topliff-hall",
@@ -174,7 +188,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48465835",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-berry-sports-center",
@@ -244,7 +265,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48465836",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-east-stands",
@@ -286,7 +314,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48465837",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-rollins-chapel",
@@ -396,7 +431,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48465838",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-moore-psychology-building",
@@ -478,7 +520,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48465839",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-sherman-house",
@@ -556,7 +605,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48465840",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-alpha-delta",
@@ -614,7 +670,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48466703",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-morton-hall",
@@ -672,7 +735,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48466717",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-zimmerman-hall",
@@ -730,7 +800,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48466718",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-andres-hall",
@@ -784,7 +861,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48466719",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-mcculloch-hall",
@@ -862,7 +946,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48466720",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-19-east-wheelock-street",
@@ -920,7 +1011,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48466721",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-alumni-gymnasium",
@@ -1046,7 +1144,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48467159",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-davis-varsity-house",
@@ -1112,7 +1217,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48467160",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-thornton-hall",
@@ -1154,7 +1266,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48784524",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-reed-hall",
@@ -1204,7 +1323,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48784525",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bartlett-hall",
@@ -1286,7 +1412,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48784526",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-webster-hall",
@@ -1408,7 +1541,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48784527",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-wentworth-hall",
@@ -1446,7 +1586,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48784528",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-dartmouth-hall",
@@ -1516,7 +1663,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/48784540",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-middle-fayerweather-hall",
@@ -1578,7 +1732,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49791103",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-sphinx-secret-society",
@@ -1616,7 +1777,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49791104",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-sigma-alpha-epsilon",
@@ -1658,7 +1826,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49791105",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-la-casa",
@@ -1712,7 +1887,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49791106",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-richardson-hall",
@@ -1750,7 +1932,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49791107",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-fairchild-physical-sciences-center",
@@ -1872,7 +2061,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49795632",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-winfred-raven-house",
@@ -1942,7 +2138,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49795634",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-the-church-of-christ-at-dartmouth-college",
@@ -2012,7 +2215,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49796197",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-parker-house",
@@ -2082,7 +2292,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49796198",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-guarini-institute-for-international-education",
@@ -2136,7 +2353,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49796200",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-sudikoff-hall",
@@ -2294,7 +2518,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49796201",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-burke-laboratory",
@@ -2420,7 +2651,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49796547",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-steele-hall",
@@ -2506,7 +2744,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49796549",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-wilder-hall",
@@ -2588,7 +2833,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49796550",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-wheeler-hall",
@@ -2634,7 +2886,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49796725",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-shattuck-observatory",
@@ -2712,7 +2971,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49796726",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-kemeny-hall",
@@ -2818,7 +3084,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797072",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-haldeman-center",
@@ -2916,7 +3189,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797073",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-gamma-delta-chi",
@@ -2982,7 +3262,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797492",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-kappa-pi-kappa",
@@ -3092,7 +3379,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797493",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-sigma-nu-delta-beta",
@@ -3134,7 +3428,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797495",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bones-gate",
@@ -3212,7 +3513,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797496",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-beta-alpha-omega",
@@ -3294,7 +3602,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797497",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-president-s-house",
@@ -3380,7 +3695,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797498",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-chi-gamma-epsilon",
@@ -3454,7 +3776,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797500",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-phi-delta-alpha",
@@ -3512,7 +3841,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797501",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-phi-tau",
@@ -3582,7 +3918,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797502",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-chinese-language-house",
@@ -3636,7 +3979,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797503",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-north-hall",
@@ -3678,7 +4028,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797504",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-latin-american-latino-a-and-caribbean-house",
@@ -3732,7 +4089,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797505",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-9-ivy-lane",
@@ -3770,7 +4134,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797507",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-1-north-park-street",
@@ -3856,7 +4227,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797508",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-7-ivy-lane",
@@ -3894,7 +4272,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797510",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-16-north-park-street",
@@ -3964,7 +4349,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797515",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-14-north-park-street",
@@ -4010,7 +4402,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797517",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-12-north-park-street",
@@ -4056,7 +4455,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797518",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-10-north-park-street",
@@ -4126,7 +4532,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797519",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-8-north-park-street",
@@ -4180,7 +4593,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797520",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-22-north-park-street",
@@ -4250,7 +4670,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797530",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-20-north-park-street",
@@ -4304,7 +4731,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/49797531",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-hanover-public-parking-garage",
@@ -4402,7 +4836,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/231749754",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-hanover-town-hall",
@@ -4444,7 +4885,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/247325745",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-mcnutt-hall",
@@ -4502,7 +4950,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/261793901",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-parkhurst-hall",
@@ -4576,7 +5031,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/261795166",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-blunt-alumni-center",
@@ -4674,7 +5136,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/261795980",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-casque-gauntlet-senior-society",
@@ -4744,7 +5213,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/261796568",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-collis-student-center",
@@ -4846,7 +5322,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/261796580",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-robinson-hall",
@@ -4912,7 +5395,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262912562",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-class-of-1953-commons",
@@ -4986,7 +5476,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262912597",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-psi-upsilon",
@@ -5032,7 +5529,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262912844",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-theta-delta-chi",
@@ -5090,7 +5594,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262912960",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-south-massachusetts-hall",
@@ -5172,7 +5683,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262913209",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-middle-massachusetts-hall",
@@ -5242,7 +5760,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262913307",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-north-massachusetts-hall",
@@ -5304,7 +5829,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262913680",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-south-fairbanks-hall",
@@ -5394,7 +5926,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262913681",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-north-fairbanks-hall",
@@ -5480,7 +6019,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262913683",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-hitchcock-hall",
@@ -5538,7 +6084,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262913686",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-gile-hall",
@@ -5612,7 +6165,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262913688",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-streeter-hall",
@@ -5670,7 +6230,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262915140",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-lord-hall",
@@ -5728,7 +6295,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262915141",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-silsby-hall",
@@ -5790,7 +6364,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262915142",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-rockefeller-center",
@@ -5924,7 +6505,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262915144",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-russell-sage-hall",
@@ -5982,7 +6570,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262915146",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-butterfield-hall",
@@ -6048,7 +6643,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262918555",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-fahey-hall",
@@ -6126,7 +6728,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262918557",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-mclane-hall",
@@ -6240,7 +6849,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262918559",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-zeta-psi",
@@ -6342,7 +6958,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262918561",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-the-tabard",
@@ -6408,7 +7031,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262918563",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-kappa-delta-epsilon",
@@ -6490,7 +7120,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262918565",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-sigma-phi-epsilon",
@@ -6532,7 +7169,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262918567",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-alpha-chi-alpha",
@@ -6614,7 +7258,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922771",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-epsilon-kappa-theta",
@@ -6760,7 +7411,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922772",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-aquinas-house-catholic-student-center",
@@ -6922,7 +7580,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922773",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-roth-center-for-jewish-life",
@@ -6976,7 +7641,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922775",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-cohen-hall",
@@ -7042,7 +7714,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922776",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bissell-cohen-lounge",
@@ -7132,7 +7811,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922777",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bissell-hall",
@@ -7194,7 +7880,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922778",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-little-hall",
@@ -7256,7 +7949,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922779",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-brown-little-lounge",
@@ -7350,7 +8050,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922780",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-brown-hall",
@@ -7412,7 +8119,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922781",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-shabazz-hall",
@@ -7514,7 +8228,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922782",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-webster-cottage",
@@ -7552,7 +8273,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922783",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-choate-house",
@@ -7622,7 +8350,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922785",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-13-choate-road",
@@ -7708,7 +8443,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922786",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-alpha-theta",
@@ -7794,7 +8536,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262922788",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-north-fayerweather-hall",
@@ -7848,7 +8597,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262924494",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-new-hampshire-hall",
@@ -7906,7 +8662,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262924496",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-wilson-hall",
@@ -8028,7 +8791,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262924497",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-hopkins-center-for-the-arts",
@@ -8258,7 +9028,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262924499",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-black-family-visual-arts-center",
@@ -8332,7 +9109,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262924500",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-the-lodge",
@@ -8418,7 +9202,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262924501",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-chi-heorot",
@@ -8504,7 +9295,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262926521",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-13-east-wheelock-street",
@@ -8590,7 +9388,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262926522",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-ripley-hall",
@@ -8644,7 +9449,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262926523",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-woodward-hall",
@@ -8690,7 +9502,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262926524",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-smith-hall",
@@ -8736,7 +9555,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262926525",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-alpha-xi-delta",
@@ -8850,7 +9676,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262948860",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-mckenzie-shops",
@@ -8904,7 +9737,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262948864",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-facilities-operations-management-warehouse",
@@ -8958,7 +9798,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262948866",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-mckenzie-hall",
@@ -9016,7 +9863,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262948868",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-heating-electric-plant",
@@ -9118,7 +9972,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262948873",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-saint-denis-catholic-church",
@@ -9188,7 +10049,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262948875",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-4-currier-place",
@@ -9286,7 +10154,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262948878",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-triangle-house",
@@ -9340,7 +10215,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262948886",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-foley-house",
@@ -9414,7 +10296,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262948891",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-sanborn-house",
@@ -9476,7 +10365,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950521",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-cummings-hall",
@@ -9598,7 +10494,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950526",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-maclean-engineering-sciences-center",
@@ -9704,7 +10607,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950527",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-murdough-center",
@@ -9826,7 +10736,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950532",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-byrne-dining-hall",
@@ -9924,7 +10841,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950533",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-stell-hall",
@@ -9994,7 +10918,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950534",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-chase-hall",
@@ -10068,7 +10999,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950535",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-tuck-hall",
@@ -10158,7 +11096,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950536",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-woodbury-hall",
@@ -10236,7 +11181,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950537",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-buchanan-hall",
@@ -10310,7 +11262,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-dick-s-house",
@@ -10412,7 +11371,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950539",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-berry-hall",
@@ -10522,7 +11488,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950847",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-thomas-hall",
@@ -10584,7 +11557,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950848",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-goldstein-hall",
@@ -10666,7 +11646,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950849",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-byrne-ii-hall",
@@ -10780,7 +11767,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950850",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-kellogg-hall",
@@ -10838,7 +11832,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950851",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-anonymous-hall",
@@ -10888,7 +11889,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950853",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-remsen-medical-sciences-building",
@@ -10998,7 +12006,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950854",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-vail-medical-sciences-building",
@@ -11072,7 +12087,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950855",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-class-of-1978-life-sciences-center",
@@ -11262,7 +12284,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262950856",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-37-dewey-field-road",
@@ -11372,7 +12401,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262951153",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-dartmouth-campus-safety",
@@ -11474,7 +12510,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/262951154",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-hanover-park",
@@ -11548,7 +12591,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264994646",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-hanover-post-office",
@@ -11654,7 +12704,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264994650",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-six-south-street-hotel",
@@ -11692,7 +12749,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264994810",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-63-south-main-street",
@@ -11794,7 +12858,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/265141480",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-jewel-of-india",
@@ -11832,7 +12903,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/265141709",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-little-havana",
@@ -11886,7 +12964,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/265141855",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-13-lebanon-street",
@@ -11932,7 +13017,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/265141856",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-four-seasons-sotheby-s",
@@ -11978,7 +13070,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/265141857",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-17-lebanon-street",
@@ -12016,7 +13115,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/265141858",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-20-west-wheelock-street",
@@ -12070,7 +13176,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/266280213",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-sigma-delta",
@@ -12108,7 +13221,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/293468158",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-saint-thomas-episcopal-church",
@@ -12146,7 +13266,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/293472006",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-63-south-main-street-parking-deck",
@@ -12204,7 +13331,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/294234145",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-hallgarten-hall",
@@ -12258,7 +13392,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295768758",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-1-rope-ferry-road",
@@ -12332,7 +13473,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295888763",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-11-rope-ferry-road",
@@ -12410,7 +13558,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295888764",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-3-rope-ferry-road",
@@ -12516,7 +13671,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295888765",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-7-lebanon-street",
@@ -12610,7 +13772,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295888771",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-baker-library",
@@ -12752,7 +13921,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295888783",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-berry-library",
@@ -12854,7 +14030,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295888784",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-carpenter-hall",
@@ -12924,7 +14107,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295888785",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-carson-hall",
@@ -12986,7 +14176,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295888786",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-floren-varsity-house",
@@ -13048,7 +14245,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295951349",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-mckenzie-substation",
@@ -13086,7 +14290,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295951351",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-mckenzie-emergency-diesel-generator",
@@ -13124,7 +14335,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/295951352",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-chilcott-auditorium",
@@ -13162,7 +14380,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/296375896",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-47-dewey-field-road",
@@ -13200,7 +14425,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/297469038",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-18-north-park-street",
@@ -13270,7 +14502,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/298244785",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-24-north-park-street",
@@ -13340,7 +14579,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/298244786",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-south-fayerweather-hall",
@@ -13402,7 +14648,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/298417216",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bildner-hall",
@@ -13480,7 +14733,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/298417217",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-rauner-hall",
@@ -13574,7 +14834,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/298417218",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-sarner-underground",
@@ -13612,7 +14879,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/464030136",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-house-center-a",
@@ -13650,7 +14924,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/543822430",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-38-south-main-street",
@@ -13712,7 +14993,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/547814927",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-currier-block",
@@ -13822,7 +15110,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/547976611",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-school-faculty-house",
@@ -13900,7 +15195,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548054953",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-panarchy",
@@ -13970,7 +15272,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548054957",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-allen-faculty-house",
@@ -14032,7 +15341,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548054960",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-edgerton-house",
@@ -14094,7 +15410,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548054961",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-consolidated-communications",
@@ -14148,7 +15471,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548054962",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-8-school-street",
@@ -14210,7 +15540,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548054963",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-kappa-delta",
@@ -14304,7 +15641,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548057944",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-chi-delta",
@@ -14398,7 +15742,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548057945",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-hanover-inn-dartmouth",
@@ -14556,7 +15907,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548896471",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-20-south-main-street",
@@ -14622,7 +15980,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548896473",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-2-west-wheelock-street",
@@ -14700,7 +16065,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548904589",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-wheelock-house",
@@ -14794,7 +16166,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548904598",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-coldwell-banker",
@@ -14848,7 +16227,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548904600",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-seven-allen",
@@ -14938,7 +16324,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548904604",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-buskey-alley",
@@ -15008,7 +16401,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548904605",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-musgrove-block",
@@ -15046,7 +16446,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548921799",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-gilberte-interiors",
@@ -15104,7 +16511,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548921801",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-borealis-ventures",
@@ -15162,7 +16576,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/548921802",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-dragon-secret-society",
@@ -15232,7 +16653,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/584967679",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-house-center-b",
@@ -15290,7 +16718,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/584967697",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-alpha-phi",
@@ -15344,7 +16779,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/584967836",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-10-maple-street",
@@ -15390,7 +16832,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/601077330",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-12-maple-street",
@@ -15460,7 +16909,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/601077331",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-8-maple-street",
@@ -15514,7 +16970,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/601077336",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-17-school-street",
@@ -15584,7 +17047,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/601077339",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-23-west-wheelock-street",
@@ -15622,7 +17092,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646985",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bld-621646987",
@@ -15692,7 +17169,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646987",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-21-west-wheelock-street",
@@ -15730,7 +17214,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646988",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bld-621646989",
@@ -15808,7 +17299,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646989",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-28-west-wheelock-street",
@@ -15870,7 +17368,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646990",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-26-west-wheelock-street",
@@ -15940,7 +17445,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646991",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-24-west-wheelock-street",
@@ -15986,7 +17498,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646992",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-22-west-wheelock-street",
@@ -16040,7 +17559,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646993",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-18-west-wheelock-street",
@@ -16086,7 +17612,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646994",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-20-5-west-wheelock-street",
@@ -16124,7 +17657,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646995",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-19-west-wheelock-street",
@@ -16186,7 +17726,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646996",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-17-west-wheelock-street",
@@ -16240,7 +17787,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646997",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-16-west-wheelock-street",
@@ -16326,7 +17880,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646998",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-14-west-wheelock-street",
@@ -16388,7 +17949,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621646999",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-first-church-of-christ-scientist",
@@ -16434,7 +18002,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621647000",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-3-school-street",
@@ -16480,7 +18055,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621647001",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-11-allen-street",
@@ -16550,7 +18132,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621647002",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-13-allen-street",
@@ -16668,7 +18257,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621647003",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-15-allen-street",
@@ -16730,7 +18326,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621647004",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-17-allen-street",
@@ -16832,7 +18435,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621647005",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-chabad-at-dartmouth",
@@ -16918,7 +18528,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621647006",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-19-allen-street",
@@ -16956,7 +18573,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621647007",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-8-west-street",
@@ -16994,7 +18618,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621647008",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-7-west-street",
@@ -17032,7 +18663,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/621725231",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-4-occom-ridge",
@@ -17126,7 +18764,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639042012",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-6-occom-ridge",
@@ -17240,7 +18885,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639042015",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-8-occom-ridge",
@@ -17330,7 +18982,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639042017",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bld-639042020",
@@ -17368,7 +19027,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639042020",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-10-occom-ridge",
@@ -17430,7 +19096,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639042021",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bld-639042024",
@@ -17468,7 +19141,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639042024",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-9-occom-ridge",
@@ -17538,7 +19218,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639859755",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-16-choate-road",
@@ -17592,7 +19279,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639859756",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-8-clement-road",
@@ -17670,7 +19364,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639859765",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-6-clement-road",
@@ -17716,7 +19417,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639859768",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-4-clement-road",
@@ -17762,7 +19470,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639859771",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-living-learning-faculty-house",
@@ -17832,7 +19547,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639859772",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-7-choate-road",
@@ -17978,7 +19700,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639859777",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-5-choate-road",
@@ -18052,7 +19781,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639859781",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-3-choate-road",
@@ -18118,7 +19854,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/639859782",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-1-webster-terrace",
@@ -18172,7 +19915,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/641064106",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-2-webster-terrace",
@@ -18242,7 +19992,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/641064107",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-21-webster-avenue",
@@ -18280,7 +20037,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/641064108",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-west-faculty-house",
@@ -18342,7 +20106,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/641064109",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-17-choate-road",
@@ -18428,7 +20199,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/641064110",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-5-clement-road",
@@ -18522,7 +20300,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/641413535",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-3-clement-road",
@@ -18592,7 +20377,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/641413536",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-4-rope-ferry-road",
@@ -18686,7 +20478,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/641413538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-6-rope-ferry-road",
@@ -18764,7 +20563,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/641413541",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-our-savior-lutheran-church",
@@ -18930,7 +20736,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/644376635",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-21-maple-street",
@@ -18968,7 +20781,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/645606295",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-26-maple-street",
@@ -19046,7 +20866,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/647089450",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-hanover-court",
@@ -19180,7 +21007,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/647756211",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-16-maple-street",
@@ -19242,7 +21076,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/647756218",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-18-maple-street",
@@ -19320,7 +21161,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/647756219",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-14-maple-street",
@@ -19374,7 +21222,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/647756221",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-19-maple-street",
@@ -19444,7 +21299,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648189944",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-9-prospect-street",
@@ -19506,7 +21368,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648189945",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-7-prospect-street",
@@ -19576,7 +21445,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648189946",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-5-prospect-street",
@@ -19646,7 +21522,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648189948",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-3-prospect-street",
@@ -19724,7 +21607,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648189950",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-averte",
@@ -19810,7 +21700,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648189952",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-18-west-street",
@@ -19880,7 +21777,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648189959",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bld-648189960",
@@ -19918,7 +21822,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648189960",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-10-prospect-street",
@@ -19972,7 +21883,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280413",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-13-maple-street",
@@ -20050,7 +21968,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280415",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-11-maple-street",
@@ -20112,7 +22037,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280419",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bld-648280422",
@@ -20150,7 +22082,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280422",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-9-maple-street",
@@ -20244,7 +22183,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280424",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-7-maple-street",
@@ -20298,7 +22244,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280426",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-5-maple-street",
@@ -20408,7 +22361,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280429",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-rand-wilson-funeral-home",
@@ -20478,7 +22438,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280431",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-2-prospect-street",
@@ -20548,7 +22515,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280434",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-4-prospect-street",
@@ -20618,7 +22592,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280438",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-18-allen-lane",
@@ -20656,7 +22637,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280441",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-6-prospect-street",
@@ -20726,7 +22714,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280443",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-8-prospect-street",
@@ -20780,7 +22775,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280450",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-2-allen-lane",
@@ -20874,7 +22876,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280458",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-1-allen-lane",
@@ -20976,7 +22985,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280461",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-14-allen-street",
@@ -21054,7 +23070,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280462",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-16-allen-street",
@@ -21116,7 +23139,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280464",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-11-school-street",
@@ -21178,7 +23208,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280466",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-13-school-street",
@@ -21232,7 +23269,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280467",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-1-maple-street",
@@ -21286,7 +23330,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/648280468",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-14-school-street",
@@ -21356,7 +23407,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/649347151",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-ledyard-financial-advisors",
@@ -21434,7 +23492,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/675559487",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-class-of-1982-engineering-and-computer-science-center",
@@ -21496,7 +23561,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/693100230",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-south-block",
@@ -21714,7 +23786,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/693114384",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-gitsis-block",
@@ -21800,7 +23879,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/719086480",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-native-american-house",
@@ -21886,7 +23972,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/721286482",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-1-south-park-street",
@@ -21976,7 +24069,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/734295467",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-nugget-arcade",
@@ -22110,7 +24210,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/757708033",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-32-lebanon-street",
@@ -22200,7 +24307,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/783717743",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-2-sanborn-road",
@@ -22278,7 +24392,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/783717744",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-south-faculty-house",
@@ -22372,7 +24493,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/783717747",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-3-sanborn-road",
@@ -22426,7 +24554,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/783717748",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-1-sanborn-road",
@@ -22480,7 +24615,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/783717749",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-25-lebanon-street",
@@ -22534,7 +24676,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/783717750",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-30-lebanon-street",
@@ -22616,7 +24765,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/783717751",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-6-park-way",
@@ -22678,7 +24834,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/784097655",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-2-lewin-road",
@@ -22716,7 +24879,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/786103727",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-hood-museum-of-art",
@@ -22886,7 +25056,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/837183231",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-mckenzie-fuel-oil-facility",
@@ -22952,7 +25129,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/837183240",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-hyphen-lounge",
@@ -23006,7 +25190,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/838851884",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bld-842819162",
@@ -23044,7 +25235,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/842819162",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-2-park-way",
@@ -23106,7 +25304,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165787",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-4-park-way",
@@ -23204,7 +25409,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165788",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-17-north-park-street",
@@ -23270,7 +25482,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165789",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-3-park-way",
@@ -23332,7 +25551,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165790",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bld-873165791",
@@ -23374,7 +25600,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165791",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-15-north-park-street",
@@ -23412,7 +25645,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165792",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bld-873165793",
@@ -23498,7 +25738,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165793",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-13-north-park-street",
@@ -23572,7 +25819,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165794",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-north-park-faculty-house",
@@ -23674,7 +25928,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165802",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-5-north-park-street",
@@ -23756,7 +26017,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165805",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-7-north-park-street",
@@ -23818,7 +26086,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165806",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-9-north-park-street",
@@ -23908,7 +26183,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165807",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-11-north-park-street",
@@ -23958,7 +26240,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165809",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bld-873165810",
@@ -23996,7 +26285,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/873165810",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-davison-block",
@@ -24078,7 +26374,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/881069396",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bridgman-block",
@@ -24140,7 +26443,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/881069397",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-bartlett-tower",
@@ -24238,7 +26548,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/882026018",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "dartmouth-irving-institute",
@@ -24296,7 +26613,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/910299376",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

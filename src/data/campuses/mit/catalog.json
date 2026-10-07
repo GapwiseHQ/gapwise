@@ -22,7 +22,7 @@
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
       "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
-      "attribution": "\u00a9 OpenStreetMap contributors"
+      "attribution": "© OpenStreetMap contributors"
     }
   ],
   "buildings": [
@@ -119,7 +119,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24493980",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-54-green-building",
@@ -194,7 +201,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24493983",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w20-stratton-student-center",
@@ -285,7 +299,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24494019",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w16-kresge-auditorium",
@@ -396,7 +417,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24494029",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-50-walker-memorial",
@@ -479,7 +507,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24494050",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w15-mit-chapel",
@@ -678,7 +713,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24562763",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-64",
@@ -773,7 +815,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24808074",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-66-landau-building",
@@ -880,7 +929,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24808162",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-32-stata-center",
@@ -1407,7 +1463,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27078002",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w35-zesiger-sports-fitness-center",
@@ -1582,7 +1645,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29127389",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w31-du-pont-athletic-gymnasium",
@@ -1733,7 +1803,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29127393",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-36-fairchild-building",
@@ -1832,7 +1909,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29127425",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-24",
@@ -1895,7 +1979,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29127459",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-907-main",
@@ -1945,7 +2036,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29513564",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-station-2",
@@ -2007,7 +2105,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29513583",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-68-school-street",
@@ -2061,7 +2166,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29555197",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-1-3-5-7-9-newtowne-court",
@@ -2163,7 +2275,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29556300",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-nw21-plasma-science-fusion-center",
@@ -2270,7 +2389,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29557595",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-n16-cooling-tower",
@@ -2389,7 +2515,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29559726",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-73-75-school-street",
@@ -2443,7 +2576,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29565363",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-97-105-windsor-street",
@@ -2481,7 +2621,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29565441",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-nw16",
@@ -2544,7 +2691,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29566343",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-88-school-street",
@@ -2582,7 +2736,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29568007",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-41",
@@ -2637,7 +2798,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29569108",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-u-haul",
@@ -2683,7 +2851,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29574513",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-400-technology-square",
@@ -2721,7 +2896,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29575544",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w7-baker-house",
@@ -3248,7 +3430,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29602186",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w8-resch-boathouse",
@@ -3307,7 +3496,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29606898",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-233-239-243-245-259-massachusetts-avenue",
@@ -3349,7 +3545,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29609874",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-500-technology-square",
@@ -3412,7 +3615,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29609886",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w11-religious-activities-center",
@@ -3503,7 +3713,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29611119",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-n4-albany-garage",
@@ -3926,7 +4143,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29618959",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-16-18-cherry-street",
@@ -3980,7 +4204,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29619608",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-the-kendall-hotel",
@@ -4082,7 +4313,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29620676",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-750-main-street",
@@ -4132,7 +4370,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29621406",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-782-784-790-792-796-798-main-street",
@@ -4226,7 +4471,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29623218",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-69-71-school-street",
@@ -4288,7 +4540,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29624091",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-86-school-street",
@@ -4346,7 +4605,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29625102",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-730-main-street",
@@ -4408,7 +4674,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29627682",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-401-403-massachusetts-avenue",
@@ -4446,7 +4719,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29634598",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-700-technology-square",
@@ -4485,7 +4765,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29650626",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-residence-inn-cambridge",
@@ -4524,7 +4811,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29650630",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-whitehead-institute",
@@ -4606,7 +4900,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29650632",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-72-school-street",
@@ -4668,7 +4969,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29650636",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-jackson-building",
@@ -4738,7 +5046,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29650656",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-n10-high-voltage-research-lab",
@@ -4789,7 +5104,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29650658",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-62",
@@ -4884,7 +5206,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29650662",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-170-albany-street",
@@ -4931,7 +5260,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29650675",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-university-park-at-mit-parking-garage",
@@ -5001,7 +5337,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29680415",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w59-heinz-building",
@@ -5048,7 +5391,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29681495",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-takeda",
@@ -5094,7 +5444,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29708701",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-nw22",
@@ -5157,7 +5514,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29708703",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-20-22-24-26-columbia-street",
@@ -5219,7 +5583,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29719130",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-n9-superconducting-test-facility",
@@ -5270,7 +5641,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29739496",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-ne49",
@@ -5317,7 +5695,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29740162",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-85-87-windsor-street",
@@ -5379,7 +5764,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29740509",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-13-15-cherry-street",
@@ -5417,7 +5809,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29740905",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-cambridge-brands",
@@ -5483,7 +5882,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29740910",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-355-main-street",
@@ -5530,7 +5936,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29743556",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-884-main-street",
@@ -5592,7 +6005,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29802646",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w53-carr-indoor-tennis",
@@ -5687,7 +6107,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29802781",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-781-783-main-street",
@@ -5765,7 +6192,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29802787",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-180-massachusetts-avenue",
@@ -5807,7 +6241,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29803141",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-christian-mission-holiness-church",
@@ -5845,7 +6286,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29803324",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-48-parsons-lab",
@@ -5900,7 +6348,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29803755",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w2",
@@ -5975,7 +6430,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29803811",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w41-metropolitan-storage-warehouse",
@@ -6106,7 +6568,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29803955",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-877-main-street",
@@ -6152,7 +6621,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29804035",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-190-massachusetts-avenue",
@@ -6251,7 +6727,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29804347",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-700-main-street",
@@ -6305,7 +6788,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29804458",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-zion-pentecostal-tabernacle-church",
@@ -6343,7 +6833,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29805183",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-21-23-bishop-allen-drive",
@@ -6397,7 +6894,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29806971",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-nw61-random-hall",
@@ -6444,7 +6948,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29809099",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-65-franklin-street",
@@ -6494,7 +7005,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29826981",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-300-technology-square",
@@ -6569,7 +7087,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29842810",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-green-hall",
@@ -6607,7 +7132,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29860611",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-209-211-massachusetts-avenue",
@@ -6666,7 +7198,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29860824",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-33-35-newtowne-court",
@@ -6720,7 +7259,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29862486",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-410r-memorial-drive",
@@ -6775,7 +7321,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29862811",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-novartis-amenities-building",
@@ -6858,7 +7411,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29863763",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-8-bishop-allen-drive",
@@ -6896,7 +7456,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29864450",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-795-799-805-main-street",
@@ -6966,7 +7533,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29865047",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-821-823-825-main-street",
@@ -7012,7 +7586,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29867404",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-7-green-street",
@@ -7054,7 +7635,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29868723",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-union-baptist-church",
@@ -7092,7 +7680,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29869087",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-rush-memorial-african-methodist-episcopal-zion-church",
@@ -7146,7 +7741,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29870267",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-1-state-street",
@@ -7189,7 +7791,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29870503",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-34-36-newtowne-court",
@@ -7243,7 +7852,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29871253",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-nw30-the-warehouse",
@@ -7290,7 +7906,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29929971",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-35-landsdowne-street",
@@ -7396,7 +8019,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29934401",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-700-710-main-street",
@@ -7474,7 +8104,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29946359",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-254-massachusetts-avenue",
@@ -7560,7 +8197,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29946495",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-no-6",
@@ -7623,7 +8267,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29947479",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-93-windsor-street",
@@ -7661,7 +8312,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/29950620",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-9-samuel-tak-lee-building",
@@ -7944,7 +8602,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32499809",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-13-bush-building",
@@ -8051,7 +8716,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32517105",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-7-rogers-building",
@@ -8190,7 +8862,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32517230",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-11-homberg-building",
@@ -8229,7 +8908,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32517290",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-3",
@@ -8340,7 +9026,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32517406",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-1-pierce-lab",
@@ -8455,7 +9148,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32517447",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-5",
@@ -8514,7 +9214,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32517556",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-10",
@@ -8637,7 +9344,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32517642",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-4",
@@ -8752,7 +9466,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32517654",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-2-simons-building",
@@ -8883,7 +9604,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32517707",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-6-eastman-labs",
@@ -8974,7 +9702,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32517817",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-8",
@@ -9065,7 +9800,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32517839",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-6c",
@@ -9144,7 +9886,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32524914",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-31-sloan-labs",
@@ -9211,7 +9960,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32525033",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-37-mcnair-building",
@@ -9282,7 +10038,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32525279",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-39-brown-building",
@@ -9369,7 +10132,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32525350",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-38",
@@ -9448,7 +10218,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32525380",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-34-eg-g-education-center",
@@ -9547,7 +10324,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32525583",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-26-compton-labs",
@@ -9702,7 +10486,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32525936",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-16-dorrance-building",
@@ -9801,7 +10592,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32526070",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-56-whitaker-building",
@@ -9888,7 +10686,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32526121",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-57-alumni-pool",
@@ -9971,7 +10776,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32526333",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-33-guggenheim-lab",
@@ -10042,7 +10854,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32526782",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-35-sloan-lab",
@@ -10125,7 +10944,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32526807",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-51-wood-sailing-pavilion",
@@ -10200,7 +11026,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32534638",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-76-koch-institute",
@@ -10335,7 +11168,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/46846324",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-cambridge-center-garage",
@@ -10405,7 +11245,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/58336511",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-n51",
@@ -10464,7 +11311,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132600539",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-nw12-nuclear-reactor-lab",
@@ -10883,7 +11737,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132600541",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-nw13",
@@ -10962,7 +11823,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132600542",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-nw14-bitter-magnet-lab",
@@ -11081,7 +11949,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132600543",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-nw17",
@@ -11136,7 +12011,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132600544",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-180-albany-street",
@@ -11179,7 +12061,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132600545",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-boston-marriott-cambridge",
@@ -11385,7 +12274,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132600546",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-42-dickson-cogeneration-plant",
@@ -11520,7 +12416,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132601297",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-43-plant-annex",
@@ -11575,7 +12478,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132601298",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w32-du-pont-athletic-center",
@@ -11670,7 +12580,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132601562",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w33-rockwell-cage",
@@ -11749,7 +12666,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132601563",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w34-johnson-athletic-center",
@@ -11928,7 +12852,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132601564",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-building-w53b",
@@ -11967,7 +12898,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/132601567",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-e25-whitaker-college",
@@ -12085,7 +13023,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177921759",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-e14-media-lab",
@@ -12164,7 +13109,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177921761",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-e15-wiesner-building",
@@ -12298,7 +13250,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177921762",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-building-w53c",
@@ -12337,7 +13296,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212292568",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-building-w53f",
@@ -12380,7 +13346,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/212292666",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-e18-ford-building",
@@ -12523,7 +13496,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/220076812",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-e19",
@@ -12586,7 +13566,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/220076879",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-e17-mudd-building",
@@ -12645,7 +13632,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/220082897",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-40-landsdowne-street",
@@ -12739,7 +13733,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264253042",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-200-technology-square",
@@ -12789,7 +13790,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/328256023",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-100-technology-square",
@@ -12883,7 +13891,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/328256024",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-55-franklin-street",
@@ -12929,7 +13944,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/328476194",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-1-portland-street",
@@ -12999,7 +14021,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/409936847",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-610-main-street",
@@ -13065,7 +14094,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/409936849",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-177-181-massachusetts-avenue",
@@ -13152,7 +14188,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/409937903",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-7a-rotch-library",
@@ -13198,7 +14241,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/435078056",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-324-massachusetts-avenue",
@@ -13276,7 +14326,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/485224103",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-266-massachusetts-avenue",
@@ -13318,7 +14375,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/595628597",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-7-landsdowne-street",
@@ -13364,7 +14428,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/595628598",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-market-central",
@@ -13438,7 +14509,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/652582445",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w46-new-vassar",
@@ -13657,7 +14735,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/765446749",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-richard-n-merkin-building",
@@ -13731,7 +14816,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/823968922",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-proto",
@@ -13809,7 +14901,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/823968926",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-stanley-building",
@@ -13867,7 +14966,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/823968940",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-google",
@@ -13929,7 +15035,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/823968943",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-n16c",
@@ -13968,7 +15081,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/824942622",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-12-su-building",
@@ -14134,7 +15254,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/863570911",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w5-green-hall",
@@ -14261,7 +15388,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/864631218",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-130-vassar-street",
@@ -14316,7 +15450,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/890880630",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w70-new-house",
@@ -14843,7 +15984,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/980619102",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w51-burton-conner-house",
@@ -15142,7 +16290,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/980718777",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-kappa-sigma",
@@ -15241,7 +16396,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/980718778",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-pi-beta-phi",
@@ -15328,7 +16490,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/980718779",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-dke",
@@ -15370,7 +16539,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/980718780",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-phi-beta-epsilon",
@@ -15437,7 +16613,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/980718781",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-372-memorial-drive",
@@ -15560,7 +16743,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/980718783",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-e1-gray-house",
@@ -15643,7 +16833,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/980722692",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-e2-70-amherst",
@@ -15782,7 +16979,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/980722694",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-nw23",
@@ -15845,7 +17049,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1007111503",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-68-koch-biology-building",
@@ -16004,7 +17215,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1011548273",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-45-schwarzman-building",
@@ -16083,7 +17301,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1089241940",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-351-massachusetts-avenue",
@@ -16198,7 +17423,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1098003653",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-355-massachusetts-avenue",
@@ -16329,7 +17561,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1098003654",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-297-massachusetts-avenue",
@@ -16387,7 +17626,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1110799054",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-301-massachusetts-avenue",
@@ -16441,7 +17687,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1110799055",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-311-313-315-319-321-323-massachusetts-avenue",
@@ -16491,7 +17744,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1110799056",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-building-w53d",
@@ -16530,7 +17790,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1159903778",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-building-w53g",
@@ -16569,7 +17836,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1159903779",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-875-main-street",
@@ -16607,7 +17881,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1161455921",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-4-bishop-allen-drive",
@@ -16669,7 +17950,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1161455922",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-19-bishop-allen-drive",
@@ -16715,7 +18003,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1161455924",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-15-15-5-17-17-5-bishop-allen-drive",
@@ -16753,7 +18048,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1161455925",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w61-macgregor-house",
@@ -16948,7 +18250,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1246607679",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w1-maseeh-hall",
@@ -17319,7 +18628,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1247264070",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-17-wright-brothers-wind-tunnel",
@@ -17414,7 +18730,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1249521123",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-building-w53e",
@@ -17453,7 +18776,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1254619382",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-e28",
@@ -17496,7 +18826,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1254628669",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-120-albany-street",
@@ -17535,7 +18872,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1267448740",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-w18-linde-music-building",
@@ -17734,7 +19078,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1299334790",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-n20-ragon-institute",
@@ -17860,7 +19211,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1317036718",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-55",
@@ -17915,7 +19273,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1322990414",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-n16a",
@@ -17958,7 +19323,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1368163871",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "mit-42c",
@@ -18101,7 +19473,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1374253188",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

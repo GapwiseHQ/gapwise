@@ -87,7 +87,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/16924888",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-institut-du-monde-arabe",
@@ -217,7 +224,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/22870791",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-singerie",
@@ -355,7 +369,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/23602858",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-56",
@@ -409,7 +430,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/23757577",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-institut-de-math-matiques-de-jussieu-paris-rive-gau",
@@ -463,7 +491,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/23757632",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-23757668",
@@ -517,7 +552,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/23757668",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-23757698",
@@ -571,7 +613,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/23757698",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-23757705",
@@ -625,7 +674,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/23757705",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-23757707",
@@ -683,7 +739,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/23757707",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-barre-cassan-f",
@@ -769,7 +832,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/23757719",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-barre-cassan-a-b-et-c",
@@ -915,7 +985,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24147086",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-24147102",
@@ -985,7 +1062,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24147102",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-esclangon",
@@ -1079,7 +1163,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/24147164",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447153",
@@ -1125,7 +1216,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447153",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447154",
@@ -1179,7 +1277,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447154",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447155",
@@ -1225,7 +1330,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447155",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-40447156",
@@ -1315,7 +1427,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447156",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-40447158",
@@ -1369,7 +1488,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447158",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447159",
@@ -1407,7 +1533,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447159",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-40447160",
@@ -1469,7 +1602,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447160",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-retail-40447161",
@@ -1511,7 +1651,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447161",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-40447162",
@@ -1569,7 +1716,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447162",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-40447163",
@@ -1615,7 +1769,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447163",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447164",
@@ -1693,7 +1854,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447164",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447165",
@@ -1751,7 +1919,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447165",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-40447166",
@@ -1825,7 +2000,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447166",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447167",
@@ -1863,7 +2045,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447167",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-40447168",
@@ -1941,7 +2130,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447168",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447169",
@@ -2035,7 +2231,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447169",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447170",
@@ -2073,7 +2276,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447170",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447172",
@@ -2191,7 +2401,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447172",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447173",
@@ -2265,7 +2482,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447173",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447174",
@@ -2311,7 +2535,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447174",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447175",
@@ -2389,7 +2620,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447175",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447179",
@@ -2427,7 +2665,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447179",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-40447180",
@@ -2481,7 +2726,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447180",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-40447183",
@@ -2543,7 +2795,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447183",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-40447184",
@@ -2609,7 +2868,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447184",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-40447185",
@@ -2683,7 +2949,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/40447185",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315846",
@@ -2793,7 +3066,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315846",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-salle-jussieu",
@@ -2899,7 +3179,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315847",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315848",
@@ -2945,7 +3232,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315848",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315849",
@@ -3011,7 +3305,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315849",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315850",
@@ -3089,7 +3390,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315850",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42315851",
@@ -3135,7 +3443,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315851",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315852",
@@ -3185,7 +3500,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315852",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315853",
@@ -3251,7 +3573,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315853",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315854",
@@ -3329,7 +3658,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315854",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315855",
@@ -3395,7 +3731,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315855",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315856",
@@ -3453,7 +3796,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315856",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42315857",
@@ -3499,7 +3849,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315857",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42315858",
@@ -3549,7 +3906,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315858",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42315859",
@@ -3587,7 +3951,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315859",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42315860",
@@ -3637,7 +4008,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315860",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42315861",
@@ -3699,7 +4077,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315861",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42315862",
@@ -3745,7 +4130,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315862",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315863",
@@ -3795,7 +4187,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315863",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-5-place-jussieu",
@@ -3845,7 +4244,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315864",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-3-place-jussieu",
@@ -3935,7 +4341,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315865",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42315866",
@@ -3989,7 +4402,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315866",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315869",
@@ -4047,7 +4467,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315869",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42315870",
@@ -4085,7 +4512,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315870",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42315873",
@@ -4123,7 +4557,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315873",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42315874",
@@ -4161,7 +4602,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315874",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315875",
@@ -4227,7 +4675,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315875",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42315876",
@@ -4289,7 +4744,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42315876",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-sous-station-ratp-m-tro-ligne-10",
@@ -4327,7 +4789,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332550",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42332551",
@@ -4365,7 +4834,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332551",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-maison-des-sciences-de-gestion",
@@ -4431,7 +4907,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332552",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332554",
@@ -4469,7 +4952,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332554",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-gymnase",
@@ -4515,7 +5005,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332556",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332558",
@@ -4561,7 +5058,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332558",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332560",
@@ -4619,7 +5123,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332560",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332561",
@@ -4661,7 +5172,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332561",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332577",
@@ -4747,7 +5265,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332577",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332579",
@@ -4797,7 +5322,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332579",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332584",
@@ -4855,7 +5387,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332584",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42332585",
@@ -4909,7 +5448,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332585",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332586",
@@ -4959,7 +5505,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332586",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332587",
@@ -5013,7 +5566,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332587",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332588",
@@ -5095,7 +5655,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332588",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332589",
@@ -5149,7 +5716,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332589",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332590",
@@ -5187,7 +5761,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332590",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332591",
@@ -5225,7 +5806,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332591",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332592",
@@ -5367,7 +5955,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332592",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332593",
@@ -5405,7 +6000,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332593",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332594",
@@ -5443,7 +6045,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332594",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332595",
@@ -5481,7 +6090,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332595",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42332596",
@@ -5543,7 +6159,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332596",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332597",
@@ -5593,7 +6216,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332597",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332598",
@@ -5647,7 +6277,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332598",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332599",
@@ -5713,7 +6350,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332599",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332600",
@@ -5771,7 +6415,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332600",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332601",
@@ -5809,7 +6460,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332601",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332602",
@@ -5847,7 +6505,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332602",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42332603",
@@ -5905,7 +6570,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332603",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42332604",
@@ -5951,7 +6623,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332604",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332605",
@@ -6001,7 +6680,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332605",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42332606",
@@ -6091,7 +6777,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332606",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42332609",
@@ -6193,7 +6886,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332609",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-42332610",
@@ -6287,7 +6987,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332610",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-fabrique",
@@ -6345,7 +7052,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332616",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332619",
@@ -6415,7 +7129,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332619",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-secas",
@@ -6473,7 +7194,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332620",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332621",
@@ -6511,7 +7239,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332621",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-ruine",
@@ -6613,7 +7348,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332622",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332623",
@@ -6687,7 +7429,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332623",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-grande-rotonde",
@@ -6833,7 +7582,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332625",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332627",
@@ -6871,7 +7627,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332627",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332628",
@@ -6917,7 +7680,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332628",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332629",
@@ -7007,7 +7777,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332629",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332632",
@@ -7045,7 +7822,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332632",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332636",
@@ -7083,7 +7867,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332636",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332637",
@@ -7121,7 +7912,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332637",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332638",
@@ -7167,7 +7965,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332638",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332639",
@@ -7205,7 +8010,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332639",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332640",
@@ -7243,7 +8055,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332640",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-nurserie",
@@ -7329,7 +8148,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332641",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-fauverie",
@@ -7503,7 +8329,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332642",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332643",
@@ -7589,7 +8422,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332643",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332644",
@@ -7627,7 +8467,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332644",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332645",
@@ -7665,7 +8512,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332645",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-fabrique-2",
@@ -7767,7 +8621,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332646",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332647",
@@ -7861,7 +8722,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332647",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332648",
@@ -7915,7 +8783,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332648",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-ancienne-faisanderie",
@@ -8169,7 +9044,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332649",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-nouvelle-faisanderie",
@@ -8359,7 +9241,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332650",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-reptiles",
@@ -8513,7 +9402,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332651",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42332652",
@@ -8591,7 +9487,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332652",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-vivarium",
@@ -8697,7 +9600,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42332653",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-66",
@@ -8755,7 +9665,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741408",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42741409",
@@ -8817,7 +9734,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741409",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42741410",
@@ -8871,7 +9795,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741410",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-65",
@@ -8929,7 +9860,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741412",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-55",
@@ -8987,7 +9925,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741413",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741414",
@@ -9041,7 +9986,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741414",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741415",
@@ -9099,7 +10051,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741415",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-46",
@@ -9153,7 +10112,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741416",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741417",
@@ -9211,7 +10177,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741417",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-45",
@@ -9269,7 +10242,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741418",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741419",
@@ -9323,7 +10303,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741419",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741420",
@@ -9389,7 +10376,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741420",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-44",
@@ -9443,7 +10437,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741421",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-54",
@@ -9497,7 +10498,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741422",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42741423",
@@ -9559,7 +10567,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741423",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741424",
@@ -9621,7 +10636,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741424",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42741425",
@@ -9687,7 +10709,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741425",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-43",
@@ -9745,7 +10774,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741426",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-atrium-cfa",
@@ -9875,7 +10911,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741427",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42741428",
@@ -9933,7 +10976,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741428",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-53",
@@ -9991,7 +11041,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741429",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42741430",
@@ -10069,7 +11126,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741430",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-42",
@@ -10127,7 +11191,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741431",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741432",
@@ -10189,7 +11260,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741432",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde32",
@@ -10243,7 +11321,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741433",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741434",
@@ -10301,7 +11386,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741434",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741435",
@@ -10355,7 +11447,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741435",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741436",
@@ -10409,7 +11508,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741436",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741437",
@@ -10467,7 +11573,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741437",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741438",
@@ -10541,7 +11654,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741438",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741440",
@@ -10599,7 +11719,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741440",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-33",
@@ -10653,7 +11780,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741441",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-42741442",
@@ -10715,7 +11849,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741442",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-34",
@@ -10773,7 +11914,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741443",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741444",
@@ -10827,7 +11975,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741444",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741445",
@@ -10881,7 +12036,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741445",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-22",
@@ -10939,7 +12101,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741446",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741447",
@@ -10993,7 +12162,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741447",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741448",
@@ -11047,7 +12223,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741448",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-23",
@@ -11101,7 +12284,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741449",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741450",
@@ -11175,7 +12365,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741450",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741451",
@@ -11237,7 +12434,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741451",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-12",
@@ -11291,7 +12495,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741452",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-24",
@@ -11349,7 +12560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741453",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-25",
@@ -11407,7 +12625,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741454",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741455",
@@ -11469,7 +12694,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741455",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741456",
@@ -11523,7 +12755,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741456",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-16",
@@ -11577,7 +12816,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741457",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741458",
@@ -11631,7 +12877,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741458",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-26",
@@ -11689,7 +12942,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741459",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741460",
@@ -11743,7 +13003,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741460",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-13",
@@ -11797,7 +13064,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741462",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741463",
@@ -11851,7 +13125,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741463",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-14",
@@ -11905,7 +13186,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741464",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-42741465",
@@ -11967,7 +13255,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741465",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-rotonde-15",
@@ -12021,7 +13316,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/42741466",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020670",
@@ -12123,7 +13425,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020670",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020671",
@@ -12217,7 +13526,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020671",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020673",
@@ -12263,7 +13579,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020673",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020674",
@@ -12301,7 +13624,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020674",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020675",
@@ -12359,7 +13689,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020675",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020676",
@@ -12413,7 +13750,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020676",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020677",
@@ -12459,7 +13803,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020677",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020679",
@@ -12537,7 +13888,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020679",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020680",
@@ -12583,7 +13941,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020680",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020681",
@@ -12657,7 +14022,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020681",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020682",
@@ -12707,7 +14079,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020682",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020684",
@@ -12781,7 +14160,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020684",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020685",
@@ -12827,7 +14213,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020685",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020686",
@@ -12877,7 +14270,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020686",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020688",
@@ -12919,7 +14319,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020688",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020689",
@@ -12957,7 +14364,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020689",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020690",
@@ -13003,7 +14417,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020690",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020691",
@@ -13057,7 +14478,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020691",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020692",
@@ -13115,7 +14543,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020692",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020693",
@@ -13161,7 +14596,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020693",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020694",
@@ -13243,7 +14685,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020694",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020698",
@@ -13281,7 +14730,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020698",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020699",
@@ -13323,7 +14779,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020699",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020700",
@@ -13361,7 +14824,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020700",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020701",
@@ -13411,7 +14881,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020701",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020702",
@@ -13465,7 +14942,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020702",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020705",
@@ -13579,7 +15063,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020705",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020706",
@@ -13665,7 +15156,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020706",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020707",
@@ -13731,7 +15229,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020707",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020708",
@@ -13821,7 +15326,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020708",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020711",
@@ -13907,7 +15419,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020711",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020715",
@@ -13993,7 +15512,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020715",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020719",
@@ -14123,7 +15649,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020719",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020720",
@@ -14225,7 +15758,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020720",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020721",
@@ -14303,7 +15843,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020721",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020724",
@@ -14365,7 +15912,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020724",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020725",
@@ -14435,7 +15989,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020725",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-43020726",
@@ -14565,7 +16126,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020726",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020729",
@@ -14607,7 +16175,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020729",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020730",
@@ -14705,7 +16280,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020730",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43020731",
@@ -14763,7 +16345,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43020731",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43547378",
@@ -14801,7 +16390,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43547378",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-service-43547379",
@@ -14855,7 +16451,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43547379",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-fabrique-3",
@@ -14941,7 +16544,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43547381",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43547387",
@@ -14979,7 +16589,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43547387",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43547388",
@@ -15033,7 +16650,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43547388",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43547392",
@@ -15103,7 +16727,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43547392",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43547395",
@@ -15197,7 +16828,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43547395",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-kindergarten-43549017",
@@ -15395,7 +17033,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43549017",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43549018",
@@ -15429,7 +17074,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43549018",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43549019",
@@ -15463,7 +17115,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43549019",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43549020",
@@ -15497,7 +17156,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43549020",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43549021",
@@ -15531,7 +17197,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43549021",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-43549022",
@@ -15565,7 +17238,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/43549022",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-47273122",
@@ -15643,7 +17323,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/47273122",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-47273124",
@@ -15725,7 +17412,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/47273124",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-47273128",
@@ -15763,7 +17457,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/47273128",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-47273130",
@@ -15801,7 +17502,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/47273130",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-47273131",
@@ -15839,7 +17547,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/47273131",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-roof-47273139",
@@ -15881,7 +17596,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/47273139",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-47273141",
@@ -15919,7 +17641,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/47273141",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-47273142",
@@ -16001,7 +17730,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/47273142",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-47274056",
@@ -16119,7 +17855,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/47274056",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-47274064",
@@ -16193,7 +17936,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/47274064",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-47274066",
@@ -16347,7 +18097,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/47274066",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55340461",
@@ -16449,7 +18206,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55340461",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55340462",
@@ -16503,7 +18267,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55340462",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55340478",
@@ -16557,7 +18328,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55340478",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55340479",
@@ -16603,7 +18381,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55340479",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-55340480",
@@ -16701,7 +18486,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55340480",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55340481",
@@ -16767,7 +18559,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55340481",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55340483",
@@ -16889,7 +18688,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55340483",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-55568176",
@@ -16927,7 +18733,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55568176",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55692761",
@@ -16993,7 +18806,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55692761",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55692763",
@@ -17159,7 +18979,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55692763",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55692764",
@@ -17205,7 +19032,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55692764",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55692767",
@@ -17327,7 +19161,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55692767",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55692768",
@@ -17389,7 +19230,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55692768",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55692769",
@@ -17483,7 +19331,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55692769",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-house-55692770",
@@ -17529,7 +19384,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55692770",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55692771",
@@ -17591,7 +19453,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55692771",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55692772",
@@ -17673,7 +19542,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55692772",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931888",
@@ -17811,7 +19687,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931888",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931889",
@@ -17977,7 +19860,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931889",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931890",
@@ -18063,7 +19953,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931890",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931891",
@@ -18121,7 +20018,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931891",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931895",
@@ -18171,7 +20075,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931895",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931896",
@@ -18229,7 +20140,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931896",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931897",
@@ -18295,7 +20213,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931897",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931898",
@@ -18353,7 +20278,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931898",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-55931899",
@@ -18391,7 +20323,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931899",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931900",
@@ -18485,7 +20424,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931900",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931901",
@@ -18531,7 +20477,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931901",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-poste-lectrique-de-cardinal-lemoine",
@@ -18601,7 +20554,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931903",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931904",
@@ -18643,7 +20603,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931904",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931905",
@@ -18737,7 +20704,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931905",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-55931906",
@@ -18779,7 +20753,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931906",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931909",
@@ -18841,7 +20822,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931909",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55931911",
@@ -18947,7 +20935,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55931911",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953324",
@@ -18993,7 +20988,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953324",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953327",
@@ -19083,7 +21085,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953327",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-55953328",
@@ -19121,7 +21130,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953328",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-55953329",
@@ -19167,7 +21183,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953329",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953330",
@@ -19237,7 +21260,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953330",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-55953331",
@@ -19279,7 +21309,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953331",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-55953332",
@@ -19341,7 +21378,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953332",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953333",
@@ -19407,7 +21451,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953333",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953334",
@@ -19457,7 +21508,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953334",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953335",
@@ -19563,7 +21621,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953335",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953336",
@@ -19621,7 +21686,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953336",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-55953337",
@@ -19659,7 +21731,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953337",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953338",
@@ -19701,7 +21780,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953338",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-55953339",
@@ -19755,7 +21841,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953339",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953340",
@@ -19797,7 +21890,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953340",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953341",
@@ -19871,7 +21971,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953341",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953343",
@@ -19933,7 +22040,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953343",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-55953345",
@@ -20015,7 +22129,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55953345",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b",
@@ -20117,7 +22238,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55968122",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-laboratoire-de-marie-curie",
@@ -20159,7 +22287,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/83976060",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-83976065",
@@ -20197,7 +22332,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/83976065",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-83976075",
@@ -20239,7 +22381,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/83976075",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-83976083",
@@ -20277,7 +22426,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/83976083",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-83976095",
@@ -20315,7 +22471,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/83976095",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-95475745",
@@ -20437,7 +22600,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/95475745",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-maison-de-cuvier",
@@ -20487,7 +22657,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/97183054",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-97183078",
@@ -20525,7 +22702,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/97183078",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-le-tipi-espace-culturel",
@@ -20635,7 +22819,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/170206131",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-304920076",
@@ -20673,7 +22864,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/304920076",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-304920078",
@@ -20711,7 +22909,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/304920078",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-304920079",
@@ -20749,7 +22954,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/304920079",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-roof-304920080",
@@ -20811,7 +23023,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/304920080",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-roof-305206033",
@@ -20877,7 +23096,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/305206033",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321684332",
@@ -20979,7 +23205,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321684332",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321684334",
@@ -21081,7 +23314,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321684334",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321684340",
@@ -21183,7 +23423,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321684340",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321684342",
@@ -21285,7 +23532,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321684342",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704787",
@@ -21387,7 +23641,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704787",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704788",
@@ -21489,7 +23750,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704788",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704789",
@@ -21591,7 +23859,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704789",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-321704790",
@@ -21693,7 +23968,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704790",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704791",
@@ -21795,7 +24077,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704791",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-321704792",
@@ -21897,7 +24186,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704792",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-321704793",
@@ -21999,7 +24295,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704793",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704794",
@@ -22101,7 +24404,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704794",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704795",
@@ -22203,7 +24513,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704795",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704796",
@@ -22305,7 +24622,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704796",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-321704797",
@@ -22407,7 +24731,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704797",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704798",
@@ -22509,7 +24840,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704798",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704799",
@@ -22611,7 +24949,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704799",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-321704800",
@@ -22713,7 +25058,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704800",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704801",
@@ -22815,7 +25167,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704801",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-321704802",
@@ -22917,7 +25276,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704802",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704803",
@@ -23019,7 +25385,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704803",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-321704804",
@@ -23121,7 +25494,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704804",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-321704805",
@@ -23223,7 +25603,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704805",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-321704806",
@@ -23325,7 +25712,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321704806",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-321737312",
@@ -23363,7 +25757,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321737312",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-roof-321737313",
@@ -23401,7 +25802,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321737313",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-crous-caf-t-ria-ouest",
@@ -23439,7 +25847,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/321737314",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-ruins-406229068",
@@ -23605,7 +26020,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/406229068",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-ruins-406229069",
@@ -23959,7 +26381,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/406229069",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-biblioth-que-des-licences",
@@ -24001,7 +26430,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/426888479",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-437572815",
@@ -24239,7 +26675,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/437572815",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-492182786",
@@ -24281,7 +26724,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/492182786",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-674564079",
@@ -24319,7 +26769,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/674564079",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-apartments-674564080",
@@ -24453,7 +26910,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/674564080",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-678131744",
@@ -24491,7 +26955,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/678131744",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-678131747",
@@ -24549,7 +27020,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/678131747",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-centre-d-exploration-fonctionnelle",
@@ -24599,7 +27077,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/678131748",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-centre-international-de-conf-rences-sorbonne-univer",
@@ -24685,7 +27170,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/678136660",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-des-basses-temp-ratures",
@@ -24727,7 +27219,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/678151248",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-biblioth-que-biologie-chimie-physique-recherche",
@@ -24765,7 +27264,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/678151249",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-scolarit-sorbonne-universit",
@@ -24819,7 +27325,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/678151250",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-maison-de-la-vie-tudiante",
@@ -24877,7 +27390,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/678151251",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-679726034",
@@ -24915,7 +27435,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/679726034",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-679726038",
@@ -24969,7 +27496,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/679726038",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-679726039",
@@ -25015,7 +27549,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/679726039",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-chaufferie",
@@ -25069,7 +27610,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/679726040",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-679726052",
@@ -25143,7 +27691,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/679726052",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-738931429",
@@ -25205,7 +27760,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/738931429",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-738931430",
@@ -25263,7 +27825,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/738931430",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-738931431",
@@ -25317,7 +27886,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/738931431",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-biblioth-que-des-licences-1",
@@ -25359,7 +27935,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/913102977",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-university-977083592",
@@ -25421,7 +28004,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/977083592",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-baleine",
@@ -25515,7 +28105,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1025365550",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-laboratoire-d-henri-becquerel",
@@ -25577,7 +28174,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1083974672",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-1201078817",
@@ -25615,7 +28219,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1201078817",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-1214752650",
@@ -25657,7 +28268,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1214752650",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-cit-de-l-innovation",
@@ -25715,7 +28333,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1308809986",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-outbuilding-1312382638",
@@ -25753,7 +28378,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1312382638",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-1366699832",
@@ -25791,7 +28423,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1366699832",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-guardhouse-1366699839",
@@ -25837,7 +28476,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1366699839",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-1370300947",
@@ -25875,7 +28521,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1370300947",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-1370300948",
@@ -25913,7 +28566,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1370300948",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-roof-1372203223",
@@ -25967,7 +28627,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1372203223",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-1447668245",
@@ -26013,7 +28680,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1447668245",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-1477765822",
@@ -26051,7 +28725,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1477765822",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "sorbonne-b-timent-1477765823",
@@ -26089,7 +28770,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1477765823",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

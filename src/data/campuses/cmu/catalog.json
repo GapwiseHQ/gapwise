@@ -22,7 +22,7 @@
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
       "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
-      "attribution": "\u00a9 OpenStreetMap contributors"
+      "attribution": "© OpenStreetMap contributors"
     }
   ],
   "buildings": [
@@ -194,7 +194,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27549961",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-scaife-hall",
@@ -256,7 +263,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27550292",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-hamerschlag-hall",
@@ -378,7 +392,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27551077",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-wean-hall",
@@ -548,7 +569,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27551364",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-newell-simon-hall",
@@ -638,7 +666,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27551590",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-hunt-library",
@@ -680,7 +715,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27574204",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-east-campus-garage",
@@ -766,7 +808,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27574237",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-cohon-university-center",
@@ -1024,7 +1073,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27574394",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-purnell-center-for-the-arts",
@@ -1158,7 +1214,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27574406",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-doherty-hall",
@@ -1300,7 +1363,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27574545",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-warner-hall",
@@ -1342,7 +1412,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27574704",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-cyert-hall",
@@ -1460,7 +1537,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27574718",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-roberts-engineering-hall",
@@ -1550,7 +1634,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27590641",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-baker-hall",
@@ -1748,7 +1839,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27590907",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-facilities-management-services-building",
@@ -1846,7 +1944,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27590940",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-collaborative-innovation-center",
@@ -1924,7 +2029,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591069",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-hamburg-hall",
@@ -2050,7 +2162,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591096",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-smith-hall",
@@ -2092,7 +2211,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591104",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-college-of-fine-arts",
@@ -2146,7 +2272,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591225",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-posner-hall",
@@ -2216,7 +2349,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591241",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-margaret-morrison-carnegie-hall",
@@ -2410,7 +2550,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591314",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-donner-house",
@@ -2496,7 +2643,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591346",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-west-wing",
@@ -2566,7 +2720,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591351",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-resnik-house",
@@ -2728,7 +2889,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591352",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-boss-house",
@@ -2774,7 +2942,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591450",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-mcgill-house",
@@ -2820,7 +2995,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591456",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-hamerschlag-house",
@@ -2914,7 +3096,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591466",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-scobell-house",
@@ -2952,7 +3141,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591482",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-welch-house",
@@ -2990,7 +3186,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591484",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-henderson-house",
@@ -3028,7 +3231,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591488",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-spirit-house",
@@ -3066,7 +3276,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591497",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-10-roselawn-terrace",
@@ -3104,7 +3321,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591588",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-delta-tau-delta-house",
@@ -3142,7 +3366,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591621",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-disability-resources",
@@ -3180,7 +3411,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591646",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-margaret-morrison-apartments",
@@ -3218,7 +3456,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591681",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-stever-house",
@@ -3348,7 +3593,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591700",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-mudge-house-c-building",
@@ -3406,7 +3658,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591702",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-mudge-house-a-building",
@@ -3520,7 +3779,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591703",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-mudge-house-b-building",
@@ -3578,7 +3844,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27591706",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-gates-and-hillman-centers",
@@ -3808,7 +4081,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27623372",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1063-morewood-avenue",
@@ -3894,7 +4174,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27630030",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-alumni-house",
@@ -3940,7 +4227,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27630034",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1094-devon",
@@ -3978,7 +4272,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27643505",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-bramer-house",
@@ -4024,7 +4325,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/27643509",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-carnegie-museum-of-art",
@@ -4138,7 +4446,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/31899525",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-300-south-craig-street",
@@ -4196,7 +4511,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/34262288",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-pnc-bank",
@@ -4238,7 +4560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/34264357",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-311-south-craig-street",
@@ -4280,7 +4609,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/44156182",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-4609-winthrop-st",
@@ -4318,7 +4654,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/44156183",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-information-networking-institute",
@@ -4356,7 +4699,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/44156184",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-carnegie-mellon-university",
@@ -4406,7 +4756,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/44157443",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-center-for-technology-transfer-and-enterprise-creation",
@@ -4476,7 +4833,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/44157444",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-holy-spirit-byzantine-catholic-church",
@@ -4538,7 +4902,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/118675283",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-holy-spirit-byzantine-church",
@@ -4664,7 +5035,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/118675284",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-bao-cmu",
@@ -4730,7 +5108,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/121054817",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-fairfax-apartments",
@@ -4804,7 +5189,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/152567349",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-craig-hall",
@@ -4842,7 +5234,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/154387896",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-rodef-shalom-congregation",
@@ -5036,7 +5435,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/158307506",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-5000-fifth-avenue",
@@ -5130,7 +5536,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166499085",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-warwick-plaza",
@@ -5204,7 +5617,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166507535",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-5025-fifth-avenue",
@@ -5290,7 +5710,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166507536",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-825-morewood-avenue",
@@ -5424,7 +5851,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166507537",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-5120-fifth-avenue",
@@ -5494,7 +5928,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166852448",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-park-plaza",
@@ -5604,7 +6045,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/167498538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-university-square",
@@ -5726,7 +6174,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/167499007",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-chipotle",
@@ -5768,7 +6223,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/171843174",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-5030-fifth-avenue",
@@ -5882,7 +6344,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/172171273",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-5100-fifth-avenue",
@@ -5984,7 +6453,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/172290635",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-203-south-craig-street",
@@ -6022,7 +6498,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/172658859",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-pepper-space",
@@ -6060,7 +6543,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/172658860",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-joseph-stern-building",
@@ -6102,7 +6592,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/172661098",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-411-south-craig-street",
@@ -6144,7 +6641,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/172662340",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-union-grill",
@@ -6186,7 +6690,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/172662341",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-205-south-craig-street",
@@ -6224,16 +6735,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/172944549",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-cr-pes-parisiennes",
-      "name": "Cr\u00eapes Parisiennes",
+      "name": "Crêpes Parisiennes",
       "nativeCodes": [
         "CPP"
       ],
       "aliases": [
-        "Cr\u00eapes Parisiennes"
+        "Crêpes Parisiennes"
       ],
       "category": "facility",
       "geometry": {
@@ -6266,7 +6784,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/173057615",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-209-south-craig-street",
@@ -6304,7 +6829,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/173057616",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-211-south-craig-street",
@@ -6342,7 +6874,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/173057617",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-michael-j-feigel-dmd-llc",
@@ -6380,7 +6919,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/173057618",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-201-south-craig-street",
@@ -6418,7 +6964,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/173057992",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-subway",
@@ -6456,7 +7009,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/272917029",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-bellefield-boiler-plant",
@@ -6530,7 +7090,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/302715370",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-bld-543159680",
@@ -6620,7 +7187,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/543159680",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-4620-henry-street",
@@ -6658,7 +7232,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/543159704",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-pittsburgh-golf-club",
@@ -6776,7 +7357,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544173624",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-bld-544173665",
@@ -6862,7 +7450,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544173665",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-b2",
@@ -6900,7 +7495,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174062",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-b3",
@@ -6938,7 +7540,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174129",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-b1",
@@ -6976,7 +7585,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174491",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-park-mansions",
@@ -7062,7 +7678,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174646",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1008-devonshire-road",
@@ -7100,7 +7723,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174649",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1033-devonshire-road",
@@ -7146,7 +7776,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174651",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1030-devonshire-road",
@@ -7200,7 +7837,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174653",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1019-devonshire-road",
@@ -7246,7 +7890,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174655",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1016-devonshire-road",
@@ -7300,7 +7951,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174660",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1020-devonshire-road",
@@ -7354,7 +8012,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174662",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-alumni-hall",
@@ -7440,7 +8105,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174664",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1021-devonshire-road",
@@ -7494,7 +8166,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174666",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1011-devonshire-road",
@@ -7540,7 +8219,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174667",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1026-devonshire-road",
@@ -7586,7 +8272,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174668",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-1004-devonshire-road",
@@ -7624,7 +8317,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174669",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-central-catholic-high-school",
@@ -8014,7 +8714,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174671",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-the-brother-s-house",
@@ -8408,7 +9115,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174672",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-wqed",
@@ -8590,7 +9304,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174673",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-morewood-gardens",
@@ -8844,7 +9565,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/544174675",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-mansions-on-fifth-hotel",
@@ -8890,7 +9618,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/545280741",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-617-north-neville-street",
@@ -8944,7 +9679,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/545283419",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-fifth-neville-apartments",
@@ -8990,7 +9732,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/545283450",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-campus-design-and-facility-development",
@@ -9044,7 +9793,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/545283494",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-tepper-school-of-business",
@@ -9182,7 +9938,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/583510520",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-residence-on-fifth",
@@ -9220,7 +9983,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/739910512",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-forbes-craig-apartments",
@@ -9266,7 +10036,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/810153981",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-420-south-craig-street",
@@ -9316,7 +10093,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/853372508",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-zupanic-family-stem-center",
@@ -9454,7 +10238,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/879491687",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-tcs-hall",
@@ -9552,7 +10343,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/946491335",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-tartans-pavilion",
@@ -9650,7 +10448,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1000419332",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-ansys-hall",
@@ -9752,7 +10557,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1001941217",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-morewood-e-tower",
@@ -9850,7 +10662,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1002531075",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-hall-of-the-arts",
@@ -9944,7 +10763,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1002857138",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-fifth-and-clyde-residence-hall",
@@ -10046,7 +10872,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1007453778",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-seoul-mart",
@@ -10084,7 +10917,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1010489527",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-highmark-center",
@@ -10146,7 +10986,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1039908831",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-forbes-beeler-apartments",
@@ -10280,7 +11127,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1203786280",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-starbucks",
@@ -10318,7 +11172,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1306720931",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "cmu-scott-hall",
@@ -10384,7 +11245,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1444791398",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

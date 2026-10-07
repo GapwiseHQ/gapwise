@@ -66,9 +66,22 @@ describe("North American calendar import", () => {
   test("every university in the directory now has a registered production adapter or honest planned status", () => {
     const universities = supportedUniversities();
     expect(universities.length).toBeGreaterThanOrEqual(28);
+    const plannedUniversities = new Set([
+      "sorbonne",
+      "oxford",
+      "cambridge",
+      "imperial",
+      "ethz",
+      "caltech",
+      "jhu",
+      "epfl",
+      "ucl",
+      "utokyo",
+      "tsinghua",
+    ]);
     for (const university of universities) {
       if (university.timetableAdapter === "planned") {
-        expect(university.id).toBe("sorbonne");
+        expect(plannedUniversities.has(university.id)).toBe(true);
       } else {
         expect(timetableAdapters[university.timetableAdapter]).toBeDefined();
       }

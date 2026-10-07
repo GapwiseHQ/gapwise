@@ -22,7 +22,7 @@
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
       "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
-      "attribution": "\u00a9 OpenStreetMap contributors"
+      "attribution": "© OpenStreetMap contributors"
     }
   ],
   "buildings": [
@@ -66,7 +66,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119117",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-solomon-lab",
@@ -112,7 +119,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119145",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-university-of-pennsylvania-graduate-school-of-education",
@@ -166,7 +180,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119148",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-stiteler-hall",
@@ -220,7 +241,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119156",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-lauder-fischer-hall",
@@ -282,7 +310,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119197",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-mcneil-building",
@@ -320,7 +355,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119217",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-vance-hall",
@@ -382,7 +424,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119255",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-class-of-1920-commons",
@@ -480,7 +529,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119269",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-john-m-huntsman-hall",
@@ -570,7 +626,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119282",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-jaffe-building",
@@ -640,7 +703,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119492",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-meyerson-hall",
@@ -710,7 +780,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119587",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-morgan",
@@ -748,7 +825,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119604",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-lerner-center",
@@ -826,7 +910,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119619",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-fisher-bennett-hall",
@@ -896,7 +987,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32119894",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-van-pelt-library",
@@ -978,7 +1076,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32120084",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-wistar-institute",
@@ -1096,7 +1201,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32120133",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-harold-c-mayer-residence-hall",
@@ -1134,7 +1246,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32120147",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-chemistry-laboratories-1973-wing",
@@ -1248,7 +1367,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32120653",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-department-of-earth-and-environmental-science",
@@ -1322,7 +1448,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32120655",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-leidy-laboratories",
@@ -1400,7 +1533,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32120762",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-stephan-l-lavin-building",
@@ -1446,7 +1586,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32120797",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-blockley-hall",
@@ -1484,7 +1631,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32120802",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-university-square",
@@ -1702,7 +1856,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32120942",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-annenberg-center-for-the-performing-arts",
@@ -1836,7 +1997,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32120984",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-annenberg-school-of-communication",
@@ -1922,7 +2090,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32122150",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-charles-addams-fine-arts-hall",
@@ -1976,7 +2151,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32122153",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-locust-house",
@@ -2014,7 +2196,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32122179",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-colonial-penn-center",
@@ -2052,7 +2241,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32122180",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-133-south-36th-street",
@@ -2098,7 +2294,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32134333",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-franklin-building",
@@ -2168,7 +2371,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32134368",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-franklin-building-annex",
@@ -2206,7 +2416,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32134448",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-mcneil-center",
@@ -2276,7 +2493,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/32134555",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-pottruck-health-and-fitness-center",
@@ -2366,7 +2590,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/35918075",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-perelman-center-for-advanced-medicine",
@@ -2488,7 +2719,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/50033009",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-children-s-seashore-house-of-chop",
@@ -2554,7 +2792,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/50033024",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-veterans-affairs-medical-centre",
@@ -2724,7 +2969,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/50033039",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-clinical-research-building",
@@ -2798,7 +3050,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/50033057",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-college-hall",
@@ -2980,7 +3239,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51367353",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-claudia-cohen-hall",
@@ -3034,7 +3300,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51367397",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-annenberg-public-policy-center",
@@ -3072,7 +3345,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51367456",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-hamilton-court",
@@ -3278,7 +3558,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51367576",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-santander",
@@ -3337,7 +3624,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51367698",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-king-s-court",
@@ -3375,7 +3669,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51368103",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-houston-hall",
@@ -3481,7 +3782,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51469194",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-irvine-auditorium",
@@ -3603,7 +3911,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51469206",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-220-south-34th-street",
@@ -3729,7 +4044,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51469213",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-williams-hall",
@@ -3807,7 +4129,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51469263",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-towne-building",
@@ -3917,7 +4246,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51469413",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-david-rittenhouse-laboratories",
@@ -4007,7 +4343,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51469420",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-penn-museum-garage",
@@ -4077,7 +4420,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51469576",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-sweeten-alumni-building",
@@ -4115,7 +4465,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51469683",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-the-arch",
@@ -4161,7 +4518,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51469685",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-steinberg-dietrich-hall",
@@ -4343,7 +4707,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/51469702",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-penn-medicine",
@@ -4401,7 +4772,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/55178418",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-hill-pavillion",
@@ -4487,7 +4865,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/59435617",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-stouffer-commons",
@@ -4665,7 +5050,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/59435701",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-caneris-hall",
@@ -4719,7 +5111,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/59848424",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-rush-building",
@@ -4817,7 +5216,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/59848434",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-daskalakis-athletic-centre",
@@ -4931,7 +5337,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/60185845",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-weightman-hall",
@@ -5009,7 +5422,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/85321676",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-dunning-coaches-center",
@@ -5047,7 +5467,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/85321677",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-university-meeting-and-guesthouse",
@@ -5101,7 +5528,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/99959790",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-president-s-house",
@@ -5155,7 +5589,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/99959791",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-disque-hall",
@@ -5237,7 +5678,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/100400089",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-korman-center",
@@ -5323,7 +5771,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/100400090",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-stratton-hall",
@@ -5397,7 +5852,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/100400095",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-university-crossings",
@@ -5467,7 +5929,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/121319044",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-the-armory",
@@ -5509,7 +5978,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/121319047",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-nesbit-hall",
@@ -5655,7 +6131,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/121319052",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-pearlstein-business-learning-center",
@@ -5729,7 +6212,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/121319300",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-w-w-hagerty-library",
@@ -5787,7 +6277,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/121319301",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-the-study-at-university-city",
@@ -5829,7 +6326,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/121319307",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-drexel-lot-g",
@@ -5875,7 +6379,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/121319308",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-main-building",
@@ -5949,7 +6460,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/121319309",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-papadakis-integrated-sciences-building",
@@ -6079,7 +6597,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/143300264",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-harnwell-college-house",
@@ -6169,7 +6694,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/156649525",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-verizon-building",
@@ -6227,7 +6759,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/156651243",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-graduate-student-center",
@@ -6265,7 +6804,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/164655921",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3619-locust-walk",
@@ -6335,7 +6881,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/164655925",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-skirkanich-hall",
@@ -6418,7 +6971,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190322376",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-carolyn-lynch-labs",
@@ -6492,7 +7052,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190327560",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-curie-garage",
@@ -6550,7 +7117,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190327564",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-250-south-36th-street",
@@ -6652,7 +7226,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190327580",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-fagin-hall",
@@ -6714,7 +7295,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190327582",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-the-consortium",
@@ -6784,7 +7372,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190327584",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-goddard-richards-laboratories",
@@ -7114,7 +7709,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190327591",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3537-locust-walk",
@@ -7168,7 +7770,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190327602",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-stellar-chance-labs",
@@ -7218,7 +7827,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190327604",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-biomedical-research-building-ii-iii",
@@ -7360,7 +7976,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190332257",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-119-north-38th-street",
@@ -7422,7 +8045,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/190511111",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-perry-world-house",
@@ -7492,7 +8122,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/191305130",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-fox-fels-hall",
@@ -7618,7 +8255,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/191305134",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-sigma-chi-fraternity",
@@ -7676,7 +8320,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/191305135",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-kelly-writers-house",
@@ -7734,7 +8385,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/191305136",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-hillel",
@@ -7816,7 +8474,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/191305139",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-gerri-c-lebow-hall",
@@ -7922,7 +8587,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/211161714",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-mandell-theatre",
@@ -8016,7 +8688,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/211270270",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-macalister-hall",
@@ -8066,7 +8745,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/211270271",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-creese-student-center",
@@ -8108,7 +8794,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/211270272",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-paul-peck-alumni-center",
@@ -8154,7 +8847,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/217349519",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-gateway-garden",
@@ -8212,7 +8912,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/255683888",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-drexel-university-school-of-law",
@@ -8282,7 +8989,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/255683907",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-chestnut-square",
@@ -8336,7 +9050,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264253258",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-bld-264253351",
@@ -8394,7 +9115,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264253351",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-the-summit-at-university-city",
@@ -8484,7 +9212,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264254185",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-urbn-center",
@@ -8526,7 +9261,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264256714",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3401-market-street",
@@ -8572,7 +9314,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264256715",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-ralston-house",
@@ -8646,7 +9395,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264353073",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-penn-center-for-rehabilitation-and-care",
@@ -8724,7 +9480,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264353074",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-sheraton-philadelphia-university-city-hotel",
@@ -8826,7 +9589,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264353350",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-the-axis",
@@ -8880,7 +9650,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264353351",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-university-lutheran-church",
@@ -8982,7 +9759,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264353553",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-domus",
@@ -9228,7 +10012,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264354277",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-lot-37",
@@ -9282,7 +10073,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/264354467",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-anatomy-chemistry",
@@ -9400,7 +10198,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/297391713",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-john-morgan",
@@ -9530,7 +10335,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/297391714",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-memorial-tower",
@@ -9592,7 +10404,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602388",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-mckean",
@@ -9678,7 +10497,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602389",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-baldwin",
@@ -9732,7 +10558,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602390",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-bld-320602391",
@@ -9778,7 +10611,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602391",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-foerderer",
@@ -9840,7 +10680,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602392",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-franklin",
@@ -9878,7 +10725,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602393",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-leidy",
@@ -9916,7 +10770,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602394",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-brooks",
@@ -9954,7 +10815,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602395",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-class-of-28",
@@ -9992,7 +10860,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602396",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-speakman",
@@ -10066,7 +10941,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602397",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-butcher",
@@ -10132,7 +11014,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602398",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-chestnut",
@@ -10194,7 +11083,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602399",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-ward",
@@ -10272,7 +11168,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602400",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-new-york-alumni",
@@ -10310,7 +11213,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602401",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-carruth",
@@ -10348,7 +11258,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602402",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-craig",
@@ -10414,7 +11331,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602403",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-baird",
@@ -10452,7 +11376,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602404",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-fitler",
@@ -10490,7 +11421,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602405",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-hopkinson",
@@ -10528,7 +11466,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602406",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-smith",
@@ -10566,7 +11511,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602407",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-lippincott",
@@ -10608,7 +11560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602408",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-bld-320602409",
@@ -10666,7 +11625,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602409",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-wilson",
@@ -10720,7 +11686,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602410",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-e-f-smith",
@@ -10758,7 +11731,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602411",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-coxe",
@@ -10796,7 +11776,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602412",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-rodney",
@@ -10854,7 +11841,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602413",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-bishop-white",
@@ -10892,7 +11886,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602414",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-ashhurst",
@@ -10958,7 +11959,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602415",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-magee",
@@ -11012,7 +12020,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602416",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-cleemann",
@@ -11054,7 +12069,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602417",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-morris",
@@ -11100,7 +12122,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602418",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-bodine",
@@ -11158,7 +12187,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602419",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-mcclelland",
@@ -11208,7 +12244,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602420",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-warwick",
@@ -11246,7 +12289,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602421",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-mcilhenney",
@@ -11296,7 +12346,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602422",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-thomas-penn",
@@ -11354,7 +12411,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602423",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-provost-tower",
@@ -11412,7 +12476,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602424",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-graduate",
@@ -11474,7 +12545,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602425",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-mask-wig",
@@ -11536,7 +12614,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602426",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-birthday",
@@ -11578,7 +12663,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320602427",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-stouffer-college-house",
@@ -11660,7 +12752,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320605203",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-zeta-psi",
@@ -11766,7 +12865,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320607294",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-krishna-p-singh-center-for-nanotechnology",
@@ -11876,7 +12982,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/328748298",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-laboratory-for-research-on-the-structure-of-matter-lrsm",
@@ -11938,7 +13051,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/328748538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-saints-agatha-and-james-catholic-church",
@@ -12040,7 +13160,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/330138963",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-the-chestnut",
@@ -12082,7 +13209,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/330138964",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-moore-school-building",
@@ -12144,7 +13278,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/330138972",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3535-market-street",
@@ -12182,7 +13323,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/333367712",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3600-market-street",
@@ -12232,7 +13380,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/333367713",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3550-market-street",
@@ -12286,7 +13441,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/333367714",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3624-market-street",
@@ -12352,7 +13514,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/333367715",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3701-market-street",
@@ -12406,7 +13575,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/333367716",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3711-market-street",
@@ -12484,7 +13660,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/333367722",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-handschumacher-dining-center",
@@ -12570,7 +13753,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/335523309",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-tanenbaum-hall",
@@ -12616,7 +13806,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/335523311",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3401-walnut-street",
@@ -12794,7 +13991,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/335523312",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3817-market-street",
@@ -12880,7 +14084,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/337844714",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-medical-arts-building",
@@ -13006,7 +14217,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/337844721",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-penn-drexel-newman-center",
@@ -13068,7 +14286,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/345137090",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-urbn-annex",
@@ -13142,7 +14367,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/349279304",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3750-market-street",
@@ -13268,7 +14500,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/349279315",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-sansom-place-west",
@@ -13362,7 +14601,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/349279319",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3728-chestnut-street",
@@ -13408,7 +14654,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/349279322",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-sansom-place-east",
@@ -13538,7 +14791,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/350146072",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-arrive-university-city",
@@ -13624,7 +14884,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/350146085",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-119-south-39th-street",
@@ -13786,7 +15053,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/350187730",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-avril-50",
@@ -13832,7 +15106,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/369570963",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-masala-kitchen",
@@ -13878,7 +15159,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/369570964",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-doc-magrogan-s",
@@ -13940,7 +15228,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/369570965",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-white-dog-cafe",
@@ -13978,7 +15273,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/369570967",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3426-sansom-street",
@@ -14016,7 +15318,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/369570968",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-new-deck-tavern",
@@ -14070,7 +15379,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/369570970",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3428-sansom-street",
@@ -14116,7 +15432,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/369570972",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3831-walnut-street",
@@ -14258,7 +15581,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/520723130",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3827-walnut-street",
@@ -14336,7 +15666,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/520723131",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3821-walnut-street",
@@ -14422,7 +15759,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/520723132",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3817-walnut-street",
@@ -14516,7 +15860,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/520723133",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3813-walnut-street",
@@ -14594,7 +15945,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/520723134",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3809-walnut-street",
@@ -14676,7 +16034,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/520723135",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3805-walnut-street",
@@ -14766,7 +16131,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/520723136",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-richard-d-wood-pediatric-ambulatory-care-center",
@@ -14832,7 +16204,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/556111426",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3737-chestnut-street",
@@ -14926,7 +16305,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/563127593",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-weiss-pavillion",
@@ -15056,7 +16442,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/624597559",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-lauder-college-house",
@@ -15274,7 +16667,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/708554934",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-spruce-garage",
@@ -15344,7 +16744,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/748793572",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-international-house",
@@ -15414,7 +16821,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/748796996",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-st-leonard-s-complex",
@@ -15512,7 +16926,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/748796998",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3701-chestnut-street",
@@ -15558,7 +16979,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/748797003",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3675-market-street",
@@ -15620,7 +17048,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/748882619",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-the-pavilion-at-penn-medicine",
@@ -15770,7 +17205,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/749302010",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-the-palestra",
@@ -15816,7 +17258,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/749686510",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-graduate-research-wing",
@@ -15862,7 +17311,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/749686513",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-tse-and-cheng-sports-center",
@@ -15944,7 +17400,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/749686520",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-perelman-center-for-political-science-economics",
@@ -15982,7 +17445,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/749695309",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-silverman-hall",
@@ -16064,7 +17534,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/749918533",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-monell-chemical-senses-center",
@@ -16102,7 +17579,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/749918536",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-english-college-house",
@@ -16148,7 +17632,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/749918537",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-gittis-hall",
@@ -16246,7 +17737,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/749918538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-golkin-hall",
@@ -16340,7 +17838,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/749918539",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-science-center",
@@ -16378,7 +17883,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/749918540",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-drexel-life-sciences-building",
@@ -16416,7 +17928,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1209918094",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-cyclotron",
@@ -16454,7 +17973,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1210674817",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-philadelphia-episcopal-cathedral",
@@ -16544,7 +18070,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1214663335",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-stephanie-liem-azar-cathedral-center",
@@ -16646,7 +18179,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1214663336",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3717-chestnut-street",
@@ -16708,7 +18248,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1214663337",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-3721-chestnut-street",
@@ -16758,7 +18305,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1214663338",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-amy-gutmann-hall",
@@ -16856,7 +18410,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1315831054",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-bld-1355392239",
@@ -16922,7 +18483,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1355392239",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-roy-and-diana-vagelos-laboratories-of-the-iast",
@@ -17016,7 +18584,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1356813142",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-chemistry-building-1958-wing",
@@ -17094,7 +18669,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1356813143",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-chemistry-laboratories-1941-wing",
@@ -17176,7 +18758,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1356813144",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-vagelos-laboratory-for-energy-science-and-technology",
@@ -17226,7 +18815,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1461258176",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-albert-m-greenfield-intercultural-center",
@@ -17312,7 +18908,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1484379727",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-arlen-specter-us-squash-center",
@@ -17354,7 +18957,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1498381023",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "upenn-the-mark",
@@ -17392,7 +19002,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1553981580",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

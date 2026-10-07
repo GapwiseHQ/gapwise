@@ -22,7 +22,7 @@
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
       "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
-      "attribution": "\u00a9 OpenStreetMap contributors"
+      "attribution": "© OpenStreetMap contributors"
     }
   ],
   "buildings": [
@@ -158,7 +158,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141129271",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-freeway-garage",
@@ -212,7 +219,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141535724",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-banigan-building",
@@ -314,7 +328,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141535751",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-somain-1",
@@ -352,7 +373,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141567726",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-metcalf-building",
@@ -442,7 +470,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141567727",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-bayard-ewing-building-risd-architecture-building",
@@ -480,7 +515,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141567732",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-the-packet-building",
@@ -542,7 +584,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141567737",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-washington-place",
@@ -580,7 +629,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141567739",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-college-building",
@@ -718,7 +774,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141567740",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-market-house",
@@ -772,7 +835,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141567764",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-george-corlis-house",
@@ -826,7 +896,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141567769",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-auditorium-building",
@@ -868,7 +945,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141567770",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-industrial-design-building",
@@ -922,7 +1006,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141567774",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-121-south-main-street",
@@ -980,7 +1071,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/141567777",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-state-arsenal",
@@ -1042,7 +1140,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009341",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-244-bowen-street",
@@ -1080,7 +1185,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009347",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-112-benefit-street",
@@ -1118,7 +1230,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009355",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hiram-hill-house",
@@ -1220,7 +1339,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009356",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-190-angell-street",
@@ -1266,7 +1392,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009365",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-94-meeting-street",
@@ -1304,7 +1437,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009373",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-101-benefit-street",
@@ -1342,7 +1482,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009380",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-91-prospect-street",
@@ -1380,7 +1527,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009393",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-university-club",
@@ -1566,7 +1720,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009398",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-122-benefit-street",
@@ -1628,7 +1789,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009409",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-62-meeting-street",
@@ -1666,7 +1834,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009411",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-248-bowen-street",
@@ -1720,7 +1895,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009427",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-118-benefit-street",
@@ -1774,7 +1956,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009429",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-76-prospect-street",
@@ -1812,7 +2001,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009436",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-153-bowen-street",
@@ -1850,7 +2046,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009444",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-13-cushing-street",
@@ -1896,7 +2099,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009445",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-28-south-court-street",
@@ -1942,7 +2152,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009450",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-151-pratt-avenue",
@@ -1980,7 +2197,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009452",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-john-greene-and-russell-potter-house",
@@ -2018,7 +2242,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009463",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-251-bowen-street",
@@ -2120,7 +2351,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009472",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-38-cushing-street",
@@ -2158,7 +2396,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009504",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-samuel-william-foster-house",
@@ -2244,7 +2489,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009516",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-30-congdon-street",
@@ -2282,7 +2534,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009524",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-la-creperie",
@@ -2328,7 +2587,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009526",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-25-south-court-street",
@@ -2382,7 +2648,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009535",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-195-angell-street",
@@ -2420,7 +2693,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009537",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-247-bowen-street",
@@ -2530,7 +2810,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009544",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-110-benefit-street",
@@ -2604,7 +2891,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009552",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-129-benefit-street",
@@ -2682,7 +2976,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009555",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-100-meeting-street",
@@ -2720,7 +3021,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009573",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-165-pratt-avenue",
@@ -2782,7 +3090,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009577",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-asa-w-armington-house",
@@ -2900,7 +3215,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009583",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-congdon-house",
@@ -2962,7 +3284,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009585",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-71-bowen-street",
@@ -3004,7 +3333,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009591",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-samuel-slocum-house",
@@ -3106,7 +3442,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009594",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-131-133-brown-street",
@@ -3168,7 +3511,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009606",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-lucius-horton-house",
@@ -3206,7 +3556,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009617",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-129-brown-street",
@@ -3244,7 +3601,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009618",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-169-pratt-avenue",
@@ -3306,7 +3670,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009627",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-252-bowen-street",
@@ -3344,7 +3715,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009661",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-macfarlane-house",
@@ -3390,7 +3768,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009662",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-north-house",
@@ -3484,7 +3869,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009670",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-85-87-congdon-street",
@@ -3522,7 +3914,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009674",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-125-benefit-street",
@@ -3560,7 +3959,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009689",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-188-bowen-street",
@@ -3614,7 +4020,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009704",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-106-benefit-street",
@@ -3652,7 +4065,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009712",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-sciences-library",
@@ -3786,7 +4206,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009729",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-charles-e-tillinghast-house",
@@ -3872,7 +4299,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009738",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-196-bowen-street",
@@ -3910,7 +4344,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009742",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-190-192-bowen-street",
@@ -3948,7 +4389,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009755",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-76-congdon-street",
@@ -4026,7 +4474,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009771",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-21-euclid-avenue",
@@ -4096,7 +4551,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009772",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-224-bowen-street",
@@ -4134,7 +4596,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009778",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-204-bowen-street",
@@ -4172,7 +4641,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009796",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-119-benefit-street",
@@ -4242,7 +4718,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009804",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-240-bowen-street",
@@ -4288,7 +4771,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009814",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-109-benefit-street",
@@ -4326,7 +4816,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009823",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-154-cushing-street",
@@ -4364,7 +4861,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009829",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-214-bowen-street",
@@ -4402,7 +4906,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009838",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-risd-admissions-office",
@@ -4456,7 +4967,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009841",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-94-congdon-street",
@@ -4494,7 +5012,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009854",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-17-19-21-23-south-court-street",
@@ -4532,7 +5057,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009872",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-109a-bowen-street",
@@ -4570,7 +5102,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009890",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-72-prospect-street",
@@ -4616,7 +5155,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009905",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-88-congdon-street",
@@ -4654,7 +5200,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009911",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-234-bowen-street",
@@ -4692,7 +5245,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009938",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-24-south-court-street",
@@ -4730,7 +5290,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009950",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-188-pratt-avenue",
@@ -4768,7 +5335,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009951",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-sturgis-carpenter-house",
@@ -4894,7 +5468,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009960",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-166-cushing-street",
@@ -4932,7 +5513,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009965",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-90-congdon-street",
@@ -4970,7 +5558,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009966",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-132-benefit-street",
@@ -5040,7 +5635,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009967",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-115-benefit-street",
@@ -5098,7 +5700,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009973",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-168-bowen-street",
@@ -5136,7 +5745,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009976",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-75-prospect-street",
@@ -5174,7 +5790,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009985",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-79-prospect-street",
@@ -5212,7 +5835,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142009995",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-147-bowen-street",
@@ -5250,7 +5880,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010000",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-38-congdon-street",
@@ -5288,7 +5925,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010008",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-104-bowen-street",
@@ -5326,7 +5970,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010016",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-10-cushing-street",
@@ -5364,7 +6015,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010018",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-136-benefit-street",
@@ -5402,7 +6060,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010025",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-8-cushing-street",
@@ -5440,7 +6105,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010037",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-caleb-roffee-house",
@@ -5522,7 +6194,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010039",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-456-brook-street",
@@ -5576,7 +6255,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010040",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-134-benefit-street",
@@ -5630,7 +6316,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010048",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-5-cushing-street",
@@ -5668,7 +6361,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010049",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-161-163-bowen-street",
@@ -5730,7 +6430,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010063",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-25-cushing-street",
@@ -5768,7 +6475,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010064",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-208-bowen-street",
@@ -5806,7 +6520,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010071",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-147-benefit-street",
@@ -5852,7 +6573,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010095",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-192-194-angell-street",
@@ -5898,7 +6626,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010096",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-the-old-court-bed-breakfast",
@@ -5936,7 +6671,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010103",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-93-benefit-street",
@@ -5974,7 +6716,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010110",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-135-benefit-street",
@@ -6012,7 +6761,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010112",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-198-angell-street",
@@ -6050,7 +6806,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010118",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-30-prospect-street",
@@ -6104,7 +6867,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010120",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-risd-president-s-house",
@@ -6166,7 +6936,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010121",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-2-cushing-street",
@@ -6228,7 +7005,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010125",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-dwight-house",
@@ -6282,7 +7066,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010134",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-134-brown-street",
@@ -6352,7 +7143,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010136",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-thomas-a-jenckes-house",
@@ -6438,7 +7236,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010143",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-58-meeting-street",
@@ -6476,7 +7281,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142010145",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-emery-hall",
@@ -6530,7 +7342,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142012536",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-colonial-apartments",
@@ -6600,7 +7419,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142012537",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-nickerson-hall",
@@ -6646,7 +7472,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142012542",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-morriss-hall",
@@ -6744,7 +7577,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142012543",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-andrews-hall",
@@ -6882,7 +7722,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142012547",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-john-d-rockefeller-jr-library",
@@ -6952,7 +7799,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142012560",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-smith-buonanno-hall",
@@ -7006,7 +7860,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142012564",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-south-hall",
@@ -7132,7 +7993,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142012568",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-alumnae-hall",
@@ -7258,7 +8126,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142012573",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-metcalf-refectory-the-met",
@@ -7332,7 +8207,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/142012578",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-watson-center-for-information-technology",
@@ -7378,7 +8260,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668941",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-salomon-center-for-teaching",
@@ -7508,7 +8397,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668943",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-university-hall",
@@ -7594,7 +8490,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668947",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-john-carter-brown-library",
@@ -7840,7 +8743,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668948",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-stephen-robert-62-campus-center",
@@ -8134,7 +9044,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668949",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-slater-hall",
@@ -8272,7 +9189,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668951",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-manning-hall",
@@ -8318,7 +9242,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668954",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hope-college",
@@ -8400,7 +9331,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668955",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-marston-hall",
@@ -8442,7 +9380,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668956",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-sayles-hall",
@@ -8796,7 +9741,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668957",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-friedman-hall",
@@ -8882,7 +9834,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668958",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-rhode-island-hall",
@@ -8972,7 +9931,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/166668959",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-lyman-hall",
@@ -9230,7 +10196,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/176918224",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-john-hay-library",
@@ -9324,7 +10297,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/176918225",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-bert",
@@ -9406,7 +10386,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/176918226",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-page-robinson-hall",
@@ -9540,7 +10527,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/176918227",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-maxcy-hall",
@@ -9590,7 +10584,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/176982304",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-littlefield-hall",
@@ -9664,7 +10665,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/176982305",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hegeman-hall",
@@ -9782,7 +10790,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/176982691",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-gardner-house",
@@ -9852,7 +10867,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/176982692",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-caswell-hall",
@@ -9982,7 +11004,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/176982693",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-lincoln-field-building",
@@ -10072,7 +11101,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/176982694",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-109-brown-street",
@@ -10110,7 +11146,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177011606",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-west-house",
@@ -10148,7 +11191,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177011607",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-pembroke-hall",
@@ -10210,7 +11260,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177011608",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-sidney-frank-hall",
@@ -10384,7 +11441,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177011609",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-brown-center-for-students-of-color",
@@ -10450,7 +11514,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016102",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-vartan-gregorian-quad-a",
@@ -10688,7 +11759,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016103",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-180-george",
@@ -10734,7 +11812,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016105",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-219-bowen",
@@ -10808,7 +11893,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016106",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-walter-hall",
@@ -10870,7 +11962,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016108",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-brown-university-department-of-modern-culture-and-media",
@@ -10944,7 +12043,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016110",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-129-angell-street",
@@ -11010,7 +12116,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016113",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-169-angell",
@@ -11096,7 +12209,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016116",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-engineering-research-center",
@@ -11202,7 +12322,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016118",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-barus-building",
@@ -11444,7 +12571,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016120",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-chapin-house",
@@ -11606,7 +12740,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016121",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-minden-hall",
@@ -11736,7 +12877,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016123",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-wayland",
@@ -11910,7 +13058,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016125",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-new-pembroke-3",
@@ -11980,7 +13135,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016127",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-arnold-lab",
@@ -12030,7 +13192,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016129",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-annmary-brown-memorial",
@@ -12104,7 +13273,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016133",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-68-1-2-brown-street",
@@ -12166,7 +13342,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016137",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-vartan-gregorian-quad-b",
@@ -12236,7 +13419,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016140",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-buxton-house",
@@ -12334,7 +13524,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016141",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-297-thayer-street",
@@ -12372,7 +13569,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016142",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-mencoff-hall",
@@ -12438,7 +13642,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016143",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-new-pembroke-2",
@@ -12492,7 +13703,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016144",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-164-angel",
@@ -12542,7 +13760,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016145",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-churchill-house",
@@ -12620,7 +13845,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016146",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-olney-house",
@@ -12786,7 +14018,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016147",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-127-angell-street",
@@ -12852,7 +14091,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016148",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-70-waterman-street",
@@ -12914,7 +14160,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016149",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hemisphere-building",
@@ -12952,7 +14205,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016150",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-sharpe-refectory",
@@ -13118,7 +14378,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016151",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-sears-house",
@@ -13296,7 +14563,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016153",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-andrews-house",
@@ -13778,7 +15052,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016154",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-metcalf-research-building",
@@ -14032,7 +15313,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016155",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hillel-house",
@@ -14182,7 +15470,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016157",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-new-pembroke-4",
@@ -14228,7 +15523,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016158",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-goddard",
@@ -14386,7 +15688,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016159",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-marcy-house",
@@ -14544,7 +15853,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016160",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-prince-engineering-lab",
@@ -14610,7 +15926,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016161",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-72-waterman-street",
@@ -14720,7 +16043,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016162",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-urban-environmental-lab",
@@ -14798,7 +16128,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016164",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-125-127-waterman-street",
@@ -14912,7 +16249,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016165",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-315-thayer-street",
@@ -15042,7 +16386,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016166",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-perry-and-marty-granoff-center-for-the-creative-arts",
@@ -15100,7 +16451,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016167",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-182-george",
@@ -15254,7 +16612,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016168",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-135-thayer-street",
@@ -15316,7 +16681,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016169",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-harkness-house",
@@ -15470,7 +16842,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016170",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-diman-house",
@@ -15652,7 +17031,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016171",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-robinson-hall",
@@ -15774,7 +17160,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016172",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-peter-green-house",
@@ -15904,7 +17297,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177016173",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-lippitt-house",
@@ -15958,7 +17358,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075290",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-grimshaw-gudewicz-biomedical-building",
@@ -16084,7 +17491,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075294",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-prospect-house",
@@ -16130,7 +17544,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075295",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-power-street-parking-structure",
@@ -16220,7 +17641,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075298",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-biomedical-center",
@@ -16298,7 +17726,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075299",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-graduate-center-e",
@@ -16612,7 +18047,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075302",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-the-center-for-the-study-of-slavery-and-justice-cssj",
@@ -16674,7 +18116,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075305",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-list-art-building",
@@ -16756,7 +18205,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075313",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-8-fones-alley",
@@ -16794,16 +18250,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075314",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-corliss-brackett-house",
-      "name": "Corliss\u2013Brackett House",
+      "name": "Corliss–Brackett House",
       "nativeCodes": [
         "CBH"
       ],
       "aliases": [
-        "Corliss\u2013Brackett House"
+        "Corliss–Brackett House"
       ],
       "category": "facility",
       "geometry": {
@@ -16916,7 +18379,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075324",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-59-charlesfield-street",
@@ -17010,7 +18480,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075425",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-watson-institute-for-international-studies",
@@ -17204,7 +18681,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177075426",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-281-benefit-street",
@@ -17250,7 +18734,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187101",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-first-unitarian-church-of-providence",
@@ -17316,7 +18807,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187103",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-5-7-charlesfield-street",
@@ -17366,7 +18864,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187104",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-maddock-alumni-center",
@@ -17456,7 +18961,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187106",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-perkins-hall",
@@ -17546,7 +19058,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187107",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-young-orchard-4",
@@ -17672,7 +19191,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187108",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hope-club",
@@ -17838,7 +19364,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187109",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-feinstein",
@@ -17896,7 +19429,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187110",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-candace-allen-house",
@@ -17982,7 +19522,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187111",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-dyer",
@@ -18084,7 +19631,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187112",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-107-benevolent-street",
@@ -18122,7 +19676,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187113",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-86-waterman",
@@ -18168,7 +19729,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187114",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-sarah-doyle-center-for-women-and-gender",
@@ -18242,7 +19810,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187116",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-young-orchard-2",
@@ -18532,7 +20107,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187117",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-steinert",
@@ -18574,7 +20156,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187119",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-37-george-street",
@@ -18616,7 +20205,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187120",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-13-charlesfield-street",
@@ -18678,7 +20274,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187121",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-67-george",
@@ -18764,7 +20367,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187123",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-orwig-music-hall",
@@ -18882,7 +20492,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187124",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-morrison-gerard-chamber-music-studios",
@@ -18940,7 +20557,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187125",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-108-110-charlesfield-street",
@@ -18978,7 +20602,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187128",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-309-benefit-street",
@@ -19040,7 +20671,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187129",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-19-21-george-street",
@@ -19086,7 +20724,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187130",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-t-f-green-hall",
@@ -19164,7 +20809,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187132",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-norwood-house",
@@ -19230,7 +20882,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187133",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-134-hope-street",
@@ -19276,7 +20935,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187134",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-shirley-miller-house",
@@ -19342,7 +21008,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187135",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-giddings-house",
@@ -19404,7 +21077,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187136",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-faculty-club",
@@ -19474,7 +21154,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187137",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-saint-stephens-church",
@@ -19680,7 +21367,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187138",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-swearer-center-for-public-service",
@@ -19726,7 +21420,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187139",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-horace-mann-house",
@@ -19780,7 +21481,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177187140",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-wilbour-hall",
@@ -19822,7 +21530,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/177342771",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-pembroke-field-house",
@@ -19868,7 +21583,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185020123",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-olney-margolies-athletic-center",
@@ -19926,7 +21648,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185020125",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-carrie-tower",
@@ -19976,7 +21705,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185021519",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-graduate-center-b",
@@ -20586,7 +22322,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185224051",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-graduate-center-c",
@@ -21204,7 +22947,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185224052",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-graduate-center-a",
@@ -21810,7 +23560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185224053",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-graduate-center-d",
@@ -22416,7 +24173,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185224055",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-nelson-center-for-entrepreneurship",
@@ -22502,7 +24266,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185225893",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-229-thayer-street",
@@ -22552,7 +24323,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185225896",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-272-thayer-street",
@@ -22606,7 +24384,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185225900",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-278-thayer-street",
@@ -22644,7 +24429,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185225902",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-cvs-pharmacy",
@@ -22698,7 +24490,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185225903",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-271-thayer-street",
@@ -22736,7 +24535,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185225906",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-kabob-and-curry",
@@ -22774,7 +24580,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185225909",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-267-thayer-street",
@@ -22816,7 +24629,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185225911",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-sneaker-junkies",
@@ -22854,7 +24674,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185226099",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-172-cushing-street",
@@ -22924,7 +24751,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185226341",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-old-state-house",
@@ -22998,7 +24832,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185226708",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-department-of-public-safety",
@@ -23088,7 +24929,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/185397432",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-211-hope-street",
@@ -23142,7 +24990,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/195508284",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-nelson-fitness-center",
@@ -23324,7 +25179,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/195508288",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-2-stimson-avenue",
@@ -23438,7 +25300,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/195508291",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-8-stimson-avenue",
@@ -23480,7 +25349,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/195508296",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-baker-house",
@@ -23526,7 +25402,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/195508301",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hamilton-house",
@@ -23604,7 +25487,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/195508314",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-central-congregational-church",
@@ -23682,7 +25572,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/195508315",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-metcalf-hall",
@@ -23804,7 +25701,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/199956415",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-miller-hall",
@@ -23894,7 +25798,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/199956416",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-king-house",
@@ -23948,7 +25859,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/231960662",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-104-benevolent-street",
@@ -24002,7 +25920,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/231960669",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-169-hope-street",
@@ -24056,7 +25981,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/231960704",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-brown-fox-point-early-childhood-education-center",
@@ -24098,7 +26030,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/231960736",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-the-fiering-house",
@@ -24172,7 +26111,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/231960766",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-madden-gymnasium-and-health-center",
@@ -24258,7 +26204,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257865343",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-fresh-air-building",
@@ -24324,7 +26277,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257865345",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-morgan-hall",
@@ -24390,7 +26350,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257865346",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hope-building",
@@ -24472,7 +26439,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257865347",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-prescott-library",
@@ -24558,7 +26532,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257865348",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-angell-hall",
@@ -24612,7 +26593,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257865349",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-wheeler-hall",
@@ -24662,7 +26650,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257865350",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-citizens-bank",
@@ -24708,7 +26703,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/257865358",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-223-thayer-street",
@@ -24754,7 +26756,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/267416918",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-candace-allen-carriage-house",
@@ -24796,7 +26805,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/309141961",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-john-brown-house-museum",
@@ -24898,7 +26914,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/309146529",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-gilder-center-for-the-arts",
@@ -24992,7 +27015,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/309584366",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-257-thayer-street",
@@ -25398,7 +27428,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/309585221",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-nulman-lewis-student-center",
@@ -25492,7 +27529,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/309593989",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-clark-alumni-house",
@@ -25602,7 +27646,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/309593990",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-the-hamilton-school-at-wheeler",
@@ -25696,7 +27747,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/309593991",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-campus-operations-center",
@@ -25734,7 +27792,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/309593992",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-the-wharton-p-whitaker-building",
@@ -25784,7 +27849,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/309594001",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-vendata-society-of-providence",
@@ -25866,7 +27938,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/309596490",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-president-s-house",
@@ -25940,7 +28019,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/312136334",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-126-waterman-street",
@@ -26014,7 +28100,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/316000763",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-124-waterman-street",
@@ -26112,7 +28205,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/316000769",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-new-pembroke-1",
@@ -26174,7 +28274,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/316171290",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-12-14-george-street",
@@ -26236,7 +28343,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326119730",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-athenaeum-row",
@@ -26350,7 +28464,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326119731",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-the-providence-athenaeum",
@@ -26436,7 +28557,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326119732",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-18-george-street",
@@ -26490,7 +28618,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326119734",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-14-charlesfield-street",
@@ -26536,7 +28671,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326121079",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-302-304-benefit-street",
@@ -26590,7 +28732,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138418",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-296-benefit-street",
@@ -26636,7 +28785,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138419",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-306-308-310-benefit-street",
@@ -26674,7 +28830,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138420",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-314-charlesfield-street",
@@ -26732,7 +28895,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138422",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-322-benefit-street",
@@ -26778,7 +28948,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138423",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-326-benefit-street",
@@ -26824,7 +29001,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138424",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-336-benefit-street",
@@ -26886,7 +29070,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138425",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-344-benefit-street",
@@ -26940,7 +29131,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138426",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-350-benefit-street",
@@ -26994,7 +29192,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138427",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-362-benefit-street",
@@ -27032,7 +29237,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138428",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-367-benefit-street",
@@ -27086,16 +29298,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138442",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-nightingale-brown-house",
-      "name": "Nightingale\u2013Brown House",
+      "name": "Nightingale–Brown House",
       "nativeCodes": [
         "NBH"
       ],
       "aliases": [
-        "Nightingale\u2013Brown House"
+        "Nightingale–Brown House"
       ],
       "category": "facility",
       "geometry": {
@@ -27264,7 +29483,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326138443",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-5-brown-street",
@@ -27354,7 +29580,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/326141314",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-owen-building",
@@ -27440,7 +29673,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/328466696",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-andrews-commons",
@@ -27502,7 +29742,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/340202391",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-german-department",
@@ -27620,7 +29867,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/340202442",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-150-south-main-street",
@@ -27666,7 +29920,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/342071695",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-69-power-street",
@@ -27720,7 +29981,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/349332875",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-cyrus-fisher-house",
@@ -27798,7 +30066,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/349332876",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-230-south-main-street",
@@ -27852,7 +30127,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/422316889",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-126-power-street",
@@ -27906,7 +30188,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/422316897",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-21-meeting-street",
@@ -27944,7 +30233,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/422410058",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-champlin-hall",
@@ -28018,7 +30314,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/424849429",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-woolley-hall",
@@ -28080,7 +30383,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/424849430",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-medical-research-lab",
@@ -28254,7 +30564,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/425352335",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-soldiers-memorial-gate",
@@ -28680,7 +30997,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/425352336",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-daniel-dailey-house",
@@ -28822,7 +31146,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/432381238",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-80-power-street",
@@ -28892,7 +31223,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/432381240",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-caleb-earle-house",
@@ -28986,7 +31324,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/432381268",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-279-benefit-street",
@@ -29040,7 +31385,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/482545385",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-280-benefit-street",
@@ -29078,7 +31430,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/482545386",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-274-276-benefit-street",
@@ -29148,7 +31507,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/482545387",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-fox-point-fire-station",
@@ -29186,7 +31552,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/494467190",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-52-54-john-street",
@@ -29224,7 +31597,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292719",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-56-john-street",
@@ -29262,7 +31642,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292720",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-58-60-john-street",
@@ -29308,7 +31695,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292721",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-66-john-street",
@@ -29346,7 +31740,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292722",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-68-john-street",
@@ -29392,7 +31793,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292723",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-72-john-street",
@@ -29430,7 +31838,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292724",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-74-john-street",
@@ -29476,7 +31891,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292726",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-76-john-street",
@@ -29522,7 +31944,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292727",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-dolores",
@@ -29560,7 +31989,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292728",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-104-hope-street",
@@ -29614,7 +32050,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292729",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-189-191-williams-street",
@@ -29652,7 +32095,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292732",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-185-williams-street",
@@ -29690,7 +32140,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292733",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-181-williams-street",
@@ -29728,7 +32185,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292735",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-173-175-williams-street",
@@ -29782,7 +32246,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292736",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-171-williams-street",
@@ -29840,7 +32311,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292737",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-157-159-williams-street",
@@ -29878,7 +32356,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292739",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-153-155-williams-street",
@@ -29932,7 +32417,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292740",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-176-178-williams-street",
@@ -29970,7 +32462,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292749",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-172-williams-street",
@@ -30016,7 +32515,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292752",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-166-168-williams-street",
@@ -30054,7 +32560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495292753",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-persimmon",
@@ -30092,7 +32605,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495295066",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-fox-point-grocers",
@@ -30130,7 +32650,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495295067",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-111-hope-street",
@@ -30168,7 +32695,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495295070",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-199-williams-street",
@@ -30214,7 +32748,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495295071",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-202-204-williams-street",
@@ -30252,7 +32793,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495295092",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-74-80-benevolent-street",
@@ -30290,7 +32838,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328570",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-70-72-benevolent-street",
@@ -30336,7 +32891,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328571",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-66-68-benevolent-street",
@@ -30374,7 +32936,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328572",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hirschfeld-house",
@@ -30432,7 +33001,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328573",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-meiklejohn-house",
@@ -30474,7 +33050,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328574",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-84-benevolent-street",
@@ -30528,7 +33111,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328575",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-86-benevolent-street",
@@ -30582,7 +33172,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328576",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-wbru",
@@ -30620,7 +33217,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328577",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-156-hope-street",
@@ -30682,7 +33286,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328580",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-195-george-street",
@@ -30752,7 +33363,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328581",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-183-george-street",
@@ -30806,7 +33424,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328582",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-173-george-street",
@@ -30844,7 +33469,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328584",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-167-169-george-street",
@@ -30882,7 +33514,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328585",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-305-brook-street",
@@ -30936,7 +33575,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328586",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-281-283-charlesfield-street-brook-street",
@@ -30974,7 +33620,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328587",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-277-brook-street",
@@ -31012,7 +33665,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328588",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-71-73-charlesfield-street",
@@ -31070,7 +33730,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328589",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-287-brook-street",
@@ -31108,7 +33775,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328590",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-291-brook-street",
@@ -31146,7 +33820,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328592",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-284-brook-street",
@@ -31208,7 +33889,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328597",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-83-85-benevolent-street",
@@ -31254,7 +33942,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495328598",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-137-waterman-street",
@@ -31308,7 +34003,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495335531",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-133-waterman-street",
@@ -31378,7 +34080,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495335532",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-131-waterman-street",
@@ -31416,7 +34125,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495335533",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-129-waterman-street",
@@ -31486,7 +34202,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495335534",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-145-waterman-street",
@@ -31524,7 +34247,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495335536",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-179-hope-street",
@@ -31638,7 +34368,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495335538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-60-manning-street",
@@ -31740,7 +34477,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495335540",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-59-manning-street",
@@ -31778,7 +34522,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495335557",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-177-hope-street",
@@ -31816,7 +34567,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495335558",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-47-manning-street",
@@ -31886,7 +34644,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495335559",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-109-benevolent-street",
@@ -31924,7 +34689,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495335565",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-208-williams-street",
@@ -31978,7 +34750,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495336879",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-148-waterman-street",
@@ -32016,7 +34795,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495338631",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-robert-lippitt-house",
@@ -32070,7 +34856,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495340301",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-271-angell-street",
@@ -32132,7 +34925,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495340313",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-lippitt-house-museum",
@@ -32186,7 +34986,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/495340315",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-somain-3",
@@ -32236,7 +35043,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/529592385",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-somain-2",
@@ -32274,7 +35088,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/529592386",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-applied-math-building",
@@ -32332,7 +35153,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/547976628",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-barus-holley",
@@ -32470,7 +35298,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/562622514",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-the-music-mansion",
@@ -32532,7 +35367,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483721",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-72-meeting-street",
@@ -32578,7 +35420,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483728",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-34-congdon-street",
@@ -32640,7 +35489,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483730",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-carpenter-house",
@@ -32678,7 +35534,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483731",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-pardon-miller-house",
@@ -32736,7 +35599,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483733",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-dexter-house",
@@ -32798,7 +35668,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483736",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-congdon-street-baptist-church",
@@ -32836,7 +35713,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483737",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-captain-george-benson-house",
@@ -32882,7 +35766,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483741",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-barstow-house",
@@ -32928,7 +35819,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483742",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-thompson-house",
@@ -32966,7 +35864,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483744",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-larned-house",
@@ -33020,7 +35925,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483745",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-265-bowen-street",
@@ -33058,7 +35970,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643483764",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-67-congdon-street",
@@ -33096,7 +36015,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/643485279",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-178-180-182-184-bowen-street",
@@ -33134,7 +36060,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/660704094",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-stephen-robert-hall",
@@ -33248,7 +36181,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/660704097",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-106-benevolent-street",
@@ -33286,7 +36226,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/660707747",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-157-hope-street",
@@ -33324,7 +36271,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/660707748",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-annex",
@@ -33362,7 +36316,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/660707752",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-51-53-manning-street",
@@ -33408,7 +36369,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/660707773",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-textron-tower",
@@ -33450,7 +36418,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/685443179",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hay-buildings",
@@ -33504,7 +36479,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/708547581",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-rochambeau-house",
@@ -33550,7 +36532,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/721684020",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-machado-house",
@@ -33740,7 +36729,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/722019137",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-gerard-house",
@@ -33834,7 +36830,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/722023788",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-archibald-bronson-house",
@@ -33920,7 +36923,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/766362860",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-everett-poland-building",
@@ -34062,7 +37072,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/766362862",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-jameson-mead-building",
@@ -34140,7 +37157,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/766362867",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-what-cheer-garage-studios",
@@ -34206,7 +37230,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771419750",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-first-baptist-church-in-america",
@@ -34276,7 +37307,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771419993",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-50-south-main-street",
@@ -34402,7 +37440,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420037",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-first-church-of-christ-scientist",
@@ -34504,7 +37549,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420044",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-illustration-studies-building",
@@ -34570,7 +37622,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420140",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-96-100-102-bowen-street",
@@ -34696,7 +37755,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420217",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-286-benefit-street",
@@ -34802,7 +37868,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420221",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-220-222-south-main-street",
@@ -34876,7 +37949,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420237",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-226-south-main-street",
@@ -34942,7 +38022,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420288",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-page-building",
@@ -35012,7 +38099,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420367",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-benson-hall",
@@ -35074,7 +38168,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420538",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-6-olive-street",
@@ -35172,7 +38273,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420561",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-carr-house",
@@ -35274,7 +38382,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420724",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-ewing-multicultural-center",
@@ -35364,7 +38479,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420852",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-nightingale-house",
@@ -35474,7 +38596,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420854",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-51-prospect-street",
@@ -35544,7 +38673,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771420949",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-150-meeting-street",
@@ -35622,7 +38758,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771421090",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-156-meeting-street",
@@ -35708,7 +38851,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771421322",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-9-olive-street",
@@ -35766,7 +38916,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771421332",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-143-meeting-street",
@@ -35856,7 +39013,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771421399",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-86-brown-street",
@@ -35958,7 +39122,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771421566",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-90-brown-street",
@@ -36028,7 +39199,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771421850",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-27-prospect-street",
@@ -36114,7 +39292,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771422069",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-machado-garage",
@@ -36160,7 +39345,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771422193",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-37-prospect-street",
@@ -36238,7 +39430,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771422534",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-145-meeting-street",
@@ -36328,7 +39527,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771422676",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-dunnell-house",
@@ -36394,7 +39600,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771423584",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-144-meeting-street",
@@ -36448,7 +39661,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771423645",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-151-meeting-street",
@@ -36502,7 +39722,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771424666",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-samuel-b-mumford-house",
@@ -36548,7 +39775,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771424718",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-93-brown-street",
@@ -36610,7 +39844,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771427821",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-isaac-h-pinkney-house",
@@ -36648,7 +39889,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771428583",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-95-brown-street",
@@ -36714,7 +39962,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771429869",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-giddings-house-garage",
@@ -36752,7 +40007,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771437762",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-gardner-house-garage",
@@ -36790,7 +40052,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/771437837",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-307-thayer-street",
@@ -36836,7 +40105,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/786434273",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-sharpe-house",
@@ -36922,7 +40198,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/786440778",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-nicholson-house",
@@ -36992,7 +40275,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/786446766",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-farago-wing",
@@ -37270,7 +40560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/805019124",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-geochem-building",
@@ -37384,7 +40681,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/845493061",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-macmillan-hall",
@@ -37614,7 +40918,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/845493062",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-north-hall",
@@ -37676,7 +40987,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/846696407",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-homer-hall",
@@ -37738,7 +41056,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/846696408",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-wellness-center-residence-hall",
@@ -37888,7 +41213,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/923913054",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-old-stone-bank-building",
@@ -37962,7 +41294,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/972085471",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-101-north-main-street",
@@ -38016,7 +41355,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/975060714",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-1-charlesfield-court",
@@ -38066,7 +41412,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/976056135",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-66-south-main",
@@ -38104,7 +41457,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032445288",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-memorial-hall",
@@ -38186,7 +41546,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032446274",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-chace-center",
@@ -38260,7 +41627,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032446275",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-bank-building",
@@ -38322,7 +41696,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032446276",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-cheapside-building",
@@ -38360,7 +41741,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032446521",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hope-block",
@@ -38398,7 +41786,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032446522",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-waterman-street-building",
@@ -38480,7 +41875,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032447990",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-homer-nickerson-connector",
@@ -38554,7 +41956,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032651546",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-east-hall",
@@ -38664,7 +42073,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032651547",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-blistein-house",
@@ -38718,7 +42134,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032651549",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-angell-street-studios",
@@ -38768,7 +42191,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032651550",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-173-benefit-street",
@@ -38814,7 +42244,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032651555",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-pendleton-house",
@@ -38888,7 +42325,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1032651556",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-lindemann-performing-arts-center",
@@ -38926,7 +42370,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1073422994",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-70-brown-street",
@@ -39052,7 +42503,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1073442221",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-26-congdon-street",
@@ -39098,7 +42556,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1073599001",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-william-and-ami-danoff-hall",
@@ -39244,7 +42709,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1152788563",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-chen-family-hall",
@@ -39394,7 +42866,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1155872837",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-116-waterman-street",
@@ -39452,7 +42931,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1256113720",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-grant-fulton",
@@ -39514,7 +43000,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1313994075",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-130-waterman-street",
@@ -39660,7 +43153,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1317043964",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-hughes-court",
@@ -39698,7 +43198,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1421577827",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-patriots-court",
@@ -39736,7 +43243,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1421577828",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-biomed-center-acf",
@@ -39790,7 +43304,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1434047924",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-theatre-arts-building",
@@ -39844,7 +43365,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1434142068",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-181-bowen-street",
@@ -39906,7 +43434,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1522616308",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "brown-282-benefit-street",
@@ -39956,7 +43491,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1552587882",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

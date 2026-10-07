@@ -22,7 +22,7 @@
       "licenseOrTerms": "Open Database License (ODbL) 1.0",
       "redistribution": "permitted",
       "transformation": "Extracted official campus building footprints, entrance nodes, and pedestrian footways from OpenStreetMap",
-      "attribution": "\u00a9 OpenStreetMap contributors"
+      "attribution": "© OpenStreetMap contributors"
     }
   ],
   "buildings": [
@@ -126,7 +126,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/137327224",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-242-west-109th-street",
@@ -196,7 +203,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271202444",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-244-west-109th-street",
@@ -270,7 +284,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271202445",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-p-s-165-robert-e-simon-school",
@@ -401,7 +422,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271202447",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-211-west-109th-street",
@@ -475,7 +503,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203183",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-215-west-109th-street",
@@ -545,7 +580,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203188",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-iglesia-pentecostal-juan-8-32",
@@ -611,7 +653,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203193",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-225-west-109th-street",
@@ -681,7 +730,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203196",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-229-west-109th-street",
@@ -759,7 +815,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203198",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-235-west-109th-street",
@@ -861,7 +924,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203200",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-237-west-109th-street",
@@ -963,7 +1033,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203202",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-241-west-109th-street",
@@ -1017,7 +1094,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203204",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-243-west-109th-street",
@@ -1071,7 +1155,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203207",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-245-west-109th-street",
@@ -1181,7 +1272,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203210",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-247-west-109th-street",
@@ -1283,7 +1381,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203211",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-249-west-109th-street",
@@ -1377,7 +1482,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203214",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-251-west-109th-street",
@@ -1467,7 +1579,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203218",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-253-west-109th-street",
@@ -1505,7 +1624,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203220",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2828-broadway",
@@ -1579,7 +1705,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203223",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-amherst",
@@ -1649,7 +1782,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203225",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-cortlandt",
@@ -1727,7 +1867,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203228",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-cathedral-tower",
@@ -1825,7 +1972,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203230",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-520-cathedral-parkway",
@@ -1895,7 +2049,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203231",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-542-cathedral-parkway",
@@ -1949,7 +2110,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203233",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-harmony-hall",
@@ -2027,7 +2195,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203235",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-congregation-ramath-orah",
@@ -2085,7 +2260,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271203237",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-302-west-109th-street",
@@ -2131,7 +2313,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271204934",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-304-west-109th-street",
@@ -2185,7 +2374,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271204941",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-306-west-109th-street",
@@ -2251,7 +2447,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271204951",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-308-west-109th-street",
@@ -2297,7 +2500,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271204960",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-310-west-109th-street",
@@ -2351,7 +2561,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271204968",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-312-west-109th-street",
@@ -2433,7 +2650,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271204977",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-316-west-108th-street",
@@ -2487,7 +2711,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271204986",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-317-west-107th-street",
@@ -2557,7 +2788,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271204991",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-317-west-108th-street",
@@ -2595,7 +2833,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205000",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-318-west-108th-street",
@@ -2641,7 +2886,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205005",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-nicholas-roerich-museum",
@@ -2707,7 +2959,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205008",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-319-west-108th-street",
@@ -2757,7 +3016,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205011",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-320-west-108th-street",
@@ -2803,7 +3069,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205013",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-321-west-108th-street",
@@ -2849,7 +3122,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205017",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-322-west-108th-street",
@@ -2899,7 +3179,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205021",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-bloomingdale-school-of-music",
@@ -2953,7 +3240,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205025",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-324-west-108th-street",
@@ -3003,7 +3297,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205030",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-325-west-108th-street",
@@ -3057,7 +3358,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205033",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-326-west-108th-street",
@@ -3103,7 +3411,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205037",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-328-west-108th-street",
@@ -3153,7 +3468,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205041",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-329-west-108th-street",
@@ -3207,7 +3529,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205044",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-330-west-108th-street",
@@ -3289,7 +3618,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205049",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-352-riverside-drive",
@@ -3327,7 +3663,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205053",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-353-riverside-drive",
@@ -3377,7 +3720,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205056",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-360-west-108th-street",
@@ -3423,7 +3773,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205059",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-carlton-arms",
@@ -3557,7 +3914,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271205073",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-309-west-109th-street",
@@ -3643,7 +4007,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271206680",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-370-riverside-drive",
@@ -3725,7 +4096,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271206685",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-610-cathedral-parkway",
@@ -3799,7 +4177,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271206692",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-281-west-114th-street",
@@ -3849,7 +4234,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271290737",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2103-frederick-douglass-boulevard",
@@ -3903,7 +4295,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292816",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2105-frederick-douglass-boulevard",
@@ -3957,7 +4356,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292819",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2107-frederick-douglass-boulevard",
@@ -4011,7 +4417,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292822",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2113-frederick-douglass-boulevard",
@@ -4077,7 +4490,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292825",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2115-frederick-douglass-boulevard",
@@ -4123,7 +4543,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292828",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2117-frederick-douglass-boulevard",
@@ -4193,7 +4620,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292831",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2119-frederick-douglass-boulevard",
@@ -4259,7 +4693,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292832",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2121-frederick-douglass-boulevard",
@@ -4313,7 +4754,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292833",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2123-frederick-douglass-boulevard",
@@ -4367,7 +4815,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292835",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-302-west-114th-street",
@@ -4469,7 +4924,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292836",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-303-west-114th-street",
@@ -4515,7 +4977,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292838",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-304-west-114th-street",
@@ -4569,7 +5038,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292841",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-305-west-113th-street",
@@ -4639,7 +5115,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292844",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-305-west-114th-street",
@@ -4725,7 +5208,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292847",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-306-west-114th-street",
@@ -4795,7 +5285,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292850",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-306-west-115th-street",
@@ -4845,7 +5342,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292853",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-307-west-113th-street",
@@ -4899,7 +5403,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292856",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-307-west-114th-street",
@@ -4985,7 +5496,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292859",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-308-west-114th-street",
@@ -5071,7 +5589,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292862",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-308-west-115th-street",
@@ -5109,7 +5634,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292865",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-309-west-113th-street",
@@ -5179,7 +5711,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292867",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-309-west-114th-street",
@@ -5265,7 +5804,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292869",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-310-west-115th-street",
@@ -5303,7 +5849,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292874",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-310-west-116th-street",
@@ -5389,7 +5942,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292877",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-311-west-114th-street",
@@ -5475,7 +6035,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292880",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-312-west-114th-street",
@@ -5557,7 +6124,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292883",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-312-west-115th-street",
@@ -5595,7 +6169,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292886",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-312-west-116th-street",
@@ -5681,7 +6262,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292889",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-313-west-114th-street",
@@ -5767,7 +6355,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292892",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-314-west-115th-street",
@@ -5813,7 +6408,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292896",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-314-west-116th-street",
@@ -5899,7 +6501,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292899",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-315-west-113th-street",
@@ -5985,7 +6594,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292902",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-315-west-114th-street",
@@ -6031,7 +6647,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292904",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-316-west-115th-street",
@@ -6073,7 +6696,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292907",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-316-west-116th-street",
@@ -6175,7 +6805,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292916",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-322-west-115th-street",
@@ -6217,7 +6854,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292919",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-340-manhattan-avenue",
@@ -6303,7 +6947,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292922",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-342-manhattan-avenue",
@@ -6389,7 +7040,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292926",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-344-manhattan-avenue",
@@ -6475,7 +7133,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292932",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-345-manhattan-avenue",
@@ -6513,7 +7178,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292935",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-347-manhattan-avenue",
@@ -6555,7 +7227,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292937",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-372-manhattan-avenue",
@@ -6609,7 +7288,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292939",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-6-morningside-avenue",
@@ -6651,7 +7337,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292941",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-8-morningside-avenue",
@@ -6689,7 +7382,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292943",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-livmor",
@@ -6755,7 +7455,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271292982",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-16-morningside-avenue",
@@ -6809,7 +7516,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294207",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-18-morningside-avenue",
@@ -6859,7 +7573,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294209",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-25-morningside-avenue",
@@ -6929,7 +7650,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294212",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-26-morningside-avenue",
@@ -7019,7 +7747,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294214",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-27-morningside-avenue",
@@ -7101,7 +7836,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294216",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-313-west-116th-street",
@@ -7187,7 +7929,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294221",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-315-west-116th-street",
@@ -7309,7 +8058,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294222",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-319-west-116th-street",
@@ -7363,7 +8119,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294224",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-320-west-117th-street",
@@ -7433,7 +8196,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294225",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-353-west-115th-street",
@@ -7535,7 +8305,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294226",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-355-west-115th-street",
@@ -7637,7 +8414,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294227",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-356-west-116th-street",
@@ -7703,7 +8487,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294228",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-357-west-115th-street",
@@ -7773,7 +8564,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294229",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-357-west-116th-street",
@@ -7811,7 +8609,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294230",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-358-west-116th-street",
@@ -7865,7 +8670,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294231",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-359-west-116th-street",
@@ -7903,7 +8715,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294232",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-360-west-116th-street",
@@ -7957,7 +8776,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294233",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-360-west-117th-street",
@@ -8051,7 +8877,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294234",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-361-west-116th-street",
@@ -8093,7 +8926,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294235",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-362-west-116th-street",
@@ -8159,7 +8999,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294236",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-362-west-117th-street",
@@ -8253,7 +9100,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294237",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-363-manhattan-avenue",
@@ -8291,7 +9145,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294238",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-363-west-116th-street",
@@ -8329,7 +9190,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294239",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-364-west-116th-street",
@@ -8399,7 +9267,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294240",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-364-west-117th-street",
@@ -8489,7 +9364,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294241",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-365-manhattan-avenue",
@@ -8527,7 +9409,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294242",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-365-west-116th-street",
@@ -8573,7 +9462,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294243",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-366-west-116th-street",
@@ -8643,7 +9539,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294244",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-366-west-117th-street",
@@ -8737,7 +9640,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294245",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-367-manhattan-avenue",
@@ -8775,7 +9685,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294247",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-367-west-116th-street",
@@ -8825,7 +9742,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294249",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-368-west-116th-street",
@@ -8895,7 +9819,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294252",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-369-manhattan-avenue",
@@ -8933,7 +9864,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294255",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-370-west-116th-street",
@@ -9003,7 +9941,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294257",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-371-manhattan-avenue",
@@ -9041,7 +9986,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294260",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-373-manhattan-avenue",
@@ -9079,7 +10031,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294261",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-374-west-116th-street",
@@ -9117,7 +10076,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294262",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-386-manhattan-avenue",
@@ -9187,7 +10153,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294263",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-387-manhattan-avenue",
@@ -9225,7 +10198,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294264",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-388-manhattan-avenue",
@@ -9303,7 +10283,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294265",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-389-manhattan-avenue",
@@ -9341,7 +10328,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294266",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-390-manhattan-avenue",
@@ -9431,7 +10425,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294267",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-391-manhattan-avenue",
@@ -9469,7 +10470,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294268",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-392-manhattan-avenue",
@@ -9555,7 +10563,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294269",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-393-manhattan-avenue",
@@ -9593,7 +10608,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294270",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-394-manhattan-avenue",
@@ -9679,7 +10701,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294271",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-395-manhattan-avenue",
@@ -9717,7 +10746,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294272",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-397-manhattan-avenue",
@@ -9755,7 +10791,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294273",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-399-manhattan-avenue",
@@ -9793,7 +10836,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294274",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-401-manhattan-avenue",
@@ -9831,7 +10881,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294275",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-403-manhattan-avenue",
@@ -9869,7 +10926,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294276",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-32-morningside-avenue",
@@ -9967,7 +11031,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294324",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-33-morningside-avenue",
@@ -10069,7 +11140,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294325",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-34-morningside-avenue",
@@ -10171,7 +11249,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294326",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-348-west-118th-street",
@@ -10245,7 +11330,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294327",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-35-morningside-avenue",
@@ -10355,7 +11447,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294328",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-352-west-118th-street",
@@ -10421,7 +11520,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294329",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-353-west-117th-street",
@@ -10503,7 +11609,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294330",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-356-west-118th-street",
@@ -10545,7 +11658,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294331",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-357-west-117th-street",
@@ -10587,7 +11707,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294332",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-358-west-118th-street",
@@ -10625,7 +11752,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294333",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-359-west-117th-street",
@@ -10663,7 +11797,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294334",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-36-morningside-avenue",
@@ -10769,7 +11910,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294335",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-360-west-118th-street",
@@ -10807,7 +11955,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294336",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-361-west-117th-street",
@@ -10845,7 +12000,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294337",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-362-west-118th-street",
@@ -10883,7 +12045,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294338",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-363-west-117th-street",
@@ -10921,7 +12090,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294339",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-364-west-118th-street",
@@ -10959,7 +12135,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294340",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-365-west-117th-street",
@@ -10997,7 +12180,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294341",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-366-west-118th-street",
@@ -11035,7 +12225,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294342",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-367-west-117th-street",
@@ -11073,7 +12270,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294343",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-368-west-118th-street",
@@ -11111,7 +12315,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294344",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-37-morningside-avenue",
@@ -11209,7 +12420,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294345",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-417-manhattan-avenue",
@@ -11271,7 +12489,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294346",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-353-west-118th-street",
@@ -11425,7 +12650,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294428",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-357-west-118th-street",
@@ -11587,7 +12819,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294429",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-360-west-119th-street",
@@ -11689,7 +12928,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294430",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-362-west-119th-street",
@@ -11791,7 +13037,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294431",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-364-west-119th-street",
@@ -11893,7 +13146,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294432",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-365-west-118th-street",
@@ -11995,7 +13255,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271294433",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-400-west-123rd-street",
@@ -12049,7 +13316,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271460384",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-123-morningside-drive",
@@ -12315,7 +13589,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271460385",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-synod-house",
@@ -12405,7 +13686,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271461223",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-404-west-114th-street",
@@ -12463,7 +13751,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271461225",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-408-west-114th-street",
@@ -12513,7 +13808,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271461226",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-410-west-114th-street",
@@ -12567,7 +13869,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271461227",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-411-west-113th-street",
@@ -12641,7 +13950,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271461228",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-town-building",
@@ -12719,7 +14035,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271461233",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-cathedral-school",
@@ -12809,7 +14132,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271461234",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-30-morningside",
@@ -12931,7 +14261,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271461235",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-cathedral-house",
@@ -13113,7 +14450,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271461237",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-britannia",
@@ -13227,7 +14571,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271571440",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-trinity-court",
@@ -13317,7 +14668,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271571443",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-ardnaree",
@@ -13423,7 +14781,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271571445",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-dartmouth",
@@ -13497,7 +14862,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271571449",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-st-albans",
@@ -13571,7 +14943,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271571452",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-criterion-arms",
@@ -13669,7 +15048,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271571454",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-535-cathedral-parkway",
@@ -13775,7 +15161,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271571456",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-545-cathedral-parkway",
@@ -13837,7 +15230,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271571460",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-kendal-court",
@@ -13951,7 +15351,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581124",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-blennerhasset",
@@ -14057,7 +15464,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581128",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-rockfall",
@@ -14191,7 +15605,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581130",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-1046-amsterdam-avenue",
@@ -14269,7 +15690,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581133",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-512-west-112th-street",
@@ -14347,7 +15775,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581135",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-515-west-111th-street",
@@ -14473,7 +15908,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581138",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-522-west-112th-street",
@@ -14571,7 +16013,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581140",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-de-boulogne",
@@ -14665,7 +16114,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581142",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-hueguenot",
@@ -14763,7 +16219,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581148",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-u-s-post-office-columbia-station",
@@ -14833,7 +16296,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581152",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-lionsgate",
@@ -14911,7 +16381,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581156",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-echo-apartments",
@@ -14957,7 +16434,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271581161",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-amsterdam-nursing-home",
@@ -15051,7 +16535,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585084",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-1070-amsterdam-avenue",
@@ -15109,7 +16600,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585088",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-broadway-residence-hall",
@@ -15175,7 +16673,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585091",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-fdny-engine-47",
@@ -15229,7 +16734,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585092",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-stamford",
@@ -15323,7 +16835,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585093",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-arlington",
@@ -15421,7 +16940,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585094",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-507-west-113th-street",
@@ -15475,7 +17001,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585095",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-ruggles-hall",
@@ -15561,7 +17094,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585096",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-st-john",
@@ -15643,7 +17183,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585097",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-514-west-113th-street",
@@ -15697,7 +17244,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585098",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-514-west-114th-street",
@@ -15779,7 +17333,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585099",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-520-west-114th-street",
@@ -15865,7 +17426,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585100",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-523-west-113th-street",
@@ -15919,7 +17487,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585101",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-524-west-114th-street",
@@ -15977,7 +17552,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585102",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-525-west-113th-street",
@@ -16023,7 +17605,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585103",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-526-west-113th-street",
@@ -16121,7 +17710,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585104",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-526-west-114th-street",
@@ -16175,7 +17771,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585105",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-527-west-113th-street",
@@ -16221,7 +17824,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585106",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-528-west-114th-street",
@@ -16267,7 +17877,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585107",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-530-west-113th-street",
@@ -16341,7 +17958,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585108",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-530-west-114th-street",
@@ -16387,7 +18011,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585109",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-531-west-113th-street",
@@ -16441,7 +18072,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585110",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-532-west-114th-street",
@@ -16495,7 +18133,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585111",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-534-west-114th-street",
@@ -16549,7 +18194,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585112",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-535-west-112th-street",
@@ -16599,7 +18251,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585113",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-535-west-113th-street",
@@ -16669,7 +18328,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585114",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-536-west-113th-street",
@@ -16767,7 +18433,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585115",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-536-west-114th-street",
@@ -16821,7 +18494,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585116",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-538-west-114th-street",
@@ -16867,7 +18547,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585117",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-540-west-113th-street",
@@ -16921,7 +18608,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585118",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-540-west-114th-street",
@@ -16967,7 +18661,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585119",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-542-west-113th-street",
@@ -17005,7 +18706,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585120",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-542-west-114th-street",
@@ -17059,7 +18767,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585121",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-544-west-113th-street",
@@ -17097,7 +18812,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585122",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-544-west-114th-street",
@@ -17143,7 +18865,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585123",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-546-west-113th-street",
@@ -17189,7 +18918,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585124",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-546-west-114th-street",
@@ -17235,7 +18971,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585125",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-548-west-113th-street",
@@ -17281,7 +19024,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585126",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-548-west-114th-street",
@@ -17339,7 +19089,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585127",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-550-west-113th-street",
@@ -17385,7 +19142,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585128",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-550-west-114th-street",
@@ -17427,7 +19191,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585129",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-552-west-113th-street",
@@ -17473,7 +19244,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585130",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-552-west-114th-street",
@@ -17519,7 +19297,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585131",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-554-west-113th-street",
@@ -17565,7 +19350,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585132",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-554-west-114th-street",
@@ -17635,7 +19427,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585133",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-556-west-113th-street",
@@ -17681,7 +19480,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585134",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-558-west-113th-street",
@@ -17727,7 +19533,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585135",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-560-west-113th-street",
@@ -17773,7 +19586,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585136",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-armstrong-hall",
@@ -17839,7 +19659,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585137",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-wenonah",
@@ -17921,7 +19748,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585138",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-campolyn",
@@ -18007,7 +19841,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585139",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-hogan-hall",
@@ -18077,7 +19918,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271585144",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-371-west-120th-street",
@@ -18187,7 +20035,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271803372",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-59-morningside-avenue",
@@ -18245,7 +20100,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271803404",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-425-west-123rd-street",
@@ -18403,7 +20265,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271912756",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-70-la-salle-street",
@@ -18481,7 +20350,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913103",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-1295-amsterdam-avenue",
@@ -18571,7 +20447,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913104",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-501-west-123rd-street",
@@ -18649,7 +20532,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913105",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-1264-amsterdam-avenue",
@@ -18707,7 +20597,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913344",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-1268-amsterdam-avenue",
@@ -18813,7 +20710,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913345",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-1270-amsterdam-avenue",
@@ -18919,7 +20823,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913346",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-1272-amsterdam-avenue",
@@ -19025,7 +20936,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913347",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-503-west-122nd-street",
@@ -19079,7 +20997,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913362",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-505-west-122nd-street",
@@ -19133,7 +21058,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913363",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-ogontz",
@@ -19235,7 +21167,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913364",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-simna-hall",
@@ -19305,7 +21244,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913365",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-520-west-123rd-street",
@@ -19383,7 +21329,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913366",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-marimpol-court",
@@ -19473,7 +21426,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913367",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-522-west-123rd-street",
@@ -19555,7 +21515,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913368",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-524-west-123rd-street",
@@ -19657,7 +21624,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913369",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-526-west-123rd-street",
@@ -19759,7 +21733,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913370",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-528-west-123rd-street",
@@ -19813,7 +21794,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913371",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-530-west-123rd-street",
@@ -19867,7 +21855,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271913372",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-columbia-department-of-religion",
@@ -19909,7 +21904,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916906",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-grace-dodge",
@@ -20043,7 +22045,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916914",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-horace-mann",
@@ -20141,7 +22150,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916920",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-502-west-122nd-street",
@@ -20219,7 +22235,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916924",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-503-west-120th-street",
@@ -20293,7 +22316,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916929",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-503-west-121st-street",
@@ -20355,7 +22385,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916933",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-506-west-122nd-street",
@@ -20437,7 +22474,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916939",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-bancroft-hall",
@@ -20571,7 +22615,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916943",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-sarasota",
@@ -20629,7 +22680,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916949",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-grant",
@@ -20683,7 +22741,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916954",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-517-west-121st-street",
@@ -20769,7 +22834,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916958",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-519-west-121st-street",
@@ -20859,7 +22931,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916963",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-delaware",
@@ -20941,7 +23020,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916966",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-523-west-121st-street",
@@ -21031,7 +23117,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916969",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-524-west-122nd-street",
@@ -21109,7 +23202,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916972",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-526-west-122nd-street",
@@ -21187,7 +23287,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916975",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-527-west-121st-street",
@@ -21277,7 +23384,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916980",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-529-west-121st-street",
@@ -21335,7 +23449,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916991",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-530-west-122nd-street",
@@ -21413,7 +23534,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916995",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-532-west-122nd-street",
@@ -21455,7 +23583,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271916999",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-535-west-121st-street",
@@ -21513,7 +23648,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917004",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-knox-hall",
@@ -21551,7 +23693,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917008",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-macy",
@@ -21629,7 +23778,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917011",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-marie-runyon-court",
@@ -21755,7 +23911,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917036",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-russell",
@@ -21905,7 +24068,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917055",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-circle",
@@ -22051,7 +24221,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917067",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-thompson",
@@ -22125,7 +24302,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917076",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-thorndike",
@@ -22195,7 +24379,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917080",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-whittier",
@@ -22301,7 +24492,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917086",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-zankel",
@@ -22435,7 +24633,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917090",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-90-claremont-avenue",
@@ -22497,7 +24702,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917109",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-528-rear-west-121st-street",
@@ -22539,7 +24751,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271917114",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-405-west-118th-street",
@@ -22653,7 +24872,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921484",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-414-west-120th-street",
@@ -22771,7 +24997,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921486",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-414-west-121st-street",
@@ -22925,7 +25158,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921489",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-415-west-118th-street",
@@ -23059,7 +25299,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921492",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-417-west-118th-street",
@@ -23137,7 +25384,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921495",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-417-west-120th-street",
@@ -23223,7 +25477,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921498",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-419-west-118th-street",
@@ -23301,7 +25562,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921501",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-419-west-119th-street",
@@ -23403,7 +25671,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921503",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-420-west-119th-street",
@@ -23513,7 +25788,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921505",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-421-west-118th-street",
@@ -23607,7 +25889,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921508",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-424-west-119th-street",
@@ -23729,7 +26018,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921510",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-1225-amsterdam-avenue",
@@ -23863,7 +26159,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921513",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-poinciana",
@@ -23965,7 +26268,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921519",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-plimpton-hall",
@@ -24019,7 +26329,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/271921521",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2867-broadway",
@@ -24053,7 +26370,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274978278",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2869-broadway",
@@ -24095,7 +26419,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274978279",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-390-riverside-drive",
@@ -24173,7 +26504,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274978280",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-395-west-112th-street",
@@ -24267,7 +26605,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274978281",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-antlers",
@@ -24329,7 +26674,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274978282",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-605-west-111th-street",
@@ -24431,7 +26783,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274978283",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-610-west-111th-street",
@@ -24493,7 +26852,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274978284",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-bank-street-college-of-education",
@@ -24551,7 +26917,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274978285",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-611-west-111th-street",
@@ -24653,7 +27026,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274978286",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-601-cathedral-parkway",
@@ -24743,7 +27123,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274978287",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2913a-broadway",
@@ -24789,7 +27176,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979039",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-fowler-court",
@@ -24963,7 +27357,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979040",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-414-riverside-drive",
@@ -25009,7 +27410,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979041",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-417-riverside-drive",
@@ -25079,7 +27487,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979042",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-604-west-114th-street",
@@ -25145,7 +27560,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979043",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-605-west-112th-street",
@@ -25263,7 +27685,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979044",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-605-west-113th-street",
@@ -25333,7 +27762,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979045",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-606-west-113th-street",
@@ -25431,7 +27867,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979046",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-606-west-114th-street",
@@ -25489,7 +27932,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979048",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-608-west-113th-street",
@@ -25547,7 +27997,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979050",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-608-west-114th-street",
@@ -25609,7 +28066,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979053",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-610-west-113th-street",
@@ -25679,7 +28143,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979056",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-610-west-114th-street",
@@ -25741,7 +28212,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979057",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-611-west-112th-street",
@@ -25875,7 +28353,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979058",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-612-west-114th-street",
@@ -25937,7 +28422,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979059",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-614-west-113th-street",
@@ -25983,7 +28475,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979060",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-ford-hall",
@@ -26049,7 +28548,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979061",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-615-west-113th-street",
@@ -26103,7 +28609,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979062",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-616-west-113th-street",
@@ -26149,7 +28662,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979063",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-616-west-114th-street",
@@ -26211,7 +28731,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979064",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-618-west-113th-street",
@@ -26257,7 +28784,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979065",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-619-west-113th-street",
@@ -26307,7 +28841,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979066",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-621-west-113th-street",
@@ -26353,7 +28894,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979067",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-revere-hall",
@@ -26455,7 +29003,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979068",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-623-west-113th-street",
@@ -26493,7 +29048,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979069",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-625-west-113th-street",
@@ -26543,7 +29105,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979070",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-627-west-113th-street",
@@ -26593,7 +29162,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979071",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-mcvickar-hall",
@@ -26683,7 +29259,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979072",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-river-hall",
@@ -26785,7 +29368,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979073",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-strathmore",
@@ -26851,7 +29441,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979074",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2913-broadway",
@@ -26925,7 +29522,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979076",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-allerton",
@@ -26995,7 +29599,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979077",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-forest-chambers",
@@ -27077,7 +29688,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979078",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-416-riverside-drive",
@@ -27131,16 +29749,23 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274979080",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-casa-hisp-nica",
-      "name": "Casa Hisp\u00e1nica",
+      "name": "Casa Hispánica",
       "nativeCodes": [
         "CHN"
       ],
       "aliases": [
-        "Casa Hisp\u00e1nica"
+        "Casa Hispánica"
       ],
       "category": "facility",
       "geometry": {
@@ -27253,7 +29878,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982896",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-2929-broadway",
@@ -27307,7 +29939,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982897",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-425-riverside-drive",
@@ -27449,7 +30088,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982898",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-434-riverside-drive",
@@ -27543,7 +30189,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982899",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-604-west-115th-street",
@@ -27649,7 +30302,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982900",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-605-west-115th-street",
@@ -27695,7 +30355,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982901",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-606-west-116th-street",
@@ -27777,7 +30444,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982902",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-610-west-115th-street",
@@ -27831,7 +30505,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982903",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-610-west-116th-street",
@@ -27885,7 +30566,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982904",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-saint-hilda-s-and-saint-hugh-s-school",
@@ -27943,7 +30631,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982905",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-612-west-115th-street",
@@ -28033,7 +30728,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982906",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-schapiro-hall",
@@ -28107,7 +30809,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982907",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-616-west-115th-street",
@@ -28153,7 +30862,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982908",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-616-west-116th-street",
@@ -28239,7 +30955,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982909",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-617-west-115th-street",
@@ -28305,7 +31028,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982910",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-620-west-116th-street",
@@ -28395,7 +31125,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982911",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-627-west-115th-street",
@@ -28469,7 +31206,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982912",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-629-west-115th-street",
@@ -28531,7 +31275,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982913",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-633-west-115th-street",
@@ -28577,7 +31328,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982914",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-635-west-115th-street",
@@ -28615,7 +31373,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982915",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-robert-k-kraft-center-for-jewish-student-life",
@@ -28657,7 +31422,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982916",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-regnor-court",
@@ -28739,7 +31511,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982920",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-broadway-presbyterian-church",
@@ -28821,7 +31600,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982921",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-luxor",
@@ -28903,7 +31689,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982922",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-colliseum",
@@ -29045,7 +31838,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274982923",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-altschul-hall",
@@ -29171,7 +31971,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985931",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-barnard-hall",
@@ -29253,7 +32060,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985932",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-brooks-hall",
@@ -29303,7 +32117,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985933",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-helen-reid-hall",
@@ -29349,7 +32170,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985934",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-hewitt-hall",
@@ -29407,7 +32235,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985935",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-15-claremont-avenue",
@@ -29481,7 +32316,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985936",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-21-claremont-avenue",
@@ -29579,7 +32421,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985937",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-peter-minuit",
@@ -29673,7 +32522,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985938",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-29-claremont-avenue",
@@ -29731,7 +32587,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985939",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-35-claremont-avenue",
@@ -29785,7 +32648,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985940",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-39-claremont-avenue",
@@ -29859,7 +32729,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985941",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-445-riverside-drive",
@@ -29917,7 +32794,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985942",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-448-riverside-drive",
@@ -29979,7 +32863,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985943",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-brookfield",
@@ -30057,7 +32948,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985944",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-452-riverside-drive",
@@ -30143,7 +33041,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985945",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-oxford-hall",
@@ -30201,7 +33106,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985947",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-cambridge-hall",
@@ -30263,7 +33175,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985948",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-460-riverside-drive",
@@ -30317,7 +33236,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985950",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-464-riverside-drive",
@@ -30375,7 +33301,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985952",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-47-claremont",
@@ -30457,7 +33390,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985953",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-milstein-center-for-teaching-and-learning",
@@ -30507,7 +33447,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985956",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-milbank-hall",
@@ -30641,7 +33588,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985961",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-sulzberger-hall",
@@ -30751,7 +33705,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985963",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-diana-center",
@@ -30797,7 +33758,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985964",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-elliott-hall",
@@ -30871,7 +33839,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274985965",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-riverside-church",
@@ -30973,7 +33948,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274986253",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-interchurch-center",
@@ -31023,7 +34005,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274986257",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-alfred-lerner-hall",
@@ -31093,7 +34082,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995718",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-buell-hall",
@@ -31195,7 +34191,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995720",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-butler-library",
@@ -31261,7 +34264,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995721",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-carman-hall",
@@ -31311,7 +34321,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995722",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-casa-italiana",
@@ -31357,7 +34374,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995723",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-chandler-hall",
@@ -31419,7 +34443,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995724",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-pulitzer-hall",
@@ -31461,7 +34492,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995725",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-computer-science",
@@ -31535,7 +34573,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995726",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-earl-hall",
@@ -31629,7 +34674,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995727",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-faculty-house",
@@ -31739,7 +34791,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995728",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-fairchild-hall",
@@ -31865,7 +34924,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995729",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-fayerweather-hall",
@@ -31939,7 +35005,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995730",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-furnald-hall",
@@ -32013,7 +35086,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995731",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-hartley-hall",
@@ -32071,7 +35151,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995733",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-havemeyer-hall",
@@ -32241,7 +35328,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995734",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-heyman-center-for-the-humanities",
@@ -32295,7 +35389,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995735",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-schermerhorn-extension",
@@ -32341,7 +35442,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995736",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-lewisohn-hall",
@@ -32391,7 +35499,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995737",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-park-court",
@@ -32473,7 +35588,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995738",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-404-west-116th-street",
@@ -32563,7 +35685,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995740",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-colonial",
@@ -32657,7 +35786,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995742",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-munroe",
@@ -32747,7 +35883,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995744",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-the-cragsmour",
@@ -32837,7 +35980,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995746",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-424-west-116th-street",
@@ -32891,7 +36041,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995748",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-jerome-greene-hall",
@@ -33017,7 +36174,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995750",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-john-jay-hall",
@@ -33079,7 +36243,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995753",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-kent-hall",
@@ -33141,7 +36312,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995755",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-low-memorial-library",
@@ -33271,7 +36449,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995757",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-mathematics",
@@ -33321,7 +36506,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995760",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-mudd-hall",
@@ -33411,7 +36603,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995762",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-northwest-corner-building",
@@ -33497,7 +36696,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995764",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-philosophy-hall",
@@ -33543,7 +36749,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995765",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-president-s-house",
@@ -33605,7 +36818,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995766",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-saint-paul-s-chapel",
@@ -33831,7 +37051,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995768",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-schapiro-center-cepsr",
@@ -33977,7 +37204,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995769",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-schermerhorn-hall",
@@ -34159,7 +37393,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995770",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-university-hall",
@@ -34325,7 +37566,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995773",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-uris-hall",
@@ -34411,7 +37659,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995776",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-wallach-hall",
@@ -34457,7 +37712,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995779",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-wien-hall",
@@ -34547,7 +37809,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995783",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-william-and-june-warren-hall",
@@ -34629,7 +37898,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995785",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-dodge-hall",
@@ -34671,7 +37947,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274995789",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-church-of-notre-dame",
@@ -34901,7 +38184,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274996134",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-405-west-114th-street",
@@ -34983,7 +38273,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274996135",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-411-west-114th-street",
@@ -35057,7 +38354,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/274996136",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-st-john-court",
@@ -35151,7 +38455,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/278367776",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-newsstand",
@@ -35189,7 +38500,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/320581782",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-van-amringe-memorial",
@@ -35239,7 +38557,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/381417285",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-avery-extension",
@@ -35437,7 +38762,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/398634902",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-enclave-1",
@@ -35523,7 +38855,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/438314990",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-enclave",
@@ -35581,7 +38920,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/560851637",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-croton-aqueduct-west-119th-street-gatehouse",
@@ -35627,7 +38973,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/723008687",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-san-marino",
@@ -35689,7 +39042,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/723008689",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-school-of-social-work",
@@ -35855,7 +39215,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/724049491",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-lenfest-hall",
@@ -35913,7 +39280,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/724434734",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-butler-hall",
@@ -36007,7 +39381,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/733078504",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-415-west-120th-street",
@@ -36089,7 +39470,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/733120668",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-avery-hall",
@@ -36263,7 +39651,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/738973811",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-pupin-hall",
@@ -36353,7 +39748,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/738973812",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-310-west-114th-street",
@@ -36391,7 +39793,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/954250918",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-claremont-hall",
@@ -36433,7 +39842,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1231195078",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-vandewater",
@@ -36503,7 +39919,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1234233473",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-563-west-122nd-street",
@@ -36561,7 +39984,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1234233474",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-bld-1271066583",
@@ -36599,7 +40029,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1271066583",
+          "verification": "source-backed"
+        }
+      ]
     },
     {
       "id": "columbia-306-west-116th-street",
@@ -36657,7 +40094,14 @@
             ]
           ]
         ]
-      }
+      },
+      "provenance": [
+        {
+          "sourceId": "openstreetmap",
+          "nativeId": "way/1296558547",
+          "verification": "source-backed"
+        }
+      ]
     }
   ],
   "entrances": [

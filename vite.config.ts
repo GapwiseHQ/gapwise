@@ -22,11 +22,23 @@ export default defineConfig({
       workbox: {
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         globPatterns: ["**/*.{js,css,html,svg,png,ico,json}"],
+        globIgnores: ["**/campus-*.js", "**/catalog-*.js"],
         navigateFallback: "/index.html",
         // Never let the app-shell service worker intercept crawler-facing static endpoints.
         // This also keeps direct browser navigation to these files truthful after a deployment.
         navigateFallbackDenylist: [/^\/robots\.txt$/, /^\/sitemap\.xml$/],
         runtimeCaching: [
+          {
+            urlPattern: /\/assets\/(?:campus|catalog)-.*\.js$/,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "campus-datasets",
+              expiration: {
+                maxEntries: 30,
+                maxAgeSeconds: 30 * 24 * 60 * 60,
+              },
+            },
+          },
           {
             urlPattern: /^https:\/\/tiles\.openfreemap\.org\/.*$/,
             handler: "NetworkOnly",

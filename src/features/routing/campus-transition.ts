@@ -420,6 +420,88 @@ export const OUTDOOR_CAMPUS_LOADERS: Record<string, CampusSnapshotLoader> = {
     import("@/data/campuses/sorbonne-pierre-et-marie-curie/campus.json").then(
       (m) => m.default as unknown as CampusSnapshot,
     ),
+  oxford: () =>
+    import("@/data/campuses/oxford/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  cambridge: () =>
+    import("@/data/campuses/cambridge/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  "imperial-south-kensington": () =>
+    import("@/data/campuses/imperial-south-kensington/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  "imperial-white-city": () =>
+    import("@/data/campuses/imperial-white-city/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  imperial: () =>
+    import("@/data/campuses/imperial-south-kensington/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  "ethz-zentrum": () =>
+    import("@/data/campuses/ethz-zentrum/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  "ethz-hoenggerberg": () =>
+    import("@/data/campuses/ethz-hoenggerberg/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  ethz: () =>
+    import("@/data/campuses/ethz-zentrum/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  caltech: () =>
+    import("@/data/campuses/caltech/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  "jhu-homewood": () =>
+    import("@/data/campuses/jhu-homewood/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  "jhu-east-baltimore": () =>
+    import("@/data/campuses/jhu-east-baltimore/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  jhu: () =>
+    import("@/data/campuses/jhu-homewood/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  epfl: () =>
+    import("@/data/campuses/epfl/campus.json").then((m) => m.default as unknown as CampusSnapshot),
+  "ucl-bloomsbury": () =>
+    import("@/data/campuses/ucl-bloomsbury/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  "ucl-east": () =>
+    import("@/data/campuses/ucl-east/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  ucl: () =>
+    import("@/data/campuses/ucl-bloomsbury/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  "utokyo-hongo": () =>
+    import("@/data/campuses/utokyo-hongo/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  "utokyo-komaba": () =>
+    import("@/data/campuses/utokyo-komaba/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  "utokyo-kashiwa": () =>
+    import("@/data/campuses/utokyo-kashiwa/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  utokyo: () =>
+    import("@/data/campuses/utokyo-hongo/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
+  tsinghua: () =>
+    import("@/data/campuses/tsinghua/campus.json").then(
+      (m) => m.default as unknown as CampusSnapshot,
+    ),
 };
 
 const plannerCache = new Map<string, TransitionPlanner>();

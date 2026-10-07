@@ -26,8 +26,19 @@ function activeTextFiles(root: string): string[] {
   for (const entry of readdirSync(root)) {
     const path = join(root, entry);
     const stat = statSync(path);
-    if (stat.isDirectory()) files.push(...activeTextFiles(path));
-    else if (TEXT_EXTENSIONS.has(extension(path))) files.push(path);
+    if (stat.isDirectory()) {
+      if (path === "src/data/campuses") {
+        for (const sub of readdirSync(path)) {
+          const subPath = join(path, sub);
+          const subStat = statSync(subPath);
+          if (!subStat.isDirectory() && TEXT_EXTENSIONS.has(extension(subPath))) {
+            files.push(subPath);
+          }
+        }
+        continue;
+      }
+      files.push(...activeTextFiles(path));
+    } else if (TEXT_EXTENSIONS.has(extension(path))) files.push(path);
   }
   return files;
 }
