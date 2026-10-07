@@ -80,36 +80,20 @@ function ErrorComponent({ error, reset }: { error: unknown; reset: () => void })
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => {
     const university = activeUniversity();
-    const site = activeSite();
-    const assetPrefix =
-      university && university.id !== "uoft" && site?.role !== "global"
-        ? `/universities/${university.id}`
-        : "";
+    const appTitle = university ? `Gapwise — ${university.name}` : "Gapwise";
     return {
       meta: [
         { name: "theme-color", content: "#0d1117" },
         { name: "mobile-web-app-capable", content: "yes" },
         { name: "apple-mobile-web-app-capable", content: "yes" },
-        { name: "apple-mobile-web-app-title", content: "Gapwise" },
+        { name: "apple-mobile-web-app-title", content: appTitle },
         { name: "apple-mobile-web-app-status-bar-style", content: "default" },
         { property: "og:type", content: "website" },
       ],
       links: [
-        { rel: "icon", href: `${assetPrefix}/logo-mark.svg`, type: "image/svg+xml" },
-        {
-          rel: "icon",
-          href: `${assetPrefix}/favicon-32x32.png`,
-          sizes: "32x32",
-          type: "image/png",
-        },
-        {
-          rel: "icon",
-          href: `${assetPrefix}/favicon-16x16.png`,
-          sizes: "16x16",
-          type: "image/png",
-        },
-        { rel: "apple-touch-icon", href: `${assetPrefix}/apple-touch-icon.png` },
-        { rel: "manifest", href: `${assetPrefix}/site.webmanifest` },
+        { rel: "icon", href: "/gapwise-favicon-v2.svg", type: "image/svg+xml" },
+        { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+        { rel: "manifest", href: "/site.webmanifest" },
       ],
     };
   },

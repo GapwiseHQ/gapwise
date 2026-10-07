@@ -364,26 +364,8 @@ function render(base: string, page: Page, context?: Context) {
   if (context?.branded)
     html = html
       .replace(/href="\/logo-mark\.svg"/g, `href="/universities/${context.id}/logo-mark.svg"`)
-      .replace(
-        /href="\/favicon-192x192\.png"/g,
-        `href="/universities/${context.id}/favicon-192x192.png"`,
-      )
-      .replace(
-        /href="\/favicon-32x32\.png"/g,
-        `href="/universities/${context.id}/favicon-32x32.png"`,
-      )
-      .replace(
-        /href="\/favicon-16x16\.png"/g,
-        `href="/universities/${context.id}/favicon-16x16.png"`,
-      )
-      .replace(
-        /href="\/apple-touch-icon\.png"/g,
-        `href="/universities/${context.id}/apple-touch-icon.png"`,
-      )
-      .replace(
-        /href="\/site\.webmanifest"/g,
-        `href="/universities/${context.id}/site.webmanifest"`,
-      );
+      .replace(/href="\/apple-touch-icon\.png"/g, `href="/apple-touch-icon.png"`)
+      .replace(/href="\/site\.webmanifest"/g, `href="/site.webmanifest"`);
   return html;
 }
 
@@ -391,7 +373,7 @@ function editionPage(page: Page, context: Context): Page {
   if (page.path === "/")
     return {
       ...page,
-      title: context.marketing.seoTitle,
+      title: `Gapwise — ${context.name}`,
       description: context.marketing.seoDescription,
       heading: context.marketing.headline,
       detail: context.marketing.description,

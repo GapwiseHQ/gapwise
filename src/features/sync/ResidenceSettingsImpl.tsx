@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/dialog";
 import { CampusSelector } from "@/components/CampusSelector";
 import { sanitizeUserPreferences, type UserPreferences } from "./preferences";
-import { activeUniversity, campusesForUniversity } from "@/universities/registry";
+import { activeUniversity, selectableCampusesForUniversity } from "@/universities/registry";
 
 type ArrivalOption = {
   label: string;
@@ -129,7 +129,7 @@ export function ResidenceSettings({
   }
 
   const university = activeUniversity();
-  const campusIds = (university ? campusesForUniversity(university) : []) as GapwiseCampusId[];
+  const campusIds = (university ? selectableCampusesForUniversity(university) : []) as GapwiseCampusId[];
   const isSingleCampus = campusIds.length <= 1;
 
   const points =

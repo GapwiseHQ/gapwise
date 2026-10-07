@@ -93,14 +93,15 @@ describe("Gapwise searchability and entity metadata", () => {
     expect(builder).toContain("data-gapwise-search-fallback");
   });
 
-  test("publishes a large favicon and a true 1200x630 social image", async () => {
-    const [index, favicon, social] = await Promise.all([
+  test("uses one canonical favicon reference and a true 1200x630 social image", async () => {
+    const [index, faviconSvg, social] = await Promise.all([
       readFile("index.html", "utf8"),
-      readFile("public/favicon-192x192.png"),
+      readFile("public/gapwise-favicon-v2.svg", "utf8"),
       readFile("public/og-gapwise.png"),
     ]);
-    expect(index).toContain('href="/favicon-192x192.png" sizes="192x192"');
-    expect(pngDimensions(favicon)).toEqual({ width: 192, height: 192 });
+    expect(index).toContain('href="/gapwise-favicon-v2.svg"');
+    expect(faviconSvg).toContain("<svg");
+    expect(faviconSvg).not.toContain("carleton");
     expect(pngDimensions(social)).toEqual({ width: 1200, height: 630 });
   });
 

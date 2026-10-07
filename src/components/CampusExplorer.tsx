@@ -23,7 +23,7 @@ import {
 import {
   activeCampus,
   activeUniversity,
-  campusesForUniversity,
+  selectableCampusesForUniversity,
   universityByCampus,
   universityById,
 } from "@/universities/registry";
@@ -71,7 +71,7 @@ export function CampusExplorer({
     [initialCampusCandidate, meetingUniId],
   );
   const campusIds = useMemo(
-    () => (university ? campusesForUniversity(university) : []) as GapwiseCampusId[],
+    () => (university ? selectableCampusesForUniversity(university) : []) as GapwiseCampusId[],
     [university],
   );
   const defaultCampus = university?.defaultCampus as GapwiseCampusId | undefined;

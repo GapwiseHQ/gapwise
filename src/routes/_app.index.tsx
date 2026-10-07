@@ -14,9 +14,10 @@ export const Route = createFileRoute("/_app/")({
     const isGlobal = !site || site.role === "global";
     const marketing = marketingForSite(site, university);
     const campus = campusForSite(site);
+    const universityTitle = university ? `Gapwise — ${university.name}` : null;
     const title = isGlobal
       ? "Gapwise — University Timetable & Campus Navigation"
-      : (marketing?.seoTitle ?? "Gapwise — University Timetable & Campus Navigation");
+      : (universityTitle ?? marketing?.seoTitle ?? "Gapwise — University Timetable & Campus Navigation");
     const description = isGlobal
       ? "Gapwise is a free and open-source timetable, campus navigation, and student planning platform."
       : (marketing?.seoDescription ??

@@ -403,6 +403,15 @@ export function campusesForUniversity(university: University): string[] {
   return [...new Set(university.campuses)];
 }
 
+export function selectableCampusesForUniversity(university: University): string[] {
+  const campusIds = campusesForUniversity(university);
+  const hostedCampuses = campusIds.filter((campusId) => {
+    const campus = campusById(campusId);
+    return Boolean(campus?.hosts.length);
+  });
+  return hostedCampuses.length > 0 ? hostedCampuses : campusIds;
+}
+
 export function universityByCampus(campusId: string): University | null {
   const normalized = campusId.toLowerCase();
   const alias =
