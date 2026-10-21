@@ -20,22 +20,24 @@ const user = (values: Partial<User>): User => ({
 
 describe("OAuth authentication", () => {
   test("selects the configured providers and uses same-origin PKCE callbacks", async () => {
-    const [serviceSource, clientSource] = await Promise.all([
+    const [serviceSource, clientSource, redirectSource] = await Promise.all([
       readFile("src/features/auth/auth-service.ts", "utf8"),
       readFile("src/lib/supabase.ts", "utf8"),
+      readFile("src/lib/auth-redirect.ts", "utf8"),
     ]);
     expect(serviceSource).toContain('provider: "github"');
     expect(serviceSource).toContain('provider: "google"');
     expect(serviceSource).toContain('provider: "azure"');
     expect(serviceSource).toContain('scopes: "email"');
     expect(serviceSource).toContain("function authRedirectTarget");
-    expect(serviceSource).toContain("target.origin !== window.location.origin");
-    expect(serviceSource).toContain("redirectTo: authRedirectTarget(redirectTo)");
+    expect(redirectSource).toContain("target.origin !== current.origin");
+    expect(serviceSource).toContain("redirectTo: hostedAuthCallback(redirectTo)");
     expect(serviceSource).toContain("assertCanPersistAuthRedirect()");
     expect(serviceSource).toContain("use_fedcm_for_prompt: true");
     expect(serviceSource).toContain("isDismissedMoment()");
     expect(serviceSource).toContain("fallBackFromGooglePrompt");
-    expect(clientSource).toContain("detectSessionInUrl: true");
+    expect(clientSource).toContain("detectSessionInUrl: !hostedCallbackHref");
+    expect(clientSource).toContain("callbackClient.auth.exchangeCodeForSession(");
     expect(clientSource).toContain('flowType: "pkce"');
   });
 

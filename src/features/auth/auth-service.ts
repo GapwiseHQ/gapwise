@@ -5,20 +5,21 @@ import {
   requireSupabaseClient,
 } from "@/lib/supabase";
 import { authStore } from "./auth-store";
+import { prepareAuthCallback, resolveAuthRedirect } from "@/lib/auth-redirect";
 import { clearPrivateCloudLocalUser } from "@/features/sync/encrypted-sync-service";
 
 const GOOGLE_SCRIPT_ID = "gapwise-google-identity";
 const GOOGLE_OIDC_STATE_KEY = "gapwise.google.oidc.state";
 const GOOGLE_OIDC_NONCE_KEY = "gapwise.google.oidc.nonce";
+const GOOGLE_OIDC_RETURN_KEY = "gapwise.google.oidc.return";
 const GOOGLE_OIDC_ENDPOINT = "https://accounts.google.com/o/oauth2/v2/auth";
 
 function authRedirectTarget(redirectTo?: string): string {
-  if (!redirectTo) return window.location.origin;
-  const target = new URL(redirectTo, window.location.origin);
-  if (target.origin !== window.location.origin) {
-    throw new Error("Authentication can only return to Gapwise.");
-  }
-  return target.href;
+  return resolveAuthRedirect(window.location.href, redirectTo);
+}
+
+function hostedAuthCallback(redirectTo?: string): string {
+  return prepareAuthCallback(window.location.href, window.sessionStorage, redirectTo);
 }
 
 export async function signInWithGitHub(redirectTo?: string): Promise<void> {
@@ -27,7 +28,7 @@ export async function signInWithGitHub(redirectTo?: string): Promise<void> {
   const { error } = await supabase.auth.signInWithOAuth({
     provider: "github",
     options: {
-      redirectTo: authRedirectTarget(redirectTo),
+      redirectTo: hostedAuthCallback(redirectTo),
     },
   });
   if (error) throw error;
@@ -39,7 +40,7 @@ export async function signInWithGoogleOAuthFallback(redirectTo?: string): Promis
   const { error } = await supabase.auth.signInWithOAuth({
     provider: "google",
     options: {
-      redirectTo: authRedirectTarget(redirectTo),
+      redirectTo: hostedAuthCallback(redirectTo),
     },
   });
   if (error) throw error;
@@ -146,11 +147,13 @@ export function buildGoogleOidcAuthorizationUrl({
   return url.href;
 }
 
-async function beginGoogleOidcRedirect(clientId: string): Promise<void> {
+async function beginGoogleOidcRedirect(clientId: string, redirectTo?: string): Promise<void> {
+  const returnTo = authRedirectTarget(redirectTo);
   const state = randomGoogleState();
   const nonce = await createGoogleNonce();
   sessionStorage.setItem(GOOGLE_OIDC_STATE_KEY, state);
   sessionStorage.setItem(GOOGLE_OIDC_NONCE_KEY, nonce.raw);
+  sessionStorage.setItem(GOOGLE_OIDC_RETURN_KEY, returnTo);
   window.location.assign(
     buildGoogleOidcAuthorizationUrl({
       clientId,
@@ -164,6 +167,7 @@ async function beginGoogleOidcRedirect(clientId: string): Promise<void> {
 function clearGoogleOidcAttempt(): void {
   sessionStorage.removeItem(GOOGLE_OIDC_STATE_KEY);
   sessionStorage.removeItem(GOOGLE_OIDC_NONCE_KEY);
+  sessionStorage.removeItem(GOOGLE_OIDC_RETURN_KEY);
 }
 
 function clearGoogleOidcFragment(): void {
@@ -191,6 +195,7 @@ async function completeGoogleOidcRedirectOnLoad(): Promise<void> {
   const returnedState = response.get("state");
   const expectedState = sessionStorage.getItem(GOOGLE_OIDC_STATE_KEY);
   const rawNonce = sessionStorage.getItem(GOOGLE_OIDC_NONCE_KEY);
+  const returnTo = sessionStorage.getItem(GOOGLE_OIDC_RETURN_KEY);
   clearGoogleOidcAttempt();
   clearGoogleOidcFragment();
 
@@ -207,6 +212,10 @@ async function completeGoogleOidcRedirectOnLoad(): Promise<void> {
       nonce: rawNonce,
     });
     if (error) throw error;
+    if (returnTo) {
+      const destination = authRedirectTarget(returnTo);
+      if (destination !== window.location.href) window.location.replace(destination);
+    }
   } catch {
     restartWithGenericAuthError();
   }
@@ -227,7 +236,7 @@ export async function signInWithGoogle(redirectTo?: string): Promise<void> {
     googleRedirectRequiredForIos(navigator.userAgent, navigator.platform, navigator.maxTouchPoints)
   ) {
     if (!directRedirectEnabled) return signInWithGoogleOAuthFallback(redirectTo);
-    await beginGoogleOidcRedirect(clientId);
+    await beginGoogleOidcRedirect(clientId, redirectTo);
     return;
   }
 
@@ -245,7 +254,7 @@ export async function signInWithGoogle(redirectTo?: string): Promise<void> {
       if (settled) return;
       settled = true;
       const fallback = directRedirectEnabled
-        ? beginGoogleOidcRedirect(clientId)
+        ? beginGoogleOidcRedirect(clientId, redirectTo)
         : signInWithGoogleOAuthFallback(redirectTo);
       void fallback.then(resolve, reject);
     };
@@ -291,7 +300,7 @@ export async function signInWithMicrosoft(redirectTo?: string): Promise<void> {
     provider: "azure",
     options: {
       scopes: "email",
-      redirectTo: authRedirectTarget(redirectTo),
+      redirectTo: hostedAuthCallback(redirectTo),
     },
   });
   if (error) throw error;
@@ -307,7 +316,7 @@ export async function requestEmailSignInLink(email: string): Promise<void> {
     email: normalizedEmail,
     options: {
       shouldCreateUser: true,
-      emailRedirectTo: window.location.origin,
+      emailRedirectTo: hostedAuthCallback(),
     },
   });
   if (error) throw error;

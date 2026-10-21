@@ -1,5 +1,6 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import type { Database } from "./database.types";
+import { consumeAuthReturn, finishAuthCallback } from "./auth-redirect";
 
 export type { Database, Json } from "./database.types";
 
@@ -135,6 +136,13 @@ function persistentBrowserStorage(): BrowserStorage | null {
 let client: SupabaseClient<Database> | null = null;
 let configurationError: string | null = null;
 const authStorage = url && publishableKey ? persistentBrowserStorage() : null;
+// Capture before SDK initialization removes the one-time authorization code.
+const hostedCallbackHref =
+  typeof window !== "undefined" &&
+  window.location.pathname === "/" &&
+  new URL(window.location.href).searchParams.has("code")
+    ? window.location.href
+    : null;
 
 if (url && publishableKey) {
   try {
@@ -143,12 +151,41 @@ if (url && publishableKey) {
         storage: createSafeAuthStorage(authStorage),
         persistSession: true,
         autoRefreshToken: true,
-        detectSessionInUrl: true,
+        // The fixed root callback is exchanged explicitly below, exactly once.
+        detectSessionInUrl: !hostedCallbackHref,
         flowType: "pkce",
       },
     });
   } catch {
     configurationError = "Supabase environment variables are present but invalid.";
+  }
+}
+
+if (client && hostedCallbackHref) {
+  const callbackClient = client;
+  void Promise.resolve()
+    .then(() =>
+      finishAuthCallback(hostedCallbackHref, window.sessionStorage, () =>
+        callbackClient.auth.exchangeCodeForSession(
+          new URL(hostedCallbackHref).searchParams.get("code") ?? "",
+        ),
+      ),
+    )
+    .then((destination) => window.location.replace(destination))
+    .catch(() => {
+      window.history.replaceState(window.history.state, "", "/?error=auth_callback_failed");
+      window.location.replace("/?error=auth_callback_failed");
+    });
+} else if (
+  typeof window !== "undefined" &&
+  window.location.pathname === "/" &&
+  (new URL(window.location.href).searchParams.has("error") ||
+    new URLSearchParams(window.location.hash.slice(1)).has("error"))
+) {
+  try {
+    consumeAuthReturn(window.location.href, window.sessionStorage);
+  } catch {
+    // Error recovery must stay usable even when browser storage is blocked.
   }
 }
 
